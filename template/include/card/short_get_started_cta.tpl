@@ -9,7 +9,7 @@
 				</p>
 
 				<div class="d-flex justify-content-center">
-					{include file='template/include/buttons/cta_primary.tpl' label={'Get started CTA btn 1'|translate} href='#'}
+					{include file='template/include/buttons/button.tpl' variant='cta_primary' label={'Get started CTA btn 1'|translate} href='#'}
 				</div>
 			</div>
 		</div>

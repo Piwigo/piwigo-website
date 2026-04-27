@@ -156,7 +156,7 @@
     <div class="menu-horizontal-divider"></div>
 
     <div class="menu-footer">
-        {include file='template/include/buttons/menu_btn_white.tpl' label='Contact us for a demo!'}
+        {include file='template/include/buttons/button.tpl' variant='menu_btn_white' label='Contact us for a demo!'}
     </div>
 </div> *}
 
@@ -290,6 +290,6 @@
     <div class="menu-horizontal-divider"></div>
 
     <div class="menu-footer d-flex justify-content-center">
-        {include file='template/include/buttons/menu_btn_white.tpl' label={'product btn'|translate} href="{$PORG_ROOT}{$URL.contact}"}
+        {include file='template/include/buttons/button.tpl' variant='menu_btn_white' label={'product btn'|translate} href="{$PORG_ROOT}{$URL.contact}"}
     </div>
 </div>

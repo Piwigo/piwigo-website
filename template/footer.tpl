@@ -27,9 +27,9 @@
               <li><a class="footer-feature-link fw-bold" href="{$PORG_ROOT}{$URL.pricing}">{'Pricing'|translate}</a></li>
             </ul>
             <div class="footer-get-started-actions">
-              {include file='template/include/buttons/menu_btn_blue.tpl' label={'Footer Button 1 Plan a demo'|translate}
+              {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'Footer Button 1 Plan a demo'|translate}
               href='#'}
-              {include file='template/include/buttons/menu_btn_green.tpl' label={'Contact us'|translate}
+              {include file='template/include/buttons/button.tpl' variant='menu_btn_green' label={'Contact us'|translate}
               href="{$PORG_ROOT}{$URL.contact}"}
             </div>
           </div>
@@ -81,7 +81,7 @@
                 <li><span>{'Photographers &amp; Individuals'|translate}</span></li>
               </ul>
               <div class="footer-users-btn">
-                {include file='template/include/buttons/menu_btn_white.tpl' label={'Footer Button 3 Meet our users'|translate}
+                {include file='template/include/buttons/button.tpl' variant='menu_btn_white' label={'Footer Button 3 Meet our users'|translate}
                 href='#'}
               </div>
             </div>
@@ -137,7 +137,7 @@
         </div>
 
         <div class="footer-subscribe-btn">
-          {include file='template/include/buttons/menu_btn_white.tpl' label={'Footer Button 4 Subscribe to newsletter'|translate}
+          {include file='template/include/buttons/button.tpl' variant='menu_btn_white' label={'Footer Button 4 Subscribe to newsletter'|translate}
           href='#'}
         </div>
       </div>
@@ -177,7 +177,7 @@
           <li><span>{'Photographers &amp; Individuals'|translate}</span></li>
         </ul>
         <div class="footer-users-btn">
-          {include file='template/include/buttons/menu_btn_white.tpl' label={'Footer Button 3 Meet our users'|translate}
+          {include file='template/include/buttons/button.tpl' variant='menu_btn_white' label={'Footer Button 3 Meet our users'|translate}
           href='#'}
         </div>
       </div>
@@ -211,7 +211,7 @@
           <li><span>{'Coding activity'|translate}</span></li>
         </ul>
         <div class="footer-subscribe-btn">
-          {include file='template/include/buttons/menu_btn_white.tpl' label={'Footer Button 4 Subscribe to newsletter'|translate}
+          {include file='template/include/buttons/button.tpl' variant='menu_btn_white' label={'Footer Button 4 Subscribe to newsletter'|translate}
           href='#'}
         </div>
       </div>
@@ -241,7 +241,7 @@
         <!-- Right side: Login + social -->
         <div class="d-flex align-items-center gap-3 footer-bottom-actions">
           <div class="footer-login-btn">
-            {include file='template/include/buttons/menu_btn_white.tpl' label={'Login'|translate}
+            {include file='template/include/buttons/button.tpl' variant='menu_btn_white' label={'Login'|translate}
             href='#'}
           </div>
 

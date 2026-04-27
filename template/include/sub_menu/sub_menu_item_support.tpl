@@ -43,7 +43,7 @@
     <div class="menu-horizontal-divider"></div>
 
     <div class="menu-footer">
-        {include file='template/include/buttons/menu_btn_white.tpl' label='Contact us for more support!'}
+        {include file='template/include/buttons/button.tpl' variant='menu_btn_white' label='Contact us for more support!'}
     </div>
 </div> *}
 
@@ -94,6 +94,6 @@
     <div class="menu-horizontal-divider"></div>
 
     <div class="menu-footer d-flex justify-content-center">
-        {include file='template/include/buttons/menu_btn_white.tpl' label={'support btn'|translate} href="{$PORG_ROOT}{$URL.contact}"}
+        {include file='template/include/buttons/button.tpl' variant='menu_btn_white' label={'support btn'|translate} href="{$PORG_ROOT}{$URL.contact}"}
     </div>
 </div>

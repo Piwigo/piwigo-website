@@ -6,7 +6,7 @@
 
         <div class="tooltip-footer">
             {include
-                file="template/include/buttons/menu_btn_white.tpl"
+                file="template/include/buttons/button.tpl" variant="menu_btn_white"
                 href="#"
                 label={'See the list of plugins and features by plan'|translate} 
             }

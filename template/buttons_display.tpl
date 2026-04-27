@@ -7,23 +7,23 @@
   <p>Les boutons :</p>
 
   <div class="buttons-display-list">
-    {include file='template/include/buttons/cta_primary.tpl' label='Start your free trial' href='https://google.com'}
-    {include file='template/include/buttons/cta_secondary.tpl' label='Start your free trial' href='https://google.com'}
-    {include file='template/include/buttons/cta_primary_green.tpl' label='Start your free trial' href='https://google.com'}
+    {include file='template/include/buttons/button.tpl' variant='cta_primary' label='Start your free trial' href='https://google.com'}
+    {include file='template/include/buttons/button.tpl' variant='cta_secondary' label='Start your free trial' href='https://google.com'}
+    {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label='Start your free trial' href='https://google.com'}
   </div>
 
     <div class="row buttons-menu-row">
       <div class="col-3">
-        {include file='template/include/buttons/menu_btn_green.tpl' label='Free trial' href='https://google.com'}
+        {include file='template/include/buttons/button.tpl' variant='menu_btn_green' label='Free trial' href='https://google.com'}
       </div>
       <div class="col-3 d-flex">
-        {include file='template/include/buttons/menu_btn_white.tpl' label='Free trial' href='https://google.com'}
+        {include file='template/include/buttons/button.tpl' variant='menu_btn_white' label='Free trial' href='https://google.com'}
       </div>
       <div class="col-3">
-        {include file='template/include/buttons/menu_btn_blue.tpl' label='Free trial' href='https://google.com'}
+        {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label='Free trial' href='https://google.com'}
       </div>
       <div class="col-3">
-        {include file='template/include/buttons/menu_btn_orange.tpl' label='Free trial' href='https://google.com'}
+        {include file='template/include/buttons/button.tpl' variant='menu_btn_orange' label='Free trial' href='https://google.com'}
       </div>
     </div>
 

@@ -15,7 +15,7 @@
         <div class="col-12">
             <div class="custom-btn-wrapper">
                 {include 
-                    file="template/include/buttons/menu_btn_white.tpl" 
+                    file="template/include/buttons/button.tpl" variant="menu_btn_white" 
                     href="#" 
                     label={'See examples'|translate}
                 }

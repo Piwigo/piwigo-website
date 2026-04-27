@@ -10,7 +10,7 @@
             </p>
             {if $btn_text}
                 <div class="d-none d-md-block" style="margin-bottom: 1.5rem;">
-                    {include file='template/include/buttons/cta_secondary.tpl' label={$btn_text} href='{$btn_link}'}
+                    {include file='template/include/buttons/button.tpl' variant='cta_secondary' label={$btn_text} href='{$btn_link}'}
                 </div>
             {/if}
             <p class="feature-description feature-description-desktop mb-4">
@@ -32,7 +32,7 @@
         </p>
         {if $btn_text}
             <div style="margin-bottom: 1.5rem;">
-                {include file='template/include/buttons/cta_secondary.tpl' label={$btn_text} href='{$btn_link}'}
+                {include file='template/include/buttons/button.tpl' variant='cta_secondary' label={$btn_text} href='{$btn_link}'}
             </div>
         {/if}
         <p class="feature-description feature-description-mobile">

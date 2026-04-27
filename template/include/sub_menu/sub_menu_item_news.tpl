@@ -36,7 +36,7 @@
     <div class="menu-horizontal-divider"></div>
 
     <div class="menu-footer">
-        {include file='template/include/buttons/menu_btn_white.tpl' label='Subscribe to newsletter'}
+        {include file='template/include/buttons/button.tpl' variant='menu_btn_white' label='Subscribe to newsletter'}
     </div>
 </div> *}
 
@@ -79,6 +79,6 @@
     <div class="menu-horizontal-divider"></div>
 
     <div class="menu-footer d-flex justify-content-center">
-        {include file='template/include/buttons/menu_btn_white.tpl' label={'news btn'|translate}}
+        {include file='template/include/buttons/button.tpl' variant='menu_btn_white' label={'news btn'|translate}}
     </div>
 </div>

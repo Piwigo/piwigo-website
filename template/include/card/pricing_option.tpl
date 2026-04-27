@@ -17,7 +17,7 @@
     </div>
 
     <div class="mb-4 text-center">
-        {include file="template/include/buttons/menu_btn_green.tpl" href=$link_try label={'Try it free'|translate}}
+        {include file="template/include/buttons/button.tpl" variant="menu_btn_green" href=$link_try label={'Try it free'|translate}}
     </div>
 
     <div class="features-wrapper flex-grow-1">
@@ -107,7 +107,7 @@
 
     <div class="price-footer mt-4 text-center">
         {include
-            file="template/include/buttons/menu_btn_white.tpl"
+            file="template/include/buttons/button.tpl" variant="menu_btn_white"
             href=$link_trial
             label={'Start your 30 days free trial'|translate} 
         }
