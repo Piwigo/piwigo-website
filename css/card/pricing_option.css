@@ -1,3 +1,7 @@
+/******
+Pricing Card 
+******/
+
 .pricing-main-grid {
   display: flex;
   flex-wrap: nowrap;
@@ -327,4 +331,219 @@ body.custom-tooltip-open .info-icon-container:hover .global-hover-popover {
   .pricing-plugin-popover {
     width: 300px;
   }
+}
+
+/******
+Pricing Custom Tooltip
+******/
+
+.custom-feature-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.custom-hover-popover {
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ffffff;
+  z-index: 1050;
+  width: 548px;
+  border-radius: 10px;
+  border: 1px solid #e9ecef;
+  box-shadow: 0 4px 20px rgba(119, 119, 119, 0.25);
+  pointer-events: auto;
+  padding: 25px !important;
+}
+
+.custom-link-container.is-active .custom-hover-popover {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+
+.custom-tooltip-content {
+  width: 100%;
+  display: flex !important;
+  flex-wrap: wrap !important; 
+  flex-direction: row !important; 
+  align-items: center !important;
+}
+
+.custom-tooltip-content .row {
+  display: flex !important;
+  width: 100% !important;
+  margin: 0 !important;
+  align-items: center !important;
+}
+
+.custom-tooltip-content .col-7 {
+  flex: 0 0 60% !important;
+  max-width: 60% !important;
+  padding-right: 20px !important;
+  text-align: left !important;
+}
+
+.custom-tooltip-content .col-5 {
+  flex: 0 0 40% !important;
+  max-width: 40% !important;
+  text-align: right !important;
+}
+
+.custom-tooltip-content .col-12 {
+  padding: 0 !important;
+}
+
+.custom-tooltip-content h5 {
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.custom-tooltip-content p {
+  font-size: 14px;
+  color: #666666;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.text-end img {
+  max-width: 100%;
+  height: auto !important;
+  display: block;
+}
+
+.custom-btn-wrapper {
+  flex: 0 0 100% !important;
+  width: 100% !important;
+  margin-top: 25px;
+  display: block !important;
+}
+
+.custom-btn-wrapper a {
+  text-decoration: none !important;
+  width: 100% !important;
+  display: block !important;
+}
+
+
+@media (max-width: 768px) {
+  .custom-hover-popover {
+    width: 295px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    padding: 25px !important;
+    top: 35px !important;
+    height: auto !important; 
+    overflow: visible !important;
+  }
+
+  .custom-tooltip-content .row {
+    flex-direction: column !important; 
+    gap: 15px !important;
+  }
+
+  .custom-tooltip-content .col-5,
+  .custom-tooltip-content .col-7 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0 !important;
+    text-align: left !important;
+  }
+
+  .custom-tooltip-content .col-5 {
+    order: 1 !important;
+  }
+
+  .custom-tooltip-content .col-7 {
+    order: 2 !important;
+  }
+
+  .custom-btn-wrapper {
+    order: 3 !important;
+    margin-top: 20px !important;
+  }
+
+  .text-end img {
+    max-width: 180px !important;
+    margin: 0 auto !important;
+  }
+}
+
+/******
+Pricing Global Tooltip
+******/
+
+.global-popover-content {
+    width: 225px !important;
+    min-height: 200px !important;
+    padding: 20px !important;
+    background: #FFFFFF !important;
+    border-radius: 10px !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+    border: 1px solid #f0f0f0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.global-popover-content ul.global-popover-list {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 15px !important;
+}
+
+.global-popover-content ul.global-popover-list li {
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+    color: #555555 !important;
+    position: relative !important;
+    padding-left: 18px !important;
+    text-align: left !important;
+    margin: 0 !important; 
+}
+
+.global-popover-content ul.global-popover-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #333333;
+    font-weight: bold;
+}
+
+/******
+Pricing Plugin Tooltip
+******/
+
+.pricing-tooltip-card.tooltip-plugins {
+    width: 360px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 20px rgba(119, 119, 119, 0.25);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tooltip-description {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333333;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.btn-tooltip-action:hover {
+    background-color: #E9ECEF;
+}
+
+.tooltip-footer .btn-menu.Menu_btn_white {
+    text-decoration: none;
 }
