@@ -1,92 +1,264 @@
-  <footer>
-    <div class="container-fluide footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-2">
-            <div class="text-center icon-social-media">
-              <a href="https://www.linkedin.com/company/piwigo"><img src="{$PORG_ROOT_URL}images/footer/linkedin.svg" class="icon-linkedin" alt="LinkedIn icon"></a>
-              <a href="https://github.com/Piwigo"><img src="{$PORG_ROOT_URL}images/footer/github.svg" class="icon-github" alt="Github icon"></a>
-            </div>
-            <div class="row">
-              <div class="col-md-12 col-xs-6">
-                <div class=" footer-newspaper-content">
-                  <a type="button" class="btn" href="//{$PORG_DOMAIN_PREFIX}piwigo.org/{$URL.newsletters}"><img src="{$PORG_ROOT_URL}images/footer/newsletters.svg" alt="Newsletter from Piwigo"/>{'Newsletters'|translate}</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-8 equal footer-list">
-            <div class="col-md-15 col-xs-6">
-              <h5>{'Discover'|translate}</h5>
-                <ul>
-                  <li><a href="//{$PORG_DOMAIN_PREFIX}piwigo.org/{$URL.demo}">{'Demo'|translate}</a></li>
-                  <li><a href="//{$PORG_DOMAIN_PREFIX}piwigo.org/{$URL.what_is_piwigo}">{'What is Piwigo?'|translate}</a> </li>
-                  <li><a href="//{$PORG_DOMAIN_PREFIX}piwigo.org/{$URL.features}">{'Features'|translate}</a> </li>
-                  <li><a href="//{$PORG_DOMAIN_PREFIX}piwigo.org/{$URL.changelogs}">{'Changelogs'|translate}</a></li>
-                  <li><a href="//{$PORG_DOMAIN_PREFIX}piwigo.org/{$URL.users}">{'Users'|translate}</a></li>
-                </ul>
-            </div>
-            <div class="col-md-15 col-xs-6">
-              <h5>{'Extensions'|translate}</h5>
-              <ul>
-                <li><a href="//{$PORG_DOMAIN_PREFIX}piwigo.org/ext/index.php?cid=10&page=1">{'Themes'|translate}</a></li>
-                <li><a href="//{$PORG_DOMAIN_PREFIX}piwigo.org/ext/index.php?cid=12&page=1">{'Plugins'|translate}</a> </li>
-                <li><a href="//{$PORG_DOMAIN_PREFIX}piwigo.org/ext/index.php?cid=8&page=1">{'Languages'|translate}</a></li>
-              </ul>
-            </div>
-            <div class="col-md-15 col-xs-6">
-              <h5>{'Support'|translate}</h5>
-                <ul>
-                  <li><a href="//{$PORG_DOMAIN_PREFIX}piwigo.org/forum/">{'Forum'|translate}</a></li>
-                  <li><a href="{$DOCUMENTATION_URL}">{'Documentation'|translate}</a> </li>
-                  <li><a href="//{$PORG_DOMAIN_PREFIX}piwigo.org/{$URL.guides}">{'porg_guides'|translate}</a></li>
-                  <li><a href="//{$PORG_DOMAIN_PREFIX}piwigo.org/{$URL.get_started}">{'Get Started'|translate}</a></li>
-                </ul>
-            </div>
-            <div class="col-md-15 col-xs-6">
-              <h5>{'About'|translate}</h5>
-                <ul>
-                  <li><a href="//{$PORG_DOMAIN_PREFIX}piwigo.org/{$URL.about_us}">{'About us'|translate}</a></li>
-{*
-                  <li><a href="//{$PORG_DOMAIN_PREFIX}piwigo.org/{$URL.press}">{'Press'|translate}</a></li>
-*}
-                  <li><a href="//{$PORG_DOMAIN_PREFIX}piwigo.org/{$URL.get_involved}">{'Get Involved'|translate}</a></li>
-                </ul>
-            </div>
-            <div class="col-md-15 col-xs-6">
-              <h5>{'News'|translate}</h5>
-                <ul>
-                  <li><a href="//{$PORG_DOMAIN_PREFIX}piwigo.org/{$URL.news}">{'What\'s new?'|translate}</a></li>
-                  <li><a href="//{$PORG_DOMAIN_PREFIX}piwigo.org/{$URL.newsletters}">{'Newsletters'|translate}</a> </li>
-                </ul>
-            </div>
-          </div>
-          <div class="col-md-2 text-center">
-            <div class="row">
-              <div class="col-xs-12 footer-piwigo-logo">
-                <a href="{$URL.home}"><img src="{$PORG_ROOT_URL}images/piwigo.org.svg" alt="Piwigo.org" title="go to Piwigo.org home page"></a>
-              </div>
-              <div class="col-xs-12 footer-language">
-                <li class="dropdown active">
-                  <a href="#" id="language_dropdown" class="dropdown-toggle" data-toggle="dropdown" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-globe"></span>Languages</a>
-                  <ul class="dropdown-menu" aria-labelledby="language_dropdown">
-{foreach from=$switch_languages item=switch_language}
-                    <li><a href="{$switch_language.url}">{$switch_language.label}</a></li>
-{/foreach}
-                  </ul>
-                </li>
-              </div>
-              <div class="footer-contact col-md-12 col-xs-6">
-                <a href="//{$PORG_DOMAIN_PREFIX}piwigo.org/{$URL.contact}"><span class="glyphicon glyphicon-envelope"></span>{'Contact'|translate}</a>
-              </div>
-              <div class="footer-copyright col-md-12 col-xs-6">
-                <p>Piwigo.org <span title="{$time}">©</span><br>2002 - {$CURRENT_YEAR}</p>
-              </div>
+<link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL_PLUGINS}css/footer.css">
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- ── Col 1 : Brand + tagline ── -->
+      <div class="col-12 col-md-6 col-lg-2 footer-brand">
+        <div class="footer-logo">
+          <img src="{$PORG_ROOT_URL}images/piwigo.org.svg" alt="Piwigo logo">
+        </div>
+        <p class="footer-tagline">
+          {'Footer Piwigo description part 1'|translate} <br>
+          {'Footer Piwigo description part 2'|translate} <br>
+          {'Footer Piwigo description part 3'|translate}
+        </p>
+      </div>
+
+      <!-- ── Col 2 : Get started box ── -->
+      <div class="col-12 col-md-6 col-lg-2 footer-get-started-col">
+        <div class="footer-get-started">
+          <h6 class="footer-title">{'Get started'|translate}</h6>
+          <div class="footer-get-started-content">
+            <ul class="footer-get-started-links">
+              <li><span class="fw-bold">{'Cloud'|translate}</span></li>
+              <li><span class="fw-bold">{'Self hosting'|translate}</span></li>
+              <li><a class="footer-feature-link fw-bold" href="{$PORG_ROOT}{$URL.pricing}">{'Pricing'|translate}</a></li>
+            </ul>
+            <div class="footer-get-started-actions">
+              {include file='template/include/buttons/menu_btn_blue.tpl' label={'Footer Button 1 Plan a demo'|translate}
+              href='#'}
+              {include file='template/include/buttons/menu_btn_green.tpl' label={'Contact us'|translate}
+              href="{$PORG_ROOT}{$URL.contact}"}
             </div>
           </div>
         </div>
       </div>
+
+      <!-- ── Mobile nav accordion ── -->
+      <div class="col-12 d-lg-none footer-mobile-nav">
+        <div class="footer-mobile-nav-accordion">
+          <div class="footer-mobile-section">
+            <button class="footer-mobile-toggle footer-title collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#footerMobileDiscover" aria-expanded="false" aria-controls="footerMobileDiscover">
+              <span>{'Discover Piwigo'|translate}</span>
+              <i class="icon-down-open" aria-hidden="true"></i>
+            </button>
+            <div id="footerMobileDiscover" class="collapse footer-mobile-collapse" data-bs-parent=".footer-mobile-nav-accordion">
+              <ul>
+                <li><a class="footer-feature-link" href="{$PORG_ROOT}{$URL.features}#upload">{'Upload &amp; Import'|translate}</a></li>
+                <li><a class="footer-feature-link" href="{$PORG_ROOT}{$URL.features}#organize">{'Organize your media'|translate}</a></li>
+                <li><a class="footer-feature-link" href="{$PORG_ROOT}{$URL.features}#search">{'Search &amp; Find'|translate}</a></li>
+                <li><a class="footer-feature-link" href="{$PORG_ROOT}{$URL.features}#share">{'Share &amp; Collaborate'|translate}</a></li>
+                <li><a class="footer-feature-link" href="{$PORG_ROOT}{$URL.features}#customize">{'Customize &amp; Extend'|translate}</a></li>
+                <li><a class="footer-feature-link" href="{$PORG_ROOT}{$URL.features}#measure">{'Measure &amp; Monitor'|translate}</a></li>
+                <li><a class="footer-feature-link" href="{$PORG_ROOT}{$URL.features}#security">{'Security &amp; privacy'|translate}</a></li>
+              </ul>
+              <ul class="mt-3">
+                <li><span>{'Piwigo AI'|translate|cat: ' ✨'}</span></li>
+                <li><span>{'Mobile apps'|translate}</span></li>
+                <li><span>{'Extensions'|translate}</span></li>
+                <li><span>{'API &amp; Integrations'|translate}</span></li>
+                <li><span>{'Live demos'|translate}</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-mobile-section">
+            <button class="footer-mobile-toggle footer-title collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#footerMobileUseCases" aria-expanded="false" aria-controls="footerMobileUseCases">
+              <span>{'Use cases'|translate}</span>
+              <i class="icon-down-open" aria-hidden="true"></i>
+            </button>
+            <div id="footerMobileUseCases" class="collapse footer-mobile-collapse" data-bs-parent=".footer-mobile-nav-accordion">
+              <ul>
+                <li><span>{'Travel &amp; Tourism'|translate}</span></li>
+                <li><span>{'Public Sector'|translate}</span></li>
+                <li><span>{'Companies'|translate}</span></li>
+                <li><span>{'Education &amp; Research'|translate}</span></li>
+                <li><span>{'Nonprofits'|translate}</span></li>
+                <li><span>{'Photographers &amp; Individuals'|translate}</span></li>
+              </ul>
+              <div class="footer-users-btn">
+                {include file='template/include/buttons/menu_btn_white.tpl' label={'Footer Button 3 Meet our users'|translate}
+                href='#'}
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-mobile-section">
+            <button class="footer-mobile-toggle footer-title collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#footerMobileBehindCode" aria-expanded="false" aria-controls="footerMobileBehindCode">
+              <span>{'Behind the code'|translate}</span>
+              <i class="icon-down-open" aria-hidden="true"></i>
+            </button>
+            <div id="footerMobileBehindCode" class="collapse footer-mobile-collapse" data-bs-parent=".footer-mobile-nav-accordion">
+              <ul>
+                <li><span>{'About Piwigo'|translate}</span></li>
+                <li><span>{'Contribute'|translate}</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-mobile-section">
+            <button class="footer-mobile-toggle footer-title collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#footerMobileSupport" aria-expanded="false" aria-controls="footerMobileSupport">
+              <span>{'Support'|translate}</span>
+              <i class="icon-down-open" aria-hidden="true"></i>
+            </button>
+            <div id="footerMobileSupport" class="collapse footer-mobile-collapse" data-bs-parent=".footer-mobile-nav-accordion">
+              <ul>
+                <li><span>{'Professional support'|translate}</span></li>
+                <li><span>{'Community forum'|translate}</span></li>
+                <li><span>{'Documentation'|translate}</span></li>
+                <li><span>{'Installation guides'|translate}</span></li>
+                <li><span>{'Developer resources'|translate}</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-mobile-section">
+            <button class="footer-mobile-toggle footer-title collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#footerMobileNews" aria-expanded="false" aria-controls="footerMobileNews">
+              <span>{'News'|translate}</span>
+              <i class="icon-down-open" aria-hidden="true"></i>
+            </button>
+            <div id="footerMobileNews" class="collapse footer-mobile-collapse" data-bs-parent=".footer-mobile-nav-accordion">
+              <ul>
+                <li><span>{'Latest news'|translate}</span></li>
+                <li><span>{'Blog'|translate}</span></li>
+                <li><span>{'Newsletter'|translate}</span></li>
+                <li><span>{'Product updates'|translate}</span></li>
+                <li><span>{'Coding activity'|translate}</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-subscribe-btn">
+          {include file='template/include/buttons/menu_btn_white.tpl' label={'Footer Button 4 Subscribe to newsletter'|translate}
+          href='#'}
+        </div>
+      </div>
+
+      <!-- ── Col 3 : Discover Piwigo ── -->
+      <div class="col-6 col-md-4 col-lg-2 footer-nav-col d-none d-lg-block">
+        <h6 class="footer-title">{'Discover Piwigo'|translate}</h6>
+        <ul>
+          <li><a class="footer-feature-link" href="{$PORG_ROOT}{$URL.features}#upload">{'Upload &amp; Import'|translate}</a></li>
+          <li><a class="footer-feature-link" href="{$PORG_ROOT}{$URL.features}#organize">{'Organize your media'|translate}</a></li>
+          <li><a class="footer-feature-link" href="{$PORG_ROOT}{$URL.features}#search">{'Search &amp; Find'|translate}</a></li>
+          <li><a class="footer-feature-link" href="{$PORG_ROOT}{$URL.features}#share">{'Share &amp; Collaborate'|translate}</a></li>
+          <li><a class="footer-feature-link" href="{$PORG_ROOT}{$URL.features}#customize">{'Customize &amp; Extend'|translate}</a></li>
+          <li><a class="footer-feature-link" href="{$PORG_ROOT}{$URL.features}#measure">{'Measure &amp; Monitor'|translate}</a></li>
+          <li><a class="footer-feature-link" href="{$PORG_ROOT}{$URL.features}#security">{'Security &amp; privacy'|translate}</a></li>
+        </ul>
+        <ul class="mt-4">
+          <li>
+            <span>{'Piwigo AI'|translate|cat: ' ✨'}</span>
+          </li>
+          <li><span>{'Mobile apps'|translate}</span></li>
+          <li><span>{'Extensions'|translate}</span></li>
+          <li><span>{'API &amp; Integrations'|translate}</span></li>
+          <li><span>{'Live demos'|translate}</span></li>
+        </ul>
+      </div>
+
+      <!-- ── Col 4 : Use cases ── -->
+      <div class="col-6 col-md-4 col-lg-2 footer-nav-col d-none d-lg-block">
+        <h6 class="footer-title">{'Use cases'|translate}</h6>
+        <ul>
+          <li><span>{'Travel &amp; Tourism'|translate}</span></li>
+          <li><span>{'Public Sector'|translate}</span></li>
+          <li><span>{'Companies'|translate}</span></li>
+          <li><span>{'Education &amp; Research'|translate}</span></li>
+          <li><span>{'Nonprofits'|translate}</span></li>
+          <li><span>{'Photographers &amp; Individuals'|translate}</span></li>
+        </ul>
+        <div class="footer-users-btn">
+          {include file='template/include/buttons/menu_btn_white.tpl' label={'Footer Button 3 Meet our users'|translate}
+          href='#'}
+        </div>
+      </div>
+
+      <!-- ── Col 5 : Behind the code + Support ── -->
+      <div class="col-6 col-md-4 col-lg-2 footer-nav-col d-none d-lg-block">
+        <h6 class="footer-title">{'Behind the code'|translate}</h6>
+        <ul>
+          <li><span>{'About Piwigo'|translate}</span></li>
+          <li><span>{'Contribute'|translate}</span></li>
+        </ul>
+
+        <h6 class="footer-title mt-4">{'Support'|translate}</h6>
+        <ul>
+          <li><span>{'Professional support'|translate}</span></li>
+          <li><span>{'Community forum'|translate}</span></li>
+          <li><span>{'Documentation'|translate}</span></li>
+          <li><span>{'Installation guides'|translate}</span></li>
+          <li><span>{'Developer resources'|translate}</span></li>
+        </ul>
+      </div>
+
+      <!-- ── Col 6 : News ── -->
+      <div class="col-6 col-md-4 col-lg-2 footer-nav-col d-none d-lg-block">
+        <h6 class="footer-title">{'News'|translate}</h6>
+        <ul>
+          <li><span>{'Latest news'|translate}</span></li>
+          <li><span>{'Blog'|translate}</span></li>
+          <li><span>{'Newsletter'|translate}</span></li>
+          <li><span>{'Product updates'|translate}</span></li>
+          <li><span>{'Coding activity'|translate}</span></li>
+        </ul>
+        <div class="footer-subscribe-btn">
+          {include file='template/include/buttons/menu_btn_white.tpl' label={'Footer Button 4 Subscribe to newsletter'|translate}
+          href='#'}
+        </div>
+      </div>
+
+    </div><!-- /row -->
+  </div><!-- /container -->
+
+  <hr class="footer-divider">
+
+  <!-- ── Bottom bar ── -->
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-bottom-main d-flex flex-wrap align-items-center justify-content-between gap-3">
+
+        <!-- Legal links -->
+        <div class="footer-bottom-legal">
+          <p class="footer-copyright">Piwigo © 2002 – {$CURRENT_YEAR}</p>
+          <ul class="footer-legal-links">
+          <li><span>{'Footer legal 1 Privacy Policy'|translate}</span></li>
+          <li><span>{'Footer legal 2 Cookie Policy'|translate}</span></li>
+          <li><span>{'Footer legal 3 Legal Notice'|translate}</span></li>
+          <li><span>{'Footer legal 4 Terms of Use'|translate}</span></li>
+          <li><span>{'Footer legal 5 GDPR'|translate}</span></li>
+          </ul>
+        </div>
+
+        <!-- Right side: Login + social -->
+        <div class="d-flex align-items-center gap-3 footer-bottom-actions">
+          <div class="footer-login-btn">
+            {include file='template/include/buttons/menu_btn_white.tpl' label={'Login'|translate}
+            href='#'}
+          </div>
+
+          <div class="footer-social-icons">
+            <span class="footer-social-icon footer-social-icon-git" aria-hidden="true"><i class="icon-git"></i></span>
+            <span class="footer-social-icon footer-social-icon-linkedin" aria-hidden="true"><i
+                class="icon-linkedin"></i></span>
+            <span class="footer-social-icon footer-social-icon-mailint" aria-hidden="true"><i
+                class="icon-mailint"></i></span>
+          </div>
+        </div>
+
+      </div>
     </div>
-  </footer>
-  </body>
+  </div>
+
+</footer>
+</body>
+
 </html>

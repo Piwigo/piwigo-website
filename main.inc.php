@@ -1,8 +1,8 @@
 <?php
 /*
-Plugin Name: piwigo-piwigodotorg
+Plugin Name: piwigo-website
 Version: 0.1
-Description: Piwigo.org website
+Description: Piwigo.org new website
 Plugin URI: http://www.phpwebgallery.net
 */
 
@@ -84,6 +84,10 @@ function porg_lang_init() {
     load_language('plugin.lang', PORG_PATH, array('language' => 'en_UK', 'no_fallback' => true));
     /* Load user language translation */
     load_language('plugin.lang', PORG_PATH);
+
+    /* Load Get Started strings (en_UK first, then user language) */
+    load_language('get_started.lang', PORG_PATH, array('language' => 'en_UK', 'no_fallback' => true));
+    load_language('get_started.lang', PORG_PATH);
 
     load_language('urls.lang', PORG_PATH, array('language' => 'en_UK', 'no_fallback' => true));
     load_language('urls.lang', PORG_PATH);
@@ -167,7 +171,7 @@ function porg_load_header()
       $query = '
 SELECT state
   FROM '.PLUGINS_TABLE.'
-  WHERE id = \'piwigo-piwigodotorg\'
+    WHERE id = \''.PORG_ID.'\'
 ;';
       list($state) = pwg_db_fetch_row(pwg_query($query));
       echo $state; exit();
@@ -196,6 +200,52 @@ SELECT state
 
     $porg_root_url = get_absolute_root_url();
     $porg_root_url_piwigodotorg = get_absolute_root_url() . PORG_PATH;
+
+    include(PORG_PATH . '/data/languages.data.php');
+    $switch_languages = array();
+
+    if ($is_production)
+    {
+        if (preg_match('/^(http.*?)([a-z]+\.)?piwigo.org/', $porg_root_url, $matches))
+        {
+            $base_url = str_replace('http://', 'https://', $matches[1]);
+
+            foreach ($porg_subdomains as $subdomain => $lang_code)
+            {
+                $prefix = ('en' == $subdomain) ? '' : $subdomain.'.';
+
+                $switch_languages[] = array(
+                    'url' => $base_url.$prefix.'piwigo.org',
+                    'label' => $porg_languages[$lang_code],
+                );
+            }
+        }
+    }
+    else
+    {
+        $current_path = isset($_SERVER['REQUEST_URI']) ? $_SERVER['REQUEST_URI'] : '/';
+        $path = parse_url($current_path, PHP_URL_PATH);
+        $query = parse_url($current_path, PHP_URL_QUERY);
+        $params = array();
+
+        if (!empty($query))
+        {
+            parse_str($query, $params);
+        }
+
+        unset($params['lang']);
+
+        foreach ($porg_subdomains as $subdomain => $lang_code)
+        {
+            $params['lang'] = $lang_code;
+
+            $switch_languages[] = array(
+                'url' => $path.'?'.http_build_query($params),
+                'label' => $porg_languages[$lang_code],
+            );
+        }
+    }
+
     $template->set_template_dir(PORG_PATH);
     $template->set_filenames(array('header_porg' => realpath(PORG_PATH .'template/header.tpl')));
     $template->assign(
@@ -210,6 +260,7 @@ SELECT state
             'PCOM_PREFIX' => isset($page['porg_pcom_prefix']) ? $page['porg_pcom_prefix'] : '',
             'PORG_IS_PRODUCTION' => preg_match('/^([a-z]+\.)?piwigo\.org$/', $_SERVER['HTTP_HOST']),
             'HEADER_SHOW_HOME' => in_array($user['language'], array('en_UK', 'zh_CN', 'it_IT', 'pt_BR')),
+            'switch_languages' => $switch_languages,
         )
     );
 
@@ -236,6 +287,7 @@ function porg_load_content()
 
     $meta_title = null;
     $meta_description = null;
+    $current_page = 'home';
 
     $porg_root_url = get_absolute_root_url();
     if (isset($_GET['porg']))
@@ -320,6 +372,8 @@ function porg_load_content()
             {
                 porg_display_newsletter($_GET['newsletter_id']);
             }
+
+            $current_page = $porg_page;
 
             $porg_file = porg_page_to_file($porg_page);
             $tpl_file = PORG_PATH . 'template/' . $porg_file . '.tpl';
@@ -458,6 +512,23 @@ function porg_load_content()
         }
     }
 
+    $nav_selected = array(
+        'get_started' => in_array($current_page, array(
+            'pricing'
+        ), true),
+        'product' => in_array($current_page, array(
+            'features'
+        ), true),
+        'users' => in_array($current_page, array(
+        ), true),
+        'support' => in_array($current_page, array(
+        ), true),
+        'behind_code' => in_array($current_page, array(
+        ), true),
+        'news' => in_array($current_page, array(
+        ), true),
+    );
+
 /*
     if ('fr_FR' == $user['language'])
     {
@@ -475,6 +546,7 @@ function porg_load_content()
         array(
             'meta_title' => $meta_title,
             'meta_description' => $meta_description,
+            'NAV_SELECTED' => $nav_selected,
             'PORG_ROOT_URL' => $porg_root_url . PORG_PATH,
         )
     );

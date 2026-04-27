@@ -35,6 +35,8 @@ function porg_get_pages()
     'docker_update' => 'Docker Image Update',
     'mobile-applications' => 'Mobile applications',
     'get-help'=>'Get Help',
+    'components-display' => 'Components display',
+    'pricing' => 'Pricing',
     );
 }
 
@@ -156,6 +158,12 @@ function porg_label_to_page($label)
   if (isset($flip[$label]))
   {
     return $flip[$label];
+  }
+
+  $porg_pages = porg_get_pages();
+  if (isset($porg_pages[$label]))
+  {
+    return $label;
   }
 
   return false;
