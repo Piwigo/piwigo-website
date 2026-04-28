@@ -116,6 +116,7 @@
     </div>
 </nav>
 
+{literal}
 <script>
 $(document).ready(function() {
     $('.submenu_button').on('click', function(e) {
@@ -131,3 +132,4 @@ $(document).ready(function() {
     });
 });
 </script>
+{/literal}

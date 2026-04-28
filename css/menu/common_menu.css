@@ -80,7 +80,7 @@
     .menu-divider,
     .menu-horizontal-divider,
     .menu-footer {
-        display: none;
+        display: none !important;
     }
 
     .column-header {
