@@ -9,7 +9,7 @@
         <div class="footer-logo">
           <img src="{$PORG_ROOT_URL}images/piwigo.org.svg" alt="Piwigo logo">
         </div>
-        <p class="footer-tagline">
+        <p class="p-footer footer-tagline">
           {'Footer Piwigo description part 1'|translate} <br>
           {'Footer Piwigo description part 2'|translate} <br>
           {'Footer Piwigo description part 3'|translate}
@@ -22,9 +22,9 @@
           <h6 class="footer-title">{'Get started'|translate}</h6>
           <div class="footer-get-started-content">
             <ul class="footer-get-started-links">
-              <li><span class="fw-bold">{'Cloud'|translate}</span></li>
-              <li><span class="fw-bold">{'Self hosting'|translate}</span></li>
-              <li><a class="footer-feature-link fw-bold" href="{$PORG_ROOT}{$URL.pricing}">{'Pricing'|translate}</a></li>
+              <li><a class="footer-feature-link" href="{$PORG_ROOT}{$URL.pricing}">{'Cloud'|translate}</a></li>
+              <li><a class="footer-feature-link" href="{$PORG_ROOT}{$URL.pricing}">{'Self hosting'|translate}</a></li>
+              <li><a class="footer-feature-link" href="{$PORG_ROOT}{$URL.pricing}">{'Pricing'|translate}</a></li>
             </ul>
             <div class="footer-get-started-actions">
               {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'Footer Button 1 Plan a demo'|translate}
@@ -47,20 +47,20 @@
             </button>
             <div id="footerMobileDiscover" class="collapse footer-mobile-collapse" data-bs-parent=".footer-mobile-nav-accordion">
               <ul>
-                <li><a class="footer-feature-link" href="{$PORG_ROOT}{$URL.features}#upload">{'Upload &amp; Import'|translate}</a></li>
-                <li><a class="footer-feature-link" href="{$PORG_ROOT}{$URL.features}#organize">{'Organize your media'|translate}</a></li>
-                <li><a class="footer-feature-link" href="{$PORG_ROOT}{$URL.features}#search">{'Search &amp; Find'|translate}</a></li>
-                <li><a class="footer-feature-link" href="{$PORG_ROOT}{$URL.features}#share">{'Share &amp; Collaborate'|translate}</a></li>
-                <li><a class="footer-feature-link" href="{$PORG_ROOT}{$URL.features}#customize">{'Customize &amp; Extend'|translate}</a></li>
-                <li><a class="footer-feature-link" href="{$PORG_ROOT}{$URL.features}#measure">{'Measure &amp; Monitor'|translate}</a></li>
-                <li><a class="footer-feature-link" href="{$PORG_ROOT}{$URL.features}#security">{'Security &amp; privacy'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#upload">{'Upload &amp; Import'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#organize">{'Organize your media'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#search">{'Search &amp; Find'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#share">{'Share &amp; Collaborate'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#customize">{'Customize &amp; Extend'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#measure">{'Measure &amp; Monitor'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#security">{'Security &amp; privacy'|translate}</a></li>
               </ul>
               <ul class="mt-3">
-                <li><span>{'Piwigo AI'|translate|cat: ' ✨'}</span></li>
-                <li><span>{'Mobile apps'|translate}</span></li>
-                <li><span>{'Extensions'|translate}</span></li>
-                <li><span>{'API &amp; Integrations'|translate}</span></li>
-                <li><span>{'Live demos'|translate}</span></li>
+                <li><a class="footer-feature-link footer-menu-item" href="#">{'Piwigo AI'|translate|cat: ' ✨'}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="#">{'Mobile apps'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="#">{'Extensions'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="#">{'API &amp; Integrations'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="#">{'Live demos'|translate}</a></li>
               </ul>
             </div>
           </div>
@@ -73,12 +73,12 @@
             </button>
             <div id="footerMobileUseCases" class="collapse footer-mobile-collapse" data-bs-parent=".footer-mobile-nav-accordion">
               <ul>
-                <li><span>{'Travel &amp; Tourism'|translate}</span></li>
-                <li><span>{'Public Sector'|translate}</span></li>
-                <li><span>{'Companies'|translate}</span></li>
-                <li><span>{'Education &amp; Research'|translate}</span></li>
-                <li><span>{'Nonprofits'|translate}</span></li>
-                <li><span>{'Photographers &amp; Individuals'|translate}</span></li>
+                <li><a class="footer-feature-link footer-menu-item" href="#">{'Travel &amp; Tourism'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="#">{'Public Sector'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="#">{'Companies'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="#">{'Education &amp; Research'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="#">{'Nonprofits'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="#">{'Photographers &amp; Individuals'|translate}</a></li>
               </ul>
               <div class="footer-users-btn">
                 {include file='template/include/buttons/button.tpl' variant='menu_btn_white' label={'Footer Button 3 Meet our users'|translate}
@@ -95,8 +95,8 @@
             </button>
             <div id="footerMobileBehindCode" class="collapse footer-mobile-collapse" data-bs-parent=".footer-mobile-nav-accordion">
               <ul>
-                <li><span>{'About Piwigo'|translate}</span></li>
-                <li><span>{'Contribute'|translate}</span></li>
+                <li><a class="footer-feature-link footer-menu-item" href="#">{'About Piwigo'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="#">{'Contribute'|translate}</a></li>
               </ul>
             </div>
           </div>
@@ -109,11 +109,11 @@
             </button>
             <div id="footerMobileSupport" class="collapse footer-mobile-collapse" data-bs-parent=".footer-mobile-nav-accordion">
               <ul>
-                <li><span>{'Professional support'|translate}</span></li>
-                <li><span>{'Community forum'|translate}</span></li>
-                <li><span>{'Documentation'|translate}</span></li>
-                <li><span>{'Installation guides'|translate}</span></li>
-                <li><span>{'Developer resources'|translate}</span></li>
+                <li><a class="footer-feature-link footer-menu-item" href="#">{'Professional support'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="#">{'Community forum'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="#">{'Documentation'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="#">{'Installation guides'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="#">{'Developer resources'|translate}</a></li>
               </ul>
             </div>
           </div>
@@ -126,11 +126,11 @@
             </button>
             <div id="footerMobileNews" class="collapse footer-mobile-collapse" data-bs-parent=".footer-mobile-nav-accordion">
               <ul>
-                <li><span>{'Latest news'|translate}</span></li>
-                <li><span>{'Blog'|translate}</span></li>
-                <li><span>{'Newsletter'|translate}</span></li>
-                <li><span>{'Product updates'|translate}</span></li>
-                <li><span>{'Coding activity'|translate}</span></li>
+                <li><a class="footer-feature-link footer-menu-item" href="#">{'Latest news'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="#">{'Blog'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="#">{'Newsletter'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="#">{'Product updates'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="#">{'Coding activity'|translate}</a></li>
               </ul>
             </div>
           </div>
@@ -146,22 +146,22 @@
       <div class="col-6 col-md-4 col-lg-2 footer-nav-col d-none d-lg-block">
         <h6 class="footer-title">{'Discover Piwigo'|translate}</h6>
         <ul>
-          <li><a class="footer-feature-link" href="{$PORG_ROOT}{$URL.features}#upload">{'Upload &amp; Import'|translate}</a></li>
-          <li><a class="footer-feature-link" href="{$PORG_ROOT}{$URL.features}#organize">{'Organize your media'|translate}</a></li>
-          <li><a class="footer-feature-link" href="{$PORG_ROOT}{$URL.features}#search">{'Search &amp; Find'|translate}</a></li>
-          <li><a class="footer-feature-link" href="{$PORG_ROOT}{$URL.features}#share">{'Share &amp; Collaborate'|translate}</a></li>
-          <li><a class="footer-feature-link" href="{$PORG_ROOT}{$URL.features}#customize">{'Customize &amp; Extend'|translate}</a></li>
-          <li><a class="footer-feature-link" href="{$PORG_ROOT}{$URL.features}#measure">{'Measure &amp; Monitor'|translate}</a></li>
-          <li><a class="footer-feature-link" href="{$PORG_ROOT}{$URL.features}#security">{'Security &amp; privacy'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#upload">{'Upload &amp; Import'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#organize">{'Organize your media'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#search">{'Search &amp; Find'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#share">{'Share &amp; Collaborate'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#customize">{'Customize &amp; Extend'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#measure">{'Measure &amp; Monitor'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#security">{'Security &amp; privacy'|translate}</a></li>
         </ul>
         <ul class="mt-4">
           <li>
-            <span>{'Piwigo AI'|translate|cat: ' ✨'}</span>
+            <a class="footer-feature-link footer-menu-item" href="#">{'Piwigo AI'|translate|cat: ' ✨'}</a>
           </li>
-          <li><span>{'Mobile apps'|translate}</span></li>
-          <li><span>{'Extensions'|translate}</span></li>
-          <li><span>{'API &amp; Integrations'|translate}</span></li>
-          <li><span>{'Live demos'|translate}</span></li>
+          <li><a class="footer-feature-link footer-menu-item" href="#">{'Mobile apps'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="#">{'Extensions'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="#">{'API &amp; Integrations'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="#">{'Live demos'|translate}</a></li>
         </ul>
       </div>
 
@@ -169,12 +169,12 @@
       <div class="col-6 col-md-4 col-lg-2 footer-nav-col d-none d-lg-block">
         <h6 class="footer-title">{'Use cases'|translate}</h6>
         <ul>
-          <li><span>{'Travel &amp; Tourism'|translate}</span></li>
-          <li><span>{'Public Sector'|translate}</span></li>
-          <li><span>{'Companies'|translate}</span></li>
-          <li><span>{'Education &amp; Research'|translate}</span></li>
-          <li><span>{'Nonprofits'|translate}</span></li>
-          <li><span>{'Photographers &amp; Individuals'|translate}</span></li>
+          <li><a class="footer-feature-link footer-menu-item" href="#">{'Travel &amp; Tourism'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="#">{'Public Sector'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="#">{'Companies'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="#">{'Education &amp; Research'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="#">{'Nonprofits'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="#">{'Photographers &amp; Individuals'|translate}</a></li>
         </ul>
         <div class="footer-users-btn">
           {include file='template/include/buttons/button.tpl' variant='menu_btn_white' label={'Footer Button 3 Meet our users'|translate}
@@ -186,17 +186,17 @@
       <div class="col-6 col-md-4 col-lg-2 footer-nav-col d-none d-lg-block">
         <h6 class="footer-title">{'Behind the code'|translate}</h6>
         <ul>
-          <li><span>{'About Piwigo'|translate}</span></li>
-          <li><span>{'Contribute'|translate}</span></li>
+          <li><a class="footer-feature-link footer-menu-item" href="#">{'About Piwigo'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="#">{'Contribute'|translate}</a></li>
         </ul>
 
         <h6 class="footer-title mt-4">{'Support'|translate}</h6>
         <ul>
-          <li><span>{'Professional support'|translate}</span></li>
-          <li><span>{'Community forum'|translate}</span></li>
-          <li><span>{'Documentation'|translate}</span></li>
-          <li><span>{'Installation guides'|translate}</span></li>
-          <li><span>{'Developer resources'|translate}</span></li>
+          <li><a class="footer-feature-link footer-menu-item" href="#">{'Professional support'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="#">{'Community forum'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="#">{'Documentation'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="#">{'Installation guides'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="#">{'Developer resources'|translate}</a></li>
         </ul>
       </div>
 
@@ -204,11 +204,11 @@
       <div class="col-6 col-md-4 col-lg-2 footer-nav-col d-none d-lg-block">
         <h6 class="footer-title">{'News'|translate}</h6>
         <ul>
-          <li><span>{'Latest news'|translate}</span></li>
-          <li><span>{'Blog'|translate}</span></li>
-          <li><span>{'Newsletter'|translate}</span></li>
-          <li><span>{'Product updates'|translate}</span></li>
-          <li><span>{'Coding activity'|translate}</span></li>
+          <li><a class="footer-feature-link footer-menu-item" href="#">{'Latest news'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="#">{'Blog'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="#">{'Newsletter'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="#">{'Product updates'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="#">{'Coding activity'|translate}</a></li>
         </ul>
         <div class="footer-subscribe-btn">
           {include file='template/include/buttons/button.tpl' variant='menu_btn_white' label={'Footer Button 4 Subscribe to newsletter'|translate}
@@ -228,13 +228,13 @@
 
         <!-- Legal links -->
         <div class="footer-bottom-legal">
-          <p class="footer-copyright">Piwigo © 2002 – {$CURRENT_YEAR}</p>
+          <p class="footer-menu-item footer-copyright">Piwigo © 2002 – {$CURRENT_YEAR}</p>
           <ul class="footer-legal-links">
-          <li><span>{'Footer legal 1 Privacy Policy'|translate}</span></li>
-          <li><span>{'Footer legal 2 Cookie Policy'|translate}</span></li>
-          <li><span>{'Footer legal 3 Legal Notice'|translate}</span></li>
-          <li><span>{'Footer legal 4 Terms of Use'|translate}</span></li>
-          <li><span>{'Footer legal 5 GDPR'|translate}</span></li>
+          <li><a class="footer-feature-link footer-menu-item" href="#">{'Footer legal 1 Privacy Policy'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="#">{'Footer legal 2 Cookie Policy'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="#">{'Footer legal 3 Legal Notice'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="#">{'Footer legal 4 Terms of Use'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="#">{'Footer legal 5 GDPR'|translate}</a></li>
           </ul>
         </div>
 
