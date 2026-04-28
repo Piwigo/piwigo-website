@@ -12,12 +12,15 @@ $(document).ready(function() {
             $('#desc-selfhosted').addClass('d-none');
             $('#desc-cloud').removeClass('d-none').fadeIn(300);
             $('#card-selfhosted').addClass('d-none-card');
+            $('#cloud-storage').removeClass('d-none-card');
         } else {
             $('#pricing-cloud-content').hide();
             $('#pricing-selfhosted-content').fadeIn(300);
             $('#desc-cloud').addClass('d-none');
             $('#desc-selfhosted').removeClass('d-none').fadeIn(300);
             $('#card-selfhosted').removeClass('d-none-card');
+            $('#cloud-storage').addClass('d-none-card');
+            
         }
         if (updateUrl) {
             const urlValue = (type === 'cloud') ? 'cloud' : 'self_hosted';

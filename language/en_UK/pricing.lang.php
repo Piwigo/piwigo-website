@@ -8,4 +8,8 @@ $lang['toggle description 2'] = '<span class="main-orange-text">Download Piwigo 
 $lang['title selfhosted card'] = 'Would you like to deploy<br>Piwigo on your own<br>environment?';
 $lang['selfhosted description card'] = '<span class="main-orange-text">Piwigo is free and open-source software</span>. Install Piwigo on your infrastructure if you have the skills to configure and administer it.
 And if you need help installing, configuring, or using Piwigo, we offer dedicated services for organizations hosting Piwigo on their own server.';
+
+$lang['storage big title'] = 'The storage space included in your<br>offer is not enough for you?';
+$lang['storage big description'] = 'You can order additional storage space. The price will be added to that of your subscription (billed annually).';
+$lang['storage downloader'] = 'Download our price as a pdf';
 ?>

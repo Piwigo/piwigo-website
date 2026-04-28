@@ -44,6 +44,9 @@
 
 <div id="pricing-content-cloud" class="pricing-content">
     {include file="template/include/card/pricing_opt_display.tpl"}
+    <div id="cloud-storage" class="pricing-storage-content d-none-card">
+        {include file="template/pricing/cloud.tpl" }
+    </div>
 </div>
 
 <div id="pricing-content-selfhosted" class="pricing-content d-none">
