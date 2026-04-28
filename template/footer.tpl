@@ -219,7 +219,7 @@
     </div><!-- /row -->
   </div><!-- /container -->
 
-  <hr class="footer-divider">
+  <hr class="footer-divider-desktop">
 
   <!-- ── Bottom bar ── -->
   <div class="footer-bottom">
@@ -228,6 +228,7 @@
 
         <!-- Legal links -->
         <div class="footer-bottom-legal">
+          <hr class="footer-divider-mobile">
           <p class="footer-menu-item footer-copyright">Piwigo © 2002 – {$CURRENT_YEAR}</p>
           <ul class="footer-legal-links">
           <li><a class="footer-feature-link footer-menu-item" href="#">{'Footer legal 1 Privacy Policy'|translate}</a></li>

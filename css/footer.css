@@ -121,15 +121,19 @@
 }
 
 .footer-users-btn .btn-menu {
-  /* Extended width to better match mockup proportions */
-  min-width: 170px;
+  /* Ensure button stays within column width */
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
   justify-content: center;
   margin-top: 30px;
 }
 
 .footer-subscribe-btn .btn-menu {
-  /* Keep newsletter button visually prominent */
-  min-width: 200px;
+  /* Keep newsletter button responsive */
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
   justify-content: center;
   margin-top: 30px;
 }
@@ -146,12 +150,16 @@
   padding: 8px 20px;
 }
 
-.footer-divider {
+.footer-divider-desktop {
   border: 0;
   border-top: 1px solid var(--grey);
   margin: 40px 6% 20px 6%;
   opacity: 1;
   width: auto;
+}
+
+.footer-divider-mobile {
+  display: none;
 }
 
 .footer-bottom {
@@ -358,8 +366,8 @@
   }
 
   .footer-get-started-actions {
-    width: 170px;
-    flex-shrink: 0;
+    flex: 1;
+    min-width: 0;
     gap: 8px;
   }
 
@@ -374,6 +382,7 @@
   .footer-mobile-nav {
     display: block;
     margin-top: 2px;
+    margin-bottom: 10px;
   }
 
   .footer-users-btn .btn-menu {
@@ -401,8 +410,16 @@
     justify-content: center;
   }
 
-  .footer-divider {
+  .footer-divider-desktop {
     display: none;
+  }
+
+  .footer-divider-mobile {
+    display: block;
+    border: 0;
+    border-top: 1px solid var(--grey);
+    opacity: 1;
+    width: 100%;
   }
 
   .footer-bottom-main {
@@ -468,5 +485,11 @@
   .footer-legal-links li {
     text-align: center;
     margin-bottom: 0px !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+  .footer-get-started {
+    margin-top: 30px;
   }
 }
