@@ -217,5 +217,6 @@
     </div>
 </section>
 
-<script src="{$PORG_ROOT_URL_PLUGINS}js/pricing_custom_card.js"></script>
-<script src="{$PORG_ROOT_URL_PLUGINS}js/pricing_plugin_card.js"></script>
+{* <script src="{$PORG_ROOT_URL_PLUGINS}js/pricing_custom_card.js"></script>
+<script src="{$PORG_ROOT_URL_PLUGINS}js/pricing_plugin_card.js"></script> *}
+<script src="{$PORG_ROOT_URL_PLUGINS}js/pricing_tooltip.js"></script>
