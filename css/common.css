@@ -4,9 +4,11 @@ Colors
 :root {
   --main_orange: #ff7700;
   --secondary_orange: #f9d8b8;
+  --clear_orange: #FFF2E5;
 
   --main_pink: #ff3363;
   --secondary_pink: #f6c4d1;
+  --clear_pink : #FFEEF2;
 
   --clear: #ffffff;
   --grey: #f7f7f7;
@@ -18,6 +20,7 @@ Colors
   --secondary_flash_green: #d8f4ec;
   --accent_green: #329f83;
   --dark_green: #29554a;
+  --clear_green : #E2FAF4;
 }
 
 /******

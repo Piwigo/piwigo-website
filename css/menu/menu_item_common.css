@@ -121,21 +121,21 @@
 }
 
 .icon-box.feature-submenu {
-  background-color: #FFEEF2 !important;
+  background-color: var(--clear_pink) !important;
 }
 .icon-box.feature-submenu i {
   color: var(--main_pink) !important;
 }
 
 .icon-box.use-case-submenu {
-  background-color: #FFF2E5 !important;
+  background-color: var(--clear_orange) !important;
 }
 .icon-box.use-case-submenu i {
   color: var(--main_orange) !important;
 }
 
 .icon-box.explore-submenu {
-  background-color: #E2FAF4 !important;
+  background-color: var(--clear_green) !important;
 }
 .icon-box.explore-submenu i {
   color: var(--accent_green) !important;
@@ -190,17 +190,17 @@
   }
 
   .header-pink {
-    background-color: #F6C4D1 !important;
+    background-color: var(--clear_pink) !important;
     color: var(--main_pink) !important;
   }
 
   .header-orange {
-    background-color: var(--secondary_orange) !important;
+    background-color: var(--clear_orange) !important;
     color: var(--main_orange) !important;
   }
 
   .header-green {
-    background-color: var(--secondary_flash_green) !important;
+    background-color: var(--clear_green) !important;
     color: var(--accent_green) !important;
   }
 }

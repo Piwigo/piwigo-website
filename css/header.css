@@ -228,6 +228,14 @@
   .nav-btn-wrapper:hover .icon-down-open {
     transform: rotate(180deg);
   }
+
+}
+
+@media (max-width: 1200px) {
+  .header-buttons{
+    display: none !important;
+  }
+  
 }
 
 .icon-down-open {
@@ -296,6 +304,7 @@
     align-items: flex-start !important;
     width: 100%;
     margin-bottom: auto;
+    gap: 10px;
   }
 
   .nav-btn-wrapper {
