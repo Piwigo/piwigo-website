@@ -55,7 +55,7 @@
     font-family: "Red Hat Display", sans-serif;
 }
 
-@media (max-width: 677px) {
+@media (max-width: 1024px) {
     .menu-mega-container {
         width: 100%;
         max-width: 100%;

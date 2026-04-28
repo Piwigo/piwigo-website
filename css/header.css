@@ -183,9 +183,12 @@
   /* padding: 10px 0; */
 }
 
+.mobile-brand {
+  display: none;
+}
 /* ONLY FOR PC: Show submenu on hover */
 
-@media (min-width: 801px) {
+@media (min-width: 1024px) {
   .nav-btn-wrapper:hover .mobile-sub-content {
     display: block !important;
     position: absolute;
@@ -276,6 +279,7 @@
   }
 
   .mobile-brand {
+    display: block;
     width: 122px;
     height: 30px;
   }
