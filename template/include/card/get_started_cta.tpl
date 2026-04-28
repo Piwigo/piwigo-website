@@ -31,7 +31,7 @@
 						</li>
 					</ul>
 
-					<div class="d-flex flex-wrap align-items-center gap-2 gap-md-3">
+					<div class="d-flex align-items-center gap-2 gap-md-3">
 						{include file='template/include/buttons/button.tpl' variant='cta_primary' label={'Get started CTA btn 1'|translate}
 						href='#'}
 						{include file='template/include/buttons/button.tpl' variant='cta_secondary' label={'Get started CTA btn 2'|translate}

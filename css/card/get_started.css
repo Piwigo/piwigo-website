@@ -141,6 +141,8 @@ CTA
 
   .get-started-subtitle {
     max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .get-started-list {
@@ -148,14 +150,18 @@ CTA
   }
 
   .get-started-copy .btn-cta {
-    min-width: 170px;
+    min-width: auto;
+    flex: 1;
   }
 
   .get-started-copy .btn-cta,
   .get-started-copy .cta-secondary {
-    width: 100%;
-    min-width: 0;
     justify-content: center;
+  }
+
+  .get-started-copy > .d-flex {
+    flex-wrap: nowrap;
+    gap: 12px;
   }
 
   .get-started-list li {
@@ -163,11 +169,23 @@ CTA
   }
 
   .feature-icon {
-    margin-top: 2px;
+    display: none;
   }
 
   .get-started-list li > span:not(.feature-icon) {
     font-size: inherit;
+  }
+  
+  .green-text {
+    color: var(--main_orange) !important;
+  }
+
+  .get-started-copy h1,
+  .get-started-subtitle,
+  .get-started-list li,
+  .get-started-list li > span:not(.feature-icon) {
+    text-align: center;
+    justify-content: center !important;
   }
 }
 
