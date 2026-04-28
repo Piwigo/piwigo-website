@@ -25,7 +25,11 @@
 .faq-arrow {
     color: var(--main_flash_green);
     font-size: 1.2rem;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.faq-section .accordion-item:hover .faq-arrow {
+    color: var(--main_orange);
 }
 
 .accordion-button:not(.collapsed) .faq-arrow {

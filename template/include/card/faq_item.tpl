@@ -1,7 +1,7 @@
 <div class="col-12 col-md-6" style="padding: 0 30px !important;">
     <div class="accordion accordion-flush faq-section" id="faqPiwigo-{$faq_id}">
 
-        <div class="accordion-item mb-3 border-0 shadow-sm">
+        <div class="accordion-item mb-3 border-0">
             <h2 class="accordion-header" id="heading-{$faq_id}">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapse-{$faq_id}" aria-expanded="false" aria-controls="collapse-{$faq_id}">
