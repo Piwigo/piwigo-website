@@ -444,3 +444,88 @@ h4 {
   color: var(--dark);
   line-height: 120%;
 }
+
+@media (max-width: 768px) {
+  h1 {
+  font-family: "Sora", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 32px;
+  text-align: left;
+  color: var(--dark);
+  line-height: 100%;
+}
+
+h2 {
+  font-family: "Sora", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 36px;
+  text-align: left;
+  color: var(--dark);
+  line-height: 120%;
+}
+
+h3 {
+  font-family: "Sora", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 24px;
+  text-align: left;
+  color: var(--dark);
+  line-height: 120%;
+}
+
+.test-sub-h3 {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 14px;
+  text-align: left;
+  color: var(--dark);
+  line-height: 100%;
+}
+
+.features-menu-item {
+  font-family: "Sora", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px;
+  text-align: center;
+  color: var(--dark);
+  line-height: 100%;
+}
+
+.h2-top-page {
+  font-family: "Sora", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 20px;
+  text-align: left;
+  color: var(--dark);
+  line-height: 120%;
+}
+
+.h2-sub-top-page {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 550;
+  font-style: italic;
+  font-size: 18px;
+  text-align: left;
+  color: var(--dark);
+  line-height: 100%;
+}
+}
+
+/******
+Form
+******/
+.ohnohoney {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    width: 0;
+    z-index: -1;
+}

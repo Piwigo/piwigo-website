@@ -1,4 +1,4 @@
-<div class="row align-items-center g-5">
+<div class="row align-items-center g-3">
 
     <div class="col-12 col-md-6 {if $reverse}order-md-last{/if}">
         <div class="feature-copy">

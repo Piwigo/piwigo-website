@@ -1,62 +1,86 @@
 .feature-parts-stack {
-	display: flex;
-	flex-direction: column;
-	gap: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
 }
 
 .feature-image-container {
-	display: flex;
-	justify-content: center;
-	background: transparent;
+  display: flex;
+  justify-content: flex-end;
+  background: transparent;
+}
+
+.row .col-md-6:has(.feature-image-container) {
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .feature-image {
-	display: block;
-	width: 510px;
-	max-width: 100%;
-	height: auto;
-	background: transparent;
-	box-shadow: none;
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  background: transparent;
+  box-shadow: none;
+}
+
+.feature-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 480px;
+  margin-left: auto;
+}
+
+.col-md-6.order-md-last .feature-copy {
+  margin-left: 0;
+  margin-right: auto;
 }
 
 .feature-description-mobile {
-	display: none;
+  display: none;
 }
 
 @media (max-width: 768px) {
+  .feature-parts-stack {
+    gap: 70px;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
 
-	.feature-parts-stack {
-		gap: 70px;
-		padding: 0 20px;
-		box-sizing: border-box;
-	}
+  .feature-title {
+    text-align: center;
+    margin-bottom: 0 !important;
+  }
 
-	.feature-title {
-		text-align: center;
-		margin-bottom: 0 !important;
-	}
+  .feature-description-desktop {
+    display: none;
+  }
 
-	.feature-description-desktop {
-		display: none;
-	}
+  .feature-description-mobile {
+    display: block;
+  }
 
-	.feature-description-mobile {
-		display: block;
-	}
+  .feature-image-container {
+    justify-content: flex-start;
+  }
 
-	.feature-image-container {
-		justify-content: flex-start;
-	}
+  .feature-image {
+    width: 100%;
+    max-width: 510px;
+  }
 
-	.feature-image {
-		width: 100%;
-		max-width: 510px;
-	}
+  .col-12 .btn-cta {
+    max-width: 100%;
+    white-space: normal;
+    word-break: break-word;
+    height: auto;
+  }
 
-	.col-12 .btn-cta {
-		max-width: 100%;
-		white-space: normal;
-		word-break: break-word;
-		height: auto;
-	}
+  .feature-copy,
+  .col-12.d-md-none {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
