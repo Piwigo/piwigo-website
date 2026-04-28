@@ -39,6 +39,14 @@
   text-decoration: none;
 }
 
+.footer-feature-link:hover{
+  font-weight: 550;
+}
+
+.footer-get-started-links .footer-feature-link:hover {
+  text-decoration: underline !important;
+}
+
 .footer-feature-link:hover {
   color: inherit;
   text-decoration: none;
@@ -165,7 +173,7 @@
 }
 
 .footer-copyright {
-  margin-bottom: 4px;
+  margin-bottom: 3px;
 }
 
 .footer-legal-links {
@@ -220,6 +228,16 @@
 
 .footer-social-icon-mailint {
   font-size: 30px;
+}
+
+.footer-social-icon:hover {
+  background-color: var(--main_orange);
+  color: var(--clear);
+}
+
+.footer-social-icon-linkedin:hover .icon-linkedin {
+  background: var(--clear);
+  color: var(--main_orange);
 }
 
 .footer-nav-col ul + ul {
