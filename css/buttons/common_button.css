@@ -4,6 +4,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  position: relative;
   height: 32px;
   padding: 9px 26px;
   border-radius: 4px;
@@ -13,12 +14,21 @@
   color: var(--clear);
   white-space: nowrap;
   text-decoration: none;
-  transition: border-color .3s ease-out;
+	transition: box-shadow 300ms ease-out;
+}
+
+.btn-cta > * {
+  position: relative;
+  z-index: 1;
+}
+
+.btn-cta span {
+  position: relative;
+  z-index: 1;
 }
 
 .btn-cta:hover,
 .btn-cta:focus {
-  border: 2px solid transparent;
   text-decoration: none;
   box-shadow: 0px 4px 10px 0px #77777733;
 }
@@ -33,12 +43,23 @@
   color: var(--clear);
 }
 
-.cta-primary:hover,
-.cta-primary:focus {
+.cta-primary::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  border: 2px solid transparent;
   background:
     linear-gradient(var(--main_orange), var(--main_orange)) padding-box,
     linear-gradient(92.17deg, var(--main_pink) 19.22%, var(--main_orange) 96.41%) border-box;
-  color: var(--clear);
+  opacity: 0;
+  transition: opacity 300ms ease-out;
+  z-index: 0;
+}
+
+.cta-primary:hover::before,
+.cta-primary:focus::before {
+  opacity: 1;
 }
 
 .cta-secondary {
@@ -46,12 +67,23 @@
   color: var(--dark);
 }
 
-.cta-secondary:hover,
-.cta-secondary:focus {
+.cta-secondary::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  border: 2px solid transparent;
   background:
     linear-gradient(var(--grey), var(--grey)) padding-box,
     linear-gradient(92.17deg, #D9D9D9 19.22%, var(--grey) 96.41%) border-box;
-  color: var(--dark);
+  opacity: 0;
+  transition: opacity 300ms ease-out;
+  z-index: 0;
+}
+
+.cta-secondary:hover::before,
+.cta-secondary:focus::before {
+  opacity: 1;
 }
 
 .cta-primary-green {
@@ -59,12 +91,23 @@
   color: var(--dark_green);
 }
 
-.cta-primary-green:hover,
-.cta-primary-green:focus {
+.cta-primary-green::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  border: 2px solid transparent;
   background:
     linear-gradient(var(--main_flash_green), var(--main_flash_green)) padding-box,
     linear-gradient(92.17deg, var(--accent_green) 19.22%, var(--main_flash_green) 96.41%) border-box;
-  color: var(--dark_green);
+  opacity: 0;
+  transition: opacity 300ms ease-out;
+  z-index: 0;
+}
+
+.cta-primary-green:hover::before,
+.cta-primary-green:focus::before {
+  opacity: 1;
 }
 
 /* Menu button templates */
@@ -72,6 +115,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  position: relative;
   height: 30px;
   padding: 8px 4px;
   border-radius: 4px;
@@ -80,12 +124,16 @@
   opacity: 1;
   white-space: nowrap;
   text-decoration: none;
-  transition: border-color .3s ease-out;
+  transition: box-shadow 300ms ease-out, border-color 300ms ease-out;
+}
+
+.btn-menu span {
+  position: relative;
+  z-index: 1;
 }
 
 .btn-menu:hover,
 .btn-menu:focus {
-  border: 2px solid transparent;
   text-decoration: none;
   box-shadow: 0px 4px 10px 0px #77777733;
 }
@@ -95,32 +143,57 @@
   text-decoration: none;
 }
 
+/* — Green — */
 .menu-btn-green {
   background: var(--main_flash_green);
   color: var(--dark_green);
 }
 
-.menu-btn-green:hover,
-.menu-btn-green:focus {
+.menu-btn-green::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  border: 2px solid transparent;
   background:
     linear-gradient(var(--main_flash_green), var(--main_flash_green)) padding-box,
     linear-gradient(92.17deg, var(--accent_green) 19.22%, var(--main_flash_green) 96.41%) border-box;
-  color: var(--dark_green);
+  opacity: 0;
+  transition: opacity 300ms ease-out;
+  z-index: 0;
 }
 
+.menu-btn-green:hover::before,
+.menu-btn-green:focus::before {
+  opacity: 1;
+}
+
+/* — White — */
 .menu-btn-white {
   background: var(--grey);
   color: var(--dark);
 }
 
-.menu-btn-white:hover,
-.menu-btn-white:focus {
+.menu-btn-white::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  border: 2px solid transparent;
   background:
     linear-gradient(var(--grey), var(--grey)) padding-box,
     linear-gradient(92.17deg, #D9D9D9 19.22%, var(--grey) 96.41%) border-box;
-  color: var(--dark);
+  opacity: 0;
+  transition: opacity 300ms ease-out;
+  z-index: 0;
 }
 
+.menu-btn-white:hover::before,
+.menu-btn-white:focus::before {
+  opacity: 1;
+}
+
+/* — Blue — */
 .menu-btn-blue {
   background: #D8F4EC;
   color: var(--dark_green);
@@ -133,17 +206,30 @@
   color: var(--dark_green);
 }
 
+
+/* — Orange — */
 .menu-btn-orange {
   background: var(--main_orange);
   color: var(--clear);
 }
 
-.menu-btn-orange:hover,
-.menu-btn-orange:focus {
+.menu-btn-orange::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  border: 2px solid transparent;
   background:
     linear-gradient(var(--main_orange), var(--main_orange)) padding-box,
     linear-gradient(92.17deg, var(--main_pink) 19.22%, var(--main_orange) 96.41%) border-box;
-  color: var(--clear);
+  opacity: 0;
+  transition: opacity 300ms ease-out;
+  z-index: 0;
+}
+
+.menu-btn-orange:hover::before,
+.menu-btn-orange:focus::before {
+  opacity: 1;
 }
 
 .buttons-display-showcase {

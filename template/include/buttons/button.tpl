@@ -24,4 +24,4 @@
   {assign var='default_label' value='CTA principale'}
 {/if}
 
-<a href="{$href|default:'#'}" class="{$classes}">{$label|default:$default_label}</a>
+<a href="{$href|default:'#'}" class="{$classes}"><span>{$label|default:$default_label}</span></a>
