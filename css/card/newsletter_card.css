@@ -11,8 +11,7 @@
   margin-left: auto;
   margin-right: auto;
   box-shadow: 0px 0px 4px 0px rgba(60, 60, 60, 0.2);
-  animation-timing-function: ease-out;
-  animation-duration: 300ms;
+  transition: box-shadow 300ms ease-out;
 }
 
 .news-card:hover {
@@ -77,18 +76,21 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .news-card {
-    max-width: 362px;
-    height: 400px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
   }
 
-  .news-card-img img {
-    height: 225px;
+  .newsletter-card-col {
+    padding: 0 16px !important;
   }
 
-  .news-card-text {
-    -webkit-line-clamp: 3;
-    max-height: calc(1.4em * 3);
+  .news-card-title {
+    overflow: visible;
+    text-overflow: unset;
+    display: block;
+    -webkit-line-clamp: unset;
   }
 }
