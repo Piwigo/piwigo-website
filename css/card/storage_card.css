@@ -96,9 +96,9 @@
   }
 
   .storage-popover-content {
-    width: 300px !important;
+    width: 225px !important;
     height: auto !important;
-    padding: 15px !important;
+    padding: 25px !important;
   }
 
   .storage-grid-container {
@@ -110,12 +110,10 @@
   .storage-option-card {
     flex: 1 1 100% !important;
     flex-direction: row !important;
-    justify-content: space-between !important;
+    justify-content: space-evenly !important;
     align-items: center !important;
     text-align: left !important;
     width: 100% !important;
-    border-bottom: 1px solid #f0f0f0;
-    padding-bottom: 8px !important;
     width: 100% !important;
   }
 

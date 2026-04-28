@@ -318,7 +318,7 @@ body.custom-tooltip-open .info-icon-container:hover .global-hover-popover {
     left: 50%;
   }
   .storage-hover-popover {
-    width: 300px;
+    width: 225px;
   }
   .global-hover-popover {
     width: 225px;
