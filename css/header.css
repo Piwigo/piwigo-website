@@ -167,7 +167,7 @@
   color: var(--clear) !important;
 }
 
-.header-mail-btn:hover i{
+.header-mail-btn:hover i {
   color: var(--clear) !important;
 }
 
@@ -228,14 +228,17 @@
   .nav-btn-wrapper:hover .icon-down-open {
     transform: rotate(180deg);
   }
-
 }
 
 @media (max-width: 1200px) {
-  .header-buttons{
+  .header-buttons {
     display: none !important;
   }
-  
+
+  /* .nav-btn-wrapper:focus .mobile-sub-content,
+  .nav-btn-wrapper:focus-within .mobile-sub-content {
+    display: block !important;
+  } */
 }
 
 .icon-down-open {
@@ -246,7 +249,7 @@
   transform: rotate(180deg);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .navbar-collapse,
   .navbar-collapse.collapse,
   .navbar-collapse.collapsing,

@@ -115,3 +115,19 @@
         </div>
     </div>
 </nav>
+
+<script>
+$(document).ready(function() {
+    $('.submenu_button').on('click', function(e) {
+        var isIpadAir = window.innerWidth >= 820 && window.innerWidth <= 1180;
+
+        if (isIpadAir) {
+            e.preventDefault();
+            var $subContent = $(this).next('.mobile-sub-content');
+            $subContent.toggle();
+            $(this).find('.icon-down-open').toggleClass('icon-rotate-180');
+        
+        }
+    });
+});
+</script>
