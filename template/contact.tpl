@@ -1,107 +1,258 @@
-  {literal}
+<link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/pages/contact.css">
+<link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/buttons/common_button.css">
+
+{literal}
   <script type="text/javascript">
-  $(document).ready(function() {
-    $('#form-submit').click(function(e) {
+    $(document).ready(function() {
+
+      const urlInput = jQuery('#form-piwigo-url');
+      const urlHelp = jQuery('#urlHelp');
+
+      const emailInput = jQuery('#form-email');
+      const emailHelp = jQuery('#emailHelp');
+      const emailWarningIcon = jQuery('#emailWarningIcon');
+      const emailCheckIcon = jQuery('#emailCheckIcon');
+
+      const messageInput = jQuery('#form-message');
+
+      // hide input help texts
+      jQuery(urlHelp).hide();
+      jQuery(emailHelp).hide();
+      jQuery(emailWarningIcon).hide();
+      jQuery(emailCheckIcon).hide();
+
+      function updateEmailValidationState(value) {
+        if (value === '') {
+          jQuery(emailHelp).hide();
+          jQuery(emailWarningIcon).hide();
+          jQuery(emailCheckIcon).hide();
+          jQuery(emailInput).removeClass('is-invalid');
+          return;
+        }
+
+        if (!isValidEmail(value)) {
+          jQuery(emailHelp).show();
+          jQuery(emailWarningIcon).show();
+          jQuery(emailCheckIcon).hide();
+          jQuery(emailInput).addClass('is-invalid');
+          return;
+        }
+
+        jQuery(emailHelp).hide();
+        jQuery(emailWarningIcon).hide();
+        jQuery(emailCheckIcon).show();
+        jQuery(emailInput).removeClass('is-invalid');
+      }
+
+      // URL input handler, make sure url is valid and it can be without https:://
+      jQuery(urlInput).on('input', function() {
+        const value = $(this).val().trim();
+
+        if (value === '') {
+          jQuery(urlHelp).hide();
+          jQuery(this).removeClass('is-invalid');
+          checkFormValidity();
+          return;
+        }
+
+        if (!isValidDomain(value)) {
+          jQuery(urlHelp).show();
+          jQuery(this).addClass('is-invalid');
+        } else {
+          jQuery(urlHelp).hide();
+          jQuery(this).removeClass('is-invalid');
+        }
+
+        checkFormValidity();
+      });
+
+      // Email input handler
+      jQuery(emailInput).on('input', function() {
+        const value = jQuery(this).val().trim();
+
+        updateEmailValidationState(value);
+
+        checkFormValidity();
+      });
+
+      jQuery(messageInput).on('input', function() {
+        checkFormValidity();
+      });
+
+      // URL validator
+      function isValidDomain(url) {
+        const pattern = /^(https?:\/\/)?([a-z0-9-]+\.)+[a-z]{2,}(\/.*)?$/i;
+        return pattern.test(url);
+      }
+
+      // Email validator
+      function isValidEmail(email) {
+        const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return pattern.test(email);
+      }
+
+      // Enable/disable submit button based on input validation
+      function checkFormValidity() {
+        const emailValid = isValidEmail(jQuery(emailInput).val().trim());
+        const urlValid = jQuery(urlInput).val().trim() === '' || isValidDomain(jQuery(urlInput).val()
+          .trim()); // optional URL
+        const messageValid = jQuery('#form-message').val().trim() !== '';
+
+        const submitBtn = jQuery('#form-submit');
+
+        if (emailValid && urlValid && messageValid) {
+          submitBtn.prop('disabled', false).removeClass('disabled');
+        } else {
+          submitBtn.prop('disabled', true).addClass('disabled');
+        }
+      }
+
+      // Initialize button state
+      updateEmailValidationState(jQuery(emailInput).val().trim());
+      checkFormValidity();
+
+      jQuery('#form-submit').click(function(e) {
         e.preventDefault();
 
-        if (jQuery("#form-submit").hasClass('disabled') || $(this).data("state") == "push") {
+        if (jQuery("#form-submit").hasClass('disabled') || jQuery(this).data("state") == "push") {
           console.log("oula");
           return false;
         }
-        $(this).data("state", "push");
-        var subject = $('input[name=sortType]:checked').val();
-        if (subject == null)
-          subject = "Misc";
-        var email = $("#form-email").val();
-        var message = $("#form-message").val();
-        var key = $("#form-key").val();
 
-        var honeyMessage = $("#message").val();
+        jQuery(this).data("state", "push");
 
-        if (null == honeyMessage)
-        {
+        let email = jQuery("#form-email").val();
+        let message = jQuery("#form-message").val();
+        let piwigoUrl = jQuery("#form-piwigo-url").val();
+        let key = jQuery("#form-key").val();
 
-          $.ajax({
-              type: "POST",
-              url: "ws.php?format=json",
-              dataType: "json",
-              data: {
-                method: 'porg.contact.send',
-                email: email,
-                subject: subject,
-                message: message,
-                key: key
-              },
-              success : function(data) {
-                  if (data.code == "200") {
-                    $("form").remove();
-                    $(".container-contact .row").append('<div class="contact-success text-center"><p><i class="icon-ok"></i> Thanks for contacting us! We will be in touch with you shortly.</p></div>');
-                  } else {
-                      $(".email-error").html("<ul class='list-unstyled' style='color: #a94442;'><li>"+data.msg+"<li></ul>");
-                      $("#form-submit").data("state", "not-push");
-                  }
-              },
-              error : function(data) {
-                console.log("[error] data.code="+data.code);
-                $(".email-error").html("<ul class='list-unstyled' style='color: #a94442;'><li>"+data.message+"<li></ul>");
-                      $("#form-submit").data("state", "not-push");
-              }
-          });
-        }
-      });
+      //If the honeyMessage has something in it then its a bot and we don't want it to send
+      var honeyMessage = jQuery("#message").val();
+
+      if (!honeyMessage) {
+        jQuery.ajax({
+          type: "POST",
+          url: "ws.php?format=json",
+          dataType: "json",
+          data: {
+            method: 'porg.contact.send',
+            email: email,
+            message: message,
+            key: key,
+            piwigo_url: piwigoUrl
+          },
+          success: function(data) {
+            if (data.code == "200") {
+              // Hide the form and display success message
+              jQuery('.contact_form').hide();
+              jQuery('#success').show();
+
+              // Clear all form fields
+              jQuery('#form-email, #form-message, #form-piwigo-url, #email').val('');
+
+              // Hide help texts
+              jQuery('#urlHelp, #emailHelp').hide();
+              jQuery('#emailWarningIcon, #emailCheckIcon').hide();
+
+              // Remove validation classes
+              jQuery('#form-email, #form-piwigo-url').removeClass('is-invalid');
+
+              // Disable submit button until fields are valid again
+              jQuery('#form-submit').prop('disabled', true).addClass('disabled');
+
+
+            } else {
+              jQuery('#error').show();
+              jQuery(".error_message span").html(
+                "<ul class='list-unstyled' style='color:#a94442'><li>" + data.msg + "</li></ul>"
+              );
+              jQuery("#form-submit").data("state", "not-push");
+            }
+          },
+          error: function(data) {
+            console.log("[error] data.code=" + data.code);
+            jQuery(".email-error").html("<ul class='list-unstyled' style='color: #a94442;'><li>" + data
+              .message + "<li></ul>");
+            jQuery("#form-submit").data("state", "not-push");
+          }
+        });
+      }
+    });
   });
-  </script>
-  {/literal}
+</script>
+{/literal}
 
-  <section class="container-fluide container-fluide-contact">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h1>{'Contact us'|translate}</h1>
-          <p>{'porg_contact_desc1'|translate} {'porg_contact_desc2'|translate} {'porg_contact_desc3'|translate}</p>
+<section class="contact-header">
+  <div class="container">
+    <div class="row g-4 align-items-start">
+      <div class="col-12 col-md-6">
+        <div class="contact-form-split-copy">
+          <h1>{'porg_contact_title'|translate}</h1>
+          <p>{'porg_contact_desc1'|translate}</p>
+          <p>{'porg_contact_desc2'|translate}</p>
         </div>
-        <div class="col-md-6 contact-logo">
+        <img class="contact-header-image img-fluid mt-3" src="{$PORG_ROOT_URL}images/contact/contact_hero.png"
+          alt="Contact us">
+      </div>
+
+      <div class="col-12 col-md-6">
+{* TODO
+        <div id="success" style="display:none;">
+          <p class="success_message d-flex align-items-center gap-2">
+            <i class="icon-ok-circled"></i>
+            <span>{'porg_contact_success_message'|translate}</span>
+          </p>
+        </div>
+
+        <div id="error" style="display:none;">
+          <p class="error_message d-flex align-items-center gap-2">
+            <i class="icon-cancel-circled"></i>
+            <span>{'porg_contact_error_message_5'|translate}</span>
+          </p>
+        </div> *}
+
+        <div data-toggle="validator" role="form" class="col-xs-12 col-md-8 contact_form">
+
+          <div class="form-group position-relative">
+            <input type="email" class="form-control" id="form-email" placeholder=" " required>
+            <span class="mail-placeholder p-boxed">{'Your email address'|translate}<span
+                class="orange-text">*</span></span>
+            <span class="little-mail-placeholder form-input">{'Your email address'|translate}<span
+                class="orange-text">*</span> <span id="emailHelp"
+                class="pink-text">{'porg_contact_error_message_7'|translate}</span></span>
+            <i id="emailWarningIcon" class="icon-rounded-warning" aria-hidden="true"></i>
+            <i id="emailCheckIcon" class="icon-rounded-check" aria-hidden="true"></i>
+          </div>
+
+          <div class="form-group position-relative">
+            <input type="text" class="form-control" id="form-piwigo-url" aria-describedby="urlHelp" placeholder=" ">
+            <span
+              class="piwigo-url-placeholder p-boxed">{'Your Piwigo url (if you are already a Piwigo user)'|translate}</span>
+            <span
+              class="little-piwigo-url-placeholder form-input">{'Your Piwigo url (if you are already a Piwigo user)'|translate}
+              {* <span id="urlHelp" class="pink-text">{'porg_contact_error_message_9'|translate}</span> *}</span>
+          </div>
+
+          <div class="form-group">
+            <textarea class="form-control" id="form-message" rows="8" placeholder="{'Your message*'|translate}"
+              required></textarea>
+          </div>
+
+          <div>
+            <input type="hidden" id="form-key" name="key" value="{$EPHEMERAL_KEY}">
+          </div>
+
+          <div>
+            <label class="ohnohoney" for="email"></label>
+            <input class="ohnohoney" autocomplete="off" type="email" id="email" name="email">
+          </div>
+
+          <div class="text-end">
+            <button type="submit" id="form-submit"
+              class="btn-menu menu-btn-green"><span>{'Send message'|translate}</span></button>
+          </div>
         </div>
       </div>
     </div>
-  </section>
-
-  <section class="container container-contact">
-    <div class="row">
-      <form data-toggle="validator" role="form">
-        <div class="col-md-4 form-group">
-          <label for="form-email" class="control-label">{'Your email address'|translate}</label>
-          <input type="email" class="form-control input-email" id="form-email" data-error="{'porg_contact_error_email'|translate}" required>
-          <div class="help-block with-errors email-error"></div>
-        </div>
-        <div class="col-md-4 form-group">
-          <p class="contact-category bold">{'Category'|translate}</p>
-          <span class="dropdown-el">
-            <input type="radio" name="sortType" value="press" id="sort-best" {if $category == 'press'} checked {/if}><label for="sort-best">{'Press inquiry'|translate}</label>
-            <input type="radio" name="sortType" value="partnership" id="sort-low" {if $category == 'partnership'} checked {/if}><label for="sort-low">{'Partnership'|translate}</label>
-            <input type="radio" name="sortType" value="security" id="sort-high" {if $category == 'security'} checked {/if}><label for="sort-high">{'Security report'|translate}</label>
-            <input type="radio" name="sortType" value="beta testing" id="sort-beta" {if $category == 'beta testing'} checked {/if}><label for="sort-beta">{'Beta testing'|translate}</label>
-            <input type="radio" name="sortType" value="testimonial" id="sort-brand" {if $category == 'testimonial'} checked {/if}><label for="sort-brand">{'Testimonial'|translate}</label>
-          </span>
-        </div>
-        <div class="col-md-12 form-group">
-          <label for="form-message">{'Your message'|translate}</label>
-          <textarea class="form-control" id="form-message" rows="5" data-error="{'porg_contact_error_message'|translate}" required></textarea>
-          <div class="help-block with-errors"></div>
-        </div>
-        <div>
-          <input type="hidden" id="form-key" name="key" value="{$EPHEMERAL_KEY}">
-        </div>
-        <div>
-          <label class="ohnohoney" for="email"></label>
-          <input class="ohnohoney" autocomplete="off" type="email" id="email" name="email">
-        </div>
-        <div class="col-md-6 contact-submit">
-          <button type="submit" id="form-submit" data-state="not-push" class="btn btn-send-mail">{'Send message'|translate}</button>
-        </div>
-      </form>
-    </div>
-  </section>
-
-  <section class="container-fluide container-fluide-border-orange">
-  </section>
+  </div>
+</section>

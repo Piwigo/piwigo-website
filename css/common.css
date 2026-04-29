@@ -516,7 +516,16 @@ h4 {
     line-height: 100%;
   }
 }
+/******
+Text Color
+******/
+.orange-text {
+  color: var(--main_orange);
+}
 
+.pink-text {
+  color: var(--main_pink) !important;
+}
 /******
 Form
 ******/
@@ -528,4 +537,127 @@ Form
   height: 0;
   width: 0;
   z-index: -1;
+}
+
+input,
+textarea {
+  border: 1px solid rgba(141, 142, 142, 1) !important;
+  border-radius: 4px !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  color: var(--dark) !important;
+  background: var(--clear);
+  box-sizing: border-box;
+  font-family: Red Hat Display;
+  line-height: 100% !important;
+}
+
+input {
+  height: 50px;
+  padding: 24px 13px 9px !important;
+}
+
+textarea {
+  height: 220px;
+  padding: 16px 13px !important;
+  resize: none;
+}
+
+input:hover,
+textarea:hover {
+  box-shadow: 0px 4px 20px 0px rgba(217, 217, 217, 0.5);
+}
+
+input:focus,
+textarea:focus,
+.form-control:focus {
+  border: 1px solid var(--main_flash_green) !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.form-group textarea::placeholder {
+  color: var(--dark_text);
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 550 !important;
+  font-style: normal;
+  font-size: 16px;
+  text-align: left;
+  line-height: 100%;
+}
+
+.mail-placeholder,
+.piwigo-url-placeholder {
+  position: absolute;
+  top: 17px;
+  left: 14.5px;
+  color: var(--dark_text);
+  pointer-events: none;
+}
+
+#form-email:focus ~ .mail-placeholder,
+#form-piwigo-url:focus ~ .piwigo-url-placeholder {
+  opacity: 0.5;
+  top: 26px;
+  left: 16px;
+}
+
+#form-email:focus ~ .mail-placeholder .orange-text {
+  display: none;
+}
+
+#form-email:not(:placeholder-shown) ~ .mail-placeholder,
+#form-piwigo-url:not(:placeholder-shown) ~ .piwigo-url-placeholder {
+  opacity: 0;
+}
+
+.little-mail-placeholder,
+.little-piwigo-url-placeholder {
+  display: none;
+  position: absolute;
+  top: 4px;
+  left: 12px;
+  color: var(--dark_text);
+}
+
+#form-email:focus ~ .little-mail-placeholder,
+#form-piwigo-url:focus ~ .little-piwigo-url-placeholder,
+#form-email:not(:placeholder-shown) ~ .little-mail-placeholder,
+#form-piwigo-url:not(:placeholder-shown) ~ .little-piwigo-url-placeholder {
+  display: block;
+}
+
+/* used like that :
+<div class="form-group position-relative">
+  <input type="email" class="form-control" id="form-email" placeholder=" " required>
+  <span class="mail-placeholder p-boxed">{'Your email address'|translate}<span class="orange-text">*</span></span>
+  <span class="little-mail-placeholder form-input">{'Your email address'|translate}<span class="orange-text">*</span> <span id="emailHelp" class="pink-text">{'porg_contact_error_message_7'|translate}</span></span>
+  <i id="emailWarningIcon" class="icon-rounded-warning" aria-hidden="true"></i>
+  <i id="emailCheckIcon" class="icon-rounded-check" aria-hidden="true"></i>
+</div> */
+
+
+input.is-invalid {
+  background-image: none !important;
+}
+
+#emailWarningIcon,
+#emailCheckIcon {
+  display: none;
+  position: absolute;
+  font-size: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 13px;
+}
+
+#emailWarningIcon {
+  background: linear-gradient(92.17deg, #FF2F63 19.22%, #FF7700 96.41%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#emailCheckIcon {
+  color: var(--main_flash_green);
 }

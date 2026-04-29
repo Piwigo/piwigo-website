@@ -92,6 +92,9 @@ $lang['Product Updates'] = 'Product Updates';
 $lang['Product Updates desc'] = 'Lorem ipsum dolor sit amet';
 $lang['news btn'] = 'Lorem ipsum dolor sit amet';
 
+/* error */
+$lang['porg_contact_error_message_7'] = 'It must be a valid mail address';
+
 /* languages */
 $lang['language_af_ZA'] = 'Afrikaans';
 $lang['language_ar_EG'] = 'Egyptian Arabic';
