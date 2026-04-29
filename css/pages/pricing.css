@@ -311,7 +311,10 @@ Compare table section
 }
 
 
-/****** FAQ Section Custom ******/
+
+/******
+FAQ section
+******/
 
 .faq_pricing_container{
     margin-top: 100px;
@@ -339,6 +342,19 @@ Compare table section
     margin-bottom: 100px;
 }
 
+/******
+Specific cases section
+******/
+
+.specific-cases-container {
+    background-color: var(--grey) !important;
+    border-radius: 10px !important;
+    padding: 60px !important;
+    padding-bottom: 40px !important;
+    margin: 0 auto 50px auto !important;
+    max-width: 1140px !important;
+}
+
 
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
@@ -349,5 +365,4 @@ Compare table section
     .pricing-title {
         font-size: 32px;
     }
-    
 }

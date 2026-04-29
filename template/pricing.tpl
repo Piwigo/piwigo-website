@@ -52,7 +52,7 @@
 </div>
 
 <div id="pricing-content-selfhosted" class="pricing-content d-none">
-    {* {include file="template/pricing/self_hosted.tpl"} *}
+    {include file="template/pricing/self_hosted.tpl"}
 </div>
 
 <script src="{$PORG_ROOT_URL}js/pricing_switch.js"></script>
