@@ -4,7 +4,7 @@
   padding: 25px !important;
   display: flex;
   flex-direction: column;
-  background: #ffffff;
+  background: var(--clear);
   border-radius: 10px;
 }
 

@@ -195,14 +195,14 @@
 
 /* — Blue — */
 .menu-btn-blue {
-  background: #D8F4EC;
+  background: var(--secondary_flash_green);
   color: var(--dark_green);
 }
 
 .menu-btn-blue:hover,
 .menu-btn-blue:focus {
-  background: #D8F4EC;
-  border: 2px solid #64DBBD;
+  background: var(--secondary_flash_green);
+  border: 2px solid var(--main_flash_green);
   color: var(--dark_green);
 }
 
@@ -321,8 +321,8 @@
   padding-right: 12px;
   padding-bottom: 5px;
   padding-left: 12px;
-  background: #D8F4EC;
-  color: #329F83;
+  background: var(--secondary_flash_green);
+  color: var(--accent_green);
 }
 
 .number:hover,

@@ -21,13 +21,13 @@
 
 .menu-divider {
     width: 1px;
-    background-color: #E9E9E9;
+    background-color: var(--light_grey);
     align-self: stretch;
 }
 
 .menu-horizontal-divider {
     height: 1px;
-    background-color: #E9E9E9;
+    background-color: var(--light_grey);
     margin-bottom: 15px;
 }
 

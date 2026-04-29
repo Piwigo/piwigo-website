@@ -3,7 +3,7 @@
     width: 225px !important;
     min-height: 200px !important;
     padding: 20px !important;
-    background: #FFFFFF !important;
+    background: var(--clear) !important;
     border-radius: 10px !important;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
     border: 1px solid #f0f0f0 !important;

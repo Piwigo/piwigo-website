@@ -19,7 +19,7 @@ jQuery( document ).ready(function() {
 
     jQuery('.filter-header').click(function(){
       jQuery('.filter-header .icon-down-open').toggleClass('rotate');
-      jQuery('.filter-header').css('border-bottom', '2px solid #ff7700;');
+      jQuery('.filter-header').css('border-bottom', '2px solid var(--main_orange);');
       jQuery('.filters').toggle();
     });
   }

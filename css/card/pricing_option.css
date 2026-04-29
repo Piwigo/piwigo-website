@@ -226,7 +226,7 @@ body.custom-tooltip-open .info-icon-container:hover .global-hover-popover {
   border: 2px solid transparent !important;
   background-image:
     linear-gradient(white, white),
-    linear-gradient(90deg, #ff4769 0%, #ff7700 100%) !important;
+    linear-gradient(90deg, #ff4769 0%, var(--main_orange) 100%) !important;
   background-origin: border-box !important;
   background-clip: padding-box, border-box !important;
 }
@@ -236,7 +236,7 @@ body.custom-tooltip-open .info-icon-container:hover .global-hover-popover {
   top: -15px;
   left: 50%;
   transform: translateX(-50%);
-  background: linear-gradient(90deg, #ff4769 0%, #ff7700 100%);
+  background: linear-gradient(90deg, #ff4769 0%, var(--main_orange) 100%);
   color: white !important;
   padding: 4px 25px;
   border-radius: 20px;
@@ -251,7 +251,7 @@ body.custom-tooltip-open .info-icon-container:hover .global-hover-popover {
 }
 
 .icon-cross {
-  color: #e9e9e9 !important;
+  color: var(--light_grey) !important;
   font-size: 12px;
   flex-shrink: 0;
   display: inline-flex !important;
@@ -308,7 +308,7 @@ body.custom-tooltip-open .info-icon-container:hover .global-hover-popover {
     display: block;
     padding-top: 12px;
     margin-bottom: 0px !important;
-    color: #f6c4d1 !important;
+    color: var(--secondary_pink) !important;
   }
 
   .storage-hover-popover,
@@ -348,7 +348,7 @@ Pricing Custom Tooltip
   top: 35px;
   left: 50%;
   transform: translateX(-50%);
-  background: #ffffff;
+  background: var(--clear);
   z-index: 1050;
   width: 548px;
   border-radius: 10px;
@@ -482,7 +482,7 @@ Pricing Global Tooltip
     width: 225px !important;
     min-height: 200px !important;
     padding: 20px !important;
-    background: #FFFFFF !important;
+    background: var(--clear) !important;
     border-radius: 10px !important;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
     border: 1px solid #f0f0f0 !important;
@@ -523,7 +523,7 @@ Pricing Plugin Tooltip
 
 .pricing-tooltip-card.tooltip-plugins {
     width: 360px;
-    background: #FFFFFF;
+    background: var(--clear);
     border-radius: 10px;
     padding: 25px;
     box-shadow: 0 4px 20px rgba(119, 119, 119, 0.25);
@@ -558,7 +558,7 @@ Pricing Storage Tooltip
   padding: 25px !important;
   display: flex;
   flex-direction: column;
-  background: #ffffff;
+  background: var(--clear);
   border-radius: 10px;
 }
 

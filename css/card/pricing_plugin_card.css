@@ -1,6 +1,6 @@
 .pricing-tooltip-card.tooltip-plugins {
     width: 360px;
-    background: #FFFFFF;
+    background: var(--clear);
     border-radius: 10px;
     padding: 25px;
     box-shadow: 0 4px 20px rgba(119, 119, 119, 0.25);
