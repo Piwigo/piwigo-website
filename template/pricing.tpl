@@ -2,6 +2,7 @@
 <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/buttons/pricing_switch.css">
 <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/card/pricing_option.css">
 <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/card/compare_plan_table.css">
+<link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/card/faq_item.css">
 {* <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/card/pricing_plugin_card.css"> *}
 {* <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/card/pricing_custom_card.css"> *}
 {* <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/card/pricing_global_card.css"> *}

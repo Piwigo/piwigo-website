@@ -14,4 +14,5 @@ $lang['storage big description'] = 'You can order additional storage space. The 
 $lang['storage downloader'] = 'Download our price as a pdf';
 
 $lang['compare table toggle'] = 'Compare our plans';
+$lang['faq pricing title'] = 'Frequently Asked Questions';
 ?>
