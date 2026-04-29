@@ -252,6 +252,11 @@ Compare table section
     transform: rotate(180deg);
 }
 
+.compare_table_btn.active {
+    border: 5px solid var(--grey) !important;
+    box-shadow: none;
+}
+
 .compare_table_display {
     max-height: 0;
     overflow: hidden;
