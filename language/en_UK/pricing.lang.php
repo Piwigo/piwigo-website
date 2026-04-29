@@ -12,4 +12,6 @@ And if you need help installing, configuring, or using Piwigo, we offer dedicate
 $lang['storage big title'] = 'The storage space included in your<br>offer is not enough for you?';
 $lang['storage big description'] = 'You can order additional storage space. The price will be added to that of your subscription (billed annually).';
 $lang['storage downloader'] = 'Download our price as a pdf';
+
+$lang['compare table toggle'] = 'Compare our plans';
 ?>
