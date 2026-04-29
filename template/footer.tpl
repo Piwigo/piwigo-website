@@ -22,8 +22,8 @@
           <h6 class="footer-title">{'Get started'|translate}</h6>
           <div class="footer-get-started-content">
             <ul class="footer-get-started-links">
-              <li><a class="footer-feature-link" href="{$PORG_ROOT}{$URL.pricing}&plan=cloud">{'Cloud'|translate}</a></li>
-              <li><a class="footer-feature-link" href="{$PORG_ROOT}{$URL.pricing}&plan=self_hosted">{'Self hosting'|translate}</a></li>
+              <li><a class="footer-feature-link" href="#">{'Cloud'|translate}</a></li>
+              <li><a class="footer-feature-link" href="#">{'Self hosting'|translate}</a></li>
               <li><a class="footer-feature-link" href="{$PORG_ROOT}{$URL.pricing}">{'Pricing'|translate}</a></li>
             </ul>
             <div class="footer-get-started-actions">

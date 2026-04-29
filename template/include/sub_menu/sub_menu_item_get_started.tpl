@@ -7,14 +7,14 @@
                 title={'Cloud'|translate}
                 description={'Cloud desc'|translate} 
                 icon_class='icon-cloud-oneplace'
-                href="{$PORG_ROOT}{$URL.pricing}&plan=cloud"}
+                href="#"}
                 
             {include file='template/include/sub_menu_items/sub_menu_itemc.tpl' 
                 category_type='feature-submenu' 
                 title={'Self-hosted'|translate} 
                 description={'Self-hosted desc'|translate} 
                 icon_class='icon-self-host'
-                href="{$PORG_ROOT}{$URL.pricing}&plan=self_hosted"}
+                href="#"}
         </div>
 
         <div class="d-none d-md-block menu-divider"></div>
