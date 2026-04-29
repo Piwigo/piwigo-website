@@ -109,14 +109,14 @@ Storage section
 ******/
 
 .storage-section {
-    background-color: #f8f9fa;
+    background-color: var(--grey);
     border-radius: 10px;
     padding: 60px 40px;
     margin: 3rem auto;
 }
 
 .storage-subtitle {
-    color: #6c757d;
+    color: var(--dark);
     max-width: 700px;
     margin: 1rem auto 3rem;
 }
@@ -126,18 +126,6 @@ Storage section
     display: flex;
     justify-content: center;
 }
-
-/* @media (min-width: 992px) {
-    .storage-divider:not(:last-child):after {
-        content: "";
-        position: absolute;
-        right: 0;
-        top: 25%;
-        height: 50%;
-        width: 1px;
-        background-color: #dee2e6;
-    }
-} */
 
 .storage-divider:not(:last-child):after{
     content: "";
@@ -195,6 +183,53 @@ Storage section
 .storage-download-container .menu-btn.menu-btn-white {
     width: 280px !important;
     height: 30px !important;
+}
+@media (max-width: 768px) {
+    .storage-title{
+        font-size: 24px !important;
+    }
+    .storage-section {
+        width: 322px !important;
+        padding: 30px 20px;
+    }
+
+    .storage-divider:not(:last-child):after {
+        right: 10%;
+        left: 10%;
+        bottom: 0;
+        top: auto;
+        height: 1px;
+        width: 80%;
+        background-color: var(--dark_text);
+        opacity: 0.1;
+    }
+
+    .storage-section .storage-grid .storage-divider .storage-item-container .storage-option-card {
+        width: 100%;
+        height: auto;
+        padding: 25px 0;
+        display: flex; 
+        flex-direction: row; 
+        justify-content: space-between !important; 
+        align-items: center;
+    }
+
+    .storage-section .storage-grid .storage-divider .storage-item-container .storage-option-card .price-display-wrapper {
+        margin-top: 0;
+        flex-direction: column; 
+        align-items: flex-end; 
+        text-align: right;
+    }
+
+    .storage-amount {
+        flex: 1;
+        text-align: left;
+    }
+
+    .storage-section .storage-grid .storage-divider .storage-item-container .storage-option-card .storage-amount span {
+        margin-bottom: 15px !important;
+    }
+
 }
 
 /******
@@ -286,9 +321,24 @@ Compare table section
     margin-bottom: 50px;
 }
 
+.faq_pricing_grid .col-md-6 {
+    padding: 0 30px !important;
+}
+
+@media (max-width: 768px) {
+    .faq_pricing_grid .col-md-6 {
+        padding: 0 !important;
+    }
+
+    .faq_pricing_grid .faq-section .accordion-button {
+        padding: 15px 17px 16px 16px !important;
+    }
+}
+
 #cloud-storage.pricing-storage-content{
     margin-bottom: 100px;
 }
+
 
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
