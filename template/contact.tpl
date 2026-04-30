@@ -143,8 +143,8 @@
           },
           success: function(data) {
             if (data.code == "200") {
-              // Hide the form and display success message
-              jQuery('.contact_form').hide();
+              // Hide the form and display success message temporarily
+              jQuery('.contact-form').hide();
               jQuery('#success').show();
 
               // Clear all form fields
@@ -159,6 +159,11 @@
 
               // Disable submit button until fields are valid again
               jQuery('#form-submit').prop('disabled', true).addClass('disabled');
+
+              setTimeout(function() {
+                jQuery('#success').hide();
+                jQuery('.contact-form').show();
+              }, 10000);
 
 
             } else {
@@ -179,17 +184,6 @@
       }
     });
   });
-
-  document.addEventListener('DOMContentLoaded', function() {
-    var carouselEl = document.getElementById('contact-logos-carousel');
-    if (carouselEl) {
-      new bootstrap.Carousel(carouselEl, {
-        interval: 3500,
-        pause: 'hover',
-        wrap: true
-      });
-    }
-  });
 </script>
 {/literal}
 
@@ -207,14 +201,26 @@
       </div>
 
       <div class="col-12 col-md-6">
-        <div id="success" style="display:none;">
-          <p class="success_message d-flex align-items-center gap-2">
-            <i class="icon-ok-circled"></i>
-            <span>{'porg_contact_success_message'|translate}</span>
-          </p>
+
+        <div id="success" class="contact-form-success">
+          <div class="contact-form-success-inner">
+            <div class="success-message d-flex align-items-center gap-md-3 gap-2">
+              <i class="icon-ok-circled success-icon"></i>
+              <span class="p-boxed">{'porg_contact_success_message'|translate}</span>
+            </div>
+
+            <p class="success-follow-label features-menu-item">{'porg_contact_success_follow'|translate}</p>
+
+            <div class="d-flex gap-md-4 gap-2">
+              {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'Discover our blog'|translate}
+              href='#'}
+              {include file='template/include/buttons/button.tpl' variant='cta_secondary' label={'Follow us on LinkedIn'|translate}
+              href='#'}
+            </div>
+          </div>
         </div>
 
-        <div data-toggle="validator" role="form" class="col-xs-12 col-md-8 contact_form">
+        <div data-toggle="validator" role="form" class="contact-form">
 
           <div class="form-group position-relative">
             <input type="email" class="form-control" id="form-email" placeholder=" " required>
@@ -272,34 +278,6 @@
       <h2 class="h2-top-page text-center">{'Satisfyed users across the world'|translate}</h2>
     </div>
 
-    <div id="contact-logos-carousel" class="carousel slide contact-logos-carousel" data-bs-ride="carousel"
-      data-bs-interval="3500" data-bs-pause="hover" data-bs-touch="true" data-bs-wrap="true">
-      <div class="carousel-inner">
-        {assign var=chunk_size value=6}
-        {assign var=total value=$home_logos|count}
-        {assign var=index value=0}
-
-        {foreach $home_logos as $logo}
-          {if $index % $chunk_size == 0}
-            <div class="carousel-item{if $index == 0} active{/if}">
-              <div
-                class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-xl-6 g-3 align-items-center contact-logos-grid">
-              {/if}
-
-              <div class="col">
-                <div class="contact-logo-card">
-                  <img src="{$logo.element_url}" alt="{$logo.name}" loading="lazy" decoding="async">
-                </div>
-              </div>
-
-              {assign var=index value=$index+1}
-
-              {if $index % $chunk_size == 0 || $index == $total}
-              </div>
-            </div>
-          {/if}
-        {/foreach}
-      </div>
-    </div>
+    
   </div>
 </section>

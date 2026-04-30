@@ -96,6 +96,12 @@ $lang['news btn'] = 'Lorem ipsum dolor sit amet';
 $lang['porg_contact_error_message_7'] = 'It must be a valid mail adress';
 $lang['porg_contact_error_message_1'] = 'Oopps! Something went wrong.';
 
+/* success */
+$lang['porg_contact_success_message'] = 'Thanks for contacting us!<br>We will be in touch with you shortly.';
+$lang['porg_contact_success_follow'] = 'And if you want to follow the Piwigo adventure';
+$lang['Discover our blog'] = 'Discover our blog';
+$lang['Follow us on LinkedIn'] = 'Follow us on LinkedIn!';
+
 /* languages */
 $lang['language_af_ZA'] = 'Afrikaans';
 $lang['language_ar_EG'] = 'Egyptian Arabic';
