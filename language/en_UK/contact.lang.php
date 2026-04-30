@@ -9,8 +9,9 @@ $lang['Your Piwigo url (if you are already a Piwigo user)'] = 'Your Piwigo url (
 $lang['Your message'] = 'Your message<span class="orange-text">*</span>';
 $lang['Send message'] = 'Send message';
 
+$lang['Satisfyed users across the world'] = 'Satisfyed users across the world';
+
 $lang['porg_contact_error_email'] = 'Whoops, that email address is invalid';
-$lang['Category'] = 'Category';
 $lang['Press inquiry'] = 'Press inquiry';
 $lang['Partnership'] = 'Partnership';
 $lang['Security report'] = 'Security report';

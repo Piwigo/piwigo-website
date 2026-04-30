@@ -37,6 +37,47 @@
   padding: 0 40px;
 }
 
+.contact-content {
+  padding: 72px 0 84px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fbf8f2 18%, #f8f5ef 100%);
+}
+
+.contact-logos-carousel {
+  width: 100%;
+}
+
+.contact-logos-carousel .carousel-inner {
+  overflow: hidden;
+}
+
+.contact-logos-carousel .carousel-item {
+  padding: 0 clamp(12px, 3vw, 32px);
+}
+
+.contact-logos-grid {
+  width: min(1600px, 100%);
+  margin: 0 auto;
+}
+
+.contact-logo-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 96px;
+  padding: 18px 22px;
+  border-radius: 18px;
+  background: var(--clear);
+  box-shadow: 0 8px 24px rgba(63, 79, 95, 0.08);
+}
+
+.contact-logo-card img {
+  display: block;
+  width: 100%;
+  max-width: 190px;
+  max-height: 56px;
+  object-fit: contain;
+}
+
 @media (max-width: 768px) {
   .contact-header{
     background: none;
@@ -48,6 +89,23 @@
 
   .contact-header-image {
     display: none;
+  }
+
+  .contact-content {
+    padding: 48px 0 60px;
+  }
+
+  .contact-content__header {
+    margin-bottom: 24px;
+  }
+
+  .contact-logo-card {
+    min-height: 84px;
+    padding: 14px 16px;
+  }
+
+  .contact-logos-carousel .carousel-item {
+    padding: 0 8px;
   }
 
   p .orange-text {

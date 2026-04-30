@@ -179,6 +179,17 @@
       }
     });
   });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var carouselEl = document.getElementById('contact-logos-carousel');
+    if (carouselEl) {
+      new bootstrap.Carousel(carouselEl, {
+        interval: 3500,
+        pause: 'hover',
+        wrap: true
+      });
+    }
+  });
 </script>
 {/literal}
 
@@ -196,7 +207,6 @@
       </div>
 
       <div class="col-12 col-md-6">
-{* TODO
         <div id="success" style="display:none;">
           <p class="success_message d-flex align-items-center gap-2">
             <i class="icon-ok-circled"></i>
@@ -209,7 +219,7 @@
             <i class="icon-cancel-circled"></i>
             <span>{'porg_contact_error_message_5'|translate}</span>
           </p>
-        </div> *}
+        </div>
 
         <div data-toggle="validator" role="form" class="col-xs-12 col-md-8 contact_form">
 
@@ -252,6 +262,44 @@
               class="btn-menu menu-btn-green"><span>{'Send message'|translate}</span></button>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact-content">
+  <div class="container-fluid px-0">
+    <div class="container text-center">
+      <h2 class="h2-top-page text-center">{'Satisfyed users across the world'|translate}</h2>
+    </div>
+
+    <div id="contact-logos-carousel" class="carousel slide contact-logos-carousel" data-bs-ride="carousel"
+      data-bs-interval="3500" data-bs-pause="hover" data-bs-touch="true" data-bs-wrap="true">
+      <div class="carousel-inner">
+        {assign var=chunk_size value=6}
+        {assign var=total value=$home_logos|count}
+        {assign var=index value=0}
+
+        {foreach $home_logos as $logo}
+          {if $index % $chunk_size == 0}
+            <div class="carousel-item{if $index == 0} active{/if}">
+              <div
+                class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-xl-6 g-3 align-items-center contact-logos-grid">
+              {/if}
+
+              <div class="col">
+                <div class="contact-logo-card">
+                  <img src="{$logo.element_url}" alt="{$logo.name}" loading="lazy" decoding="async">
+                </div>
+              </div>
+
+              {assign var=index value=$index+1}
+
+              {if $index % $chunk_size == 0 || $index == $total}
+              </div>
+            </div>
+          {/if}
+        {/foreach}
       </div>
     </div>
   </div>

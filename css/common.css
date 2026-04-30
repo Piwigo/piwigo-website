@@ -636,7 +636,7 @@ textarea:focus,
   <i id="emailCheckIcon" class="icon-rounded-check" aria-hidden="true"></i>
 </div> */
 
-
+/* to override bootstrap */
 input.is-invalid {
   background-image: none !important;
 }
@@ -652,7 +652,7 @@ input.is-invalid {
 }
 
 #emailWarningIcon {
-  background: linear-gradient(92.17deg, #FF2F63 19.22%, #FF7700 96.41%);
+  background: linear-gradient(92.17deg, #FF2F63 19.22%, var(--main_orange) 96.41%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
