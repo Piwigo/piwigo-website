@@ -73,5 +73,6 @@
   </div>
 </div>
 
-
-{include file="template/include/card/short_get_started_cta.tpl" }
+<div class="mb-5">
+  {include file="template/include/card/short_get_started_cta.tpl" }
+</div>

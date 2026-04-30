@@ -226,7 +226,7 @@ Short CTA
   min-width: 188px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
   .short-get-started-cta {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
