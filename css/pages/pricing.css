@@ -569,6 +569,71 @@ Professional services section
         max-width: 362px;
     }
 }
+
+/******
+Technical support section
+******/
+
+#technical-support-section {
+    margin: 100px auto;
+    max-width: 1140px;
+}
+
+.technical-support-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    gap: 60px; 
+}
+
+.technical-support-header {
+    flex: 1; 
+}
+
+.technical-support-title {
+    font-family: 'Sora', sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 1.2;
+    color: var(--dark);
+    margin: 0;
+    max-width: 400px;
+}
+
+.technical-support-content {
+    flex: 1; 
+}
+
+.technical-support-text {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--dark_text);
+    margin: 0;
+    max-width: 440px !important;
+}
+
+
+@media (max-width: 768px) {
+    #technical-support-section {
+        width: 362px !important;
+        height: 299px !important;
+    }
+
+    .technical-support-flex {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+    
+    .technical-support-title {
+        max-width: 100%;
+        text-align: center;
+        font-size: 24px;
+    }
+}
+
+
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
