@@ -82,7 +82,7 @@
                 </div>
 
                 <div class="mobile-footer-row d-flex">
-                    <a href="#" class="header-mail-btn btn-text w-50 mr-2">
+                    <a href="{$PORG_ROOT}{$URL.contact}" class="header-mail-btn btn-text w-50 mr-2">
                         Contact us <i class="icon-mailext header-mail-icon"></i>
                     </a>
 
@@ -100,7 +100,7 @@
         </div>
 
         <div class="header-buttons d-none d-lg-flex">
-            <a href="#" class="header-mail-btn btn-text"><i class="icon-mailext header-mail-icon"></i></a>
+            <a href="{$PORG_ROOT}{$URL.contact}" class="header-mail-btn btn-text"><i class="icon-mailext header-mail-icon"></i></a>
             <div class="header-lang-dropdown">
                 <a href="#" class="header-lang-btn btn-text js-lang-toggle" aria-expanded="false" aria-controls="header-lang-menu" aria-haspopup="true">
                     <i class="icon-langage header-lang-icon"></i>
