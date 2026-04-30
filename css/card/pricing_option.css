@@ -250,7 +250,7 @@ body.custom-tooltip-open .info-icon-container:hover .global-hover-popover {
   color: var(--main_orange) !important;
 }
 
-.icon-cross {
+.cross {
   color: var(--light_grey) !important;
   font-size: 12px;
   flex-shrink: 0;

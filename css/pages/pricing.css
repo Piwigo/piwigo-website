@@ -378,14 +378,13 @@ Specific cases section
 }
 
 .specific-cases-icon {
-    width: 44px;
-    height: 44px;
+    width: 60px;
+    height: 60px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border-radius: 6px;
     margin-bottom: 20px;
-    font-size: 18px;
+    font-size: 30px !important;
 }
 
 .orange-specific-cases-icon {
@@ -405,20 +404,171 @@ Specific cases section
 
 .specific-cases-title-text {
     font-family: 'Sora', sans-serif;
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 800;
     color: var(--dark);
     margin-bottom: 15px !important;
 }
 
 .specific-cases-text {
     font-family: 'Red Hat Display', sans-serif;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 1.6;
     color: var(--dark_text);
 }
 
+@media (max-width: 768px) {
+    #specific-cases-section {
+        padding: 50px 20px 50px 20px;
+        padding-bottom: 20px;
+        margin-bottom: 50px;
+        width: 362px !important;
+        height: 741px !important;
+    }
 
+    .specific-cases-strip {
+        flex-direction: column;
+    }
+
+    .specific-cases-item {
+        max-width: 100%;
+    }
+
+    .specific-cases-title {
+        font-size: 24px;
+        margin-bottom: 40px !important;
+    }
+
+    .specific-cases-text {
+        padding-top: 20px;
+        font-family: 'Red Hat Display', sans-serif;
+        font-size: 18px;
+        line-height: 100%;
+        font-weight: 400;
+        color: var(--dark_text);
+    }
+}
+
+/******
+Professional services section
+******/
+
+.professional-services-container {
+    margin: 100px auto;
+    max-width: 1140px;
+}
+
+.professional-services-title {
+    font-family: 'Sora', sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    color: var(--dark);
+    margin-bottom: 60px;
+}
+
+.services-strip {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.professional-service-card {
+    background: var(--grey);
+    border-radius: 10px;
+    padding: 40px 30px;
+    flex: 1;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.professional-services-icon {
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+.orange-professional-services-icon {
+    background: var(--secondary_orange);
+    color: var(--main_orange);
+    font-size: 30px !important;
+}
+
+.orange-professional-services-icon img{
+    width: 30px !important;
+    height: 30px !important;
+}
+
+
+.professional-services-title-text {
+    font-family: 'Sora', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--dark);
+    min-height: 50px;
+    margin-bottom: 15px;
+}
+
+.professional-services-text {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--dark_text);
+    margin-bottom: 30px;
+}
+.service-action {
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.service-action .btn-menu.menu-btn-blue {
+    width: 260px !important;
+}
+
+.service-price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Sora', sans-serif;
+}
+
+.price-label {
+    font-size: 14px;
+    color: var(--dark_text);
+    text-transform: lowercase;
+}
+
+.price-amount {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--dark);
+}
+
+.price-suffix {
+    font-size: 14px;
+    color: var(--dark_text);
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    .services-strip {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .professional-service-card {
+        width: 100%;
+        max-width: 362px;
+    }
+}
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }

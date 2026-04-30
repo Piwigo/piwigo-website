@@ -17,4 +17,5 @@ $lang['compare table toggle'] = 'Compare our plans';
 $lang['faq pricing title'] = 'Frequently Asked Questions';
 
 $lang['specific cases title'] = 'Specific cases';
-?>
+$lang['professional services title'] = 'Professional services';
+$lang['professional services lil text'] = 'Custom pricing';

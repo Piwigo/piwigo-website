@@ -26,7 +26,7 @@
                 {foreach from=$features item=feature}
                     <li class="d-flex align-items-start mb-3">
                         {if isset($feature.not_included) && $feature.not_included}
-                            <i class="icon-cross text-muted opacity-50"></i>
+                            <i class="icon-cross text-muted opacity-50 cross"></i>
                         {else}
                             <i class="icon-check-1 me-2 mt-1"></i>
                         {/if}

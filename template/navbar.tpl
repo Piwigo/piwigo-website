@@ -16,7 +16,8 @@
         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
             data-bs-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1"
             aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <i class="icon-burger" style="color: var(--main_flash_green) !important;"></i>
+            {* <span class="navbar-toggler-icon"></span> *}
         </button>
 
         <div class="collapse navbar-collapse align-items-center" id="bs-example-navbar-collapse-1">
