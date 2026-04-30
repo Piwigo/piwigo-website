@@ -1,4 +1,4 @@
-<section class="specific-cases-contaier container">
+<section id="specific-cases-section" class="specific-cases-container container">
     <h2 class="specific-cases-title text-center">{'specific cases title'|translate}</h2>
     {assign var="color" value="orange"}
     {assign var="t_1" value="Custom code and plugins"}

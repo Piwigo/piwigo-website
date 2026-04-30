@@ -13,6 +13,7 @@ $(document).ready(function() {
             $('#desc-cloud').removeClass('d-none').fadeIn(300);
             $('#card-selfhosted').addClass('d-none-card');
             $('#cloud-storage').removeClass('d-none-card');
+            $('#specific-cases-section').hide();
         } else {
             $('#pricing-cloud-content').hide();
             $('#pricing-selfhosted-content').fadeIn(300);
@@ -20,6 +21,7 @@ $(document).ready(function() {
             $('#desc-selfhosted').removeClass('d-none').fadeIn(300);
             $('#card-selfhosted').removeClass('d-none-card');
             $('#cloud-storage').addClass('d-none-card');
+            $('#specific-cases-section').fadeIn(300);
             
         }
         if (updateUrl) {

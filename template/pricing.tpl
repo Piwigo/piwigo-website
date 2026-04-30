@@ -51,7 +51,7 @@
     </div>
 </div>
 
-<div id="pricing-content-selfhosted" class="pricing-content d-none">
+<div id="pricing-content-selfhosted" class="pricing-content">
     {include file="template/pricing/self_hosted.tpl"}
 </div>
 

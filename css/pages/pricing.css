@@ -346,13 +346,76 @@ FAQ section
 Specific cases section
 ******/
 
-.specific-cases-container {
-    background-color: var(--grey) !important;
-    border-radius: 10px !important;
-    padding: 60px !important;
-    padding-bottom: 40px !important;
-    margin: 0 auto 50px auto !important;
-    max-width: 1140px !important;
+#specific-cases-section {
+    background-color: var(--grey);
+    border-radius: 10px;
+    padding: 60px 40px;
+    margin: 3rem auto 100px;
+    max-width: 1140px;
+}
+
+.specific-cases-title {
+    font-family: 'Sora', sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    color: var(--dark);
+    margin-bottom: 60px !important;
+}
+
+.specific-cases-strip {
+    display: flex;
+    justify-content: center;
+    gap: 80px; 
+
+}
+.specific-cases-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    max-width: 450px;
+}
+
+.specific-cases-icon {
+    width: 44px;
+    height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.orange-specific-cases-icon {
+    background: var(--secondary_orange);
+    color: var(--main_orange);
+}
+
+.pink-specific-cases-icon {
+    background: var(--secondary_pink);
+    color: var(--main_pink);
+}
+
+.green-specific-cases-icon {
+    background: var(--secondary_flash_green);
+    color: var(--accent_green);
+}
+
+.specific-cases-title-text {
+    font-family: 'Sora', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 15px !important;
+}
+
+.specific-cases-text {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--dark_text);
 }
 
 
