@@ -1,5 +1,3 @@
-<section id="specific-cases-section" class="specific-cases-container container">
-    <h2 class="specific-cases-title text-center">{'specific cases title'|translate}</h2>
     {assign var="color" value="orange"}
     {assign var="t_1" value={'specific_case_title_1'|translate}}
     {assign var="t_2" value={'specific_case_title_2'|translate}}
@@ -26,6 +24,20 @@
         var="text_5"
         value={'prof_service_text_5'|translate}
     }
+    {assign var="th_1" value={'tech_table_head_install'|translate}}
+    {assign var="th_2" value={'tech_table_head_updates'|translate}}
+    {assign var="th_3" value={'tech_table_head_managed'|translate}}
+    {assign var="row_pricing_customer" value={'tech_table_row_pricing_support'|translate}}
+    {assign var="row_pricing_external" value={'tech_table_row_pricing_no_support'|translate}}
+    {assign var="row_included_title" value={'tech_table_row_included_title'|translate}}
+    {assign var="row_feat_install" value={'tech_table_row_feat_install'|translate}}
+    {assign var="row_feat_updates" value={'tech_table_row_feat_updates'|translate}}
+    {assign var="row_feat_server" value={'tech_table_row_feat_server'|translate}}
+    {assign var="row_feat_monit" value={'tech_table_row_feat_monit'|translate}}
+    {assign var="row_feat_backup" value={'tech_table_row_feat_backup'|translate}}
+
+<section id="specific-cases-section" class="specific-cases-container container">
+    <h2 class="specific-cases-title text-center">{'specific cases title'|translate}</h2>
     <div class="specific-cases-strip">
         <div class="specific-cases-item">
             <span class="specific-cases-icon {$color}-specific-cases-icon" aria-hidden="true"><i class="icon-dev"></i></span>
@@ -92,5 +104,69 @@
         <div class="technical-support-content">
             <p class="technical-support-text">{'technical description'|translate}</p>
         </div>
+    </div>
+</section>
+
+<section id="technical-support-table-section" class="technical-support-table-container container">
+        <div class="technical-table-wrapper">
+        <table class="tech-table">
+            <thead>
+                <tr>
+                    <th class="empty-cell"></th>
+                    <th>{$th_1}</th>
+                    <th>{$th_2}</th>
+                    <th>{$th_3}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="row-label">{$row_pricing_customer}</td>
+                    <td class="value-cell">from €200</td>
+                    <td class="value-cell">€500 {'price_excl_taxes_year'|translate}</td>
+                    <td class="value-cell">€1500 {'price_excl_taxes_year'|translate}</td>
+                </tr>
+                <tr style="background-color: var(--clear) !important;">
+                    <td class="row-label">{$row_pricing_external}</td>
+                    <td class="value-cell">from €250</td>
+                    <td class="value-cell">€600 {'price_excl_taxes_year'|translate}</td>
+                    <td class="value-cell">N/A</td>
+                </tr>
+
+                <tr class="table-divider">
+                    <td colspan="4">{$row_included_title}</td>
+                </tr>
+
+                <tr>
+                    <td class="row-label">{$row_feat_install}</td>
+                    <td class="value-cell"><i class="icon-rounded-check bi bi-check-circle-fill"></i></td>
+                    <td class="value-cell">-</td>
+                    <td class="value-cell">-</td>
+                </tr>
+                <tr>
+                    <td class="row-label">{$row_feat_updates}</td>
+                    <td class="value-cell">-</td>
+                    <td class="value-cell"><i class="icon-rounded-check bi bi-check-circle-fill"></i></td>
+                    <td class="value-cell">-</td>
+                </tr>
+                <tr>
+                    <td class="row-label">{$row_feat_server}</td>
+                    <td class="value-cell">-</td>
+                    <td class="value-cell">-</td>
+                    <td class="value-cell"><i class="icon-rounded-check bi bi-check-circle-fill"></i></td>
+                </tr>
+                <tr>
+                    <td class="row-label">{$row_feat_monit}</td>
+                    <td class="value-cell">-</td>
+                    <td class="value-cell">-</td>
+                    <td class="value-cell"><i class="icon-rounded-check bi bi-check-circle-fill"></i></td>
+                </tr>
+                <tr>
+                    <td class="row-label">{$row_feat_backup}</td>
+                    <td class="value-cell">-</td>
+                    <td class="value-cell">-</td>
+                    <td class="value-cell"><i class="icon-rounded-check bi bi-check-circle-fill"></i></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </section>

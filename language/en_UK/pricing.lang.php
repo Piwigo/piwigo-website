@@ -44,3 +44,57 @@ $lang['label_see_prerequisites'] = 'See prerequisites';
 $lang['technical title'] = 'Technical support and managed services';
 $lang['technical description'] = 'All too often, we see organizations that install Piwigo on a server and then forget about it. The result: users stuck with performance issues, updates that are never installed, or a poorly configured server.
 To ensure Piwigo runs optimally on your infrastructure, we offer technical support services, from initial assistance to full server management.';
+
+$lang['tech_table_head_install'] = 'Piwigo installation and configuration';
+$lang['tech_table_head_updates'] = 'Piwigo update<br>support';
+$lang['tech_table_head_managed'] = 'Full server management';
+
+$lang['tech_table_row_pricing_support'] = 'Pricing for customers with a support plan';
+$lang['tech_table_row_pricing_no_support'] = 'Pricing if you are not a customer with a support plan';
+$lang['tech_table_row_included_title'] = 'What is included?';
+
+$lang['tech_table_row_feat_install'] = 'Piwigo installation on your server';
+$lang['tech_table_row_feat_updates'] = 'Major updates to Piwigo (4 times a year) and plugins';
+$lang['tech_table_row_feat_server'] = 'Server updates (PHP, MySQL, Debian, etc.)';
+$lang['tech_table_row_feat_monit'] = 'Server monitoring (errors, performance)';
+$lang['tech_table_row_feat_backup'] = 'Automated backups';
+
+$lang['price_excl_taxes_year'] = 'excl. VAT/year';
+
+$lang['plan_section_usage'] = 'Usage';
+$lang['plan_section_formats'] = 'Supported file formats';
+$lang['plan_section_custom'] = 'Customization';
+
+$lang['plan_row_admin'] = 'Administrators';
+$lang['plan_row_users'] = 'Users';
+$lang['plan_row_contributors'] = 'Contributors';
+$lang['plan_row_storage'] = 'Storage';
+$lang['plan_row_plugins'] = 'Unlimited plugins';
+$lang['plan_row_media'] = 'Images, videos & audio';
+$lang['plan_row_other_formats'] = 'Other file formats';
+$lang['plan_row_themes'] = 'Access to over 20 customizable themes';
+$lang['plan_row_plugin_inst'] = 'Plugin installation';
+$lang['plan_row_multilingual'] = 'Multilingual web gallery';
+$lang['plan_row_domain'] = 'Custom domain';
+$lang['plan_row_pages'] = 'Add custom pages';
+$lang['plan_row_contact'] = 'Contact form';
+$lang['plan_row_menu'] = 'Advanced menu customization';
+$lang['plan_row_footer'] = 'Custom footer';
+$lang['plan_row_banner'] = 'Add a custom banner';
+$lang['plan_row_seo'] = 'SEO settings';
+$lang['plan_row_js'] = 'Add custom javascript';
+$lang['plan_row_translation'] = 'Content translation';
+$lang['plan_row_graphic'] = 'Free custom graphic personalization';
+
+$lang['plan_help_admin'] = 'Administrators have access to the Piwigo administration, and thus to all the features: create / edit / delete files, albums, tags, users, access to statistics... Some super-administrators can change the look of your Piwigo and install or uninstall plugins. In Piwigo, administrators include "administrator" and "webmaster" user statuses.';
+$lang['plan_help_users'] = 'Users can only login to your Piwigo gallery to view and download content that an administrator has given them access to. In Piwigo, users include "User" and "Generic" statuses.';
+$lang['plan_help_contributors'] = 'Contributors are available only to customers with a Team, Enterprise or VIP plan. They are special users, who are allowed to import files to your Piwigo library from your web gallery. They do not have access to the administration. In Piwigo, this refers to non-administrator users who have the right to add files to the gallery using the Community plugin.';
+$lang['plan_help_plugins'] = 'Plugins allow you to enrich and customize Piwigo. Some plugins are only available to some commercial plans.';
+$lang['plan_help_media'] = 'jpg, jpeg, png, gif, webp, heic, ogg, ogv, mp4, m4v, webm, webmv, mp3';
+$lang['plan_help_other_formats'] = 'psd, ai, eps, tif, tiff, svg, pdf';
+$lang['plan_help_multilingual'] = 'Piwigos user interface is translated into 70 languages';
+$lang['plan_help_domain'] = 'By default, your Piwigo will be accessible from a URL like mysite.piwigo.com. We can associate it with your own domain name if you want.';
+
+$lang['plan_unlimited'] = 'Unlimited';
+$lang['plan_excl_vat_month'] = 'excl. VAT / month';
+$lang['plan_billed_annually'] = 'billed annually';

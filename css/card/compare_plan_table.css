@@ -5,7 +5,7 @@
   background-color: var(--grey) !important;
   border-radius: 10px;
   font-family: "Sora", sans-serif;
-  overflow: hidden;
+  overflow: visible;
   /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); */
 }
 
@@ -112,6 +112,58 @@
 .feature-row td:last-child {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+
+
+.pwg-tooltip {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 8px;
+  cursor: help;
+  outline: none; 
+}
+
+.icon-rounded-warning {
+  transition: color 0.2s ease;
+}
+
+.pwg-tooltip .tooltip-text {
+  visibility: hidden;
+  width: 280px;
+  background-color: var(--clear);
+  color: var(--dark_text);
+  text-align: left;
+  border: 1px solid var(--main_pink);
+  border-radius: 8px;
+  padding: 15px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+  white-space: normal;
+  position: absolute;
+  z-index: 100;
+  top: 150%; 
+  left: 50%;
+  transform: translateX(-20px); 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  pointer-events: none;
+}
+
+.pwg-tooltip:hover .tooltip-text,
+.pwg-tooltip:focus .tooltip-text,
+.pwg-tooltip:focus-within .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(-20px) translateY(0);
+  pointer-events: auto;
+}
+
+.pwg-tooltip:hover .icon-rounded-warning,
+.pwg-tooltip:focus .icon-rounded-warning {
+  color: var(--main_pink);
 }
 
 @media (max-width: 991px) {

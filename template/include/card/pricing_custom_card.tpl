@@ -16,7 +16,7 @@
             <div class="custom-btn-wrapper">
                 {include 
                     file="template/include/buttons/button.tpl" variant="menu_btn_white" 
-                    href="#" 
+                    href="{$PORG_ROOT}{$URL.contact}" 
                     label={'See examples'|translate}
                 }
             </div>

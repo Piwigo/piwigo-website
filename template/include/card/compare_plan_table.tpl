@@ -1,9 +1,32 @@
 {assign
     var='plans_sections'
     value=[
-        [ 'title' => 'Usage'|translate, 'rows' => [ ['label' => 'Administrators'|translate, 'values' => ['1', '3', '5', 'Unlimited'|translate], 'help' => true], ['label' => 'Users'|translate, 'values' => ['Unlimited'|translate, 'Unlimited'|translate, 'Unlimited'|translate, 'Unlimited'|translate], 'help' => true], ['label' => 'Contributors'|translate, 'values' => ['-', 'Unlimited'|translate, 'Unlimited'|translate, 'Unlimited'|translate], 'help' => true], ['label' => 'Storage'|translate, 'values' => ['10GB', '100GB', '250GB', '1000GB'], 'help' => false], ['label' => 'Unlimited plugins'|translate, 'values' => ['-', '-', '-', 'check'], 'help' => true] ] ],
-        [ 'title' => 'Supported file formats'|translate, 'rows' => [ ['label' => 'Images, videos & audio'|translate, 'values' => ['check', 'check', 'check', 'check'], 'help' => true], ['label' => 'Other file formats'|translate, 'values' => ['-', 'check', 'check', 'check'], 'help' => true] ] ],
-        [ 'title' => 'Customization'|translate, 'rows' => [ ['label' => 'Access to over 20 customizable themes'|translate, 'values' => ['check', 'check', 'check', 'check'], 'help' => false], ['label' => 'Plugin installation'|translate, 'values' => ['check', 'check', 'check', 'check'], 'help' => false], ['label' => 'Multilingual web gallery'|translate, 'values' => ['check', 'check', 'check', 'check'], 'help' => true], ['label' => 'Custom domain'|translate, 'values' => ['-', 'check', 'check', 'check'], 'help' => true], ['label' => 'Add custom pages'|translate, 'values' => ['check', 'check', 'check', 'check'], 'help' => false], ['label' => 'Contact form'|translate, 'values' => ['check', 'check', 'check', 'check'], 'help' => false], ['label' => 'Advanced menu customization'|translate, 'values' => ['check', 'check', 'check', 'check'], 'help' => false], ['label' => 'Custom footer'|translate, 'values' => ['check', 'check', 'check', 'check'], 'help' => false], ['label' => 'Add a custom banner'|translate, 'values' => ['check', 'check', 'check', 'check'], 'help' => false], ['label' => 'SEO settings'|translate, 'values' => ['check', 'check', 'check', 'check'], 'help' => false], ['label' => 'Add custom javascript'|translate, 'values' => ['check', 'check', 'check', 'check'], 'help' => false], ['label' => 'Content translation'|translate, 'values' => ['check', 'check', 'check', 'check'], 'help' => false], ['label' => 'Free custom graphic personalization'|translate, 'values' => ['-', '-', 'check', 'check'], 'help' => false] ] ]
+        [ 'title' => 'plan_section_usage'|translate, 'rows' => [ 
+            ['label' => 'plan_row_admin'|translate, 'values' => ['1', '3', '5', 'plan_unlimited'|translate], 'help' => 'plan_help_admin'|translate], 
+            ['label' => 'plan_row_users'|translate, 'values' => ['plan_unlimited'|translate, 'plan_unlimited'|translate, 'plan_unlimited'|translate, 'plan_unlimited'|translate], 'help' => 'plan_help_users'|translate], 
+            ['label' => 'plan_row_contributors'|translate, 'values' => ['-', 'plan_unlimited'|translate, 'plan_unlimited'|translate, 'plan_unlimited'|translate], 'help' => 'plan_help_contributors'|translate], 
+            ['label' => 'plan_row_storage'|translate, 'values' => ['10GB', '100GB', '250GB', '1000GB'], 'help' => false], 
+            ['label' => 'plan_row_plugins'|translate, 'values' => ['-', '-', '-', 'check'], 'help' => 'plan_help_plugins'|translate] 
+        ] ],
+        [ 'title' => 'plan_section_formats'|translate, 'rows' => [ 
+            ['label' => 'plan_row_media'|translate, 'values' => ['check', 'check', 'check', 'check'], 'help' => 'plan_help_media'|translate], 
+            ['label' => 'plan_row_other_formats'|translate, 'values' => ['-', 'check', 'check', 'check'], 'help' => 'plan_help_other_formats'|translate] 
+        ] ],
+        [ 'title' => 'plan_section_custom'|translate, 'rows' => [ 
+            ['label' => 'plan_row_themes'|translate, 'values' => ['check', 'check', 'check', 'check'], 'help' => false], 
+            ['label' => 'plan_row_plugin_inst'|translate, 'values' => ['check', 'check', 'check', 'check'], 'help' => false], 
+            ['label' => 'plan_row_multilingual'|translate, 'values' => ['check', 'check', 'check', 'check'], 'help' => 'plan_help_multilingual'|translate], 
+            ['label' => 'plan_row_domain'|translate, 'values' => ['-', 'check', 'check', 'check'], 'help' => 'plan_help_domain'|translate], 
+            ['label' => 'plan_row_pages'|translate, 'values' => ['check', 'check', 'check', 'check'], 'help' => false], 
+            ['label' => 'plan_row_contact'|translate, 'values' => ['check', 'check', 'check', 'check'], 'help' => false], 
+            ['label' => 'plan_row_menu'|translate, 'values' => ['check', 'check', 'check', 'check'], 'help' => false], 
+            ['label' => 'plan_row_footer'|translate, 'values' => ['check', 'check', 'check', 'check'], 'help' => false], 
+            ['label' => 'plan_row_banner'|translate, 'values' => ['check', 'check', 'check', 'check'], 'help' => false], 
+            ['label' => 'plan_row_seo'|translate, 'values' => ['check', 'check', 'check', 'check'], 'help' => false], 
+            ['label' => 'plan_row_js'|translate, 'values' => ['check', 'check', 'check', 'check'], 'help' => false], 
+            ['label' => 'plan_row_translation'|translate, 'values' => ['check', 'check', 'check', 'check'], 'help' => false], 
+            ['label' => 'plan_row_graphic'|translate, 'values' => ['-', '-', 'check', 'check'], 'help' => false] 
+        ] ]
     ]
 }
 
@@ -25,7 +48,10 @@
                             <div class="label-content">
                                 <span>{$row.label}</span>
                                 {if $row.help}
-                                    <i class="icon-rounded-warning bi bi-info-circle-fill"></i>
+                                    <div class="pwg-tooltip" tabindex="0">
+                                        <i class="icon-rounded-warning bi bi-info-circle-fill"></i>
+                                        <span class="tooltip-text">{$row.help}</span>
+                                    </div>
                                 {/if}
                             </div>
                         </td>
