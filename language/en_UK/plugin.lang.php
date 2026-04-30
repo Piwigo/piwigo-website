@@ -94,6 +94,7 @@ $lang['news btn'] = 'Lorem ipsum dolor sit amet';
 
 /* error */
 $lang['porg_contact_error_message_7'] = 'It must be a valid mail address';
+$lang['porg_contact_error_message_1'] = 'Oopps! Something went wrong.';
 
 /* languages */
 $lang['language_af_ZA'] = 'Afrikaans';

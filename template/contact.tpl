@@ -214,13 +214,6 @@
           </p>
         </div>
 
-        <div id="error" style="display:none;">
-          <p class="error_message d-flex align-items-center gap-2">
-            <i class="icon-cancel-circled"></i>
-            <span>{'porg_contact_error_message_5'|translate}</span>
-          </p>
-        </div>
-
         <div data-toggle="validator" role="form" class="col-xs-12 col-md-8 contact_form">
 
           <div class="form-group position-relative">
@@ -257,9 +250,15 @@
             <input class="ohnohoney" autocomplete="off" type="email" id="email" name="email">
           </div>
 
-          <div class="text-end">
+          <div class="text-end d-flex justify-content-between gap-3">
+            <div id="error" style="display:none;">
+              <p class="error_message d-flex align-items-center gap-2 pink-text mb-0">
+                {'porg_contact_error_message_1'|translate}
+              </p>
+            </div>
+
             <button type="submit" id="form-submit"
-              class="btn-menu menu-btn-green"><span>{'Send message'|translate}</span></button>
+              class="btn-menu menu-btn-green ms-auto"><span>{'Send message'|translate}</span></button>
           </div>
         </div>
       </div>

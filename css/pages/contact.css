@@ -37,6 +37,7 @@
   padding: 0 40px;
 }
 
+/* carousel */
 .contact-content {
   padding: 72px 0 84px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fbf8f2 18%, #f8f5ef 100%);
@@ -87,16 +88,22 @@
     padding: 20px;
   }
 
+  #error {
+    order: 1;
+    width: 100%;
+    text-align: center;
+  }
+
+  .d-flex:has(#error) {
+    flex-wrap: wrap;
+  }
+
   .contact-header-image {
     display: none;
   }
 
   .contact-content {
     padding: 48px 0 60px;
-  }
-
-  .contact-content__header {
-    margin-bottom: 24px;
   }
 
   .contact-logo-card {
