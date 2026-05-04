@@ -55,7 +55,8 @@
                 category_type='feature-submenu' 
                 title={'Newsletter'|translate} 
                 description={'Newsletter desc'|translate} 
-                icon_class='icon-newsletter'}
+                icon_class='icon-newsletter'
+                href="{$PORG_ROOT}{$URL.newsletters}"}
 
             {include file='template/include/sub_menu_items/sub_menu_itemc.tpl' 
                 category_type='feature-submenu' 
