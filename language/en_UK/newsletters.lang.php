@@ -1,9 +1,10 @@
 <?php
 
-$lang['porg_newsletters_desc1'] = 'Keep up with Piwigo news.';
-$lang['porg_newsletters_desc2'] = 'You will receive emails when a new release is available and when major events happen to the project.';
-$lang['porg_newsletters_subscribe_title'] = 'Subscribe to our newsletter and stay updated!';
-$lang['Enter your email here'] = 'Enter your email here';
-$lang['Sign up'] = 'Sign up';
+$lang['porg_newsletters_header_title'] = 'Keep up with <span class="orange-text">Piwigo news</span>';
+$lang['porg_newsletters_desc'] = 'You will receive emails when a new release is available and when major events happen to the project.';
 
+$lang['Sign up to newsletter'] = 'Sign up to newsletter';
+$lang['RGPD agreement'] = 'I agree to join blablabla RGPD';
+
+$lang['porg_newsletters_content_title'] = 'Oldies but goodies';
 ?>

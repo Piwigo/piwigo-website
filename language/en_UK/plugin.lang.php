@@ -181,6 +181,16 @@ $lang['Footer legal 3 Legal Notice'] = 'Legal Notice';
 $lang['Footer legal 4 Terms of Use'] = 'Terms of Use';
 $lang['Footer legal 5 GDPR'] = 'GDPR';
 
+/* form */
+
+$lang['Your email address'] = 'Your email address';
+$lang['Your Piwigo url (if you are already a Piwigo user)'] = 'Your Piwigo url (if you are already a Piwigo user)';
+$lang['Your message'] = 'Your message<span class="orange-text">*</span>';
+$lang['Send message'] = 'Send message';
+$lang['porg_contact_error_email'] = 'Whoops, that email address is invalid';
+$lang['porg_contact_error_message'] = 'Whoops, your message seems to be wrong';
+
+
 /* Common words */
 // $lang['See more'] = 'See more';
 // $lang['Individuals'] = 'Individuals';
