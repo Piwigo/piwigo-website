@@ -98,3 +98,25 @@ $lang['plan_help_domain'] = 'By default, your Piwigo will be accessible from a U
 $lang['plan_unlimited'] = 'Unlimited';
 $lang['plan_excl_vat_month'] = 'excl. VAT / month';
 $lang['plan_billed_annually'] = 'billed annually';
+
+$lang['Free custom graphic personalisation'] = 'Free custom graphic personalisation';
+$lang['text_tootlip_custom'] = 'For customers of an Enterprise or VIP plan: our team will take care of personalizing your Piwigo gallery in your colors, in coordination with you and respecting your visual identity.';
+$lang['See examples'] = 'See examples';
+
+$lang['Advanced'] = 'Advanced download permissions';
+$lang['Registration'] = 'Registration forms with custom fields';
+$lang['Add user comments'] = 'Add user comments';
+$lang['etc..'] = 'etc..';
+
+$lang['tooltip_vip'] = 'The VIP support package includes support for Pro, Team, Enterprise, and VIP plugins.';
+$lang['tooltip_list_vip'] = 'See the list of plugins and features by plan';
+
+$lang['storage_title'] = 'The storage space included in your offer is not enough for you?';
+$lang['storage_p'] = 'You can order additional storage space. The price will be added to that of your subscription (billed annually).';
+
+$lang['excl_vat'] = 'excl. VAT';
+$lang['excl_month'] = '/ month';
+
+$lang['free'] = 'Try it free';
+$lang['features_services'] = 'Features & Services';
+$lang['free_trial'] = 'Start your 30 days free trial';

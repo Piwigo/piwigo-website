@@ -8,8 +8,8 @@
             <span class="price-number">€{$price}</span>
         </div>
         <div class="price-details">
-            <p>{'excl. VAT'|translate}</p>
-            <p>{'/ month'|translate}</p>
+            <p>{'excl_vat'|translate}</p>
+            <p>{'excl_month'|translate}</p>
         </div>
     </div>
 </div>

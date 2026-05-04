@@ -13,7 +13,7 @@
         <div class="fw-bolder price-text">
             <span class="currency">€</span>{$price}
         </div>
-        <div class="text-muted small">{'excl. VAT / month'|translate}<br>{'Billed annually'|translate}</div>
+        <div class="text-muted small">{'plan_excl_vat_month'|translate}<br>{'plan_billed_annually'|translate}</div>
     </div>
 
     <div class="mb-4 text-center">
@@ -74,7 +74,7 @@
                 {/foreach}
             </ul>
 
-            <p class="fw-bold small mb-3 text-dark">{'Features & Services'|translate}</p>
+            <p class="fw-bold small mb-3 text-dark">{'features_services'|translate}</p>
             <ul class="list-unstyled mb-0">
                 {foreach from=$services item=service}
                     <li class="d-flex align-items-start mb-3">
@@ -115,7 +115,7 @@
             file="template/include/buttons/button.tpl"
             variant="menu_btn_white"
             href={(isset($btn_link_try)) ? $btn_link_try : "#"}
-            label={(isset($btn_trial)) ? ($btn_trial|translate) : ('Start your 30 days free trial'|translate)} 
+            label={(isset($btn_trial)) ? ($btn_trial|translate) : ('free_trial'|translate)} 
         }
     </div>
     <h2 class="h2-mobile-top-page text-center">{$title|translate}</h2>

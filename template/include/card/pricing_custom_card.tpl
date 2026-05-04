@@ -3,7 +3,7 @@
         <div class="col-7">
             <h5 class="fw-bolder mb-2 text-dark">{'Free custom graphic personalisation'|translate}</h5>
             <p class="small text-muted mb-0">
-                {'For customers of an Enterprise or VIP plan: our team will take care of personalizing your Piwigo gallery in your colors, in coordination with you and respecting your visual identity.'|translate}
+                {'text_tootlip_custom'|translate}
             </p>
         </div>
         <div class="col-5 text-end">

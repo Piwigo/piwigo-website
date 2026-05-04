@@ -1,7 +1,7 @@
 <div class="pricing-tooltip-card tooltip-plugins">
     <div class="tooltip-content">
         <p class="tooltip-description">
-            {'The VIP support package includes support for Pro, Team, Enterprise, and VIP plugins.'|translate}
+            {'tooltip_vip'|translate}
         </p>
 
         <div class="tooltip-footer">
@@ -9,7 +9,7 @@
                 file="template/include/buttons/button.tpl"
                 variant="menu_btn_white"
                 href="https://rightful-baritone-cfe.notion.site/List-of-plugins-and-features-by-plan-2024-cb81ecd2a398442d9e5056cd2a380588"
-                label={'See the list of plugins and features by plan'|translate} target="_blank" rel="noopener" 
+                label={'tooltip_list_vip'|translate} target="_blank" rel="noopener" 
             }
         </div>
     </div>
