@@ -363,3 +363,7 @@
   text-decoration: none;
   color: var(--main_orange);
 }
+
+.pagination-arrow--reversed i {
+  transform: scaleX(-1);
+}
