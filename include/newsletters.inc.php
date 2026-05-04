@@ -7,8 +7,9 @@ if (isset($newsletters))
 {
   $template->assign(
     array(
-      'newsletters' => array_slice($newsletters, 0, 9),
+      'newsletters' => $newsletters,
       'newsletters_length' => count($newsletters),
+      'newsletters_total_pages' => ceil(count($newsletters) / 12),
     )
   );
 }

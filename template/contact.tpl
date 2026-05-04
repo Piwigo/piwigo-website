@@ -1,5 +1,4 @@
 <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/pages/contact.css">
-<link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/buttons/common_button.css">
 
 {literal}
   <script type="text/javascript">
@@ -223,7 +222,7 @@
         <div data-toggle="validator" role="form" class="contact-form">
 
           <div class="form-group position-relative">
-            <input type="email" class="form-control" id="form-email" placeholder=" " required>
+            <input type="email" class="form-control" id="form-email" name="email" placeholder=" " required>
             <span class="mail-placeholder p-boxed">{'Your email address'|translate}<span
                 class="orange-text">*</span></span>
             <span class="little-mail-placeholder form-input">{'Your email address'|translate}<span

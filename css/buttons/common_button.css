@@ -358,8 +358,7 @@
   position: relative;
 }
 
-.pagination-arrow:hover,
-.pagination-arrow:focus {
+.pagination-arrow:hover {
   text-decoration: none;
   color: var(--main_orange);
 }
