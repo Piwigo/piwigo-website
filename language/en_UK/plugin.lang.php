@@ -93,8 +93,9 @@ $lang['Product Updates desc'] = 'Lorem ipsum dolor sit amet';
 $lang['news btn'] = 'Lorem ipsum dolor sit amet';
 
 /* error */
-$lang['porg_contact_error_message_7'] = 'It must be a valid mail adress';
+$lang['porg_contact_error_message_7'] = 'It must be a valid mail address';
 $lang['porg_contact_error_message_1'] = 'Oopps! Something went wrong.';
+$lang['porg_news_error_rgpd'] = 'You must agree to join the newsletter';
 
 /* success */
 $lang['porg_contact_success_message'] = 'Thanks for contacting us!<br>We will be in touch with you shortly.';
