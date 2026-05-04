@@ -1,7 +1,7 @@
 <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/card/pricing_option.css">
-<link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/card/pricing_global_card.css">
+{* <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/card/pricing_global_card.css">
 <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/card/pricing_custom_card.css">
-<link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/card/storage_card.css">
+<link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/card/storage_card.css"> *}
 
 <section class="pricing-global-wrapper">
 
@@ -145,7 +145,8 @@
                 {include
                     file="template/include/card/pricing_option.tpl"
                     type="selfhosted"
-                    title={'Free'|translate} price="0" subtitle={'For individuals and 100% self-sufficient organizations'|translate} features=$f_free services=[] link_try="https://doc.piwigo.org/" label_try={'View Documentation'|translate} link_trial="https://piwigo.org/forum/" label_trial={'Visit Community Forum'|translate}}
+                    title={'Free'|translate} price="0" subtitle={'For individuals and 100% self-sufficient organizations'|translate} features=$f_free services=[] link_try="https://doc.piwigo.org/" label_try={'View Documentation'|translate} link_trial="https://piwigo.org/forum/" label_trial={'Visit Community Forum'|translate} btn_try={'Download Piwigo'|translate} btn_trial={'Download Piwigo'|translate} target="_blank"
+                    }
 
             </div>
 
@@ -165,7 +166,7 @@
                 {include
                     file="template/include/card/pricing_option.tpl"
                     type="selfhosted"
-                    title={'Light'|translate} price="39" subtitle={'For small organizations'|translate} features=$f_light services=[] link_try="#" label_try={'Contact us'|translate} link_trial="#" label_trial={'Contact us'|translate}
+                    title={'Light'|translate} price="39" subtitle={'For small organizations'|translate} features=$f_light services=[] link_try="#" label_try={'Contact us'|translate} link_trial="#" label_trial={'Contact us'|translate} btn_try={'Contact us'|translate} btn_trial={'Contact us'|translate} btn_link_try="{$PORG_ROOT}{$URL.contact}" btn_link_trial="{$PORG_ROOT}{$URL.contact}" target="_blank"
                 }
             </div>
 
@@ -185,7 +186,7 @@
                 {include
                     file="template/include/card/pricing_option.tpl"
                     type="selfhosted"
-                    title={'Standard'|translate} price="79" subtitle={'For professionals, SMEs, local authorities'|translate} features=$f_std services=[] link_try="#" label_try={'Contact us'|translate} link_trial="#" label_trial={'Contact us'|translate}
+                    title={'Standard'|translate} price="79" subtitle={'For professionals, SMEs, local authorities'|translate} features=$f_std services=[] link_try="#" label_try={'Contact us'|translate} link_trial="#" label_trial={'Contact us'|translate}  btn_try={'Contact us'|translate} btn_trial={'Contact us'|translate} btn_link_try="{$PORG_ROOT}{$URL.contact}" btn_link_trial="{$PORG_ROOT}{$URL.contact}" target="_blank"
                 }
             </div>
 
@@ -206,7 +207,7 @@
                 {include
                     file="template/include/card/pricing_option.tpl"
                     type="selfhosted"
-                    title={'Premium'|translate} price="150" subtitle={'For large photo libraries with intensive use'|translate} features=$f_prem services=[] link_try="#" label_try={'Contact us'|translate} link_trial="#" label_trial={'Contact us'|translate}
+                    title={'Premium'|translate} price="150" subtitle={'For large photo libraries with intensive use'|translate} features=$f_prem services=[] link_try="#" label_try={'Contact us'|translate} link_trial="#" label_trial={'Contact us'|translate}  btn_try={'Contact us'|translate} btn_trial={'Contact us'|translate} btn_link_try="{$PORG_ROOT}{$URL.contact}" btn_link_trial="{$PORG_ROOT}{$URL.contact}" target="_blank"
                 }
             </div>
         </div>

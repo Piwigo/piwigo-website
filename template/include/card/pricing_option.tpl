@@ -17,7 +17,12 @@
     </div>
 
     <div class="mb-4 text-center">
-        {include file="template/include/buttons/button.tpl" variant="menu_btn_green" href=$link_try label={'Try it free'|translate}}
+        {include
+            file="template/include/buttons/button.tpl"
+            variant="menu_btn_green"
+            href={(isset($btn_link_try)) ? $btn_link_try : "#"}
+            label={(isset($btn_try)) ? ($btn_try|translate) : ('Try it free'|translate)} 
+        }
     </div>
 
     <div class="features-wrapper flex-grow-1">
@@ -107,9 +112,10 @@
 
     <div class="price-footer mt-4 text-center">
         {include
-            file="template/include/buttons/button.tpl" variant="menu_btn_white"
-            href=$link_trial
-            label={'Start your 30 days free trial'|translate} 
+            file="template/include/buttons/button.tpl"
+            variant="menu_btn_white"
+            href={(isset($btn_link_try)) ? $btn_link_try : "#"}
+            label={(isset($btn_trial)) ? ($btn_trial|translate) : ('Start your 30 days free trial'|translate)} 
         }
     </div>
     <h2 class="h2-mobile-top-page text-center">{$title|translate}</h2>

@@ -7,7 +7,7 @@ Pricing Card
   flex-wrap: nowrap;
   justify-content: center;
   gap: 20px;
-  padding: 40px 20px;
+  padding: 100px 20px;
   overflow-x: auto;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -129,7 +129,7 @@ Pricing Card
   z-index: 1050;
   border-radius: 12px;
   border: 1px solid #eee;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 20px rgba(119, 119, 119, 0.2);
   pointer-events: auto;
 }
 
@@ -353,7 +353,7 @@ Pricing Custom Tooltip
   width: 548px;
   border-radius: 10px;
   border: 1px solid #e9ecef;
-  box-shadow: 0 4px 20px rgba(119, 119, 119, 0.25);
+  box-shadow: 0 4px 20px rgba(119, 119, 119, 0.2);
   pointer-events: auto;
   padding: 25px !important;
 }
@@ -484,7 +484,7 @@ Pricing Global Tooltip
     padding: 20px !important;
     background: var(--clear) !important;
     border-radius: 10px !important;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+    box-shadow: 0 4px 20px rgba(119, 119, 119, 0.2);
     border: 1px solid #f0f0f0 !important;
     display: flex !important;
     flex-direction: column !important;
@@ -526,7 +526,7 @@ Pricing Plugin Tooltip
     background: var(--clear);
     border-radius: 10px;
     padding: 25px;
-    box-shadow: 0 4px 20px rgba(119, 119, 119, 0.25);
+    box-shadow: 0 4px 20px rgba(119, 119, 119, 0.2);
     display: flex;
     flex-direction: column;
     gap: 10px;

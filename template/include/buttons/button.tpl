@@ -24,4 +24,4 @@
   {assign var='default_label' value='CTA principale'}
 {/if}
 
-<a href="{$href|default:'#'}" class="{$classes}"><span>{$label|default:$default_label}</span></a>
+<a href="{$href|default:'#'}" class="{$classes}" {if isset($target)}target="{$target}" {/if} {if isset($target) && $target eq '_blank'}rel="noopener" {/if}><span>{$label|default:$default_label}</span></a>
