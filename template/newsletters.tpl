@@ -90,6 +90,22 @@
         }
       });
 
+      jQuery('.form-newsletter-subscribe').on('submit', function(e) {
+        e.preventDefault();
+        var $form = jQuery(this);
+        var action = $form.attr('action');
+        var data = $form.serialize();
+
+        jQuery.ajax({
+          url: action,
+          method: 'GET',
+          data: data,
+        }).always(function() {
+          jQuery('#newsletter-form').hide();
+          jQuery('#success').removeClass('d-none');
+        });
+      });
+
       // Pagination
       const itemsPerPage = 12;
       const allCards = jQuery('.newsletter-card-col');
@@ -188,7 +204,17 @@
       <div class="col-12 col-md-1">
       </div>
       <div class="col-12 col-md-6">
-        <div class="newsletter-form">
+
+        <div id="success" class="newsletter-form-success d-none" >
+          <div class="newsletter-form-success-inner">
+            <h3 class="newsletter-form-success-title dark-green-text">{'porg_newsletter_success_title'|translate}</h3>
+
+            <p class="p-boxed green-text mb-0">{'porg_newsletter_success_message'|translate}</p>
+          </div>
+        </div>
+
+
+        <div id="newsletter-form" class="newsletter-form">
           <form action="{$PORG_ROOT}announcement/subscribe.php" method="get" data-toggle="validator" role="form"
             class="form-newsletter-subscribe">
 
@@ -222,7 +248,7 @@
 </section>
 
 <section class="container newsletter-container">
-  <div class="container mb-md-5 mb-3">
+  <div class="container mb-md-5 mb-3 mt-5">
     <h2>{'porg_newsletters_content_title'|translate}</h2>
   </div>
   <div class="container my-5">

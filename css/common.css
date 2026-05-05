@@ -526,6 +526,14 @@ Text Color
 .pink-text {
   color: var(--main_pink) !important;
 }
+
+.green-text {
+  color: var(--accent_green);
+}
+
+.dark-green-text {
+  color: var(--dark_green);
+}
 /******
 Form
 ******/
