@@ -194,7 +194,7 @@ Short CTA
 ******/
 .short-get-started-container {
   width: 100%;
-  max-width: 1080px;
+  max-width: 940px;
   min-height: 270px;
   background: var(--grey);
   border-radius: 10px;

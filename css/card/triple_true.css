@@ -22,10 +22,10 @@
   display: flex;
   justify-content: space-around;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 121px;
+  gap: 120px;
   padding: 60px 120px;
   width: 100%;
-  max-width: 1080px;
+  max-width: 940px;
   margin: 0 auto 150px;
   box-sizing: border-box;
   border-radius: 10px;
@@ -53,7 +53,7 @@
 }
 
 .feature-benefit-text {
-  max-width: 210px;
+  max-width: 150px;
 }
 
 .green-feature-benefit-icon{

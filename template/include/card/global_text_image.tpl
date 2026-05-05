@@ -21,7 +21,7 @@
     </div>
 
     <div class="col-12 col-md-6" style="padding-right: 0; padding-left: 0;">
-        <div class="feature-image-container" {if $reverse}style="justify-content: flex-end;"{/if}>
+        <div class="feature-image-container" style="margin: 0 20px; {if $reverse}justify-content: flex-end;{/if}">
             <img src="{$image}" class="feature-image" alt="{$title|escape}">
         </div>
     </div>
