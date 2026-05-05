@@ -88,10 +88,18 @@
                 const isLongEnough = value.length >= 8;
                 const hasRequirements = /[0-9]/.test(value) && /[^A-Za-z0-9]/.test(value);
 
-                if (!isLongEnough) passHelpLength.show();
-                else passHelpLength.removeClass('pink-text').addClass('green-text');
-                if (!hasRequirements) passHelpSpecs.show();
-                else passHelpSpecs.removeClass('pink-text').addClass('green-text');
+                if (!isLongEnough) {
+                    passHelpLength.show();
+                } else {
+                    passHelpLength.removeClass('pink-text').addClass('main-green-text');
+                    passHelp.removeClass('icon-warning').addClass('icon-check-1').css('color', 'var(--main_flash_green) !important');
+                }
+                if (!hasRequirements) {
+                    passHelpSpecs.show();
+                } else {
+                    passHelpSpecs.removeClass('pink-text').addClass('main-green-text');
+                    passHelp2.removeClass('icon-warning').addClass('icon-check-1').css('color', 'var(--main_flash_green) !important');
+                }
 
                 if (!isLongEnough || !hasRequirements) {
                     passWarningIcon.show();
@@ -106,6 +114,14 @@
                 // jQuery(passWarningIcon).hide();
                 // jQuery(passwordInput).removeClass('is-invalid');
             }
+            jQuery(passEye).on('click', function() {
+                const currentType = jQuery(passwordInput).attr('type');
+                if (currentType === 'password') {
+                    jQuery(passwordInput).attr('type', 'text');
+                } else {
+                    jQuery(passwordInput).attr('type', 'password');
+                }
+            });
             // Email input handler
             jQuery(emailInput).on('input', function() {
                 const value = jQuery(this).val().trim();
@@ -288,7 +304,7 @@
                             <span class="little-password-placeholder form-input">{'Password'|translate} <span class="orange-text">*</span></span>
                             <i id="passWarningIcon" class="icon-rounded-warning" aria-hidden="true"></i>
                             <i id="passEye" class="icon-show toggle-password" aria-hidden="true""></i>
-                            <div class="password-hints mt-1">
+                            <div class=" password-hints mt-1">
                                 <div class="passHelp">
                                     <i id="passHelp" class="icon-warning" aria-hidden="true"></i>
                                     <p id="passHelpLength" class="pink-text small mb-0">{'8 characters min'|translate}</p>
@@ -297,44 +313,44 @@
                                     <i id="passHelp2" class="icon-warning small mb-0" aria-hidden="true"></i>
                                     <p id="passHelpSpecs" class="pink-text small mb-0">{'Number & symbol'|translate}</p>
                                 </div>
-                            </div>
                         </div>
-
-                        <div class="form-check mb-2">
-                            <input class="form-check-input" type="checkbox" id="form-copy">
-                            <label class="form-check-label small" for="form-copy">Receive a copy by email</label>
-                        </div>
-
-                        <div class="form-check mb-4">
-                            <input class="form-check-input" type="checkbox" id="form-terms">
-                            <label class="form-check-label small" for="form-terms">
-                                I agree to the <a href="#" class="orange-text">Terms of Use</a> and <a href="#" class="orange-text">Privacy Policy</a>*
-                            </label>
-                        </div>
-
-                        <div class="text-end">
-                            <button type="submit" id="form-submit" class="btn-menu menu-btn-green ms-auto" disabled>
-                                Sign up for a one month free trial
-                            </button>
-                        </div>
-
-                        <p class="text-center mt-3 small">
-                            Already have a Piwigo Cloud account? <a href="#" class="orange-text fw-bold">Sign In</a>
-                        </p>
-
-                        <div id="error" class="mt-2 text-center pink-text" style="display:none;"><span></span></div>
-                        <input type="hidden" id="form-key" value="{$EPHEMERAL_KEY}">
-                        <div style="display:none;"><input type="text" id="message" name="message"></div>
-                    </form>
                 </div>
-            </div>
 
-            <div class="col-12 col-md-7 ps-md-5">
-                <div class="illustration-container position-relative">
-                    <img src="{$PORG_ROOT_URL}images/signup/image_6600df.png" class="img-fluid" alt="Piwigo Cloud Stats">
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" id="form-copy">
+                    <label class="form-check-label small" for="form-copy">Receive a copy by email</label>
                 </div>
-            </div>
 
+                <div class="form-check mb-4">
+                    <input class="form-check-input" type="checkbox" id="form-terms">
+                    <label class="form-check-label small" for="form-terms">
+                        I agree to the <a href="#" class="orange-text">Terms of Use</a> and <a href="#" class="orange-text">Privacy Policy</a>*
+                    </label>
+                </div>
+
+                <div class="text-end">
+                    <button type="submit" id="form-submit" class="btn-menu menu-btn-green ms-auto" disabled>
+                        Sign up for a one month free trial
+                    </button>
+                </div>
+
+                <p class="text-center mt-3 small">
+                    Already have a Piwigo Cloud account? <a href="#" class="orange-text fw-bold">Sign In</a>
+                </p>
+
+                <div id="error" class="mt-2 text-center pink-text" style="display:none;"><span></span></div>
+                <input type="hidden" id="form-key" value="{$EPHEMERAL_KEY}">
+                <div style="display:none;"><input type="text" id="message" name="message"></div>
+                </form>
+            </div>
         </div>
+
+        <div class="col-12 col-md-7 ps-md-5">
+            <div class="illustration-container position-relative">
+                <img src="{$PORG_ROOT_URL}images/signup/image_6600df.png" class="img-fluid" alt="Piwigo Cloud Stats">
+            </div>
+        </div>
+
+    </div>
     </div>
     </section>
