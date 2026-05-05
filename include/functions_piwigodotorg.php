@@ -37,6 +37,7 @@ function porg_get_pages()
     'get-help'=>'Get Help',
     'components-display' => 'Components display',
     'pricing' => 'Pricing',
+    'signup' => 'Signup',
     );
 }
 

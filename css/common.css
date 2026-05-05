@@ -531,6 +531,11 @@ Text Color
   color: var(--accent_green);
 }
 
+.main-green-text {
+  color: var(--main_flash_green);
+}
+
+
 .dark-green-text {
   color: var(--dark_green);
 }
