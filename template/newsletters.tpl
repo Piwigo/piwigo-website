@@ -95,12 +95,21 @@
         var $form = jQuery(this);
         var action = $form.attr('action');
         var data = $form.serialize();
+        var email = jQuery('#form-email').val().trim();
+        var escapedEmail = jQuery('<div>').text(email).html();
 
         jQuery.ajax({
           url: action,
           method: 'GET',
           data: data,
         }).always(function() {
+          var successMessage = jQuery('#newsletter-success-message').data('template');
+          if (successMessage && email) {
+            jQuery('#newsletter-success-message').html(
+              successMessage.replace('__NEWSLETTER_EMAIL__', '<strong>' + escapedEmail + '</strong>')
+            );
+          }
+
           jQuery('#newsletter-form').hide();
           jQuery('#success').removeClass('d-none');
         });
@@ -209,7 +218,10 @@
           <div class="newsletter-form-success-inner">
             <h3 class="newsletter-form-success-title dark-green-text">{'porg_newsletter_success_title'|translate}</h3>
 
-            <p class="p-boxed green-text mb-0">{'porg_newsletter_success_message'|translate}</p>
+            <p id="newsletter-success-message" class="p-boxed green-text mb-0"
+              data-template="{'porg_newsletter_success_message'|translate:'__NEWSLETTER_EMAIL__'}">
+              {'porg_newsletter_success_message'|translate:'__NEWSLETTER_EMAIL__'}
+            </p>
           </div>
         </div>
 

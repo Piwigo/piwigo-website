@@ -10,5 +10,5 @@ $lang['porg_newsletters_content_title'] = 'Oldies but goodies';
 
 $lang['porg_newsletter_success_title'] = 'Check your Email to Complete Subscription';
 
-$lang['porg_newsletter_success_message'] = 'An email has been sent to xxxxxx@mail.com to validate your subscription. Check your inbox and click on the web adress in the message. It should arrive in a few minutes.';
+$lang['porg_newsletter_success_message'] = 'An email has been sent to %s to validate your subscription. Check your inbox and click on the web adress in the message. It should arrive in a few minutes.';
 ?>
