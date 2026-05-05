@@ -50,7 +50,10 @@ document.addEventListener('DOMContentLoaded', function () {
       history.replaceState(null, '', '#' + featureKey);
     }
 
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    const anchor = document.getElementById('features-menu-anchor');
+    if (anchor) {
+      anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   }
 
   function activateFeatureFromHash() {
