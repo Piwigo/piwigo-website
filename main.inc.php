@@ -137,6 +137,7 @@ function porg_add_methods($arr)
         array(
             'email' => array(),
             'message' => array(),
+            'piwigo_url' => array(),
             'key' => array(),
         ),
         'Send email to Piwigo.org (PLG)'

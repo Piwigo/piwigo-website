@@ -196,7 +196,7 @@
 
 <section class="container-fluide newsletter-header">
   <div class="container">
-    <div class="row align-items-center">
+    <div class="row align-items-top">
       <div class="col-12 col-md-5 newsletter-header-text">
         <h1>{'porg_newsletters_header_title'|translate}</h1>
         <p>{'porg_newsletters_desc'|translate}</p>

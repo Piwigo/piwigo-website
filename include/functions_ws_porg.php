@@ -102,6 +102,19 @@ function ws_porg_contact_send($params, &$service)
   
   $message = quoted_printable_encode(stripslashes($params["message"]));
 
+  /* URL */
+  if(isset($params["url"]))
+  {
+    if(!filter_var($params["url"], FILTER_VALIDATE_URL))
+    {
+      $error .= "Whoops, invalid URL format";
+    }
+    else
+    {
+      $message .= "\n\nURL: ".$params["url"];
+    }
+  }
+
   if (empty($error))
   {
     $headers = 'From: '.$params['email']."\n";
