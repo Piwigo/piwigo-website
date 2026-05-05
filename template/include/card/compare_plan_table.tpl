@@ -1,31 +1,28 @@
 {assign
     var='plans_sections'
     value=[
-        [ 'title' => 'plan_section_usage'|translate, 'rows' => [ 
-            ['label' => 'plan_row_admin'|translate, 'values' => ['1', '3', '5', 'plan_unlimited'|translate], 'help' => 'plan_help_admin'|translate], 
-            ['label' => 'plan_row_users'|translate, 'values' => ['plan_unlimited'|translate, 'plan_unlimited'|translate, 'plan_unlimited'|translate, 'plan_unlimited'|translate], 'help' => 'plan_help_users'|translate], 
-            ['label' => 'plan_row_contributors'|translate, 'values' => ['-', 'plan_unlimited'|translate, 'plan_unlimited'|translate, 'plan_unlimited'|translate], 'help' => 'plan_help_contributors'|translate], 
-            ['label' => 'plan_row_storage'|translate, 'values' => ['10GB', '100GB', '250GB', '1000GB'], 'help' => false], 
-            ['label' => 'plan_row_plugins'|translate, 'values' => ['-', '-', '-', 'check'], 'help' => 'plan_help_plugins'|translate] 
+        [ 'title' => 'pricing plan_section_usage'|translate, 'rows' => [ 
+            ['label' => 'pricing plan_row_admin'|translate, 'values' => ['1', '3', '5', 'pricing plan_unlimited'|translate], 'help' => 'pricing plan_help_admin'|translate], 
+            ['label' => 'pricing plan_row_users'|translate, 'values' => ['pricing plan_unlimited'|translate, 'pricing plan_unlimited'|translate, 'pricing plan_unlimited'|translate, 'pricing plan_unlimited'|translate], 'help' => 'pricing plan_help_users'|translate], 
+            ['label' => 'pricing plan_row_contributors'|translate, 'values' => ['-', 'pricing plan_unlimited'|translate, 'pricing plan_unlimited'|translate, 'pricing plan_unlimited'|translate], 'help' => 'pricing plan_help_contributors'|translate], 
+            ['label' => 'pricing plan_row_storage'|translate, 'values' => ['10GB', '100GB', '250GB', '1000GB'], 'help' => false], 
+            ['label' => 'pricing plan_row_plugins'|translate, 'values' => ['-', '-', '-', 'check'], 'help' => 'pricing plan_help_plugins'|translate] 
         ] ],
-        [ 'title' => 'plan_section_formats'|translate, 'rows' => [ 
-            ['label' => 'plan_row_media'|translate, 'values' => ['check', 'check', 'check', 'check'], 'help' => 'plan_help_media'|translate], 
-            ['label' => 'plan_row_other_formats'|translate, 'values' => ['-', 'check', 'check', 'check'], 'help' => 'plan_help_other_formats'|translate] 
+        [ 'title' => 'pricing plan_section_formats'|translate, 'rows' => [ 
+            ['label' => 'pricing plan_row_media'|translate, 'values' => ['check', 'check', 'check', 'check'], 'help' => 'pricing plan_help_media'|translate], 
+            ['label' => 'pricing plan_row_other_formats'|translate, 'values' => ['-', 'check', 'check', 'check'], 'help' => 'pricing plan_help_other_formats'|translate] 
         ] ],
-        [ 'title' => 'plan_section_custom'|translate, 'rows' => [ 
-            ['label' => 'plan_row_themes'|translate, 'values' => ['check', 'check', 'check', 'check'], 'help' => false], 
-            ['label' => 'plan_row_plugin_inst'|translate, 'values' => ['check', 'check', 'check', 'check'], 'help' => false], 
-            ['label' => 'plan_row_multilingual'|translate, 'values' => ['check', 'check', 'check', 'check'], 'help' => 'plan_help_multilingual'|translate], 
-            ['label' => 'plan_row_domain'|translate, 'values' => ['-', 'check', 'check', 'check'], 'help' => 'plan_help_domain'|translate], 
-            ['label' => 'plan_row_pages'|translate, 'values' => ['check', 'check', 'check', 'check'], 'help' => false], 
-            ['label' => 'plan_row_contact'|translate, 'values' => ['check', 'check', 'check', 'check'], 'help' => false], 
-            ['label' => 'plan_row_menu'|translate, 'values' => ['check', 'check', 'check', 'check'], 'help' => false], 
-            ['label' => 'plan_row_footer'|translate, 'values' => ['check', 'check', 'check', 'check'], 'help' => false], 
-            ['label' => 'plan_row_banner'|translate, 'values' => ['check', 'check', 'check', 'check'], 'help' => false], 
-            ['label' => 'plan_row_seo'|translate, 'values' => ['check', 'check', 'check', 'check'], 'help' => false], 
-            ['label' => 'plan_row_js'|translate, 'values' => ['check', 'check', 'check', 'check'], 'help' => false], 
-            ['label' => 'plan_row_translation'|translate, 'values' => ['check', 'check', 'check', 'check'], 'help' => false], 
-            ['label' => 'plan_row_graphic'|translate, 'values' => ['-', '-', 'check', 'check'], 'help' => false] 
+        [ 'title' => 'pricing plan_section_custom'|translate, 'rows' => [ 
+            ['label' => 'pricing plan_row_themes'|translate, 'values' => ['check', 'check', 'check', 'check'], 'help' => false], 
+            ['label' => 'pricing plan_row_plugin_inst'|translate, 'values' => ['check', 'check', 'check', 'check'], 'help' => false], 
+            ['label' => 'pricing plan_row_multilingual'|translate, 'values' => ['check', 'check', 'check', 'check'], 'help' => 'pricing plan_help_multilingual'|translate], 
+            ['label' => 'pricing plan_row_domain'|translate, 'values' => ['-', 'check', 'check', 'check'], 'help' => 'pricing plan_help_domain'|translate], 
+            ['label' => 'pricing plan_row_pages'|translate, 'values' => ['check', 'check', 'check', 'check'], 'help' => false], 
+            ['label' => 'pricing plan_row_contact'|translate, 'values' => ['check', 'check', 'check', 'check'], 'help' => false], 
+            ['label' => 'pricing plan_row_menu'|translate, 'values' => ['check', 'check', 'check', 'check'], 'help' => false], 
+            ['label' => 'pricing plan_row_footer'|translate, 'values' => ['check', 'check', 'check', 'check'], 'help' => false], 
+            ['label' => 'pricing plan_row_translation'|translate, 'values' => ['check', 'check', 'check', 'check'], 'help' => false], 
+            ['label' => 'pricing plan_row_graphic'|translate, 'values' => ['-', '-', 'check', 'check'], 'help' => false] 
         ] ]
     ]
 }

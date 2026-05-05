@@ -209,6 +209,17 @@ $lang['porg_contact_error_message'] = 'Whoops, your message seems to be wrong';
 // $lang['See pricing'] = 'See pricing';
 $lang['Contact us'] = 'Contact us';
 $lang['Login'] = 'Login';
+$lang['$'] = '€';
+$lang['GB'] = 'GB';
+$lang['Pro'] = 'Pro';
+$lang['Team'] = 'Team';
+$lang['Enterprise'] = 'Enterprise';
+$lang['VIP'] = 'VIP';
+$lang['Best deal'] = 'Best deal';
+$lang['Free'] = 'Free';
+$lang['Light'] = 'Light';
+$lang['Standard'] = 'Standard';
+$lang['Premium'] = 'Premium';
 
 /*Used in guide pages*/
 // $lang['porg_guides'] = 'Guides';

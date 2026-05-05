@@ -4,8 +4,8 @@
             <i class="icon-cloud-oneplace"></i>
         </div>
         <div class="content d-flex flex-column justify-content-center">
-            <span class="pricing-label d-block fw-bolder h2-top-page"><span class="hidden">Piwigo</span> Cloud</span>
-            <small class="pricing-description sub-h3">Piwigo SaaS, hosting & support</small>
+            <span class="pricing-label d-block fw-bolder h2-top-page">Piwigo {'Cloud'|translate}</span>
+            <small class="pricing-description sub-h3">{'pricing btn cloud description'|translate}</small>
         </div>
     </button>
 
@@ -14,8 +14,8 @@
             <i class="icon-self-host"></i>
         </div>
         <div class="content d-flex flex-column justify-content-center">
-            <span class="pricing-label d-block fw-bolder h2-top-page"><span class="hidden">Piwigo</span> Self-hosted</span>
-            <small class="pricing-description sub-h3">Piwigo on your own server</small>
+            <span class="pricing-label d-block fw-bolder h2-top-page">Piwigo {'Self-hosted'|translate}</span>
+            <small class="pricing-description sub-h3">{'pricing btn selfhosted description'|translate}</small>
         </div>
     </button>
 </div>

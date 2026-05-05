@@ -1,7 +1,7 @@
 <div class="pricing-tooltip-card tooltip-plugins">
     <div class="tooltip-content">
         <p class="tooltip-description">
-            {'tooltip_vip'|translate}
+            {'pricing tooltip_vip'|translate}
         </p>
 
         <div class="tooltip-footer">
@@ -9,7 +9,7 @@
                 file="template/include/buttons/button.tpl"
                 variant="menu_btn_white"
                 href="https://rightful-baritone-cfe.notion.site/List-of-plugins-and-features-by-plan-2024-cb81ecd2a398442d9e5056cd2a380588"
-                label={'tooltip_list_vip'|translate} target="_blank" rel="noopener" 
+                label={'pricing tooltip_list_vip'|translate} target="_blank" rel="noopener" 
             }
         </div>
     </div>

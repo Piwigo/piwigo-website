@@ -14,14 +14,14 @@
     <div class="row align-items-center text-center">
         <div class="col-12 pricing-header-text">
             <h1 class="pricing-title">
-                {'main title part 1'|translate}
+                {'pricing main title part 1'|translate}
                 <span class="highlight-wrap">
                     <img class="highlight-circle" src="{$PORG_ROOT_URL}images/pricing/greencircle.svg" alt="">
-                    <span class="highlight">{'main title part 2'|translate}</span>
+                    <span class="highlight">{'pricing main title part 2'|translate}</span>
                 </span>
             </h1>
             <p class="pricing-subtitle">
-                {'main description'|translate}
+                {'pricing main description'|translate}
             </p>
         </div>
 
@@ -31,17 +31,17 @@
 
         <div class="col-12 pricing-toggle-description">
             <p id="desc-cloud" class="toggle-desc">
-                {'toggle description 1'|translate}
+                {'pricing toggle description 1'|translate}
             </p>
             <p id="desc-selfhosted" class="toggle-desc d-none">
-                {'toggle description 2'|translate}
+                {'pricing toggle description 2'|translate}
             </p>
         </div>
     </div>
 </section>
 
 <div id="card-selfhosted" class="selfhosted-card-container d-none-card">
-    {include file="template/include/card/global_text_image.tpl" title={'title selfhosted card'|translate} desc={'selfhosted description card'|translate} image="{$PORG_ROOT_URL}images/pricing/selfhosted_deploy.png" }
+    {include file="template/include/card/global_text_image.tpl" title={'pricing title selfhosted card'|translate} desc={'pricing selfhosted description card'|translate} image="{$PORG_ROOT_URL}images/pricing/selfhosted_deploy.png" }
 </div>
 
 <div id="pricing-content-cloud" class="pricing-content">
@@ -58,7 +58,7 @@
 
 <section class="faq_pricing_container container">
     <div class="faq_pricing_header">
-        <h3 class="faq_pricing_title text-center">{'faq pricing title'|translate}</h2>
+        <h3 class="faq_pricing_title text-center">{'pricing faq pricing title'|translate}</h2>
     </div>
     <div class="row faq_pricing_grid g-0">
         {include file="template/include/card/faq_item.tpl" faq_id="1" 

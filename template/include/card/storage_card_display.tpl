@@ -1,9 +1,9 @@
 <div class="storage-popover-content p-3 text-start">
     <h5 class="popover-title fw-bold mb-2">
-        {'storage_title'|translate}
+        {'pricing storage_title'|translate}
     </h5>
     <p class="popover-description text-muted">
-        {'storage_p'|translate}
+        {'pricing storage_p'|translate}
     </p>
 
     <div class="storage-grid-container">

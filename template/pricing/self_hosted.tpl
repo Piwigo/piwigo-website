@@ -1,40 +1,40 @@
     {assign var="color" value="orange"}
-    {assign var="t_1" value={'specific_case_title_1'|translate}}
-    {assign var="t_2" value={'specific_case_title_2'|translate}}
-    {assign var="t_3" value={'prof_service_title_3'|translate}}
-    {assign var="t_4" value={'prof_service_title_4'|translate}}
-    {assign var="t_5" value={'prof_service_title_5'|translate}}
+    {assign var="t_1" value={'pricing specific_case_title_1'|translate}}
+    {assign var="t_2" value={'pricing specific_case_title_2'|translate}}
+    {assign var="t_3" value={'pricing prof_service_title_3'|translate}}
+    {assign var="t_4" value={'pricing prof_service_title_4'|translate}}
+    {assign var="t_5" value={'pricing prof_service_title_5'|translate}}
     {assign
         var="text_1"
-        value={'specific_case_text_1'|translate}
+        value={'pricing specific_case_text_1'|translate}
     }
     {assign
         var="text_2"
-        value={'specific_case_text_2'|translate}
+        value={'pricing specific_case_text_2'|translate}
     }
     {assign
         var="text_3"
-        value={'prof_service_text_3'|translate}
+        value={'pricing prof_service_text_3'|translate}
     }
     {assign
         var="text_4"
-        value={'prof_service_text_4'|translate}
+        value={'pricing prof_service_text_4'|translate}
     }
     {assign
         var="text_5"
-        value={'prof_service_text_5'|translate}
+        value={'pricing prof_service_text_5'|translate}
     }
-    {assign var="th_1" value={'tech_table_head_install'|translate}}
-    {assign var="th_2" value={'tech_table_head_updates'|translate}}
-    {assign var="th_3" value={'tech_table_head_managed'|translate}}
-    {assign var="row_pricing_customer" value={'tech_table_row_pricing_support'|translate}}
-    {assign var="row_pricing_external" value={'tech_table_row_pricing_no_support'|translate}}
-    {assign var="row_included_title" value={'tech_table_row_included_title'|translate}}
-    {assign var="row_feat_install" value={'tech_table_row_feat_install'|translate}}
-    {assign var="row_feat_updates" value={'tech_table_row_feat_updates'|translate}}
-    {assign var="row_feat_server" value={'tech_table_row_feat_server'|translate}}
-    {assign var="row_feat_monit" value={'tech_table_row_feat_monit'|translate}}
-    {assign var="row_feat_backup" value={'tech_table_row_feat_backup'|translate}}
+    {assign var="th_1" value={'pricing tech_table_head_install'|translate}}
+    {assign var="th_2" value={'pricing tech_table_head_updates'|translate}}
+    {assign var="th_3" value={'pricing tech_table_head_managed'|translate}}
+    {assign var="row_pricing_customer" value={'pricing tech_table_row_pricing_support'|translate}}
+    {assign var="row_pricing_external" value={'pricing tech_table_row_pricing_no_support'|translate}}
+    {assign var="row_included_title" value={'pricing tech_table_row_included_title'|translate}}
+    {assign var="row_feat_install" value={'pricing tech_table_row_feat_install'|translate}}
+    {assign var="row_feat_updates" value={'pricing tech_table_row_feat_updates'|translate}}
+    {assign var="row_feat_server" value={'pricing tech_table_row_feat_server'|translate}}
+    {assign var="row_feat_monit" value={'pricing tech_table_row_feat_monit'|translate}}
+    {assign var="row_feat_backup" value={'pricing tech_table_row_feat_backup'|translate}}
 
 <section id="specific-cases-section" class="specific-cases-container container">
     <h2 class="specific-cases-title text-center">{'specific cases title'|translate}</h2>
@@ -63,10 +63,10 @@
             <h4 class="professional-services-title-text text-center">{$t_3}</h4>
             <p class="professional-services-text text-center">{$text_3}</p>
             <div class="service-action" style="margin-top: 20px;">
-                {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'label_see_examples'|translate}}
+                {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'pricing label_see_examples'|translate}}
             </div>
             <div class="service-price" style="padding-top: 30px !important;">
-                <span class="price-amount">€490</span> <span class="price-suffix">{'price_excl_taxes'|translate}</span>
+                <span class="price-amount">€490</span> <span class="price-suffix">{'pricing price_excl_taxes'|translate}</span>
             </div>
         </div>
         <div class="professional-service-card">
@@ -74,11 +74,11 @@
             <h4 class="professional-services-title-text text-center">{$t_4}</h4>
             <p class="professional-services-text text-center">{$text_4}</p>
             <div class="service-action">
-                {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'label_learn_more'|translate}}
+                {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'pricing label_learn_more'|translate}}
             </div>
             <div class="service-price">
-                <span class="price-label">{'professional services lil text'|translate}</span>
-                <span class="price-amount">€150</span> <span class="price-suffix">{'price_excl_taxes_hour'|translate}</span>
+                <span class="price-label">{'pricing professional services lil text'|translate}</span>
+                <span class="price-amount">€150</span> <span class="price-suffix">{'pricing price_excl_taxes_hour'|translate}</span>
             </div>
         </div>
         <div class="professional-service-card">
@@ -86,11 +86,11 @@
             <h4 class="professional-services-title-text text-center">{$t_5}</h4>
             <p class="professional-services-text text-center">{$text_5}</p>
             <div class="service-action">
-                {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'label_see_prerequisites'|translate}}
+                {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'pricing label_see_prerequisites'|translate}}
             </div>
             <div class="service-price">
-                <span class="price-label">{'professional services lil text'|translate}</span>
-                <span class="price-amount">€150</span> <span class="price-suffix">{'price_excl_taxes_hour'|translate}</span>
+                <span class="price-label">{'pricing professional services lil text'|translate}</span>
+                <span class="price-amount">€150</span> <span class="price-suffix">{'pricing price_excl_taxes_hour'|translate}</span>
             </div>
         </div>
     </div>
@@ -99,10 +99,10 @@
 <section id="technical-support-section" class="technical-support-container container">
     <div class="technical-support-flex">
         <div class="technical-support-header">
-            <h3 class="technical-support-title">{'technical title'|translate}</h2>
+            <h3 class="technical-support-title">{'pricing technical title'|translate}</h3>
         </div>
         <div class="technical-support-content">
-            <p class="technical-support-text">{'technical description'|translate}</p>
+            <p class="technical-support-text">{'pricingtechnical description'|translate}</p>
         </div>
     </div>
 </section>

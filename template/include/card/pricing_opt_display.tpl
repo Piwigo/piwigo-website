@@ -15,7 +15,7 @@
                 {include
                     file="template/include/card/pricing_option.tpl"
                     type="cloud"
-                    title={'Pro'|translate} price="29" subtitle={'You are a freelance photographer or designer, you use Piwigo to share your work online and with your clients'|translate} features=$f_pro services=$s_pro link_try="#" link_trial="#" 
+                    title={'Pro'|translate} price="29" subtitle={'pricing card pro description'|translate} features=$f_pro services=$s_pro link_try="#" link_trial="#" 
                 }
             </div>
 
@@ -23,7 +23,7 @@
             <div class="pricing-grid-item">
                 {assign
                     var="f_team"
-                    value=[ ['text' => {'3 administrator'|translate}], ['text' => {'unlimited users'|translate}], ['text' => {'unlimited contributors'|translate}], ['text' => {'100GB storage'|translate}, 'info' => true], ['text' => {'All file formats'|translate}, 'info' => true], ['text' => {'Priority email support'|translate}] ] 
+                    value=[ ['text' => {'3 administrators'|translate}], ['text' => {'unlimited users'|translate}], ['text' => {'unlimited contributors'|translate}], ['text' => {'100GB storage'|translate}, 'info' => true], ['text' => {'All file formats'|translate}, 'info' => true], ['text' => {'Priority email support'|translate}] ] 
                 }
                 {assign
                     var="s_team"
@@ -32,7 +32,7 @@
                 {include
                     file="template/include/card/pricing_option.tpl"
                     type="cloud"
-                    title={'Team'|translate} price="99" subtitle={'You use Piwigo in a small team'|translate} features=$f_team services=$s_team link_try="#" link_trial="#" 
+                    title={'Team'|translate} price="99" subtitle={'pricing card team description'|translate} features=$f_team services=$s_team link_try="#" link_trial="#" 
                 }
             </div>
 
@@ -40,7 +40,7 @@
             <div class="pricing-grid-item">
                 {assign
                     var="f_ent"
-                    value=[ ['text' => {'5 administrator'|translate}], ['text' => {'unlimited users'|translate}], ['text' => {'unlimited contributors'|translate}], ['text' => {'250GB storage'|translate}, 'info' => true], ['text' => {'All file formats'|translate}, 'info' => true], ['text' => {'Priority email support'|translate}] ] 
+                    value=[ ['text' => {'5 administrators'|translate}], ['text' => {'unlimited users'|translate}], ['text' => {'unlimited contributors'|translate}], ['text' => {'250GB storage'|translate}, 'info' => true], ['text' => {'All file formats'|translate}, 'info' => true], ['text' => {'Priority email support'|translate}] ] 
                 }
                 {assign
                     var="s_ent"
@@ -50,7 +50,7 @@
                     file="template/include/card/pricing_option.tpl"
                     is_best_deal=true
                     type="cloud"
-                    title={'Enterprise'|translate} price="199" subtitle={'You use Piwigo in a medium-sized team'|translate} features=$f_ent services=$s_ent link_try="#" link_trial="#" 
+                    title={'Enterprise'|translate} price="199" subtitle={'pricing card entreprise description'|translate} features=$f_ent services=$s_ent link_try="#" link_trial="#" 
                 }
             </div>
 
@@ -58,7 +58,7 @@
             <div class="pricing-grid-item">
                 {assign
                     var="f_vip"
-                    value=[ ['text' => {'unlimited administrator'|translate}], ['text' => {'unlimited users'|translate}], ['text' => {'unlimited contributors'|translate}], ['text' => {'1000GB storage'|translate}, 'info' => true], ['text' => {'All file formats'|translate}, 'info' => true], ['text' => {'Priority email support + phone support'|translate}] ] 
+                    value=[ ['text' => {'unlimited administrators'|translate}], ['text' => {'unlimited users'|translate}], ['text' => {'unlimited contributors'|translate}], ['text' => {'1000GB storage'|translate}, 'info' => true], ['text' => {'All file formats'|translate}, 'info' => true], ['text' => {'Priority email support + phone support'|translate}] ] 
                 }
                 {assign
                     var="s_vip"
@@ -67,7 +67,7 @@
                 {include
                     file="template/include/card/pricing_option.tpl"
                     type="cloud"
-                    title={'VIP'|translate} price="399" subtitle={'You use Piwigo in a large organization and want personalized support'|translate} features=$f_vip services=$s_vip link_try="#" link_trial="#" 
+                    title={'VIP'|translate} price="399" subtitle={'pricing card vip description'|translate} features=$f_vip services=$s_vip link_try="#" link_trial="#" 
                 }
             </div>
         </div>
@@ -85,7 +85,7 @@
                 {include
                     file="template/include/card/pricing_option.tpl"
                     type="selfhosted"
-                    title={'Free'|translate} price="0" subtitle={'For individuals and 100% self-sufficient organizations'|translate} features=$f_free services=[] link_try="https://doc.piwigo.org/" label_try={'View Documentation'|translate} link_trial="https://piwigo.org/forum/" label_trial={'Visit Community Forum'|translate} btn_try={'Download Piwigo'|translate} btn_trial={'Download Piwigo'|translate} target="_blank" 
+                    title={'Free'|translate} price="0" subtitle={'pricing card free description'|translate} features=$f_free services=[] link_try="https://doc.piwigo.org/" label_try={'View Documentation'|translate} link_trial="https://piwigo.org/forum/" label_trial={'Visit Community Forum'|translate} btn_try={'Download Piwigo'|translate} btn_trial={'Download Piwigo'|translate} target="_blank" 
                 }
 
             </div>
@@ -98,7 +98,7 @@
                 {include
                     file="template/include/card/pricing_option.tpl"
                     type="selfhosted"
-                    title={'Light'|translate} price="39" subtitle={'For small organizations'|translate} features=$f_light services=[] link_try="#" label_try={'Contact us'|translate} link_trial="#" label_trial={'Contact us'|translate} btn_try={'Contact us'|translate} btn_trial={'Contact us'|translate} btn_link_try="{$PORG_ROOT}{$URL.contact}" btn_link_trial="{$PORG_ROOT}{$URL.contact}" target="_blank" 
+                    title={'Light'|translate} price="39" subtitle={'pricing card light description'|translate} features=$f_light services=[] link_try="#" label_try={'Contact us'|translate} link_trial="#" label_trial={'Contact us'|translate} btn_try={'Contact us'|translate} btn_trial={'Contact us'|translate} btn_link_try="{$PORG_ROOT}{$URL.contact}" btn_link_trial="{$PORG_ROOT}{$URL.contact}" target="_blank" 
                 }
             </div>
             {* STANDARD *}
