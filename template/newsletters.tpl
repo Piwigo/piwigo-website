@@ -247,7 +247,7 @@
   </div>
 </section>
 
-<section class="container newsletter-container">
+<section class="container newsletter-container" style="padding: 0;">
   <div class="container mb-md-5 mb-3 mt-5">
     <h2>{'porg_newsletters_content_title'|translate}</h2>
   </div>
