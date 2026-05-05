@@ -409,7 +409,7 @@ function porg_get_newsletters($lang_code)
       $newsletters[$idx]['id'] = $lang_code.'-'.$idx;
       $newsletters[$idx]['image'] = preg_replace('{http://([a-z]{2,3}\.)?piwigo.org/}', '//${1}piwigo.org/', $newsletters[$idx]['image']);
       $newsletters[$idx]['date_label'] = porg_date_format($idx);
-      $newsletters[$idx]['url'] = porg_get_page_label('newsletters').'-'.str_replace('-', '', $idx);
+      $newsletters[$idx]['url'] = porg_get_page_url('newsletters').'-'.str_replace('-', '', $idx);
     }
 
     return $newsletters;
