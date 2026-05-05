@@ -5,7 +5,7 @@
   padding-bottom: 40px;
   padding-left: 0;
   padding-right: 0;
-  background: url("../../images/features/bg_vector.png") no-repeat center top;
+  background: url("../../images/features/bg_vector.svg") no-repeat center top;
   background-size: 110% 80%;
   background-position: center 18px;
   display: flex;
@@ -71,7 +71,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: url("../../images/features/bg_vector_m.png") no-repeat center 300px;
+    background: url("../../images/features/bg_vector_m.svg") no-repeat center 300px;
     background-size: 110% 40%;
     transform-origin: center;
     pointer-events: none;

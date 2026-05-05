@@ -605,7 +605,7 @@ textarea:focus,
 
 #form-email:focus ~ .mail-placeholder,
 #form-piwigo-url:focus ~ .piwigo-url-placeholder {
-  opacity: 0.5;
+  opacity: 0.3;
   top: 26px;
   left: 16px;
 }
@@ -641,6 +641,10 @@ textarea:focus,
     left: 0px;
     top: 44px;
     white-space: nowrap;
+  }
+
+  .mail-placeholder, .piwigo-url-placeholder {
+    font-size: 13px;
   }
 }
 /* used like that :
@@ -751,4 +755,19 @@ input.is-invalid {
 .form-check-label {
   line-height: 1;
   margin: 0;
+}
+
+/* Disabled button state */
+.btn-menu.disabled,
+.btn-menu[disabled] {
+  background-color: var(--light_grey) !important;
+  color: var(--dark_text) !important;
+  cursor: not-allowed;
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
+
+.btn-menu.disabled::before,
+.btn-menu[disabled]::before {
+  display: none !important;
 }

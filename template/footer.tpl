@@ -128,7 +128,7 @@
               <ul>
                 <li><a class="footer-feature-link footer-menu-item" href="#">{'Latest news'|translate}</a></li>
                 <li><a class="footer-feature-link footer-menu-item" href="#">{'Blog'|translate}</a></li>
-                <li><a class="footer-feature-link footer-menu-item" href="#">{'Newsletter'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href='{$PORG_ROOT}{$URL.newsletters}'>{'Newsletter'|translate}</a></li>
                 <li><a class="footer-feature-link footer-menu-item" href="#">{'Product updates'|translate}</a></li>
                 <li><a class="footer-feature-link footer-menu-item" href="#">{'Coding activity'|translate}</a></li>
               </ul>
@@ -138,7 +138,7 @@
 
         <div class="footer-subscribe-btn">
           {include file='template/include/buttons/button.tpl' variant='menu_btn_white' label={'Footer Button 4 Subscribe to newsletter'|translate}
-          href='#'}
+          href='{$PORG_ROOT}{$URL.newsletters}'}
         </div>
       </div>
 
