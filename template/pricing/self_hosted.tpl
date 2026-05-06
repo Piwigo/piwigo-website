@@ -54,7 +54,7 @@
 
 <section id="professional-services-section" class="professional-services-container container">
     <div class="professional-services-header text-center">
-        <h2 class="professional-services-title text-center">{'professional services title'|translate}</h2>
+        <h2 class="professional-services-title text-center">{'pricing professional services title'|translate}</h2>
     </div>
     
     <div class="services-strip">
