@@ -206,6 +206,3 @@ $lang['pricing card premium description'] = 'For large photo libraries with inte
 $lang['Response time: 8 business hours (priority)'] = 'Response time: 8 business hours (priority)';
 $lang['Support included on over 120 plugins and VIP plugins'] = 'Support included on over 120 plugins and VIP plugins';
 $lang['Annual audit of your use of Piwigo'] = 'Annual audit of your use of Piwigo';
-
-
-$lang['pricing free'] = 'Try it free';
