@@ -589,6 +589,17 @@ textarea:focus,
   outline: none !important;
 }
 
+/* textarea placeholder: lower opacity on focus */
+.contact-form textarea:focus::placeholder {
+  opacity: 0.3;
+  transition: opacity 150ms ease;
+}
+
+.contact-form textarea:focus::-webkit-input-placeholder { opacity: 0.3; }
+.contact-form textarea:focus:-ms-input-placeholder { opacity: 0.3; }
+.contact-form textarea:focus::-ms-input-placeholder { opacity: 0.3; }
+
+
 .form-group textarea::placeholder {
   color: var(--dark_text);
   font-family: "Red Hat Display", sans-serif;
