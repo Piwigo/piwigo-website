@@ -195,4 +195,17 @@ $lang['Response time: 48 business hours'] = 'Response time: 48 business hours';
 $lang['Support included for over 100 plugins'] = 'Support included for over 100 plugins';
 
 
+$lang['pricing card standard description'] = 'For professionals, SMEs, local authorities';
+
+$lang['Response time: 24 business hours'] = 'Response time: 24 business hours';
+$lang['Support included on over 100 plugins and 20 Enterprise plugins'] = 'Support included on over 100 plugins and 20 Enterprise plugins';
+
+
+$lang['pricing card premium description'] = 'For large photo libraries with intensive use';
+
+$lang['Response time: 8 business hours (priority)'] = 'Response time: 8 business hours (priority)';
+$lang['Support included on over 120 plugins and VIP plugins'] = 'Support included on over 120 plugins and VIP plugins';
+$lang['Annual audit of your use of Piwigo'] = 'Annual audit of your use of Piwigo';
+
+
 $lang['pricing free'] = 'Try it free';

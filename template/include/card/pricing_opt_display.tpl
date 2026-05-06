@@ -110,7 +110,7 @@
                 {include
                     file="template/include/card/pricing_option.tpl"
                     type="selfhosted"
-                    title={'Standard'|translate} price="79" subtitle={'For professionals, SMEs, local authorities'|translate} features=$f_std services=[] link_try="#" label_try={'Contact us'|translate} link_trial="#" label_trial={'Contact us'|translate} btn_try={'Contact us'|translate} btn_trial={'Contact us'|translate} btn_link_try="{$PORG_ROOT}{$URL.contact}" btn_link_trial="{$PORG_ROOT}{$URL.contact}" target="_blank" 
+                    title={'Standard'|translate} price="79" subtitle={'pricing card standard description'|translate} features=$f_std services=[] link_try="#" label_try={'Contact us'|translate} link_trial="#" label_trial={'Contact us'|translate} btn_try={'Contact us'|translate} btn_trial={'Contact us'|translate} btn_link_try="{$PORG_ROOT}{$URL.contact}" btn_link_trial="{$PORG_ROOT}{$URL.contact}" target="_blank" 
                 }
             </div>
 
@@ -118,12 +118,12 @@
             <div class="pricing-grid-item">
                 {assign
                     var="f_prem"
-                    value=[ ['text' => {'Access to all features, themes and plugins'|translate}], ['text' => {'Access to the documentation and the community forum'|translate}], ['text' => {'Professional user support via email, video call, and phone by appointment'|translate}], ['text' => {'Response time: 8 business hours (priority)'|translate}], ['text' => {'Unlimited administrators'|translate}], ['text' => {'Support included on over 120 plugins and VIP plugins'|translate}, 'info' => true], ['text' => {'Annual audit of your use of Piwigo'|translate}, 'info' => true] ] 
+                    value=[ ['text' => {'Access to all features, themes and plugins'|translate}], ['text' => {'Access to the documentation and the community forum'|translate}], ['text' => {'Professional user support via email, video call, and phone by appointment'|translate}], ['text' => {'Response time: 8 business hours (priority)'|translate}], ['text' => {'unlimited administrators'|translate}], ['text' => {'Support included on over 120 plugins and VIP plugins'|translate}, 'info' => true], ['text' => {'Annual audit of your use of Piwigo'|translate}, 'info' => true] ] 
                 }
                 {include
                     file="template/include/card/pricing_option.tpl"
                     type="selfhosted"
-                    title={'Premium'|translate} price="150" subtitle={'For large photo libraries with intensive use'|translate} features=$f_prem services=[] link_try="#" label_try={'Contact us'|translate} link_trial="#" label_trial={'Contact us'|translate} btn_try={'Contact us'|translate} btn_trial={'Contact us'|translate} btn_link_try="{$PORG_ROOT}{$URL.contact}" btn_link_trial="{$PORG_ROOT}{$URL.contact}" target="_blank" 
+                    title={'Premium'|translate} price="150" subtitle={'pricing card premium description'|translate} features=$f_prem services=[] link_try="#" label_try={'Contact us'|translate} link_trial="#" label_trial={'Contact us'|translate} btn_try={'Contact us'|translate} btn_trial={'Contact us'|translate} btn_link_try="{$PORG_ROOT}{$URL.contact}" btn_link_trial="{$PORG_ROOT}{$URL.contact}" target="_blank" 
                 }
             </div>
         </div>
