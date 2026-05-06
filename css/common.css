@@ -445,6 +445,12 @@ h4 {
   line-height: 120%;
 }
 
+@media (max-width: 1200px) {
+  .btn-menu {
+    font-size: 12px;
+  }
+}
+
 @media (max-width: 768px) {
   h1 {
     font-family: "Sora", sans-serif;
@@ -514,6 +520,10 @@ h4 {
     text-align: left;
     color: var(--dark);
     line-height: 100%;
+  }
+
+  .btn-menu {
+    font-size: 14px;
   }
 }
 /******
