@@ -1,4 +1,5 @@
-{* <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/pages/contact.css"> *}
+{*
+<link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/pages/contact.css"> *}
 <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/buttons/common_button.css">
 <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/pages/signup.css">
 
@@ -27,7 +28,7 @@
 
                         <div class="form-group position-relative mb-3">
                             <div class="input-group piwigo-input-group">
-                                <input type="text" class="form-control" id="form-user" name="username" aria-describedby="userHelp" placeholder=" ">
+                                <input type="text" class="form-control" id="form-user" name="username" aria-describedby="userHelp" placeholder=" " value="{$username|default:''}>
                                 <span class="piwigo-url-placeholder p-boxed">{'signup_form_username'|translate}</span>
                                 <span class="little-piwigo-url-placeholder form-input">{'signup_form_username'|translate}</span>
                                 <span class="input-group-text bg-white border-start-0">{'signup_piwigo'|translate}</span>
@@ -59,14 +60,18 @@
 
                         <div class="form-check mb-4">
                             <input class="form-check-input" type="checkbox" id="form-terms" required>
-                            <label class="form-check-label small" for="form-terms">
-                                {'signup_check_RPG'|translate}
-                            </label>
+                            <div class="check-help-container">
+                                <label class="form-check-label small" for="form-terms">
+                                    {'signup_check_RPG'|translate}
+                                </label>
+                                <span class="form-check-help pink-text small" id="check-help">{'signup_check_help'|translate}</span>
+                            </div>
+
                         </div>
 
                         <div class="text-end">
                             <button type="submit" id="form-submit" class="btn-menu menu-btn-green ms-auto" disabled>
-                            <span id="submit-text">{'signup_button'|translate}</span>
+                                <span id="submit-text">{'signup_button'|translate}</span>
                             </button>
                         </div>
 

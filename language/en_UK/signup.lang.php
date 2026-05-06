@@ -14,7 +14,9 @@ $lang['signup_form_password_help1'] = '8 characters min';
 $lang['signup_form_password_help2'] = 'Number & symbol';
 
 $lang['signup_check_mail'] = 'Receive a copy by email';
-$lang['signup_check_RPG'] = 'I agree to the <a href="#" class="orange-text text-decoration-none">Terms of Use</a> and <a href="#" class="orange-text text-decoration-none">Privacy Policy</a> *';
+$lang['signup_check_RPG'] = 'I agree to the <a href="#" class="orange-text text-decoration-none">Terms of Use</a> and <a href="#" class="orange-text text-decoration-none">Privacy Policy</a><span class="orange-text" >*</span>';
+$lang['signup_check_help'] = 'You must accept the terms of use';
+
 
 $lang['signup_button'] = 'Sign up for a one month free trial';
 $lang['signup_signin'] = 'Already have a Piwigo Cloud account? <a href="#" class="orange-text fw-bold text-decoration-none">Sign In</a>';

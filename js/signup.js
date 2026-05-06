@@ -182,5 +182,10 @@
     $("#form-terms").on("change", function () {
         const isChecked = $(this).is(":checked");
         submitBtn.prop("disabled", !isChecked).toggleClass("disabled", !isChecked);
+        if (isChecked) {
+            $(".form-check-help").toggleClass("pink-text", false).toggleClass("clear-text", true);
+        } else {
+            $(".form-check-help").toggleClass("pink-text", true).toggleClass("clear-text", false);
+        }
     });
     });

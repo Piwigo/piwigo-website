@@ -545,6 +545,9 @@ Text Color
   color: var(--main_flash_green);
 }
 
+.clear-text {
+  color: var(--clear);
+}
 
 .dark-green-text {
   color: var(--dark_green);
@@ -788,7 +791,7 @@ input.is-invalid {
 .btn-menu[disabled] {
   background-color: var(--light_grey) !important;
   color: var(--dark_text) !important;
-  cursor: pointer;
+  cursor: not-allowed;
   box-shadow: none !important;
   border-color: transparent !important;
 }

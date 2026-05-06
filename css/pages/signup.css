@@ -201,6 +201,19 @@ input {
 .signup-form-split-copy h1 {
   margin-bottom: 10px;
 }
+
+.check-help-container {
+  display: flex;
+  flex-direction: column;
+  transform: translateY(10px);
+}
+
+.check-help-container.is-checked {
+    display: flex;
+    flex-direction: column;
+    transform: translateY(0) !important;
+}
+
 /* 
 .signup-form-split-copy .subtitle {
   margin-bottom: 35px;
