@@ -14,6 +14,7 @@ $(document).ready(function() {
             $('#card-selfhosted').addClass('d-none-card');
             $('#cloud-storage').removeClass('d-none-card');
             $('#specific-cases-section').hide();
+            $('#professional-services-section').hide();
             $('#technical-support-section').hide();
             $('#technical-support-table-section').hide();
         } else {
@@ -24,6 +25,7 @@ $(document).ready(function() {
             $('#card-selfhosted').removeClass('d-none-card');
             $('#cloud-storage').addClass('d-none-card');
             $('#specific-cases-section').fadeIn(300);
+            $('#professional-services-section').fadeIn(300);
             $('#technical-support-section').fadeIn(300);
             $('#technical-support-table-section').fadeIn(300);
             

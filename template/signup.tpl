@@ -25,6 +25,11 @@
             const termsHelp = jQuery('#termsHelp');
             const newsletterCheck = jQuery('#form-copy');
             const newsletterHelp = jQuery('#newsletterHelp');
+            const hasRequirements = /[0-9]/.test(value) && /[^A-Za-z0-9]/.test(value);
+
+            passwordInput.on("keypress", function() {
+                let isLongEnough = value.length >= 6;
+            });
 
             // hide input help texts
             jQuery(emailHelp).hide();
@@ -39,81 +44,6 @@
             jQuery(passHelp).hide();
             jQuery(passHelp2).hide();
 
-            function updateEmailValidationState(value) {
-                if (value === '') {
-                    jQuery(emailHelp).hide();
-                    jQuery(emailWarningIcon).hide();
-                    jQuery(emailCheckIcon).hide();
-                    jQuery(emailInput).removeClass('is-invalid');
-                    return;
-                }
-
-                if (!isValidEmail(value)) {
-                    jQuery(emailHelp).show();
-                    jQuery(emailWarningIcon).show();
-                    jQuery(emailCheckIcon).hide();
-                    jQuery(emailInput).addClass('is-invalid');
-                    return;
-                }
-
-                jQuery(emailHelp).hide();
-                jQuery(emailWarningIcon).hide();
-                jQuery(emailCheckIcon).show();
-                jQuery(emailInput).removeClass('is-invalid');
-            }
-
-            function updatePasswordValidationState(value) {
-                if (value === '') {
-                    jQuery(passHelpLength).hide();
-                    jQuery(passHelpSpecs).hide();
-                    jQuery(passWarningIcon).hide();
-                    jQuery(passEye).hide();
-                    jQuery(passHelp).hide();
-                    jQuery(passHelp2).hide();
-                    jQuery(passwordInput).removeClass('is-invalid');
-                    return;
-                }
-
-                if (!isValidPassword(value)) {
-                    jQuery(passHelpLength).show();
-                    jQuery(passHelpSpecs).show();
-                    jQuery(passWarningIcon).show();
-                    jQuery(passEye).show();
-                    jQuery(passHelp).show();
-                    jQuery(passHelp2).show();
-                    jQuery(passwordInput).addClass('is-invalid');
-                    return;
-                }
-
-                const isLongEnough = value.length >= 8;
-                const hasRequirements = /[0-9]/.test(value) && /[^A-Za-z0-9]/.test(value);
-
-                if (!isLongEnough) {
-                    passHelpLength.show();
-                } else {
-                    passHelpLength.removeClass('pink-text').addClass('main-green-text');
-                    passHelp.removeClass('icon-warning').addClass('icon-check-1').css('color', 'var(--main_flash_green) !important');
-                }
-                if (!hasRequirements) {
-                    passHelpSpecs.show();
-                } else {
-                    passHelpSpecs.removeClass('pink-text').addClass('main-green-text');
-                    passHelp2.removeClass('icon-warning').addClass('icon-check-1').css('color', 'var(--main_flash_green) !important');
-                }
-
-                if (!isLongEnough || !hasRequirements) {
-                    passWarningIcon.show();
-                    passwordInput.addClass('is-invalid');
-                } else {
-                    passWarningIcon.hide();
-                    passwordInput.removeClass('is-invalid');
-                }
-
-                // jQuery(passHelpSpecs).hide();
-                // jQuery(passHelpLength).hide();
-                // jQuery(passWarningIcon).hide();
-                // jQuery(passwordInput).removeClass('is-invalid');
-            }
             jQuery(passEye).on('click', function() {
                 const currentType = jQuery(passwordInput).attr('type');
                 if (currentType === 'password') {
@@ -157,33 +87,6 @@
                 checkFormValidity();
 
             });
-
-            // Email validator
-            function isValidEmail(email) {
-                const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                return pattern.test(email);
-            }
-
-            //password validator
-            function isValidPassword(password) {
-                const isLongEnough = password.length >= 8;
-                const hasRequirements = /[0-9]/.test(password) && /[^A-Za-z0-9]/.test(password);
-                return isLongEnough && hasRequirements;
-            }
-
-            // Enable/disable submit button based on input validation
-            function checkFormValidity() {
-                const emailValid = isValidEmail(jQuery(emailInput).val().trim());
-                const userValid = jQuery(userInput).val().trim().length >= 2;
-                const passValid = isValidPassword(jQuery(passwordInput).val().trim());
-                const submitBtn = jQuery('#form-submit');
-                const termsValid = termsCheck.is(':checked');
-                if (emailValid && userValid && passValid && termsValid) {
-                    submitBtn.prop('disabled', false).removeClass('disabled');
-                } else {
-                    submitBtn.prop('disabled', true).addClass('disabled');
-                }
-            }
 
             // Initialize button state
             updateEmailValidationState(jQuery(emailInput).val().trim());
@@ -262,6 +165,102 @@
                 }
             });
         });
+
+        function updateEmailValidationState(value) {
+            if (value === '') {
+                jQuery(emailHelp).hide();
+                jQuery(emailWarningIcon).hide();
+                jQuery(emailCheckIcon).hide();
+                jQuery(emailInput).removeClass('is-invalid');
+                return;
+            }
+
+            if (!isValidEmail(value)) {
+                jQuery(emailHelp).show();
+                jQuery(emailWarningIcon).show();
+                jQuery(emailCheckIcon).hide();
+                jQuery(emailInput).addClass('is-invalid');
+                return;
+            }
+
+            jQuery(emailHelp).hide();
+            jQuery(emailWarningIcon).hide();
+            jQuery(emailCheckIcon).show();
+            jQuery(emailInput).removeClass('is-invalid');
+        }
+
+        function updatePasswordValidationState(value) {
+            if (value === '') {
+                jQuery(passHelpLength).hide();
+                jQuery(passHelpSpecs).hide();
+                jQuery(passWarningIcon).hide();
+                jQuery(passEye).hide();
+                jQuery(passHelp).hide();
+                jQuery(passHelp2).hide();
+                jQuery(passwordInput).removeClass('is-invalid');
+                return;
+            }
+
+            if (!isValidPassword(value)) {
+                jQuery(passHelpLength).show();
+                jQuery(passHelpSpecs).show();
+                jQuery(passWarningIcon).show();
+                jQuery(passEye).show();
+                jQuery(passHelp).show();
+                jQuery(passHelp2).show();
+                jQuery(passwordInput).addClass('is-invalid');
+                return;
+            }
+
+            if (!isLongEnough) {
+                passHelpLength.show();
+            } else {
+                passHelpLength.removeClass('pink-text').addClass('main-green-text');
+                passHelp.removeClass('icon-warning').addClass('icon-check-1').css('color', 'var(--main_flash_green) !important');
+            }
+            if (!hasRequirements) {
+                passHelpSpecs.show();
+            } else {
+                passHelpSpecs.removeClass('pink-text').addClass('main-green-text');
+                passHelp2.removeClass('icon-warning').addClass('icon-check-1').css('color', 'var(--main_flash_green) !important');
+            }
+
+            if (!isLongEnough || !hasRequirements) {
+                passWarningIcon.show();
+                passwordInput.addClass('is-invalid');
+            } else {
+                passWarningIcon.hide();
+                passwordInput.removeClass('is-invalid');
+            }
+
+        }
+
+        // Email validator
+        function isValidEmail(email) {
+            const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return pattern.test(email);
+        }
+
+        //password validator
+        function isValidPassword(password) {
+            // const isLongEnough = password.length >= 6;
+            // const hasRequirements = /[0-9]/.test(password) && /[^A-Za-z0-9]/.test(password);
+            return isLongEnough && hasRequirements;
+        }
+
+        // Enable/disable submit button based on input validation
+        function checkFormValidity() {
+            const emailValid = isValidEmail(jQuery(emailInput).val().trim());
+            const userValid = jQuery(userInput).val().trim().length >= 2;
+            const passValid = isValidPassword(jQuery(passwordInput).val().trim());
+            const submitBtn = jQuery('#form-submit');
+            const termsValid = termsCheck.is(':checked');
+            if (emailValid && userValid && passValid && termsValid) {
+                submitBtn.prop('disabled', false).removeClass('disabled');
+            } else {
+                submitBtn.prop('disabled', true).addClass('disabled');
+            }
+        }
     </script>
 {/literal}
 <section class="signup-header">
@@ -270,8 +269,8 @@
 
             <div class="col-12 col-md-5">
                 <div class="signup-text-header text-center mb-4">
-                    <h1 class="fw-bold">Get your <span class="orange-text">Piwigo cloud</span> account</h1>
-                    <p class="text-muted small">Sign up and get your one month free trial with all the features you want!</p>
+                    <h1 class="fw-bold text-center">{'signup_header_title'|translate}</h1>
+                    <p class="text-muted small text-center">{'signup_header_desc'|translate}</p>
                 </div>
 
                 <div class="signup-form-container card p-4 shadow-sm">
@@ -283,8 +282,8 @@
                     <form id="signupForm" class="signup-form">
                         <div class="form-group position-relative mb-3">
                             <input type="email" class="form-control" id="form-email" name="email" placeholder="" required>
-                            <span class="mail-placeholder p-boxed">{'Your email address'|translate}<span class="orange-text">*</span></span>
-                            <span class="little-mail-placeholder form-input">{'Your email address'|translate}<span class="orange-text">*</span> <span id="emailHelp" class="error-mail-placeholder pink-text">{'it must be a valid email adress'|translate}</span></span>
+                            <span class="mail-placeholder p-boxed">{'signup_form_mail'|translate}</span>
+                            <span class="little-mail-placeholder form-input">{'signup_form_mail'|translate}<span id="emailHelp" class="error-mail-placeholder pink-text">{'signup_form_mail_error'|translate}</span></span>
                             <i id="emailWarningIcon" class="icon-rounded-warning" aria-hidden="true"></i>
                             <i id="emailCheckIcon" class="icon-rounded-check" aria-hidden="true"></i>
                         </div>
