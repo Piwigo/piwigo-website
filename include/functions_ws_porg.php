@@ -5,11 +5,13 @@ function ws_porg_newsletters_seemore($params, &$service)
     global $template, $lang_info;
 
     $newsletters = porg_get_newsletters($lang_info['code']);
+    $newsletter_card_template = realpath(PORG_PATH . 'template/include/card/newsletter_card.tpl');
 
     $template->set_filenames(array('page_porg' => realpath(PORG_PATH .'template/newsletters_articles.tpl')));
     $template->assign(
         array(
             'newsletters' => array_slice($newsletters, $params['start'], $params['count']),
+            'newsletter_card_template' => $newsletter_card_template,
         )
     );
     $template->parse('page_porg');

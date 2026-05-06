@@ -5,27 +5,6 @@
   <script type="text/javascript">
     $(document).ready(function() {
 
-      // See more newsletters (legacy)
-      $('.btn-news-see-more .btn').click(function() {
-        var $start = $(".newsletter-content").length;
-        $.ajax({
-          type: "GET",
-          url: "ws.php",
-          dataType: "html",
-          data: {
-            method: "porg.newsletters.seemore",
-            start: $start,
-            count: 6,
-          },
-          success: function(html) {
-            $(".row-newsletters").append(html);
-            if (($start + 6) >= $(".btn-news-see-more .btn").data("length")) {
-              $(".btn-news-see-more .btn").css("display", "none");
-            }
-          },
-        });
-      });
-
       // Email validation
       const emailInput = jQuery('#form-email');
       const emailWarningIcon = jQuery('#emailWarningIcon');
@@ -117,27 +96,13 @@
 
       // Pagination
       const itemsPerPage = 12;
-      const allCards = jQuery('.newsletter-card-col');
-      const totalPages = Math.ceil(allCards.length / itemsPerPage);
       let currentPage = 1;
+      const totalPages = Math.max(1, jQuery('.page-number-wrapper').length);
 
-      function showPage(pageNum) {
-        const start = (pageNum - 1) * itemsPerPage;
-        const end = start + itemsPerPage;
-
-        allCards.hide();
-        allCards.slice(start, end).show();
-
-        currentPage = pageNum;
-        generatePagination();
-      }
-
-      function generatePagination() {
-        // Show/hide arrows based on current page
+      function updatePaginationUI() {
         jQuery('.fast-backward-btn, .backward-arrow-btn').toggle(currentPage > 1);
         jQuery('.fast-forward-btn, .forward-arrow-btn').toggle(currentPage < totalPages);
 
-        // Determine which 3 page numbers to show
         let startPage, endPage;
         if (totalPages <= 3) {
           startPage = 1;
@@ -153,13 +118,10 @@
           endPage = currentPage + 1;
         }
 
-        // Hide all page numbers then show the relevant ones
         jQuery('.page-number-wrapper').hide();
-
         for (let i = startPage; i <= endPage; i++) {
           const wrapper = jQuery('.page-number-wrapper[data-page="' + i + '"]');
           wrapper.show();
-
           const btn = wrapper.find('a');
           if (i === currentPage) {
             btn.addClass('selected_number');
@@ -169,35 +131,59 @@
         }
       }
 
+      function loadPage(pageNum) {
+        const start = (pageNum - 1) * itemsPerPage;
+
+        jQuery.ajax({
+          type: "GET",
+          url: "ws.php",
+          dataType: "html",
+          data: {
+            method: "porg.newsletters.seemore",
+            start: start,
+            count: itemsPerPage,
+          },
+          success: function(html) {
+            jQuery('.newsletter-cards-grid').html(html);
+            currentPage = pageNum;
+            updatePaginationUI();
+            // optional: smooth scroll to the newsletter section
+            if (jQuery('.newsletter-container').length) {
+              jQuery('html, body').animate({ scrollTop: jQuery('.newsletter-container').offset().top - 80 }, 300);
+            }
+          },
+        });
+      }
+
       jQuery(document).on('click', '.page-number-wrapper a', function(e) {
         e.preventDefault();
         const page = parseInt(jQuery(this).closest('.page-number-wrapper').data('page'));
-        showPage(page);
+        if (page && page !== currentPage) loadPage(page);
       });
 
       jQuery(document).on('click', '.forward-arrow-btn', function(e) {
         e.preventDefault();
-        if (currentPage < totalPages) showPage(currentPage + 1);
+        if (currentPage < totalPages) loadPage(currentPage + 1);
       });
 
       jQuery(document).on('click', '.backward-arrow-btn', function(e) {
         e.preventDefault();
-        if (currentPage > 1) showPage(currentPage - 1);
+        if (currentPage > 1) loadPage(currentPage - 1);
       });
 
       jQuery(document).on('click', '.fast-forward-btn', function(e) {
         e.preventDefault();
-        showPage(totalPages);
+        loadPage(totalPages);
       });
 
       jQuery(document).on('click', '.fast-backward-btn', function(e) {
         e.preventDefault();
-        showPage(1);
+        loadPage(1);
       });
 
-      // Initialize
-      generatePagination();
-      showPage(1);
+      // Initialize: render pagination and load page 1 from server
+      updatePaginationUI();
+      loadPage(1);
 
     });
   </script>
