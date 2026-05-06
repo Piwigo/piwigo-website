@@ -102,7 +102,7 @@
             <h3 class="technical-support-title">{'pricing technical title'|translate}</h3>
         </div>
         <div class="technical-support-content">
-            <p class="technical-support-text">{'pricingtechnical description'|translate}</p>
+            <p class="technical-support-text">{'pricing technical description'|translate}</p>
         </div>
     </div>
 </section>
@@ -122,13 +122,13 @@
                 <tr>
                     <td class="row-label">{$row_pricing_customer}</td>
                     <td class="value-cell">from €200</td>
-                    <td class="value-cell">€500 {'price_excl_taxes_year'|translate}</td>
-                    <td class="value-cell">€1500 {'price_excl_taxes_year'|translate}</td>
+                    <td class="value-cell">€500 {'pricing price_excl_taxes_year'|translate}</td>
+                    <td class="value-cell">€1500 {'pricing price_excl_taxes_year'|translate}</td>
                 </tr>
                 <tr style="background-color: var(--clear) !important;">
                     <td class="row-label">{$row_pricing_external}</td>
                     <td class="value-cell">from €250</td>
-                    <td class="value-cell">€600 {'price_excl_taxes_year'|translate}</td>
+                    <td class="value-cell">€600 {'pricing price_excl_taxes_year'|translate}</td>
                     <td class="value-cell">N/A</td>
                 </tr>
 
