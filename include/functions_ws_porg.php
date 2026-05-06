@@ -104,16 +104,23 @@ function ws_porg_contact_send($params, &$service)
   
   $message = quoted_printable_encode(stripslashes($params["message"]));
 
-  /* URL */
-  if(isset($params["url"]))
+  /* URL (optional) */
+  $piwigo_url = trim((string) ($params['piwigo_url'] ?? ''));
+  if ($piwigo_url !== '')
   {
-    if(!filter_var($params["url"], FILTER_VALIDATE_URL))
+    $url_for_validation = $piwigo_url;
+    if (!preg_match('#^https?://#i', $url_for_validation))
+    {
+      $url_for_validation = 'https://'.$url_for_validation;
+    }
+
+    if (!filter_var($url_for_validation, FILTER_VALIDATE_URL))
     {
       $error .= "Whoops, invalid URL format";
     }
     else
     {
-      $message .= "\n\nURL: ".$params["url"];
+      $message .= "\n\nURL: ".$piwigo_url;
     }
   }
 
