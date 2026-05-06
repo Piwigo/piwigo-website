@@ -169,6 +169,9 @@
     line-height: 1 !important;
 }
 
+.text-end .btn-menu.menu-btn-green{
+    width : 256px !important;
+}
 /* 
 input {
   padding: 0px !important;
