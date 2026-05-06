@@ -73,12 +73,12 @@
             </button>
             <div id="footerMobileUseCases" class="collapse footer-mobile-collapse" data-bs-parent=".footer-mobile-nav-accordion">
               <ul>
-                <li><a class="footer-feature-link footer-menu-item" href="#">{'Travel &amp; Tourism'|translate}</a></li>
-                <li><a class="footer-feature-link footer-menu-item" href="#">{'Public Sector'|translate}</a></li>
-                <li><a class="footer-feature-link footer-menu-item" href="#">{'Companies'|translate}</a></li>
-                <li><a class="footer-feature-link footer-menu-item" href="#">{'Education &amp; Research'|translate}</a></li>
-                <li><a class="footer-feature-link footer-menu-item" href="#">{'Nonprofits'|translate}</a></li>
-                <li><a class="footer-feature-link footer-menu-item" href="#">{'Photographers &amp; Individuals'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.use_cases}#travel-tourism">{'Travel &amp; Tourism'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.use_cases}#public-sector">{'Public Sector'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.use_cases}#companies">{'Companies'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.use_cases}#education-research">{'Education &amp; Research'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.use_cases}#nonprofits">{'Nonprofits'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.use_cases}#photographers-individuals">{'Photographers &amp; Individuals'|translate}</a></li>
               </ul>
               <div class="footer-users-btn">
                 {include file='template/include/buttons/button.tpl' variant='menu_btn_white' label={'Footer Button 3 Meet our users'|translate}
@@ -169,12 +169,12 @@
       <div class="col-6 col-md-4 col-lg-2 footer-nav-col d-none d-lg-block">
         <h6 class="footer-title">{'Use cases'|translate}</h6>
         <ul>
-          <li><a class="footer-feature-link footer-menu-item" href="#">{'Travel &amp; Tourism'|translate}</a></li>
-          <li><a class="footer-feature-link footer-menu-item" href="#">{'Public Sector'|translate}</a></li>
-          <li><a class="footer-feature-link footer-menu-item" href="#">{'Companies'|translate}</a></li>
-          <li><a class="footer-feature-link footer-menu-item" href="#">{'Education &amp; Research'|translate}</a></li>
-          <li><a class="footer-feature-link footer-menu-item" href="#">{'Nonprofits'|translate}</a></li>
-          <li><a class="footer-feature-link footer-menu-item" href="#">{'Photographers &amp; Individuals'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.use_cases}#travel-tourism">{'Travel &amp; Tourism'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.use_cases}#public-sector">{'Public Sector'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.use_cases}#companies">{'Companies'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.use_cases}#education-research">{'Education &amp; Research'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.use_cases}#nonprofits">{'Nonprofits'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.use_cases}#photographers-individuals">{'Photographers &amp; Individuals'|translate}</a></li>
         </ul>
         <div class="footer-users-btn">
           {include file='template/include/buttons/button.tpl' variant='menu_btn_white' label={'Footer Button 3 Meet our users'|translate}

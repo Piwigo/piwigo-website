@@ -1,0 +1,7 @@
+.use-case-section {
+	display: none;
+}
+
+.use-case-section.is-active {
+	display: block;
+}

@@ -38,6 +38,7 @@ function porg_get_pages()
     'components-display' => 'Components display',
     'pricing' => 'Pricing',
     'signup' => 'Signup',
+    'use_cases' => 'Use cases',
     );
 }
 

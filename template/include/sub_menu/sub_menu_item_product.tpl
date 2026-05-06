@@ -222,32 +222,38 @@
             {include file='template/include/sub_menu_items/sub_menu_itemc.tpl'
                 category_type='use-case-submenu'
                 title={'Travel & Tourism'|translate}
-                icon_class='icon-travel'}
+                icon_class='icon-travel'
+                href="{$PORG_ROOT}{$URL.use_cases}#travel-tourism"}
 
             {include file='template/include/sub_menu_items/sub_menu_itemc.tpl'
                 category_type='use-case-submenu'
                 title={'Public Sector'|translate}
-                icon_class='icon-public'}
+                icon_class='icon-public'
+                href="{$PORG_ROOT}{$URL.use_cases}#public-sector"}
 
             {include file='template/include/sub_menu_items/sub_menu_itemc.tpl'
                 category_type='use-case-submenu'
                 title={'Companies'|translate}
-                icon_class='icon-companies'}
+                icon_class='icon-companies'
+                href="{$PORG_ROOT}{$URL.use_cases}#companies"}
 
             {include file='template/include/sub_menu_items/sub_menu_itemc.tpl'
                 category_type='use-case-submenu'
                 title={'Education & Research'|translate}
-                icon_class='icon-education'}
+                icon_class='icon-education'
+                href="{$PORG_ROOT}{$URL.use_cases}#education-research"}
 
             {include file='template/include/sub_menu_items/sub_menu_itemc.tpl'
                 category_type='use-case-submenu'
                 title={'Nonprofits'|translate}
-                icon_class='icon-nonprofit'}
+                icon_class='icon-nonprofit'
+                href="{$PORG_ROOT}{$URL.use_cases}#nonprofits"}
 
             {include file='template/include/sub_menu_items/sub_menu_itemc.tpl'
                 category_type='use-case-submenu'
                 title={'Photographers & individuals'|translate}
-                icon_class='icon-photographers'}
+                icon_class='icon-photographers'
+                href="{$PORG_ROOT}{$URL.use_cases}#photographers-individuals"}
         </div>
 
         <div class="menu-divider d-none d-md-block"></div>
