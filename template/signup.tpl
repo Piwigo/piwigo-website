@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/pages/contact.css">
+{* <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/pages/contact.css"> *}
 <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/buttons/common_button.css">
 <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/pages/signup.css">
 
@@ -66,7 +66,7 @@
 
                         <div class="text-end">
                             <button type="submit" id="form-submit" class="btn-menu menu-btn-green ms-auto" disabled>
-                                {'signup_button'|translate}
+                            <span id="submit-text">{'signup_button'|translate}</span>
                             </button>
                         </div>
 
