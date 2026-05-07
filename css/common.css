@@ -791,7 +791,6 @@ input.is-invalid {
 .btn-menu[disabled] {
   background-color: var(--light_grey) !important;
   color: var(--dark_text) !important;
-  cursor: not-allowed;
   box-shadow: none !important;
   border-color: transparent !important;
 }
