@@ -39,6 +39,8 @@ function porg_get_pages()
     'pricing' => 'Pricing',
     'signup' => 'Signup',
     'use_cases' => 'Use cases',
+    'terms_of_use' => 'Terms of service',
+    'terms_of_privacy' => 'Privacy',
     );
 }
 
