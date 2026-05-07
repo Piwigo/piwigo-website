@@ -68,6 +68,9 @@
   border-bottom: 20px solid var(--clear);
   border-top: 20px solid var(--clear);
   border-right: 25px solid var(--clear);
+
+  scrollbar-width: auto;
+  scrollbar-color: var(--main_flash_green) #fafafa;
 }
 
 .header-lang-dropdown:hover .header-lang-menu,
