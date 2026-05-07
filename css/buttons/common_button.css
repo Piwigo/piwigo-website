@@ -199,13 +199,24 @@
   color: var(--dark_green);
 }
 
-.menu-btn-blue:hover,
-.menu-btn-blue:focus {
-  background: var(--secondary_flash_green);
-  border: 2px solid var(--main_flash_green);
-  color: var(--dark_green);
+.menu-btn-blue::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  border: 2px solid transparent;
+  background:
+    linear-gradient(var(--secondary_flash_green), var(--secondary_flash_green)) padding-box,
+    linear-gradient(92.17deg, var(--main_flash_green) 19.22%, var(--secondary_flash_green) 96.41%) border-box;
+  opacity: 0;
+  transition: opacity 300ms ease-out;
+  z-index: 0;
 }
 
+.menu-btn-blue:hover::before,
+.menu-btn-blue:focus::before {
+  opacity: 1;
+}
 
 /* — Orange — */
 .menu-btn-orange {
