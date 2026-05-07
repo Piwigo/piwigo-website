@@ -2,10 +2,10 @@
     var='plans_sections'
     value=[
         [ 'title' => 'pricing plan_section_usage'|translate, 'rows' => [ 
-            ['label' => 'pricing plan_row_admin'|translate, 'values' => ['1', '3', '5', 'pricing plan_unlimited'|translate], 'help' => 'pricing plan_help_admin'|translate], 
+            ['label' => 'pricing plan_row_admin'|translate, 'values' => [$PLANS.plan_pro.admins_count, $PLANS.plan_team.admins_count, $PLANS.plan_enterprise.admins_count, $PLANS.plan_vip.admins_count], 'help' => 'pricing plan_help_admin'|translate], 
             ['label' => 'pricing plan_row_users'|translate, 'values' => ['pricing plan_unlimited'|translate, 'pricing plan_unlimited'|translate, 'pricing plan_unlimited'|translate, 'pricing plan_unlimited'|translate], 'help' => 'pricing plan_help_users'|translate], 
             ['label' => 'pricing plan_row_contributors'|translate, 'values' => ['-', 'pricing plan_unlimited'|translate, 'pricing plan_unlimited'|translate, 'pricing plan_unlimited'|translate], 'help' => 'pricing plan_help_contributors'|translate], 
-            ['label' => 'pricing plan_row_storage'|translate, 'values' => ['10GB', '100GB', '250GB', '1000GB'], 'help' => false], 
+            ['label' => 'pricing plan_row_storage'|translate, 'values' => [$PLANS.plan_pro.storage_size, $PLANS.plan_team.storage_size, $PLANS.plan_enterprise.storage_size, $PLANS.plan_vip.storage_size], 'help' => false], 
             ['label' => 'pricing plan_row_plugins'|translate, 'values' => ['-', '-', '-', 'check'], 'help' => 'pricing plan_help_plugins'|translate] 
         ] ],
         [ 'title' => 'pricing plan_section_formats'|translate, 'rows' => [ 
@@ -33,10 +33,12 @@
             {foreach from=$plans_sections item=section}
                 <tr class="section-header">
                     <td class="section-title">{$section.title}</td>
-                    <td class="section-plan-name"><strong>Pro</strong><small>{'excl. VAT / month'|translate}<br>{'billed annually'|translate}</small></td>
-                    <td class="section-plan-name"><strong>Team</strong><small>{'excl. VAT / month'|translate}<br>{'billed annually'|translate}</small></td>
-                    <td class="section-plan-name"><strong>Enterprise</strong><small>{'excl. VAT / month'|translate}<br>{'billed annually'|translate}</small></td>
-                    <td class="section-plan-name"><strong>VIP</strong><small>{'excl. VAT / month'|translate}<br>{'billed annually'|translate}</small></td>
+                    {foreach from=$PLANS item=plan}
+                        <td class="section-plan-name">
+                            <strong>{$plan.title}</strong>
+                            <small>{'pricing plan_excl_vat_month'|translate}<br>{'pricing plan_billed_annually'|translate}</small>
+                        </td>
+                    {/foreach}
                 </tr>
 
                 {foreach from=$section.rows item=row}
