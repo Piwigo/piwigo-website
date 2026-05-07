@@ -28,9 +28,9 @@
 
                         <div class="form-group position-relative mb-3">
                             <div class="input-group piwigo-input-group">
-                                <input type="text" class="form-control" id="form-user" name="username" aria-describedby="userHelp" placeholder=" " value="{$username|default:''}>
+                                <input type="text" class="form-control" id="form-user" name="username" aria-describedby="userHelp" placeholder=" " value="{$username|default:''}">
                                 <span class="piwigo-url-placeholder p-boxed">{'signup_form_username'|translate}</span>
-                                <span class="little-piwigo-url-placeholder form-input">{'signup_form_username'|translate}</span>
+                                <span class="little-piwigo-url-placeholder form-input">{'signup_form_username'|translate}<span id="userError" class="error-username-placeholder pink-text" style="display:none;">{'signup_form_username_error'|translate}</span><span id="userHelp" class="help-username-placeholder pink-text" style="display:none;">{'signup_form_username_help'|translate}</span></span>
                                 <span class="input-group-text bg-white border-start-0">{'signup_piwigo'|translate}</span>
                             </div>
                         </div>

@@ -40,22 +40,42 @@
     });
 
     // verification disponnibility username
-    userInput.on("keyup", function () {
+    userInput.on("input", function () { 
         const username = $(this).val().trim();
-        if (username.length < 2) return;
+        const userHelp = $("#userHelp");
+        const userError = $("#userError");
 
-        $.ajax({
-        url: "ws.php?format=json&method=pcom.username.check",
-        type: "POST",
-        data: { username: username },
-        success: function (response) {
-            const data =
-            typeof response === "string" ? JSON.parse(response) : response;
-            if (data.result && data.result.error) {
-            console.log("Username error: " + data.result.error);
-            }
-        },
-        });
+        if (username.length > 0 && username.length < 4) {
+            userHelp.show();
+            userError.hide();
+        } else {
+            userHelp.hide();
+        }
+
+        if (username.length >= 4) {
+            $.ajax({
+                url: "ws.php?format=json&method=pcom.username.check",
+                type: "POST",
+                data: { username: username },
+                success: function (response) {
+                    const data = typeof response === "string" ? JSON.parse(response) : response;
+                    
+                    if (data.result && data.result.error) {
+                        userError.show();
+                        userInput.addClass("is-invalid");
+                    } else {
+                        userError.hide();
+                        userInput.removeClass("is-invalid");
+                    }
+                },
+                error: function() {
+                    userError.hide();
+                }
+            });
+        } else {
+            userError.hide();
+            userInput.removeClass("is-invalid");
+        }
     });
 
     // helps visibility paswword

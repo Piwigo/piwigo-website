@@ -1,5 +1,5 @@
 <?php
-$query = '
+/*$query = '
 SELECT
     MAX(account_id)
   FROM ' . PCOM_ACCOUNTS_DB_PREFIX . 'accounts
@@ -37,4 +37,50 @@ $template->assign(
 
 if (isset($_GET['username'])) {
     $template->assign('username', $_GET['username']);
+} */
+
+
+$db_prefix = defined('PCOM_ACCOUNTS_DB_PREFIX') ? PCOM_ACCOUNTS_DB_PREFIX : 'pcom_';
+
+$nb_accounts = 10;
+$median_duration = 9.6;
+$max_account_id = null;
+
+
+try {
+    $query = 'SELECT MAX(account_id) FROM ' . $db_prefix . 'accounts;';
+    $result = pwg_query($query);
+    if ($result) {
+        list($max_account_id) = pwg_db_fetch_row($result);
+    }
+} catch (Exception $e) {
 }
+
+if (!empty($max_account_id)) {
+    $sample_size = 100;
+
+    $query = '
+SELECT
+    TIMESTAMPDIFF(SECOND,registered_on,installed_on) AS duration
+  FROM ' . $db_prefix . 'accounts
+  WHERE account_id > ' . ($max_account_id - $sample_size) . '
+    AND installed_on IS NOT NULL
+  ORDER BY duration ASC
+;';
+    
+    $durations = query2array($query, null, 'duration');
+    
+    if (count($durations) >= 1) { 
+        $nb_accounts = count($durations);
+        $median_duration = $durations[floor($nb_accounts / 2)];
+    }
+}
+
+
+$template->assign(
+    array(
+        'STATS_NB_LAST_ACOUNTS' => $nb_accounts,
+        'STATS_AVG_DURATION' => sprintf('%.1f', $median_duration),
+        'registration_enabled' => conf_get_param('registration_enabled', true),
+    )
+);

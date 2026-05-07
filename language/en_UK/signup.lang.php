@@ -7,6 +7,8 @@ $lang['signup_form_mail'] = 'Your email address<span class="orange-text">* </spa
 $lang['signup_form_mail_error'] = 'it must be a valid email adress';
 
 $lang['signup_form_username'] = 'Your username<span class="orange-text">*</span>';
+$lang['signup_form_username_error'] = 'This username is already in use';
+$lang['signup_form_username_help'] = 'Must be at least 4 characters';
 $lang['signup_piwigo'] = '.piwigo.com';
 
 $lang['signup_form_password'] = 'Password<span class="orange-text">*</span>';
