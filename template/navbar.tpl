@@ -7,11 +7,9 @@
 
 <nav class="navbar navbar-default navbar-expand-lg">
     <div class="container d-flex justify-content-between align-items-center">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="{$URL.home}">
-                <img src="{$PORG_ROOT_URL}images/piwigo.org.svg" alt="Piwigo.org" title="go to Piwigo.org home page">
-            </a>
-        </div>
+        <a class="navbar-brand" href="{$URL.home}">
+            <img src="{$PORG_ROOT_URL}images/piwigo.org.svg" alt="Piwigo.org" title="go to Piwigo.org home page">
+        </a>
 
         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
             data-bs-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1"
