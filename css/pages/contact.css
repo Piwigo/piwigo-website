@@ -24,7 +24,6 @@
 
 /* form card */
 .contact-form {
-  height: 482px;
   width: 100% !important;
   padding: 38px;
   border: 1px solid var(--secondary_flash_green);

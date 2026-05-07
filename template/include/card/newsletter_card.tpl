@@ -1,4 +1,4 @@
-<div class="col-12 col-md-6 col-lg-3 newsletter-card-col" id="newsletter-{$id}">
+<div class="col-12 col-md-6 col-lg-4 col-xl-3 newsletter-card-col" id="newsletter-{$id}">
     <a href="{$href}" class="news-card-link">
         <article class="news-card">
             <div class="news-card-img">

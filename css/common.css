@@ -585,7 +585,7 @@ input {
 
 textarea {
   height: 220px;
-  padding: 16px 13px !important;
+  padding: 24px 16px 13px !important;
   resize: none;
 }
 
@@ -624,7 +624,8 @@ textarea:focus,
 }
 
 .mail-placeholder,
-.piwigo-url-placeholder {
+.piwigo-url-placeholder,
+.your-message-placeholder {
   position: absolute;
   top: 17px;
   left: 14.5px;
@@ -639,17 +640,25 @@ textarea:focus,
   left: 16px;
 }
 
+#form-message:focus ~ .your-message-placeholder {
+  opacity: 0.3;
+  top: 26px;
+  left: 18px;
+}
+
 #form-email:focus ~ .mail-placeholder .orange-text {
   display: none;
 }
 
 #form-email:not(:placeholder-shown) ~ .mail-placeholder,
-#form-piwigo-url:not(:placeholder-shown) ~ .piwigo-url-placeholder {
+#form-piwigo-url:not(:placeholder-shown) ~ .piwigo-url-placeholder,
+#form-message:not(:placeholder-shown) ~ .your-message-placeholder {
   opacity: 0;
 }
 
 .little-mail-placeholder,
-.little-piwigo-url-placeholder {
+.little-piwigo-url-placeholder,
+.little-your-message-placeholder {
   display: none;
   position: absolute;
   top: 4px;
@@ -659,8 +668,10 @@ textarea:focus,
 
 #form-email:focus ~ .little-mail-placeholder,
 #form-piwigo-url:focus ~ .little-piwigo-url-placeholder,
+#form-message:focus ~ .little-your-message-placeholder ,
 #form-email:not(:placeholder-shown) ~ .little-mail-placeholder,
-#form-piwigo-url:not(:placeholder-shown) ~ .little-piwigo-url-placeholder {
+#form-piwigo-url:not(:placeholder-shown) ~ .little-piwigo-url-placeholder,
+#form-message:not(:placeholder-shown) ~ .little-your-message-placeholder {
   display: block;
 }
 
@@ -672,7 +683,7 @@ textarea:focus,
     white-space: nowrap;
   }
 
-  .mail-placeholder, .piwigo-url-placeholder {
+  .mail-placeholder, .piwigo-url-placeholder, .your-message-placeholder {
     font-size: 13px;
   }
 }
@@ -784,6 +795,7 @@ input.is-invalid {
 .form-check-label {
   line-height: 1;
   margin: 0;
+  font-weight: 500;
 }
 
 /* Disabled button state */
