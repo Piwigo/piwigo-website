@@ -377,7 +377,8 @@ function porg_load_content()
             $current_page = $porg_page;
 
             $porg_file = porg_page_to_file($porg_page);
-            $tpl_file = PORG_PATH . 'template/' . $porg_file . '.tpl';
+            $tpl_file = get_custom_pcom_tpl($porg_page);
+            // $tpl_file = PORG_PATH . 'template/' . $porg_file . '.tpl';
 
             if (isset($_GET['version'])) // might have been set by porg_label_to_page called earlier
             {

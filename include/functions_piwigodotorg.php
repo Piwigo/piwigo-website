@@ -215,6 +215,23 @@ function porg_get_release_tpl($version)
   return PORG_PATH . 'template/release.tpl';
 }
 
+/**
+ * in case you add a tpl in a language folder
+ */
+function get_custom_pcom_tpl($page_id)
+{
+  global $user;
+  
+  $filename = str_replace('-', '_', $page_id) . '.tpl';
+  $lang_tpl = PORG_PATH . 'language/' . $user['language'] . '/template/' . $filename;
+  
+  if (file_exists($lang_tpl))
+  {
+    return $lang_tpl;
+  }
+  return PORG_PATH . 'template/' . $filename;
+}
+
 function porg_get_latest_version()
 {
   global $conf;

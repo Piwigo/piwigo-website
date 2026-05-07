@@ -62,7 +62,7 @@
                             <input class="form-check-input" type="checkbox" id="form-terms" required>
                             <div class="check-help-container">
                                 <label class="form-check-label small" for="form-terms">
-                                    {'signup_check_RPG'|translate}
+                                    {$SIGNUP_CHECK_LABEL}
                                 </label>
                                 <span class="form-check-help pink-text small" id="check-help">{'signup_check_help'|translate}</span>
                             </div>
