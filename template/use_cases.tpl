@@ -1,4 +1,5 @@
 <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL_PLUGINS}css/pages/use_cases.css">
+<link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL_PLUGINS}css/card/get_started.css">
 <script src="{$PORG_ROOT_URL_PLUGINS}js/use_cases.js"></script>
 
 <div id="use-cases-content" class="use-cases-content">
@@ -22,3 +23,5 @@
   </div>
 </div>
 
+
+{include file="template/include/card/get_started_cta.tpl" }

@@ -10,6 +10,7 @@ CTA
   border-radius: 10px;
   padding: 40px;
   background: var(--grey);
+  max-width: 1080px;
 }
 
 .get-started-hero .row {
