@@ -90,6 +90,10 @@ CTA
   min-width: 188px;
 }
 
+.get-started-buttons {
+  justify-content: center;
+}
+
 .get-started-copy .cta-secondary {
   background: var(--clear) !important;
   min-width: 131px;
@@ -103,6 +107,39 @@ CTA
   max-height: 500px;
   object-fit: contain;
   margin-bottom: 20px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .get-started-copy {
+    padding: 0 20px 0 0;
+  }
+
+  .get-started-copy h1 {
+    font-size: 1.8rem;
+  }
+
+  .get-started-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .feature-icon {
+    width: 36px;
+    height: 36px;
+    flex: 0 0 36px;
+    font-size: 16px;
+  }
+
+  .get-started-buttons {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+
+  .get-started-copy .btn-cta,
+  .get-started-copy .cta-secondary {
+    width: 100%;
+    min-width: unset;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 768px) {
@@ -133,7 +170,6 @@ CTA
   .get-started-mobile-image img {
     display: block;
     width: 100%;
-    max-width: 300px;
     height: auto;
     margin: 0 auto;
     border-radius: 10px;
@@ -149,19 +185,20 @@ CTA
     margin-bottom: 22px !important;
   }
 
-  .get-started-copy .btn-cta {
-    min-width: auto;
-    flex: 1;
+  .get-started-buttons {
+    flex-direction: column !important;
+    align-items: stretch !important;
   }
 
   .get-started-copy .btn-cta,
   .get-started-copy .cta-secondary {
+    width: 100%;
     justify-content: center;
+    min-width: unset;
   }
 
   .get-started-copy > .d-flex {
-    flex-wrap: nowrap;
-    gap: 12px;
+    flex-direction: row;
   }
 
   .get-started-list li {
