@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  function activateFeature(featureKey, updateHash) {
+  function activateFeature(featureKey, updateHash, shouldScrollToAnchor) {
     const button = getButtonByFeature(featureKey);
     if (!button) {
       return;
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     const anchor = document.getElementById('features-menu-anchor');
-    if (anchor) {
+    if (shouldScrollToAnchor && anchor) {
       anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   }
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
   function activateFeatureFromHash() {
     const featureFromHash = (window.location.hash || '').replace('#', '').trim();
     if (featureFromHash && getButtonByFeature(featureFromHash)) {
-      activateFeature(featureFromHash, false);
+      activateFeature(featureFromHash, false, false);
       return true;
     }
 
@@ -71,13 +71,13 @@ document.addEventListener('DOMContentLoaded', function () {
     if (selectedButton) {
       showSection(selectedButton.getAttribute('data-feature'));
     } else if (buttons.length > 0) {
-      activateFeature(buttons[0].getAttribute('data-feature'), false);
+      activateFeature(buttons[0].getAttribute('data-feature'), false, false);
     }
   }
 
   buttons.forEach(function (button) {
     button.addEventListener('click', function () {
-      activateFeature(button.getAttribute('data-feature'), true);
+      activateFeature(button.getAttribute('data-feature'), true, true);
     });
   });
 
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   document.addEventListener('click', function (event) {
-    const link = event.target.closest('a.footer-feature-link, a.feature-submenu');
+    const link = event.target.closest('a.footer-feature-link');
     if (!link) {
       return;
     }
@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const isSamePage = targetUrl.pathname === window.location.pathname && targetUrl.search === window.location.search;
     if (isSamePage) {
       event.preventDefault();
-      activateFeature(targetFeature, true);
+      activateFeature(targetFeature, true, false);
     }
   });
 });
