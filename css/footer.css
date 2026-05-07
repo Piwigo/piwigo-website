@@ -34,7 +34,8 @@
   color: var(--dark);
 }
 
-.footer-feature-link {
+.footer-feature-link,
+.footer-legal-link {
   color: inherit;
   text-decoration: none;
 }
@@ -43,7 +44,8 @@
   font-weight: 550;
 }
 
-.footer-get-started-links .footer-feature-link:hover {
+.footer-get-started-links .footer-feature-link:hover,
+.footer-legal-link:hover {
   text-decoration: underline !important;
 }
 
@@ -100,7 +102,7 @@
 }
 
 .footer-get-started ul {
-  margin: 0 0 8px;
+  margin: 8px 0;
 }
 
 .footer-get-started ul li {
