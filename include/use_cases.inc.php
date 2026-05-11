@@ -1,5 +1,5 @@
 <?php
-$all_logos = get_ressources("home_logos");
+$all_logos = get_ressources("logos");
 
 $use_cases = array(
   'travel-tourism' => 'tourism',
