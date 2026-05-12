@@ -8,7 +8,6 @@ $lang['Get started CTA support'] = 'Contact us to <span class="green-text">discu
 $lang['Get started CTA btn 1'] = 'Start your free trial';
 $lang['Get started CTA btn 2'] = 'Contact us';
 
-$lang['Get started CTA short title'] = 'Get Started with Piwigo';
-$lang['Get started CTA short subtitle part 1'] = 'Ready to start managing your photos with Piwigo?';
-$lang['Get started CTA short subtitle part 2'] = 'Join our community!';
+$lang['Get started CTA short title'] = 'Ready to start managing your photos with Piwigo?';
+$lang['Get started CTA short subtitle'] = 'Try Piwigo Cloud free for 30 days. Create your account, upload your files and start working right away.';
 ?>
