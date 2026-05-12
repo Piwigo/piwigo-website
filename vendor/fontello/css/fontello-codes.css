@@ -76,6 +76,10 @@
 .icon-mailint:before { content: '\e84b'; } /* '' */
 .icon-mailext:before { content: '\e872'; } /* '' */
 .icon-burger:before { content: '\e874'; } /* '' */
+.icon-quote:before { content: '\e8b0'; } /* '' */
+.icon-paint:before { content: '\e8b1'; } /* '' */
+.icon-pwg:before { content: '\e8b2'; } /* '' */
+.icon-ai:before { content: '\e8b3'; } /* '' */
 .icon-check-empty:before { content: '\f096'; } /* '' */
 .icon-dropbox:before { content: '\f16b'; } /* '' */
 .icon-circle-thin:before { content: '\f1db'; } /* '' */
