@@ -17,6 +17,21 @@ $(document).ready(function() {
             $('#professional-services-section').hide();
             $('#technical-support-section').hide();
             $('#technical-support-table-section').hide();
+
+            // some function to ensure the cards have the same height for better UI
+            let maxHeight = 0;
+            $(".pricing-header").each(function(index){
+                console.log($(this).height())
+                maxHeight = $(this).height() > maxHeight ? $(this).height() : maxHeight;
+            });
+            $(".pricing-header").height(maxHeight);
+
+            let maxHeightFeatures = 0;
+            $(".top-features-list").each(function(index){
+                console.log($(this).height())
+                maxHeightFeatures = $(this).height() > maxHeightFeatures ? $(this).height() : maxHeightFeatures;
+            });
+            $(".top-features-list").height(maxHeightFeatures);
         } else {
             $('#pricing-cloud-content').hide();
             $('#pricing-selfhosted-content').fadeIn(300);
@@ -29,6 +44,21 @@ $(document).ready(function() {
             $('#technical-support-section').fadeIn(300);
             $('#technical-support-table-section').fadeIn(300);
             
+             // some function to ensure the cards have the same height for better UI
+            let maxHeightProfessional = 0;
+            $(".professional-services-text").each(function(index){
+                console.log($(this).height())
+                maxHeightProfessional = $(this).height() > maxHeightProfessional ? $(this).height() : maxHeightProfessional;
+            });
+            $(".professional-services-text").height(maxHeightProfessional);
+
+            let maxHeightPrice = 0;
+            $(".service-price").each(function(index){
+                console.log($(this).height())
+                maxHeightPrice = $(this).height() > maxHeightPrice ? $(this).height() : maxHeightPrice;
+            });
+            $(".service-price").height(maxHeightPrice);
+
         }
         if (updateUrl) {
             const urlValue = (type === 'cloud') ? 'cloud' : 'self_hosted';

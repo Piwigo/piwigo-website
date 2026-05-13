@@ -19,24 +19,25 @@ $template->assign('faqs', $faqs);
 
 global $user, $template;
 
+
 $blog_personnalisation_url = 'https://customizations.piwigo.com/';
 
 $blog_custom_data_import_urls = array(
-  'en_UK' => 'https://piwigo.com/blog/2025/07/01/importing-an-existing-photo-library-into-piwigo/',
-  'fr_FR' => 'https://fr.piwigo.com/blog/2025/07/01/importer-une-phototheque-existante-dans-piwigo/',
+    'en_UK' => 'https://piwigo.com/blog/2025/07/01/importing-an-existing-photo-library-into-piwigo/',
+    'fr_FR' => 'https://fr.piwigo.com/blog/2025/07/01/importer-une-phototheque-existante-dans-piwigo/',
 );
 
-$blog_custom_data_import_url = isset($blog_custom_data_import_urls[$user['language']]) 
-    ? $blog_custom_data_import_urls[$user['language']] 
+$blog_custom_data_import_url = isset($blog_custom_data_import_urls[$user['language']])
+    ? $blog_custom_data_import_urls[$user['language']]
     : $blog_custom_data_import_urls['en_UK'];
 
 $requirements_urls = array(
-  'en_UK' => 'https://piwigo.org/guides/install/requirements',
-  'fr_FR' => 'https://fr.piwigo.org/guides/installation/pr%C3%A9requis',
+    'en_UK' => 'https://piwigo.org/guides/install/requirements',
+    'fr_FR' => 'https://fr.piwigo.org/guides/installation/pr%C3%A9requis',
 );
 
-$requirements_url = isset($requirements_urls[$user['language']]) 
-    ? $requirements_urls[$user['language']] 
+$requirements_url = isset($requirements_urls[$user['language']])
+    ? $requirements_urls[$user['language']]
     : $requirements_urls['en_UK'];
 
 if ($user['language'] == 'fr_FR') {
@@ -60,21 +61,61 @@ $plans = array(
         'is_best_deal' => false,
         'admins_count' => '1',
         'storage_size' => '10GB',
-        'price' => l10n('%d €', 29),
+        'price' => l10n('€%d', 29),
         'subtitle' => l10n('pricing card pro description'),
         'features' => array(
             array('text' => l10n('1 administrator')),
             array('text' => l10n('unlimited users')),
             array('text' => l10n('no contributors'), 'not_included' => true),
-            array('text' => l10n('10GB storage'), 'info' => true),
-            array('text' => l10n('Image, video & audio files only'), 'not_included' => true, 'info' => true),
+            array('text' => l10n('pro storage'), 'info' => true),
+            array(
+                'text' => l10n('format only'),
+                'not_included' => true,
+                'info' => true,
+                'tooltip' => array(
+                    l10n('image_formats'),
+                )
+            ),
             array('text' => l10n('Email support')),
         ),
         'services' => array(
-            array('text' => l10n('All the standard features of Piwigo'), 'info' => true),
-            array('text' => l10n('Over 80 plugins to customize your Piwigo'), 'info' => true),
-            array('text' => l10n('Host your gallery on a secure cloud'), 'info' => true),
-            array('text' => l10n('Import your existing Piwigo'), 'info' => true),
+            array(
+                'text' => l10n('features of Piwigo'),
+                'info' => true,
+                'tooltip' => array(
+                    l10n('pricing_page_personal_details_6'),
+                    l10n('pricing_page_personal_details_3'),
+                    l10n('pricing_page_personal_pro_details_5'),
+                    l10n('pricing_page_personal_details_5'),
+                    l10n('pricing_page_personal_details_4')
+                )
+            ),
+            array(
+                'text' => l10n('plugins to customize'),
+                'info' => true,
+                'tooltip' => array(
+                    l10n('pricing_page_personal_pro_details_7'),
+                    l10n('pricing_page_personal_pro_details_8'),
+                    l10n('pricing_page_personal_pro_details_9'),
+                    l10n('pricing_page_personal_pro_details_10'),
+                    l10n('pricing_page_personal_pro_details_11'),
+                    l10n('pricing etc..')
+                )
+            ),
+            array(
+                'text' => l10n('Host'),
+                'info' => true,
+                'tooltip' => array(
+                    l10n('pricing_page_personal_pro_details_18')
+                )
+            ),
+            array(
+                'text' => l10n('Import'),
+                'info' => true,
+                'tooltip' => array(
+                    l10n('pricing_page_import_piwigo_detail')
+                )
+            ),
         )
     ),
     'plan_team' => array(
@@ -82,21 +123,36 @@ $plans = array(
         'is_best_deal' => false,
         'admins_count' => '3',
         'storage_size' => '100GB',
-        'price' => l10n('%d €', 99),
+        'price' => l10n('€%d', 99),
         'subtitle' => l10n('pricing card team description'),
         'features' => array(
             array('text' => l10n('3 administrators')),
             array('text' => l10n('unlimited users')),
             array('text' => l10n('unlimited contributors')),
-            array('text' => l10n('100GB storage'), 'info' => true),
-            array('text' => l10n('All file formats'), 'info' => true),
+            array('text' => l10n('team storage'), 'info' => true),
+            array(
+                'text' => l10n('All file formats'),
+                'info' => true,
+                'tooltip' => array(
+                    l10n('other_formats'),
+                )
+            ),
             array('text' => l10n('Priority email support')),
         ),
         'services' => array(
-            array('text' => l10n('All the features of the Pro plan, but also...')),
-            array('text' => l10n('Contributor management (Allow non-administrators to upload files)'), 'info' => true),
-            array('text' => l10n("Administrators' activity history (additions, deletions, etc.)"), 'info' => true),
-            array('text' => l10n('Advanced user management'), 'info' => true),
+            array('text' => l10n('All the features pro')),
+            array('text' => l10n('Contributor')),
+            array('text' => l10n("Administrators activity")),
+            array(
+                'text' => l10n('Advanced user management'),
+                'info' => true,
+                'tooltip' => array(
+                    l10n('pricing_page_team_details_4'),
+                    l10n('pricing_page_team_details_5'),
+                    l10n('pricing_page_team_details_6'),
+                    l10n('pricing etc..')
+                )
+            ),
         )
     ),
     'plan_enterprise' => array(
@@ -104,23 +160,58 @@ $plans = array(
         'is_best_deal' => true,
         'admins_count' => '5',
         'storage_size' => '250GB',
-        'price' => l10n('%d €', 199),
+        'price' => l10n('€%d', 199),
         'subtitle' => l10n('pricing card entreprise description'),
         'features' => array(
             array('text' => l10n('5 administrators')),
             array('text' => l10n('unlimited users')),
             array('text' => l10n('unlimited contributors')),
-            array('text' => l10n('250GB storage'), 'info' => true),
-            array('text' => l10n('All file formats'), 'info' => true),
+            array('text' => l10n('entreprise storage'), 'info' => true),
+            array(
+                'text' => l10n('All file formats'),
+                'info' => true,
+                'tooltip' => array(
+                    l10n('other_formats'),
+                )
+            ),
             array('text' => l10n('Priority email support')),
         ),
         'services' => array(
-            array('text' => l10n('All the features of the Team plan, but also...')),
-            array('text' => l10n('More options for organizing, categorizing and presenting your content'), 'info' => true),
-            array('text' => l10n('More automation and productivity'), 'info' => true),
-            array('text' => l10n('More advanced features'), 'info' => true),
-            array('text' => l10n('Custom graphic personalization'), 'info' => true),
-            array('text' => l10n('Custom data import (priced upon request)')),
+            array('text' => l10n('All the features team')),
+            array(
+                'text' => l10n('More options'),
+                'info' => true,
+                'tooltip' => array(
+                    l10n('pricing_page_user_custom_search_filters'),
+                    l10n('pricing_page_custom_properties'),
+                    l10n('pricing_page_enterprise_details_3'),
+                    l10n('pricing_page_enterprise_details_4')
+                )
+            ),
+            array(
+                'text' => l10n('More automation'),
+                'info' => true,
+                'tooltip' => array(
+                    l10n('pricing_page_enterprise_details_6'),
+                    l10n('pricing_page_enterprise_details_7'),
+                    l10n('pricing_page_enterprise_details_8')
+                )
+            ),
+            array(
+                'text' => l10n('More features'),
+                'info' => true,
+                'tooltip' => array(
+                    l10n('pricing_page_enterprise_details_10'),
+                    l10n('pricing_page_enterprise_details_11'),
+                    l10n('pricing_page_enterprise_details_12'),
+                    l10n('pricing etc..')
+                )
+            ),
+            array(
+                'text' => l10n('Custom graphic'),
+                
+            ),
+            array('text' => l10n('Custom data')),
         )
     ),
     'plan_vip' => array(
@@ -128,23 +219,41 @@ $plans = array(
         'is_best_deal' => false,
         'admins_count' => l10n('pricing plan_unlimited'),
         'storage_size' => '1000GB',
-        'price' => l10n('%d €', 399),
+        'price' => l10n('€%d', 399),
         'subtitle' => l10n('pricing card vip description'),
         'features' => array(
             array('text' => l10n('unlimited administrators')),
             array('text' => l10n('unlimited users')),
             array('text' => l10n('unlimited contributors')),
-            array('text' => l10n('1000GB storage'), 'info' => true),
-            array('text' => l10n('All file formats'), 'info' => true),
-            array('text' => l10n('Priority email support + phone support')),
+            array('text' => l10n('vip storage'), 'info' => true),
+            array(
+                'text' => l10n('All file formats'),
+                'info' => true,
+                'tooltip' => array(
+                    l10n('other_formats'),
+                )
+            ),
+            array('text' => l10n('Priority vip')),
         ),
         'services' => array(
-            array('text' => l10n('All the features of the Enterprise plan, but also...')),
-            array('text' => l10n('Advanced authentication features (Single sign-on, password rules...)'), 'info' => true),
-            array('text' => l10n('Enhanced coaching for Piwigo implementation'), 'info' => true),
-            array('text' => l10n('Custom development (priced upon request)')),
-            array('text' => l10n('Dedicated server (priced upon request)')),
-            array('text' => l10n('Custom data import included'), 'info' => true),
+            array('text' => l10n('All the features vip')),
+            array('text' => l10n('Advanced')),
+            array(
+                'text' => l10n('Enhanced'),
+                'info' => true,
+                'tooltip' => array(
+                    l10n('pricing_page_vip_details_6')
+                )
+            ),
+            array('text' => l10n('Custom dev')),
+            array('text' => l10n('Dedicated server')),
+            array(
+                'text' => l10n('Custom data import included'),
+                'info' => true,
+                'tooltip' => array(
+                    l10n('pricing_page_vip_details_8')
+                )
+            ),
         )
     )
 );
@@ -152,51 +261,66 @@ $plans = array(
 $support_plans = array(
     'free' => array(
         'title' => l10n('Free'),
-        'price' => l10n('%d €', 0),
+        'price' => l10n('€%d', 0),
         'subtitle' => l10n('pricing card free description'),
         'features' => array(
-            array('text' => l10n('Access to all features, themes and plugins')),
-            array('text' => l10n('Access to the documentation and the community forum')),
+            array('text' => l10n('Access_f')),
+            array('text' => l10n('Access_doc')),
         )
     ),
     'light' => array(
         'title' => l10n('Light'),
-        'price' => l10n('%d €', 39),
+        'price' => l10n('€%d', 39),
         'subtitle' => l10n('pricing card light description'),
         'features' => array(
-            array('text' => l10n('Access to all features, themes and plugins')),
-            array('text' => l10n('Access to the documentation and the community forum')),
-            array('text' => l10n('Professional user support via email, video call, and phone by appointment')),
-            array('text' => l10n('Response time: 48 business hours')),
+            array('text' => l10n('Access_f')),
+            array('text' => l10n('Access_doc')),
+            array('text' => l10n('Professional support')),
+            array('text' => l10n('Response_48')),
             array('text' => l10n('3 administrators')),
-            array('text' => l10n('Support included for over 100 plugins'), 'info' => true),
+            array(
+                'text' => l10n('Support_100'),
+                
+            ),
         )
     ),
     'standard' => array(
         'title' => l10n('Standard'),
-        'price' => l10n('%d €', 79),
+        'price' => l10n('€%d', 79),
         'subtitle' => l10n('pricing card standard description'),
         'features' => array(
-            array('text' => l10n('Access to all features, themes and plugins')),
-            array('text' => l10n('Access to the documentation and the community forum')),
-            array('text' => l10n('Professional user support via email, video call, and phone by appointment')),
-            array('text' => l10n('Response time: 24 business hours')),
+            array('text' => l10n('Access_f')),
+            array('text' => l10n('Access_doc')),
+            array('text' => l10n('Professional support')),
+            array('text' => l10n('Response_24')),
             array('text' => l10n('5 administrators')),
-            array('text' => l10n('Support included on over 100 plugins and 20 Enterprise plugins'), 'info' => true),
+            array(
+                'text' => l10n('Support_100_20'),
+                
+            ),
         )
     ),
     'premium' => array(
         'title' => l10n('Premium'),
-        'price' => l10n('%d €', 150),
+        'price' => l10n('€%d', 150),
         'subtitle' => l10n('pricing card premium description'),
         'features' => array(
-            array('text' => l10n('Access to all features, themes and plugins')),
-            array('text' => l10n('Access to the documentation and the community forum')),
-            array('text' => l10n('Professional user support via email, video call, and phone by appointment')),
-            array('text' => l10n('Response time: 8 business hours (priority)')),
+            array('text' => l10n('Access_f')),
+            array('text' => l10n('Access_doc')),
+            array('text' => l10n('Professional support')),
+            array('text' => l10n('Response_8')),
             array('text' => l10n('unlimited administrators')),
-            array('text' => l10n('Support included on over 120 plugins and VIP plugins'), 'info' => true),
-            array('text' => l10n('Annual audit of your use of Piwigo'), 'info' => true),
+            array(
+                'text' => l10n('Support_120'),
+                
+            ),
+            array(
+                'text' => l10n('Annual audit'),
+                'info' => true,
+                'tooltip' => array(
+                    l10n('pricing_annual_audit_info'),
+                )
+            ),
         )
     )
 );
@@ -212,32 +336,85 @@ $maintenance_plan = array(
     'custom_feature_dev' => l10n('%d €', 150),
 );
 
-
 $extra_storage = array(
-    '50'   => array('size' => '50',   'price' => l10n('%d €', 5)),
-    '100'  => array('size' => '100',  'price' => l10n('%d €', 10)),
-    '250'  => array('size' => '250',  'price' => l10n('%d €', 25)),
-    '500'  => array('size' => '500',  'price' => l10n('%d €', 50)),
-    '1000' => array('size' => '1000', 'price' => l10n('%d €', 100)),
+    '50' => array('size' => '50', 'price' => l10n(5)),
+    '100' => array('size' => '100', 'price' => l10n(10)),
+    '250' => array('size' => '250', 'price' => l10n(25)),
+    '500' => array('size' => '500', 'price' => l10n(50)),
+    '1000' => array('size' => '1000', 'price' => l10n(100)),
 );
 
+$specific_cases = array(
+    array(
+        'icon'  => 'icon-dev',
+        'title' => l10n('pricing specific_case_title_1'),
+        'text'  => l10n('pricing specific_case_text_1'),
+    ),
+    array(
+        'icon'  => 'icon-key',
+        'title' => l10n('pricing specific_case_title_2'),
+        'text'  => l10n('pricing specific_case_text_2'),
+    ),
+);
+
+$prof_services = array(
+    array(
+        'img'    => 'personalize_orange.svg',
+        'title'  => l10n('pricing prof_service_title_3'),
+        'text'   => l10n('pricing prof_service_text_3'),
+        'btn'    => l10n('pricing label_see_examples'),
+        'price'  => l10n('€%d', 490),
+        'suffix' => l10n('pricing price_excl_taxes'),
+    ),
+    array(
+        'icon'   => 'icon-import',
+        'title'  => l10n('pricing prof_service_title_4'),
+        'text'   => l10n('pricing prof_service_text_4'),
+        'btn'    => l10n('pricing label_learn_more'),
+        'label'  => l10n('pricing professional services lil text'),
+        'price'  => l10n('€%d', 150),
+        'suffix' => l10n('pricing price_excl_taxes_hour'),
+    ),
+    array(
+        'icon'   => 'icon-wrench',
+        'title'  => l10n('pricing prof_service_title_5'),
+        'text'   => l10n('pricing prof_service_text_5'),
+        'btn'    => l10n('pricing label_see_prerequisites'),
+        'label'  => l10n('pricing professional services lil text'),
+        'price'  => l10n('€%d', 150),
+        'suffix' => l10n('pricing price_excl_taxes_hour'),
+    ),
+);
+
+$tech_table_prices = array(
+    'install_customer' => l10n('from €%d', 200),
+    'install_external' => l10n('from €%d', 250),
+    'update_customer'  => l10n('€%d', 500, 'pricing price_excl_taxes_year'),
+    'update_external'  => l10n('€%d', 600, 'pricing price_excl_taxes_year'),
+    'managed_customer' => l10n('€%d', 1500, 'pricing price_excl_taxes_year'),
+    'na' => l10n('pricing price_na'),
+);
 
 $template->assign(array(
-    'PLANS'             => $plans,
-    'SUPPORT_PLANS'     => $support_plans,
-    'MAINTENANCE_PLAN'  => $maintenance_plan,
-    'EXTRA_STORAGE'     => $extra_storage,
-    'IMAGE_FORMATS'     => $image_formats,
-    'OTHER_FORMATS'     => $other_formats,
-    'PRICING_PDF_LINK'  => $pricing_pdf_link,
-    'DOC_LINK'          => $doc_link,
-    'FORUM_LINK'        => $forum_link,
-    'DOWNLOAD_LINK'     => $download_link,
-    'CONTACT_URL'       => porg_get_page_urls()['contact'],
+    'PLANS' => $plans,
+    'SUPPORT_PLANS' => $support_plans,
+    'MAINTENANCE_PLAN' => $maintenance_plan,
+    'EXTRA_STORAGE' => $extra_storage,
+    'IMAGE_FORMATS' => $image_formats,
+    'OTHER_FORMATS' => $other_formats,
+    'PRICING_PDF_LINK' => $pricing_pdf_link,
+    'THEME_COLOR'    => 'orange',
+    'SPECIFIC_CASES' => $specific_cases,
+    'PROF_SERVICES'  => $prof_services,
+    'DOC_LINK' => $doc_link,
+    'FORUM_LINK' => $forum_link,
+    'DOWNLOAD_LINK' => $download_link,
+    'CONTACT_URL' => porg_get_page_urls()['contact'],
     'PCOM_REQUIREMENTS_URL' => $requirements_url,
     'PCOM_BLOG_CUSTOM_DATA_IMPORT_URL' => $blog_custom_data_import_url,
     'PCOM_BLOG_PERSONNALISATION_URL' => $blog_personnalisation_url,
-    'EPHEMERAL_KEY'     => get_ephemeral_key(15),
+    'EPHEMERAL_KEY' => get_ephemeral_key(15),
+    'TECH_PRICES'=> $tech_table_prices,
 ));
 
 ?>

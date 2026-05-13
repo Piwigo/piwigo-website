@@ -19,6 +19,9 @@
 {elseif $variant eq 'menu_btn_white'}
   {assign var='classes' value='btn-menu menu-btn-white'}
   {assign var='default_label' value='Menu white'}
+{elseif $variant eq 'menu_btn_main_pink'}
+  {assign var='classes' value='btn-menu menu-btn-main-pink'}
+  {assign var='default_label' value='Menu pink'}
 {else}
   {assign var='classes' value='btn-cta btn-text cta-primary'}
   {assign var='default_label' value='CTA principale'}

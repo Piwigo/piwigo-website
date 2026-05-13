@@ -2,6 +2,7 @@
   width: 100%;
   max-width: 1259px;
   margin: 40px auto;
+  padding: 0 20px;
   background-color: var(--grey) !important;
   border-radius: 10px;
   font-family: "Sora", sans-serif;
@@ -85,8 +86,10 @@
 }
 
 .feature-label span {
-  font-weight: 500;
+  font-weight: 400;
+  font-size: 16px;
   color: var(--dark);
+  font-family: "Red Hat Display";
 }
 
 .icon-rounded-warning {
@@ -120,7 +123,6 @@
   display: inline-flex;
   align-items: center;
   margin-left: 8px;
-  cursor: help;
   outline: none; 
 }
 
@@ -134,7 +136,6 @@
   background-color: var(--clear);
   color: var(--dark_text);
   text-align: left;
-  border: 1px solid var(--main_pink);
   border-radius: 8px;
   padding: 15px;
   font-size: 13px;

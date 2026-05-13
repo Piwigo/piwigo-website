@@ -38,7 +38,7 @@ Pricing Card
 }
 
 .pricing-header {
-  height: 120px !important;
+  /* height: 120px !important; */
   display: flex;
   flex-direction: column;
 }
@@ -94,18 +94,21 @@ Pricing Card
 
 .features-list span.small,
 .features-list .text-secondary {
-  font-size: 13.5px !important;
+  font-size: 16px !important;
   line-height: 1.4 !important;
   color: var(--dark) !important;
   padding-left: 5px;
 }
 
 .features-list p.fw-bold {
-  font-size: 13px !important;
+  font-size: 16px !important;
   font-weight: 800 !important;
   margin: 30px 0 20px 0 !important;
   color: var(--dark) !important;
+  font-family: "Sora";
 }
+
+
 
 .info-icon-container,
 .custom-link-container {
@@ -267,6 +270,7 @@ body.custom-tooltip-open .info-icon-container:hover .global-hover-popover {
   display: inline-flex !important;
   align-items: center;
   height: 19px;
+  text-decoration: none !important;
 }
 
 .pricing-card a {
@@ -362,6 +366,22 @@ Pricing Custom Tooltip
   display: flex !important;
   flex-direction: column !important;
 }
+
+
+.js-custom-tooltip-trigger, 
+.link-wrapper {
+    text-decoration: none !important;
+}
+
+.link-text {
+    text-decoration: underline !important;
+}
+
+.icon-rounded-warning {
+    text-decoration: none !important;
+    display: inline-block;
+}
+
 
 
 .custom-tooltip-content {
@@ -546,6 +566,21 @@ Pricing Plugin Tooltip
 
 .tooltip-footer .btn-menu.Menu_btn_white {
     text-decoration: none;
+}
+
+.js-plugin-tooltip-trigger {
+    text-decoration: none !important;
+}
+
+.link-text {
+    text-decoration: underline !important;
+    text-underline-offset: 3px;
+}
+
+.icon-rounded-warning {
+    text-decoration: none !important;
+    display: inline-flex !important;
+    align-items: center;
 }
 
 /******
