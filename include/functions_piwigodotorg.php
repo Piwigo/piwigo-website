@@ -39,6 +39,7 @@ function porg_get_pages()
     'pricing' => 'Pricing',
     'signup' => 'Signup',
     'use_cases' => 'Use cases',
+    'product_update' => 'Product Updates',
     'terms_of_service' => 'Terms of service',
     'privacy' => 'Privacy',
     );

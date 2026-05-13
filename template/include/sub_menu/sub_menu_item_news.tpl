@@ -73,7 +73,8 @@
                 category_type='use-case-submenu' 
                 title={'Product Updates'|translate} 
                 description={'Product Updates desc'|translate} 
-                icon_class='icon-dev'}
+                icon_class='icon-dev'
+                href="{$PORG_ROOT}{$URL.product_update}"}
         </div>
     </div>
 
