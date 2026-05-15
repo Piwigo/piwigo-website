@@ -146,7 +146,7 @@ Pricing Card
 
 .global-hover-popover {
   width: 225px;
-  min-height: 200px;
+  /* min-height: 200px; */
   top: 35px;
   left: 50%;
   transform: translateX(-100%);
@@ -245,12 +245,13 @@ Pricing Card
 
 .cross {
   color: var(--light_grey) ;
-  font-size: 12px;
+  font-size: 16px;
   flex-shrink: 0;
   display: inline-flex ;
   align-items: center;
-  height: 19px;
-  margin-top: 4px ;
+  /* height: 19px; */
+  margin-top: 4px;
+  margin-right: 4px;
 }
 
 .text-info-light {
@@ -490,7 +491,7 @@ Pricing Global Tooltip
 
 .global-popover-content {
     width: 225px ;
-    min-height: 200px ;
+    /* min-height: 200px ; */
     padding: 20px ;
     background: var(--clear) ;
     border-radius: 10px ;

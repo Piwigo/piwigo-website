@@ -46,7 +46,7 @@
 
 							{elseif $feature.text|lower|strpos:"documentation" !== false}
 								{assign var="translated_text" value=$feature.text|translate}
-								{$translated_text|replace:'documentation':'<a href="https://doc.piwigo.org/" class="text-decoration-underline text-inherit" target="_blank" rel="noopener">documentation</a>'|replace:'community forum':'<a href="https://piwigo.org/forum/" class="text-decoration-underline text-inherit" target="_blank" rel="noopener">community forum</a>'}
+								{$translated_text|replace:'documentation':"<a href='$DOC_LINK' class='text-decoration-underline text-inherit' target='_blank' rel='noopener'>documentation</a>"|replace:'community forum':"<a href='$FORUM_LINK' class='text-decoration-underline text-inherit' target='_blank' rel='noopener'>community forum</a>"}
 
 							{elseif $feature.text|lower|strpos:"support included" !== false}
 								<span class="custom-link-container js-plugin-tooltip-trigger d-flex align-items-top" style="cursor: pointer;">
