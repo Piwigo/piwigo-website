@@ -5,7 +5,7 @@
 
 <section class="signup-header">
 	<div class="container">
-		<div class="row align-items-start">
+		<div class="row align-items-center">
 			<div class="col-12 col-md-5">
 				<div class="signup-text-header text-center mb-4">
 					<h1 class="fw-bold text-center">{'signup_header_title'|translate}</h1>
@@ -88,7 +88,32 @@
 
 			<div class="col-12 col-md-7 ps-md-5">
 				<div class="illustration-container position-relative">
-					<img src="{$PORG_ROOT_URL}images/signup/FreeTrial.png" class="img-fluid" alt="Piwigo Cloud Stats">
+					<div class="doctor-container">
+						<img src="{$PORG_ROOT_URL}images/signup/FreeTrial.png" class="img-fluid doctor" alt="Piwigo Cloud Stats">
+					</div>
+					<img src="{$PORG_ROOT_URL}images/features/bg_vector.svg" class="img-fluid bg-dot-vector" alt="Piwigo vector">
+					<div class="data-signup-grid">
+						<div class="stat-card size-large">
+							<h3>{$STATS_GLOBAL_INSTALLS}</h3>
+							<p>{'actives installations'|translate}</p>
+						</div>
+						<div class="stat-card size-large">
+							<h3>{$STATS_GLOBAL_FILES}</h3>
+							<p>{'added files'|translate}</p>
+						</div>
+						<div class="stat-card">
+							<h3>{$STATS_GLOBAL_UPTIME}</h3>
+							<p>{'availability rate observed'|translate}</p>
+						</div>
+						<div class="stat-card">
+							<h3>{$STATS_GLOBAL_LANGS}</h3>
+							<p>{'existing languages'|translate}</p>
+						</div>
+						<div class="stat-card">
+							<h3>{$STATS_GLOBAL_CLIENTS}</h3>
+							<p>{'clients'|translate}</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
