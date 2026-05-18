@@ -17,6 +17,8 @@
 						services=$plan.services
 						link_try="#"
 						link_trial="#"
+						btn_link_try="{$PORG_ROOT}{$URL.signup}"
+            btn_link_trial="{$PORG_ROOT}{$URL.signup}"
 					}
 				</div>
 			{/foreach}

@@ -219,6 +219,7 @@ Storage section
   .storage-section {
     width: 322px !important;
     padding: 30px 20px;
+    margin-top: 0;
   }
 
   .storage-divider:not(:last-child):after {

@@ -88,7 +88,7 @@
 
 			<div class="col-12 col-md-7 ps-md-5">
 				<div class="illustration-container position-relative">
-					<img src="{$PORG_ROOT_URL}images/signup/image_6600df.png" class="img-fluid" alt="Piwigo Cloud Stats">
+					<img src="{$PORG_ROOT_URL}images/signup/FreeTrial.png" class="img-fluid" alt="Piwigo Cloud Stats">
 				</div>
 			</div>
 		</div>

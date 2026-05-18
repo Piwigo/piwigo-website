@@ -24,7 +24,8 @@
 			"menu_btn_main_pink"
 			:
 			"menu_btn_green"
-			href={(isset($btn_link_try)) ? $btn_link_try : "#"} label={(isset($btn_try)) ? ($btn_try|translate) : ('pricing free'|translate)} 
+			href={(isset($btn_link_try)) ? $btn_link_try : "#"} label={(isset($btn_try)) ? ($btn_try|translate) : ('pricing free'|translate)}
+			target={(isset($target)) ? $target : "_blank"}
 		}
 	</div>
 
@@ -125,7 +126,8 @@
 		{include
 			file="template/include/buttons/button.tpl"
 			variant="menu_btn_white"
-			href={(isset($btn_link_try)) ? $btn_link_try : "#"} label={(isset($btn_trial)) ? ($btn_trial|translate) : ('pricing free_trial'|translate)} 
+			href={(isset($btn_link_try)) ? $btn_link_try : "#"} label={(isset($btn_trial)) ? ($btn_trial|translate) : ('pricing free_trial'|translate)}
+			target={(isset($target)) ? $target : "_blank"}
 		}
 	</div>
 	<h2 class="h2-mobile-top-page text-center">{$title|translate}</h2>
