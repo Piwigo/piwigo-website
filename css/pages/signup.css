@@ -66,18 +66,74 @@
   grid-column: span 2; 
 }
 
+
+.stat-card:not(.size-large) {
+  background: white;
+  border-radius: 12px;
+  padding: 15px 10px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  grid-column: span 2; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .stat-card h3 {
-  font-size: 24px;
-  font-weight: 800;
-  color: #333;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 100%;
+  color: var(--dark);
+  margin-bottom: 8px; 
+  font-family: 'Red Hat Display';
+  text-align: center;
+  white-space: nowrap; 
+}
+
+.stat-card.size-large p {
+  font-size: 16px;
+  font-weight: 600; 
+  font-family: 'Red Hat Display';
+  color: var(--dark);
+  margin: 0;
+  line-height: 120%;
+  text-align: center;
+  white-space: nowrap; 
+}
+
+.stat-card:not(.size-large) p {
+  font-size: 14px; 
+  font-weight: 600;
+  font-family: 'Red Hat Display';
+  color: var(--dark);
+  margin: 0;
+  line-height: 1.2; 
+  text-align: center;
+  white-space: normal; 
+  word-wrap: break-word;
+} 
+
+.stat-card h3 {
+  font-size: 32px;
+  font-weight: 900;
+  font-style: Bold;
+  line-height: 100%;
+  color: var(--dark);
   margin-bottom: 4px;
+  font-family: 'Red Hat Display';
+  text-align: center;
 }
 
 .stat-card p {
-  font-size: 12px;
-  color: #777;
+  font-size: 16px;
+  font-style: SemiBold;
+  font-family: 'Red Hat Display';
+  color: var(--dark);
   margin: 0;
-  line-height: 1.2;
+  line-height: 100%;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .signup-form-split-copy {
