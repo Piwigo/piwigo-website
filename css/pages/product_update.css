@@ -1,3 +1,5 @@
+@import url('../../fonts/Kanit/Kanit.css');
+
 /* header */
 .product-update-header,
 .product-update-updates {
@@ -165,7 +167,7 @@
   position: relative;
   box-shadow: 0px 4px 20px 0px #d9d9d940;
   min-height: 700px;
-  margin-right: 65px;
+  margin-right: 40px;
 }
 
 .product-update-updates-filters-container::before {
@@ -203,4 +205,211 @@
 .product-update-updates-filters-header .clear-filters {
   margin-left: auto;
   white-space: nowrap;
+}
+
+/* commit card*/
+.timeline-week .product-update-card {
+  max-width: none;
+  height: unset;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  padding: 20px 25px;
+}
+
+.release-card {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  overflow: hidden;
+  padding: 0 !important;
+  height: 200px !important;
+}
+
+.release-card .release-content {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 25px;
+}
+
+.release-card .release-meta-row,
+.release-card .release-body {
+  padding: 0;
+}
+
+.release-card .release-meta-row {
+  margin-bottom: 4px;
+}
+
+.release-card .release-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.release-card .version-image {
+  width: 290px;
+  margin: 0;
+  border-radius: 0 20px 20px 0;
+  object-fit: cover;
+  align-self: stretch;
+}
+
+.timeline-week .product-update-card::before {
+  border-radius: 20px;
+}
+
+.timeline-week .product-update-card:last-child {
+  margin-bottom: 40px;
+}
+
+.commits-card .commit-number {
+  margin-left: 20px;
+  color: var(--dark_text);
+}
+
+.commits-card .collapse,
+.commits-card .collapsing {
+  overflow: hidden;
+}
+
+.commits-card a[data-bs-toggle='collapse'] {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(5px);
+}
+
+.commits-card .collapse-toggle {
+  position: relative;
+  display: block;
+  width: 16px;
+  height: 16px;
+  line-height: 1;
+}
+
+.commits-card .collapse-toggle .submenu_button_icon {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  transform-origin: center;
+  transition: transform 0.25s ease;
+}
+
+.commits-card a[aria-expanded='true'] .collapse-toggle .submenu_button_icon {
+  transform: rotate(180deg);
+}
+
+.commits-card .commit-date,
+.release-card .release-date {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  color: var(--dark_text);
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+.commits-card.is-open .commit-date {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.commit-list {
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+.commit-list .mobile-test-sub-h3 {
+  font-style: normal;
+}
+
+.commit-list .mobile-test-sub-h3 a{
+  color: var(--dark);
+}
+
+.commit-list .commit-item .dot {
+  position: absolute;
+  left: -16px;
+  top: 18%;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: var(--light_grey);
+  border-radius: 50%;
+}
+
+.release-card .btn-menu {
+  width: 250px;
+}
+
+.commit-list .commit-item .d-flex.align-items-start {
+  position: relative;
+}
+
+.commit-list .commit-item:last-child {
+  margin-bottom: 1px !important;
+}
+
+/* timeline layout */
+.timeline {
+  position: relative;
+  padding-left: 60px;
+  margin-top: 30px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  bottom: 0;
+  width: 2px;
+  background: var(--light_grey);
+  border-radius: 1px;
+}
+
+.timeline-week {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.timeline-week-header {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.timeline-week-header .dot {
+  position: absolute;
+  left: -51px;
+  top: 25%;
+  width: 15px;
+  height: 15px;
+  background: var(--main_flash_green);
+  border-radius: 50%;
+}
+
+.commits-card .dot,
+.release-card .dot {
+  position: absolute;
+  left: -48px;
+  top: 0px;
+  width: 9px;
+  height: 9px;
+  background: var(--light_grey);
+  border-radius: 50%;
+}
+
+.timeline-week-header .p-testimonial,
+.timeline-week-header .h3-mobile {
+  font-size: 24px;
+  color: var(--dark_text);
 }

@@ -30,5 +30,22 @@ $(document).ready(function() {
   container.on('scroll', updateButtonState);
   $(window).on('resize', updateButtonState);
 
+  // Sync commits card state with collapse
+  function syncCommitCardState(collapseElement) {
+    const card = $(collapseElement).closest('.commits-card');
+    if (!card.length) {
+      return;
+    }
+
+    card.toggleClass('is-open', $(collapseElement).hasClass('show'));
+  }
+
+  $(document)
+    .on('shown.bs.collapse', '.commits-card .collapse', function() {
+      syncCommitCardState(this);
+    })
+    .on('hidden.bs.collapse', '.commits-card .collapse', function() {
+      syncCommitCardState(this);
+    });
   
 });
