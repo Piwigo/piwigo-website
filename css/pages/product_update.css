@@ -1,5 +1,6 @@
 /* header */
-.product-update-header {
+.product-update-header,
+.product-update-updates {
   padding: 60px 0;
   overflow: hidden;
 }
@@ -59,14 +60,22 @@
 }
 
 .product-update-card::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   border-radius: 10px;
   padding: 1px;
-  background: linear-gradient(91.79deg, var(--light_grey) 16.42%, var(--grey) 98.39%);
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  background: linear-gradient(
+    91.79deg,
+    var(--light_grey) 16.42%,
+    var(--grey) 98.39%
+  );
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   pointer-events: none;
@@ -94,7 +103,7 @@
   margin-bottom: 7px;
 }
 
-.product-update-card .btn-menu{
+.product-update-card .btn-menu {
   margin-top: auto;
 }
 
@@ -141,4 +150,57 @@
   opacity: 0.5;
   border-color: var(--light_grey);
   background: var(--grey);
+}
+
+.product-update-updates-content {
+  margin: 0 5%;
+}
+
+.product-update-updates-filters-container {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 25px;
+  border-radius: 20px;
+  border: none;
+  position: relative;
+  box-shadow: 0px 4px 20px 0px #d9d9d940;
+  min-height: 700px;
+  margin-right: 65px;
+}
+
+.product-update-updates-filters-container::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 1px;
+  background: linear-gradient(91.79deg, #d9d9d9 16.42%, #f7f7f7 98.39%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.product-update-updates-filters-container .p-testimonial,
+.product-update-updates-filters-container .sector-testimonial {
+  font-size: 20px;
+  color: var(--dark_text);
+  text-decoration: none;
+}
+
+.product-update-updates-filters-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.product-update-updates-filters-header .sector-testimonial {
+  margin: 0;
+}
+
+.product-update-updates-filters-header .clear-filters {
+  margin-left: auto;
+  white-space: nowrap;
 }

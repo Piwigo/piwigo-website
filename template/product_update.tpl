@@ -37,3 +37,23 @@
     </div>
   </div>
 </section>
+
+<section class="product-update-updates">
+    <div class="row product-update-updates-content">
+      <div class="col-md-4 text-center">
+        <div class="product-update-updates-filters-container">
+          <div class="product-update-updates-filters-header">
+            <h3 class="sector-testimonial">{'Filters'|translate}</h3>
+            <a class="p-testimonial clear-filters" data-filter="clear">{'Clear all'|translate}</a>
+          </div>
+
+          <div class="product-update-updates-filters">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <h2 class="h2-top-page">{'porg_product_update_updates_title'|translate}</h2>
+      </div>
+    </div>
+  </div>
+</section>

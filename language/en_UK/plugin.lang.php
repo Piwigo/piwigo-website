@@ -223,6 +223,8 @@ $lang['Free'] = 'Free';
 $lang['Light'] = 'Light';
 $lang['Standard'] = 'Standard';
 $lang['Premium'] = 'Premium';
+$lang['Filters'] = 'Filters';
+$lang['Clear all'] = 'Clear all';
 
 /*Used in guide pages*/
 // $lang['porg_guides'] = 'Guides';
