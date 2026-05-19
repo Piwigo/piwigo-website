@@ -7,8 +7,8 @@
       {include file="template/include/card/global_text_image.tpl" title={'organize sub1 title'|translate} desc={'organize sub1 description'|translate} image="{$PORG_ROOT_URL}images/features/organize/albums.png" }
       {include file="template/include/card/global_text_image.tpl" reverse=true title={'organize sub2 title'|translate} desc={'organize sub2 description'|translate} image="{$PORG_ROOT_URL}images/features/organize/tags.png"}
       {include file="template/include/card/global_text_image.tpl" title={'organize sub3 title'|translate} desc={'organize sub3 description'|translate} image="{$PORG_ROOT_URL}images/features/organize/metadatas.png"}
-      {include file="template/include/card/global_text_image.tpl" reverse=true title={'organize sub4 title'|translate} desc={'organize sub4 description'|translate} image="{$PORG_ROOT_URL}images/features/organize/tags.png" btn_text={'organize sub4 btn'|translate} btn_link="#"}
-      {include file="template/include/card/global_text_image.tpl" title={'organize sub5 title'|translate} desc={'organize sub5 description'|translate} image="{$PORG_ROOT_URL}images/features/organize/geoloc.png"}
+      {include file="template/include/card/global_text_image.tpl" reverse=true title={'organize sub4 title'|translate} desc={'organize sub4 description'|translate} image="{$PORG_ROOT_URL}images/features/organize/ai.png" btn_text={'organize sub4 btn'|translate} btn_link="#"}
+      {include file="template/include/card/global_text_image.tpl" title={'organize sub5 title'|translate} desc={'organize sub5 description'|translate} image="{$PORG_ROOT_URL}images/features/organize/bulk.png"}
       {include file="template/include/card/global_text_image.tpl" reverse=true title={'organize sub6 title'|translate} desc={'organize sub6 description'|translate} image="{$PORG_ROOT_URL}images/features/organize/geoloc.png"}
       {include file="template/include/card/global_text_image.tpl" title={'organize sub7 title'|translate} desc={'organize sub7 description'|translate} image="{$PORG_ROOT_URL}images/features/organize/collections.png"}
     </div>

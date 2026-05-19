@@ -9,7 +9,7 @@
         {$desc}
       </p>
       {if $btn_text}
-        <div class="d-none d-md-block" style="margin-bottom: 1.5rem;">
+        <div class="d-none d-md-block" {if $desc2 != ''}style="margin-bottom: 1.5rem;{/if}">
           {include file='template/include/buttons/button.tpl' variant='cta_secondary' label={$btn_text} href='{$btn_link}'}
         </div>
       {/if}
@@ -21,7 +21,7 @@
   </div>
 
   <div class="col-12 col-md-6" style="padding-right: 0; padding-left: 0;">
-    <div class="feature-image-container" style="margin: 0 20px; {if $reverse}justify-content: flex-end;{/if}">
+    <div class="feature-image-container {if $imageoffbeat}pe-5 ps-5{/if}" style="margin: 0 20px; {if $reverse}justify-content: flex-end;{/if}">
       <img src="{$image}" class="feature-image" alt="{$title|escape}">
     </div>
   </div>
