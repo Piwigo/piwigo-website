@@ -32,26 +32,26 @@ if it's explore : it'll be green expect the piwigo ai which will be pink*}
 {* BOOTSTRAP VERSION  *}
 
 <a href="{$href|default:'#'}" class="submenu-item {$category_type} d-flex align-items-center">
-    <div class="icon-box {$category_type} d-flex justify-content-center align-items-center flex-shrink-0">
-        {if $icon_svg}
-            <img src="{$PORG_ROOT_URL}{$icon_svg}" class="menu-svg" alt="icon">
-        {else}
-            <i class="{$icon_class}"></i>
-        {/if}
-    </div>
+  <div class="icon-box {$category_type} d-flex justify-content-center align-items-center flex-shrink-0">
+    {if $icon_svg}
+      <img src="{$PORG_ROOT_URL}{$icon_svg}" class="menu-svg" alt="icon">
+    {else}
+      <i class="{$icon_class}"></i>
+    {/if}
+  </div>
 
-    <div class="content d-flex flex-column justify-content-center">
-        <span class="title d-flex align-items-center">
-            <span class="{$is_ext ? 'title-text-ext' : 'title-text'}">{$title}</span>
-            {if $is_ext}
-                <span class="icon-ext d-inline-flex align-items-center">
-                    <i class="icon-ext1"></i>
-                    <i class="icon-ext2"></i>
-                </span>
-            {else}
-                <span class="arrow">→</span>
-            {/if}
+  <div class="content d-flex flex-column justify-content-center">
+    <span class="title d-flex align-items-center">
+      <span class="{$is_ext ? 'title-text-ext' : 'title-text'}">{$title}</span>
+      {if $is_ext}
+        <span class="icon-ext d-inline-flex align-items-center">
+          <i class="icon-ext1"></i>
+          <i class="icon-ext2"></i>
         </span>
-        <p class="description mb-0">{$description}</p>
-    </div>
+      {else}
+        <span class="arrow">→</span>
+      {/if}
+    </span>
+    <p class="description mb-0">{$description}</p>
+  </div>
 </a>
