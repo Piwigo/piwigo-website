@@ -450,6 +450,16 @@ h4 {
   line-height: 120%;
 }
 
+.releases-menu-item {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 645;
+  font-style: normal;
+  font-size: 32px;
+  text-align: left;
+  color: var(--dark);
+  line-height: 100%;
+}
+
 @media (max-width: 1200px) {
   .btn-menu {
     font-size: 12px;
@@ -557,6 +567,15 @@ Text Color
 .dark-green-text {
   color: var(--dark_green);
 }
+
+.threec-text {
+  color: var(--dark) !important;
+}
+
+.non-decorated-text {
+  text-decoration: none !important;
+}
+
 /******
 Form
 ******/

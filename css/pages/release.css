@@ -1,0 +1,109 @@
+/* Small release */
+.release-top {
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 110px;
+}
+
+.release-top h1,
+.release-top p {
+  text-align: center;
+}
+
+.release-top .btn-menu {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.release-date {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: var(--dark_text);
+}
+
+.release-date i {
+  font-size: 12px;
+}
+
+.badges-section {
+  margin: 0 20px 65px;
+}
+
+.release-badges-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.release-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--grey);
+  border-radius: 30px;
+  padding: 8px 14px;
+  white-space: nowrap;
+}
+
+.release-badge p {
+  font-size: 20px;
+  color: var(--dark_text);
+  margin-bottom: 0;
+}
+
+.release-content {
+  border-radius: 10px;
+  padding: 40px;
+  background-color: var(--grey);
+  margin-bottom: 120px;
+}
+
+.release-sub-section {
+  margin-bottom: 20px;
+}
+
+.release-sub-section:last-child {
+  margin-bottom: 0px;
+}
+
+.release-content .release-type-sub-title {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 645;
+  font-style: normal;
+  font-size: 18px;
+  text-align: left;
+  line-height: 100%;
+  margin-bottom: 7px;
+  color: var(--dark_green);
+}
+
+.release-content .icon-check-1 {
+  color: var(--main_flash_green);
+}
+
+.release-content .pricing-list {
+  color: var(--dark_text);
+}
+
+.release-content .icon-cross {
+  color: var(--main_pink);
+}
+
+.automatic-upgrade .btn-menu,
+.transfer-upgrade .btn-menu,
+.manual-upgrade .btn-menu {
+  width: 100%;
+}
+
+@media (max-width: 578px) {
+  .release-content {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: auto;
+  }
+}
