@@ -1,20 +1,23 @@
-$(document).ready(function() {
+$(document).ready(function () {
   // Scrollable cards navigation
   const container = $('#cardsContainer');
   const prevBtn = $('#prevBtn');
   const nextBtn = $('#nextBtn');
   const cardWidth = 290 + 20; // Card width + gap
-  const scrollDistance = cardWidth * 2; // 2 cards
 
-  prevBtn.on('click', function() {
+  function getScrollDistance() {
+    return window.matchMedia('(max-width: 768px)').matches ? cardWidth : cardWidth * 2;
+  }
+
+  prevBtn.on('click', function () {
     container.stop(true).animate({
-      scrollLeft: container.scrollLeft() - scrollDistance
+      scrollLeft: container.scrollLeft() - getScrollDistance()
     }, 500);
   });
 
-  nextBtn.on('click', function() {
+  nextBtn.on('click', function () {
     container.stop(true).animate({
-      scrollLeft: container.scrollLeft() + scrollDistance
+      scrollLeft: container.scrollLeft() + getScrollDistance()
     }, 500);
   });
 
@@ -41,11 +44,11 @@ $(document).ready(function() {
   }
 
   $(document)
-    .on('shown.bs.collapse', '.commits-card .collapse', function() {
+    .on('shown.bs.collapse', '.commits-card .collapse', function () {
       syncCommitCardState(this);
     })
-    .on('hidden.bs.collapse', '.commits-card .collapse', function() {
+    .on('hidden.bs.collapse', '.commits-card .collapse', function () {
       syncCommitCardState(this);
     });
-  
+
 });

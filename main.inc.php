@@ -519,7 +519,8 @@ function porg_load_content()
             'pricing'
         ), true),
         'product' => in_array($current_page, array(
-            'features'
+            'features',
+            'use_cases'
         ), true),
         'users' => in_array($current_page, array(
         ), true),
@@ -528,6 +529,8 @@ function porg_load_content()
         'behind_code' => in_array($current_page, array(
         ), true),
         'news' => in_array($current_page, array(
+          'product_update',
+          'newsletters'
         ), true),
     );
 

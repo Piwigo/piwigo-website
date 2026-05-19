@@ -413,3 +413,17 @@
   font-size: 24px;
   color: var(--dark_text);
 }
+
+@media (max-width: 768px) {
+  .product-update-content {
+    margin-left: 20px;
+    margin-right: 20px;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-bottom: 80px;
+  }
+
+  .product-update-text-section {
+    padding-bottom: 0;
+  }
+}
