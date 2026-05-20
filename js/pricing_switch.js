@@ -83,12 +83,14 @@ $(document).ready(function() {
 
     // Initialization 
     const planParam = searchParams.get('plan');
-    const savedChoice = localStorage.getItem('selectedPricing');
-    if (planParam === 'self_hosted' || (!planParam && savedChoice === 'self-hosted')) {
+    // const savedChoice = localStorage.getItem('selectedPricing');
+    if (planParam === 'self_hosted') {
         $('.btn-pricing.cloud').removeClass('active bg-white shadow-sm').addClass('inactive bg-transparent shadow-none');
         $('.btn-pricing.self-hosted').addClass('active bg-white shadow-sm').removeClass('inactive bg-transparent shadow-none');
         updatePricingCards('self-hosted', false);
     } else {
+        $('.btn-pricing.self-hosted').removeClass('active bg-white shadow-sm').addClass('inactive bg-transparent shadow-none');
+        $('.btn-pricing.cloud').addClass('active bg-white shadow-sm').removeClass('inactive bg-transparent shadow-none');
         updatePricingCards('cloud', false);
     }
 });
