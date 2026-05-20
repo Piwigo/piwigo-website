@@ -133,12 +133,13 @@
 </section>
 
 <section class="signup-loader" id="loading-page">
-	<div class="loader-container container text-center d-flex justify-content-center align-items-center flex-column">
+	<div class="loader-container container text-center d-flex  align-items-center flex-column">
 		<div class="loader-title-container">
 			<img src="{$PORG_ROOT_URL}images/piwigo.org.svg" class="img-fluid" alt="Piwigo icon">
 		</div>
 		<div class="loader-content-container">
-			<img src="{$PORG_ROOT_URL}images/signup/signup-loader.svg" class="img-fluid" alt="Piwigo loader">
+			<img src="{$PORG_ROOT_URL}images/signup/Spinner.svg" class="img-fluid spinner-loader" alt="Piwigo spinner">
+			<img src="{$PORG_ROOT_URL}images/signup/loader-webp.webp" class="img-fluid loader-webp" alt="Piwigo loader">
 		</div>
 		<div class="loader-text-content">
 			<p class="mt-3">{'On average for the last 100 accounts created, the installation took 19.0 seconds.'|translate}</p>
