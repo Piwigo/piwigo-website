@@ -5,28 +5,28 @@
   padding-bottom: 40px;
   background-size: 100%;
   background-position: center 20px;
-  background: linear-gradient(0.25turn, #FFFAF3,  #FFEACF);
+  background: linear-gradient(0.25turn, #fffaf3, #ffeacf);
 }
 .illustration-container {
   background-color: var(--clear);
   /* height: 768px; */
   display: flex;
   flex-direction: column;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
   box-shadow: inset 0 4px 20px 0 rgba(43, 29, 13, 0.2);
-  
 }
 
 .doctor-container {
   position: relative;
   border-radius: 16px;
-  margin-bottom: 30px; 
+  margin-bottom: 30px;
+  padding: 30px;
 }
 
 .doctor-container .doctor {
-  width: 100%;
-  height: auto;
+  /* width: 100%;
+  height: auto; */
   position: relative;
   z-index: 2;
 }
@@ -45,9 +45,10 @@
   position: absolute;
   z-index: 3;
   transform: translateX(-70px) translateY(60px);
+  width: 146px;
 }
 
-.stat{
+.stat {
   z-index: 2;
 }
 
@@ -60,11 +61,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%; 
+  height: 100%;
   padding: 20px;
 }
 
-.row-bottom{
+.row-bottom {
   gap: 20px;
 }
 
@@ -78,64 +79,63 @@
   gap: 10px;
 }
 
-
 .stat-card h3 {
   font-size: 32px;
   font-weight: 900;
   line-height: 100%;
   color: var(--dark);
-  margin-bottom: 8px; 
-  font-family: 'Red Hat Display';
-  white-space: nowrap; 
+  font-family: "Red Hat Display";
+  white-space: nowrap;
+  margin: 0;
 }
 
 .stat-card.size-large p {
   font-size: 16px;
-  font-weight: 600; 
-  font-family: 'Red Hat Display';
+  font-weight: 600;
+  font-family: "Red Hat Display";
   color: var(--dark);
   margin: 0;
   line-height: 120%;
-  white-space: nowrap; 
+  white-space: nowrap;
 }
 
 .stat-card:not(.size-large) p {
-  font-size: 14px; 
+  font-size: 16px;
   font-weight: 600;
-  font-family: 'Red Hat Display';
+  font-family: "Red Hat Display";
   color: var(--dark);
   margin: 0;
-  line-height: 1.2; 
-  white-space: normal; 
+  line-height: 1.2;
+  white-space: normal;
 }
 
 .signup-form-split-copy {
   max-width: 520px;
 }
 .piwigo-input-group {
-    display: flex !important;
-    border: 1px solid rgba(141, 142, 142, 1) !important;
-    border-radius: 4px !important;
-    background: var(--clear) !important;
-    overflow: visible !important; 
-    position: relative !important;
+  display: flex !important;
+  border: 1px solid rgba(141, 142, 142, 1) !important;
+  border-radius: 4px !important;
+  background: var(--clear) !important;
+  overflow: visible !important;
+  position: relative !important;
 }
 
 .piwigo-input-group .form-control {
-    border: none !important;
-    height: 50px !important;
-    padding: 24px 13px 9px !important;
-    background: transparent !important;
-    box-shadow: none !important;
-    flex: 1 !important;
+  border: none !important;
+  height: 50px !important;
+  padding: 24px 13px 9px !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  flex: 1 !important;
 }
 
 .piwigo-input-group .input-group-text {
-    border: none !important;
-    border-left: 1px solid var(--dark_text) !important;
-    font-family: "Red Hat Display" !important;
-    background: transparent !important;
-    border-radius: 0 4px 4px 0 !important;
+  border: none !important;
+  border-left: 1px solid var(--dark_text) !important;
+  font-family: "Red Hat Display" !important;
+  background: transparent !important;
+  border-radius: 0 4px 4px 0 !important;
 }
 /* 
 .piwigo-url-placeholder {
@@ -159,8 +159,8 @@
   border-color: var(--main_flash_green) !important;
 } */
 
-.form-check-input:hover{
-    box-shadow: none !important;
+.form-check-input:hover {
+  box-shadow: none !important;
 }
 
 #form-password,
@@ -175,14 +175,14 @@
 }
 
 #form-user:focus ~ .piwigo-url-placeholder {
-    opacity: 0.5 !important;
-    top: 26px !important;
-    left: 16px !important;
+  opacity: 0.5 !important;
+  top: 26px !important;
+  left: 16px !important;
 }
 
 #form-user:not(:placeholder-shown) ~ .piwigo-url-placeholder {
-    opacity: 0 !important;
-    display: none !important;
+  opacity: 0 !important;
+  display: none !important;
 }
 
 /* .little-piwigo-url-placeholder {
@@ -197,107 +197,112 @@
 
 #form-user:focus ~ .little-piwigo-url-placeholder,
 #form-user:not(:placeholder-shown) ~ .little-piwigo-url-placeholder {
-    display: block !important;
+  display: block !important;
 }
 
 #form-user:focus ~ .piwigo-url-placeholder .orange-text {
-    display: none !important;
+  display: none !important;
 }
 
 .piwigo-input-group:focus-within {
-    border: 1px solid var(--main_flash_green) !important;
+  border: 1px solid var(--main_flash_green) !important;
 }
 
 .password-placeholder,
 .little-password-placeholder {
-    position: absolute !important;
-    left: 14.5px !important;
-    pointer-events: none !important;
-    z-index: 5 !important;
+  position: absolute !important;
+  left: 14.5px !important;
+  pointer-events: none !important;
+  z-index: 5 !important;
 }
 
 .password-placeholder {
-    top: 17px !important;
-    color: var(--dark_text) !important;
-    opacity: 1 !important;
+  top: 17px !important;
+  color: var(--dark_text) !important;
+  opacity: 1 !important;
 }
 
 .little-password-placeholder {
-    top: 4px !important;
-    display: none !important;
-    font-size: 12px !important;
-    color: var(--dark_text) !important;
+  top: 4px !important;
+  display: none !important;
+  font-size: 12px !important;
+  color: var(--dark_text) !important;
 }
 
 #form-password:focus ~ .password-placeholder {
-    opacity: 0.5 !important;
-    top: 26px !important;
-    left: 16px !important;
+  opacity: 0.5 !important;
+  top: 26px !important;
+  left: 16px !important;
 }
 
 #form-password:not(:placeholder-shown) ~ .password-placeholder {
-    opacity: 0 !important;
-    display: none !important;
+  opacity: 0 !important;
+  display: none !important;
 }
 
 #form-password:focus ~ .little-password-placeholder,
 #form-password:not(:placeholder-shown) ~ .little-password-placeholder {
-    display: block !important;
+  display: block !important;
 }
 
 #form-password:focus ~ .little-password-placeholder .orange-text,
-#form-password:not(:placeholder-shown) ~ .little-password-placeholder .orange-text {
-    display: none !important;
+#form-password:not(:placeholder-shown)
+  ~ .little-password-placeholder
+  .orange-text {
+  display: none !important;
 }
 
 #form-password:focus ~ .little-password-placeholder {
-    color: var(--main_flash_green) !important;
+  color: var(--main_flash_green) !important;
 }
 
 #passWarningIcon,
 #passEye {
-    position: absolute !important;
-    top: 25px !important;
-    transform: translateY(-50%) !important;
-    z-index: 10 !important;
+  position: absolute !important;
+  top: 25px !important;
+  transform: translateY(-50%) !important;
+  z-index: 10 !important;
 }
 
 #passEye {
-    right: 13px !important;
-    cursor: pointer;
+  right: 13px !important;
+  cursor: pointer;
 }
 
 #passWarningIcon {
-    right: 40px !important; 
-    color: var(--main_pink) !important;
+  right: 40px !important;
+  color: var(--main_pink) !important;
 }
 
 .password-hints {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 8px;
 }
 
-.passHelp, .passHelp2 {
-    display: flex !important;
-    align-items: center !important; 
-    gap: 8px !important;
+.passHelp,
+.passHelp2 {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
 }
 
-.passHelp i, .passHelp2 i {
-    font-size: 14px !important;
-    color: var(--main_pink) !important;
-    margin: 0 !important;
+.passHelp i,
+.passHelp2 i {
+  font-size: 14px !important;
+  color: var(--main_pink) !important;
+  margin: 0 !important;
 }
 
-.passHelp p, .passHelp2 p {
-    margin: 0 !important;
-    line-height: 1 !important;
+.passHelp p,
+.passHelp2 p {
+  margin: 0 !important;
+  line-height: 1 !important;
 }
 
-.text-end .btn-menu.menu-btn-green{
-    width : 256px !important;
+.text-end .btn-menu.menu-btn-green {
+  width: 256px !important;
 }
 /* 
 input {
@@ -314,9 +319,9 @@ input {
 }
 
 .check-help-container.is-checked {
-    display: flex;
-    flex-direction: column;
-    transform: translateY(0) !important;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(0) !important;
 }
 
 /* 
@@ -349,3 +354,41 @@ input {
 /* .signup-header-image img {
     max-width: 110%; 
 } */
+
+@media (max-width: 768px) {
+  .illustration-side {
+    display: none;
+  }
+
+  .signup-text-header h1 {
+    text-align: left !important;
+  }
+
+  .signup-text-header p {
+    text-align: left !important;
+  }
+
+}
+
+@media (max-width: 1200px) {
+  .stat-card h3 {
+    font-size: 22px;
+  }
+
+  .stat-card.size-large p {
+    font-size: 10px;
+  }
+
+  .stat-card:not(.size-large) p {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 993px) {
+  .illustration-side {
+    display: none;
+  }
+  .form-side{
+    width: unset;
+  }
+}

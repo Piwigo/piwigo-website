@@ -3,10 +3,10 @@
 <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/buttons/common_button.css">
 <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/pages/signup.css">
 
-<section class="signup-header">
+<section class="signup-header" id="signup-page">
 	<div class="container">
 		<div class="row align-items-center">
-			<div class="col-12 col-md-5">
+			<div class="col-12 col-md-5 form-side">
 				<div class="signup-text-header text-center mb-4">
 					<h1 class="fw-bold text-center">{'signup_header_title'|translate}</h1>
 					<p class="text-muted small text-center">{'signup_header_desc'|translate}</p>
@@ -86,7 +86,7 @@
 				</div>
 			</div>
 
-			<div class="col-12 col-md-7 ps-md-5">
+			<div class="col-12 col-md-7 ps-md-5 illustration-side">
 								<img src="{$PORG_ROOT_URL}images/europe-host.svg" class="img-fluid badge-host" alt="Piwigo host">
 				<div class="illustration-container position-relative pb-5 pt-5  rounded-3">
 

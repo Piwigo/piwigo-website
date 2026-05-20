@@ -22,3 +22,9 @@ $lang['signup_check_help'] = 'You must accept the terms of use';
 
 $lang['signup_button'] = 'Sign up for a one month free trial';
 $lang['signup_signin'] = 'Already have a Piwigo Cloud account? <a href="#" class="orange-text fw-bold text-decoration-none">Sign In</a>';
+
+$lang['actives installations'] = 'actives installations';
+$lang['added files'] = 'added files';
+$lang['availability rate observed'] = 'availability rate observed';
+$lang['existing languages'] = 'existing languages';
+$lang['clients'] = 'clients';
