@@ -5,21 +5,21 @@
   padding-bottom: 40px;
   background-size: 100%;
   background-position: center 20px;
-  background-image: linear-gradient(180deg, #FFFAF3 0%, #FFEACF 100%);
+  background: linear-gradient(0.25turn, #FFFAF3,  #FFEACF);
 }
 .illustration-container {
   background-color: var(--clear);
-  height: 768px;
+  /* height: 768px; */
   display: flex;
   flex-direction: column;
   justify-content: center; 
   align-items: center;
+  box-shadow: inset 0 4px 20px 0 rgba(43, 29, 13, 0.2);
+  
 }
 
 .doctor-container {
   position: relative;
-  width: 100%;
-  max-width: 530px; 
   border-radius: 16px;
   margin-bottom: 30px; 
 }
@@ -27,6 +27,8 @@
 .doctor-container .doctor {
   width: 100%;
   height: auto;
+  position: relative;
+  z-index: 2;
 }
 
 .bg-dot-vector {
@@ -36,49 +38,46 @@
   width: 100%;
   z-index: 1;
   pointer-events: none;
+  transform: translateY(50px);
 }
 
-.data-signup-grid {
-  position: relative;
+.badge-host {
+  position: absolute;
+  z-index: 3;
+  transform: translateX(-70px) translateY(60px);
+}
+
+.stat{
   z-index: 2;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 20px;
-  width: 100%;
-  max-width: 530px; 
 }
 
-.stat-card.size-large {
-  grid-column: span 3; 
+.stat-card {
   background: white;
   border-radius: 12px;
-  padding: 20px 15px;
   text-align: center;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
-}
-
-.stat-card:not(.size-large) {
-  background: white;
-  border-radius: 12px;
-  padding: 15px 10px;
-  text-align: center;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
-  grid-column: span 2; 
-}
-
-
-.stat-card:not(.size-large) {
-  background: white;
-  border-radius: 12px;
-  padding: 15px 10px;
-  text-align: center;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
-  grid-column: span 2; 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100%; 
+  padding: 20px;
 }
+
+.row-bottom{
+  gap: 20px;
+}
+
+.stat-card.size-large {
+  padding: 20px;
+}
+
+.stat-card:not(.size-large) {
+  padding: 20px;
+  width: fit-content;
+  gap: 10px;
+}
+
 
 .stat-card h3 {
   font-size: 32px;
@@ -87,7 +86,6 @@
   color: var(--dark);
   margin-bottom: 8px; 
   font-family: 'Red Hat Display';
-  text-align: center;
   white-space: nowrap; 
 }
 
@@ -98,7 +96,6 @@
   color: var(--dark);
   margin: 0;
   line-height: 120%;
-  text-align: center;
   white-space: nowrap; 
 }
 
@@ -109,31 +106,7 @@
   color: var(--dark);
   margin: 0;
   line-height: 1.2; 
-  text-align: center;
   white-space: normal; 
-  word-wrap: break-word;
-} 
-
-.stat-card h3 {
-  font-size: 32px;
-  font-weight: 900;
-  font-style: Bold;
-  line-height: 100%;
-  color: var(--dark);
-  margin-bottom: 4px;
-  font-family: 'Red Hat Display';
-  text-align: center;
-}
-
-.stat-card p {
-  font-size: 16px;
-  font-style: SemiBold;
-  font-family: 'Red Hat Display';
-  color: var(--dark);
-  margin: 0;
-  line-height: 100%;
-  text-align: center;
-  white-space: nowrap;
 }
 
 .signup-form-split-copy {

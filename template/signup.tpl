@@ -53,10 +53,10 @@
 							</div>
 						</div>
 
-						<div class="form-check mb-2">
+						{* <div class="form-check mb-2">
 							<input class="form-check-input" type="checkbox" id="form-copy" name="send_copy">
 							<label class="form-check-label small" for="form-copy">{'signup_check_mail'|translate}</label>
-						</div>
+						</div> *}
 
 						<div class="form-check mb-4">
 							<input class="form-check-input" type="checkbox" id="form-terms" required>
@@ -87,37 +87,49 @@
 			</div>
 
 			<div class="col-12 col-md-7 ps-md-5">
-				<div class="illustration-container position-relative">
+								<img src="{$PORG_ROOT_URL}images/europe-host.svg" class="img-fluid badge-host" alt="Piwigo host">
+				<div class="illustration-container position-relative pb-5 pt-5  rounded-3">
+
 					<div class="doctor-container">
 						<img src="{$PORG_ROOT_URL}images/signup/FreeTrial.png" class="img-fluid doctor" alt="Piwigo Cloud Stats">
 					</div>
-					<img src="{$PORG_ROOT_URL}images/features/bg_vector.svg" class="img-fluid bg-dot-vector" alt="Piwigo vector">
-					<div class="data-signup-grid">
-						<div class="stat-card size-large">
-							<h3>{$STATS_GLOBAL_INSTALLS}</h3>
-							<p>{'actives installations'|translate}</p>
+					<img src="{$PORG_ROOT_URL}images/signup/bg_vector_green.svg" class="img-fluid bg-dot-vector" alt="Piwigo vector">
+					<div class="row g-3 mb-3 justify-content-center stat">
+						<div class="col-1">
 						</div>
-						<div class="stat-card size-large">
-							<h3>{$STATS_GLOBAL_FILES}</h3>
-							<p>{'added files'|translate}</p>
+							<div class="col-4">
+								<div class="stat-card size-large">
+									<h3>{$STATS_GLOBAL_INSTALLS}</h3>
+									<p>{'actives installations'|translate}</p>
+								</div>
+							</div>
+							<div class="col-4">
+								<div class="stat-card size-large">
+									<h3>{$STATS_GLOBAL_FILES}</h3>
+									<p>{'added files'|translate}</p>
+								</div>
+							</div>
+						<div class="col-1">
 						</div>
-						<div class="stat-card">
-							<h3>{$STATS_GLOBAL_UPTIME}</h3>
-							<p>{'availability rate observed'|translate}</p>
-						</div>
-						<div class="stat-card">
-							<h3>{$STATS_GLOBAL_LANGS}</h3>
-							<p>{'existing languages'|translate}</p>
-						</div>
-						<div class="stat-card">
-							<h3>{$STATS_GLOBAL_CLIENTS}</h3>
-							<p>{'clients'|translate}</p>
+
+						<div class="row d-flex justify-content-center g-2 row-bottom">
+								<div class="stat-card">
+									<h3>{$STATS_GLOBAL_UPTIME}</h3>
+									<p>{'availability rate observed'|translate}</p>
+								</div>
+								<div class="stat-card">
+									<h3>{$STATS_GLOBAL_LANGS}</h3>
+									<p>{'existing languages'|translate}</p>
+								</div>
+								<div class="stat-card">
+									<h3>{$STATS_GLOBAL_CLIENTS}</h3>
+									<p>{'clients'|translate}</p>
+								</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 </section>
 
 <script src="{$PORG_ROOT_URL}js/signup.js"></script>
