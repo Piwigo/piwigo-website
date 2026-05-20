@@ -87,7 +87,7 @@
 			</div>
 
 			<div class="col-12 col-md-7 ps-md-5 illustration-side">
-								<img src="{$PORG_ROOT_URL}images/europe-host.svg" class="img-fluid badge-host" alt="Piwigo host">
+				<img src="{$PORG_ROOT_URL}images/europe-host.svg" class="img-fluid badge-host" alt="Piwigo host">
 				<div class="illustration-container position-relative pb-5 pt-5  rounded-3">
 
 					<div class="doctor-container">
@@ -97,39 +97,52 @@
 					<div class="row g-3 mb-3 justify-content-center stat">
 						<div class="col-1">
 						</div>
-							<div class="col-4">
-								<div class="stat-card size-large">
-									<h3>{$STATS_GLOBAL_INSTALLS}</h3>
-									<p>{'actives installations'|translate}</p>
-								</div>
+						<div class="col-4">
+							<div class="stat-card size-large">
+								<h3>{$STATS_GLOBAL_INSTALLS}</h3>
+								<p>{'actives installations'|translate}</p>
 							</div>
-							<div class="col-4">
-								<div class="stat-card size-large">
-									<h3>{$STATS_GLOBAL_FILES}</h3>
-									<p>{'added files'|translate}</p>
-								</div>
+						</div>
+						<div class="col-4">
+							<div class="stat-card size-large">
+								<h3>{$STATS_GLOBAL_FILES}</h3>
+								<p>{'added files'|translate}</p>
 							</div>
+						</div>
 						<div class="col-1">
 						</div>
 
 						<div class="row d-flex justify-content-center g-2 row-bottom">
-								<div class="stat-card">
-									<h3>{$STATS_GLOBAL_UPTIME}</h3>
-									<p>{'availability rate observed'|translate}</p>
-								</div>
-								<div class="stat-card">
-									<h3>{$STATS_GLOBAL_LANGS}</h3>
-									<p>{'existing languages'|translate}</p>
-								</div>
-								<div class="stat-card">
-									<h3>{$STATS_GLOBAL_CLIENTS}</h3>
-									<p>{'clients'|translate}</p>
-								</div>
+							<div class="stat-card">
+								<h3>{$STATS_GLOBAL_UPTIME}</h3>
+								<p>{'availability rate observed'|translate}</p>
+							</div>
+							<div class="stat-card">
+								<h3>{$STATS_GLOBAL_LANGS}</h3>
+								<p>{'existing languages'|translate}</p>
+							</div>
+							<div class="stat-card">
+								<h3>{$STATS_GLOBAL_CLIENTS}</h3>
+								<p>{'clients'|translate}</p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+</section>
+
+<section class="signup-loader" id="loading-page">
+	<div class="loader-container container text-center d-flex justify-content-center align-items-center flex-column">
+		<div class="loader-title-container">
+			<img src="{$PORG_ROOT_URL}images/piwigo.org.svg" class="img-fluid" alt="Piwigo icon">
+		</div>
+		<div class="loader-content-container">
+			<img src="{$PORG_ROOT_URL}images/signup/signup-loader.svg" class="img-fluid" alt="Piwigo loader">
+		</div>
+		<div class="loader-text-content">
+			<p class="mt-3">{'On average for the last 100 accounts created, the installation took 19.0 seconds.'|translate}</p>
+	</div>
 </section>
 
 <script src="{$PORG_ROOT_URL}js/signup.js"></script>
