@@ -1,3 +1,5 @@
+  <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/pages/release.css">
+
   <section class="container release-top">
     <div class="row justify-content-center">
       <div class="col-12 col-md-8">

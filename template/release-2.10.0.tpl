@@ -6,7 +6,6 @@
   <div class="row">
     <div class="col-sm-12 col-md-6 text-center">
       <p class="intro-text" id="intro-title">{'porg_v2100_intro1'|translate}</p>
-      <img class="img-fluid underline-img" src="{$PORG_ROOT_URL}/images/changelogs/title-underline.svg">
       <p class="intro-text intro-text2_10 " id="intro-main-text">{'porg_v2100_intro2'|translate} {'porg_v2100_intro3'|translate} {'porg_v2100_intro4'|translate}</p>
       <p class="intro-text">{'porg_v2100_intro5'|translate}</p>
     </div>

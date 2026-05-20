@@ -1,5 +1,3 @@
-<link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/pages/release.css">
-
 {include file="template/release_top_sections.tpl"}
 
 <section class="badges-section">
