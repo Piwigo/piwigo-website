@@ -1,4 +1,4 @@
-@import url('../../fonts/Kanit/Kanit.css');
+@import url("../../fonts/Kanit/Kanit.css");
 
 /* header */
 .product-update-header,
@@ -67,11 +67,7 @@
   inset: 0;
   border-radius: 10px;
   padding: 1px;
-  background: linear-gradient(
-    91.79deg,
-    var(--light_grey) 16.42%,
-    var(--grey) 98.39%
-  );
+  background: linear-gradient(91.79deg, var(--light_grey) 16.42%, var(--grey) 98.39%);
   -webkit-mask:
     linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
@@ -107,6 +103,11 @@
 
 .product-update-card .btn-menu {
   margin-top: auto;
+}
+
+#cardsContainer {
+  scroll-behavior: smooth;
+  overflow-x: auto;
 }
 
 /* nav btn */
@@ -171,14 +172,18 @@
 }
 
 .product-update-updates-filters-container::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   border-radius: 20px;
   padding: 1px;
   background: linear-gradient(91.79deg, #d9d9d9 16.42%, #f7f7f7 98.39%);
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   pointer-events: none;
@@ -214,6 +219,15 @@
   margin-bottom: 20px;
   border-radius: 20px;
   padding: 20px 25px;
+}
+
+.commits-card {
+  cursor: default;
+}
+
+.commits-card a,
+.commits-card button {
+  cursor: pointer;
 }
 
 .release-card {
@@ -275,7 +289,7 @@
   overflow: hidden;
 }
 
-.commits-card a[data-bs-toggle='collapse'] {
+.commits-card a[data-bs-toggle="collapse"] {
   flex-shrink: 0;
   width: 16px;
   height: 16px;
@@ -304,18 +318,20 @@
   transition: transform 0.25s ease;
 }
 
-.commits-card a[aria-expanded='true'] .collapse-toggle .submenu_button_icon {
+.commits-card a[aria-expanded="true"] .collapse-toggle .submenu_button_icon {
   transform: rotate(180deg);
 }
 
 .commits-card .commit-date,
 .release-card .release-date {
-  font-family: 'Kanit', sans-serif;
+  font-family: "Kanit", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
   color: var(--dark_text);
-  transition: opacity 0.2s ease, visibility 0.2s ease;
+  transition:
+    opacity 0.2s ease,
+    visibility 0.2s ease;
 }
 
 .commits-card.is-open .commit-date {
@@ -332,7 +348,7 @@
   font-style: normal;
 }
 
-.commit-list .mobile-test-sub-h3 a{
+.commit-list .mobile-test-sub-h3 a {
   color: var(--dark);
 }
 
@@ -367,7 +383,7 @@
 }
 
 .timeline::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 15px;
   top: 10px;

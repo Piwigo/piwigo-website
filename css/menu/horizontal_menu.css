@@ -1,3 +1,7 @@
+html, body {
+  overflow: visible !important;
+}
+
 .horizontal-menu-button {
   display: inline-flex;
   align-items: center;
@@ -43,9 +47,6 @@
   scrollbar-width: none;
   scroll-behavior: smooth;
   box-sizing: border-box;
-  position: sticky;
-  top: 0;
-  z-index: 999;
 }
 
 .horizontal-menu-container--features {
@@ -71,6 +72,13 @@
 
 .horizontal-menu-container > * {
   flex-shrink: 0;
+}
+
+.horizontal-menu-sticky-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: white;
 }
 
 @media (min-width: 1250px) {

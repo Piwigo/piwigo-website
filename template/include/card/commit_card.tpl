@@ -42,7 +42,7 @@
 
 {else}
 
-  <div class="product-update-card commits-card">
+  <div class="product-update-card commits-card" role="button" tabindex="0">
     <span class="dot"></span>
 
     {assign var=commits_count value=$commits|@count}
