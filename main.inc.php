@@ -388,6 +388,12 @@ function porg_load_content()
 
             $template->set_filenames(array('porg_page' => realpath($tpl_file)));
 
+            // hide navbar/footer for specific full-page templates
+            if ('signup' === $porg_page)
+            {
+                $template->assign('HIDE_NAVBAR', true);
+            }
+
             /* Load en_UK translation */
             if ('en_UK' != $user['language'])
             {
@@ -731,7 +737,11 @@ function porg_load_footer()
     $template->parse('header_porg');
     $template->parse('porg_page');
     $template->assign('time', get_elapsed_time($t2, get_moment()));
-    $template->parse('footer_porg');
+    // don't render footer on signup page
+    if (!(isset($_GET['porg']) && $_GET['porg'] === 'signup'))
+    {
+        $template->parse('footer_porg');
+    }
     $template->p();
     exit();
 }

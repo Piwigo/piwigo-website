@@ -85,7 +85,9 @@
     </div>
   {/if}
 
-  {include file='template/navbar.tpl'}
+  {if empty($HIDE_NAVBAR)}
+    {include file='template/navbar.tpl'}
+  {/if}
 
   </body>
 
