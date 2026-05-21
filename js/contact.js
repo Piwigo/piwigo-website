@@ -174,11 +174,6 @@ $(document).ready(function () {
             // Disable submit button until fields are valid again
             jQuery('#form-submit').prop('disabled', true).addClass('disabled');
 
-            setTimeout(function () {
-              jQuery('#success').hide();
-              jQuery('.contact-form').show();
-            }, 10000);
-
 
           } else {
             showTemporaryError(data.msg);

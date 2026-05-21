@@ -649,7 +649,9 @@ textarea:focus,
 
 .mail-placeholder,
 .piwigo-url-placeholder,
-.your-message-placeholder {
+.your-message-placeholder,
+.mail-example-placeholder,
+.piwigo-url-example-placeholder {
   position: absolute;
   top: 17px;
   left: 14.5px;
@@ -657,8 +659,22 @@ textarea:focus,
   pointer-events: none;
 }
 
+.mail-example-placeholder,
+.piwigo-url-example-placeholder {
+  display: none;
+}
+
 #form-email:focus ~ .mail-placeholder,
 #form-piwigo-url:focus ~ .piwigo-url-placeholder {
+  display: none;
+  opacity: 0.3;
+  top: 26px;
+  left: 16px;
+}
+
+#form-email:focus ~ .mail-example-placeholder,
+#form-piwigo-url:focus ~ .piwigo-url-example-placeholder {
+  display: block !important;
   opacity: 0.3;
   top: 26px;
   left: 16px;
@@ -670,12 +686,14 @@ textarea:focus,
   left: 18px;
 }
 
-#form-email:focus ~ .mail-placeholder .orange-text {
+#form-message:focus ~ .your-message-placeholder .orange-text {
   display: none;
 }
 
 #form-email:not(:placeholder-shown) ~ .mail-placeholder,
 #form-piwigo-url:not(:placeholder-shown) ~ .piwigo-url-placeholder,
+#form-email:not(:placeholder-shown) ~ .mail-example-placeholder,
+#form-piwigo-url:not(:placeholder-shown) ~ .piwigo-url-example-placeholder,
 #form-message:not(:placeholder-shown) ~ .your-message-placeholder {
   opacity: 0;
 }
@@ -684,10 +702,6 @@ textarea:focus,
 .little-piwigo-url-placeholder,
 .little-your-message-placeholder {
   display: none;
-  position: absolute;
-  top: 4px;
-  left: 12px;
-  color: var(--dark_text);
 }
 
 #form-email:focus ~ .little-mail-placeholder,
@@ -697,6 +711,10 @@ textarea:focus,
 #form-piwigo-url:not(:placeholder-shown) ~ .little-piwigo-url-placeholder,
 #form-message:not(:placeholder-shown) ~ .little-your-message-placeholder {
   display: block;
+  position: absolute;
+  top: 4px;
+  left: 12px;
+  color: var(--dark_text);
 }
 
 @media (max-width: 996px) {
