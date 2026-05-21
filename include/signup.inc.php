@@ -46,6 +46,12 @@ $nb_accounts = 10;
 $median_duration = 9.6;
 $max_account_id = null;
 
+$signup_host_badge ='europe-host.svg';
+
+if (isset($user['language']) && $user['language'] === 'fr_FR') {
+	$signup_host_badge ='france-host.svg';
+}
+
 
 try {
 	$query = 'SELECT MAX(account_id) FROM ' . $db_prefix . 'accounts;';
@@ -80,6 +86,7 @@ $porg_urls = porg_get_page_urls();
 
 $template->assign(
 	array(
+		'SIGNUP_HOST_BADGE' => $signup_host_badge,
 		'STATS_NB_LAST_ACOUNTS' => $nb_accounts,
 		'STATS_AVG_DURATION' => sprintf('%.1f', $median_duration),
 		'registration_enabled' => conf_get_param('registration_enabled', true),

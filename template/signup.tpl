@@ -5,7 +5,7 @@
 
 <section class="signup-header" id="signup-page">
 	<div class="container">
-		<div class="row align-items-center">
+		<div class="row align-items-center form-side-container">
 			<div class="col-12 col-md-5 form-side">
 				<div class="signup-text-header text-center mb-4">
 					<h1 class="fw-bold text-center">{'signup_header_title'|translate}</h1>
@@ -87,7 +87,7 @@
 			</div>
 
 			<div class="col-12 col-md-7 ps-md-5 illustration-side">
-				<img src="{$PORG_ROOT_URL}images/europe-host.svg" class="img-fluid badge-host" alt="Piwigo host">
+				<img src="{$PORG_ROOT_URL}images/{$SIGNUP_HOST_BADGE}" class="img-fluid badge-host" alt="Piwigo host">
 				<div class="illustration-container position-relative pb-5 pt-5  rounded-3">
 
 					<div class="doctor-container">
@@ -138,11 +138,11 @@
 			<img src="{$PORG_ROOT_URL}images/piwigo.org.svg" class="img-fluid" alt="Piwigo icon">
 		</div>
 		<div class="loader-content-container">
-			<img src="{$PORG_ROOT_URL}images/signup/Spinner.svg" class="img-fluid spinner-loader" alt="Piwigo spinner">
+			<img src="{$PORG_ROOT_URL}images/signup/Spinner.svg" class="img-fluid spinner-loader rotating" alt="Piwigo spinner">
 			<img src="{$PORG_ROOT_URL}images/signup/loader-webp.webp" class="img-fluid loader-webp" alt="Piwigo loader">
 		</div>
 		<div class="loader-text-content">
-			<p class="mt-3">{'On average for the last 100 accounts created, the installation took 19.0 seconds.'|translate}</p>
+			<p class="mt-3">{'average_stats_signup_loader'|translate|sprintf:$STATS_NB_LAST_ACOUNTS:$STATS_AVG_DURATION}</p>
 	</div>
 </section>
 

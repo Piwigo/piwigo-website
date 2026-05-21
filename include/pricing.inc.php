@@ -275,7 +275,7 @@ $support_plans = array(
 		'features' => array(
 			array('text' => l10n('Access_f')),
 			array('text' => l10n('Access_doc')),
-			array('text' => l10n('Professional support')),
+			array('text' => l10n('Professional_support')),
 			array('text' => l10n('Response_48')),
 			array('text' => l10n('3 administrators')),
 			array(
@@ -291,7 +291,7 @@ $support_plans = array(
 		'features' => array(
 			array('text' => l10n('Access_f')),
 			array('text' => l10n('Access_doc')),
-			array('text' => l10n('Professional support')),
+			array('text' => l10n('Professional_support')),
 			array('text' => l10n('Response_24')),
 			array('text' => l10n('5 administrators')),
 			array(
@@ -307,7 +307,7 @@ $support_plans = array(
 		'features' => array(
 			array('text' => l10n('Access_f')),
 			array('text' => l10n('Access_doc')),
-			array('text' => l10n('Professional support')),
+			array('text' => l10n('Professional_support')),
 			array('text' => l10n('Response_8')),
 			array('text' => l10n('unlimited administrators')),
 			array(

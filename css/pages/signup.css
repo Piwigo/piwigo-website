@@ -329,7 +329,8 @@ input {
 .spinner-loader {
   position: relative;
   top: -150px;
-  transform: translateX(200px);
+  left: 200px;
+  /* transform: translateX(200px); */
 }
 
 .loader-text-content p {
@@ -338,6 +339,20 @@ input {
   font-size: 16px;
   text-align: center;
 }
+
+@keyframes rotateSpinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner-loader.rotating {
+  animation: rotateSpinner 1.2s linear infinite;
+}
+
 
 
 @media (max-width: 768px) {
@@ -366,7 +381,11 @@ input {
 
   .spinner-loader {
     position: relative;
-    transform: translateX(200px);
+    width: 35px;
+    height: 35px;
+    top : -100px ! important;
+    left: 130px !important;
+    /* transform: translateX(130px) !important; */
   }
 
   .signup-loader {
@@ -381,6 +400,10 @@ input {
     padding-left: 20px;
     padding-right: 20px;
   }
+
+  .form-side-container {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 993px) {
@@ -394,7 +417,8 @@ input {
   .spinner-loader {
     position: relative;
     top: 75px;
-    transform: translateX(-95px);
+    /* left: -95px !important; */
+    /* transform: translateX(-95px); */
   }
 }
 
@@ -413,8 +437,17 @@ input {
   .spinner-loader {
     position: relative;
     top: -150px;
-    transform: translateX(200px);
+    left: 200px;
+    /* transform: translateX(200px) !important; */
   }
 }
 
+
+@media (max-width: 415px) {
+  .spinner-loader {
+    top : 50px ! important;
+    left: -55px !important;
+    /* transform: translateX(-60px) !important; */
+  }
+}
 

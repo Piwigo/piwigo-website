@@ -28,3 +28,5 @@ $lang['added files'] = 'added files';
 $lang['availability rate observed'] = 'availability rate observed';
 $lang['existing languages'] = 'existing languages';
 $lang['clients'] = 'clients';
+
+$lang['average_stats_signup_loader'] = 'On average for the last %d accounts created, the installation took %s seconds.';

@@ -257,7 +257,7 @@ $lang['Access_doc'] = 'Access to the documentation and the community forum';
 
 $lang['pricing card light description'] = 'For small organizations';
 
-$lang['Professional support'] = 'Professional user support via email, video call, and phone by appointment';
+$lang['Professional_support'] = 'Professional user support via email, video call, and phone by appointment';
 $lang['Response_48'] = 'Response time: 48 business hours';
 $lang['Support_100'] = 'Support included for over 100 plugins';
 
