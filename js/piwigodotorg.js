@@ -24,20 +24,6 @@ $(function() {
     });
 });
 
-/* Popovers */
-$(document).ready(function() {
-    $('[data-toggle="popover"]').popover();
-    /* Fixs double click needed when closing popover from button */
-    $('body').on('hidden.bs.popover', function (e) {
-        $(e.target).data("bs.popover").inState.click = false;
-    });
-});
-
-/* Clipboard */
-$(document).ready(function() {
-    new Clipboard('.copy-md5sum');
-});
-
 
 /* Handle testimonies grid system */
 $(function(){

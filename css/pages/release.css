@@ -40,7 +40,7 @@
 }
 
 .release-menu-content {
-  background-color: white;
+  background-color: var(--clear);
   margin: 0;
   padding-top: 20px;
 }
@@ -120,10 +120,39 @@ a.btn-back-to-menu:hover {
   line-height: 100%;
   letter-spacing: 0%;
   color: var(--dark_text);
+  text-decoration: none;
 }
 
 .release-date i {
   font-size: 12px;
+}
+
+.popover {
+  max-width: 360px;
+  background: var(--clear);
+  color: var(--dark);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  z-index: 1100;
+}
+
+.popover .btn-close-popover {
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin-left: 8px;
+}
+
+.popover-header {
+  font-weight: 700;
+}
+.popover-body {
+  white-space: normal;
+}
+
+.popover-arrow::before,
+.popover-arrow::after {
+  border-bottom-color: var(--light_grey) !important;
 }
 
 .badges-section {

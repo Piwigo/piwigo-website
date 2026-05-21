@@ -38,7 +38,7 @@
   <script src="{$PORG_ROOT_URL_PLUGINS}vendor/masonry-layout/imagesloaded.pkgd.min.js"></script>
   <script src="{$PORG_ROOT_URL_PLUGINS}vendor/clipboard/clipboard.min.js"></script>
   <script src="{$PORG_ROOT_URL_PLUGINS}js/validator.min.js"></script>
-  <script src="{$PORG_ROOT_URL_PLUGINS}vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="{$PORG_ROOT_URL_PLUGINS}vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="{$PORG_ROOT_URL_PLUGINS}js/piwigodotorg.js"></script>
   <script src="{$PORG_ROOT_URL_PLUGINS}js/pricing_switch.js"></script>
 
