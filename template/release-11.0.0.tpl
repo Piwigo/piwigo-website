@@ -1,34 +1,20 @@
-{include file="template/release_top_sections.tpl"}
 
-<div id="releaseNotesMain" class="major-release">
+
 
 <section class="container-fluid release11-header">
   <div class="row text-center">
-    <img class="piwigo11-img " src="{$PORG_ROOT_URL}/images/changelogs/11/piwigo11.svg">
+    <img class="piwigo11-img px-0" src="{$PORG_ROOT_URL}/images/changelogs/11/piwigo11.svg">
   </div>
 </section>
 
+{include file="template/release_top_sections.tpl"}
+<div id="releaseNotesMain" class="major-release">
+
 <section class="container release-notes-intro">
   <div class="row">
-    <div class="col-sm-12 col-md-6 text-center">
-      <p class="intro-text" id="intro-title">{'porg_v11_intro1'|translate}</p>
-      <img alt="piwigo 11 banner" class="img-fluid underline-img" src="{$PORG_ROOT_URL}/images/changelogs/title-underline.svg">
-      <div class=" container-download-release text-center download11">
-          <div class="row">
-            <a class="btn" href="//piwigo.org/download/dlcounter.php?code={$version}">{'Download Piwigo %s'|translate:$version}</a>
-            <p class="release-date"><i class="icon-dropbox"></i>{'Released on %s'|translate:$released_on}</p>
-            <a class="copy-md5sum" title="Copy md5sum" data-clipboard-text="{$md5sum}"><i class="icon-clipboard"></i></a>
-            <a id="popoverCustom" title="{$md5sum} <a class='btn-close-popover' onclick='$(&quot;#popoverCustom&quot;).popover(&quot;hide&quot;);'><i class='icon-cancel-circled'></i></a>" data-html="true" data-toggle="popover" data-placement="bottom" data-content="{'The MD5 sum is a convenient tool to make sure that your file is not corrupted.'|translate|escape:html} {'You can compare the md5sum of your downloaded file with the official md5sum provided on piwigo.org.'|translate|escape:html}">md5sum</a>
-            {if $version_major != $version}
-              <p><i class="icon-info-circled"></i>{'The list of major changes is described on <a href="%s">Piwigo %s</a> release note'|translate:"{$URL.release}-{$version_major}":$version_major}</p>
-            {/if}
-          </div>
-      </div>
-    </div>
-    <div class="col-sm-12 col-md-6 text-center">
+    <div class="text-center">
       <p class="intro-text intro-text2_10 " id="intro-main-text">{'porg_v11_intro2'|translate}</p>
       <p class="intro-text">{'porg_v11_intro3'|translate}</p>
-      
     </div>
   </div>
 </section>

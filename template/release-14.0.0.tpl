@@ -1,32 +1,21 @@
+<section class="container-fluid">
+  <div class="row text-center">
+    <img class="piwigo14-img px-0" src="https://sandbox.piwigo.com/uploads/4/y/1/4y1zzhnrnw//2023/10/16/20231016172415-cd74febf.png">
+  </div>
+</section>
+
 {include file="template/release_top_sections.tpl"}
 
 <div id="releaseNotesMain" class="major-release">
 
 <section class="container release-notes-intro">
   <div class="row">
-    <div class="col-sm-12 col-md-6 text-center">
+    <div class="text-center">
       <p class="intro-text" id="intro-title">{'porg_v14_intro1'|translate}</p>
-      <img alt="piwigo 11 banner" class="img-fluid underline-img" src="{$PORG_ROOT_URL}/images/changelogs/title-underline.svg">
-      <div class=" container-download-release text-center download14">
-          <div class="row">
-            <a class="btn" href="//piwigo.org/download/dlcounter.php?code={$version}">{'Download Piwigo %s'|translate:$version}</a>
-            <p class="release-date"><i class="icon-dropbox"></i>{'Released on %s'|translate:$released_on}</p>
-            <a class="copy-md5sum" title="Copy md5sum" data-clipboard-text="{$md5sum}"><i class="icon-clipboard"></i></a>
-            <a id="popoverCustom" title="{$md5sum} <a class='btn-close-popover' onclick='$(&quot;#popoverCustom&quot;).popover(&quot;hide&quot;);'><i class='icon-cancel-circled'></i></a>" data-html="true" data-toggle="popover" data-placement="bottom" data-content="{'The MD5 sum is a convenient tool to make sure that your file is not corrupted.'|translate|escape:html} {'You can compare the md5sum of your downloaded file with the official md5sum provided on piwigo.org.'|translate|escape:html}">md5sum</a>
-          </div>
-      </div>
-    </div>
-    <div class="col-sm-12 col-md-6 text-center">
       <p class="intro-text intro-text2_10" id="intro-main-text">{'porg_v14_intro2'|translate}</p>
       <p class="intro-text intro-text2_10" id="intro-main-text">{'porg_v14_intro3'|translate}</p>
       
     </div>
-  </div>
-</section>
-
-<section class="container-fluid">
-  <div class="row text-center">
-    <img class="piwigo14-img " src="https://sandbox.piwigo.com/uploads/4/y/1/4y1zzhnrnw//2023/10/16/20231016172415-cd74febf.png">
   </div>
 </section>
 
@@ -39,7 +28,7 @@
           <li><a href="#search_engine" class="icon-arrows-cw">{'porg_v14_search_title'|translate}</a></li>
           <li><a href="#newfiles" class="icon-star">{'porg_v14_newfiles_title_menu'|translate}</a></li>
           <li><a href="#albumeditor" class="icon-arrows-cw">{'porg_v14_albumeditor_title'|translate}</a></li>
-          <li class="badge badge-quote"><a href="#interview_alice"><img src="{$PORG_ROOT_URL}images/changelogs/quotes.svg" class="quotes">{'Interview %s'|translate:'Alice'}</a></li>
+          <li class="badge badge-quote"><a href="#interview_alice"><img src="{$PORG_ROOT_URL}images/changelogs/quotes.svg" class="quotes me-1">{'Interview %s'|translate:'Alice'}</a></li>
         </ul>
       </div>
       <div class="col-md-4">
@@ -47,7 +36,7 @@
           <li><a href="#notificationgroup" class="icon-star">{'porg_v14_notificationgroup_title'|translate}</a></li>
           <li><a href="#duplicates" class="icon-star">{'porg_v14_duplicates_title'|translate}</a></li>
           <li><a href="#mimetypes" class="icon-brush">{'porg_v14_mimetypes_title'|translate}</a></li>
-          <li class="badge badge-quote"><a href="#interview_claire"><img src="{$PORG_ROOT_URL}images/changelogs/quotes.svg" class="quotes">{'Interview %s'|translate:'Claire'}</a></li>
+          <li class="badge badge-quote"><a href="#interview_claire"><img src="{$PORG_ROOT_URL}images/changelogs/quotes.svg" class="quotes me-1">{'Interview %s'|translate:'Claire'}</a></li>
         </ul>
       </div>
       <div class="col-md-4">

@@ -15,6 +15,104 @@
   padding-right: 60px;
 }
 
+.release-menu {
+  margin-top: 50px;
+  padding: 0;
+}
+
+.release-menu-title-line {
+  text-align: center;
+}
+
+.release-menu-title {
+  display: inline-block;
+  background: linear-gradient(90deg, rgba(251, 88, 68, 1) 0%, rgba(249, 77, 91, 1) 100%);
+  color: white;
+  padding: 10px 50px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.release-menu-content-container {
+  background: linear-gradient(135deg, rgb(255, 119, 0) 0%, rgb(249, 76, 93) 50%, rgb(249, 76, 93) 100%);
+  padding: 4px;
+  margin-bottom: 20px;
+}
+
+.release-menu-content {
+  background-color: white;
+  margin: 0;
+  padding-top: 20px;
+}
+
+.release-menu-content li {
+  list-style-type: none;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 6px 9px;
+}
+
+.release-menu-content li a {
+  color: #333;
+  text-decoration: none !important;
+}
+
+.release-menu-content li a:hover {
+  color: #f70;
+  text-decoration: none !important;
+}
+
+.badge {
+  color: #119ccc;
+  background-color: #cfebff;
+}
+
+.badge.badge-quote a {
+  color: #119ccc;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  height: 12px !important;
+  text-decoration: none !important;
+}
+
+.badge.badge-quote:hover {
+  background-color: #b4e9fd;
+}
+
+.badge.badge-quote a:hover {
+  color: #119ccc;
+}
+
+.release-menu-content li i {
+  margin-right: 3px;
+}
+
+.release-menu-content li.badge.badge-quote img {
+  height: 12px;
+  margin-right: 7px;
+}
+
+a.btn-back-to-menu {
+  width: 50px;
+  height: 50px;
+  background: url(../../images/changelogs/back-to-menu.svg);
+  display: none;
+  background-size: cover;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 10;
+}
+
+a.btn-back-to-menu:hover {
+  background: url(../../images/changelogs/back-to-menu-hover.svg);
+  background-size: cover;
+}
+
 .release-date {
   font-family: "Kanit", sans-serif;
   font-weight: 400;
@@ -230,9 +328,7 @@
 #releaseNotesMain img,
 #releaseNotesMain .screenshot {
   max-width: 100%;
-  height: auto;
   display: block;
-  margin: 18px auto;
   object-fit: cover;
 }
 
@@ -313,6 +409,37 @@
   font-weight: 900;
   text-align: center;
   margin-bottom: -10px;
+}
+
+#releaseNotesMain.major-release h3 span.badge {
+  background-color: #ccc;
+  color: #000;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+#releaseNotesMain.major-release h3 span.badge.badge-new {
+  background-color: #ddd8eb;
+  color: #754eda;
+}
+
+#releaseNotesMain.major-release h3 span.badge.badge-redesign {
+  background-color: #cee2e4;
+  color: #2e9999;
+}
+
+#releaseNotesMain.major-release h3 span.badge.badge-refresh,
+#releaseNotesMain.major-release h4 span.badge.badge-refresh {
+  background-color: #cfebff;
+  color: #2883c3;
+}
+
+#releaseNotesMain.major-release h3 span[class*=" icon-"]::before {
+  font-size: 25px;
+  margin-left: 0;
+  margin-right: 8px;
 }
 
 #releaseNotesMain.major-release .section-part h3 {
@@ -405,6 +532,10 @@
   float: none;
 }
 
+#releaseNotesMain.major-release .first-image-and-caption > div:first-child {
+  position: relative;
+}
+
 #releaseNotesMain.major-release .first-image-and-caption div:last-child {
   display: flex;
   align-items: center;
@@ -474,12 +605,13 @@
   color: #145f79;
   line-height: 2em;
   font-size: 16px;
-  text-align: left;
 }
 
 .interview img.quotes {
   width: 75px;
-  margin-top: -122px;
+  margin-left: 20px !important;
+  margin-top: 0px !important;
+  margin-bottom: 40px !important;
 }
 
 #releaseNotesMain .interview p.first {
@@ -499,6 +631,7 @@
 
 #releaseNotesMain .section-framed {
   padding: 50px;
+  background-color: #efb3ed;
 }
 
 #releaseNotesMain .section-framed img.information {
