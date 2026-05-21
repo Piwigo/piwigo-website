@@ -1,0 +1,12 @@
+.signin-header{
+  padding: 50px;
+  gap: 34px;
+}
+
+.signin-title{
+  line-height: 0.6;
+}
+
+.signin-description{
+  line-height: 0.8;
+}

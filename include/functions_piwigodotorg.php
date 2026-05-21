@@ -42,6 +42,7 @@ function porg_get_pages()
     'product_update' => 'Product Updates',
     'terms_of_service' => 'Terms of service',
     'privacy' => 'Privacy',
+    'signin' => 'Signin',
     );
 }
 

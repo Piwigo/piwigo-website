@@ -243,7 +243,7 @@
         <div class="d-flex align-items-center gap-3 footer-bottom-actions">
           <div class="footer-login-btn">
             {include file='template/include/buttons/button.tpl' variant='menu_btn_white' label={'Login'|translate}
-            href='#'}
+            href="{$PORG_URL}{$URL.signin}"}
           </div>
 
           <div class="footer-social-icons">
