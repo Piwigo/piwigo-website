@@ -113,8 +113,9 @@ Storage section
 .storage-section {
   background-color: var(--grey);
   border-radius: 10px;
-  padding: 60px 40px;
+  padding: 60px 40px 80px;
   margin: 3rem auto;
+  margin-bottom: 119px;
 }
 
 .storage-subtitle {
@@ -218,8 +219,6 @@ Storage section
   }
   .storage-section {
     width: 322px !important;
-    padding: 30px 20px;
-    margin-top: 0;
   }
 
   .storage-divider:not(:last-child):after {
