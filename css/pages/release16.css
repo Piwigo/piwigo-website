@@ -1,0 +1,246 @@
+.release-top {
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+
+.release-top-left {
+  padding-right: 170px;
+}
+
+.release-top-left .btn-menu {
+  padding: 0 60px;
+}
+
+.release-date {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: var(--dark_text);
+}
+
+.release-date i {
+  font-size: 12px;
+}
+
+.version-16-nav-card {
+  border-radius: 20px;
+  box-shadow: 0px 4px 20px 0px var(--card-shadow);
+  background: var(--clear);
+  position: relative;
+  border: none;
+  padding: 30px 25px 60px;
+}
+
+.version-16-nav-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 1px;
+  background: linear-gradient(91.79deg, var(--card-border-start) 16.42%, var(--grey) 98.39%);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.nav-card-title {
+  font-size: 20px;
+  color: var(--dark_text);
+  margin-bottom: 40px;
+}
+
+.version-16-nav-list .nav-link {
+  display: inline-flex;
+  align-items: flex-start;
+  padding: 10px 0;
+  font-size: 20px;
+  line-height: 120%;
+  border-bottom: 1px solid var(--light_grey);
+}
+
+.version-16-nav-list .nav-link::before {
+  color: var(--main_flash_green);
+  margin-right: 11px;
+  margin-left: 5px;
+  margin-top: 4px;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.version-16-nav-list .nav-link:hover,
+.version-16-nav-list .nav-link:focus {
+  color: var(--main_orange);
+  text-decoration: none;
+}
+
+.version-16-nav-list .nav-link:hover::before,
+.version-16-nav-list .nav-link:focus::before {
+  color: var(--main_flash_green) !important;
+}
+
+.interview-nav-link {
+  background: var(--clear_green);
+  border-radius: 4px;
+  padding: 5px !important;
+  width: fit-content;
+  border: none !important;
+  align-items: flex-start;
+}
+
+.interview-nav-item {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--light_grey);
+}
+
+/* download section */
+.release-version-accordion .accordion-item {
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--grey);
+}
+
+.release-version-accordion .accordion-button {
+  background: var(--grey) !important;
+  color: var(--dark_text);
+  box-shadow: none !important;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-start;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.release-version-date {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.release-version-toggle-icon {
+  color: var(--main_flash_green);
+  flex: 0 0 auto;
+  font-size: 16px;
+  line-height: 1;
+  transition: transform 0.2s ease;
+}
+
+.release-version-accordion .accordion-button:not(.collapsed) .release-version-toggle-icon {
+  transform: rotate(180deg);
+}
+
+.release-version-accordion .accordion-button::after {
+  display: none;
+}
+
+.release-version-accordion .accordion-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.accordion-body {
+  padding: 20px 0;
+}
+
+.release-content .release-type-sub-title {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 645;
+  font-style: normal;
+  font-size: 18px;
+  text-align: left;
+  line-height: 100%;
+  margin-bottom: 7px;
+  color: var(--dark_green);
+}
+
+.release-content .icon-check-1 {
+  color: var(--main_flash_green);
+}
+
+.release-content .pricing-list {
+  color: var(--dark_text);
+}
+
+.release-content .icon-cross {
+  color: var(--main_pink);
+}
+
+.automatic-upgrade .btn-menu,
+.transfer-upgrade .btn-menu,
+.manual-upgrade .btn-menu {
+  width: 100%;
+}
+
+
+
+
+/* bottom section : download versions table */
+.dowload-other-versions {
+  margin-bottom: 135px;
+  background: var(--grey);
+  border-radius: 10px;
+  padding: 70px;
+}
+
+.download-versions-table tbody tr:nth-child(odd) td {
+  background-color: var(--clear) !important;
+  border-radius: 4px;
+}
+
+.download-versions-table tbody tr:nth-child(even) td,
+.download-versions-table thead tr th {
+  background-color: var(--grey) !important;
+}
+
+.download-versions-table tr {
+  height: 37px !important;
+}
+
+.download-versions-table th,
+.download-versions-table td {
+  border-bottom: none;
+  padding: 8px 12px;
+}
+
+.download-versions-table th {
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: var(--dark_text);
+  padding-bottom: 15px;
+  padding-top: 0;
+}
+
+.badge-latest {
+  height: unset;
+  background: var(--clear_green);
+  color: var(--accent_green);
+  padding: 2px 10px;
+  border-radius: 30px;
+  margin-left: 8px;
+}
+
+.text-version {
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.text-checksum {
+  font-family: "Chivo Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+}

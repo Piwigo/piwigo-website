@@ -29,17 +29,52 @@
 </section>
 
 
-<section class="product-update-updates pb-0">
-  <div class="row product-update-updates-content">
-    <div class="col-md-4 text-center">
+<section class="container mb-5">
+  <div class="row version-16-content pt-5">
+    <div class="col-md-4">
+      <div class="version-16-nav-card">
 
-      <div class="product-update-updates-filters-container">
+        <h2 class="country-testimonial nav-card-title">{'On this page'|translate}</h2>
+
+        <nav class="nav flex-column mt-3 version-16-nav-list" aria-label="On this page">
+          <a class="nav-link minimenus-item icon-star" href="#standard_pages">{'pwg_org_release16_menu_std_pages'|translate}</a>
+          <a class="nav-link minimenus-item icon-puzzle" href="#2fa">{'pwg_org_release16_menu_2FA'|translate}</a>
+          <a class="nav-link minimenus-item icon-paint" href="#related_tags">{'pwg_org_release16_menu_related_tags'|translate}</a>
+          <a class="nav-link minimenus-item icon-paint" href="#save_buttons">{'pwg_org_release16_menu_mv_save_btn'|translate}</a>
+          <div class="interview-nav-item">
+            <a class="interview-nav-link nav-link minimenus-item icon-icon28" href="#interview_romain">{'Interview %s'|translate:'Romain'}</a>
+          </div>
+          <a class="nav-link minimenus-item icon-star" href="#widget_management">{'pwg_org_release16_menu_gallery_search'|translate}</a>
+          <a class="nav-link minimenus-item icon-paint" href="#comments_manager">{'pwg_org_release16_menu_comment_manager'|translate}</a>
+          <a class="nav-link minimenus-item icon-arrows-cw" href="#activity_log_filter">{'pwg_org_release16_menu_activity_log_filter'|translate}</a>
+          <a class="nav-link minimenus-item icon-arrows-cw" href="#image_update">{'pwg_org_release16_menu_update_img_batches'|translate}</a>
+          <a class="nav-link minimenus-item icon-star" href="#expert_mode">{'pwg_org_release16_menu_expert_mode'|translate}</a>
+          <div class="interview-nav-item">
+            <a class="interview-nav-link nav-link minimenus-item icon-icon28" href="#interview_lana">{'Interview %s'|translate:'Lana'}</a>
+          </div>
+          <a class="nav-link minimenus-item icon-wrench" href="#technical_features">{'pwg_org_release16_menu_technical_features'|translate}</a>
+          <a class="nav-link minimenus-item icon-download" href="#download_details">{'pwg_org_release16_menu_download_details'|translate}</a>
+        </nav>
 
       </div>
-
     </div>
     <div class="col-md-8">
-      
+      <div class="accordion accordion-flush release-version-accordion" id="releaseVersionAccordion">
+        {foreach $download_versions as $download_version}
+          <div class="accordion-item mb-3 border-0">
+            <button class="accordion-button collapsed release-version-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{$download_version.version|replace:'.':'-'}" aria-expanded="false" aria-controls="collapse-{$download_version.version|replace:'.':'-'}">
+              <h4 class="release-version-title mb-0">Piwigo {$download_version.version}: {$download_version.features|join:', '} • <span class="release-version-date">{$download_version.released_on}</span></h4>
+              <i class="icon-down-open release-version-toggle-icon" aria-hidden="true"></i>
+            </button>
+            </h2>
+            <div id="collapse-{$download_version.version|replace:'.':'-'}" class="accordion-collapse collapse" aria-labelledby="heading-{$download_version.version|replace:'.':'-'}" data-bs-parent="#releaseVersionAccordion">
+              <div class="accordion-body">
+                {include file='template/release_content_partial.tpl' bugs=$download_version.bugs known_issues=$download_version.known_issues news_languages=$download_version.news_languages updated_languages=$download_version.updated_languages features=$download_version.features_items branch=$branch upgrade_from=$upgrade_from version=$download_version.version upgrade_code=$upgrade_code URL=$URL}
+              </div>
+            </div>
+          </div>
+        {/foreach}
+      </div>
     </div>
   </div>
 </section>

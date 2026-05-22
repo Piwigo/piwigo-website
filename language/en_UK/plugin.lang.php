@@ -226,6 +226,11 @@ $lang['Standard'] = 'Standard';
 $lang['Premium'] = 'Premium';
 $lang['Filters'] = 'Filters';
 $lang['Clear all'] = 'Clear all';
+$lang['Version'] = 'Version';
+$lang['Checksum'] = 'Checksum';
+$lang['Release date'] = 'Release date';
+$lang['Download'] = 'Download';
+$lang['On this page'] = 'On this page';
 
 /*Used in guide pages*/
 // $lang['porg_guides'] = 'Guides';

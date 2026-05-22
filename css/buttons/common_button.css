@@ -14,7 +14,7 @@
   color: var(--clear);
   white-space: nowrap;
   text-decoration: none;
-	transition: box-shadow 300ms ease-out;
+  transition: box-shadow 300ms ease-out;
 }
 
 .btn-cta > * {
@@ -44,7 +44,7 @@
 }
 
 .cta-primary::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: -2px;
   border-radius: inherit;
@@ -68,14 +68,14 @@
 }
 
 .cta-secondary::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: -2px;
   border-radius: inherit;
   border: 2px solid transparent;
   background:
     linear-gradient(var(--grey), var(--grey)) padding-box,
-    linear-gradient(92.17deg, #D9D9D9 19.22%, var(--grey) 96.41%) border-box;
+    linear-gradient(92.17deg, #d9d9d9 19.22%, var(--grey) 96.41%) border-box;
   opacity: 0;
   transition: opacity 300ms ease-out;
   z-index: 0;
@@ -92,7 +92,7 @@
 }
 
 .cta-primary-green::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: -2px;
   border-radius: inherit;
@@ -124,7 +124,9 @@
   opacity: 1;
   white-space: nowrap;
   text-decoration: none;
-  transition: box-shadow 300ms ease-out, border-color 300ms ease-out;
+  transition:
+    box-shadow 300ms ease-out,
+    border-color 300ms ease-out;
 }
 
 .btn-menu span {
@@ -150,7 +152,7 @@
 }
 
 .menu-btn-green::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: -2px;
   border-radius: inherit;
@@ -168,6 +170,14 @@
   opacity: 1;
 }
 
+.release-note-cta {
+  display: inline-flex;
+  width: max-content;
+  flex: 0 0 auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
 /* — White — */
 .menu-btn-white {
   background: var(--grey);
@@ -175,14 +185,14 @@
 }
 
 .menu-btn-white::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: -2px;
   border-radius: inherit;
   border: 2px solid transparent;
   background:
     linear-gradient(var(--grey), var(--grey)) padding-box,
-    linear-gradient(92.17deg, #D9D9D9 19.22%, var(--grey) 96.41%) border-box;
+    linear-gradient(92.17deg, #d9d9d9 19.22%, var(--grey) 96.41%) border-box;
   opacity: 0;
   transition: opacity 300ms ease-out;
   z-index: 0;
@@ -200,7 +210,7 @@
 }
 
 .menu-btn-blue::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: -2px;
   border-radius: inherit;
@@ -225,7 +235,7 @@
 }
 
 .menu-btn-orange::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: -2px;
   border-radius: inherit;
@@ -250,7 +260,7 @@
 }
 
 .menu-btn-main-pink::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   border-radius: inherit;
@@ -296,29 +306,28 @@
   width: 100%;
 }
 
-
 .cross-btn {
-	text-decoration: none;
-	align-items: center;
-	justify-content: center;
-	width: 11px;
-	height: 22px;
-	top: 20px;
-	left: 20px;
-	transition-duration: 300ms;
-	transition-timing-function: ease-out;
-	font-family: 'Sora', sans-serif;
-	font-weight: 600;
-	font-size: 18px;
-	line-height: 120%;
-	letter-spacing: 0;
-	color: var(--dark);
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  width: 11px;
+  height: 22px;
+  top: 20px;
+  left: 20px;
+  transition-duration: 300ms;
+  transition-timing-function: ease-out;
+  font-family: "Sora", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 0;
+  color: var(--dark);
 }
 
 .cross-btn:hover,
 .cross-btn:focus {
-	text-decoration: none;
-    color: var(--main_orange);
+  text-decoration: none;
+  color: var(--main_orange);
 }
 
 .pagination-numbers-container {
@@ -342,7 +351,7 @@
   flex-shrink: 0;
   width: 12px;
   height: 22px;
-  font-family: 'Sora', sans-serif;
+  font-family: "Sora", sans-serif;
   font-weight: 600;
   font-size: 18px;
   line-height: 120%;
@@ -367,21 +376,21 @@
 
 .number:hover,
 .number:focus {
-    text-decoration: none;
-    color: var(--main_orange);
+  text-decoration: none;
+  color: var(--main_orange);
 }
 
 .selected_number:hover,
 .selected_number:focus {
-    text-decoration: none;
-    color: var(--accent_green);
+  text-decoration: none;
+  color: var(--accent_green);
 }
 
 .pagination-arrow {
   display: inline-flex;
-  width: 20px; 
+  width: 20px;
   height: 20px;
-  
+
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
@@ -393,7 +402,7 @@
 
 .pagination-arrow i {
   display: inline-block;
-  font-size: 18px; 
+  font-size: 18px;
   line-height: 1;
   position: relative;
 }

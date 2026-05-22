@@ -2,6 +2,7 @@
 $lang['pwg_org_release16_title'] = 'Refined for effortless use.';
 $lang['pwg_org_release16_intro_desc'] = 'Piwigo 16 brings a fresh layer of consistency, control, and security. With the new Standard Pages design, pages like Sign In and Profile and more now share a clean, customizable look. API keys and a new Two-Factor Authentication plugin strengthen gallery protection, while updates to the advanced search and admin screens make everyday tasks smoother.';
 $lang['pwg_org_release16_intro_short_text'] = 'Once again, Piwigo 16 proves that thoughtful details make all the difference when managing your photo library.';
+$lang['Download details and older versions'] = 'Download details and older versions';
 
 // Badges
 $lang['pwg_org_release16_new_badge'] = 'New';
@@ -20,6 +21,8 @@ $lang['pwg_org_release16_menu_activity_log_filter'] = 'Activity logs filtering';
 $lang['pwg_org_release16_menu_update_img_batches'] = 'Update image in batches';
 $lang['pwg_org_release16_menu_expert_mode'] = 'Expert mode';
 $lang['pwg_org_release16_menu_technical_features'] = 'Technical features';
+$lang['pwg_org_release16_menu_download_details'] = 'Download and details';
+$lang['See the full page of Release note %s'] = 'See the full page of Release note %s';
 
 // Content
 $lang['pwg_org_release16_menu_title_std_pages'] = 'Standard pages';

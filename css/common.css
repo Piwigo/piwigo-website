@@ -26,6 +26,8 @@ Colors
   --accent_green: #329f83;
   --dark_green: #29554a;
   --clear_green: #e2faf4;
+  --card-border-start: #d9d9d9;
+  --card-shadow: rgba(217, 217, 217, 0.25);
 }
 
 /******
@@ -545,7 +547,7 @@ h4 {
 Text Color
 ******/
 .orange-text {
-  color: var(--main_orange);
+  color: var(--main_orange) !important;
 }
 
 .pink-text {
