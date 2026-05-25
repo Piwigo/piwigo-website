@@ -231,6 +231,8 @@ $lang['Checksum'] = 'Checksum';
 $lang['Release date'] = 'Release date';
 $lang['Download'] = 'Download';
 $lang['On this page'] = 'On this page';
+$lang['Week'] = 'Week';
+$lang['to'] = 'to';
 
 /*Used in guide pages*/
 // $lang['porg_guides'] = 'Guides';
