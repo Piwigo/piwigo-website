@@ -180,6 +180,84 @@
   width: 100%;
 }
 
+.release-version-accordion {
+  margin-bottom: 90px;
+}
+
+/* content */
+.section-part.justify-content-center h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  text-align: center;
+}
+
+.section-part.justify-content-center .descriptive-text,
+.section-part.justify-content-center .screenshot-caption {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-part.justify-content-center img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.badge-new {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 645;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 14px;
+  border-radius: 30px;
+  background: var(--clear_green);
+  color: var(--accent_green);
+  font-size: 20px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.section-framed-container {
+  margin-bottom: 24px;
+}
+
+.section-framed {
+  background: var(--secondary_flash_green);
+  border-radius: 16px;
+  padding: 30px 40px;
+  position: relative;
+}
+
+.section-framed i {
+  font-size: 36px;
+  color: var(--accent_green);
+  display: block;
+  margin-bottom: 16px;
+}
+
+.section-framed h3 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.section-framed p {
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.section-framed p:last-child {
+  margin-bottom: 0;
+}
+
+
+
 
 
 

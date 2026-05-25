@@ -59,6 +59,7 @@
       </div>
     </div>
     <div class="col-md-8">
+      {* version content *}
       <div class="accordion accordion-flush release-version-accordion" id="releaseVersionAccordion">
         {foreach $download_versions as $download_version}
           <div class="accordion-item mb-3 border-0">
@@ -75,6 +76,40 @@
           </div>
         {/foreach}
       </div>
+
+      <div class="section-part justify-content-center text-center">
+        <h3 id="standard_pages">{'pwg_org_release16_menu_title_std_pages'|translate}<span class="badge badge-new icon-star">{'pwg_org_release16_new_badge'|translate}</span></h3>
+
+        <p class="col-sm-8 col-md-6 descriptive-text">{'pwg_org_release16_menu_std_pages_desc'|translate}</p>
+
+        <img src="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2025/07/18/20250718142136-c9b465c1-la.png" class="screenshot">
+
+        <p class="sub-h3 mt-2">{'pwg_org_release16_menu_std_pages_desc2'|translate}</p>
+
+        <img src="https://ressources.piwigo.com/uploads/c/v/7/cv7jpz6hf8//2025/10/22/20251022115751-d0da63b3.png" class="screenshot mt-3">
+
+        <p class="sub-h3 mt-2">{'pwg_org_release16_menu_std_pages_desc3'|translate}</p>
+
+        <img src="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2025/07/18/20250718142137-af445469-la.png" class="screenshot mt-3">
+
+        <p class="sub-h3 mt-2">{'pwg_org_release16_menu_std_pages_desc4'|translate}</p>
+
+        <img src="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2025/10/22/20251022141215-e328001c-la.png" class="screenshot mt-3">
+
+        <p class="sub-h3 mt-2">{'pwg_org_release16_menu_std_pages_desc5'|translate}</p>
+
+      </div>
+
+      <div class="section-framed-container" id="2fa">
+        <div class="section-part section-framed extension">
+          <i class="icon-puzzle"></i>
+          <h3 id="anonymous_stats">{'pwg_org_release16_menu_2FA_title'|translate}</h3>
+          <p>{'pwg_org_release16_2FA_desc'|translate}</p>
+
+          <p>{'pwg_org_release16_2FA_desc2'|translate}</p>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -124,106 +159,11 @@
 
 
 {* 
-<section id="release_menu" class="container release-menu">
-  <div class="release-menu-title-line">
-    <div class="release-menu-title">{'The menu'|translate}</div>
-  </div>
-  <div class="release-menu-content-container">
-    <div class="row release-menu-content">
-      <div class="col-md-4">
-        <ul>
-          <li><a href="#standard_pages" class="icon-star">{'pwg_org_release16_menu_std_pages'|translate}</a></li>
-          <li><a href="#2fa" class="icon-puzzle">{'pwg_org_release16_menu_2FA'|translate}</a></li>
-          <li><a href="#related_tags" class="icon-brush">{'pwg_org_release16_menu_related_tags'|translate}</a></li>
-          <li><a href="#save_buttons" class="icon-brush">{'pwg_org_release16_menu_mv_save_btn'|translate}</a></li>
-        </ul>
-      </div>
-      <div class="col-md-4">
-        <ul>
-          <li class="badge badge-quote"><a href="#interview_romain"><img src="{$PORG_ROOT_URL}images/changelogs/quotes.svg" class="quotes">{'Interview %s'|translate:'Romain'}</a></li>
-          <li><a href="#widget_management" class="icon-star">{'pwg_org_release16_menu_gallery_search'|translate}</a></li>
-          <li><a href="#comments_manager" class="icon-brush">{'pwg_org_release16_menu_comment_manager'|translate}</a></li>
-          <li><a href="#activity_log_filter" class="icon-arrows-cw">{'pwg_org_release16_menu_activity_log_filter'|translate}</a></li>
-        </ul>
-      </div>
-      <div class="col-md-4">
-        <ul>
-          <li><a href="#image_update" class="icon-arrows-cw">{'pwg_org_release16_menu_update_img_batches'|translate}</a></li>
-          <li><a href="#expert_mode" class="icon-star">{'pwg_org_release16_menu_expert_mode'|translate}</a></li>
-          <li class="badge badge-quote"><a href="#interview_lana"><img src="{$PORG_ROOT_URL}images/changelogs/quotes.svg" class="quotes">{'Interview %s'|translate:'Lana'}</a></li>
-          <li><a href="#technical_features" class="icon-tools">{'pwg_org_release16_menu_technical_features'|translate}</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section class="container">
 
-  <div class="section-part">
-    <h3 id="standard_pages">{'pwg_org_release16_menu_title_std_pages'|translate}<span class="badge badge-new icon-star">{'pwg_org_release16_new_badge'|translate}</span></h3>
 
-    <div class="row">
-      <div class="col-sm-2 col-md-3"></div>
-      <p class="col-sm-8 col-md-6 descriptive-text">{'pwg_org_release16_menu_std_pages_desc'|translate}</p>
-      <div class="col-sm-2 col-md-3"></div>
-    </div>
 
-    <div class="row first-image-and-caption">
-      <div class="col-sm-12 col-md-8 ">
-        <img class="img-fluid corner1" src="{$PORG_ROOT_URL}/images/changelogs/corner-image1.svg">
-        <img src="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2025/07/18/20250718142136-c9b465c1-la.png" class="screenshot">
-        <img class="img-fluid corner2" src="{$PORG_ROOT_URL}/images/changelogs/corner-image2.svg">
-      </div>
-      <div class="col-sm-12 col-md-4">
-        <p class="screenshot-caption">{'pwg_org_release16_menu_std_pages_desc2'|translate}</p>
-      </div>
-    </div>
 
-    <div class="row second-image-and-caption ">
-      <div class="col-sm-12 col-md-4">
-        <p class="screenshot-caption">{'pwg_org_release16_menu_std_pages_desc3'|translate}</p>
-      </div>
-      <div class="col-sm-12 col-md-8  right-image-screenshot">
-        <img class="img-fluid corner3" src="{$PORG_ROOT_URL}/images/changelogs/corner-image1.svg">
-        <img src="https://ressources.piwigo.com/uploads/c/v/7/cv7jpz6hf8//2025/10/22/20251022115751-d0da63b3.png" class="screenshot">
-        <img class="img-fluid corner4" src="{$PORG_ROOT_URL}/images/changelogs/corner-image2.svg">
-      </div>
-    </div>
-
-    <div class="row first-image-and-caption">
-      <div class="col-sm-12 col-md-8 ">
-        <img class="img-fluid corner1" src="{$PORG_ROOT_URL}/images/changelogs/corner-image1.svg">
-        <img src="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2025/07/18/20250718142137-af445469-la.png" class="screenshot">
-        <img class="img-fluid corner2" src="{$PORG_ROOT_URL}/images/changelogs/corner-image2.svg">
-      </div>
-      <div class="col-sm-12 col-md-4">
-        <p class="screenshot-caption">{'pwg_org_release16_menu_std_pages_desc4'|translate}</p>
-      </div>
-    </div>
-
-    <div class="row second-image-and-caption ">
-      <div class="col-sm-12 col-md-4">
-        <p class="screenshot-caption">{'pwg_org_release16_menu_std_pages_desc5'|translate}</p>
-      </div>
-      <div class="col-sm-12 col-md-8  right-image-screenshot">
-        <img class="img-fluid corner3" src="{$PORG_ROOT_URL}/images/changelogs/corner-image1.svg">
-        <img src="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2025/10/22/20251022141215-e328001c-la.png" class="screenshot">
-        <img class="img-fluid corner4" src="{$PORG_ROOT_URL}/images/changelogs/corner-image2.svg">
-      </div>
-    </div>
-
-  </div>
-
-  <div class="section-framed-container" id="2fa">
-    <div class="section-part section-framed extension">
-      <i class="icon-puzzle"></i>
-      <h3 id="anonymous_stats">{'pwg_org_release16_menu_2FA_title'|translate}</h3>
-      <p>{'pwg_org_release16_2FA_desc'|translate}</p>
-
-      <p>{'pwg_org_release16_2FA_desc2'|translate}</p>
-    </div>
-  </div>
 
   <div class="section-part">
     <h3 id="related_tags">{'pwg_org_release16_title_related_tags'|translate}<span class="badge badge-refresh icon-brush">{'pwg_org_release16_badge_refresh'|translate}</span></h3>
