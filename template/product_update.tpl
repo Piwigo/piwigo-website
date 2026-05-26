@@ -45,6 +45,16 @@
       <h2 class="h2-top-page">{'porg_product_update_updates_title'|translate}</h2>
 
       <div class="timeline">
+        {assign var=commit_type_labels value=array(
+          'translation' => 'Translation',
+          'core' => 'Core',
+          'theme' => 'Theme',
+          'plugin' => 'Plugin',
+          'android' => 'Android App',
+          'ios' => 'iOS App',
+          'tool' => 'Tools'
+        )}
+
         {foreach from=$coding_activity_weeks item=week}
           <div class="timeline-week">
             <div class="medium-gray-text timeline-week-header">
@@ -52,7 +62,22 @@
               <h3 class="h3-mobile mb-0">{'Week'|translate} {$week.weeknumber} • <span class="p-testimonial">{$week.start_date} {'to'|translate} {$week.end_date}</span></h3>
             </div>
 
-            {include file='template/include/card/commit_card.tpl' type='commits' meta='Coding activity' date=$week.weeknumber commits=$week.commits}
+            {foreach from=$commit_type_labels key=commit_type item=commit_label}
+              {if isset($week.commits[$commit_type]) && $week.commits[$commit_type]|@count > 0}
+                {assign var=type_commits value=$week.commits[$commit_type]}
+                {assign var=first_commit_date value=''}
+                {assign var=last_commit_date value=''}
+                {foreach from=$type_commits item=commit name=type_commits_loop}
+                  {if $smarty.foreach.type_commits_loop.first}
+                    {assign var=first_commit_date value=$commit.date}
+                  {/if}
+                  {if $smarty.foreach.type_commits_loop.last}
+                    {assign var=last_commit_date value=$commit.date}
+                  {/if}
+                {/foreach}
+                {include file='template/include/card/commit_card.tpl' type='commits' meta=$commit_label date="{$first_commit_date} {'to'|translate} {$last_commit_date}" commits=$type_commits}
+              {/if}
+            {/foreach}
           </div>
         {/foreach}
 
