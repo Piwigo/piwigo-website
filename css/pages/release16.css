@@ -39,11 +39,7 @@
   inset: 0;
   border-radius: 20px;
   padding: 1px;
-  background: linear-gradient(
-    91.79deg,
-    var(--card-border-start) 16.42%,
-    var(--grey) 98.39%
-  );
+  background: linear-gradient(91.79deg, var(--card-border-start) 16.42%, var(--grey) 98.39%);
   -webkit-mask:
     linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
@@ -63,6 +59,25 @@
   .version-16-nav-card {
     position: sticky;
     top: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-height: 811px) {
+  .nav-card-title {
+    margin-bottom: 20px !important;
+  }
+
+  .version-16-nav-list .nav-link:not(.interview-nav-link),
+  .interview-nav-item {
+    padding: 5px 0 !important;
+  }
+
+  .version-16-nav-list .nav-link:last-child {
+    border-bottom: none !important;
+  }
+
+  .version-16-nav-card {
+    padding-bottom: 20px !important;
   }
 }
 
@@ -100,11 +115,7 @@
   .interview-nav-item:has(.actual-nav-link),
   .version-16-nav-list .nav-link.actual-nav-link {
     border-bottom: 2px solid;
-    border-image-source: linear-gradient(
-      92.17deg,
-      #ff2f63 19.22%,
-      #ff7700 96.41%
-    );
+    border-image-source: linear-gradient(92.17deg, #ff2f63 19.22%, #ff7700 96.41%);
     border-image-slice: 1;
   }
 
@@ -169,9 +180,7 @@
   transition: transform 0.2s ease;
 }
 
-.release-version-accordion
-  .accordion-button:not(.collapsed)
-  .release-version-toggle-icon {
+.release-version-accordion .accordion-button:not(.collapsed) .release-version-toggle-icon {
   transform: rotate(180deg);
 }
 
