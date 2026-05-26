@@ -233,6 +233,7 @@ $lang['Download'] = 'Download';
 $lang['On this page'] = 'On this page';
 $lang['Week'] = 'Week';
 $lang['to'] = 'to';
+$lang['Your way'] = 'Your way';
 
 /*Used in guide pages*/
 // $lang['porg_guides'] = 'Guides';

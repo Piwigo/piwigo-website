@@ -39,7 +39,7 @@
   </div>
 </section>
 
-<section class="product-update-updates pb-0">
+<section class="product-update-updates pb-0" id="updatesSection">
   <div class="row product-update-updates-content justify-content-center">
     <div class="col-md-10">
       <h2 class="h2-top-page">{'porg_product_update_updates_title'|translate}</h2>

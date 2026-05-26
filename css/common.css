@@ -101,6 +101,15 @@ p {
   color: var(--dark);
 }
 
+.p-strong {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 645;
+  font-style: normal;
+  font-size: 18px;
+  text-align: left;
+  color: var(--dark);
+}
+
 .p-boxed {
   font-family: "Red Hat Display", sans-serif;
   font-weight: 550;
@@ -574,6 +583,10 @@ Text Color
   color: var(--dark) !important;
 }
 
+.dark-text {
+  color: var(--dark_text) !important;
+}
+
 .non-decorated-text {
   text-decoration: none !important;
 }
@@ -854,4 +867,31 @@ input.is-invalid {
 .btn-menu.disabled::before,
 .btn-menu[disabled]::before {
   display: none !important;
+}
+
+/******
+Badge
+******/
+.pink-badge {
+  display: inline-block;
+  border-radius: 30px;
+  padding: 7px 12px;
+  background-color: var(--clear_pink);
+  color: var(--main_pink);
+}
+
+.orange-badge {
+  display: inline-block;
+  border-radius: 30px;
+  padding: 7px 12px;
+  background-color: var(--clear_orange);
+  color: var(--main_orange);
+}
+
+.green-badge {
+  display: inline-block;
+  border-radius: 30px;
+  padding: 7px 12px;
+  background-color: var(--clear_green);
+  color: var(--accent_green);
 }

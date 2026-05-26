@@ -1,9 +1,17 @@
 <?php
 $lang['page_meta_description'] = 'Manage your photo library with Piwigo! Free and open source software to organize and share your photos and digital media on the web.';
 $lang['Piwigo - Manage your photo collection'] = 'Piwigo - Open source photo management software';
-$lang['porg_home_title'] = 'Manage your photo library with Piwigo';
-$lang['porg_home_desc1'] = 'Piwigo is open source photo management software. Manage, organize and share your photo easily on the web.';
-$lang['porg_home_desc2'] = 'Designed for organisations, teams and individuals.';
+$lang['porg_home_title'] = 'Manage, share and organize your photos and videos.';
+$lang['porg_home_desc1'] = 'Piwigo is an open source digital asset management solution and photo library software.';
+$lang['porg_home_desc2'] = 'Use it as a hosted service or self-host it on your own infrastructure, with full control and no feature limitations.';
+$lang['porg_home_btn1'] = 'Start your free trial';
+$lang['porg_home_btn2'] = 'Choose your setup';
+
+$lang['porg_home_ways_to_use_title'] = 'Two ways to use Piwigo';
+$lang['porg_home_ways_to_use_desc'] = 'Use Piwigo as a hosted service or run it on your own infrastructure.';
+$lang['porg_home_ways_to_use_cloud_subtitle'] = 'We host and operate Piwigo for you';
+$lang['porg_home_ways_to_use_self_hosted_subtitle'] = 'You run Piwigo on your own infrastructure';
+
 $lang['porg_home_organisation_title'] = 'Thousands of organizations and millions of individuals love using Piwigo';
 $lang['Why choose Piwigo?'] = 'Why choose Piwigo?';
 $lang['porg_home_high_volume_desc'] = 'Piwigo shines when it comes to classifying thousands or even hundreds of thousands of photos.';

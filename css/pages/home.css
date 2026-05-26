@@ -1,0 +1,58 @@
+.highlight-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.highlight-wrap .orange-text {
+  position: relative;
+  z-index: 2;
+}
+
+.highlight-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -52%);
+  width: calc(100% + 40px);
+  height: 75px;
+  z-index: 0;
+  pointer-events: none;
+  object-fit: fill;
+  display: block;
+}
+
+.btn-row {
+  display: flex;
+  gap: 20px;
+}
+
+.pwg-tagline {
+  padding-right: 10px;
+}
+
+.responsive-image {
+  padding-left: 10px;
+}
+
+.latest-activites {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin-top: 70px;
+  margin-bottom: 90px;
+}
+
+.latest-activites .pwg-activities {
+  margin: 0;
+}
+
+.latest-activites .icon-double-tag {
+  margin-right: 5px;
+}
+
+.way-to-use-card {
+  padding: 30px 70px 60px;
+  border-radius: 10px;
+  background: var(--grey);
+}
