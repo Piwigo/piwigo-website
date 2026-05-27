@@ -234,6 +234,8 @@ $lang['On this page'] = 'On this page';
 $lang['Week'] = 'Week';
 $lang['to'] = 'to';
 $lang['Your way'] = 'Your way';
+$lang['Import & Centralize'] = 'Import & Centralize';
+$lang['Explore solution →'] = 'Explore solution 🡒';
 
 /*Used in guide pages*/
 // $lang['porg_guides'] = 'Guides';

@@ -11,6 +11,46 @@ $lang['porg_home_ways_to_use_title'] = 'Two ways to use Piwigo';
 $lang['porg_home_ways_to_use_desc'] = 'Use Piwigo as a hosted service or run it on your own infrastructure.';
 $lang['porg_home_ways_to_use_cloud_subtitle'] = 'We host and operate Piwigo for you';
 $lang['porg_home_ways_to_use_self_hosted_subtitle'] = 'You run Piwigo on your own infrastructure';
+$lang['porg_home_ways_to_use_cloud_li_1'] = 'No servers or infrastructure to manage';
+$lang['porg_home_ways_to_use_cloud_li_2'] = 'Updates, backups and maintenance included';
+$lang['porg_home_ways_to_use_cloud_li_3'] = 'Hosted in Europe on infrastructure operated by Piwigo';
+$lang['porg_home_ways_to_use_cloud_li_4'] = 'Full data ownership, exportable at any time';
+$lang['porg_home_ways_to_use_cloud_li_5'] = 'Professional support included';
+$lang['porg_home_ways_to_use_self_hosted_li_1'] = 'Full control over hosting and environment';
+$lang['porg_home_ways_to_use_self_hosted_li_2'] = 'Same core features as Piwigo Cloud';
+$lang['porg_home_ways_to_use_self_hosted_li_3'] = 'Modify the code and develop custom plugins';
+$lang['porg_home_ways_to_use_self_hosted_li_4'] = 'Documentation and community forum';
+$lang['porg_home_ways_to_use_self_hosted_li_5'] = 'Professional support and services available as an option';
+$lang['porg_home_ways_to_use_end_box'] = 'Both versions are built on the same open source core and offer access to the Piwigo API for advanced use cases.';
+
+$lang['porg_home_road_title'] = 'No lock-in. Built for long-term use.';
+$lang['porg_home_road_desc'] = 'With Piwigo, you are never locked into a single hosting option';
+$lang['porg_home_road_li_1'] = '<span class="p-strong">You can export</span> your photos, videos and metadata <span class="p-strong">at any time</span>';
+$lang['porg_home_road_li_2'] = '<span class="p-strong">Switching</span> between Piwigo Cloud and self-hosted installations <span class="p-strong">is always possible</span>';
+$lang['porg_home_road_li_3'] = '<span class="p-strong">No</span> technical or contractual <span class="p-strong">vendor lock-in</span>';
+$lang['porg_home_road_end'] = 'Piwigo is designed to evolve with your needs, without forcing long-term dependency.';
+
+$lang['porg_home_sovereignty_title'] = 'Data sovereignty, <br> by design.';
+$lang['porg_home_sovereignty_desc'] = 'Piwigo Cloud is hosted in France, on our own infrastructure, <br>under European regulations.';
+$lang['porg_home_sovereignty_li_1'] = 'No customer data is transferred to the United States';
+$lang['porg_home_sovereignty_li_2'] = 'Data is hosted and operated by our team';
+$lang['porg_home_sovereignty_li_3'] = 'Transparent hosting model, no third-party cloud dependency';
+
+$lang['porg_home_features_title'] = 'What you can do with Piwigo';
+$lang['porg_home_features_upload_subtitle'] = 'Bring media into Piwigo from everywhere.';
+$lang['porg_home_features_upload_desc'] = 'Upload files from your computer, mobile apps or synchronized folders, and import in bulk when you need to move fast.<br>Piwigo supports photos, videos and many document formats, so your library can live in one place.';
+$lang['porg_home_features_organize_subtitle'] = 'Structure your library the way it makes sense to you';
+$lang['porg_home_features_organize_desc'] = 'Organize content with albums, sub-albums, tags and metadata — simple or complex, depending on your needs.<br><br>Your structure can evolve over time without forcing a rigid model.';
+$lang['porg_home_features_search_subtitle'] = 'Find and rediscover the right file in seconds';
+$lang['porg_home_features_search_desc'] = 'Search across tags, metadata and file properties, and use filters to navigate large collections quickly.<br><br>From classic search to browsing by date or location, Piwigo helps you get back to the right content fast.';
+$lang['porg_home_features_share_subtitle'] = 'Share media and work with others, securely';
+$lang['porg_home_features_share_desc'] = 'Publish galleries on the web or run a completely private media library — you decide what’s visible and to whom.<br><br>Invite users and collaborators, control permissions, and let others contribute without losing control.';
+$lang['porg_home_features_customize_subtitle'] = 'Adapt Piwigo to your specific needs';
+$lang['porg_home_features_customize_desc'] = 'Extend Piwigo with plugins, themes and settings to fit your use cases and your brand.<br><br>For advanced needs, you can go further with custom code and dedicated extensions.';
+$lang['porg_home_features_measure_subtitle'] = 'Keep track of activity and usage over time';
+$lang['porg_home_features_measure_desc'] = 'Monitor usage, activity and storage, and keep visibility on how your media is used.<br><br>Piwigo also helps you track data quality and integrity, so your library stays reliable and usable in the long run.';
+$lang['porg_home_features_security_subtitle'] = 'Control access and protect your media';
+$lang['porg_home_features_security_desc'] = 'Manage roles, groups and permissions to secure your content at every level. Privacy and access control are built into Piwigo’s core, for internal libraries as well as public galleries.';
 
 $lang['porg_home_organisation_title'] = 'Thousands of organizations and millions of individuals love using Piwigo';
 $lang['Why choose Piwigo?'] = 'Why choose Piwigo?';

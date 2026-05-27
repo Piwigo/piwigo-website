@@ -457,6 +457,12 @@ function porg_load_content()
       $latest_code_activity_value = time_since(porg_get_coding_activity()[0]['occured_on'], 'hour');
     }
 
+    $host_badge = 'europe-host.svg';
+
+    if (isset($user['language']) && $user['language'] === 'fr_FR') {
+      $host_badge = 'france-host.svg';
+    }
+
     $template->assign(
       array(
         'SHOWCASES' =>  $rand_showcases,
@@ -466,7 +472,8 @@ function porg_load_content()
         'NB_YEARS' => porg_get_nb_years(),
         'LATEST_NEWS_TITLE' => $latest_article['subject'],
         'LATEST_NEWS_DATE' => time_since($latest_article['posted_on'], 'week'),
-        'LATEST_CODE_ACTIVTY' => $latest_code_activity_value
+        'LATEST_CODE_ACTIVTY' => $latest_code_activity_value,
+        'HOST_BADGE' => $host_badge
       )
     );
 

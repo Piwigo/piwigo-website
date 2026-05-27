@@ -1,3 +1,4 @@
+
 <div class="triple-true-header">
     <h2 class="h2-top-page triple-true-title d-none d-md-block">
         {$title}

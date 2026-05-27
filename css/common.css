@@ -591,6 +591,13 @@ Text Color
   text-decoration: none !important;
 }
 
+.pink-bg {
+  background-color: var(--secondary_pink);
+}
+
+.orange-bg {
+  background-color: var(--secondary_orange);
+}
 /******
 Form
 ******/
