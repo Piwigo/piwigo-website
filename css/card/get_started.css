@@ -19,7 +19,7 @@ CTA
 }
 
 .get-started-copy {
-  padding: 0 100px;
+  padding: 0 50px;
 }
 
 .get-started-subtitle {
@@ -41,7 +41,6 @@ CTA
   top: 50%;
   transform: translate(-50%, -52%);
   width: 100%;
-  height: auto;
   pointer-events: none;
   z-index: 0;
 }

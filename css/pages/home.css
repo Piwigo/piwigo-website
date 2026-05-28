@@ -250,3 +250,140 @@
 .container-features {
   margin-bottom: 100px;
 }
+
+.small-check-icon {
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  min-height: 18px;
+  border-radius: 2px;
+  background: var(--secondary_flash_green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.small-check-icon .icon-check-1 {
+  color: var(--accent_green);
+  font-size: 9px;
+}
+
+/* carousel */
+.carousel {
+  padding: 100px 0 180px;
+}
+
+.logos-marquee-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.logos-marquee-track {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  animation: marquee 90s linear infinite;
+}
+
+.logos-marquee-wrapper:hover .logos-marquee-track {
+  animation-play-state: paused;
+}
+
+.logos-marquee-item {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 225px;
+  height: 121px;
+  padding: 18px 22px;
+  border-radius: 10px;
+  background: var(--grey);
+  box-sizing: border-box;
+}
+
+.logos-marquee-item img {
+  display: block;
+  width: 100%;
+  max-height: 100px;
+  object-fit: contain;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    padding: 90px 0;
+  }
+
+  .logos-marquee-item {
+    width: 150px;
+    height: 80px;
+    padding: 10px;
+  }
+
+  .logos-marquee-item img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+}
+
+.why-container {
+  margin-bottom: 170px;
+}
+
+.why-split-row {
+  align-items: flex-start !important;
+}
+
+.why-titles-col {
+  align-self: flex-start;
+}
+
+.why-titles-stack {
+  position: relative;
+  width: 100%;
+  padding-bottom: 400px;
+}
+
+.why-title-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 10px 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.why-title-item p,
+.why-title-item h3 {
+  margin: 0;
+}
+
+.why-cards-col {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.test-card {
+  background: var(--main_flash_green);
+  width: 100%;
+  min-height: 800px;
+  border-radius: 10px;
+}
+
+.container-opensource {
+  margin-bottom: 150px;
+}

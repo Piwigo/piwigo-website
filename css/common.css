@@ -1,5 +1,5 @@
 html, body {
-  overflow-x: hidden;
+  overflow-x: clip;
   max-width: 100%;
 }
 
@@ -150,7 +150,7 @@ li p {
   line-height: 130%;
 }
 
-.number {
+.number-typo {
   font-family: "Sora", sans-serif;
   font-weight: 200;
   font-style: normal;
@@ -568,7 +568,7 @@ Text Color
 }
 
 .main-green-text {
-  color: var(--main_flash_green);
+  color: var(--main_flash_green) !important;
 }
 
 .clear-text {

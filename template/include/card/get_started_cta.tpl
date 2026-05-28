@@ -33,9 +33,9 @@
 
 					<div class="get-started-buttons d-flex align-items-center gap-2 gap-md-3">
 						{include file='template/include/buttons/button.tpl' variant='cta_primary' label={'Get started CTA btn 1'|translate}
-						href='#'}
+						href="{$PORG_ROOT}{$URL.signup}"}
 						{include file='template/include/buttons/button.tpl' variant='cta_secondary' label={'Get started CTA btn 2'|translate}
-						href='#'}
+						href="{$PORG_ROOT}{$URL.contact}"}
 					</div>
 				</div>
 			</div>
