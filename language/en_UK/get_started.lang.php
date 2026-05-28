@@ -2,7 +2,7 @@
 
 $lang['Get started CTA subtitle part 1'] = 'Choose the setup';
 $lang['Get started CTA subtitle part 2'] = 'that fits your needs';
-$lang['Get started CTA cloud'] = '<span class="green-text">Try Piwigo Cloud</span> with a free trial';
+$lang['Get started CTA cloud'] = 'Start your <span class="green-text">30-day free trial</span>';
 $lang['Get started CTA selfhost'] = 'Install Piwigo on <span class="green-text">your own server</span>';
 $lang['Get started CTA support'] = 'Contact us to <span class="green-text">discuss your project</span>';
 $lang['Get started CTA btn 1'] = 'Start your free trial';
