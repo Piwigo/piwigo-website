@@ -67,19 +67,23 @@ $lang['porg_home_why_desc'] = 'Piwigo brings together the flexibility of open so
 $lang['porg_home_why_li_1_title'] = 'Simple to use, without compromise';
 $lang['porg_home_why_li_1_desc'] = 'Despite its depth, Piwigo remains intuitive and easy to learn for all users.';
 $lang['porg_home_why_li_1_end'] = 'Whether you’re a seasoned library manager or a non-expert, you can start organizing and sharing your media quickly and autonomously.';
+$lang['porg_home_why_li_1_testimonial'] = 'Piwigo is a full-featured, ergonomic and intuitive tool managed by an attentive and responsive team. We were pleased with its 100% customizable interface. Piwigo is a good internal communication tool, allowing us to share the life of our projects in images, and facilitates collaboration with our service providers: communication agency, photographer.';
 $lang['porg_home_why_li_2_title'] = 'Transparent, fair and predictable';
 $lang['porg_home_why_li_2_desc'] = 'Piwigo’s plans are clearly priced with no hidden fees or surprises.';
-$lang['porg_home_why_li_2_end'] = 'If you ever decide to change your hosting model — cloud or self-hosted — your media stays with you, and we support you through the transition.';
+$lang['porg_home_why_li_2_end'] = 'If your needs evolve, you can move from Piwigo Cloud to a self-hosted installation at any time. Your photos, videos and metadata remain fully accessible and can be exported free of charge whenever you need them. We also support you throughout the transition to make the move as smooth as possible.';
+$lang['porg_home_why_li_2_testimonial'] = 'I chose Piwigo to manage our photo library and I’m completely satisfied. Piwigo is cheaper, simpler and more powerful than our old software. A library of plugins allows real customization of the solution. I’m a particular fan of the ergonomics, and I recommend Piwigo without hesitation!';
 $lang['porg_home_why_li_3_title'] = 'Open source at the core';
 $lang['porg_home_why_li_3_desc'] = 'Piwigo is an open source project, developed in a transparent and sustainable way.';
 $lang['porg_home_why_li_3_end'] = 'The community around it enhances cost-efficiency, durability and adaptability over time, without vendor lock-in.';
+$lang['porg_home_why_li_3_testimonial'] = 'Piwigo has all the functionality I need and it’s under an active development so it’s continuously improving. I love Piwigo because it’s fairly easy to install and then manage, easy to backup, and it’s free-and-open-source software.';
 $lang['porg_home_why_li_4_title'] = 'Support that understands you';
 $lang['porg_home_why_li_4_desc'] = 'Piwigo users can rely on human, expert support when needed.';
 $lang['porg_home_why_li_4_end'] = 'Whether you use the hosted service or run Piwigo on your own infrastructure, help is available from people who know the product inside out.';
+$lang['porg_home_why_li_4_testimonial'] = 'Piwigo has allowed us to be able build a strong photo library, which I can share with my key partners. Support is always so helpful and the creativity and freedom you get is amazing!';
 $lang['porg_home_why_li_5_title'] = 'Built for data protection and sovereignty';
 $lang['porg_home_why_li_5_desc'] = 'Piwigo lets you choose where your data lives.';
 $lang['porg_home_why_li_5_end'] = 'You can use Piwigo as a hosted service in France, under European regulations, or host it yourself on your own infrastructure — with the same software and full control over your media.';
-
+$lang['porg_home_why_li_5_testimonial'] = 'Having just returned from a wonderful family trip, we needed to find a way to share our photos while making it easy to distribute them to our friends. Being an open source promotor, unwilling to share photos with GAFAMs and having a web hosting, Piwigo was the perfect solution! Modular as you like, easy to use... Needless to say, for the next trip of this type I already know how we’ll share the photos :-).';
 
 $lang['porg_home_opensource_title'] = 'An open source project, built to last';
 $lang['porg_home_opensource_desc'] = 'Piwigo is developed by a community of contributors and supported by a company that provides hosting, services and long-term maintenance.<br><br><span class="p-strong">This model ensures transparency, sustainability and continuous improvement.</span>';

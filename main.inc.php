@@ -420,25 +420,6 @@ function porg_load_content()
     shuffle($showcases);
     $rand_showcases = array_slice($showcases, 0, 4);
 
-    $testimonials = get_ressources("testimonials");
-    shuffle($testimonials);
-    $rand_testimonials = array_slice($testimonials, 0, 4);
-
-    $testimonials_content = array();
-
-    foreach ($rand_testimonials as $testimonial) {
-      $item_content = array(
-        "id" => $testimonial['id'],
-        "comment" => trigger_change('render_category_name', $testimonial['comment'] ?? ''),
-        "author" => $testimonial['name'],
-      );
-
-      $item_tags = get_ressources_infos($testimonial['id']);
-      $item = array_merge($item_content, $item_tags);
-
-      array_push($testimonials_content, $item);
-    }
-
     // compute latest coding activity as total hours (e.g. "91 hours ago")
     $latest_code_activity_value = null;
     $coding_activity = porg_get_coding_activity();
@@ -466,7 +447,6 @@ function porg_load_content()
     $template->assign(
       array(
         'SHOWCASES' =>  $rand_showcases,
-        'TESTIMONIALS' => $testimonials_content,
         'LATEST_VERSION_NUMBER' => $latest_version['version'],
         'LATEST_VERSION_DATE' => time_since($latest_version['released_on'], 'month'),
         'NB_YEARS' => porg_get_nb_years(),

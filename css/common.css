@@ -598,6 +598,11 @@ Text Color
 .orange-bg {
   background-color: var(--secondary_orange);
 }
+
+.green-bg {
+  background-color: var(--secondary_flash_green);
+}
+
 /******
 Form
 ******/

@@ -191,11 +191,12 @@
                 <div class="col-md-6 justify-content-center d-flex flex-column">
                   <h3 class="mb-1">1. {'Import & Centralize'|translate}</h3>
                   <p class="sub-h3 pink-text mb-0">{'porg_home_features_upload_subtitle'|translate}</p>
+                  <img src="{$PORG_ROOT_URL}images/features/import/upload.png" alt="Feature 1" class="img-fluid mt-3 d-md-none">
                   <p class="p-boxed feature-card-desc">{'porg_home_features_upload_desc'|translate}</p>
                   {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'Explore solution →'|translate} href="{$PORG_ROOT}{$URL.features}#upload"}
                 </div>
                 <div class="col-md-6 justify-content-center d-flex flex-column">
-                  <img src="{$PORG_ROOT_URL}images/features/import/upload.png" alt="Feature 1">
+                  <img src="{$PORG_ROOT_URL}images/features/import/upload.png" alt="Feature 1" class="img-fluid d-none d-md-block">
                 </div>
               </div>
             </div>
@@ -204,11 +205,12 @@
                 <div class="col-md-6 justify-content-center d-flex flex-column">
                   <h3 class="mb-1">2. {'Organize your media'|translate}</h3>
                   <p class="sub-h3 pink-text mb-0">{'porg_home_features_organize_subtitle'|translate}</p>
+                  <img src="{$PORG_ROOT_URL}images/home/organize.png" alt="Feature 2" class="img-fluid mt-3 d-md-none">
                   <p class="p-boxed feature-card-desc">{'porg_home_features_organize_desc'|translate}</p>
                   {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'Explore solution →'|translate} href="{$PORG_ROOT}{$URL.features}#organize"}
                 </div>
                 <div class="col-md-6 justify-content-center d-flex flex-column">
-                  <img src="{$PORG_ROOT_URL}images/home/organize.png" alt="Feature 2">
+                  <img src="{$PORG_ROOT_URL}images/home/organize.png" alt="Feature 2" class="img-fluid d-none d-md-block">
                 </div>
               </div>
             </div>
@@ -217,11 +219,12 @@
                 <div class="col-md-6 justify-content-center d-flex flex-column">
                   <h3 class="mb-1">3. {'Search & Find'|translate}</h3>
                   <p class="sub-h3 pink-text mb-0">{'porg_home_features_search_subtitle'|translate}</p>
+                  <img src="{$PORG_ROOT_URL}images/features/search/keyword.png" alt="Feature 3" class="img-fluid mt-3 d-md-none">
                   <p class="p-boxed feature-card-desc">{'porg_home_features_search_desc'|translate}</p>
                   {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'Explore solution →'|translate} href="{$PORG_ROOT}{$URL.features}#search"}
                 </div>
                 <div class="col-md-6 justify-content-center d-flex flex-column">
-                  <img src="{$PORG_ROOT_URL}images/features/search/keyword.png" alt="Feature 3">
+                  <img src="{$PORG_ROOT_URL}images/features/search/keyword.png" alt="Feature 3" class="img-fluid d-none d-md-block">
                 </div>
               </div>
             </div>
@@ -230,11 +233,12 @@
                 <div class="col-md-6 justify-content-center d-flex flex-column">
                   <h3 class="mb-1">4. {'Share & Collaborate'|translate}</h3>
                   <p class="sub-h3 pink-text mb-0">{'porg_home_features_share_subtitle'|translate}</p>
+                  <img src="{$PORG_ROOT_URL}images/home/share.png" alt="Feature 4" class="img-fluid mt-3 d-md-none">
                   <p class="p-boxed feature-card-desc">{'porg_home_features_share_desc'|translate}</p>
                   {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'Explore solution →'|translate} href="{$PORG_ROOT}{$URL.features}#share"}
                 </div>
                 <div class="col-md-6 justify-content-center d-flex flex-column">
-                  <img src="{$PORG_ROOT_URL}images/home/share.png" alt="Feature 4">
+                  <img src="{$PORG_ROOT_URL}images/home/share.png" alt="Feature 4" class="img-fluid d-none d-md-block">
                 </div>
               </div>
             </div>
@@ -243,11 +247,12 @@
                 <div class="col-md-6 justify-content-center d-flex flex-column">
                   <h3 class="mb-1">5. {'Customize & Extend'|translate}</h3>
                   <p class="sub-h3 pink-text mb-0">{'porg_home_features_customize_subtitle'|translate}</p>
+                  <img src="{$PORG_ROOT_URL}images/features/customize/themes.png" alt="Feature 5" class="img-fluid mt-3 d-md-none">
                   <p class="p-boxed feature-card-desc">{'porg_home_features_customize_desc'|translate}</p>
                   {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'Explore solution →'|translate} href="{$PORG_ROOT}{$URL.features}#customize"}
                 </div>
                 <div class="col-md-6 justify-content-center d-flex flex-column">
-                  <img src="{$PORG_ROOT_URL}images/features/customize/themes.png" alt="Feature 5">
+                  <img src="{$PORG_ROOT_URL}images/features/customize/themes.png" alt="Feature 5" class="img-fluid d-none d-md-block">
                 </div>
               </div>
             </div>
@@ -256,11 +261,12 @@
                 <div class="col-md-6 justify-content-center d-flex flex-column">
                   <h3 class="mb-1">6. {'Measure & Monitor'|translate}</h3>
                   <p class="sub-h3 pink-text mb-0">{'porg_home_features_measure_subtitle'|translate}</p>
+                  <img src="{$PORG_ROOT_URL}images/home/measure.png" alt="Feature 6" class="img-fluid mt-3 d-md-none">
                   <p class="p-boxed feature-card-desc">{'porg_home_features_measure_desc'|translate}</p>
                   {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'Explore solution →'|translate} href="{$PORG_ROOT}{$URL.features}#measure"}
                 </div>
                 <div class="col-md-6 justify-content-center d-flex flex-column">
-                  <img src="{$PORG_ROOT_URL}images/home/measure.png" alt="Feature 6">
+                  <img src="{$PORG_ROOT_URL}images/home/measure.png" alt="Feature 6" class="img-fluid d-none d-md-block">
                 </div>
               </div>
             </div>
@@ -269,11 +275,12 @@
                 <div class="col-md-6 justify-content-center d-flex flex-column">
                   <h3 class="mb-1">7. {'Security & Privacy'|translate}</h3>
                   <p class="sub-h3 pink-text mb-0">{'porg_home_features_security_subtitle'|translate}</p>
+                  <img src="{$PORG_ROOT_URL}images/home/security.png" alt="Feature 7" class="img-fluid mt-3 d-md-none">
                   <p class="p-boxed feature-card-desc">{'porg_home_features_security_desc'|translate}</p>
                   {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'Explore solution →'|translate} href="{$PORG_ROOT}{$URL.features}#security"}
                 </div>
                 <div class="col-md-6 justify-content-center d-flex flex-column">
-                  <img src="{$PORG_ROOT_URL}images/home/security.png" alt="Feature 7" style="margin-right: 25px;">
+                  <img src="{$PORG_ROOT_URL}images/home/security.png" alt="Feature 7" class="img-fluid d-none d-md-block" style="margin-right: 25px;">
                 </div>
               </div>
             </div>
@@ -390,6 +397,7 @@
         <div class="row justify-content-center align-items-stretch">
           <div class="col-md-6 d-flex flex-column justify-content-center ways-to-use-card-col-l">
             <h2 class="mb-3">{'porg_home_who_title'|translate}</h2>
+            <img src="{$PORG_ROOT_URL}images/home/who.png" alt="Piwigo screenshot" class="img-fluid mb-4 mt-5 d-md-none">
             <p class=" p-strong mb-3">{'porg_home_who_desc'|translate}</p>
             <div class="checklist mb-3 gap-0">
               <div class="checklist-item d-flex align-items-center">
@@ -444,7 +452,7 @@
             <p class="text-center pink-text">{'porg_home_who_end'|translate}</p>
           </div>
           <div class="col-md-6 responsive-image d-flex flex-column justify-content-center ways-to-use-card-col-r">
-            <img class="img-fluid" src="{$PORG_ROOT_URL}images/home/who.png" alt="Piwigo screenshot">
+            <img class="img-fluid d-none d-md-block" src="{$PORG_ROOT_URL}images/home/who.png" alt="Piwigo screenshot">
           </div>
         </div>
       </div>
@@ -509,11 +517,69 @@
                 </div>
               </div>
               <div class="col-md-6 why-cards-col">
-                <div class="test-card mb-4"></div>
-                <div class="test-card mb-4"></div>
-                <div class="test-card mb-4"></div>
-                <div class="test-card mb-4"></div>
-                <div class="test-card mb-4"></div>
+                <div class="test-card mb-4">
+                  <div class="upper-card green-bg d-flex flex-column justify-content-center">
+                    <p class="p-strong mb-0">{'porg_home_why_li_1_desc'|translate}</p><br>
+                    <p class="mb-0">{'porg_home_why_li_1_end'|translate}</p>
+                  </div>
+                  <div class="bottom-card">
+                    <i class="icon-quote main-green-text"></i>
+                    <img src="https://ressources.piwigo.com/_datas/c/v/7/cv7jpz6hf8/i/uploads/c/v/7/cv7jpz6hf8//2022/05/11/20220511111302-f42a4210-me.jpg" alt="Cindy, Groupe ECT" class="testimonial-image mb-3" loading="lazy" decoding="async">
+                    <p class="p-testimonial mb-4">{'porg_home_why_li_1_testimonial'|translate}</p>
+                    <p class="mb-1 name-testimonial">Cindy, Groupe ECT</p>
+                    <p class="mb-0 country-testimonial dark-text"><span class="green-text me-2">{'Companies'|translate}</span><span class="flag-icon flag-icon-fra me-2"></span>{'language_fr_FR'|translate}</p>
+                  </div>
+                </div>
+                <div class="test-card mb-4">
+                  <div class="upper-card orange-bg d-flex flex-column justify-content-center">
+                    <p class="p-strong mb-0">{'porg_home_why_li_2_desc'|translate}</p><br>
+                    <p class="mb-0">{'porg_home_why_li_2_end'|translate}</p>
+                  </div>
+                  <div class="bottom-card">
+                    <i class="icon-quote main-green-text"></i>
+                    <img src="https://ressources.piwigo.com/_datas/c/v/7/cv7jpz6hf8/i/uploads/c/v/7/cv7jpz6hf8//2022/05/11/20220511111307-6078911d-me.jpg" alt="Jean-François Lacou, Département de l'Indre" class="testimonial-image mb-3" loading="lazy" decoding="async">
+                    <p class="p-testimonial mb-4">{'porg_home_why_li_2_testimonial'|translate}</p>
+                    <p class="mb-1 name-testimonial">Jean-François Lacou, Département de l'Indre</p>
+                    <p class="mb-0 country-testimonial dark-text"><span class="green-text me-2">{'Public Sector'|translate}</span><span class="flag-icon flag-icon-fra me-2"></span>{'language_fr_FR'|translate}</p>
+                  </div>
+                </div>
+                <div class="test-card mb-4">
+                  <div class="upper-card pink-bg d-flex flex-column justify-content-center">
+                    <p class="p-strong mb-0">{'porg_home_why_li_3_desc'|translate}</p><br>
+                    <p class="mb-0">{'porg_home_why_li_3_end'|translate}</p>
+                  </div>
+                  <div class="bottom-card">
+                    <i class="icon-quote main-green-text"></i>
+                    <p class="p-testimonial mb-4">{'porg_home_why_li_3_testimonial'|translate}</p>
+                    <p class="mb-1 name-testimonial">Dave</p>
+                    <p class="mb-0 country-testimonial dark-text"><span class="green-text me-2">{'Photographers & individuals'|translate}</span><span class="flag-icon flag-icon-cze me-2"></span>{'language_cs_CZ'|translate}</p>
+                  </div>
+                </div>
+                <div class="test-card mb-4">
+                  <div class="upper-card green-bg d-flex flex-column justify-content-center">
+                    <p class="p-strong mb-0">{'porg_home_why_li_4_desc'|translate}</p><br>
+                    <p class="mb-0">{'porg_home_why_li_4_end'|translate}</p>
+                  </div>
+                  <div class="bottom-card">
+                    <i class="icon-quote main-green-text"></i>
+                    <img src="https://ressources.piwigo.com/_datas/c/v/7/cv7jpz6hf8/i/uploads/c/v/7/cv7jpz6hf8//2023/10/13/20231013091204-4523df6d-me.png" alt="Callum White, Winchester City Council" class="testimonial-image mb-3" loading="lazy" decoding="async">
+                    <p class="p-testimonial mb-4">{'porg_home_why_li_4_testimonial'|translate}</p>
+                    <p class="mb-1 name-testimonial">Callum White, Winchester City Council</p>
+                    <p class="mb-0 country-testimonial dark-text"><span class="green-text me-2">{'Public Sector'|translate}</span><span class="flag-icon flag-icon-gbr me-2"></span>{'language_en_GB'|translate}</p>
+                  </div>
+                </div>
+                <div class="test-card mb-4">
+                  <div class="upper-card orange-bg d-flex flex-column justify-content-center">
+                    <p class="p-strong mb-0">{'porg_home_why_li_5_desc'|translate}</p><br>
+                    <p class="mb-0">{'porg_home_why_li_5_end'|translate}</p>
+                  </div>
+                  <div class="bottom-card">
+                    <i class="icon-quote main-green-text"></i>
+                    <p class="p-testimonial mb-4">{'porg_home_why_li_5_testimonial'|translate}</p>
+                    <p class="mb-1 name-testimonial">Thomas Bury</p>
+                    <p class="mb-0 country-testimonial dark-text"><span class="green-text me-2">{'Photographers & individuals'|translate}</span><span class="flag-icon flag-icon-fra me-2"></span>{'language_fr_FR'|translate}</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -527,10 +593,11 @@
       <div class="col-md-10 text-center justify-content-center">
         <div class="row justify-content-center align-items-stretch">
           <div class="col-md-6 responsive-image d-flex flex-column justify-content-center ways-to-use-card-col-l">
-            <img class="img-fluid" src="{$PORG_ROOT_URL}images/home/opensource.png" alt="Piwigo screenshot">
+            <img class="img-fluid d-none d-md-block" src="{$PORG_ROOT_URL}images/home/opensource.png" alt="Piwigo screenshot">
           </div>
           <div class="col-md-6 d-flex flex-column justify-content-center ways-to-use-card-col-r">
             <h2 class="mb-3">{'porg_home_opensource_title'|translate}</h2>
+            <img src="{$PORG_ROOT_URL}images/home/opensource.png" alt="Piwigo screenshot" class="img-fluid d-md-none">
             <p class="mb-4">{'porg_home_opensource_desc'|translate}</p>
             <div class="btn-row">
               {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'porg_home_opensource_btn1'|translate} href="{$PORG_ROOT}{$URL.signup}"}
@@ -542,7 +609,7 @@
     </div>
   </section>
 
-  
+
   <section class="container mb-5">
     <div class="row text-center justify-content-center">
       <div class="col-md-10 text-center justify-content-center">

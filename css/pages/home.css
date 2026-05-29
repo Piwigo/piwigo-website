@@ -377,13 +377,146 @@
   gap: 80px;
 }
 
-.test-card {
-  background: var(--main_flash_green);
-  width: 100%;
-  min-height: 800px;
+.test-card .upper-card {
+  padding: 50px 50px 70px;
   border-radius: 10px;
+  margin-right: 40px;
+}
+
+.test-card .bottom-card {
+  padding: 70px 75px 60px;
+  border-radius: 10px;
+  margin-left: 40px;
+  margin-top: -45px;
+  background: var(--grey);
+  position: relative;
+}
+
+.test-card .bottom-card .icon-quote {
+  font-size: 40px;
+  position: absolute;
+  top: -27px;
+  left: 25px;
+}
+
+.test-card img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.test-card .flag-icon {
+  border-radius: 5px;
 }
 
 .container-opensource {
   margin-bottom: 150px;
+}
+
+@media (max-width: 768px) {
+  .btn-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btn-row .btn-cta {
+    padding-left: 25px;
+    padding-right: 25px;
+    align-self: flex-start;
+    width: auto;
+  }
+
+  .pwg-tagline .highlight-wrap {
+    margin-top: 20px;
+  }
+
+  .pwg-banner .responsive-image {
+    margin-top: -40px;
+    z-index: 4;
+  }
+
+  .latest-activites {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: start !important;
+    gap: 60px;
+    margin: 20px 0 30px;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    justify-content: flex-start !important;
+  }
+
+  .latest-activites::-webkit-scrollbar {
+    display: none;
+  }
+
+  .latest-activites .pwg-activities {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    margin: 0;
+    white-space: nowrap;
+  }
+
+  .latest-activites .minimenus-item {
+    margin-left: 0 !important;
+  }
+
+  .container-road,
+  .end-way-to-use-card {
+    margin-bottom: 70px;
+  }
+
+  .ways-to-use-card-col-l .pink-text {
+    font-weight: 645;
+    margin-bottom: 40px;
+  }
+
+  .container-opensource h2,
+  .ways-to-use-card-col-l h2,
+  .ways-to-use-card-col-l p.mb-4 {
+    text-align: center;
+  }
+
+  .feature-benefits-strip {
+    margin: 0 20px 70px !important;
+    max-width: 320px !important;
+  }
+
+  .badge-host {
+    top: -30px;
+    right: -20px;
+    width: 110px;
+  }
+
+  .minimenu_item {
+    width: unset !important;
+  }
+
+  .feature-card-desc {
+    margin-top: 20px;
+  }
+
+  .container-opensource .btn-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .container-opensource .btn-row .btn-cta {
+    align-self: center !important;
+    width: auto !important;
+    display: inline-flex !important;
+  }
+
+  .container-opensource img {
+    margin-bottom: 20px;
+  }
 }
