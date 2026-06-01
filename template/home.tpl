@@ -348,43 +348,51 @@
 
         function handlePositions() {
           const cardsCol = document.querySelector('.why-cards-col');
+          const titlesCol = document.querySelector('.why-titles-col');
+          const titleContainers = document.querySelectorAll('.why-titles-stack > .why-title-container, .why-title-container .why-title-container');
 
-          if (!cardsCol) {
-            return;
-          }
+          if (!cardsCol || !titlesCol) return;
 
-          // titlesStack.style.height = (cardsCol.offsetHeight + 400) + 'px';
+          titlesCol.style.height = cardsCol.offsetHeight + 'px';
 
-          const scrollTop = window.scrollY;
-          const navbarHeight = 40;
-          const titleStepHeight = 90;
+          const cards = Array.from(document.querySelectorAll('.why-cards-col .test-card'));
+          const cardHeights = cards.map(card => card.offsetHeight);
+          const containers = document.querySelectorAll('.why-title-container');
 
-          const stackRect = titlesStack.getBoundingClientRect();
-          const stackTopDoc = stackRect.top + scrollTop;
-          const stackHeight = cardsCol.offsetHeight;
+          const container1 = containers[0];
+          const container2 = containers[1];
+          const container3 = containers[2];
+          const container4 = containers[3];
+          const container5 = containers[4];
 
-          cardItems.forEach(function(card, index) {
-            const cardTopDoc = card.getBoundingClientRect().top + scrollTop;
+          const container1Height = cardHeights[0] + cardHeights[1] + cardHeights[2] + cardHeights[3] + cardHeights[4] + 104 + 104 + 104 + 104 + 24;
+          const container2Height = cardHeights[1] + cardHeights[2] + cardHeights[3] + cardHeights[4] + 104 + 104 + 104 + 24;
+          const container3Height = cardHeights[2] + cardHeights[3] + cardHeights[4] + 104 + 104 + 24;
+          const container4Height = cardHeights[3] + cardHeights[4] + 104 + 24;
+          const container5Height = cardHeights[4] + 24;
 
-            const naturalTop = cardTopDoc - stackTopDoc + 40;
-            const stickyTopInStack = scrollTop - stackTopDoc + navbarHeight + (index * titleStepHeight);
-            const maxTopInStack = stackHeight - ((titleItems.length - index) * titleStepHeight) - 60;
+          if (container1) container1.style.minHeight = container1Height + 'px';
+          if (container2) container2.style.minHeight = container2Height + 'px';
+          if (container3) container3.style.minHeight = container3Height + 'px';
+          if (container4) container4.style.minHeight = container4Height + 'px';
+          if (container5) container5.style.minHeight = container5Height + 'px';
 
-            let targetTop = Math.max(naturalTop, stickyTopInStack);
-            targetTop = Math.min(targetTop, maxTopInStack);
+          const gap = 10;
+          let cumulativeTop = 40;
+          let cumulativeBottom = 20;
 
-            titleItems[index].style.top = targetTop + 'px';
+          titleItems.forEach(function(item) {
+            item.style.top = cumulativeTop + 'px';
+            cumulativeTop += item.offsetHeight + gap;
+          });
 
-            if (scrollTop > cardTopDoc - window.innerHeight) {
-              titleItems[index].style.visibility = 'visible';
-            } else if (index > 0) {
-              titleItems[index].style.visibility = 'hidden';
-            }
+          Array.from(titleItems).reverse().forEach(function(item) {
+            item.style.marginBottom = cumulativeBottom + 'px';
+            cumulativeBottom += item.offsetHeight + gap;
           });
         }
 
-        setTimeout(handlePositions, 100);
-        window.addEventListener('scroll', handlePositions);
+        handlePositions();
         window.addEventListener('resize', handlePositions);
 
         const carousel = document.querySelector('.why-mobile-carousel');
@@ -518,25 +526,35 @@
             <div class="row why-split-row">
               <div class="col-md-6 why-titles-col">
                 <div class="why-titles-stack">
-                  <div class="why-title-item" style="--item-index: 0;">
-                    <p class="number-typo main-green-text">01.</p>
-                    <h3>{'porg_home_why_li_1_title'|translate}</h3>
-                  </div>
-                  <div class="why-title-item" style="--item-index: 1;">
-                    <p class="number-typo main-green-text">02.</p>
-                    <h3>{'porg_home_why_li_2_title'|translate}</h3>
-                  </div>
-                  <div class="why-title-item" style="--item-index: 2;">
-                    <p class="number-typo main-green-text">03.</p>
-                    <h3>{'porg_home_why_li_3_title'|translate}</h3>
-                  </div>
-                  <div class="why-title-item" style="--item-index: 3;">
-                    <p class="number-typo main-green-text">04.</p>
-                    <h3>{'porg_home_why_li_4_title'|translate}</h3>
-                  </div>
-                  <div class="why-title-item" style="--item-index: 4;">
-                    <p class="number-typo main-green-text">05.</p>
-                    <h3>{'porg_home_why_li_5_title'|translate}</h3>
+                  <div class="why-title-container h-100">
+                    <div class="why-title-item" style="--item-index: 0;">
+                      <p class="number-typo main-green-text">01.</p>
+                      <h3>{'porg_home_why_li_1_title'|translate}</h3>
+                    </div>
+                    <div class="why-title-container">
+                      <div class="why-title-item" style="--item-index: 1;">
+                        <p class="number-typo main-green-text">02.</p>
+                        <h3>{'porg_home_why_li_2_title'|translate}</h3>
+                      </div>
+                      <div class="why-title-container">
+                        <div class="why-title-item" style="--item-index: 2;">
+                          <p class="number-typo main-green-text">03.</p>
+                          <h3>{'porg_home_why_li_3_title'|translate}</h3>
+                        </div>
+                        <div class="why-title-container">
+                          <div class="why-title-item" style="--item-index: 3;">
+                            <p class="number-typo main-green-text">04.</p>
+                            <h3>{'porg_home_why_li_4_title'|translate}</h3>
+                          </div>
+                          <div class="why-title-container">
+                            <div class="why-title-item" style="--item-index: 4;">
+                              <p class="number-typo main-green-text">05.</p>
+                              <h3>{'porg_home_why_li_5_title'|translate}</h3>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

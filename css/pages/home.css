@@ -367,19 +367,25 @@
 }
 
 .why-titles-stack {
-  position: relative;
   width: 100%;
-  padding-bottom: 400px;
+  height: 100%;
+}
+
+.why-title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .why-title-item {
+  margin-top: 40px;
   display: flex;
   align-items: flex-start;
   gap: 40px;
   padding: 10px 0;
-  position: absolute;
-  left: 0;
-  right: 0;
+  position: sticky;
+  background: var(--clear);
+  align-self: flex-start;
 }
 
 .why-title-item p,
