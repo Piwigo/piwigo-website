@@ -455,10 +455,10 @@
     margin-top: 20px;
   }
 
-  .pwg-banner .responsive-image {
+  /* .pwg-banner .responsive-image {
     margin-top: -40px;
     z-index: 4;
-  }
+  } */
 
   .latest-activites {
     display: flex !important;
