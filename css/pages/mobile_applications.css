@@ -118,15 +118,19 @@ p.mobile-app-title-circle {
 
 }
 
+.mobile-app-import-part{
+  margin-bottom: 80px;
+}
+
 .mobile-app-perm-part {
+  margin-top: 80px;
+  margin-bottom: 80px;
   padding-top: 80px;
   padding-bottom: 80px;
-  margin: 0 auto;
 }
 
 .mobile-app-perm-headphoneman-part {
   position: relative; 
-  width: 100%;
   display: flex;
   justify-content: center;
 }
@@ -138,6 +142,7 @@ p.mobile-app-title-circle {
   display: block;
   position: relative;
   z-index: 1;
+  border-radius: 10px;
 }
 
 .mobile-app-perm-headphoneman-part img[alt*="permissions"] {
@@ -146,20 +151,64 @@ p.mobile-app-title-circle {
   top: 15%;
   left: -5%; 
   z-index: 3;
-  filter: drop-shadow(0px 10px 30px rgba(0, 0, 0, 0.08));
 }
 
 
 .mobile-app-perm-text-part {
   position: absolute;
-  right: 0; 
-  bottom: -10%;
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(20px); 
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  border-radius: 16px;
-  padding: 32px;
+  right: -11%; 
+  bottom: -26%;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(18.9px); 
+  border-radius: 10px;
+  padding: 25px;
   z-index: 5;
-  box-shadow: 0px 20px 40px rgba(43, 29, 13, 0.05);
+  box-shadow: 0px 4px 20px 0px rgba(217, 217, 217, 0.25);
+}
+
+.mobile-app-album-part{
+  margin-top: 160px;
+  margin-bottom: 80px;
+}
+
+.mobile-app-manage-part{
+  margin-bottom: 160px;
+}
+
+.feature-benefit-text{
+  font-family: "SOra", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.feature-benefit-text{
+  font-family: "SOra", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.feature-benefits-strip{
+  max-width: 1080px !important;
+}
+
+.triple-true-title{
+  font-family: "Sora", sans-serif;
+  font-weight: 800;
+  font-size: 48px;
+}
+
+.feature-benefit-text-desc{
+  line-height:  1.4;
+}
+
+.mobile-app-import-option-part{
+  margin-bottom: 160px;
+}
+
+.mobile-app-copy-part{
+  margin-bottom: 160px;
+}
+
+.mobile-app-security-part{
+  margin-bottom: 160px;
 }
