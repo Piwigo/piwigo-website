@@ -90,8 +90,8 @@
           </div>
           <div class="col-12 text-center d-flex">
             <div class="end-way-to-use-card w-100">
-              <div class="col-md-7 text-center d-flex mx-auto mb-0">
-                <p class="text-center  mb-0">{'porg_home_ways_to_use_end_box'|translate}</p>
+              <div class="text-center d-flex mx-auto mb-0">
+                <p class="text-center p-strong mb-0">{'porg_home_ways_to_use_end_box'|translate}</p>
               </div>
             </div>
           </div>

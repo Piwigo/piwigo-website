@@ -95,6 +95,17 @@
   margin-bottom: 200px;
 }
 
+@media (min-width: 768px) {
+  .end-way-to-use-card {
+    padding: 110px 170px 85px;
+    margin-top: -75px;
+    background: var(--clear_green);
+    z-index: -1;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+}
+
 .container-road {
   margin-bottom: 170px;
 }
@@ -574,5 +585,16 @@
 
   .why-mobile-slide h3 {
     margin-bottom: 15px;
+  }
+
+  .test-card .upper-card {
+    padding: 20px 25px 50px;
+    margin: 0 20px;
+  }
+
+  .test-card .bottom-card {
+    padding: 50px 20px 40px;
+    margin-left: 0;
+    margin-top: -30px;
   }
 }
