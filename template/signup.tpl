@@ -1,4 +1,4 @@
-{*
+﻿{*
 <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/pages/contact.css"> *}
 <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/buttons/common_button.css">
 <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/pages/signup.css">
@@ -91,7 +91,7 @@
 				<div class="illustration-container position-relative pb-5 pt-5  rounded-3">
 
 					<div class="doctor-container">
-						<img src="{$PORG_ROOT_URL}images/signup/FreeTrial.png" class="img-fluid doctor" alt="Piwigo Cloud Stats">
+						<img src="{$PORG_ROOT_URL}images/signup/FreeTrial.webp" class="img-fluid doctor" alt="Piwigo Cloud Stats">
 					</div>
 					<img src="{$PORG_ROOT_URL}images/signup/bg_vector_green.svg" class="img-fluid bg-dot-vector" alt="Piwigo vector">
 					<div class="row g-3 mb-3 justify-content-center stat">

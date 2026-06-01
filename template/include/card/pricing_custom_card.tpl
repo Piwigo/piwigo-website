@@ -1,4 +1,4 @@
-<div class="custom-tooltip-content">
+﻿<div class="custom-tooltip-content">
 	<div class="row g-0 align-items-center mb-4">
 		<div class="col-7">
 			<h5 class="fw-bolder mb-2 text-dark">{'pricing Free custom graphic personalisation'|translate}</h5>
@@ -7,7 +7,7 @@
 			</p>
 		</div>
 		<div class="col-5 text-end">
-			<img src="{$PORG_ROOT_URL}images/website/Features_Personalize_Customization.png" alt="Customization" class="img-fluid ps-3">
+			<img src="{$PORG_ROOT_URL}images/website/Features_Personalize_Customization.webp" alt="Customization" class="img-fluid ps-3">
 		</div>
 	</div>
 

@@ -738,7 +738,7 @@ $porg_releases = array(
       'new' => array(),
       'updated' => array(),
     ),
-    'changelogs_image'=>'12/piwigo12-features-matrix.jpg'
+    'changelogs_image'=>'12/piwigo12-features-matrix.webp'
   ),
 
   '11.5.0' => array(

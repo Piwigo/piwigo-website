@@ -394,6 +394,9 @@
 
         handlePositions();
         window.addEventListener('resize', handlePositions);
+        window.addEventListener('load', handlePositions);
+        window.addEventListener('orientationchange', handlePositions);
+        window.addEventListener('scroll', handlePositions);
 
         const carousel = document.querySelector('.why-mobile-carousel');
         const dots = document.querySelectorAll('.why-mobile-dot');

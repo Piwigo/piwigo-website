@@ -1,4 +1,4 @@
-<div class="demo-page">
+﻿<div class="demo-page">
 
 <section class="container Demo-page-intro"> 
   <div class="col-md-5 demo-page-intro-text ">
@@ -19,7 +19,7 @@
     <div class="col-md-12 demo-gallery-screenshots">
       <div class="col-md-6">
         <a href="https://demo1.piwigo.com" target="_blank">
-        <img src="{$PORG_ROOT_URL}images/demo/1.jpg">
+        <img src="{$PORG_ROOT_URL}images/demo/1.webp">
         </a>
       </div>
       <div class="col-md-6">
@@ -35,7 +35,7 @@
     <div class="col-md-12 demo-gallery-screenshots">
       <div class="col-md-6">
         <a href="https://demo2.piwigo.com" target="_blank">
-        <img src="{$PORG_ROOT_URL}images/demo/2.jpg">
+        <img src="{$PORG_ROOT_URL}images/demo/2.webp">
         </a>
       </div>
       <div class="col-md-6">
@@ -51,7 +51,7 @@
     <div class="col-md-12 demo-gallery-screenshots">
       <div class="col-md-6">
         <a href="https://demo3.piwigo.com" target="_blank">
-        <img src="{$PORG_ROOT_URL}images/demo/3.png">
+        <img src="{$PORG_ROOT_URL}images/demo/3.webp">
         </a>
       </div>
       <div class="col-md-6">
@@ -67,7 +67,7 @@
     <div class="col-md-12 demo-gallery-screenshots">
       <div class="col-md-6">
         <a href="https://demo4.piwigo.com" target="_blank">
-         <img src="{$PORG_ROOT_URL}images/demo/4.jpg">
+         <img src="{$PORG_ROOT_URL}images/demo/4.webp">
         </a>
       </div>
       <div class="col-md-6">

@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/pages/contact.css">
+﻿<link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/pages/contact.css">
 <script src="{$PORG_ROOT_URL_PLUGINS}js/contact.js"></script>
 
 <section class="contact-header">
@@ -10,7 +10,7 @@
           <p>{'porg_contact_desc1'|translate}</p>
           <p>{'porg_contact_desc2'|translate}</p>
         </div>
-        <img class="contact-header-image img-fluid mt-3" src="{$PORG_ROOT_URL}images/contact/contact_hero.png"
+        <img class="contact-header-image img-fluid mt-3" src="{$PORG_ROOT_URL}images/contact/contact_hero.webp"
           alt="Contact us">
       </div>
 

@@ -1,4 +1,4 @@
-<section>
+﻿<section>
   <div class="container container-breadcrumb">
     <div class="guides-breadcrumb">
       <a href="{$PORG_ROOT}{$URL.guides}">{'porg_guides'|translate}</a>
@@ -125,7 +125,7 @@
           <p>{'porg_guides_install_step3_paragraph5'|translate}</p>
         </div>
         <div class="col-md-8 col-xs-12 guide-image-and-caption">
-          <img src="{$PORG_ROOT_URL}images/guides/manual-installation-image-3.png">
+          <img src="{$PORG_ROOT_URL}images/guides/manual-installation-image-3.webp">
           <p>{'porg_guides_install_image_caption3'|translate}</p>
         </div>
       </div>
@@ -146,3 +146,4 @@
   </section>
 
 {include file='template/include/guides_bottom_section.tpl'}
+

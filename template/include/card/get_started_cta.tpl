@@ -1,4 +1,4 @@
-<section class="get-started-hero py-4 py-md-5">
+﻿<section class="get-started-hero py-4 py-md-5">
 	<div class="container">
 		<div class="row align-items-center">
 			<div class="col-12 col-md-6">
@@ -13,7 +13,7 @@
 					</p>
 
 					<div class="get-started-mobile-image d-md-none mb-4">
-						<img class="img-fluid" src="{$PORG_ROOT_URL}images/get_started/rocket.png" alt="Rocket">
+						<img class="img-fluid" src="{$PORG_ROOT_URL}images/get_started/rocket.webp" alt="Rocket">
 					</div>
 
 					<ul class="list-unstyled get-started-list mb-4 mb-md-5">
@@ -41,7 +41,7 @@
 			</div>
 
 			<div class="col-12 col-md-6 d-none d-md-flex">
-				<img class="img-rocket w-100" src="{$PORG_ROOT_URL}images/get_started/rocket.png" alt="Rocket">
+				<img class="img-rocket w-100" src="{$PORG_ROOT_URL}images/get_started/rocket.webp" alt="Rocket">
 			</div>
 		</div>
 	</div>

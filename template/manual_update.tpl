@@ -1,4 +1,4 @@
-  <section>
+﻿  <section>
     <div class="container container-breadcrumb">
       <div class="guides-breadcrumb">
         <a href="{$PORG_ROOT}{$URL.guides}">{'porg_guides'|translate}</a>
@@ -81,7 +81,7 @@
           <p>{'porg_guides_manual_update_step1_paragraph2'|translate}</p>
         </div>
         <div class="col-md-6 col-xs-12 guide-image-and-caption">
-          <img src="{$PORG_ROOT_URL}images/guides/manual-update-image-1.jpg">
+          <img src="{$PORG_ROOT_URL}images/guides/manual-update-image-1.webp">
           <p>{'porg_guides_manual_update_step2_caption1'|translate}</p>
         </div>
       </div>
@@ -125,7 +125,7 @@
           <p>{'porg_guides_manual_update_step4_paragraph3'|translate}</p>
         </div>
         <div class="col-md-6 col-xs-12 guide-image-and-caption">
-          <img src="{$PORG_ROOT_URL}images/guides/manual-update-image-2.jpg">
+          <img src="{$PORG_ROOT_URL}images/guides/manual-update-image-2.webp">
           <p>{'porg_guides_manual_update_step4_caption1'|translate}</p>
         </div>
       </div>
@@ -173,7 +173,7 @@
           <p>{'porg_guides_manual_update_step7_paragraph5'|translate}</p>
         </div>
         <div class="col-md-6 col-xs-12 guide-image-and-caption">
-          <img src="{$PORG_ROOT_URL}images/guides/manual-update-image-4.jpg">
+          <img src="{$PORG_ROOT_URL}images/guides/manual-update-image-4.webp">
           <p>{'porg_guides_manual_update_step7_caption2'|translate}</p>
         </div>
       </div>
@@ -216,3 +216,4 @@
   </section>
 
 {include file='template/include/guides_bottom_section.tpl'}
+

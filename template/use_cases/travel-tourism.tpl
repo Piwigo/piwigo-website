@@ -1,4 +1,4 @@
-<section class="use-case-header container-fluid">
+﻿<section class="use-case-header container-fluid">
   <div class="row justify-content-evenly">
     <div class="col-md-6 use-case-header-text">
       <h1 class="d-none d-md-block use-case-title"><span
@@ -12,7 +12,7 @@
       href='#'}
     </div>
     <div class="col-md-6 text-center use-case-header-image">
-      <img id="use-case-main-image" src="{$PORG_ROOT_URL}images/use-case/tourism_header.png"
+      <img id="use-case-main-image" src="{$PORG_ROOT_URL}images/use-case/tourism_header.webp"
         alt="Piwigo use-case illustration" class="img-fluid">
     </div>
   </div>
@@ -53,7 +53,7 @@
 </section>
 
 <section class="tourism-features-section">
-  <img src="{$PORG_ROOT_URL}images/use-case/tourism_bg_1.png" alt="Tourism background" class="tourism-bg-image">
+  <img src="{$PORG_ROOT_URL}images/use-case/tourism_bg_1.webp" alt="Tourism background" class="tourism-bg-image">
   <div class="container tourism-features-container">
     <div class="row">
       <div class="col-12 col-md-4">
@@ -79,7 +79,7 @@
 </section>
 
 <section class="tourism-features-section">
-  <img src="{$PORG_ROOT_URL}images/use-case/tourism_bg_2.png" alt="Tourism background" class="tourism-bg-image">
+  <img src="{$PORG_ROOT_URL}images/use-case/tourism_bg_2.webp" alt="Tourism background" class="tourism-bg-image">
   <div class="container tourism-features-container">
     <div class="row">
       <div class="col-12 col-md-4">
@@ -117,7 +117,7 @@
 
 
 <section class="tourism-features-section-2 position-relative">
-  <img src="{$PORG_ROOT_URL}images/use-case/tourism_bg_3.png" alt="" class="tourism-bg-image-2">
+  <img src="{$PORG_ROOT_URL}images/use-case/tourism_bg_3.webp" alt="" class="tourism-bg-image-2">
   <div class="container tourism-features-container-2-top">
     {if isset($tourism_testimonials) && count($tourism_testimonials) > 0}
       {foreach $tourism_testimonials as $testimonial name=tourism_testimonials_loop}

@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/menu/horizontal_menu.css">
+﻿<link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/menu/horizontal_menu.css">
 <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/pages/features.css">
 <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL_PLUGINS}css/card/global_text_image.css">
 <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL_PLUGINS}css/card/triple_true.css">
@@ -19,7 +19,7 @@
       </p>
     </div>
     <div class="col-md-6 text-center features-header-image">
-      <img id="features-main-image" src="{$PORG_ROOT_URL}images/features/platform.png"
+      <img id="features-main-image" src="{$PORG_ROOT_URL}images/features/platform.webp"
         alt="Piwigo features illustration" class="img-fluid">
     </div>
   </div>

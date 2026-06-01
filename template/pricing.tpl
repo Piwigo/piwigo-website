@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/pages/pricing.css">
+﻿<link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/pages/pricing.css">
 <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/buttons/pricing_switch.css">
 <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/card/pricing_option.css">
 <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/card/compare_plan_table.css">
@@ -47,7 +47,7 @@
 <div id="card-selfhosted" class="selfhosted-card-container d-none-card">
 	{include
 		file="template/include/card/global_text_image.tpl"
-		title={'pricing title selfhosted card'|translate} desc={'pricing selfhosted description card'|translate} image="{$PORG_ROOT_URL}images/pricing/selfhosted_deploy.png" 
+		title={'pricing title selfhosted card'|translate} desc={'pricing selfhosted description card'|translate} image="{$PORG_ROOT_URL}images/pricing/selfhosted_deploy.webp" 
 	}
 </div>
 
