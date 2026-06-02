@@ -9,10 +9,8 @@
     <h1 class="mobile-app-title text-center">{'mobile_applications_title_pt1'|translate}
     </h1>
     <p class="mobile-app-title-circle text-center">
-      <span class="highlight-wrap">
-        <img class="highlight-circle-ios" src="{$PORG_ROOT_URL}images/pricing/greencircle.svg" alt="green circle">
-        <span class="highlight">{'mobile_applications_title_pt2'|translate}</span>
-      </span>
+      <span class="highlight-ios">{'mobile_applications_title_pt2'|translate}</span>
+
       {'mobile_applications_title_pt3'|translate}
       <span class="highlight-wrap">
         <img class="highlight-circle-android" src="{$PORG_ROOT_URL}images/pricing/greencircle.svg" alt="green circle">
@@ -42,10 +40,14 @@
   }
 </section>
 
+
 <section class="mobile-app-perm-part container align-items-center d-flex justify-content-center">
   <div class="mobile-app-perm-headphoneman-part col-10">
     <img src="{$PORG_ROOT_URL}images/mobile_applications/permissions.webp" alt="permissions block" class="img-fluid">
-    <img src="{$PORG_ROOT_URL}images/mobile_applications/headphoneMan.webp" alt="headphone man illustration" class="img-fluid">
+    <div class="mobile-app-perm-headphoneman-img-part">
+      <img class="desktop-headphone" src="{$PORG_ROOT_URL}images/mobile_applications/headphoneMan.webp" alt="headphone man illustration" class="img-fluid">
+      <img class="mobile-headphone" src="{$PORG_ROOT_URL}images/mobile_applications/headphone.webp" alt="headphone man illustration" class="img-fluid">
+    </div>
     <div class="mobile-app-perm-text-part d-flex flex-column align-items-center col-6">
       <h2 class="mobile-app-perm-title text-start">{'mobile_applications_follows_you_title'|translate}</h2>
       <p class="mobile-app-perm-description text-start">{'mobile_applications_follows_you_text'|translate}</p>
@@ -87,7 +89,10 @@
 <section class="mobile-colleagues-part container align-items-center d-flex justify-content-center">
   <div class="mobile-colleagues-girls-part col-10">
     <img src="{$PORG_ROOT_URL}images/mobile_applications/MobileApp-invite.webp" alt="invite block" class="img-fluid">
-    <img src="{$PORG_ROOT_URL}images/mobile_applications/colleagues.webp" alt="colleagues girls illustration" class="img-fluid">
+    <div class="mobile-colleagues-girls-img-part">
+      <img class="desktop-headphone" src="{$PORG_ROOT_URL}images/mobile_applications/colleagues.webp" alt="colleagues girls illustration" class="img-fluid">
+      <img class="mobile-headphone" src="{$PORG_ROOT_URL}images/mobile_applications/colleague.webp" alt="colleagues girls illustration" class="img-fluid">
+    </div>
     <div class="mobile-colleagues-text-part d-flex flex-column align-items-center col-6">
       <h2 class="mobile-colleagues-title text-start">{'mobile_applications_invite_title'|translate}</h2>
       <p class="mobile-colleagues-description text-start">{'mobile_applications_invite_text'|translate}</p>
