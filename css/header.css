@@ -250,6 +250,10 @@
 }
 
 @media (max-width: 991px) {
+  .navbar-brand img {
+    top: 1px;
+  }
+
   .navbar-collapse,
   .navbar-collapse.collapse,
   .navbar-collapse.collapsing,
@@ -273,9 +277,10 @@
     z-index: 1050;
     display: flex !important;
     flex-direction: column;
+    justify-content: flex-start;
     padding: 15px;
     padding-top: 20px;
-    overflow-y: auto;
+    overflow: hidden;
   }
 
   .navbar-header .navbar-toggler.collapsed {
@@ -306,8 +311,12 @@
     flex-direction: column !important;
     align-items: flex-start !important;
     width: 100%;
-    margin-bottom: auto;
+    margin-bottom: 0;
     gap: 10px;
+    margin-top: 20px;
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow-y: auto;
   }
 
   .nav-btn-wrapper {
@@ -343,6 +352,8 @@
   .mobile-menu-footer {
     width: 100%;
     padding-top: 20px;
+    margin-top: auto;
+    flex: 0 0 auto;
   }
 
   .mobile-cta-wrapper {
