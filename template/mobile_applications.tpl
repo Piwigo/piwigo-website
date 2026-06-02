@@ -1,7 +1,8 @@
 ﻿<link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/buttons/common_button.css">
+<link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL_PLUGINS}css/card/triple_true.css">
 <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/pages/mobile_applications.css">
 <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL_PLUGINS}css/card/global_text_image.css">
-<link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL_PLUGINS}css/card/triple_true.css">
+
 
 <section class="mobile-app-header container-fluid d-flex flex-column align-items-center">
   <div class="mobile-app-title-container align-items-center">
@@ -71,7 +72,7 @@
 <section class="mobile-app-import-option-part container">
   {include
     file="template/include/card/triple_true.tpl"
-    title={'mobile_applications_import_options_title'|translate} text_1={'mobile_applications_size_quality_title'|translate} text_1_desc={'mobile_applications_size_quality_text'|translate} text_2={'mobile_applications_metadata_title'|translate} text_2_desc={'mobile_applications_metadata_text'|translate} text_3={'mobile_applications_geolocalisation_title'|translate} text_3_desc={'mobile_applications_geolocalisation_text'|translate} color="green" text_desc=true
+    title={'mobile_applications_import_options_title'|translate} text_1={'mobile_applications_size_quality_title'|translate} text_1_desc={'mobile_applications_size_quality_text'|translate} text_2={'mobile_applications_metadata_title'|translate} text_2_desc={'mobile_applications_metadata_text'|translate} text_3={'mobile_applications_geolocalisation_title'|translate} text_3_desc={'mobile_applications_geolocalisation_text'|translate} color="green" text_desc=true 
   }
 </section>
 
@@ -83,6 +84,16 @@
   }
 </section>
 
+<section class="mobile-colleagues-part container align-items-center d-flex justify-content-center">
+  <div class="mobile-colleagues-girls-part col-10">
+    <img src="{$PORG_ROOT_URL}images/mobile_applications/MobileApp-invite.webp" alt="invite block" class="img-fluid">
+    <img src="{$PORG_ROOT_URL}images/mobile_applications/colleagues.webp" alt="colleagues girls illustration" class="img-fluid">
+    <div class="mobile-colleagues-text-part d-flex flex-column align-items-center col-6">
+      <h2 class="mobile-colleagues-title text-start">{'mobile_applications_invite_title'|translate}</h2>
+      <p class="mobile-colleagues-description text-start">{'mobile_applications_invite_text'|translate}</p>
+    </div>
+  </div>
+</section>
 
 <section class="mobile-app-copy-part container">
   {include
@@ -95,6 +106,28 @@
 <section class="mobile-app-security-part container">
   {include
     file="template/include/card/triple_true.tpl"
-    title={'mobile_applications_security_title'|translate} text_1={'mobile_applications_user_rights_title'|translate} text_1_desc={'mobile_applications_user_rights_text'|translate} text_2={'mobile_applications_confidentiality_title'|translate} text_2_desc={'mobile_applications_confidentiality_text'|translate} text_3={'mobile_applications_control_title'|translate} text_3_desc={'mobile_applications_control_text'|translate} color="green" text_desc=true
+    title={'mobile_applications_security_title'|translate} text_1={'mobile_applications_user_rights_title'|translate} text_1_desc={'mobile_applications_user_rights_text'|translate} text_2={'mobile_applications_confidentiality_title'|translate} text_2_desc={'mobile_applications_confidentiality_text'|translate} text_3={'mobile_applications_control_title'|translate} text_3_desc={'mobile_applications_control_text'|translate} color="green" text_desc=true 
   }
+</section>
+
+
+<section class="mobile-app-footer container-fluid d-flex flex-column align-items-center">
+  <div class="mobile-app-title-footer-container align-items-center">
+    <h1 class="mobile-app-title-footer text-center d-flex flex-column align-items-center">
+      <span class="line-wrap-nope">
+        {'mobile_applications_download_pt1'|translate}
+      </span>
+      <span class="line-wrap">
+        {'mobile_applications_download_pt2'|translate}
+      </span>
+    </h1>
+  </div>
+  <div class="mobile-app-store-buttons buttons-footer-download d-flex flew-row justify-content-center">
+    <a href="https://apps.apple.com/fr/app/piwigo/id472225196" target="blank">
+      <img src="{$PORG_ROOT_URL}images/mobile_applications/appStore.webp" />
+    </a>
+    <a href="https://play.google.com/store/apps/details?id=com.piwigo.piwigo_ng" target="blank">
+      <img src="{$PORG_ROOT_URL}images/mobile_applications/playStore.webp" />
+    </a>
+  </div>
 </section>

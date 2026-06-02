@@ -18,7 +18,7 @@
   position: absolute;
   top: 17%;
   left: -15%;
-  width: 125%;
+  max-width: 125%;
   height: auto;
   z-index: 1;
   pointer-events: none;
@@ -73,7 +73,7 @@ p.mobile-app-title-circle {
 }
 
 .mobile-app-store-buttons a img {
-  height: 40px;
+  max-height: 40px;
   width: auto;
   transition: transform 0.2s ease;
 }
@@ -118,8 +118,15 @@ p.mobile-app-title-circle {
 
 }
 
+/* body section */
+
+.mobile-app-copy-part, .mobile-app-album-part, .mobile-app-import-option-part, .mobile-app-security-part{
+  margin-bottom: 160px;
+}
+
 .mobile-app-import-part{
   margin-bottom: 80px;
+  margin-top: 80px;
 }
 
 .mobile-app-perm-part {
@@ -138,7 +145,7 @@ p.mobile-app-title-circle {
 
 .mobile-app-perm-headphoneman-part img[alt*="headphone"] {
   object-fit: crop;
-  width: 100%;
+  max-width: 100%;
   display: block;
   position: relative;
   z-index: 1;
@@ -168,7 +175,10 @@ p.mobile-app-title-circle {
 
 .mobile-app-album-part{
   margin-top: 160px;
-  margin-bottom: 80px;
+}
+
+.mobile-app-copy-part{
+  margin-top: 200px;
 }
 
 .mobile-app-manage-part{
@@ -195,20 +205,84 @@ p.mobile-app-title-circle {
   font-family: "Sora", sans-serif;
   font-weight: 800;
   font-size: 48px;
+  margin-bottom: 37px !important;
 }
 
 .feature-benefit-text-desc{
   line-height:  1.4;
 }
 
-.mobile-app-import-option-part{
-  margin-bottom: 160px;
+
+.mobile-colleagues-part {
+  margin-bottom: 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
-.mobile-app-copy-part{
-  margin-bottom: 160px;
+.mobile-colleagues-girls-part {
+  position: relative; 
+  display: flex;
+  justify-content: center;
 }
 
-.mobile-app-security-part{
-  margin-bottom: 160px;
+
+.mobile-colleagues-girls-part img[alt*="colleagues"] {
+  object-fit: crop;
+  width: 100%;
+  display: block;
+  position: relative;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.mobile-colleagues-girls-part img[alt*="invite"] {
+  position: absolute;
+  max-width: 294px;
+  top: -8%;
+  left: 81%; 
+  z-index: 3;
+}
+
+
+.mobile-colleagues-text-part {
+  position: absolute;
+  right: 59%; 
+  bottom: -25%;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(18.9px); 
+  border-radius: 10px;
+  padding: 27px;
+  z-index: 5;
+  box-shadow: 0px 4px 20px 0px rgba(217, 217, 217, 0.25);
+}
+
+h2.mobile-colleagues-title, h2.mobile-app-perm-title {
+  margin-bottom: 19px !important;
+}
+
+p.mobile-colleagues-description, p.mobile-app-perm-description {
+  margin-bottom: 0px !important;
+}
+
+/* footer mobile app  section */
+
+.mobile-app-title-footer {
+  font-weight: 800;
+  font-size: 48px;
+  margin-bottom: 61px;
+}
+
+.line-wrap {
+  background-image: url("../../images/use-case/underliner.svg");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+.buttons-footer-download{
+  margin-bottom: 122px;
+}
+
+.buttons-footer-download a img{
+  max-height: 60px;
+  width: auto;
 }
