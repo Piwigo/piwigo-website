@@ -387,6 +387,7 @@ function porg_load_content()
     } else {
       http_response_code(404);
       $template->set_filenames(array('porg_page' => realpath(PORG_PATH . 'template/404.tpl')));
+      $template->assign('HIDE_NAVBAR', true);
     }
   } else {
     load_language('countries.lang', PORG_PATH, array('language' => 'en_UK', 'no_fallback' => true));
@@ -495,7 +496,9 @@ function porg_load_content()
       'features',
       'use_cases'
     ), true),
-    'users' => in_array($current_page, array(), true),
+    'users' => in_array($current_page, array(
+      'users'
+    ), true),
     'support' => in_array($current_page, array(), true),
     'behind_code' => in_array($current_page, array(), true),
     'news' => in_array($current_page, array(
@@ -689,8 +692,9 @@ function porg_load_footer()
   $template->parse('header_porg');
   $template->parse('porg_page');
   $template->assign('time', get_elapsed_time($t2, get_moment()));
-  // don't render footer on signup page
-  if (!(isset($_GET['porg']) && $_GET['porg'] === 'signup')) {
+  // don't render footer on signup page or 404 page
+  $is_404 = isset($_GET['porg']) && porg_label_to_page($_GET['porg']) === false;
+  if (!(isset($_GET['porg']) && $_GET['porg'] === 'signup') && !$is_404) {
     $template->parse('footer_porg');
   }
   $template->p();
