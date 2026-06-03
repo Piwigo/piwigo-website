@@ -265,7 +265,7 @@ p.mobile-app-perm-description {
 
 .mobile-app-title-footer {
   font-weight: 800;
-  font-size: 48px;
+  /* font-size: 48px; */
   margin-bottom: 61px;
 }
 
@@ -290,6 +290,10 @@ p.mobile-app-perm-description {
   width: auto;
 }
 
+.buttons-footer-download a img:hover {
+  transform: scale(1.03);
+}
+
 .mobile-headphone {
   display: none;
 }
@@ -303,7 +307,7 @@ p.mobile-app-perm-description {
     padding-bottom: 0px;
   }
 
-  .mobile-colleagues-part{
+  .mobile-colleagues-part {
     padding-top: 0px;
   }
 
@@ -355,5 +359,13 @@ p.mobile-app-perm-description {
 
   .desktop-headphone {
     display: none;
+  }
+
+  .buttons-footer-download a img {
+    max-height: 40px;
+  }
+
+  .triple-true-title {
+    font-size: 36px;
   }
 }
