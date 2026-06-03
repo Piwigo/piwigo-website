@@ -1,5 +1,14 @@
 body {
-  background-image:  url("../../images/error404/EROR404.webp");
+  margin: 0;
+  padding: 0;
+  background-image: url("../../images/error404/EROR404.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 
 .error-title {

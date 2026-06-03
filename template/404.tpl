@@ -1,6 +1,5 @@
 <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/pages/404.css">
 <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/buttons/common_button.css">
-<link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/common.css">
 
 <section class="container-fluide container-error404">
   <div class="container equal content-error404">

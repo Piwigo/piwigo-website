@@ -388,6 +388,11 @@ function porg_load_content()
       http_response_code(404);
       $template->set_filenames(array('porg_page' => realpath(PORG_PATH . 'template/404.tpl')));
       $template->assign('HIDE_NAVBAR', true);
+      
+      if ('en_UK' != $user['language']) {
+        load_language('404.lang', PORG_PATH, array('language' => 'en_UK', 'no_fallback' => true));
+      }
+      load_language('404.lang', PORG_PATH);
     }
   } else {
     load_language('countries.lang', PORG_PATH, array('language' => 'en_UK', 'no_fallback' => true));
