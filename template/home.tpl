@@ -390,6 +390,21 @@
             item.style.marginBottom = cumulativeBottom + 'px';
             cumulativeBottom += item.offsetHeight + gap;
           });
+
+          let activeIndex = 0;
+
+          titleItems.forEach((item, index) => {
+            const stickyTop = parseFloat(item.style.top) || 0;
+            
+            if (item.getBoundingClientRect().top <= stickyTop + 1) {
+              activeIndex = index;
+            }
+          });
+
+          titleItems.forEach((item, index) => {
+            const h3 = item.querySelector('h3');
+            if (h3) h3.classList.toggle('dark-text', index !== activeIndex);
+          });
         }
 
         handlePositions();
@@ -532,27 +547,27 @@
                   <div class="why-title-container h-100">
                     <div class="why-title-item" style="--item-index: 0;">
                       <p class="number-typo main-green-text">01.</p>
-                      <h3>{'porg_home_why_li_1_title'|translate}</h3>
+                      <h3 class="dark-text">{'porg_home_why_li_1_title'|translate}</h3>
                     </div>
                     <div class="why-title-container">
                       <div class="why-title-item" style="--item-index: 1;">
                         <p class="number-typo main-green-text">02.</p>
-                        <h3>{'porg_home_why_li_2_title'|translate}</h3>
+                        <h3 class="dark-text">{'porg_home_why_li_2_title'|translate}</h3>
                       </div>
                       <div class="why-title-container">
                         <div class="why-title-item" style="--item-index: 2;">
                           <p class="number-typo main-green-text">03.</p>
-                          <h3>{'porg_home_why_li_3_title'|translate}</h3>
+                          <h3 class="dark-text">{'porg_home_why_li_3_title'|translate}</h3>
                         </div>
                         <div class="why-title-container">
                           <div class="why-title-item" style="--item-index: 3;">
                             <p class="number-typo main-green-text">04.</p>
-                            <h3>{'porg_home_why_li_4_title'|translate}</h3>
+                            <h3 class="dark-text">{'porg_home_why_li_4_title'|translate}</h3>
                           </div>
                           <div class="why-title-container">
                             <div class="why-title-item" style="--item-index: 4;">
                               <p class="number-typo main-green-text">05.</p>
-                              <h3>{'porg_home_why_li_5_title'|translate}</h3>
+                              <h3 class="dark-text">{'porg_home_why_li_5_title'|translate}</h3>
                             </div>
                           </div>
                         </div>
