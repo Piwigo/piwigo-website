@@ -236,7 +236,8 @@ $lang['to'] = 'to';
 $lang['From'] = 'From';
 $lang['Your way'] = 'Your way';
 $lang['Import & Centralize'] = 'Import & Centralize';
-$lang['Explore solution →'] = 'Explore solution 🡒';
+$lang['Explore solution  <i class="icon-forward-arrow" style="font-size: 10px; position: relative; top: -1px;"></i>'] = 'Explore solution  <i class="icon-forward-arrow" style="font-size: 10px; position: relative; top: -1px;"></i>';
+$lang['Start your 30-day free trial'] = 'Start your 30-day free trial';
 
 /*Used in guide pages*/
 // $lang['porg_guides'] = 'Guides';

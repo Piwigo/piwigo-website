@@ -82,7 +82,7 @@
               </ul>
               <div class="footer-users-btn">
                 {include file='template/include/buttons/button.tpl' variant='menu_btn_white' label={'Footer Button 3 Meet our users'|translate}
-                href='#'}
+                href='{$PORG_ROOT}{$URL.users}'}
               </div>
             </div>
           </div>
@@ -178,7 +178,7 @@
         </ul>
         <div class="footer-users-btn">
           {include file='template/include/buttons/button.tpl' variant='menu_btn_white' label={'Footer Button 3 Meet our users'|translate}
-          href='#'}
+          href='{$PORG_ROOT}{$URL.users}'}
         </div>
       </div>
 
@@ -231,11 +231,11 @@
           <hr class="footer-divider-mobile">
           <p class="footer-menu-item footer-copyright">Piwigo © 2002 – {$CURRENT_YEAR}</p>
           <ul class="footer-legal-links">
-          <li><a class="footer-legal-link footer-menu-item" href="#">{'Footer legal 1 Privacy Policy'|translate}</a></li>
-          <li><a class="footer-legal-link footer-menu-item" href="#">{'Footer legal 2 Cookie Policy'|translate}</a></li>
-          <li><a class="footer-legal-link footer-menu-item" href="#">{'Footer legal 3 Legal Notice'|translate}</a></li>
-          <li><a class="footer-legal-link footer-menu-item" href="#">{'Footer legal 4 Terms of Use'|translate}</a></li>
-          <li><a class="footer-legal-link footer-menu-item" href="#">{'Footer legal 5 GDPR'|translate}</a></li>
+            <li><a class="footer-legal-link footer-menu-item" href="#">{'Footer legal 1 Privacy Policy'|translate}</a></li>
+            <li><a class="footer-legal-link footer-menu-item" href="#">{'Footer legal 2 Cookie Policy'|translate}</a></li>
+            <li><a class="footer-legal-link footer-menu-item" href="#">{'Footer legal 3 Legal Notice'|translate}</a></li>
+            <li><a class="footer-legal-link footer-menu-item" href="#">{'Footer legal 4 Terms of Use'|translate}</a></li>
+            <li><a class="footer-legal-link footer-menu-item" href="#">{'Footer legal 5 GDPR'|translate}</a></li>
           </ul>
         </div>
 

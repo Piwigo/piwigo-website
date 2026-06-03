@@ -15,7 +15,7 @@
             </span>
           </h1>
 
-          <p class="mb-5"><span class="p-strong">{'porg_home_desc1'|translate}</span><br>{'porg_home_desc2'|translate}</p>
+          <p class="mb-md-5"><span class="p-strong">{'porg_home_desc1'|translate}</span><br>{'porg_home_desc2'|translate}</p>
 
           <div class="btn-row">
             {include file='template/include/buttons/button.tpl' variant='cta_primary' label={'porg_home_btn1'|translate} href="{$PORG_ROOT}{$URL.signup}"}
