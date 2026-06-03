@@ -1,0 +1,27 @@
+body {
+  background-image:  url("../../images/error404/EROR404.webp");
+}
+
+.error-title {
+  color: var(--clear);
+  padding-bottom: 20px;
+}
+
+.error-description{
+  color: var(--clear);
+  font-style: italic;
+  padding-bottom: 60px;
+}
+
+.content-error404{
+  margin-top: 20%;
+  gap: 60px;
+}
+
+.btn-menu.menu-btn-white{
+  min-width: 178px;
+}
+
+.btn-menu span{
+  font-weight: 800;
+}
