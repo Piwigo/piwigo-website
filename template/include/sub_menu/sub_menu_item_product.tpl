@@ -113,6 +113,7 @@
 			{include
 				file='template/include/sub_menu_items/sub_menu_itemc.tpl'
 				category_type='explore-submenu'
+				href="{$PORG_ROOT}{$URL.mobile_applications}"
 				title={'Mobile apps'|translate} description={'Mobile apps desc'|translate} icon_class='icon-app'
 			}
 
