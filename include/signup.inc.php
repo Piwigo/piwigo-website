@@ -95,11 +95,11 @@ $template->assign(
 			$porg_urls['terms_of_service'],
 			$porg_urls['privacy']
 		),
-		'STATS_GLOBAL_INSTALLS' => l10n('+%s', '100.000'),
-    'STATS_GLOBAL_FILES'    => l10n('+%s millions', '67'),
-    'STATS_GLOBAL_UPTIME'   => l10n('+%s', '99,98%'),
+		'STATS_GLOBAL_INSTALLS' => l10n('%s+', '100.000'),
+    'STATS_GLOBAL_FILES'    => l10n('%s+ millions', '67'),
+    'STATS_GLOBAL_UPTIME'   => l10n('%s uptime', '99.98%'),
     'STATS_GLOBAL_LANGS'    => l10n('+%d', 59),
-    'STATS_GLOBAL_CLIENTS'  => l10n('+%s', '5.800'),
+    'STATS_GLOBAL_CLIENTS'  => l10n('%s+', '5.800'),
 	)
 
 	

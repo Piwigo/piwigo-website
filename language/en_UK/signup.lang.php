@@ -1,7 +1,7 @@
 <?php
 
-$lang['signup_header_title'] = 'Get your <span class="orange-text">Piwigo cloud</span> account';
-$lang['signup_header_desc'] = 'Sign up and get your one month free trial with all the features you want!';
+$lang['signup_header_title'] = 'Get your <span class="orange-text">Piwigo Cloud</span> account';
+$lang['signup_header_desc'] = ' Start your 30-day free trial and get access to all features.';
 
 $lang['signup_form_mail'] = 'Your email address<span class="orange-text">* </span>';
 $lang['signup_form_mail_error'] = 'it must be a valid email adress';
@@ -20,13 +20,13 @@ $lang['signup_check_RPG'] = 'I agree to the <a target="_blank" href="%s" class="
 $lang['signup_check_help'] = 'You must accept the terms of use';
 
 
-$lang['signup_button'] = 'Sign up for a one month free trial';
+$lang['signup_button'] = 'Start your 30-day free trial';
 $lang['signup_signin'] = 'Already have a Piwigo Cloud account? <a href="#" class="orange-text fw-bold text-decoration-none">Sign In</a>';
 
 $lang['actives installations'] = 'actives installations';
-$lang['added files'] = 'added files';
+$lang['added files'] = 'files uploaded';
 $lang['availability rate observed'] = 'availability rate observed';
-$lang['existing languages'] = 'existing languages';
+$lang['existing languages'] = 'available languages';
 $lang['clients'] = 'clients';
 
 $lang['average_stats_signup_loader'] = 'On average for the last %d accounts created, the installation took %s seconds.';
