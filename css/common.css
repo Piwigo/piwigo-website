@@ -692,7 +692,8 @@ textarea:focus,
 }
 
 #form-email:focus ~ .mail-placeholder,
-#form-piwigo-url:focus ~ .piwigo-url-placeholder {
+#form-piwigo-url:focus ~ .piwigo-url-placeholder,
+#form-user:focus ~ .piwigo-url-placeholder {
   display: none;
   opacity: 0.3;
   top: 26px;
@@ -700,7 +701,8 @@ textarea:focus,
 }
 
 #form-email:focus ~ .mail-example-placeholder,
-#form-piwigo-url:focus ~ .piwigo-url-example-placeholder {
+#form-piwigo-url:focus ~ .piwigo-url-example-placeholder,
+#form-user:focus ~ .piwigo-url-example-placeholder {
   display: block !important;
   opacity: 0.3;
   top: 26px;
@@ -721,7 +723,9 @@ textarea:focus,
 #form-piwigo-url:not(:placeholder-shown) ~ .piwigo-url-placeholder,
 #form-email:not(:placeholder-shown) ~ .mail-example-placeholder,
 #form-piwigo-url:not(:placeholder-shown) ~ .piwigo-url-example-placeholder,
-#form-message:not(:placeholder-shown) ~ .your-message-placeholder {
+#form-message:not(:placeholder-shown) ~ .your-message-placeholder,
+#form-user:not(:placeholder-shown) ~ .piwigo-url-placeholder,
+#form-user:not(:placeholder-shown) ~ .piwigo-url-example-placeholder {
   opacity: 0;
 }
 
@@ -733,9 +737,11 @@ textarea:focus,
 
 #form-email:focus ~ .little-mail-placeholder,
 #form-piwigo-url:focus ~ .little-piwigo-url-placeholder,
+#form-user:focus ~ .little-piwigo-url-placeholder,
 #form-message:focus ~ .little-your-message-placeholder ,
 #form-email:not(:placeholder-shown) ~ .little-mail-placeholder,
 #form-piwigo-url:not(:placeholder-shown) ~ .little-piwigo-url-placeholder,
+#form-user:not(:placeholder-shown) ~ .little-piwigo-url-placeholder,
 #form-message:not(:placeholder-shown) ~ .little-your-message-placeholder {
   display: block;
   position: absolute;

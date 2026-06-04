@@ -7,6 +7,7 @@
   background-position: center 20px;
   background: linear-gradient(0.25turn, #fffaf3, #ffeacf);
 }
+
 .illustration-container {
   background-color: var(--clear);
   /* height: 768px; */
@@ -204,17 +205,23 @@
 .little-password-placeholder {
   top: 4px !important;
   display: none !important;
-  font-size: 12px !important;
   color: var(--dark_text) !important;
 }
 
+#form-password:not(:placeholder-shown) ~ .password-placeholder,
 #form-password:focus ~ .password-placeholder {
+  display: none !important;
+}
+
+#form-password:focus ~ .password-example-placeholder {
+  position: absolute;
+  display: block !important;
   opacity: 0.5 !important;
   top: 26px !important;
   left: 16px !important;
 }
 
-#form-password:not(:placeholder-shown) ~ .password-placeholder {
+#form-password:not(:placeholder-shown) ~ .password-example-placeholder {
   opacity: 0 !important;
   display: none !important;
 }
@@ -222,17 +229,6 @@
 #form-password:focus ~ .little-password-placeholder,
 #form-password:not(:placeholder-shown) ~ .little-password-placeholder {
   display: block !important;
-}
-
-#form-password:focus ~ .little-password-placeholder .orange-text,
-#form-password:not(:placeholder-shown)
-  ~ .little-password-placeholder
-  .orange-text {
-  display: none !important;
-}
-
-#form-password:focus ~ .little-password-placeholder {
-  color: var(--main_flash_green) !important;
 }
 
 #passWarningIcon,
