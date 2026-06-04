@@ -31,7 +31,7 @@ if it's explore : it'll be green expect the piwigo ai which will be pink*}
 
 {* BOOTSTRAP VERSION  *}
 
-<a href="{$href|default:'#'}" class="submenu-item {$category_type} d-flex align-items-center">
+<a href="{$href|default:'#'}" class="submenu-item {$category_type} d-flex align-items-center" {if $is_ext} target="_blank" rel="noopener noreferrer" {/if}>
   <div class="icon-box {$category_type} d-flex justify-content-center align-items-center flex-shrink-0">
     {if $icon_svg}
       <img src="{$PORG_ROOT_URL}{$icon_svg}" class="menu-svg" alt="icon">

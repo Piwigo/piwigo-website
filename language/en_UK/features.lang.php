@@ -46,10 +46,10 @@ $lang['organize sub2 title'] = 'Tags';
 $lang['organize sub2 description'] = 'In addition to albums, Piwigo allows you to categorize your files using tags or keywords. You can combine multiple tags to search for a file in your photo library. Our users love tags and use them in a wide variety of ways to organize their photo library and facilitate discovery.';
 
 $lang['organize sub3 title'] = 'Metadata and custom fields ';
-$lang['organize sub3 description'] = 'Each file includes a set of properties such as title, author, date or description. You can add custom fields, manage copyrights and expiration dates to ensure your media is used in compliance with usage rights. Some properties are automatically imported from the file metadata (EXIF / IPTC); others can be added at any time, individually or in batches. Metadata is preserved when editing or updating files.';
+$lang['organize sub3 description'] = 'Each file is associated to a set of properties such as title, author, date or description. You can add custom fields, manage copyrights and expiration dates to ensure your media is used in compliance with usage rights. Some properties are automatically imported from the file metadata (EXIF / IPTC); others can be added at any time, individually or in batches. Metadata is preserved when editing or updating files.';
 
 $lang['organize sub4 title'] = 'AI-powered file indexing';
-$lang['organize sub4 description'] = 'Automatically generate tags and descriptions, and extract text from images with OCR. Use AI to accelerate the indexing of your media and enrich your library with consistent metadata.<br>You stay in control: review, adjust or complete the generated data at any time.<br>Face recognition will also be available to help identify and group people across your library.<br>Piwigo AI processes images on demand, without storing data or accessing your Piwigo instance. All data is deleted immediately after analysis.';
+$lang['organize sub4 description'] = 'Automatically generate tags and descriptions, and extract text from images with OCR.<br>Use AI to accelerate the indexing of your media and enrich your library with consistent metadata.<br>You stay in control: review, adjust or complete the generated data at any time.<br>Coming soon : Face recognition will also be available to help identify and group people across your library.<br>We host our own Artificial Intelligence and don’t rely on third parties like ChatGPT or Gemini. Your privacy is our top priority.';
 $lang['organize sub4 btn'] = 'Learn more about Piwigo AI';
 
 $lang['organize sub5 title'] = 'Bulk editing';
@@ -70,7 +70,7 @@ $lang['search text 2'] = 'Narrow down results in seconds instead of browsing end
 $lang['search text 3'] = 'Access exactly what you need, when you need it';
 
 $lang['search sub1 title'] = 'Keyword search';
-$lang['search sub1 description'] = 'Use the search bar to find files by keyword.<br>Piwigo searches across titles, file names, descriptions, tags and more to return relevant results.';
+$lang['search sub1 description'] = 'Use the search bar to run a text search across your files.<br>Piwigo searches across titles, file names, descriptions, tags and more to return relevant results.';
 
 $lang['search sub2 title'] = 'Advanced search';
 $lang['search sub2 description'] = 'Refine your results using filters such as tags, albums, authors, dates or file types.<br>Combine multiple criteria and adjust them dynamically to find exactly what you need.';
@@ -81,7 +81,7 @@ $lang['search sub3 description'] = 'Run a search within a specific album or tag 
 $lang['search sub4 title'] = 'Tag-based navigation';
 $lang['search sub4 description'] = 'Browse your media using tags and related tags.<br>Well-structured tagging makes it easier to discover and retrieve files.';
 
-$lang['search sub5 title'] = 'Date-based search';
+$lang['search sub5 title'] = 'Custom search filters';
 $lang['search sub5 description'] = 'Create custom filters based on your tags to build a tailored search experience.<br>This makes it easier to explore large media libraries through guided filtering, adapted to your own classification system.';
 
 // share
@@ -122,12 +122,12 @@ $lang['customize sub2 title'] = 'Options and plugins';
 $lang['customize sub2 description'] = "Homepage, login screen, custom banner: many built-in options let you customize your gallery. You also have access to a large library of plugins and extensions to add new features: contact forms, copyright management, slideshows, authentication methods, and more. Choose the features you need and adapt Piwigo to your use case.";
 
 $lang['customize sub3 title'] = 'API and integrations';
-$lang['customize sub3 description1'] = 'Piwigo provides APIs and connectors to integrate your photo library with other tools and workflows.';
+$lang['customize sub3 description1'] = 'Piwigo provides APIs and connectors to integrate your photo library with other tools and workflows. You can create your own scripts and tools to customize your workflow with Piwigo. The possibilities are endless.';
 $lang['customize sub3 btn'] = 'Learn more about Piwigo API';
 $lang['customize sub3 description2'] = 'Connect Piwigo to applications such as Lightroom, digiKam or Shotwell, publish content to platforms like WordPress, or use external services such as Imagga or Microsoft Azure AI Vision for image analysis.<br>Authentication integrations are also available, for example with Azure Active Directory or Okta SAML, to enable single sign-on (SSO).';
 
 $lang['customize sub4 title'] = 'Advanced customization';
-$lang['customize sub4 description'] = 'Piwigo can be adapted to more advanced needs through custom development.<br>Depending on your setup or plan, the Piwigo team can support you with graphic customization or the development of specific features. These services are also available for organizations using a self-hosted version.<br>If you have technical skills, you can also customize Piwigo yourself using CSS or PHP.';
+$lang['customize sub4 description'] = 'Piwigo can be adapted to more advanced needs through custom development.<br>Depending on your setup or plan, the Piwigo team can support you with graphic customization or the development of specific features. These services are also available for organizations using a self-hosted version.<br>If you have technical skills, you can customize Piwigo yourself using CSS to adapt the look and feel of your theme, or PHP to build your own plugins.';
 $lang['customize sub4 btn'] = 'Explore examples of custom Piwigo projects';
 
 // measure
@@ -135,7 +135,7 @@ $lang['customize sub4 btn'] = 'Explore examples of custom Piwigo projects';
 $lang['measure title'] = 'Understand how your media library is used';
 $lang['measure description'] = 'Get visibility on how your media is accessed and used, so you can make better decisions and stay in control of your library.';
 $lang['measure text 1'] = 'Track usage and activity across your photo library';
-$lang['measure text 2'] = 'Discover the most popular albums and media';
+$lang['measure text 2'] = 'Understand how your users interact with your albums, tags and media';
 $lang['measure text 3'] = 'Connect your own analytics tools if needed';
 
 $lang['measure sub1 title'] = 'Integrated usage analysis';
@@ -154,13 +154,13 @@ $lang['security title'] = 'Stay in control of your data and security';
 $lang['security description'] = 'Whether you use Piwigo Cloud or host Piwigo on your own infrastructure, you stay in control of your data, access and how your media is used.';
 $lang['security text 1'] = 'Choose secure hosting in Europe with Piwigo Cloud or your own infrastructure';
 $lang['security text 2'] = 'Your data stays yours, with full access control';
-$lang['security text 3'] = 'Don\'t risk losing your files with reliable backup strategies';
+$lang['security text 3'] = 'Don\'t risk losing your files with reliable backup strategies (Piwigo Cloud)';
 
 $lang['security sub1 title'] = 'Hosting and infrastructure';
 $lang['security sub1 description'] = 'With Piwigo, you can choose how your data is hosted.<br>Piwigo Cloud is hosted in France on dedicated servers operated directly by the Piwigo team. We rely on OVH, one of Europe’s leading cloud providers, while maintaining full control over the infrastructure. Your data is not shared with other customers at the infrastructure level.<br>For self-hosted deployments, you can install Piwigo on your own infrastructure or with a hosting provider of your choice, depending on your needs and constraints.';
 
-$lang['security sub2 title'] = 'Privacy and confidentiality';
-$lang['security sub2 description'] = 'Your data is not meant to be publicly accessible, and Piwigo is designed to protect it accordingly.<br>We implement multiple security measures to protect Piwigo Cloud against unauthorized access. We are also committed to confidentiality: we do not use third-party cookies and fully comply with GDPR. Your data (photos, email addresses, IP addresses) is never sold, shared or reused outside of Piwigo.';
+$lang['security sub2 title'] = 'Data privacy';
+$lang['security sub2 description'] = 'Your data is not meant to be publicly accessible, and Piwigo is designed to protect it accordingly.<br>We implement multiple security measures to protect Piwigo Cloud against unauthorized access. We are also committed to privacy: we do not use third-party cookies and fully comply with GDPR. Your data (photos, email addresses, IP addresses) is never sold, shared or reused outside of Piwigo.';
 
 $lang['security sub3 title'] = 'Data protection and backups';
 $lang['security sub3 description'] = 'With Piwigo Cloud, your data is backed up regularly and replicated on a standby server located in a separate data center. This ensures service continuity and minimizes the risk of data loss.<br>For self-hosted instances, you can implement your own backup and redundancy strategy based on your infrastructure. If needed, the Piwigo team can also handle setup, configuration and ongoing management, so you don’t have to manage it yourself.';

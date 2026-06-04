@@ -177,7 +177,7 @@
             <h2 class="text-center mb-4">{'porg_home_features_title'|translate}</h2>
           </div>
           <div class="col-12 d-flex justify-content-center flex-wrap mini-menu-buttons" style="gap: 20px;">
-            {include file='template/include/sub_menu_items/mini_menu_item.tpl' is_selected=true label={'Upload & Import'|translate}}
+            {include file='template/include/sub_menu_items/mini_menu_item.tpl' is_selected=true label={'Import & Centralize'|translate}}
             {include file='template/include/sub_menu_items/mini_menu_item.tpl' is_selected=false label={'Organize your media'|translate}}
             {include file='template/include/sub_menu_items/mini_menu_item.tpl' is_selected=false label={'Search & Find'|translate}}
             {include file='template/include/sub_menu_items/mini_menu_item.tpl' is_selected=false label={'Share & Collaborate'|translate}}
@@ -395,7 +395,7 @@
 
           titleItems.forEach((item, index) => {
             const stickyTop = parseFloat(item.style.top) || 0;
-            
+
             if (item.getBoundingClientRect().top <= stickyTop + 1) {
               activeIndex = index;
             }

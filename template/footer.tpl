@@ -28,7 +28,7 @@
             </ul>
             <div class="footer-get-started-actions">
               {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'Footer Button 1 Plan a demo'|translate}
-              href='#'}
+              href="#"}
               {include file='template/include/buttons/button.tpl' variant='menu_btn_green' label={'Contact us'|translate}
               href="{$PORG_ROOT}{$URL.contact}"}
             </div>
@@ -47,19 +47,19 @@
             </button>
             <div id="footerMobileDiscover" class="collapse footer-mobile-collapse" data-bs-parent=".footer-mobile-nav-accordion">
               <ul>
-                <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#upload">{'Upload &amp; Import'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#upload">{'Import & Centralize'|translate}</a></li>
                 <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#organize">{'Organize your media'|translate}</a></li>
-                <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#search">{'Search &amp; Find'|translate}</a></li>
-                <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#share">{'Share &amp; Collaborate'|translate}</a></li>
-                <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#customize">{'Customize &amp; Extend'|translate}</a></li>
-                <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#measure">{'Measure &amp; Monitor'|translate}</a></li>
-                <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#security">{'Security &amp; privacy'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#search">{'Search & Find'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#share">{'Share & Collaborate'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#customize">{'Customize & Extend'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#measure">{'Measure & Monitor'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#security">{'Security & privacy'|translate}</a></li>
               </ul>
               <ul class="mt-3">
                 <li><a class="footer-feature-link footer-menu-item" href="#">{'Piwigo AI'|translate|cat: ' ✨'}</a></li>
-                <li><a class="footer-feature-link footer-menu-item" href="#">{'Mobile apps'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.mobile_applications}">{'Mobile apps'|translate}</a></li>
                 <li><a class="footer-feature-link footer-menu-item" href="#">{'Extensions'|translate}</a></li>
-                <li><a class="footer-feature-link footer-menu-item" href="#">{'API &amp; Integrations'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="#">{'API & Integrations'|translate}</a></li>
                 <li><a class="footer-feature-link footer-menu-item" href="#">{'Live demos'|translate}</a></li>
               </ul>
             </div>
@@ -73,16 +73,16 @@
             </button>
             <div id="footerMobileUseCases" class="collapse footer-mobile-collapse" data-bs-parent=".footer-mobile-nav-accordion">
               <ul>
-                <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.use_cases}#travel-tourism">{'Travel &amp; Tourism'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.use_cases}#travel-tourism">{'Travel & Tourism'|translate}</a></li>
                 <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.use_cases}#public-sector">{'Public Sector'|translate}</a></li>
                 <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.use_cases}#companies">{'Companies'|translate}</a></li>
-                <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.use_cases}#education-research">{'Education &amp; Research'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.use_cases}#education-research">{'Education & Research'|translate}</a></li>
                 <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.use_cases}#nonprofits">{'Nonprofits'|translate}</a></li>
-                <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.use_cases}#photographers-individuals">{'Photographers &amp; Individuals'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.use_cases}#photographers-individuals">{'Photographers & Individuals'|translate}</a></li>
               </ul>
               <div class="footer-users-btn">
                 {include file='template/include/buttons/button.tpl' variant='menu_btn_white' label={'Footer Button 3 Meet our users'|translate}
-                href='{$PORG_ROOT}{$URL.users}'}
+                href="{$PORG_ROOT}{$URL.users}"}
               </div>
             </div>
           </div>
@@ -110,8 +110,8 @@
             <div id="footerMobileSupport" class="collapse footer-mobile-collapse" data-bs-parent=".footer-mobile-nav-accordion">
               <ul>
                 <li><a class="footer-feature-link footer-menu-item" href="#">{'Professional support'|translate}</a></li>
-                <li><a class="footer-feature-link footer-menu-item" href="#">{'Community forum'|translate}</a></li>
-                <li><a class="footer-feature-link footer-menu-item" href="#">{'Documentation'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="https://piwigo.org/forum" target="_blank" rel="noopener noreferrer">{'Community forum'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="{$DOCUMENTATION_URL}" target="_blank" rel="noopener noreferrer">{'Documentation'|translate}</a></li>
                 <li><a class="footer-feature-link footer-menu-item" href="#">{'Installation guides'|translate}</a></li>
                 <li><a class="footer-feature-link footer-menu-item" href="#">{'Developer resources'|translate}</a></li>
               </ul>
@@ -128,8 +128,8 @@
               <ul>
                 <li><a class="footer-feature-link footer-menu-item" href="#">{'Latest news'|translate}</a></li>
                 <li><a class="footer-feature-link footer-menu-item" href="#">{'Blog'|translate}</a></li>
-                <li><a class="footer-feature-link footer-menu-item" href='{$PORG_ROOT}{$URL.newsletters}'>{'Newsletter'|translate}</a></li>
-                <li><a class="footer-feature-link footer-menu-item" href='{$PORG_ROOT}{$URL.product_update}'>{'Product updates'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.newsletters}">{'Newsletter'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.product_update}">{'Product updates'|translate}</a></li>
                 <li><a class="footer-feature-link footer-menu-item" href="#">{'Coding activity'|translate}</a></li>
               </ul>
             </div>
@@ -138,7 +138,7 @@
 
         <div class="footer-subscribe-btn">
           {include file='template/include/buttons/button.tpl' variant='menu_btn_white' label={'Footer Button 4 Subscribe to newsletter'|translate}
-          href='{$PORG_ROOT}{$URL.newsletters}'}
+          href="{$PORG_ROOT}{$URL.newsletters}"}
         </div>
       </div>
 
@@ -146,21 +146,21 @@
       <div class="col-6 col-md-4 col-lg-2 footer-nav-col d-none d-lg-block">
         <h6 class="footer-title">{'Discover Piwigo'|translate}</h6>
         <ul>
-          <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#upload">{'Upload &amp; Import'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#upload">{'Import & Centralize'|translate}</a></li>
           <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#organize">{'Organize your media'|translate}</a></li>
-          <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#search">{'Search &amp; Find'|translate}</a></li>
-          <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#share">{'Share &amp; Collaborate'|translate}</a></li>
-          <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#customize">{'Customize &amp; Extend'|translate}</a></li>
-          <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#measure">{'Measure &amp; Monitor'|translate}</a></li>
-          <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#security">{'Security &amp; privacy'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#search">{'Search & Find'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#share">{'Share & Collaborate'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#customize">{'Customize & Extend'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#measure">{'Measure & Monitor'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#security">{'Security & privacy'|translate}</a></li>
         </ul>
         <ul class="mt-4">
           <li>
             <a class="footer-feature-link footer-menu-item" href="#">{'Piwigo AI'|translate|cat: ' ✨'}</a>
           </li>
-          <li><a class="footer-feature-link footer-menu-item" href="#">{'Mobile apps'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.mobile_applications}">{'Mobile apps'|translate}</a></li>
           <li><a class="footer-feature-link footer-menu-item" href="#">{'Extensions'|translate}</a></li>
-          <li><a class="footer-feature-link footer-menu-item" href="#">{'API &amp; Integrations'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="#">{'API & Integrations'|translate}</a></li>
           <li><a class="footer-feature-link footer-menu-item" href="#">{'Live demos'|translate}</a></li>
         </ul>
       </div>
@@ -169,16 +169,16 @@
       <div class="col-6 col-md-4 col-lg-2 footer-nav-col d-none d-lg-block">
         <h6 class="footer-title">{'Use cases'|translate}</h6>
         <ul>
-          <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.use_cases}#travel-tourism">{'Travel &amp; Tourism'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.use_cases}#travel-tourism">{'Travel & Tourism'|translate}</a></li>
           <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.use_cases}#public-sector">{'Public Sector'|translate}</a></li>
           <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.use_cases}#companies">{'Companies'|translate}</a></li>
-          <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.use_cases}#education-research">{'Education &amp; Research'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.use_cases}#education-research">{'Education & Research'|translate}</a></li>
           <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.use_cases}#nonprofits">{'Nonprofits'|translate}</a></li>
-          <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.use_cases}#photographers-individuals">{'Photographers &amp; Individuals'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.use_cases}#photographers-individuals">{'Photographers & Individuals'|translate}</a></li>
         </ul>
         <div class="footer-users-btn">
           {include file='template/include/buttons/button.tpl' variant='menu_btn_white' label={'Footer Button 3 Meet our users'|translate}
-          href='{$PORG_ROOT}{$URL.users}'}
+          href="{$PORG_ROOT}{$URL.users}"}
         </div>
       </div>
 
@@ -193,8 +193,8 @@
         <h6 class="footer-title mt-4">{'Support'|translate}</h6>
         <ul>
           <li><a class="footer-feature-link footer-menu-item" href="#">{'Professional support'|translate}</a></li>
-          <li><a class="footer-feature-link footer-menu-item" href="#">{'Community forum'|translate}</a></li>
-          <li><a class="footer-feature-link footer-menu-item" href="#">{'Documentation'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="https://piwigo.org/forum" target="_blank" rel="noopener noreferrer">{'Community forum'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="{$DOCUMENTATION_URL}" target="_blank" rel="noopener noreferrer">{'Documentation'|translate}</a></li>
           <li><a class="footer-feature-link footer-menu-item" href="#">{'Installation guides'|translate}</a></li>
           <li><a class="footer-feature-link footer-menu-item" href="#">{'Developer resources'|translate}</a></li>
         </ul>
@@ -206,13 +206,13 @@
         <ul>
           <li><a class="footer-feature-link footer-menu-item" href="#">{'Latest news'|translate}</a></li>
           <li><a class="footer-feature-link footer-menu-item" href="#">{'Blog'|translate}</a></li>
-          <li><a class="footer-feature-link footer-menu-item" href='{$PORG_ROOT}{$URL.newsletters}'>{'Newsletter'|translate}</a></li>
-          <li><a class="footer-feature-link footer-menu-item" href='{$PORG_ROOT}{$URL.product_update}'>{'Product updates'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.newsletters}">{'Newsletter'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.product_update}">{'Product updates'|translate}</a></li>
           <li><a class="footer-feature-link footer-menu-item" href="#">{'Coding activity'|translate}</a></li>
         </ul>
         <div class="footer-subscribe-btn">
           {include file='template/include/buttons/button.tpl' variant='menu_btn_white' label={'Footer Button 4 Subscribe to newsletter'|translate}
-          href='{$PORG_ROOT}{$URL.newsletters}'}
+          href="{$PORG_ROOT}{$URL.newsletters}"}
         </div>
       </div>
 
@@ -231,11 +231,11 @@
           <hr class="footer-divider-mobile">
           <p class="footer-menu-item footer-copyright">Piwigo © 2002 – {$CURRENT_YEAR}</p>
           <ul class="footer-legal-links">
-            <li><a class="footer-legal-link footer-menu-item" href="#">{'Footer legal 1 Privacy Policy'|translate}</a></li>
-            <li><a class="footer-legal-link footer-menu-item" href="#">{'Footer legal 2 Cookie Policy'|translate}</a></li>
-            <li><a class="footer-legal-link footer-menu-item" href="#">{'Footer legal 3 Legal Notice'|translate}</a></li>
-            <li><a class="footer-legal-link footer-menu-item" href="#">{'Footer legal 4 Terms of Use'|translate}</a></li>
-            <li><a class="footer-legal-link footer-menu-item" href="#">{'Footer legal 5 GDPR'|translate}</a></li>
+            <li><a class="footer-legal-link footer-menu-item" href="{$lang.porg_urls.privacy_policy}">{'Footer legal 1 Privacy Policy'|translate}</a></li>
+            <li><a class="footer-legal-link footer-menu-item" href="{$lang.porg_urls.cookie_policy}">{'Footer legal 2 Cookie Policy'|translate}</a></li>
+            <li><a class="footer-legal-link footer-menu-item" href="{$lang.porg_urls.legal_notice}">{'Footer legal 3 Legal Notice'|translate}</a></li>
+            <li><a class="footer-legal-link footer-menu-item" href="{$lang.porg_urls.terms_of_use}">{'Footer legal 4 Terms of Use'|translate}</a></li>
+            <li><a class="footer-legal-link footer-menu-item" href="{$lang.porg_urls.gdpr}">{'Footer legal 5 GDPR'|translate}</a></li>
           </ul>
         </div>
 
@@ -247,11 +247,11 @@
           </div>
 
           <div class="footer-social-icons">
-            <span class="footer-social-icon footer-social-icon-git" aria-hidden="true"><i class="icon-git"></i></span>
-            <span class="footer-social-icon footer-social-icon-linkedin" aria-hidden="true"><i
-                class="icon-linkedin"></i></span>
-            <span class="footer-social-icon footer-social-icon-mailint" aria-hidden="true"><i
-                class="icon-mailint"></i></span>
+            <a href="https://github.com/Piwigo" class="footer-social-icon footer-social-icon-git" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="icon-git" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/company/piwigo" class="footer-social-icon footer-social-icon-linkedin" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i
+                class="icon-linkedin" aria-hidden="true"></i></a>
+            <a href="{$PORG_ROOT}{$URL.contact}" class="footer-social-icon footer-social-icon-mailint" aria-label="Contact"><i
+                class="icon-mailint" aria-hidden="true"></i></a>
           </div>
         </div>
 

@@ -62,7 +62,7 @@
 
       <div class="mobile-menu-footer d-lg-none">
         <div class="mobile-cta-wrapper">
-          {include file='template/include/buttons/button.tpl' variant='cta_primary' label={'Free trial'|translate} href='#'}
+          {include file='template/include/buttons/button.tpl' variant='cta_primary' label={'Free trial'|translate} href="{$PORG_ROOT}{$URL.signup}"}
         </div>
 
         <div class="mobile-footer-row d-flex">
@@ -97,7 +97,7 @@
           {/foreach}
         </div>
       </div>
-      {include file='template/include/buttons/button.tpl' variant='cta_primary' label={'Free trial'|translate} href='#'}
+      {include file='template/include/buttons/button.tpl' variant='cta_primary' label={'Free trial'|translate} href="{$PORG_ROOT}{$URL.signup}"}
     </div>
   </div>
 </nav>

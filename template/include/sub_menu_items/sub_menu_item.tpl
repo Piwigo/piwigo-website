@@ -4,7 +4,7 @@
   </div>
   <div class="content">
     <span class="title">
-      <span class="title-text">Upload & Import</span> <span class="arrow">→</span>
+      <span class="title-text">Import & Centralize</span> <span class="arrow">→</span>
     </span>
     <p class="description">Lorem ipsum dolor sit amet</p>
   </div>

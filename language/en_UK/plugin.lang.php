@@ -28,8 +28,8 @@ $lang['Get started btn2'] = 'Ask for a demo!';
 
 /* product sub menu */
 $lang['Features'] = 'Features';
-$lang['Upload & Import'] = 'Upload & Import';
-$lang['Upload & Import desc'] = 'Lorem ipsum dolor sit amet';
+$lang['Import & Centralize'] = 'Import & Centralize';
+$lang['Import & Centralize desc'] = 'Lorem ipsum dolor sit amet';
 $lang['Organize your media'] = 'Organize your media';
 $lang['Organize your media desc'] = 'Lorem ipsum dolor sit amet';
 $lang['Search & Find'] = 'Search & Find';

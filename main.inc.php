@@ -499,7 +499,8 @@ function porg_load_content()
     ), true),
     'product' => in_array($current_page, array(
       'features',
-      'use_cases'
+      'use_cases',
+      'mobile-applications',
     ), true),
     'users' => in_array($current_page, array(
       'users'
