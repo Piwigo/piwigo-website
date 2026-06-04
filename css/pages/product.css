@@ -1,0 +1,70 @@
+.cloud-features {
+  margin-top: 100px;
+  margin-bottom: 155px;
+}
+
+.cloud-features,
+.selfhosted-features {
+  position: relative;
+  z-index: 1;
+}
+
+.cloud-features::before {
+  content: "";
+  position: absolute;
+  top: 80px;
+  bottom: 350px;
+  left: 80px;
+  right: 80px;
+  background-color: var(--clear_pink);
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.selfhosted-features::before {
+  content: "";
+  position: absolute;
+  top: 80px;
+  bottom: 350px;
+  left: 80px;
+  right: 80px;
+  background-color: var(--clear_orange);
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.facts-card {
+  border-radius: 10px;
+  padding: 25px;
+  background-color: var(--clear);
+  border: none;
+  position: relative;
+  margin: 0 20px 40px;
+}
+
+.facts-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  padding: 1px;
+  background: linear-gradient(91.79deg, #d9d9d9 16.42%, #f7f7f7 98.39%);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.facts-card img {
+  display: block;
+  object-fit: contain;
+  width: calc(100% + 50px);
+  max-width: none;
+  margin: -25px -25px 20px;
+  border-radius: 10px 10px 0 0;
+}
