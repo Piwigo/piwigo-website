@@ -1,5 +1,23 @@
 <?php
 
+$lang['pricing btn cloud description'] = 'Piwigo SaaS, hosting & support';
+$lang['pricing btn selfhosted description'] = 'Piwigo on your own server';
+
+$lang['pricing toggle title cloud'] = 'Cloud';
+$lang['pricing toggle title selfhosted'] = 'Self-hosted';
+$lang['pricing toggle piwigo'] = 'Piwigo';
+
+$lang['product-header-cloud-title'] = 'Run Piwigo <span class="orange-text">without managing</span> infrastructure';
+$lang['product-header-cloud-desc'] = 'Create your account in minutes and start organizing your media library right away. Hosting in Europe, updates, backups and security are fully managed by the Piwigo team.';
+
+$lang['product-header-cloud-btn1'] = 'Start your 30-day free trial';
+$lang['product-header-cloud-btn2'] = 'View pricing';
+
+$lang['product-header-self-hosted-title'] = 'Self-host Piwigo on <span class="orange-text"> your own infrastructure</span>';
+$lang['product-header-self-hosted-desc'] = 'Download the open-source version of Piwigo and run it on the infrastructure of your choice, with full control over your environment and data.';
+
+$lang['product-header-self-hosted-btn1'] = 'Download Piwigo';
+$lang['product-header-self-hosted-btn2'] = 'Installation guides';
 
 
 // CLOUD
