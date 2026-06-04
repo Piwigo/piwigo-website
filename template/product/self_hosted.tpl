@@ -1,0 +1,1 @@
+<p class="product-title">Self-Hosted</p>

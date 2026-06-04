@@ -4,13 +4,13 @@
 			{include
 				file='template/include/sub_menu_items/sub_menu_itemc.tpl'
 				category_type='feature-submenu'
-				title={'Cloud'|translate} description={'Cloud desc'|translate} icon_class='icon-cloud-oneplace' href="#"
+				title={'Cloud'|translate} description={'Cloud desc'|translate} icon_class='icon-cloud-oneplace' href="{$PORG_ROOT}{$URL.product}#cloud"
 			}
 
 			{include
 				file='template/include/sub_menu_items/sub_menu_itemc.tpl'
 				category_type='feature-submenu'
-				title={'Self-hosted'|translate} description={'Self-hosted desc'|translate} icon_class='icon-self-host' href="#"
+				title={'Self-hosted'|translate} description={'Self-hosted desc'|translate} icon_class='icon-self-host' href="{$PORG_ROOT}{$URL.product}#self-hosted"
 			}
 		</div>
 
