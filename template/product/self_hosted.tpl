@@ -60,7 +60,7 @@
             <p class="short-get-started-links-text mb-0 gap-1 d-flex"><i class="icon-dev"></i>{'selfhosted-short-cta-sys'|translate}</p>
           </div>
           <div class="d-flex flex-row short-get-started-links-r2 pb-2 gap-4 justify-content-center">
-            <p class="short-get-started-links-text mb-0 gap-1 d-flex"><i class=""></i>{'selfhosted-short-cta-docker'|translate}</p>
+            <p class="short-get-started-links-text mb-0 gap-1 d-flex"><i class="icon-docker"></i>{'selfhosted-short-cta-docker'|translate}</p>
             <p class="short-get-started-links-text mb-0 gap-1 d-flex"><i class="icon-arrows-cw"></i>{'selfhosted-short-cta-updt'|translate}</p>
           </div>
         </div>
