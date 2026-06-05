@@ -66,6 +66,7 @@
 
 .btn-pricing.inactive {
   background-color: transparent !important;
+  box-shadow: none !important;
 }
 
 .btn-pricing.inactive .icon-wrapper {
