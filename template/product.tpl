@@ -4,8 +4,8 @@
 
 <section class="product-header pt-5">
   <div class="js-content-cloud product-content product-cloud-header d-flex flex-row align-items-center">
-    <div class="product-header-cloud-content-left d-flex flex-column gap-4 pe-5 ps-5">
-      <div class="product-header-cloud-text d-flex flex-column gap-3">
+    <div class="product-header-cloud-content-left col-4 pe-5 ps-5">
+      <div class="product-header-cloud-text d-flex flex-column gap-3 pb-4">
         <h1 class="product-header-cloud-title pb-2">{'product-header-cloud-title'|translate}</h1>
         <p class="product-header-cloud-description">{'product-header-cloud-desc'|translate}</p>
       </div>
@@ -25,15 +25,15 @@
       </div>
     </div>
     <div class="product-header-cloud-content-right">
-      <div class="product-header-cloud-image">
-        <img src="{$PORG_ROOT_URL}images/pricing/selfhosted_deploy.webp" alt="Piwigo Cloud" title="Piwigo Cloud">
+      <div class="product-header-cloud-image img-fluid">
+        <img class="img-fluid" src="{$PORG_ROOT_URL}images/pricing/selfhosted_deploy.webp" alt="Piwigo Cloud" title="Piwigo Cloud">
       </div>
     </div>
   </div>
 
   <div class="js-content-self-hosted product-content product-self-hosted-header d-flex flex-row align-items-center" style="display: none !important;">
-    <div class="product-header-self-hosted-content-left d-flex flex-column gap-4 pe-5 ps-5">
-      <div class="product-header-self-hosted-text d-flex flex-column gap-3">
+    <div class="product-header-self-hosted-content-left col-4 pe-5 ps-5">
+      <div class="product-header-self-hosted-text d-flex flex-column gap-3 pb-4">
         <h1 class="product-header-self-hosted-title pb-2">{'product-header-self-hosted-title'|translate}</h1>
         <p class="product-header-self-hosted-description">{'product-header-self-hosted-desc'|translate}</p>
       </div>
@@ -54,7 +54,7 @@
     </div>
     <div class="product-header-self-hosted-content-right">
       <div class="product-header-self-hosted-image">
-        <img src="{$PORG_ROOT_URL}images/pricing/selfhosted_deploy.webp" alt="Piwigo Cloud" title="Piwigo Cloud">
+        <img class="img-fluid" src="{$PORG_ROOT_URL}images/pricing/selfhosted_deploy.webp" alt="Piwigo Cloud" title="Piwigo Cloud">
       </div>
     </div>
   </div>
