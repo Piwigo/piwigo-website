@@ -41,3 +41,30 @@
     </div>
   </div>
 </section>
+
+<section class="short-get-started-cta py-5 py-md-5">
+  <div class="container short-get-started-container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10 text-center short-get-started-content">
+        <h2 class="short-gs-title mb-0 mb-md-4">{'selfhosted-short-cta-tittle'|translate}</h2>
+        <div class="d-flex justify-content-center pb-4">
+          {include
+            file='template/include/buttons/button.tpl'
+            variant='cta_primary_green'
+            label={'selfhosted-short-cta-btn'|translate} href="{$PORG_ROOT}{$URL.signup}"
+          }
+        </div>
+        <div class="short-get-started-links justify-content-center">
+          <div class="d-flex flex-row short-get-started-links-r1 pb-2 gap-4 justify-content-center">
+            <p class="short-get-started-links-text mb-0 gap-1 d-flex"><i class="icon-doc"></i>{'selfhosted-short-cta-guides'|translate}</p>
+            <p class="short-get-started-links-text mb-0 gap-1 d-flex"><i class="icon-dev"></i>{'selfhosted-short-cta-sys'|translate}</p>
+          </div>
+          <div class="d-flex flex-row short-get-started-links-r2 pb-2 gap-4 justify-content-center">
+            <p class="short-get-started-links-text mb-0 gap-1 d-flex"><i class=""></i>{'selfhosted-short-cta-docker'|translate}</p>
+            <p class="short-get-started-links-text mb-0 gap-1 d-flex"><i class="icon-arrows-cw"></i>{'selfhosted-short-cta-updt'|translate}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

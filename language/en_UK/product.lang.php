@@ -56,4 +56,12 @@ $lang['selfhosted_f3_desc'] = 'Benefit from plugins, themes and a long-standing 
 $lang['selfhosted_f4_title'] = 'Flexible infrastructure';
 $lang['selfhosted_f4_desc'] = 'Choose your own hosting, storage, integrations and security policies according to your requirements.';
 
+
+$lang['selfhosted-short-cta-tittle'] = 'Get started with Piwigo';
+$lang['selfhosted-short-cta-btn'] = 'Download latest version';
+$lang['selfhosted-short-cta-guides'] = 'Installation guides';
+$lang['selfhosted-short-cta-sys'] = 'System requirements';
+$lang['selfhosted-short-cta-docker'] = 'Docker';
+$lang['selfhosted-short-cta-updt'] = 'Product updates & changelog';
+
 ?>
