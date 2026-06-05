@@ -330,7 +330,9 @@ Professional services section
   align-items: center;
   text-align: center;
   transition: transform 0.3s ease;
+  border-radius: 10px;
 }
+
 .professional-services-icon {
   width: 60px;
   height: 60px;
@@ -345,6 +347,7 @@ Professional services section
   background: var(--secondary_orange);
   color: var(--main_orange);
   font-size: 30px !important;
+  border-radius: 4px;
 }
 
 .orange-professional-services-icon img {

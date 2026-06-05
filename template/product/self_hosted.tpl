@@ -78,7 +78,7 @@
   ]
 }
 
-<section id="professional-services-section" class="professional-services-container container gap-5 row justify-content-center text-center">
+<section class="professional-services-container container gap-5 row justify-content-center text-center">
   <div class="professional-services-header text-center col-md-7 justify-content-center text-center">
     <h2 class="professional-services-title text-center">{'selfhosted-professional-title'|translate}</h2>
     <p class="professional-services-desc-pt1 text-center">{'selfhosted-professional-desc1'|translate}</p>
