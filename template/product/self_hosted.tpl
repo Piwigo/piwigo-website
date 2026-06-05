@@ -51,7 +51,7 @@
           {include
             file='template/include/buttons/button.tpl'
             variant='cta_primary_green'
-            label={'selfhosted-short-cta-btn'|translate} href="{$PORG_ROOT}{$URL.signup}"
+            label={'selfhosted-short-cta-btn'|translate} href="{$PORG_ROOT}{$URL.signup}" 
           }
         </div>
         <div class="short-get-started-links justify-content-center">
@@ -66,5 +66,42 @@
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+{assign
+  var='prof_services'
+  value=[
+    [ 'icon' => 'icon-icon28', 'title' => 'selfhosted-professional-serv-tittle1'|translate, 'subtitle' => 'selfhosted-professional-serv-subtittle1'|translate, 'text' => 'selfhosted-professional-serv-text1'|translate, 'list' => [ 'selfhosted-professional-serv-list1-text1'|translate, 'selfhosted-professional-serv-list1-text2'|translate, 'selfhosted-professional-serv-list1-text3'|translate ] ],
+    [ 'icon' => 'icon-dev', 'title' => 'selfhosted-professional-serv-tittle2'|translate, 'subtitle' => 'selfhosted-professional-serv-subtittle2'|translate, 'text' => 'selfhosted-professional-serv-text2'|translate, 'list' => [ 'selfhosted-professional-serv-list2-text1'|translate, 'selfhosted-professional-serv-list2-text2'|translate, 'selfhosted-professional-serv-list2-text3'|translate ] ],
+    [ 'icon' => 'icon-support', 'title' => 'selfhosted-professional-serv-tittle3'|translate, 'subtitle' => 'selfhosted-professional-serv-subtittle3'|translate, 'text' => 'selfhosted-professional-serv-text3'|translate, 'list' => [ 'selfhosted-professional-serv-list3-text1'|translate, 'selfhosted-professional-serv-list3-text2'|translate, 'selfhosted-professional-serv-list3-text3'|translate ] ]
+  ]
+}
+
+<section id="professional-services-section" class="professional-services-container container gap-5 row justify-content-center text-center">
+  <div class="professional-services-header text-center col-md-7 justify-content-center text-center">
+    <h2 class="professional-services-title text-center">{'selfhosted-professional-tittle'|translate}</h2>
+    <p class="professional-services-desc-pt1 text-center">{'selfhosted-professional-desc1'|translate}</p>
+    <p class="professional-services-desc-pt2 text-center pe-5 ps-5">{'selfhosted-professional-desc2'|translate}</p>
+  </div>
+
+  <div class="services-strip">
+    {foreach from=$prof_services item=service}
+      <div class="professional-service-card">
+        <span class="professional-services-icon orange-professional-services-icon">
+          <i class="{$service.icon}"></i>
+        </span>
+        <div class="professional-services-text d-flex flex-column">
+          <h4 class="professional-services-title-text text-center">{$service.title}</h4>
+          <p class="professional-services-subtittle-text text-center orange-text strong-text">{$service.subtitle}</p>
+          <p class="professional-services-text text-start">{$service.text}</p>
+          <ul class="professional-services-list ps-3 mb-0">
+            {foreach from=$service.list item=item_text}
+              <li class="professional-services-text-list"><p class="mb-0">{$item_text}</p></li>
+            {/foreach}
+          </ul>
+        </div>
+      </div>
+    {/foreach}
   </div>
 </section>

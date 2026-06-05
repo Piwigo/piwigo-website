@@ -281,3 +281,102 @@ Short CTA
     line-height: 120%;
   }
 }
+
+
+/******
+Professional services section
+******/
+
+.professional-services-container {
+  margin: 100px auto;
+  /* max-width: 1140px; */
+}
+
+.professional-services-title {
+  font-family: "Sora", sans-serif;
+  font-weight: 800;
+  font-size: 48px;
+  color: var(--dark);
+  margin-bottom: 20px;
+}
+
+.services-strip {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+
+.professional-service-card {
+  background: var(--grey);
+  /* border-radius: 10px; */
+  padding: 40px 30px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.professional-services-icon {
+  width: 60px;
+  height: 60px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+.orange-professional-services-icon {
+  background: var(--secondary_orange);
+  color: var(--main_orange);
+  font-size: 30px !important;
+}
+
+.orange-professional-services-icon img {
+  width: 30px !important;
+  height: 30px !important;
+}
+
+.professional-services-title-text {
+  font-family: "Sora", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--dark);
+  min-height: 50px;
+  margin-bottom: 15px;
+}
+
+.professional-services-text {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--dark);
+  height: unset !important;
+}
+.service-action {
+  width: 100%;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1140px) {
+  .services-strip {
+    display: grid !important;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 15px;
+    /* width: 360px !important;
+        justify-content: center !important;
+        align-items: center !important; */
+    width: unset;
+  }
+
+  /* .professional-service-card {
+    width: 100% !important;
+    max-width: 100% !important;
+  } */
+
+}
