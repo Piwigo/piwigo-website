@@ -46,7 +46,7 @@
   <div class="container short-get-started-container">
     <div class="row justify-content-center">
       <div class="col-12 col-lg-10 text-center short-get-started-content">
-        <h2 class="short-gs-title mb-0 mb-md-4">{'selfhosted-short-cta-tittle'|translate}</h2>
+        <h2 class="short-gs-title mb-0 mb-md-4">{'selfhosted-short-cta-title'|translate}</h2>
         <div class="d-flex justify-content-center pb-4">
           {include
             file='template/include/buttons/button.tpl'
@@ -72,9 +72,9 @@
 {assign
   var='prof_services'
   value=[
-    [ 'icon' => 'icon-icon28', 'title' => 'selfhosted-professional-serv-tittle1'|translate, 'subtitle' => 'selfhosted-professional-serv-subtittle1'|translate, 'text' => 'selfhosted-professional-serv-text1'|translate, 'list' => [ 'selfhosted-professional-serv-list1-text1'|translate, 'selfhosted-professional-serv-list1-text2'|translate, 'selfhosted-professional-serv-list1-text3'|translate ] ],
-    [ 'icon' => 'icon-dev', 'title' => 'selfhosted-professional-serv-tittle2'|translate, 'subtitle' => 'selfhosted-professional-serv-subtittle2'|translate, 'text' => 'selfhosted-professional-serv-text2'|translate, 'list' => [ 'selfhosted-professional-serv-list2-text1'|translate, 'selfhosted-professional-serv-list2-text2'|translate, 'selfhosted-professional-serv-list2-text3'|translate ] ],
-    [ 'icon' => 'icon-support', 'title' => 'selfhosted-professional-serv-tittle3'|translate, 'subtitle' => 'selfhosted-professional-serv-subtittle3'|translate, 'text' => 'selfhosted-professional-serv-text3'|translate, 'list' => [ 'selfhosted-professional-serv-list3-text1'|translate, 'selfhosted-professional-serv-list3-text2'|translate, 'selfhosted-professional-serv-list3-text3'|translate ] ]
+    [ 'icon' => 'icon-icon28', 'title' => 'selfhosted-professional-serv-title1'|translate, 'subtitle' => 'selfhosted-professional-serv-subtitle1'|translate, 'text' => 'selfhosted-professional-serv-text1'|translate, 'list' => [ 'selfhosted-professional-serv-list1-text1'|translate, 'selfhosted-professional-serv-list1-text2'|translate, 'selfhosted-professional-serv-list1-text3'|translate ] ],
+    [ 'icon' => 'icon-dev', 'title' => 'selfhosted-professional-serv-title2'|translate, 'subtitle' => 'selfhosted-professional-serv-subtitle2'|translate, 'text' => 'selfhosted-professional-serv-text2'|translate, 'list' => [ 'selfhosted-professional-serv-list2-text1'|translate, 'selfhosted-professional-serv-list2-text2'|translate, 'selfhosted-professional-serv-list2-text3'|translate ] ],
+    [ 'icon' => 'icon-support', 'title' => 'selfhosted-professional-serv-title3'|translate, 'subtitle' => 'selfhosted-professional-serv-subtitle3'|translate, 'text' => 'selfhosted-professional-serv-text3'|translate, 'list' => [ 'selfhosted-professional-serv-list3-text1'|translate, 'selfhosted-professional-serv-list3-text2'|translate, 'selfhosted-professional-serv-list3-text3'|translate ] ]
   ]
 }
 

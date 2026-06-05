@@ -79,17 +79,17 @@ $lang['selfhosted-short-cta-sys'] = 'System requirements';
 $lang['selfhosted-short-cta-docker'] = 'Docker';
 $lang['selfhosted-short-cta-updt'] = 'Product updates & changelog';
 
-$lang['selfhosted-professional-tittle'] = 'Professional services for self-hosted projects';
+$lang['selfhosted-professional-title'] = 'Professional services for self-hosted projects';
 $lang['selfhosted-professional-desc1'] = 'Self-hosting Piwigo does not mean being on your own.';
 $lang['selfhosted-professional-desc2'] = 'Whether you need expert support, technical assistance or custom developments, the Piwigo team can help you run and evolve your platform.';
 
-$lang['selfhosted-professional-serv-tittle1'] = 'Professional support';
-$lang['selfhosted-professional-serv-tittle2'] = 'Professional services';
-$lang['selfhosted-professional-serv-tittle3'] = 'Technical support & managed services';
+$lang['selfhosted-professional-serv-title1'] = 'Professional support';
+$lang['selfhosted-professional-serv-title2'] = 'Professional services';
+$lang['selfhosted-professional-serv-title3'] = 'Technical support & managed services';
 
-$lang['selfhosted-professional-serv-subtittle1'] = 'Need expert help using your self-hosted Piwigo?';
-$lang['selfhosted-professional-serv-subtittle2'] = 'Need a more tailored setup or advanced customization?';
-$lang['selfhosted-professional-serv-subtittle3'] = 'Need help operating your self-hosted infrastructure?';
+$lang['selfhosted-professional-serv-subtitle1'] = 'Need expert help using your self-hosted Piwigo?';
+$lang['selfhosted-professional-serv-subtitle2'] = 'Need a more tailored setup or advanced customization?';
+$lang['selfhosted-professional-serv-subtitle3'] = 'Need help operating your self-hosted infrastructure?';
 
 $lang['selfhosted-professional-serv-text1'] = 'Get professional support from the Piwigo team for functional and technical questions related to your platform.';
 $lang['selfhosted-professional-serv-text2'] = 'Our team can help you adapt Piwigo to your specific needs.';
