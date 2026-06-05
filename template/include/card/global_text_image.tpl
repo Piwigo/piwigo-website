@@ -7,7 +7,7 @@
           {$title}
         </h2>
       {/if}
-      <p class="feature-description feature-description-desktop mb-4">
+      <p class="feature-description feature-description-desktop mb-4 d-none d-md-block">
         {$desc}
       </p>
       {if $btn_text}

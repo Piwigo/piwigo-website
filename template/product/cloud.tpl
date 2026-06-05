@@ -108,11 +108,11 @@
       <div class="row justify-content-center g-5 px-2 cloud-trusted">
 
         <div class="col-6 mt-0">
-          <h3 class="pink-text text-center ms-3">   {'cloud_trusted_badge1'|translate}</h3>
+          <h3 class="pink-text text-center ms-3"> {'cloud_trusted_badge1'|translate}</h3>
         </div>
 
         <div class="col-6 mt-0">
-          <h3 class="pink-text text-center me-3">{'cloud_trusted_badge2'|translate}   </h3>
+          <h3 class="pink-text text-center me-3">{'cloud_trusted_badge2'|translate} </h3>
         </div>
 
       </div>
@@ -148,6 +148,98 @@
       href="{$PORG_ROOT}{$URL.users}"
       label={'cloud_trusted_btn'|translate}
       }
+    </div>
+  </div>
+</section>
+
+
+<section class="container container-transparent">
+  <div class="row text-center features-content justify-content-center">
+    <div class="col-md-10 text-center justify-content-center row">
+      <div class="col-md-6">
+        <h2 class="mb-4">{'cloud_transparent_title'|translate}</h2>
+        <p class="">{'cloud_transparent_desc'|translate}</p>
+      </div>
+      <div class="col-md-6">
+        <div class="checklist mb-3 d-grid row-gap-4 ms-md-4">
+          <div class="checklist-item d-flex align-items-center">
+            <div class="small-check-icon">
+              <i class="icon-check-1"></i>
+            </div>
+            <div class="check-text">
+              <p class="mb-0 list-p">{'cloud_transparent_li1'|translate}</p>
+            </div>
+          </div>
+          <div class="checklist-item d-flex align-items-center">
+            <div class="small-check-icon">
+              <i class="icon-check-1"></i>
+            </div>
+            <div class="check-text">
+              <p class="mb-0 list-p">{'cloud_transparent_li2'|translate}</p>
+            </div>
+          </div>
+          <div class="checklist-item d-flex align-items-center">
+            <div class="small-check-icon">
+              <i class="icon-check-1"></i>
+            </div>
+            <div class="check-text">
+              <p class="mb-0 list-p">{'cloud_transparent_li3'|translate}</p>
+            </div>
+          </div>
+          <div class="checklist-item d-flex align-items-center">
+            <div class="small-check-icon">
+              <i class="icon-check-1"></i>
+            </div>
+            <div class="check-text">
+              <p class="mb-0 list-p">{'cloud_transparent_li4'|translate}</p>
+            </div>
+          </div>
+          <div class="checklist-item d-flex align-items-center">
+            <div class="small-check-icon">
+              <i class="icon-check-1"></i>
+            </div>
+            <div class="check-text">
+              <p class="mb-0 list-p">{'cloud_transparent_li5'|translate}</p>
+            </div>
+          </div>
+          <div class="btn-container mt-3 text-start">
+            {include
+            file='template/include/buttons/button.tpl'
+            variant='menu_btn_green'
+            href="{$PORG_ROOT}{$URL.pricing}"
+            label={'cloud_transparent_btn'|translate}
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container container-nolock">
+  <div class="row text-center features-content justify-content-center">
+    <div class="col-xxl-9 col-md-10 text-center justify-content-center row">
+      {include file="template/include/card/global_text_image.tpl" reverse=true title={'cloud_nolock_title'|translate} desc={'cloud_nolock_desc'|translate} image="{$PORG_ROOT_URL}images/features/security/hostingeu.webp" }
+    </div>
+  </div>
+</section>
+
+
+<section class="container container-start">
+  <div class="row text-center features-content justify-content-center">
+    <div class="col-md-10 text-center justify-content-center row start-card">
+      <div class="col-md-8 mx-md-0">
+        <h2 class="mb-0 text-center">{'cloud_start_title'|translate}</h2>
+        <p class="mb-4 text-center">{'cloud_start_desc'|translate}</p>
+        <div class="btn-container mt-3 text-center">
+          {include
+            file='template/include/buttons/button.tpl'
+            variant='menu_btn_green'
+            href="{$PORG_ROOT}{$URL.signup}"
+            label={'cloud_start_btn'|translate}
+          }
+        </div>
+      </div>
     </div>
   </div>
 </section>

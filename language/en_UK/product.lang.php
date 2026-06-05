@@ -45,6 +45,21 @@ $lang['cloud_trusted_badge1'] = '+5800 customers';
 $lang['cloud_trusted_badge2'] = '+65 countries';
 $lang['cloud_trusted_btn'] = 'Discover our clients';
 
+$lang['cloud_transparent_title'] = 'Transparent pricing without surprises';
+$lang['cloud_transparent_desc'] = 'Piwigo Cloud offers a full-featured DAM solution with public and predictable pricing, designed to stay simple as your organization grows.';
+$lang['cloud_transparent_li1'] = 'Same pricing for every customer';
+$lang['cloud_transparent_li2'] = 'Pricing locked over time once you subscribe';
+$lang['cloud_transparent_li3'] = 'No onboarding fees or hidden costs';
+$lang['cloud_transparent_li4'] = 'Hosting, maintenance and support included';
+$lang['cloud_transparent_li5'] = 'Free data export at any time';
+$lang['cloud_transparent_btn'] = 'Compare plans';
+
+$lang['cloud_nolock_title'] = 'No lock-in.';
+$lang['cloud_nolock_desc'] = 'Unlike many SaaS platforms, Piwigo does not lock your media into a closed ecosystem.<br><br>You can export your photos, videos and metadata free of charge at any time, whether you want to move to a self-hosted Piwigo installation or migrate to another solution.<br><br><span class="pink-text strong-text">Because Piwigo is open source, you remain fully in control of your data and hosting choices.</span>';
+
+$lang['cloud_start_title'] = 'Start your free trial';
+$lang['cloud_start_desc'] = 'Try Piwigo Cloud free for 30 days. No credit card required.';
+$lang['cloud_start_btn'] = 'Create my account';
 
 // SELF-HOSTED
 $lang['selfhosted_f1_title'] = 'Full control';
@@ -57,7 +72,7 @@ $lang['selfhosted_f4_title'] = 'Flexible infrastructure';
 $lang['selfhosted_f4_desc'] = 'Choose your own hosting, storage, integrations and security policies according to your requirements.';
 
 
-$lang['selfhosted-short-cta-tittle'] = 'Get started with Piwigo';
+$lang['selfhosted-short-cta-title'] = 'Get started with Piwigo';
 $lang['selfhosted-short-cta-btn'] = 'Download latest version';
 $lang['selfhosted-short-cta-guides'] = 'Installation guides';
 $lang['selfhosted-short-cta-sys'] = 'System requirements';

@@ -70,19 +70,31 @@
   border-radius: 10px 10px 0 0;
 }
 
-
-.product-cloud-header, .product-self-hosted-header {
+.product-cloud-header,
+.product-self-hosted-header {
   padding-right: 90px;
   padding-left: 90px;
-  gap: 15%;
 }
 
-.product-header .menu-btn-blue, .product-header .menu-btn-green{
+.product-header .menu-btn-blue,
+.product-header .menu-btn-green {
   min-width: 187px;
 }
 
-.product-header{
+.product-header {
   padding-bottom: 150px;
+}
+
+@media (max-width: 991px) {
+  .product-cloud-header,
+  .product-self-hosted-header {
+    padding-right: 15px;
+    padding-left: 15px;
+    gap: 2rem;
+  }
+  .product-header {
+    padding-bottom: 60px;
+  }
 }
 
 .small-check-icon {
@@ -150,6 +162,7 @@
 .logos-marquee-track * {
   pointer-events: none;
 }
+
 .logos-marquee-item {
   flex-shrink: 0;
   display: flex;
@@ -161,7 +174,7 @@
   border-radius: 10px;
   background: var(--grey);
   box-sizing: border-box;
-  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.2);  
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.2);
 }
 
 .logos-marquee-item img {
@@ -194,6 +207,11 @@
     max-height: 100%;
     object-fit: contain;
   }
+
+  .cloud-trusted::before {
+    left: 0px;
+    right: 0px;
+  }
 }
 
 .carousel-container {
@@ -206,10 +224,6 @@
   padding-right: 40px;
 }
 
-
-/******
-Short CTA
-******/
 .short-get-started-container {
   width: 100%;
   max-width: 940px;
@@ -244,12 +258,11 @@ Short CTA
   min-width: 188px;
 }
 
-.short-get-started-links-text{
-  font-family: 'Kanit', sans-serif;
+.short-get-started-links-text {
+  font-family: "Kanit", sans-serif;
   font-size: 14px;
   color: var(--dark_text);
 }
-
 
 @media (max-width: 768px) {
   .short-get-started-cta {
@@ -379,4 +392,19 @@ Professional services section
     max-width: 100% !important;
   } */
 
+}
+
+.container-transparent,
+.container-nolock {
+  margin-bottom: 155px;
+}
+
+.container-start {
+  margin-bottom: 100px;
+}
+
+.start-card {
+  border-radius: 10px;
+  padding: 50px;
+  background-color: var(--grey);
 }
