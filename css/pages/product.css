@@ -1,8 +1,9 @@
-.cloud-features {
+.container-features {
   margin-top: 100px;
   margin-bottom: 155px;
 }
 
+.cloud-trusted,
 .cloud-features,
 .selfhosted-features {
   position: relative;
@@ -76,10 +77,131 @@
   gap: 15%;
 }
 
-.menu-btn-blue, .menu-btn-green{
+.product-header .menu-btn-blue, .product-header .menu-btn-green{
   min-width: 187px;
 }
 
 .product-header{
   padding-bottom: 150px;
+}
+
+.small-check-icon {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
+  border-radius: 2px;
+  background: var(--secondary_flash_green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.small-check-icon .icon-check-1 {
+  color: var(--accent_green);
+  font-size: 10px;
+}
+
+.container-infrastructure {
+  margin-bottom: 155px;
+}
+
+.cloud-trusted::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  bottom: -120px;
+  left: 80px;
+  right: 80px;
+  background-color: var(--clear_pink);
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.cloud-trusted {
+  margin-top: 110px;
+}
+
+.logos-marquee-wrapper {
+  overflow: visible;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.logos-marquee-inner {
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.logos-marquee-track {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  animation: marquee 500s linear infinite;
+  will-change: transform;
+}
+
+.logos-marquee-wrapper:hover .logos-marquee-track {
+  animation-play-state: paused;
+}
+
+.logos-marquee-track * {
+  pointer-events: none;
+}
+.logos-marquee-item {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 225px;
+  height: 121px;
+  padding: 18px 22px;
+  border-radius: 10px;
+  background: var(--grey);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.2);  
+}
+
+.logos-marquee-item img {
+  display: block;
+  width: 100%;
+  max-height: 100px;
+  object-fit: contain;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .logos-marquee-item {
+    width: 150px;
+    height: 80px;
+    padding: 10px;
+  }
+
+  .logos-marquee-item img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+}
+
+.carousel-container {
+  margin-top: 40px;
+  margin-bottom: 155px;
+}
+
+.btn-container .menu-btn-green {
+  padding-left: 40px;
+  padding-right: 40px;
 }

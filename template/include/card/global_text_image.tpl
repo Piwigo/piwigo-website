@@ -2,9 +2,11 @@
 
   <div class="col-12 col-md-6 {if $reverse}order-md-last{/if}">
     <div class="feature-copy">
-      <h2 class="feature-title mb-4">
-        {$title}
-      </h2>
+      {if $title}
+        <h2 class="feature-title mb-4">
+          {$title}
+        </h2>
+      {/if}
       <p class="feature-description feature-description-desktop mb-4">
         {$desc}
       </p>
@@ -22,7 +24,7 @@
 
   <div class="col-12 col-md-6" style="padding-right: 0; padding-left: 0;">
     <div class="feature-image-container {if $imageoffbeat}pe-5 ps-5{/if}" style="margin: 0 20px; {if $reverse}justify-content: flex-end;{/if}">
-      <img src="{$image}" class="feature-image" alt="{$title|escape}">
+      <img src="{$image}" class="feature-image img-fluid" alt="{$title|escape}">
     </div>
   </div>
 

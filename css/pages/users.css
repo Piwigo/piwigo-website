@@ -192,6 +192,7 @@
 
 .clear-btn {
   font-weight: 400 !important;
+  cursor: pointer;
 }
 
 .filter-section {

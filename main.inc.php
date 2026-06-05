@@ -581,6 +581,10 @@ function get_ressources($ressources_type)
       "cache_path" => $conf['data_location'] . PORG_ID . '/porg_users_testimonials.cache.php',
       "album_id" => conf_get_param('user_testimonials_cat_id', 33)
     ),
+    "pcomlogos" => array(
+      "cache_path" => $conf['data_location'] . PORG_ID . '/pcom_users_logos.cache.php',
+      "album_id" => conf_get_param('pcom_logos_cat_id', 10)
+    ),
   );
 
   $cache_path = $ressources_types[$ressources_type]["cache_path"];
