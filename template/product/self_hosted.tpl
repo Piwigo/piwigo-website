@@ -98,7 +98,7 @@
           <ul class="professional-services-list ps-3 mb-0">
             {foreach from=$service.list item=item_text}
               <li class="professional-services-text-list">
-                <p class="mb-0">{$item_text}</p>
+                <p class="mb-0 p">{$item_text}</p>
               </li>
             {/foreach}
           </ul>
@@ -111,7 +111,42 @@
     {include
       file='template/include/buttons/button.tpl'
       variant='cta_primary_green'
-      label={'selfhosted-professional-serv-btn'|translate} href="{$PORG_ROOT}{$URL.pricing}&plan=self_hosted"
+      label={'selfhosted-professional-serv-btn'|translate} href="{$PORG_ROOT}{$URL.pricing}&plan=self_hosted" 
     }
+  </div>
+</section>
+
+<section class="container container-ecosystem py-5">
+  <div class="row features-content justify-content-center align-items-center">
+    <div class="col-12 col-xl-11 row gap-lg-5 justify-content-between align-items-center">
+      <div class="ecosystem-content-left col-12 col-lg-5 text-center text-lg-start order-1">
+        <div class="ecosystem-text d-flex flex-column gap-3 pb-4">
+          <h2 class="ecosystem-title fw-bold">{'selfhosted-ecosystem-title'|translate}</h2>
+          <p class="ecosystem-description text-muted">{'selfhosted-ecosystem-desc'|translate}</p>
+        </div>
+        
+        <div class="ecosystem-btn d-flex flex-column justify-content-center justify-content-lg-start gap-3">
+          {include
+            file='template/include/buttons/button.tpl'
+            variant='menu_btn_green'
+            href="#"
+            label={'selfhosted-ecosystem-btn1'|translate} 
+          }
+          {include
+            file='template/include/buttons/button.tpl'
+            variant='menu_btn_blue' 
+            href="#"
+            label={'selfhosted-ecosystem-btn2'|translate} 
+          }
+        </div>
+      </div>
+      
+      <div class="ecosystem-content-right col-12 col-lg-6 text-center order-2 mt-4 mt-lg-0">
+        <div class="ecosystem-image">
+          <img class="img-fluid" src="{$PORG_ROOT_URL}images/pricing/selfhosted_deploy.webp" alt="Piwigo Ecosystem" title="Piwigo Ecosystem">
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
