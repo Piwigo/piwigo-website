@@ -92,4 +92,6 @@ $lang['selfhosted-professional-serv-list3-text1'] = 'Installation & configuratio
 $lang['selfhosted-professional-serv-list3-text2'] = 'Update support';
 $lang['selfhosted-professional-serv-list3-text3'] = 'Full server management';
 
+$lang['selfhosted-professional-serv-btn'] = 'View self-hosted offers';
+
 ?>

@@ -80,7 +80,7 @@
 
 <section id="professional-services-section" class="professional-services-container container gap-5 row justify-content-center text-center">
   <div class="professional-services-header text-center col-md-7 justify-content-center text-center">
-    <h2 class="professional-services-title text-center">{'selfhosted-professional-tittle'|translate}</h2>
+    <h2 class="professional-services-title text-center">{'selfhosted-professional-title'|translate}</h2>
     <p class="professional-services-desc-pt1 text-center">{'selfhosted-professional-desc1'|translate}</p>
     <p class="professional-services-desc-pt2 text-center pe-5 ps-5">{'selfhosted-professional-desc2'|translate}</p>
   </div>
@@ -97,11 +97,21 @@
           <p class="professional-services-text text-start">{$service.text}</p>
           <ul class="professional-services-list ps-3 mb-0">
             {foreach from=$service.list item=item_text}
-              <li class="professional-services-text-list"><p class="mb-0">{$item_text}</p></li>
+              <li class="professional-services-text-list">
+                <p class="mb-0">{$item_text}</p>
+              </li>
             {/foreach}
           </ul>
         </div>
       </div>
     {/foreach}
+  </div>
+
+  <div class="d-flex justify-content-center pb-4">
+    {include
+      file='template/include/buttons/button.tpl'
+      variant='cta_primary_green'
+      label={'selfhosted-professional-serv-btn'|translate} href="{$PORG_ROOT}{$URL.pricing}&plan=self_hosted"
+    }
   </div>
 </section>
