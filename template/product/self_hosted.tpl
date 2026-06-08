@@ -51,7 +51,7 @@
           {include
             file='template/include/buttons/button.tpl'
             variant='cta_primary_green'
-            label={'selfhosted-short-cta-btn'|translate} href="{$PORG_ROOT}{$URL.signup}" 
+            label={'selfhosted-short-cta-btn'|translate} href="{$PORG_ROOT}{$URL.signup}"
           }
         </div>
         <div class="short-get-started-links justify-content-center">
@@ -111,7 +111,7 @@
     {include
       file='template/include/buttons/button.tpl'
       variant='cta_primary_green'
-      label={'selfhosted-professional-serv-btn'|translate} href="{$PORG_ROOT}{$URL.pricing}&plan=self_hosted" 
+      label={'selfhosted-professional-serv-btn'|translate} href="{$PORG_ROOT}{$URL.pricing}&plan=self_hosted"
     }
   </div>
 </section>
@@ -119,34 +119,51 @@
 <section class="container container-ecosystem py-5">
   <div class="row features-content justify-content-center align-items-center">
     <div class="col-12 col-xl-11 row gap-lg-5 justify-content-between align-items-center">
+
       <div class="ecosystem-content-left col-12 col-lg-5 text-center text-lg-start order-1">
         <div class="ecosystem-text d-flex flex-column gap-3 pb-4">
           <h2 class="ecosystem-title fw-bold">{'selfhosted-ecosystem-title'|translate}</h2>
           <p class="ecosystem-description text-muted">{'selfhosted-ecosystem-desc'|translate}</p>
         </div>
-        
-        <div class="ecosystem-btn d-flex flex-column justify-content-center justify-content-lg-start gap-3">
+
+        <div class="ecosystem-btn d-flex flex-column justify-content-center justify-content-lg-start align-items-center align-items-lg-start gap-3">
           {include
             file='template/include/buttons/button.tpl'
             variant='menu_btn_green'
             href="#"
-            label={'selfhosted-ecosystem-btn1'|translate} 
+            label={'selfhosted-ecosystem-btn1'|translate}
           }
           {include
             file='template/include/buttons/button.tpl'
             variant='menu_btn_blue' 
             href="#"
-            label={'selfhosted-ecosystem-btn2'|translate} 
+            label={'selfhosted-ecosystem-btn2'|translate}
           }
         </div>
       </div>
-      
+
       <div class="ecosystem-content-right col-12 col-lg-6 text-center order-2 mt-4 mt-lg-0">
         <div class="ecosystem-image">
           <img class="img-fluid" src="{$PORG_ROOT_URL}images/pricing/selfhosted_deploy.webp" alt="Piwigo Ecosystem" title="Piwigo Ecosystem">
         </div>
       </div>
 
+
+      <div class="col-12 text-center community-card order-3 mt-5">
+        <div class="col-md-6 mx-auto">
+          <h3 class="text-center mb-4">{'selfhosted-ecosystem-community-title'|translate}</h3>
+
+          <div class="short-get-started-links justify-content-center">
+            <div class="d-flex flex-row flex-wrap short-get-started-links-r1 pb-2 gap-4 row-gap-2 justify-content-center">
+              <p class="short-get-started-links-text mb-0 gap-1 d-flex"><i class="icon-latest-news"></i>{'selfhosted-ecosystem-community-badge1'|translate}</p>
+              <p class="short-get-started-links-text mb-0 gap-1 d-flex"><i class="icon-git"></i>{'selfhosted-ecosystem-community-badge2'|translate}</p>
+              <p class="short-get-started-links-text mb-0 gap-1 d-flex"><i class="icon-contribute"></i>{'selfhosted-ecosystem-community-badge3'|translate}</p>
+              <p class="short-get-started-links-text mb-0 gap-1 d-flex"><i class="icon-extension"></i>{'selfhosted-ecosystem-community-badge4'|translate}</p>
+              <p class="short-get-started-links-text mb-0 gap-1 d-flex"><i class="icon-dev"></i>{'selfhosted-ecosystem-community-badge5'|translate}</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>

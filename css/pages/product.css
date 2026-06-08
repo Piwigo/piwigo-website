@@ -411,3 +411,18 @@ Professional services section
   padding: 50px;
   background-color: var(--grey);
 }
+
+.container-ecosystem .btn-menu {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.container-ecosystem {
+  margin-bottom: 130px;
+}
+
+.container-ecosystem .community-card {
+  background: var(--grey);
+  border-radius: 10px;
+  padding: 44px;
+}
