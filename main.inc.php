@@ -495,7 +495,8 @@ function porg_load_content()
 
   $nav_selected = array(
     'get_started' => in_array($current_page, array(
-      'pricing'
+      'pricing',
+      'product'
     ), true),
     'product' => in_array($current_page, array(
       'features',
