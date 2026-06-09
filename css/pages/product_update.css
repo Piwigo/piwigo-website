@@ -219,6 +219,7 @@
   margin-bottom: 20px;
   border-radius: 20px;
   padding: 20px 25px;
+  cursor: pointer;
 }
 
 .commits-card {
