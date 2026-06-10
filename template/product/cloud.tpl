@@ -5,7 +5,7 @@
 
         <div class="col-xl-4">
           <div class="facts-card">
-            <img src="{$PORG_ROOT_URL}images\product_updates\12\piwigo12-features-matrix.webp" class="img-fluid mb-3" alt="Piwigo Cloud feature 1">
+            <img src="{$PORG_ROOT_URL}images\product\cloud1.webp" class="img-fluid mb-3" alt="Piwigo Cloud feature 1">
             <h2 class="h2-top-page text-center">{'cloud_f1_title'|translate}</h2>
             <p class="text-center">{'cloud_f1_desc'|translate}</p>
           </div>
@@ -13,7 +13,7 @@
 
         <div class="col-xl-4">
           <div class="facts-card">
-            <img src="{$PORG_ROOT_URL}images\product_updates\12\piwigo12-features-matrix.webp" class="img-fluid mb-3" alt="Piwigo Cloud feature 2">
+            <img src="{$PORG_ROOT_URL}images\product\cloud2.webp" class="img-fluid mb-3" alt="Piwigo Cloud feature 2">
             <h2 class="h2-top-page text-center">{'cloud_f2_title'|translate}</h2>
             <p class="text-center">{'cloud_f2_desc'|translate}</p>
           </div>
@@ -21,7 +21,7 @@
 
         <div class="col-xl-4">
           <div class="facts-card">
-            <img src="{$PORG_ROOT_URL}images\product_updates\12\piwigo12-features-matrix.webp" class="img-fluid mb-3" alt="Piwigo Cloud feature 3">
+            <img src="{$PORG_ROOT_URL}images\product\cloud3.webp" class="img-fluid mb-3" alt="Piwigo Cloud feature 3">
             <h2 class="h2-top-page text-center">{'cloud_f3_title'|translate}</h2>
             <p class="text-center">{'cloud_f3_desc'|translate}</p>
           </div>
@@ -29,7 +29,7 @@
 
         <div class="col-xl-4">
           <div class="facts-card">
-            <img src="{$PORG_ROOT_URL}images\product_updates\12\piwigo12-features-matrix.webp" class="img-fluid mb-3" alt="Piwigo Cloud feature 4">
+            <img src="{$PORG_ROOT_URL}images\product\cloud4.webp" class="img-fluid mb-3" alt="Piwigo Cloud feature 4">
             <h2 class="h2-top-page text-center">{'cloud_f4_title'|translate}</h2>
             <p class="text-center">{'cloud_f4_desc'|translate}</p>
           </div>
@@ -37,7 +37,7 @@
 
         <div class="col-xl-4">
           <div class="facts-card">
-            <img src="{$PORG_ROOT_URL}images\product_updates\12\piwigo12-features-matrix.webp" class="img-fluid mb-3" alt="Piwigo Cloud feature 5">
+            <img src="{$PORG_ROOT_URL}images\product\cloud5.webp" class="img-fluid mb-3" alt="Piwigo Cloud feature 5">
             <h2 class="h2-top-page text-center">{'cloud_f5_title'|translate}</h2>
             <p class="text-center">{'cloud_f5_desc'|translate}</p>
           </div>
@@ -219,7 +219,7 @@
 <section class="container container-nolock">
   <div class="row text-center features-content justify-content-center">
     <div class="col-xxl-9 col-md-10 text-center justify-content-center row">
-      {include file="template/include/card/global_text_image.tpl" reverse=true title={'cloud_nolock_title'|translate} desc={'cloud_nolock_desc'|translate} image="{$PORG_ROOT_URL}images/features/security/hostingeu.webp" }
+      {include file="template/include/card/global_text_image.tpl" reverse=true title={'cloud_nolock_title'|translate} desc={'cloud_nolock_desc'|translate} image="{$PORG_ROOT_URL}images/product/cloud6.webp" }
     </div>
   </div>
 </section>

@@ -63,11 +63,13 @@
 
 .facts-card img {
   display: block;
-  object-fit: contain;
+  object-fit: cover;
   width: calc(100% + 50px);
   max-width: none;
   margin: -25px -25px 20px;
   border-radius: 10px 10px 0 0;
+  max-height: 200px;
+  min-height: 200px;
 }
 
 .product-cloud-header,

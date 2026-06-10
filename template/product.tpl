@@ -26,7 +26,7 @@
     </div>
     <div class="product-header-cloud-content-right col-12 col-lg-6 text-center order-1 order-lg-2 mb-4 mb-lg-0">
       <div class="product-header-cloud-image img-fluid">
-        <img class="img-fluid" src="{$PORG_ROOT_URL}images/pricing/selfhosted_deploy.webp" alt="Piwigo Cloud" title="Piwigo Cloud">
+        <img class="img-fluid" src="{$PORG_ROOT_URL}images/product/cloud0.webp" alt="Piwigo Cloud" title="Piwigo Cloud">
       </div>
     </div>
   </div>
@@ -54,7 +54,7 @@
     </div>
     <div class="product-header-self-hosted-content-right col-12 col-lg-6 text-center order-1 order-lg-2 mb-4 mb-lg-0">
       <div class="product-header-self-hosted-image">
-        <img class="img-fluid" src="{$PORG_ROOT_URL}images/pricing/selfhosted_deploy.webp" alt="Piwigo Cloud" title="Piwigo Cloud">
+        <img class="img-fluid" src="{$PORG_ROOT_URL}images/product/self0.webp" alt="Piwigo Self-Hosted" title="Piwigo Self-Hosted">
       </div>
     </div>
   </div>
