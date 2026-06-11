@@ -155,6 +155,11 @@
 }
 
 @media (max-width: 768px) {
+
+  section[class^="contact-"] {
+    margin-top: 100px !important;
+    margin-bottom: 100px !important;
+  }
   .contact-form-split-copy h1 {
     margin-bottom: 20px;
   }
@@ -196,11 +201,7 @@
   }
 
   .contact-content {
-    padding: 90px 0;
-  }
-
-  p .orange-text {
-    color: var(--dark) !important;
+    padding: 0;
   }
 
   /* carousel */
