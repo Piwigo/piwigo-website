@@ -20,11 +20,9 @@ $lang['porg_contact_green_btn'] = 'Visit forum';
 $lang['porg_contact_form_title'] = 'Send us a message';
 
 $lang['Topic'] = 'Topic';
-$lang['Press inquiry'] = 'Press inquiry';
-$lang['Partnership'] = 'Partnership';
-$lang['Security report'] = 'Security report';
-$lang['Beta testing'] = 'Beta testing';
-$lang['Testimonials'] = 'Testimonials';
+$lang['Sales inquiry'] = 'Sales inquiry';
+$lang['Report a security issue'] = 'Report a security issue';
+$lang['Other'] = 'Other';
 
 $lang['Trusted by organizations worldwide'] = 'Trusted by organizations worldwide';
 ?>

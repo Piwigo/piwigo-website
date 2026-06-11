@@ -96,11 +96,9 @@ function ws_porg_contact_send($params, &$service)
 
   /* TOPIC */
   $allowed_topics = array(
-    'Testimonials',
-    'Press inquiry',
-    'Partnership',
-    'Security report',
-    'Beta testing'
+    'Sales inquiry',
+    'Report a security issue',
+    'Other'
   );
 
   $topic_name = 'Unknown';
