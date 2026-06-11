@@ -404,6 +404,8 @@
           titleItems.forEach((item, index) => {
             const h3 = item.querySelector('h3');
             if (h3) h3.classList.toggle('dark-text', index !== activeIndex);
+            const p = item.querySelector('p');
+            if (p) p.classList.toggle('dark-text', index !== activeIndex);
           });
         }
 
