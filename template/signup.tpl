@@ -44,7 +44,7 @@
               <div class="input-group piwigo-input-group">
                 <input type="text" class="form-control" id="form-user" name="username" aria-describedby="userHelp" placeholder=" " value="{$username|default:''}">
                 <span class="piwigo-url-placeholder p-boxed">{'signup_form_username'|translate}</span>
-                <span class="piwigo-url-example-placeholder p-boxed">{'Piwigo url example'|translate}</span>
+                <span class="piwigo-url-example-placeholder p-boxed">{'Piwigo name example'|translate}</span>
                 <span class="little-piwigo-url-placeholder form-input">{'signup_form_username'|translate}<span id="userError" class="error-username-placeholder pink-text" style="display:none;">{'signup_form_username_error'|translate}</span><span id="userHelp" class="help-username-placeholder pink-text" style="display:none;">{'signup_form_username_help'|translate}</span></span>
                 <span class="input-group-text bg-white border-start-0">{'signup_piwigo'|translate}</span>
               </div>
@@ -61,10 +61,6 @@
                 <div class="passHelp">
                   <i id="passHelp" class="icon-warning" aria-hidden="true" style="display:none;"></i>
                   <p id="passHelpLength" class="pink-text small mb-0" style="display:none;">{'signup_form_password_help1'|translate}</p>
-                </div>
-                <div class="passHelp2">
-                  <i id="passHelp2" class="icon-warning small mb-0" aria-hidden="true" style="display:none;"></i>
-                  <p id="passHelpSpecs" class="pink-text small mb-0" style="display:none;">{'signup_form_password_help2'|translate}</p>
                 </div>
               </div>
             </div>

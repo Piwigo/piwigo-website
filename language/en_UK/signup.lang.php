@@ -12,8 +12,7 @@ $lang['signup_form_username_help'] = 'Must be at least 4 characters';
 $lang['signup_piwigo'] = '.piwigo.com';
 
 $lang['signup_form_password'] = 'Password<span class="orange-text">*</span>';
-$lang['signup_form_password_help1'] = '8 characters min';
-$lang['signup_form_password_help2'] = 'Number & symbol';
+$lang['signup_form_password_help1'] = '6 characters min';
 
 $lang['signup_check_mail'] = 'Receive a copy by email';
 $lang['signup_check_RPG'] = 'I agree to the <a target="_blank" href="%s" class="orange-text text-decoration-none">Terms of Use</a> and <a target="_blank" href="%s" class="orange-text text-decoration-none">Privacy Policy</a><span class="orange-text" >*</span>';
