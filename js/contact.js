@@ -9,6 +9,7 @@ $(document).ready(function () {
   const emailCheckIcon = jQuery('#emailCheckIcon');
 
   const messageInput = jQuery('#form-message');
+  const topicInput = jQuery('#form-topic');
   const errorContainer = jQuery('#error');
   const errorMessage = jQuery('.error_message');
   let errorTimeoutId = null;
@@ -92,6 +93,10 @@ $(document).ready(function () {
     checkFormValidity();
   });
 
+  jQuery(topicInput).on('change', function () {
+    checkFormValidity();
+  });
+
   // URL validator
   function isValidDomain(url) {
     const pattern = /^(https?:\/\/)?([a-z0-9-]+\.)+[a-z]{2,}(\/.*)?$/i;
@@ -110,10 +115,11 @@ $(document).ready(function () {
     const urlValid = jQuery(urlInput).val().trim() === '' || isValidDomain(jQuery(urlInput).val()
       .trim()); // optional URL
     const messageValid = jQuery('#form-message').val().trim() !== '';
+    const topicValid = jQuery(topicInput).val() !== null && jQuery(topicInput).val().trim() !== '';
 
     const submitBtn = jQuery('#form-submit');
 
-    if (emailValid && urlValid && messageValid) {
+    if (emailValid && urlValid && messageValid && topicValid) {
       submitBtn.prop('disabled', false).removeClass('disabled');
     } else {
       submitBtn.prop('disabled', true).addClass('disabled');
@@ -137,6 +143,7 @@ $(document).ready(function () {
     let email = jQuery("#form-email").val();
     let message = jQuery("#form-message").val();
     let piwigoUrl = jQuery("#form-piwigo-url").val();
+    let topic = jQuery("#form-topic").val();
     let key = jQuery("#form-key").val();
 
     //If the honeyMessage has something in it then its a bot and we don't want it to send
@@ -151,6 +158,7 @@ $(document).ready(function () {
           method: 'porg.contact.send',
           email: email,
           message: message,
+          topic: topic,
           key: key,
           piwigo_url: piwigoUrl
         },
@@ -162,7 +170,7 @@ $(document).ready(function () {
             jQuery('#success').show();
 
             // Clear all form fields
-            jQuery('#form-email, #form-message, #form-piwigo-url, #email').val('');
+            jQuery('#form-email, #form-message, #form-piwigo-url, #form-topic, #email').val('');
 
             // Hide help texts
             jQuery('#urlHelp, #emailHelp').hide();

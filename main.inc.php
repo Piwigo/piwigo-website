@@ -132,6 +132,7 @@ function porg_add_methods($arr)
     array(
       'email' => array(),
       'message' => array(),
+      'topic' => array(),
       'piwigo_url' => array('default' => null),
       'key' => array(),
     ),

@@ -1,25 +1,32 @@
 .contact-header {
-  position: relative;
-  overflow: hidden;
-  padding-top: 30px;
-  padding-bottom: 40px;
-  background: url("../../images/features/bg_vector.svg") no-repeat center top;
-  background-size: 100%;
-  background-position: center 20px;
+  margin-bottom: 120px;
+  margin-top: 80px;
 }
 
-.contact-form-split-copy {
-  max-width: 520px;
+.contact-cards {
+  margin-bottom: 155px;
+  margin-top: 155px;
 }
 
-.contact-form-split-copy h1 {
-  margin-bottom: 35px;
+.contact-card {
+  padding: 30px 70px 45px;
+  border-radius: 10px;
+  background: var(--grey);
+  row-gap: 26px;
 }
 
-.contact-form-split-copy p {
-  margin-bottom: 14px;
-  font-size: 16px;
-  line-height: 1.6;
+.icon-wrapper {
+  font-size: 30px !important;
+  border-radius: 4px;
+  width: 60px;
+  height: 60px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mb-alot {
+  margin-bottom: 40px !important;
 }
 
 /* form card */
@@ -94,7 +101,7 @@
 
 /* content section */
 .contact-content {
-  padding: 100px 0 180px;
+  padding: 0px 0 180px;
 }
 
 /* carousel */
@@ -148,12 +155,6 @@
 }
 
 @media (max-width: 768px) {
-  .contact-header {
-    background: none;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
   .contact-form-split-copy h1 {
     margin-bottom: 20px;
   }
@@ -192,10 +193,6 @@
 
   .d-flex:has(#error) {
     flex-wrap: wrap;
-  }
-
-  .contact-header-image {
-    display: none;
   }
 
   .contact-content {

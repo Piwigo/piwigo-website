@@ -58,6 +58,7 @@ function ws_porg_home_refresh_showcases($params, &$service)
 function ws_porg_contact_send($params, &$service)
 {
   global $conf;
+  global $user;
 
   if (isset($_SERVER['HTTP_USER_AGENT']) and preg_match('/Chrome\/(134|142)\.0\.0\.0/', $_SERVER['HTTP_USER_AGENT']))
   {
@@ -93,8 +94,34 @@ function ws_porg_contact_send($params, &$service)
     $error .= 'invalid key';
   }
 
+  /* TOPIC */
+  $allowed_topics = array(
+    'Testimonials',
+    'Press inquiry',
+    'Partnership',
+    'Security report',
+    'Beta testing'
+  );
+
+  $topic_name = 'Unknown';
+  if (!isset($params['topic']) || !in_array($params['topic'], $allowed_topics))
+  {
+    $error .= 'invalid topic';
+  }
+  else
+  {
+    // On charge le fichier de langue car l'API (ws.php) ne le fait pas par défaut
+    if ('en_UK' != $user['language']) {
+      load_language('contact.lang', PORG_PATH, array('language' => 'en_UK', 'no_fallback' => true));
+    }
+    load_language('contact.lang', PORG_PATH);
+
+    $topic_name = l10n($params['topic']);
+  }
+
   /* SUBJECT */
   $subject = l10n('[piwigo.org contact form] %s contacted you on %s', $email, date('Y-m-d H:i:s'));
+  $subject = '[' . $topic_name . '] ' . $subject;
 
   /* MESSAGE */
   if (preg_match('/https?:\/\//', $params['message']))

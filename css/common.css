@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   overflow-x: clip;
   max-width: 100%;
 }
@@ -92,7 +93,8 @@ h3 {
   line-height: 100%;
 }
 
-p, .p {
+p,
+.p {
   font-family: "Red Hat Display", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -622,13 +624,14 @@ Form
 }
 
 input,
-textarea {
+textarea,
+select {
   border: 1px solid rgba(141, 142, 142, 1) !important;
   border-radius: 4px !important;
   font-weight: 400 !important;
   font-size: 16px !important;
   color: var(--dark) !important;
-  background: var(--clear) !important;
+  background-color: var(--clear) !important;
   box-sizing: border-box;
   font-family: Red Hat Display;
   line-height: 100% !important;
@@ -639,6 +642,22 @@ input {
   padding: 24px 13px 9px !important;
 }
 
+select.form-control {
+  height: 50px;
+  padding: 18px 13px 6px !important;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+/* For the placeholder option */
+select:required:invalid {
+  color: var(--dark_text) !important;
+}
+
+option {
+  color: var(--dark);
+}
+
 textarea {
   height: 220px;
   padding: 24px 16px 13px !important;
@@ -646,7 +665,8 @@ textarea {
 }
 
 input:hover,
-textarea:hover {
+textarea:hover,
+select:hover {
   box-shadow: 0px 4px 20px 0px rgba(217, 217, 217, 0.5);
 }
 
@@ -664,10 +684,15 @@ textarea:focus,
   transition: opacity 150ms ease;
 }
 
-.contact-form textarea:focus::-webkit-input-placeholder { opacity: 0.3; }
-.contact-form textarea:focus:-ms-input-placeholder { opacity: 0.3; }
-.contact-form textarea:focus::-ms-input-placeholder { opacity: 0.3; }
-
+.contact-form textarea:focus::-webkit-input-placeholder {
+  opacity: 0.3;
+}
+.contact-form textarea:focus:-ms-input-placeholder {
+  opacity: 0.3;
+}
+.contact-form textarea:focus::-ms-input-placeholder {
+  opacity: 0.3;
+}
 
 .form-group textarea::placeholder {
   color: var(--dark_text);
@@ -683,7 +708,8 @@ textarea:focus,
 .piwigo-url-placeholder,
 .your-message-placeholder,
 .mail-example-placeholder,
-.piwigo-url-example-placeholder {
+.piwigo-url-example-placeholder,
+.topic-placeholder {
   position: absolute;
   top: 17px;
   left: 14.5px;
@@ -730,24 +756,29 @@ textarea:focus,
 #form-piwigo-url:not(:placeholder-shown) ~ .piwigo-url-example-placeholder,
 #form-message:not(:placeholder-shown) ~ .your-message-placeholder,
 #form-user:not(:placeholder-shown) ~ .piwigo-url-placeholder,
-#form-user:not(:placeholder-shown) ~ .piwigo-url-example-placeholder {
+#form-user:not(:placeholder-shown) ~ .piwigo-url-example-placeholder,
+#form-topic:valid ~ .topic-placeholder,
+#form-topic:focus ~ .topic-placeholder {
   opacity: 0;
 }
 
 .little-mail-placeholder,
 .little-piwigo-url-placeholder,
-.little-your-message-placeholder {
+.little-your-message-placeholder,
+.little-topic-placeholder {
   display: none;
 }
 
 #form-email:focus ~ .little-mail-placeholder,
 #form-piwigo-url:focus ~ .little-piwigo-url-placeholder,
 #form-user:focus ~ .little-piwigo-url-placeholder,
-#form-message:focus ~ .little-your-message-placeholder ,
+#form-message:focus ~ .little-your-message-placeholder,
 #form-email:not(:placeholder-shown) ~ .little-mail-placeholder,
 #form-piwigo-url:not(:placeholder-shown) ~ .little-piwigo-url-placeholder,
 #form-user:not(:placeholder-shown) ~ .little-piwigo-url-placeholder,
-#form-message:not(:placeholder-shown) ~ .little-your-message-placeholder {
+#form-message:not(:placeholder-shown) ~ .little-your-message-placeholder,
+#form-topic:valid ~ .little-topic-placeholder,
+#form-topic:focus ~ .little-topic-placeholder {
   display: block;
   position: absolute;
   top: 4px;
@@ -763,9 +794,27 @@ textarea:focus,
     white-space: nowrap;
   }
 
-  .mail-placeholder, .piwigo-url-placeholder, .your-message-placeholder {
+  .mail-placeholder,
+  .piwigo-url-placeholder,
+  .your-message-placeholder,
+  .topic-placeholder {
     font-size: 13px;
   }
+}
+
+.topic-arrow {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: var(--main_flash_green);
+  transition: transform 0.3s ease;
+  font-size: 13px;
+}
+
+#form-topic:focus ~ .topic-arrow {
+  transform: translateY(calc(-50% + 2px)) rotate(180deg);
 }
 /* used like that :
 <div class="form-group position-relative">
@@ -804,7 +853,7 @@ input.is-invalid {
 }
 
 #emailWarningIcon {
-  background: linear-gradient(92.17deg, #FF2F63 19.22%, var(--main_orange) 96.41%);
+  background: linear-gradient(92.17deg, #ff2f63 19.22%, var(--main_orange) 96.41%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -827,7 +876,9 @@ input.is-invalid {
   background: var(--clear);
   cursor: pointer;
   padding: 0 !important;
-  transition: border-color 200ms ease-out, background 200ms ease-out;
+  transition:
+    border-color 200ms ease-out,
+    background 200ms ease-out;
   position: relative;
   margin: 0;
   vertical-align: middle;
@@ -838,8 +889,8 @@ input.is-invalid {
 }
 
 .form-check-input[type="checkbox"]:checked::before {
-  font-family: 'fontello';
-  content: '\e81e'; /* check-1 */
+  font-family: "fontello";
+  content: "\e81e"; /* check-1 */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -849,7 +900,7 @@ input.is-invalid {
   line-height: 1;
 }
 
-.form-check-input.is-invalid~.form-check-label {
+.form-check-input.is-invalid ~ .form-check-label {
   color: var(--dark);
 }
 
