@@ -6,7 +6,7 @@ $lang['signup_header_desc'] = ' Start your 30-day free trial and get access to a
 $lang['signup_form_mail'] = 'Your email address<span class="orange-text">* </span>';
 $lang['signup_form_mail_error'] = 'it must be a valid email adress';
 
-$lang['signup_form_username'] = 'Your username<span class="orange-text">*</span>';
+$lang['signup_form_username'] = 'Your username/url <span class="orange-text">*</span>';
 $lang['signup_form_username_error'] = 'This username is already in use';
 $lang['signup_form_username_help'] = 'Must be at least 4 characters';
 $lang['signup_piwigo'] = '.piwigo.com';

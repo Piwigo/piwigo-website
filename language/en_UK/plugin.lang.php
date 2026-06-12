@@ -193,10 +193,10 @@ $lang['Your message 2'] = 'Your message';
 $lang['Send message'] = 'Send message';
 $lang['porg_contact_error_email'] = 'Whoops, that email address is invalid';
 $lang['porg_contact_error_message'] = 'Whoops, your message seems to be wrong';
-$lang['email example'] = 'charly@piwigo.fr';
+$lang['email example'] = 'charly@piwigo.net';
 $lang['Piwigo url example'] = 'https://your-piwigo-site.com';
 $lang['Piwigo password example'] = 'PassWord!15';
-$lang['Piwigo name example'] = 'piwigo-user123';
+$lang['Piwigo name example'] = 'companyname';
 
 /* Common words */
 // $lang['See more'] = 'See more';
