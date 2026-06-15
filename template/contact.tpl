@@ -20,8 +20,8 @@
       <img class="mb-4 contact-header-image img-fluid d-block d-md-none" src="{$PORG_ROOT_URL}images/contact/contact_hero.webp" alt="Contact us">
       <p class="mb-4">{'porg_contact_project_desc'|translate}</p>
       <div class="d-flex gap-3">
-        {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'porg_contact_project_btn1'|translate} href='#'}
-        {include file='template/include/buttons/button.tpl' variant='cta_secondary' label={'porg_contact_project_btn2'|translate} href='#'}
+        {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'porg_contact_project_btn1'|translate} href="{$PORG_ROOT}{$URL.product}#cloud"}
+        {include file='template/include/buttons/button.tpl' variant='cta_secondary' label={'porg_contact_project_btn2'|translate} href="{$PORG_ROOT}{$URL.product}#self-hosted"}
       </div>
     </div>
   </div>
@@ -45,7 +45,7 @@
         </span>
         <h2 class="h2-top-page text-center mb-0">{'porg_contact_orange_title'|translate}</h2>
         <p class="text-center mb-0">{'porg_contact_orange_desc'|translate}</p>
-        {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'porg_contact_orange_btn'|translate} href='#'}
+        {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'porg_contact_orange_btn'|translate} href="{$DOCUMENTATION_URL}"}
       </div>
     </div>
     <div class="col-md-12 mt-4 pt-2">
@@ -55,7 +55,7 @@
         </span>
         <h2 class="h2-top-page text-center mb-0">{'porg_contact_green_title'|translate}</h2>
         <p class="text-center mb-0">{'porg_contact_green_desc'|translate}</p>
-        {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'porg_contact_green_btn'|translate} href='#'}
+        {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'porg_contact_green_btn'|translate} href="https://piwigo.org/forum"}
       </div>
     </div>
   </div>
@@ -80,7 +80,7 @@
 
           <div class="success-buttons d-flex gap-md-4 gap-2">
             {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'Discover our blog'|translate} href='#'}
-            {include file='template/include/buttons/button.tpl' variant='cta_secondary' label={'Follow us on LinkedIn'|translate} href='#'}
+            {include file='template/include/buttons/button.tpl' variant='cta_secondary' label={'Follow us on LinkedIn'|translate} href="https://www.linkedin.com/company/piwigo"}
           </div>
         </div>
       </div>
