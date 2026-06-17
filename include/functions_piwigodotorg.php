@@ -339,7 +339,7 @@ function porg_get_news($start, $count)
         $message = strip_tags($message);
 
         $topics[$idx]['is_cut'] = false;
-        $max_length = 150;
+        $max_length = 200;
         if (strlen($message) > $max_length)
         {
           $delimiter = '~#~';

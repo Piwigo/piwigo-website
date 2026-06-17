@@ -598,6 +598,11 @@ Text Color
   font-weight: 645 !important;
 }
 
+.small-text {
+  font-weight: 400 !important;
+  font-size: 12px !important;
+}
+
 .pink-bg {
   background-color: var(--secondary_pink);
 }

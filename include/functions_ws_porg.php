@@ -20,9 +20,14 @@ function ws_porg_newsletters_seemore($params, &$service)
 
 function ws_porg_news_seemore($params, &$service)
 {
-  global $template;
+  global $template, $user;
 
   include_once(PORG_PATH . "include/functions_piwigodotorg.php");
+
+  if ('en_UK' != $user['language']) {
+    load_language('news.lang', PORG_PATH, array('language' => 'en_UK', 'no_fallback' => true));
+  }
+  load_language('news.lang', PORG_PATH);
 
   $start = $params['start'];
   $count = $params['count'];
@@ -32,6 +37,7 @@ function ws_porg_news_seemore($params, &$service)
   $template->assign(
     array(
       'topics' => $news['topics'],
+      'porg_news_card_btn' => l10n('porg_news_card_btn'),
     )
   );
   $template->parse('page_porg');

@@ -126,8 +126,8 @@
             </button>
             <div id="footerMobileNews" class="collapse footer-mobile-collapse" data-bs-parent=".footer-mobile-nav-accordion">
               <ul>
-                <li><a class="footer-feature-link footer-menu-item" href="#">{'Latest news'|translate}</a></li>
-                <li><a class="footer-feature-link footer-menu-item" href="#">{'Blog'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.news}">{'Latest news'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="https://piwigo.com/blog/">{'Blog'|translate}</a></li>
                 <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.newsletters}">{'Newsletter'|translate}</a></li>
                 <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.product_update}">{'Product updates'|translate}</a></li>
                 <li><a class="footer-feature-link footer-menu-item" href="#">{'Coding activity'|translate}</a></li>
@@ -204,8 +204,8 @@
       <div class="col-6 col-md-4 col-lg-2 footer-nav-col d-none d-lg-block">
         <h6 class="footer-title">{'News'|translate}</h6>
         <ul>
-          <li><a class="footer-feature-link footer-menu-item" href="#">{'Latest news'|translate}</a></li>
-          <li><a class="footer-feature-link footer-menu-item" href="#">{'Blog'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.news}">{'Latest news'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="https://piwigo.com/blog/">{'Blog'|translate}</a></li>
           <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.newsletters}">{'Newsletter'|translate}</a></li>
           <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.product_update}">{'Product updates'|translate}</a></li>
           <li><a class="footer-feature-link footer-menu-item" href="#">{'Coding activity'|translate}</a></li>

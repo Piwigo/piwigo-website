@@ -79,7 +79,7 @@
           <p class="success-follow-label features-menu-item">{'porg_contact_success_follow'|translate}</p>
 
           <div class="success-buttons d-flex gap-md-4 gap-2">
-            {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'Discover our blog'|translate} href='#'}
+            {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'Discover our blog'|translate} href='https://piwigo.com/blog/'}
             {include file='template/include/buttons/button.tpl' variant='cta_secondary' label={'Follow us on LinkedIn'|translate} href="https://www.linkedin.com/company/piwigo"}
           </div>
         </div>

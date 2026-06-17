@@ -1,16 +1,17 @@
 {foreach from=$topics item=topic}
-<div class="col-md-6 news-releases news-release-{$topic.state}">
-  <div class="news-padding-top-{$topic.state}"></div>
-  <div class="news-release-date-{$topic.state}">
-    <span>{$topic.posted}</span>
+  <div class="col-md-6 col-lg-4 mb-5">
+    <div class="news-releases-card">
+      {if isset($topic.img_src)}
+        <img src="{$topic.img_src}" class="" alt="">
+      {/if}
+      <div class="news-card-body">
+        <h1 class="small-text green-text mb-0">{$topic.posted}</h1>
+        <h2 class="h2-mobile-top-page mb-0">{$topic.subject}</h2>
+        <p class="mb-0 pricing-list news-card-description">{$topic.message}{if $topic.is_cut}...{/if}</p>
+        <div class="mt-auto">
+          {include file="./include/buttons/button.tpl" variant='menu_btn_blue' label=$porg_news_card_btn href="{$topic.url}" class="w-100 text-center"}
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="news-release-content-{$topic.state}">
-{if isset($topic.img_src)}
-    <a href="{$topic.url}"><img src="{$topic.img_src}"></a>
-{/if}
-    <h2 class="bold"><a href="{$topic.url}">{$topic.subject}</a></h2>
-    <p>{$topic.message}{if $topic.is_cut}...{/if}</p>
-  </div>
-  {if $topic.last == true}<div class="news-padding-bottom-right"></div>{/if}
-</div>
 {/foreach}

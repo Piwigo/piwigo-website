@@ -6,7 +6,7 @@
 			{include
 				file='template/include/sub_menu_items/sub_menu_itemc.tpl'
 				category_type='feature-submenu'
-				title={'Latest news'|translate} description={'Latest news desc'|translate} icon_class='icon-latest-news'
+				title={'Latest news'|translate} description={'Latest news desc'|translate} icon_class='icon-latest-news'  href="{$PORG_ROOT}{$URL.news}"
 			}
 
 			{include
@@ -19,7 +19,7 @@
 				file='template/include/sub_menu_items/sub_menu_itemc.tpl'
 				category_type='feature-submenu'
 				is_ext=true
-				title={'Blog'|translate} description={'Blog desc'|translate} icon_class='icon-doc'
+				title={'Blog'|translate} description={'Blog desc'|translate} icon_class='icon-doc' href="https://piwigo.com/blog/"
 			}
 		</div>
 
@@ -37,6 +37,6 @@
 	<div class="menu-horizontal-divider"></div>
 
 	<div class="menu-footer d-flex justify-content-center">
-		{include file='template/include/buttons/button.tpl' variant='menu_btn_white' label={'news btn'|translate}}
+		{include file='template/include/buttons/button.tpl' variant='menu_btn_white' label={'news btn'|translate} href="{$PORG_ROOT}{$URL.newsletters}"}
 	</div>
 </div>
