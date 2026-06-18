@@ -130,7 +130,6 @@
                 <li><a class="footer-feature-link footer-menu-item" href="https://piwigo.com/blog/">{'Blog'|translate}</a></li>
                 <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.newsletters}">{'Newsletter'|translate}</a></li>
                 <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.product_update}">{'Product updates'|translate}</a></li>
-                <li><a class="footer-feature-link footer-menu-item" href="#">{'Coding activity'|translate}</a></li>
               </ul>
             </div>
           </div>
@@ -208,7 +207,6 @@
           <li><a class="footer-feature-link footer-menu-item" href="https://piwigo.com/blog/">{'Blog'|translate}</a></li>
           <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.newsletters}">{'Newsletter'|translate}</a></li>
           <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.product_update}">{'Product updates'|translate}</a></li>
-          <li><a class="footer-feature-link footer-menu-item" href="#">{'Coding activity'|translate}</a></li>
         </ul>
         <div class="footer-subscribe-btn">
           {include file='template/include/buttons/button.tpl' variant='menu_btn_white' label={'Footer Button 4 Subscribe to newsletter'|translate}
