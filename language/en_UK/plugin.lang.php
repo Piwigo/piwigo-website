@@ -240,6 +240,9 @@ $lang['Your way'] = 'Your way';
 $lang['Import & Centralize'] = 'Import & Centralize';
 $lang['Explore solution  <i class="icon-forward-arrow" style="font-size: 10px; position: relative; top: -1px;"></i>'] = 'Explore solution  <i class="icon-forward-arrow" style="font-size: 10px; position: relative; top: -1px;"></i>';
 $lang['Start your 30-day free trial'] = 'Start your 30-day free trial';
+$lang['Feature'] = 'Feature';
+$lang['Description'] = 'Description';
+$lang['Plugin'] = 'Plugin';
 
 /*Used in guide pages*/
 // $lang['porg_guides'] = 'Guides';

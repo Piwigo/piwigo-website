@@ -44,6 +44,7 @@ function porg_get_pages()
     'privacy' => 'Privacy',
     'signin' => 'Signin',
     'product' => 'Product',
+    'plugins' => 'Plugins',
     );
 }
 

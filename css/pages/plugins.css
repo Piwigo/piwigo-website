@@ -1,0 +1,97 @@
+.plugins-title {
+  margin-bottom: 120px;
+}
+
+.container-feature {
+  margin-bottom: 100px;
+}
+
+.container-plugin {
+  margin-bottom: 130px;
+}
+
+.tab-card {
+  padding: 40px 45px;
+  border-radius: 10px;
+  background-color: var(--grey);
+  overflow-x: auto;
+}
+
+.tab-card table {
+  border-collapse: collapse;
+  min-width: 700px;
+}
+
+.tab-card table thead tr th {
+  padding: 0 20px 35px;
+}
+
+
+.tab-card thead tr th:nth-child(1),
+.tab-card thead tr th:nth-child(2) {
+  max-width: 240px;
+  width: 240px;
+}
+
+.tab-card tbody tr:nth-child(odd) {
+  background-color: var(--clear) !important;
+  border-radius: 10px;
+}
+
+.tab-card tbody tr:nth-child(even) {
+  background-color: var(--grey) !important;
+}
+
+.tab-card tbody tr td {
+  padding: 10px 20px;
+  vertical-align: middle;
+}
+
+.small-check-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--main_flash_green);
+  margin: 0 auto;
+}
+
+.small-check-icon .icon-check-1 {
+  color: var(--clear);
+  font-size: 11px;
+}
+
+.small-cross-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  margin: 0 auto;
+}
+
+.small-cross-icon .icon-cancel {
+  font-size: 0;
+  position: relative;
+}
+
+.small-cross-icon .icon-cancel::before {
+  content: "–";
+  font-size: 16px;
+  color: var(--dark);
+  font-weight: 400;
+}
+
+.tuto-box {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: var(--clear_orange);
+  margin-bottom: 35px;
+}
+
+.tuto-box .icon-rounded-warning {
+  font-size: 20px;
+  color: var(--main_orange);
+}
