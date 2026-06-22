@@ -14,7 +14,7 @@
 
 <section class="container container-feature">
   <div class="row text-center features-content justify-content-center">
-    <div class="col-md-11">
+    <div class="col-xxl-11">
 
       <div class="col-md-7">
         <h2 class="mb-2">{'porg_plugins_s1_title'|translate}</h2>
@@ -63,7 +63,7 @@
 
 <section class="container container-plugin">
   <div class="row text-center features-content justify-content-center">
-    <div class="col-md-11">
+    <div class="col-xxl-11">
 
       <div class="col-md-7">
         <h2 class="mb-2">{'porg_plugins_s2_title'|translate}</h2>
@@ -75,6 +75,7 @@
         </div>
       </div>
 
+      <div class="tab-card-sentinel"></div>
       <div class="tab-card w-100">
         <table class="w-100">
           <thead>
@@ -114,3 +115,64 @@
     </div>
   </div>
 </section>
+
+{literal}
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('.tab-card').forEach(function(card) {
+        const sentinel = card.previousElementSibling;
+        if (!sentinel || !sentinel.classList.contains('tab-card-sentinel')) return;
+
+        const table = card.querySelector('table');
+        const thead = table.querySelector('thead');
+
+        const fixedTable = document.createElement('table');
+        fixedTable.className = table.className;
+        const fixedThead = thead.cloneNode(true);
+        fixedTable.appendChild(fixedThead);
+
+        const wrapper = document.createElement('div');
+        wrapper.className = 'thead-fixed-wrapper';
+        wrapper.appendChild(fixedTable);
+        wrapper.style.display = 'none';
+        card.appendChild(wrapper);
+
+        function matchColumnWidths() {
+          const liveThs = thead.querySelectorAll('th');
+          const cloneThs = fixedThead.querySelectorAll('th');
+          let total = 0;
+          liveThs.forEach(function(th, i) {
+            const w = th.getBoundingClientRect().width;
+            cloneThs[i].style.width = w + 'px';
+            cloneThs[i].style.minWidth = w + 'px';
+            cloneThs[i].style.maxWidth = w + 'px';
+            total += w;
+          });
+          fixedTable.style.width = total + 'px';
+        }
+
+        function sync() {
+          const rect = card.getBoundingClientRect();
+          wrapper.style.left = rect.left + 'px';
+          wrapper.style.width = card.clientWidth + 'px';
+          fixedTable.style.transform = 'translateX(' + (-card.scrollLeft) + 'px)';
+        }
+
+        new IntersectionObserver(function(entries) {
+          const entry = entries[0];
+          const stuck = !entry.isIntersecting && entry.boundingClientRect.top < 0;
+          if (stuck) { matchColumnWidths();
+            sync(); }
+          wrapper.style.display = stuck ? 'block' : 'none';
+          thead.style.visibility = stuck ? 'hidden' : 'visible';
+        }, { threshold: 0 }).observe(sentinel);
+
+        card.addEventListener('scroll', sync);
+        window.addEventListener('resize', function() {
+          if (wrapper.style.display !== 'none') matchColumnWidths();
+          sync();
+        });
+      });
+    });
+  </script>
+{/literal}

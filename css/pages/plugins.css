@@ -26,20 +26,33 @@
   padding: 0 20px 35px;
 }
 
-
-.tab-card thead tr th:nth-child(1),
-.tab-card thead tr th:nth-child(2) {
+.tab-card thead tr th:nth-child(1) {
   max-width: 240px;
   width: 240px;
+  min-width: 240px;
 }
 
-.tab-card tbody tr:nth-child(odd) {
+.tab-card thead tr th:nth-child(2) {
+  max-width: 300px;
+  width: 300px;
+  min-width: 300px;
+}
+
+.tab-card tbody tr:nth-child(odd) td {
   background-color: var(--clear) !important;
-  border-radius: 10px;
 }
 
-.tab-card tbody tr:nth-child(even) {
+.tab-card tbody tr:nth-child(even) td {
   background-color: var(--grey) !important;
+}
+
+.tab-card tbody tr:nth-child(odd) td:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.tab-card tbody tr:nth-child(odd) td:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .tab-card tbody tr td {
@@ -94,4 +107,18 @@
 .tuto-box .icon-rounded-warning {
   font-size: 20px;
   color: var(--main_orange);
+}
+
+.thead-fixed-wrapper {
+  position: fixed;
+  top: 0;
+  z-index: 50;
+  overflow: hidden;
+  background: var(--grey);
+  border-radius: 10px 10px 0 0;
+  padding: 40px 45px 0;
+}
+
+.thead-fixed-wrapper table {
+  border-collapse: collapse;
 }
