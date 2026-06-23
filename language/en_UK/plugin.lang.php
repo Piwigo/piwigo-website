@@ -62,6 +62,12 @@ $lang['Extensions'] = 'Extensions';
 $lang['Extensions desc'] = 'lorem ipsum dolor sit amet';
 $lang['product btn'] = 'Contact us for a demo!';
 
+/* Our users sub menu */
+$lang['Who uses Piwigo'] = 'Who uses Piwigo';
+$lang['Who uses Piwigo desc'] = 'Lorem ipsum dolor sit amet';
+$lang['Case studies'] = 'Case studies';
+$lang['Case studies desc'] = 'Lorem ipsum dolor sit amet';
+
 /* support sub menu */
 $lang['Professional support'] = 'Professional support';
 $lang['Professional support desc'] = 'Lorem ipsum dolor sit amet';

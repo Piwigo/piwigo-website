@@ -39,8 +39,10 @@
           <div class="mobile-sub-content d-lg-none">
             {include file='template/include/sub_menu/sub_menu_item_product.tpl'}</div>
         </li>
-        <li class="nav-btn-wrapper">
-          {include file='template/include/sub_menu/sub_menu_button.tpl' href="{$PORG_ROOT}{$URL.users}" is_selected=$NAV_SELECTED.users label={'Our users'|translate} }
+        <li class="nav-btn-wrapper nav-btn-users">
+          {include file='template/include/sub_menu/sub_menu_button.tpl' is_openable=true is_selected=$NAV_SELECTED.users label={'Our users'|translate}}
+          <div class="mobile-sub-content d-lg-none">
+            {include file='template/include/sub_menu/sub_menu_item_user.tpl'}</div>
         </li>
         <li class="nav-btn-wrapper nav-btn-support">
           {include file='template/include/sub_menu/sub_menu_button.tpl' is_openable=true is_selected=$NAV_SELECTED.support label={'Support'|translate}}

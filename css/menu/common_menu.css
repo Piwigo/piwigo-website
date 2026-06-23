@@ -1,111 +1,110 @@
-
 .menu-mega-container {
-    background: var(--clear);
-    padding: 20px;
-    width: fit-content;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  background: var(--clear);
+  padding: 20px;
+  width: fit-content;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
 }
 
 .menu-columns {
-    display: flex; 
-    flex-wrap: nowrap; 
-    gap: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
 }
 
 .menu-column {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    width: 250px; 
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 250px;
 }
 
 .menu-divider {
-    width: 1px;
-    background-color: var(--light_grey);
-    align-self: stretch;
+  width: 1px;
+  background-color: var(--light_grey);
+  align-self: stretch;
 }
 
 .menu-horizontal-divider {
-    height: 1px;
-    background-color: var(--light_grey);
-    margin-bottom: 15px;
+  height: 1px;
+  background-color: var(--light_grey);
+  margin-bottom: 15px;
 }
 
 .menu-footer {
-    display: flex;
-    gap: 40px;
-    justify-content: space-around;
+  display: flex;
+  gap: 40px;
+  justify-content: space-around;
 }
 
 .menu-footer .btn-menu {
-    flex: 1;
-    align-items: center;
+  flex: 1;
+  align-items: center;
 }
 
 .column-header {
-    background-color: var(--grey);
-    color: var(--dark_text);
-    font-size: 12px;
-    font-weight: 600;
-    text-align: center;
-    padding: 6px 0;
-    margin-bottom: 15px; 
-    border-radius: 4px;
-    text-transform: capitalize;
-    font-family: "Red Hat Display", sans-serif;
+  background-color: var(--grey);
+  color: var(--dark_text);
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  padding: 6px 0;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  text-transform: capitalize;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 @media (max-width: 992px) {
-    .menu-mega-container {
-        width: 100%;
-        max-width: 100%;
-        padding: 10px;
-        /* padding-top: 0  !important;
+  .menu-mega-container {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    /* padding-top: 0  !important;
         padding-bottom: 0 !important; */
-        box-shadow: none;
-    }
+    box-shadow: none;
+  }
 
-    .menu-columns {
-        flex-direction: column;
-        flex-wrap: wrap;
-        gap: 0;
-    }
+  .menu-columns {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0;
+  }
 
-    .menu-column {
-        min-width: 100%;
-        width: 100%;
-        padding: 0;
-    }
+  .menu-column {
+    min-width: 100%;
+    width: 100%;
+    padding: 0;
+  }
 
-    .menu-divider,
-    .menu-horizontal-divider,
-    .menu-footer {
-        display: none !important;
-    }
+  .menu-divider,
+  .menu-horizontal-divider,
+  .menu-footer {
+    display: none !important;
+  }
 
-    .column-header {
-        display: block;
-        width: 100%;
-        border-radius: 0;
-        padding: 0;
-        margin-bottom: 10px;
-        font-size: 13px;
-        text-align: center;
-    }
+  .column-header {
+    display: block;
+    width: 100%;
+    border-radius: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    font-size: 13px;
+    text-align: center;
+  }
 
-    .menu-column:nth-of-type(1) .column-header {
-        background-color: var(--clear_pink) !important; 
-        color: var(--main_pink) !important;
-    }
+  .menu-column:nth-of-type(1) .column-header {
+    background-color: var(--clear_pink) !important;
+    color: var(--main_pink) !important;
+  }
 
-    .menu-column:nth-of-type(3) .column-header {
-        background-color: var(--clear_orange) !important;
-        color: var(--main_orange) !important;
-    }
+  .menu-column:nth-of-type(3) .column-header {
+    background-color: var(--clear_orange) !important;
+    color: var(--main_orange) !important;
+  }
 
-
-    .menu-column:nth-of-type(5) .column-header {
-        background-color: var(--clear_green) !important;
-        color: var(--accent_green) !important;
-    }
+  .menu-column:nth-of-type(5) .column-header {
+    background-color: var(--clear_green) !important;
+    color: var(--accent_green) !important;
+  }
 }

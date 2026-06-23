@@ -228,6 +228,7 @@
     transform: translateX(calc(-50% + 215px));
   }
 
+  .nav-btn-wrapper.nav-btn-users:hover .mobile-sub-content,
   .nav-btn-wrapper.nav-btn-behind-code:hover .mobile-sub-content {
     transform: translateX(calc(-50% + 55px));
   }
