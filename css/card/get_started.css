@@ -106,7 +106,6 @@ CTA
 .img-rocket {
   max-height: 500px;
   object-fit: contain;
-  margin-bottom: 20px;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
