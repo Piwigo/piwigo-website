@@ -1,4 +1,6 @@
-  <section class="container-fluide container-about-us">
+<link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/pages/about_us.css">
+
+<section class="container-fluide container-about-us">
     <div class="container">
       <div class="equal">
         <div class="col-md-6">

@@ -95,7 +95,7 @@
             </button>
             <div id="footerMobileBehindCode" class="collapse footer-mobile-collapse" data-bs-parent=".footer-mobile-nav-accordion">
               <ul>
-                <li><a class="footer-feature-link footer-menu-item" href="#">{'About Piwigo'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.about_us}">{'About Piwigo'|translate}</a></li>
                 <li><a class="footer-feature-link footer-menu-item" href="#">{'Contribute'|translate}</a></li>
               </ul>
             </div>
@@ -185,7 +185,7 @@
       <div class="col-6 col-md-4 col-lg-2 footer-nav-col d-none d-lg-block">
         <h6 class="footer-title">{'Behind the code'|translate}</h6>
         <ul>
-          <li><a class="footer-feature-link footer-menu-item" href="#">{'About Piwigo'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.about_us}">{'About Piwigo'|translate}</a></li>
           <li><a class="footer-feature-link footer-menu-item" href="#">{'Contribute'|translate}</a></li>
         </ul>
 

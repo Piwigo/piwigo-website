@@ -6,6 +6,7 @@
 				file='template/include/sub_menu_items/sub_menu_itemc.tpl'
 				category_type='feature-submenu'
 				title={'About Piwigo'|translate} description={'About Piwigo desc'|translate} icon_svg='images/icons/pwg.svg'
+        href="{$PORG_ROOT}{$URL.about_us}"
 			}
 
 			{include
