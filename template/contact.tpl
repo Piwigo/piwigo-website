@@ -20,7 +20,7 @@
       <img class="mb-4 contact-header-image img-fluid d-block d-md-none" src="{$PORG_ROOT_URL}images/contact/contact_hero.webp" alt="Contact us">
       <p class="mb-4">{'porg_contact_project_desc'|translate}</p>
       <div class="d-flex gap-3">
-        {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'porg_contact_project_btn1'|translate} href="{$PORG_ROOT}{$URL.product}#cloud"}
+        {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'porg_contact_project_btn1'|translate} href="#form"}
         {include file='template/include/buttons/button.tpl' variant='cta_secondary' label={'porg_contact_project_btn2'|translate} href="{$PORG_ROOT}{$URL.product}#self-hosted"}
       </div>
     </div>
@@ -63,7 +63,7 @@
 
 
 
-<section class="contact-cards justify-content-center d-flex">
+<section class="contact-cards justify-content-center d-flex" id="form">
   <div class="container justify-content-center d-flex row">
     <div class="col-12 col-md-9 col-xl-6">
 
