@@ -97,18 +97,6 @@
   font-weight: 400;
 }
 
-.tuto-box {
-  padding: 10px 20px;
-  border-radius: 10px;
-  background-color: var(--clear_orange);
-  margin-bottom: 35px;
-}
-
-.tuto-box .icon-rounded-warning {
-  font-size: 20px;
-  color: var(--main_orange);
-}
-
 .thead-fixed-wrapper {
   position: fixed;
   top: 0;
@@ -121,4 +109,8 @@
 
 .thead-fixed-wrapper table {
   border-collapse: collapse;
+}
+
+#plugins-table-body tr.odd-row {
+  background-color: #f9f9f9;
 }

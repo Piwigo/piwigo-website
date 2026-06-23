@@ -128,3 +128,6 @@ $lang['premium_plugins_UserMassRegister_desc'] = 'Register multiple users in bul
 $lang['premium_plugins_LDAPlogin_desc'] = 'Allows Piwigo to connect to an Active Directory (LDAP)';
 $lang['premium_plugins_Microsoft365connect_desc'] = 'Allows Piwigo to connect to an Azure Active Directory';
 $lang['premium_plugins_PasswordPolicy_desc'] = 'Determine security rules for user passwords: complexity score, renewal policy, management of failed login attempts, etc.';
+
+$lang['porg_plugins_no_results'] = 'Oops, no plugins found for your search.';
+$lang['Lookup for a plugin'] = 'Lookup for a plugin';

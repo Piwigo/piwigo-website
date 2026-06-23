@@ -3,6 +3,7 @@
 load_language('premium_plugins.lang', PORG_PATH);
 
 $plugin_names = array(
+  // Pro plugins start below
   'Add <head> element',
   'Additional Pages',
   'Admin Tools',
@@ -85,6 +86,7 @@ $plugin_names = array(
   'Title',
   'URL Uploader',
   'VideoJS',
+  // Team plugins start below
   'Add tags mass',
   'Add User Notes',
   'Admin messages',
@@ -100,6 +102,7 @@ $plugin_names = array(
   'Upload 1 menu',
   'Write Metadata',
   'User Custom Fields',
+  // Entreprise plugins start below
   'Batch Downloader (premium)',
   'Download formats buttons',
   'Download Limits',
@@ -113,6 +116,7 @@ $plugin_names = array(
   'Tag Recognition',
   'User Collections',
   'User Mass Register',
+  // VIP plugins start below
   'LDAP login',
   'Microsoft 365 connect',
   'Password Policy',
@@ -126,16 +130,21 @@ $feature_table = array(
 );
 
 $plugin_table = array();
-for ($i = 0; $i < 82; $i++) {
+
+for ($i = 0; $i < 82; $i++)
+{
   $plugin_table[] = array(true, true, true, true);
 }
-for ($i = 0; $i < 15; $i++) {
+for ($i = 0; $i < 15; $i++)
+{
   $plugin_table[] = array(false, true, true, true);
 }
-for ($i = 0; $i < 13; $i++) {
+for ($i = 0; $i < 13; $i++)
+{
   $plugin_table[] = array(false, false, true, true);
 }
-for ($i = 0; $i < 3; $i++) {
+for ($i = 0; $i < 3; $i++)
+{
   $plugin_table[] = array(false, false, false, true);
 }
 

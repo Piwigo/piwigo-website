@@ -21,7 +21,7 @@
 				file='template/include/sub_menu_items/sub_menu_itemc.tpl'
 				category_type='use-case-submenu'
 				href='{$PORG_ROOT}{$URL.pricing}'
-				title={'Pricing'|translate} description={'Pricing desc'|translate} icon_class='icon-star' href="{$PORG_ROOT}{$URL.pricing}" 
+				title={'Pricing'|translate} description={'Pricing desc'|translate} icon_class='icon-pricing' href="{$PORG_ROOT}{$URL.pricing}" 
 			}
 		</div>
 	</div>

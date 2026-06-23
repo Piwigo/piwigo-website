@@ -249,6 +249,7 @@ $lang['Start your 30-day free trial'] = 'Start your 30-day free trial';
 $lang['Feature'] = 'Feature';
 $lang['Description'] = 'Description';
 $lang['Plugin'] = 'Plugin';
+$lang['Search'] = 'Search';
 
 /*Used in guide pages*/
 // $lang['porg_guides'] = 'Guides';

@@ -69,10 +69,11 @@
         <h2 class="mb-2">{'porg_plugins_s2_title'|translate}</h2>
         <p class="mb-3">{'porg_plugins_s2_desc'|translate}</p>
 
-        <div class="tuto-box d-flex align-items-center">
-          <i class="icon-rounded-warning me-3"></i>
-          <p class="text-start mb-0">{'porg_plugins_s2_desc2'|translate}</p>
+        <div class="form-group has-search my-4">
+          <span class="fa fa-search form-control-feedback"></span>
+          <input type="text" id="plugin-search" class="form-control py-1" placeholder="{'Lookup for a plugin'|translate}">
         </div>
+
       </div>
 
       <div class="tab-card-sentinel"></div>
@@ -88,7 +89,7 @@
               <th scope="col" class="h3-pricing-option text-center">{'VIP'|translate}</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody id="plugins-table-body">
             {foreach from=$PLUGIN_NAMES key=plugin_id item=plugin_name}
               <tr>
                 <td class="pricing-list strong-text text-start">{$plugin_name}</td>
@@ -109,6 +110,9 @@
                 {/foreach}
               </tr>
             {/foreach}
+            <tr id="no-plugin-results" style="display: none;">
+              <td colspan="6" class="text-center pb-0" style="background-color: var(--grey) !important;">{'porg_plugins_no_results'|translate}</td>
+            </tr>
           </tbody>
         </table>
       </div>
@@ -161,8 +165,10 @@
         new IntersectionObserver(function(entries) {
           const entry = entries[0];
           const stuck = !entry.isIntersecting && entry.boundingClientRect.top < 0;
-          if (stuck) { matchColumnWidths();
-            sync(); }
+          if (stuck) {
+            matchColumnWidths();
+            sync();
+          }
           wrapper.style.display = stuck ? 'block' : 'none';
           thead.style.visibility = stuck ? 'hidden' : 'visible';
         }, { threshold: 0 }).observe(sentinel);
@@ -172,6 +178,41 @@
           if (wrapper.style.display !== 'none') matchColumnWidths();
           sync();
         });
+      });
+
+      const searchInput = document.getElementById('plugin-search');
+      const tableBody = document.getElementById('plugins-table-body');
+      // Store all original plugin rows in memory, excluding the "no results" template row.
+      const allPluginRows = Array.from(tableBody.querySelectorAll('tr:not(#no-plugin-results)'));
+      const noResultsRow = document.getElementById('no-plugin-results');
+
+      searchInput.addEventListener('keyup', function() {
+        const searchTerm = searchInput.value.toLowerCase();
+        const matchingRows = [];
+
+        // Filter rows based on search term
+        allPluginRows.forEach(function(row) {
+          const pluginNameCell = row.cells[0];
+          const pluginDescCell = row.cells[1];
+
+          if (pluginNameCell && pluginDescCell) {
+            const pluginName = pluginNameCell.textContent.toLowerCase();
+            const pluginDesc = pluginDescCell.textContent.toLowerCase();
+
+            if (pluginName.includes(searchTerm) || pluginDesc.includes(searchTerm)) {
+              matchingRows.push(row);
+            }
+          }
+        });
+
+        tableBody.innerHTML = '';
+
+        if (matchingRows.length > 0) {
+          matchingRows.forEach(row => tableBody.appendChild(row));
+        } else {
+          tableBody.appendChild(noResultsRow);
+          noResultsRow.style.display = '';
+        }
       });
     });
   </script>
