@@ -31,24 +31,26 @@
 
           <form id="signupForm" class="signup-form">
 
-            <div class="form-group position-relative mb-3">
+            <div class="form-group position-relative form-group-mail mb-3">
               <input type="email" class="form-control" id="form-email" name="email" placeholder=" " required>
               <span class="mail-placeholder p-boxed">{'Your email address'|translate}<span class="orange-text"> *</span></span>
               <span class="mail-example-placeholder p-boxed">{'email example'|translate}</span>
-              <span class="little-mail-placeholder form-input">{'Your email address'|translate}<span class="orange-text"> *</span> <span id="emailHelp" class="error-mail-placeholder pink-text">{'porg_contact_error_message_7'|translate}</span></span>
+              <span class="little-mail-placeholder form-input">{'Your email address'|translate}<span class="orange-text"> *</span></span>
               <i id="emailWarningIcon" class="icon-rounded-warning" aria-hidden="true"></i>
               <i id="emailCheckIcon" class="icon-rounded-check" aria-hidden="true"></i>
             </div>
+            <span id="emailHelp" class="error-mail-placeholder pink-text" style="display: none;">{'porg_contact_error_message_7'|translate}</span>
 
-            <div class="form-group position-relative mb-3">
+            <div class="form-group position-relative form-group-user mb-3">
               <div class="input-group piwigo-input-group">
                 <input type="text" class="form-control" id="form-user" name="username" aria-describedby="userHelp" placeholder=" " value="{$username|default:''}">
                 <span class="piwigo-url-placeholder p-boxed">{'signup_form_username'|translate}</span>
                 <span class="piwigo-url-example-placeholder p-boxed">{'Piwigo name example'|translate}</span>
-                <span class="little-piwigo-url-placeholder form-input">{'signup_form_username'|translate}<span id="userError" class="error-username-placeholder pink-text" style="display:none;">{'signup_form_username_error'|translate}</span><span id="userHelp" class="help-username-placeholder pink-text" style="display:none;">{'signup_form_username_help'|translate}</span></span>
+                <span class="little-piwigo-url-placeholder form-input">{'signup_form_username'|translate}</span>
                 <span class="input-group-text bg-white border-start-0">{'signup_piwigo'|translate}</span>
               </div>
             </div>
+            <span id="userError" class="error-username-placeholder pink-text" style="display:none;">{'signup_form_username_error'|translate}</span><span id="userHelp" class="help-username-placeholder pink-text" style="display:none;">{'signup_form_username_help'|translate}</span>
 
             <div class="form-group position-relative mb-3">
               <input type="password" class="form-control" id="form-password" name="password" placeholder=" " required>
@@ -82,7 +84,7 @@
             </div>
 
             <div class="text-end">
-              <button type="submit" id="form-submit" class="btn-menu menu-btn-green ms-auto" disabled>
+              <button type="submit" id="form-submit" class="btn-menu menu-btn-green ms-auto">
                 <span id="submit-text">{'signup_button'|translate}</span>
               </button>
             </div>

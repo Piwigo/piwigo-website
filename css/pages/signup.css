@@ -349,7 +349,9 @@ input {
   animation: rotateSpinner 1.2s linear infinite;
 }
 
-
+.form-group-error{
+  margin-bottom: 0.25rem;
+}
 
 @media (max-width: 768px) {
   .illustration-side {
@@ -415,6 +417,18 @@ input {
     top: 75px;
     /* left: -95px !important; */
     /* transform: translateX(-95px); */
+  }
+}
+
+@media (max-width: 996px) {
+
+  .error-mail-placeholder {
+    top: 80px;
+    left: 27px;
+  }
+
+  .form-group-mail {
+    margin-bottom: 2rem;
   }
 }
 

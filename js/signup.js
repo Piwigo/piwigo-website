@@ -224,6 +224,8 @@ $(document).ready(function () {
   const signupForm = $("#signupForm");
   const submitBtn = $("#form-submit");
 
+  $(".form-check-help").removeClass("pink-text").addClass("clear-text");
+
   function isValidEmail(email) {
     const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return pattern.test(email);
@@ -247,6 +249,8 @@ $(document).ready(function () {
   emailInput.on("input", function () {
     const val = $(this).val().trim();
     $(".email-error").css("visibility", "hidden");
+    $(".form-group").css("margin-top", "0.25rem");
+    
 
     if (val.length > 0) {
       if (isValidEmail(val)) {
@@ -254,10 +258,12 @@ $(document).ready(function () {
         $("#emailCheckIcon").show();
       } else {
         $("#emailHelp, #emailWarningIcon").show();
+        $(".form-group-mail").removeClass("mb-3");
         $("#emailCheckIcon").hide();
       }
     } else {
       $("#emailHelp, #emailWarningIcon, #emailCheckIcon").hide();
+      $(".form-group-mail").addClass("mb-3");
     }
   });
 
@@ -267,12 +273,15 @@ $(document).ready(function () {
     const userError = $("#userError");
 
     $(".username-error").css("visibility", "hidden");
+    $(".form-group").css("margin-top", "0.25rem");
 
     if (username.length > 0 && username.length < 4) {
       userHelp.show();
       userError.hide();
+      $(".form-group-user").removeClass("mb-3");
     } else {
       userHelp.hide();
+      $(".form-group-user").addClass("mb-3");
     }
 
     if (username.length >= 4) {
@@ -286,23 +295,29 @@ $(document).ready(function () {
 
           if (data.result && data.result.error) {
             userError.show();
+            $(".form-group-user").addClass("mb-3");
             userInput.addClass("is-invalid");
             $(".username-error")
               .html(data.result.error)
               .css("visibility", "visible");
           } else {
             userError.hide();
+            $(".form-group-user").addClass("mb-3");
             userInput.removeClass("is-invalid");
           }
         },
         error: function () {
           userError.hide();
+          $(".form-group-user").removeClass("mb-3");
         },
       });
     } else {
       userError.hide();
+      // $(".form-group-user").addClass("mb-3");
+      // $(".form-group-user").css("margin-bottom", "1rem");
       userInput.removeClass("is-invalid");
     }
+    
   });
 
   passwordInput.on("input", function () {
@@ -365,6 +380,13 @@ $(document).ready(function () {
 
   signupForm.on("submit", function (e) {
     e.preventDefault();
+    $(".form-check-help").removeClass("clear-text").addClass("pink-text");
+    const isTermsChecked = $("#form-terms").is(":checked");
+    if (!isTermsChecked) {
+      $(".form-check-help").removeClass("clear-text").addClass("pink-text");
+      return false;
+    }
+
     if (signupForm.data("running") === "yes") {
       console.log("double submit, aborted");
       return false;
@@ -469,7 +491,6 @@ $(document).ready(function () {
 
   $("#form-terms").on("change", function () {
     const isChecked = $(this).is(":checked");
-    submitBtn.prop("disabled", !isChecked).toggleClass("disabled", !isChecked);
     if (isChecked) {
       $(".form-check-help").removeClass("pink-text").addClass("clear-text");
     } else {
