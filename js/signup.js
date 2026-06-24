@@ -373,6 +373,8 @@ $(document).ready(function () {
     signupForm.data("running", "yes");
     submitBtn.prop("disabled", true).addClass("disabled");
 
+    $("#signup-page").hide();
+    $("#loading-page").show();
     $(".signup-form, .pcom-signup").hide();
     $(".signup-wait-for-install, .pcom-signup-wait-for-install").show();
     $("#error, .username-error, .password-error, .email-error")
@@ -438,6 +440,8 @@ $(document).ready(function () {
   });
 
   function restoreForm() {
+    $("#loading-page").hide();
+    $("#signup-page").show();
     $(".signup-wait-for-install, .pcom-signup-wait-for-install").hide();
     $(".signup-form, .pcom-signup").show();
     submitBtn.prop("disabled", false).removeClass("disabled");

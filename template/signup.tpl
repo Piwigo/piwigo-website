@@ -140,7 +140,7 @@
     </div>
 </section>
 
-<section class="signup-loader" id="loading-page">
+<section class="signup-loader" id="loading-page" style="display: none;">
   <div class="loader-container container text-center d-flex  align-items-center flex-column">
     <div class="loader-title-container">
       <img src="{$PORG_ROOT_URL}images/piwigo.org.svg" class="img-fluid" alt="Piwigo icon">
