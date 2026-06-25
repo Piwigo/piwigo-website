@@ -256,6 +256,7 @@ $(document).ready(function () {
       if (isValidEmail(val)) {
         $("#emailHelp, #emailWarningIcon").hide();
         $("#emailCheckIcon").show();
+        $(".form-group-mail").addClass("mb-3");
       } else {
         $("#emailHelp, #emailWarningIcon").show();
         $(".form-group-mail").removeClass("mb-3");
@@ -324,7 +325,7 @@ $(document).ready(function () {
     const val = $(this).val();
 
     if (val.length > 0) {
-      $("#passHelpLength, #passHelpSpecs, #passHelp, #passHelp2").show();
+      $("#passHelpLength, #passHelp").show();
 
       // lentgh check
       const isLongEnough = val.length >= 6;
@@ -336,6 +337,8 @@ $(document).ready(function () {
           .removeClass("icon-warning")
           .addClass("icon-check-1")
           .css("color", "var(--main_flash_green) !important");
+        $("#passWarningIcon").hide();
+        $("#passCheckIcon").show();
       } else {
         $("#passHelpLength")
           .addClass("pink-text")
@@ -344,36 +347,38 @@ $(document).ready(function () {
           .addClass("icon-warning")
           .removeClass("icon-check-1")
           .css("color", "var(--main_pink) !important");
+        $("#passCheckIcon").hide();
+        $("#passWarningIcon").show();
       }
 
       // check password content (number and symbol)
-      const hasSpecs = /[0-9]/.test(val) && /[^A-Za-z0-9]/.test(val);
-      if (hasSpecs) {
-        $("#passHelpSpecs")
-          .removeClass("pink-text")
-          .addClass("main-green-text");
-        $("#passHelp2")
-          .removeClass("icon-warning")
-          .addClass("icon-check-1")
-          .css("color", "var(--main_flash_green) !important");
-      } else {
-        $("#passHelpSpecs")
-          .addClass("pink-text")
-          .removeClass("main-green-text");
-        $("#passHelp2")
-          .addClass("icon-warning")
-          .removeClass("icon-check-1")
-          .css("color", "var(--main_pink) !important");
-      }
+      // const hasSpecs = /[0-9]/.test(val) && /[^A-Za-z0-9]/.test(val);
+      // if (hasSpecs) {
+      //   $("#passHelpSpecs")
+      //     .removeClass("pink-text")
+      //     .addClass("main-green-text");
+      //   $("#passHelp2")
+      //     .removeClass("icon-warning")
+      //     .addClass("icon-check-1")
+      //     .css("color", "var(--main_flash_green) !important");
+      // } else {
+      //   $("#passHelpSpecs")
+      //     .addClass("pink-text")
+      //     .removeClass("main-green-text");
+      //   $("#passHelp2")
+      //     .addClass("icon-warning")
+      //     .removeClass("icon-check-1")
+      //     .css("color", "var(--main_pink) !important");
+      // }
 
-      if (isLongEnough && hasSpecs) {
+      if (isLongEnough) {
         passWarning.hide();
       } else {
         passWarning.show();
       }
     } else {
       $(
-        "#passHelpLength, #passHelpSpecs, #passHelp, #passHelp2, #passWarningIcon",
+        "#passHelpLength, #passHelp, #passWarningIcon",
       ).hide();
     }
   });

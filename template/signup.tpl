@@ -58,7 +58,8 @@
               <span class="password-example-placeholder p-boxed d-none">{'Piwigo password example'|translate}</span>
               <span class="little-password-placeholder form-input">{'signup_form_password'|translate}</span>
               <i id="passWarningIcon" class="icon-rounded-warning" aria-hidden="true" style="display:none;"></i>
-              <i id="passEye" class="icon-show toggle-password" aria-hidden="true" style="display: none;"></i>
+              <i id="passCheckIcon" class="icon-rounded-check" aria-hidden="true" style="display: none;"></i>
+              <i id="passEye" class="icon-show toggle-password" aria-hidden="true"></i>
               <div class="password-hints mt-1">
                 <div class="passHelp">
                   <i id="passHelp" class="icon-warning" aria-hidden="true" style="display:none;"></i>

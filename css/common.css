@@ -864,6 +864,17 @@ input.is-invalid {
   -webkit-text-fill-color: transparent;
 }
 
+#passCheckIcon {
+  display: none;
+  position: absolute;
+  font-size: 20px;
+  top: 33%;
+  transform: translateY(-50%);
+  right: 40px;
+  color: var(--main_flash_green);
+}
+
+
 #emailCheckIcon {
   color: var(--main_flash_green);
 }
