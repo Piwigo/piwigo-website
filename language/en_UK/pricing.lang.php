@@ -204,6 +204,9 @@ $lang['Email support'] = 'Email support';
 
 $lang['features of Piwigo'] = 'All the standard features of Piwigo';
 $lang['plugins to customize'] = 'Over 80 plugins to customize your Piwigo';
+$lang['plugins to customize2'] = 'Over 95 plugins to customize your Piwigo';
+$lang['plugins to customize3'] = 'Over 108 plugins to customize your Piwigo';
+$lang['plugins to customize4'] = 'Over 111 plugins to customize your Piwigo';
 $lang['Host'] = 'Host your gallery on a secure cloud';
 $lang['Import'] = 'Import your existing Piwigo';
 

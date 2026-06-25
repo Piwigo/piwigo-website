@@ -77,6 +77,18 @@ $plans = array(
 				)
 			),
 			array('text' => l10n('Email support')),
+			array(
+				'text' => l10n('plugins to customize'),
+				'info' => true,
+				'tooltip' => array(
+					l10n('pricing_page_personal_pro_details_7'),
+					l10n('pricing_page_personal_pro_details_8'),
+					l10n('pricing_page_personal_pro_details_9'),
+					l10n('pricing_page_personal_pro_details_10'),
+					l10n('pricing_page_personal_pro_details_11'),
+					l10n('pricing etc..')
+				)
+			),
 		),
 		'services' => array(
 			array(
@@ -88,18 +100,6 @@ $plans = array(
 					l10n('pricing_page_personal_pro_details_5'),
 					l10n('pricing_page_personal_details_5'),
 					l10n('pricing_page_personal_details_4')
-				)
-			),
-			array(
-				'text' => l10n('plugins to customize'),
-				'info' => true,
-				'tooltip' => array(
-					l10n('pricing_page_personal_pro_details_7'),
-					l10n('pricing_page_personal_pro_details_8'),
-					l10n('pricing_page_personal_pro_details_9'),
-					l10n('pricing_page_personal_pro_details_10'),
-					l10n('pricing_page_personal_pro_details_11'),
-					l10n('pricing etc..')
 				)
 			),
 			array(
@@ -138,6 +138,18 @@ $plans = array(
 				)
 			),
 			array('text' => l10n('Priority email support')),
+			array(
+				'text' => l10n('plugins to customize2'),
+				'info' => true,
+				'tooltip' => array(
+					l10n('pricing_page_personal_pro_details_7'),
+					l10n('pricing_page_personal_pro_details_8'),
+					l10n('pricing_page_personal_pro_details_9'),
+					l10n('pricing_page_personal_pro_details_10'),
+					l10n('pricing_page_personal_pro_details_11'),
+					l10n('pricing etc..')
+				)
+			),
 		),
 		'services' => array(
 			array('text' => l10n('All the features pro')),
@@ -175,6 +187,18 @@ $plans = array(
 				)
 			),
 			array('text' => l10n('Priority email support')),
+			array(
+				'text' => l10n('plugins to customize3'),
+				'info' => true,
+				'tooltip' => array(
+					l10n('pricing_page_personal_pro_details_7'),
+					l10n('pricing_page_personal_pro_details_8'),
+					l10n('pricing_page_personal_pro_details_9'),
+					l10n('pricing_page_personal_pro_details_10'),
+					l10n('pricing_page_personal_pro_details_11'),
+					l10n('pricing etc..')
+				)
+			),
 		),
 		'services' => array(
 			array('text' => l10n('All the features team')),
@@ -234,6 +258,18 @@ $plans = array(
 				)
 			),
 			array('text' => l10n('Priority vip')),
+			array(
+				'text' => l10n('plugins to customize4'),
+				'info' => true,
+				'tooltip' => array(
+					l10n('pricing_page_personal_pro_details_7'),
+					l10n('pricing_page_personal_pro_details_8'),
+					l10n('pricing_page_personal_pro_details_9'),
+					l10n('pricing_page_personal_pro_details_10'),
+					l10n('pricing_page_personal_pro_details_11'),
+					l10n('pricing etc..')
+				)
+			),
 		),
 		'services' => array(
 			array('text' => l10n('All the features vip')),

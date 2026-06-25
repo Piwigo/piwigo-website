@@ -24,7 +24,7 @@
 			"menu_btn_main_pink"
 			:
 			"menu_btn_green"
-			href={(isset($btn_link_try)) ? $btn_link_try : "#"} label={(isset($btn_try)) ? ($btn_try|translate) : ('pricing free'|translate)}
+			href={(isset($btn_link_try)) ? $btn_link_try : "#"} label={(isset($btn_try)) ? ($btn_try|translate) : ('pricing free'|translate)} 
 		}
 	</div>
 
@@ -43,6 +43,11 @@
 							{if isset($feature.url)}
 								<a href="{$feature.url}" class="text-decoration-underline text-inherit">{$feature.text|translate}</a>
 								<i class="icon-rounded-warning text-info-light"></i>
+
+							{elseif $feature.text|lower|strpos:"over" !== false}
+								<a href="{$PORG_ROOT}{$URL.plugins|default:'#'}" class="text-decoration-underline text-inherit">
+									{$feature.text|translate}
+								</a>
 
 							{elseif $feature.text|lower|strpos:"documentation" !== false}
 								{assign var="translated_text" value=$feature.text|translate}
@@ -125,7 +130,7 @@
 		{include
 			file="template/include/buttons/button.tpl"
 			variant="menu_btn_white"
-			href={(isset($btn_link_try)) ? $btn_link_try : "#"} label={(isset($btn_trial)) ? ($btn_trial|translate) : ('pricing free_trial'|translate)}
+			href={(isset($btn_link_try)) ? $btn_link_try : "#"} label={(isset($btn_trial)) ? ($btn_trial|translate) : ('pricing free_trial'|translate)} 
 		}
 	</div>
 	<h2 class="h2-mobile-top-page text-center">{$title|translate}</h2>
