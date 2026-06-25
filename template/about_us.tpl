@@ -1,406 +1,328 @@
 <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/pages/about_us.css">
+<link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL_PLUGINS}css/card/triple_true.css">
 
-<section class="container-fluide container-about-us">
-    <div class="container">
-      <div class="equal">
-        <div class="col-md-6">
-          <h1>{'About us'|translate}</h1>
-          <p>{'porg_about_us_desc1'|translate} {'porg_about_us_desc2'|translate}</p>
-        </div>
-        <div class="col-md-6 crowd-background">
+<section class="about-us-header container-fluid">
+  <div class="container">
+    <div class="row text-center justify-content-center">
+      <div class="col-lg-12 text-center justify-content-center">
+        <div class="row justify-content-center align-items-stretch">
+          <div class="col-lg-1">
+          </div>
+
+          <div class="col-lg-5 d-flex flex-column justify-content-center users-header-text pe-lg-5">
+            <h1 class="mb-4 text-center text-lg-start">{'porg_about_us_title'|translate}</h1>
+            <p class="mb-4 text-center text-lg-start">{'porg_about_us_desc'|translate}</p>
+          </div>
+
+          <div class="col-lg-6 responsive-image d-flex flex-column justify-content-center users-header-image">
+            <div class="book-container">
+              <img class="img-book" src="{$PORG_ROOT_URL}images/about-us/book.webp" alt="Piwigo screenshot">
+              <img class="img-minia img-minia1" src="{$PORG_ROOT_URL}images/about-us/minia1.webp" alt="Piwigo screenshot">
+              <img class="img-minia img-minia2" src="{$PORG_ROOT_URL}images/about-us/minia2.webp" alt="Piwigo screenshot">
+              <img class="img-minia img-minia3" src="{$PORG_ROOT_URL}images/about-us/minia3.webp" alt="Piwigo screenshot">
+              <img class="img-minia img-minia4" src="{$PORG_ROOT_URL}images/about-us/minia4.webp" alt="Piwigo screenshot">
+              <img class="img-minia img-minia5" src="{$PORG_ROOT_URL}images/about-us/minia5.webp" alt="Piwigo screenshot">
+              <img class="img-minia img-minia6" src="{$PORG_ROOT_URL}images/about-us/minia6.webp" alt="Piwigo screenshot">
+            </div>
+          </div>
+
+
+          <div class="col-lg-1">
+          </div>
+
+
+          <div class="col-lg-11">
+            <div class="badge-row">
+              <div class="badge-item">
+                <p class="badge-number mb-0 text-center">{$NB_YEARS} {'years'|translate}</p>
+                <div class="p-boxed">{'porg_about_us_years'|translate}</div>
+              </div>
+
+              <div class="badge-item">
+                <p class="badge-number mb-0 text-center">{$NB_INSTALLATIONS}</p>
+                <div class="p-boxed">{'porg_about_us_installations'|translate}</div>
+              </div>
+
+              <div class="badge-item">
+                <p class="badge-number mb-0 text-center">{$NB_DOWNLOADS}{'M (the one for millions)'|translate}</p>
+                <div class="p-boxed">{'porg_about_us_downloads'|translate}</div>
+              </div>
+
+              <div class="badge-item">
+                <p class="badge-number mb-0 text-center">{$NB_EXTENSIONS}</p>
+                <div class="p-boxed">{'porg_about_us_extensions'|translate}</div>
+              </div>
+
+              <div class="badge-item">
+                <p class="badge-number mb-0 text-center">{$NB_TRANSLATIONS}</p>
+                <div class="p-boxed">{'porg_about_us_languages'|translate}</div>
+              </div>
+
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="container-fluide container-fluide-missions">
-    <div class="container text-center" id="pwg-missions">
-      <div class="row pwg-about-missions">
-        <h2>{'Our Mission'|translate}</h2>
-        <p>{'porg_about_us_mission_desc'|translate}</p>
-      </div>
-      <div class="row pwg-about-stats">
-        <div class="col-md-15 col-xs-6 pwg-about-software-old">
-          <div class="number-infos">{$NB_YEARS}</div>
-          <p>{'Years old'|translate}</p>
-        </div>
-        <div class="col-md-15 col-xs-6 pwg-about-software-old">
-          <div class="number-infos">{$NB_RELEASES}</div>
-          <p>{'Releases'|translate}</p>
-        </div>
-        <div class="col-md-15 col-xs-6 pwg-about-download">
-          <div class="number-infos">2,8M</div>
-          <p>{'Downloads'|translate}</p>
-        </div>
-        <div class="col-md-15 col-xs-6 pwg-about-download">
-          <div class="number-infos">282k</div>
-          <p>{'Forum messages'|translate}</p>
-        </div>
-        <div class="col-md-15 col-xs-6 pwg-about-pic-uploaded">
-          <div class="number-infos">599</div>
-          <p>{'Extensions'|translate}</p>
-        </div>
-      </div>
-    </div>
-  </section>
+{literal}
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // --- Parallax effect for miniatures ---
+      const miniatures = document.querySelectorAll('.img-minia');
+      const speeds = [0.4, 0.5, 0.65, 0.2, 0.5, 0.8];
 
-{*
-  <section class="container container-about-title-our-team">
-    <div class="row" id="pwg-our-team">
-      <div class="col-md-3 pwg-about-earth">
-        <img src="{$PORG_ROOT_URL}images/about_us/earth.svg"/>
-      </div>
-      <div class="col-md-9 text-center">
-        <h2>{'Piwigo contributors'|translate}</h2>
-      </div>
-    </div>
-  </section>
+      function applyParallax() {
+        let scrollY = window.scrollY;
+        miniatures.forEach((minia, index) => {
+          let moveY = -scrollY * speeds[index];
+          minia.style.transform = `translateY(${moveY}px)`;
+        });
+      }
+      window.addEventListener('scroll', applyParallax);
 
-  <section class="container-fluide container-fluide-about-contributors">
-    <div class="container">
-      <div class="row text-center">
-        <span>{'porg_about_us_contributors_desc'|translate}</span>
-      </div>
-    </div>
-  </section>
+      // --- Equalize card title heights ---
+      function equalizeCardTitleHeights() {
+        const cards = document.querySelectorAll('.container-desc .glass-card');
+        if (cards.length === 0) return;
 
-  <section class="container-fluide">
-    <div class="container container-about-team-contributors text-center">
-      <div class="row">
-        <div class="col-md-15 col-xs-4">
-          <a href="#"><img src="{$PORG_ROOT_URL}images/about_us/avatar1.svg"/></a>
-        </div>
-        <div class="col-md-15 col-xs-4">
-          <a href="#"><img src="{$PORG_ROOT_URL}images/about_us/avatar1.svg"/></a>
-        </div>
-        <div class="col-md-15 col-xs-4">
-          <a href="#"><img src="{$PORG_ROOT_URL}images/about_us/avatar1.svg"/></a>
-        </div>
-        <div class="col-md-15 col-xs-4">
-          <a href="#"><img src="{$PORG_ROOT_URL}images/about_us/avatar1.svg"/></a>
-        </div>
-        <div class="col-md-15 col-xs-4">
-          <a href="#"><img src="{$PORG_ROOT_URL}images/about_us/avatar1.svg"/></a>
-        </div>
-        <div class="col-md-15 col-xs-4">
-          <a href="#"><img src="{$PORG_ROOT_URL}images/about_us/avatar1.svg"/></a>
-        </div>
-        <div class="col-md-15 col-xs-12 pwg-team-contributors-involved">
-          <a href="{$PORG_ROOT}{$URL.get_involved}"><div class="contributor-you">{'You?'|translate}</div>
-          <p>{'Take part in our adventure'|translate}<br>
-          <span class="text-center">{'Get involved!'|translate}</span></p></a>
-        </div>
-        <div class="col-md-15 col-xs-4">
-          <a href="#"><img src="{$PORG_ROOT_URL}images/about_us/avatar1.svg"/></a>
-        </div>
-        <div class="col-md-15 col-xs-4">
-          <a href="#"><img src="{$PORG_ROOT_URL}images/about_us/avatar1.svg"/></a>
-        </div>
-        <div class="col-md-15 col-xs-4">
-          <a href="#"><img src="{$PORG_ROOT_URL}images/about_us/avatar1.svg"/></a>
-        </div>
-        <div class="col-md-15 col-xs-4">
-          <a href="#"><img src="{$PORG_ROOT_URL}images/about_us/avatar1.svg"/></a>
-        </div>
-        <div class="col-md-15 col-xs-4">
-          <a href="#"><img src="{$PORG_ROOT_URL}images/about_us/avatar1.svg"/></a>
-        </div>
-        <div class="col-md-15 col-xs-4">
-          <a href="#"><img src="{$PORG_ROOT_URL}images/about_us/avatar1.svg"/></a>
-        </div>
-        <div class="col-md-15 col-xs-4">
-          <a href="#"><img src="{$PORG_ROOT_URL}images/about_us/avatar1.svg"/></a>
-        </div>
-        <div class="col-md-15 col-xs-4">
-          <a href="#"><img src="{$PORG_ROOT_URL}images/about_us/avatar1.svg"/></a>
-        </div>
-        <div class="col-xs-4 last-contributor">
-          <a href="#"><img src="{$PORG_ROOT_URL}images/about_us/avatar1.svg"/></a>
-        </div>
-      </div>
-    </div>
-  </section>
-*}
-  <section class="container-fluide container-fluide-about-piwigo-timeline" id="pwg-history">
-    <div class="container container-piwigo-timeline">
-      <div class="row row-pwg-timeline-computer">
+        const titles = document.querySelectorAll('.container-desc .glass-card h3');
+        let maxHeight = 0;
+
+        titles.forEach(title => {
+          title.style.minHeight = '0px';
+        });
+
+        titles.forEach(title => {
+          if (title.offsetHeight > maxHeight) {
+            maxHeight = title.offsetHeight;
+          }
+        });
+
+        titles.forEach(title => {
+          title.style.minHeight = maxHeight + 'px';
+        });
+      }
+      equalizeCardTitleHeights();
+      window.addEventListener('resize', equalizeCardTitleHeights);
+
+      // --- Adjust orange bar height on mobile ---
+      const orangeBar = document.querySelector('.orange-bar');
+      const glassCards = document.querySelectorAll('.container-desc .glass-card');
+      const glassCardContainer = document.querySelector('.glass-card-container');
+
+      function adjustOrangeBarHeight() {
+        if (window.innerWidth <= 992) {
+          let totalHeight = 0;
+          glassCards.forEach(card => {
+            totalHeight += card.offsetHeight;
+          });
+          orangeBar.style.height = (totalHeight + 170) + 'px';
+          glassCardContainer.style.marginTop = '-' + (totalHeight + 120) + 'px';
+        } else {
+          orangeBar.style.height = '';
+          glassCardContainer.style.marginTop = '-120px';
+        }
+      }
+      adjustOrangeBarHeight();
+      window.addEventListener('resize', adjustOrangeBarHeight);
+    });
+  </script>
+{/literal}
+
+
+<section class="container-desc">
+  <div class="container">
+    <div class="row text-center">
+      <h2 class="mb-5 text-center">{'porg_about_us_desc_title'|translate}</h2>
+      <img src="{$PORG_ROOT_URL}images/about-us/orange_bar.webp" class="px-0 orange-bar">
+      <div class="glass-card-container">
         <div class="row">
-          <div class="col-md-1 pwg-timeline-top-left">
-          </div>
-          <div class="col-md-5 pwg-timeline-top">
-            <div class="pwg-timeline-content-left">
-              <div class="col-md-6 col-piwigo-timeline-content-left">
-                <h2 class="bold">{'Mobile apps'|translate}</h2>
-                <p>{'porg_about_us_apps_desc'|translate}</p>
-              </div>
-              <div class="col-md-6 col-piwigo-timeline-content-right">
-                <div class="year">2011</div>
-              </div>
-              <div id="circle">
-                <img src="{$PORG_ROOT_URL}images/about_us/dot_phone.svg"/>
-              </div>
+          <div class="col-12 col-lg-4">
+            <div class="glass-card">
+              <h3 class="text-center">{'porg_about_us_desc_title_card1'|translate}</h3>
+              <p class="text-center">{'porg_about_us_desc_desc_card1'|translate}</p>
             </div>
           </div>
-          <div class="col-md-5 pwg-timeline-top">
-            <div class="pwg-timeline-content-right">
-              <div class="col-md-6 col-piwigo-timeline-content-left">
-                <h2 class="bold">{'Piwigo moves to GitHub'|translate}</h2>
-                <p>{'porg_about_us_github_desc'|translate}</p>
-              </div>
-              <div class="col-md-6 col-piwigo-timeline-content-right">
-                <div class="year">2015</div>
-              </div>
-              <div id="circle">
-                <img src="{$PORG_ROOT_URL}images/about_us/dot_github.svg"/>
-              </div>
+          <div class="col-12 col-lg-4">
+            <div class="glass-card">
+              <h3 class="text-center">{'porg_about_us_desc_title_card2'|translate}</h3>
+              <p class="text-center">{'porg_about_us_desc_desc_card2'|translate}</p>
             </div>
           </div>
-          <div class="col-md-1 pwg-timeline-top pwg-piwigo-title">
-            <div class="pwg-timeline-end">PIWIGO</div>
+          <div class="col-12 col-lg-4">
+            <div class="glass-card">
+              <h3 class="text-center">{'porg_about_us_desc_title_card3'|translate}</h3>
+              <p class="text-center">{'porg_about_us_desc_desc_card3'|translate}</p>
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-12 pwg-timeline-left-special">
-          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="container-beginning">
+  <div class="container justify-content-center">
+    <div class="row text-center justify-content-center">
+      <div class="col-md-10">
+        {include file="template/include/card/global_text_image.tpl" title={'porg_about_us_beginning_title'|translate} desc={'porg_about_us_beginning_desc'|translate} image="{$PORG_ROOT_URL}images/about-us/plg.webp" }
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="container-open">
+  <div class="container justify-content-center">
+    <div class="row text-center justify-content-center">
+      <div class="col-md-9">
+        <div class="grey-box">
+          <h2 class="mb-4 text-center">{'porg_about_us_open_title'|translate}</h2>
+          {include file="template/include/card/global_text_image.tpl" desc={'porg_about_us_open_desc'|translate} image="{$PORG_ROOT_URL}images/about-us/git.webp" }
         </div>
-        <div class="row">
-          <div class="col-md-1 pwg-timeline-bottom-left-special">
-          </div>
-          <div class="col-md-5 pwg-timeline-top">
-            <div class="pwg-timeline-content-left">
-              <div class="col-md-6 col-piwigo-timeline-content-left">
-                <div class="year">2010</div>
-              </div>
-              <div class="col-md-6 col-piwigo-timeline-content-right">
-                <h2 class="bold">{'Piwigo.com is launched'|translate}</h2>
-                <p>{'porg_about_us_launch_desc'|translate}</p>
-              </div>
-              <div id="circle">
-                <img src="{$PORG_ROOT_URL}images/about_us/dot_com.svg"/>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-5 pwg-timeline-top">
-            <div class="pwg-timeline-content-right">
-              <div class="col-md-6 col-piwigo-timeline-content-left">
-                <div class="year">2009</div>
-              </div>
-              <div class="col-md-6 col-piwigo-timeline-content-right">
-                <h2 class="bold">{'PhpWebGallery becomes Piwigo'|translate}</h2>
-                <p>{'porg_about_us_webgallery_desc'|translate}</p>
-              </div>
-              <div id="circle">
-                <img src="{$PORG_ROOT_URL}images/about_us/dot_pen.svg"/>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-1 pwg-timeline-top-right">
-          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="container-inde">
+  <div class="container justify-content-center">
+    <div class="row text-center justify-content-center">
+      <div class="col-md-10">
+        {include file="template/include/card/global_text_image.tpl" reverse=true title={'porg_about_us_inde_title'|translate} desc={'porg_about_us_inde_desc'|translate} image="{$PORG_ROOT_URL}images/about-us/{$INDE_IMAGE}" }
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="container-team">
+  <div class="container justify-content-center">
+    <div class="row text-center justify-content-center">
+      <div class="col-md-10 col-lg-8">
+        <div class="triple-true-header">
+          <h2 class="triple-true-title">
+            {'porg_about_us_team_title'|translate}
+          </h2>
+          <p class="pink-text strong-text triple-true-subtitle">
+            {'porg_about_us_team_subtitle'|translate}
+          </p>
         </div>
-        <div class="row">
-          <div class="col-md-12 pwg-timeline-right-special">
+
+        <div class="feature-benefits-strip">
+          <div class="feature-benefit-item">
+            <span class="feature-benefit-icon pink-feature-benefit-icon" aria-hidden="true"><i class="icon-check-1"></i></span>
+            <p class="feature-benefit-text mb-0 li-centered">{'porg_about_us_team_text1'|translate}</p>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-md-1 pwg-timeline-top-left">
+          <div class="feature-benefit-item">
+            <span class="feature-benefit-icon pink-feature-benefit-icon" aria-hidden="true"><i class="icon-check-1"></i></span>
+            <p class="feature-benefit-text mb-0 li-centered">{'porg_about_us_team_text2'|translate}</p>
           </div>
-          <div class="col-md-5 pwg-timeline-top">
-            <div class="pwg-timeline-content-left">
-              <div class="col-md-6 col-piwigo-timeline-content-left">
-                <h2 class="bold">{'Recruitement'|translate}</h2>
-                <p>{'porg_about_us_recruitement_desc'|translate}</p>
-              </div>
-              <div class="col-md-6 col-piwigo-timeline-content-right">
-                <div class="year">2005</div>
-              </div>
-              <div id="circle">
-                <img src="{$PORG_ROOT_URL}images/about_us/add-user.svg"/>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-5 pwg-timeline-top">
-            <div class="pwg-timeline-content-right">
-              <div class="col-md-6 col-piwigo-timeline-content-left">
-                <h2 class="bold">{'Arrivals of Plugins'|translate}</h2>
-                <p>{'porg_about_us_plugins_desc1'|translate} {'porg_about_us_plugins_desc2'|translate}</p>
-              </div>
-              <div class="col-md-6 col-piwigo-timeline-content-right">
-                <div class="year">2007</div>
-              </div>
-              <div id="circle">
-                <img src="{$PORG_ROOT_URL}images/about_us/dot_plugin.svg"/>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-1 pwg-timeline-bottom-right-special">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 pwg-timeline-left-special">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-1 pwg-timeline-bottom-left-special">
-          </div>
-          <div class="col-md-5 pwg-timeline-top">
-            <div class="pwg-timeline-content-left">
-              <div class="col-md-6 col-piwigo-timeline-content-left">
-                <div class="year">2003</div>
-              </div>
-              <div class="col-md-6 col-piwigo-timeline-content-right">
-                <h2 class="bold">Free.fr</h2>
-                <p>{'porg_about_us_beginning_desc1'|translate} {'porg_about_us_beginning_desc2'|translate}</p>
-              </div>
-              <div id="circle" class="logo-freefr">
-                <img src="{$PORG_ROOT_URL}images/about_us/free.png"/>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-5 pwg-timeline-no-border">
-            <div class="pwg-timeline-top-half"></div>
-            <div class="pwg-timeline-content-right">
-              <div class="col-md-6 col-piwigo-timeline-content-left">
-                <div class="year">2002</div>
-              </div>
-              <div class="col-md-6 col-piwigo-timeline-content-right">
-                <h2 class="bold">{'Birth'|translate}</h2>
-                <p>{'porg_about_us_birth_desc'|translate}</p>
-              </div>
-              <div id="circle">
-                <img src="{$PORG_ROOT_URL}images/about_us/dot_birth.svg"/>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-1">
+          <div class="feature-benefit-item">
+            <span class="feature-benefit-icon pink-feature-benefit-icon" aria-hidden="true"><i class="icon-check-1"></i></span>
+            <p class="feature-benefit-text mb-0 li-centered">{'porg_about_us_team_text3'|translate}</p>
           </div>
         </div>
       </div>
 
-      <div class="row row-pwg-timeline-mobile pwg-timeline-mobile-content">
-        <div class="col-xs-12">
-          <div class="col-xs-2 pwg-timeline-right-half-bottom">
-            <div class="circle-top circle-github">
-              <img src="{$PORG_ROOT_URL}images/about_us/dot_github.svg"/>
-            </div>
-          </div>
-          <div class="col-xs-10 pwg-timeline-mobile-article">
-            <div class="year">2015</div>
-            <h2 class="bold">{'Piwigo moves to GitHub'|translate}</h2>
-            <p>{'porg_about_us_github_desc'|translate}</p>
-          </div>
-        </div>
-        <div class="col-xs-12">
-          <div class="col-xs-2 pwg-timeline-right">
-            <div class="circle circle-phone">
-              <img src="{$PORG_ROOT_URL}images/about_us/dot_phone.svg"/>
-            </div>
-          </div>
-          <div class="col-xs-10 pwg-timeline-mobile-article">
-            <div class="year">2011</div>
-            <h2 class="bold">{'Mobile apps'|translate}</h2>
-            <p>{'porg_about_us_apps_desc'|translate}</p>
-          </div>
-        </div>
-        <div class="col-xs-12">
-          <div class="col-xs-2 pwg-timeline-right">
-            <div class="circle">
-            </div>
-          </div>
-          <div class="col-xs-10 pwg-timeline-mobile-article">
-            <div class="year">2010</div>
-            <h2 class="bold">{'Piwigo.com is launched'|translate}</h2>
-            <p>{'porg_about_us_launch_desc'|translate}</p>
-          </div>
-        </div>
-        <div class="col-xs-12">
-          <div class="col-xs-2 pwg-timeline-right">
-            <div class="circle">
-              <img src="{$PORG_ROOT_URL}images/about_us/dot_pen.svg"/>
-            </div>
-          </div>
-          <div class="col-xs-10 pwg-timeline-mobile-article">
-            <div class="year">2009</div>
-            <h2 class="bold">{'PhpWebGallery becomes Piwigo'|translate}</h2>
-            <p>{'porg_about_us_webgallery_desc'|translate}</p>
-          </div>
-        </div>
-        <div class="col-xs-12">
-          <div class="col-xs-2 pwg-timeline-right">
-            <div class="circle">
-              <img src="{$PORG_ROOT_URL}images/about_us/dot_plugin.svg"/>
-            </div>
-          </div>
-          <div class="col-xs-10 pwg-timeline-mobile-article">
-            <div class="year">2007</div>
-            <h2 class="bold">{'Arrivals of Plugins'|translate}</h2>
-            <p>{'porg_about_us_plugins_desc1'|translate} {'porg_about_us_plugins_desc2'|translate}</p>
-          </div>
-        </div>
-        <div class="col-xs-12">
-          <div class="col-xs-2 pwg-timeline-right">
-            <div class="circle">
-            </div>
-          </div>
-          <div class="col-xs-10 pwg-timeline-mobile-article">
-            <div class="year">2005</div>
-            <h2 class="bold">{'Recruitement'|translate}</h2>
-            <p>{'porg_about_us_recruitement_desc'|translate}</p>
-          </div>
-        </div>
-        <div class="col-xs-12">
-          <div class="col-xs-2 pwg-timeline-right">
-            <div class="circle">
-            </div>
-          </div>
-          <div class="col-xs-10 pwg-timeline-mobile-article">
-            <div class="year">2003</div>
-            <h2 class="bold">Free.fr</h2>
-            <p>{'porg_about_us_beginning_desc1'|translate} {'porg_about_us_beginning_desc2'|translate}</p>
-          </div>
-        </div>
-        <div class="col-xs-12">
-          <div class="col-xs-2 pwg-timeline-right-half-top">
-            <div class="circle">
-              <img src="{$PORG_ROOT_URL}images/about_us/dot_birth.svg"/>
-            </div>
-          </div>
-          <div class="col-xs-10 pwg-timeline-mobile-article">
-            <div class="year">2002</div>
-            <h2 class="bold">{'Birth'|translate}</h2>
-            <p>{'porg_about_us_birth_desc'|translate}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+      <h3 class="text-center mb-5">
+        {'Meet our staff'|translate}
+      </h3>
+      <div class="col-md-10">
+        <div class="row justify-content-center justify-content-md-start">
+          {include file="template/include/card/person_card.tpl"
+          name="Pierrick"
+          role={'Founder & Lead Developer'|translate}
+          image="pierrick.webp"
+          buttons=[['icon' => 'icon-cursor', 'link' => 'https://pierrick.le-gall.net/']]
+          }
 
-  <section class="container container-about-business-model">
-    <div class="row row-about-title-business-model text-center">
-      <h2>{'Business Model'|translate}</h2>
-      <p>{'porg_about_us_business_desc1'|translate} {'porg_about_us_business_desc2'|translate}</p>
-    </div>
-    <div class="equal row-about-content-business-model">
-      <div class="col-md-6">
-        <div class="col-about-piwigodotcom">
-          <h3>{'Piwigo.com'|translate}</h3>
-          <p>{'porg_about_us_dotcom_desc1'|translate} {'porg_about_us_dotcom_desc2'|translate} {'porg_about_us_dotcom_desc3'|translate}</p>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="col-about-prestations">
-          <h3>{'Services'|translate}</h3>
-          <p>{'porg_about_us_service_desc1'|translate} {'porg_about_us_service_desc2'|translate}</p>
-        </div>
-      </div>
-    </div>
-  </section>
+          {include file="template/include/card/person_card.tpl"
+          name="Damien"
+          role={'Support & Plugin Developer'|translate}
+          image="damien.webp"
+          buttons=[['icon' => 'icon-cursor', 'link' => 'https://pierrick.le-gall.net/']]
+          }
 
-  <section class="container-fluide container-fluide-about-get-involved text-center">
-    <div class="container container-about-get-involved" id="pwg-get-involved">
-      <div class="row">
-        <h2>{'Want to be part of the adventure?'|translate}</h2>
-        <p>{'porg_about_us_join_desc1'|translate} {'porg_about_us_join_desc2'|translate}</p>
-        <a class="btn btn-get-involved" href="{$PORG_ROOT}{$URL.get_involved}">{'Get Involved'|translate}</a>
+          {include file="template/include/card/person_card.tpl"
+          name="Hannah"
+          role={'Developer'|translate}
+          image="hannah.webp"
+          }
+
+          {include file="template/include/card/person_card.tpl"
+          name="Willy"
+          role={'Developer'|translate}
+          image="willy.webp"
+          buttons=
+          [
+          ['icon' => 'icon-linkedin', 'link' => 'https://www.linkedin.com/in/linty/'],
+          ['icon' => 'icon-git', 'link' => 'https://github.com/LintyDev']
+          ]
+          }
+
+          {include file="template/include/card/person_card.tpl"
+          name="Lana"
+          role={'Developer'|translate}
+          image="lana.webp"
+          buttons=
+          [
+          ['icon' => 'icon-longhouse', 'link' => 'https://la-taniere-solidaire.fr/'],
+          ['icon' => 'icon-codeberg', 'link' => 'https://codeberg.org/Renarde-Dev'],
+          ['icon' => 'icon-git', 'link' => 'https://github.com/Renarde-dev']
+          ]
+          }
+
+          {include file="template/include/card/person_card.tpl"
+          name="Claire"
+          role={'Marketing'|translate}
+          image="claire.webp"
+          buttons=
+          [
+          ['icon' => 'icon-linkedin', 'link' => 'https://www.linkedin.com/in/clairemichard/']
+          ]
+          }
+
+          {include file="template/include/card/person_card.tpl"
+          name="Alice"
+          role={'UX/UI Designer'|translate}
+          image="alice.webp"
+          buttons=
+          [
+          ['icon' => 'icon-linkedin', 'link' => 'https://www.linkedin.com/in/alice-bossuat-abcd-studio/'],
+          ['icon' => 'icon-insta2', 'link' => 'https://www.instagram.com/abcdstudio_/'],
+          ['icon' => 'icon-cursor', 'link' => 'https://abcd-studio.fr/']
+          ]
+          }
+
+          {include file="template/include/card/person_card.tpl"
+          name="Steven"
+          role={'Finance'|translate}
+          image="steven.webp"
+          buttons=
+          [
+          ['icon' => 'icon-linkedin', 'link' => 'https://www.linkedin.com/in/stevenlardeux/'],
+          ['icon' => 'icon-cursor', 'link' => 'https://www.ohmydaf.com/']
+          ]
+          }
+        </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+
+<section class="container-model">
+  <div class="container justify-content-center">
+    <div class="row text-center justify-content-center">
+      <div class="col-md-10">
+
+      </div>
+    </div>
+  </div>
+</section>

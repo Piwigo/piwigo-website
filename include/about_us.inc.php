@@ -2,17 +2,27 @@
 
 global $template, $lang_info;
 
-// find numbers to display: number of years, number of releases, number of downloads, number of forum messages, number of extensions
-
 // 1) number of years
 $template->assign('NB_YEARS', porg_get_nb_years());
 
-// 2) releases
-include(PORG_PATH . '/data/release.data.php');
-$template->assign('NB_RELEASES', count($porg_releases));
+// 2) installations
+$template->assign('NB_INSTALLATIONS', "100,000+");
 
-// TODO
-// 3) download : need access to piwigo_site.download_log
-// 4) number of forum messages : need access to all forums...
-// 5) number of extensions
+// 3) downloads
+$template->assign('NB_DOWNLOADS', "2,8");
+
+// 4) extensions
+$template->assign('NB_EXTENSIONS', "599");
+
+// 5) translations
+$template->assign('NB_TRANSLATIONS', "59+");
+
+
+$inde_image ='bloc-eu.webp';
+
+if (isset($user['language']) && $user['language'] === 'fr_FR') {
+	$inde_image ='bloc-fr.webp';
+}
+
+$template->assign('INDE_IMAGE', $inde_image);
 ?>

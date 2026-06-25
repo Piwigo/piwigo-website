@@ -1,52 +1,53 @@
 <?php
 
-$lang['porg_about_us_desc1'] = 'We\'re a community of contributors from all around the globe.';
-$lang['porg_about_us_desc2'] = 'If you believe in our open source mission, we hope you will join us!';
-$lang['Our Mission'] = 'Our Mission';
-$lang['porg_about_us_mission_desc'] = 'The Piwigo mission is to build the best open source photo manager for the web with a strong focus on user experience over technology.';
-$lang['Years old'] = 'Years old';
-$lang['Releases'] = 'Releases';
-$lang['Downloads'] = 'Downloads';
-$lang['Forum messages'] = 'Forum messages';
-$lang['Piwigo contributors'] = 'Piwigo contributors';
-$lang['porg_about_us_contributors_desc'] = 'Contributors from all over the world, working on every pieces of the Piwigo ecosytem!';
-$lang['You?'] = 'You?';
-$lang['Take part in our adventure'] = 'Take part in our adventure';
-$lang['Get involved!'] = 'Get involved!';
-$lang['Mobile apps'] = 'Mobile apps';
-$lang['porg_about_us_apps_desc'] = 'Piwigo comes as mobile apps for iPhone/iPad and Android.';
-$lang['Piwigo moves to GitHub'] = 'Piwigo moves to GitHub';
-$lang['porg_about_us_github_desc'] = 'Piwigo officialy joins the Github community of coders.';
-$lang['Piwigo.com is launched'] = 'Piwigo.com is launched';
-$lang['porg_about_us_launch_desc'] = 'Cloud-hosting, ready-to-use Piwigo for everybody.';
-$lang['PhpWebGallery becomes Piwigo'] = 'PhpWebGallery becomes Piwigo';
-$lang['porg_about_us_webgallery_desc'] = 'New name, version 2.0 but same project.';
-$lang['Recruitement'] = 'Recruitement';
-$lang['porg_about_us_recruitement_desc'] = 'The team gets bigger and coding activity is growing strongly.';
-$lang['Arrivals of Plugins'] = 'Arrivals of Plugins';
-$lang['porg_about_us_plugins_desc1'] = 'Major technical and mindset shift.';
-$lang['porg_about_us_plugins_desc2'] = 'New features and new contributors.';
-$lang['Beginning'] = 'Beginning';
-$lang['porg_about_us_beginning_desc1'] = 'Available on Free.fr with a 1-click install.';
-$lang['porg_about_us_beginning_desc2'] = 'Will attract many contributors.';
-$lang['Birth'] = 'Birth';
-$lang['porg_about_us_birth_desc'] = 'After months of preparation, version 1.0.0 was released.';
-$lang['Business Model'] = 'Business Model';
-$lang['porg_about_us_business_desc1'] = 'Although animated by a largely volunteer community of contributors, a project like Piwigo is not free to run: web servers, domain names, development time or website management.';
-$lang['porg_about_us_business_desc2'] = 'How is the project viable at money level?';
-$lang['Donations'] = 'Donations';
-$lang['porg_about_us_donation_desc1'] = 'The Piwigo Association collects donations from its community of users.';
-$lang['porg_about_us_donation_desc2'] = 'This money is used to pay direct fees such as web servers hosting, domain names or mobile application store subscriptions.';
-$lang['porg_about_us_donation_desc3'] = '<a href="%s">Your financial contribution</a> would mark your commitment to the project.';
-$lang['Piwigo.com'] = 'Piwigo.com';
-$lang['porg_about_us_dotcom_desc1'] = 'Profits generated make it possible to spend some time on Piwigo.';
-$lang['porg_about_us_dotcom_desc2'] = 'For example Pierrick, creator of Piwigo and now paid thanks to Piwigo.com, can work on Piwigo.org.';
-$lang['porg_about_us_dotcom_desc3'] = 'The two projects thus maintain a virtuous circle: the success of one leads to the success of the other, and vice versa.';
-$lang['Services'] = 'Services';
-$lang['porg_about_us_service_desc1'] = 'Some coders and theme creators are paid by customers to create new features.';
-$lang['porg_about_us_service_desc2'] = 'Most of the time, these creations are also available to the Piwigo community as a whole.';
-$lang['Want to be part of the adventure?'] = 'Want to be part of the adventure?';
-$lang['porg_about_us_join_desc1'] = 'The Piwigo project needs various skills, such as coders, designers, documentation writers, helpers.';
-$lang['porg_about_us_join_desc2'] = 'If you believe in our mission, be part of it :-)';
+$lang['porg_about_us_title'] = 'Open source photo management software <br><span class="orange-text">since 2002</span>';
+$lang['porg_about_us_desc'] = 'For more than 20 years, Piwigo has remained true to the same idea: giving people full control over their photo and video collections through open source software that is independent, sustainable and built around real user needs.';
+
+$lang['porg_about_us_years'] = 'of continuous development';
+$lang['porg_about_us_installations'] = 'installations worldwide';
+$lang['porg_about_us_downloads'] = 'downloads';
+$lang['porg_about_us_extensions'] = 'extensions';
+$lang['porg_about_us_languages'] = 'languages';
+
+$lang['porg_about_us_desc_title'] = 'Mission and values';
+$lang['porg_about_us_desc_title_card1'] = 'Open source';
+$lang['porg_about_us_desc_desc_card1'] = 'We build open source software that helps people and organizations manage their photo and video collections.';
+$lang['porg_about_us_desc_title_card2'] = 'Freedom and control';
+$lang['porg_about_us_desc_desc_card2'] = 'We believe photo management should be powerful, sustainable and accessible, without forcing users into proprietary ecosystems or limiting their control over their own data.';
+$lang['porg_about_us_desc_title_card3'] = 'Users before technology';
+$lang['porg_about_us_desc_desc_card3'] = 'We focus on building the best possible experience for our users, putting usability and real-world needs ahead of technology for technology’s sake.';
+
+$lang['porg_about_us_beginning_title'] = 'How it all started';
+$lang['porg_about_us_beginning_desc'] = 'Back in 2001, while studying computer science, Pierrick Le Gall bought his first digital camera. Looking for a way to share photos with family and friends, he decided to combine his passion for photography and software development.<br><br>In 2002, he released PHPWebGallery as an open source project. What started as a personal solution for sharing photos would eventually become Piwigo, a platform used by individuals and organizations around the world.';
+
+$lang['porg_about_us_open_title'] = 'Open source at heart';
+$lang['porg_about_us_open_desc'] = 'Piwigo is open source software released under the GPL license.<br><br><span class="orange-text">Anyone can download it, install it, customize it and contribute to its development.</span><br><br>Over the years, hundreds of contributors have helped improve Piwigo through code, translations, documentation, support and feedback. This collaborative spirit remains an essential part of the project today.';
+
+$lang['porg_about_us_inde_title'] = 'Independent and European';
+$lang['porg_about_us_inde_desc'] = 'Piwigo is developed in France by a company owned by its founder and team members.<br><br>Our growth is funded by our customers, not by advertising or external investors. This allows us to focus on long-term sustainability and the needs of our users rather than short-term growth targets.<br><br><span class="green-text">We remain free to build Piwigo according to our values and our vision of open source software.</span>';
+
+$lang['porg_about_us_team_title'] = 'Built by a professional team, supported by a community';
+$lang['porg_about_us_team_subtitle'] = 'Piwigo is maintained by a dedicated team based in France.';
+$lang['porg_about_us_team_text1'] = 'Alongside the core team, contributors from around the world help improve Piwigo through bug fixes, plugins, translations, testing, documentation and community support.';
+$lang['porg_about_us_team_text2'] = 'The community has always been an essential part of the project. Since the beginning, more than 282,000 messages have been exchanged on the forum, helping users solve problems, share ideas and help shape the future of Piwigo.';
+$lang['porg_about_us_team_text3'] = 'Together, the team and the community ensure that Piwigo remains active, reliable and continuously evolving.';
+$lang['Meet our staff'] = 'Meet our staff';
+$lang['Founder & Lead Developer'] = 'Founder & Lead Developer';
+$lang['Support & Plugin Developer'] = 'Support & Plugin Developer';
+$lang['Developer'] = 'Developer';
+$lang['Marketing'] = 'Marketing';
+$lang['UX/UI Designer'] = 'UX/UI Designer';
+$lang['Finance'] = 'Finance';
+
+$lang['porg_about_us_model_title'] = 'A sustainable <br>business model';
+$lang['porg_about_us_model_desc'] = 'Unlike many open source projects, Piwigo benefits from a sustainable business model that funds its long-term development.';
+$lang['porg_about_us_model_title1'] = 'Piwigo Cloud';
+$lang['porg_about_us_model_desc1'] = 'Piwigo Cloud subscriptions finance the development of the open source project.<br><br>Revenue generated by Piwigo Cloud allows the team to work full-time on improving Piwigo, maintaining the software and supporting users.<br><br>By choosing Piwigo Cloud, customers directly contribute to the future of the project.';
+$lang['porg_about_us_model_title2'] = 'Professional services';
+$lang['porg_about_us_model_desc2'] = 'Some organizations rely on the Piwigo team and partners for consulting, custom developments and specific integrations. These collaborations often benefit the wider community through improvements contributed back to the project.';
+$lang['porg_about_us_model_title3'] = 'Community donations';
+$lang['porg_about_us_model_desc3'] = 'We also collect donations that help cover community-related expenses such as infrastructure, domain names and mobile application distribution.';
+$lang['porg_about_us_model_title4'] = 'A virtuous circle';
+$lang['porg_about_us_model_desc4'] = 'The success of Piwigo Cloud helps fund the development of Piwigo Open Source.<br><br>In return, improvements made to the software benefit both self-hosted users and Piwigo Cloud customers.<br>The success of one strengthens the other.';
 
 ?>

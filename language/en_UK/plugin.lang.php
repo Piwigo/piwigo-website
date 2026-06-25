@@ -250,6 +250,8 @@ $lang['Feature'] = 'Feature';
 $lang['Description'] = 'Description';
 $lang['Plugin'] = 'Plugin';
 $lang['Search'] = 'Search';
+$lang['years'] = 'years';
+$lang['M (the one for millions)'] = 'M';
 
 /*Used in guide pages*/
 // $lang['porg_guides'] = 'Guides';
