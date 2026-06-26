@@ -479,6 +479,88 @@
           });
         });
       }
+      
+      const timelineContainer = document.querySelector('.timeline-scroll-container');
+      const timelineItems = document.querySelectorAll('.timeline-item');
+      const paginationContainer = document.querySelector('.timeline-pagination');
+      const timelineLine = document.querySelector('.timeline-line');
+
+      if (timelineContainer && timelineItems.length > 0) {
+        timelineItems.forEach((_, index) => {
+          const dot = document.createElement('div');
+          dot.classList.add('pagination-dot');
+          dot.dataset.index = index;
+          paginationContainer.appendChild(dot);
+        });
+        const paginationDots = document.querySelectorAll('.pagination-dot');
+
+        let lastActiveIndex = -1;
+        const updateActiveMilestone = (activeIndex) => {
+          if (activeIndex === lastActiveIndex) return;
+          lastActiveIndex = activeIndex;
+
+          timelineItems.forEach((item, index) => {
+            item.classList.toggle('active', index === activeIndex);
+          });
+          paginationDots.forEach((dot, index) => {
+            dot.classList.toggle('active', index === activeIndex);
+          });
+        };
+
+        const checkCenterItem = () => {
+          const containerCenter = timelineContainer.getBoundingClientRect().left + (timelineContainer.offsetWidth / 2);
+          let closestIndex = 0;
+          let minDistance = Infinity;
+
+          timelineItems.forEach((item, index) => {
+            const itemCenter = item.getBoundingClientRect().left + (item.offsetWidth / 2);
+            const distance = Math.abs(containerCenter - itemCenter);
+            if (distance < minDistance) {
+              minDistance = distance;
+              closestIndex = index;
+            }
+          });
+          updateActiveMilestone(closestIndex);
+        };
+
+        const adjustTimeline = () => {
+          if (timelineItems.length === 0) return;
+          const itemWidth = timelineItems[0].offsetWidth;
+          const scrollPadding = (timelineContainer.offsetWidth / 2) - (itemWidth / 2);
+          
+          timelineContainer.style.paddingLeft = `${scrollPadding}px`;
+          timelineContainer.style.paddingRight = `${scrollPadding}px`;
+        };
+
+        timelineContainer.addEventListener('scroll', checkCenterItem);
+
+        const scrollToItem = (index) => {
+          const targetItem = timelineItems[index];
+          if (targetItem) {
+            const scrollLeft = targetItem.offsetLeft - (timelineContainer.offsetWidth / 2) + (targetItem.offsetWidth / 2);
+            timelineContainer.scrollTo({
+              left: scrollLeft,
+              behavior: 'smooth'
+            });
+          }
+        };
+
+        timelineItems.forEach((item, index) => {
+          item.addEventListener('click', () => scrollToItem(index));
+        });
+
+        paginationDots.forEach((dot, index) => {
+          dot.addEventListener('click', () => scrollToItem(index));
+        });
+
+        adjustTimeline();
+        window.addEventListener('resize', adjustTimeline);
+        
+        const initialActiveIndex = 0;
+        updateActiveMilestone(initialActiveIndex);
+        
+        setTimeout(checkCenterItem, 150);
+      }
     });
   </script>
 {/literal}
@@ -542,3 +624,103 @@
   </div>
 </section>
 
+
+<section class="milestones-container">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+        <div class="milestones-card">
+          <h2 class="milestones-title">{'A few milestones'|translate}</h2>
+          <div class="timeline-wrapper">
+            <div class="timeline-scroll-container">
+              <div class="timeline-item" data-year="2002">
+                <h4 class="timeline-year">2002</h4>
+                <div class="timeline-dot"></div>
+                <div class="timeline-segment-line"></div>
+                <div class="timeline-text p-boxed text-center">{'porg_about_us_milestone_2002'|translate}</div>
+              </div>
+              <div class="timeline-item" data-year="2007">
+                <h4 class="timeline-year">2007</h4>
+                <div class="timeline-dot"></div>
+                <div class="timeline-segment-line"></div>
+                <div class="timeline-text p-boxed text-center">{'porg_about_us_milestone_2007'|translate}</div>
+              </div>
+              <div class="timeline-item" data-year="2009">
+                <h4 class="timeline-year">2009</h4>
+                <div class="timeline-dot"></div>
+                <div class="timeline-segment-line"></div>
+                <div class="timeline-text p-boxed text-center">{'porg_about_us_milestone_2009'|translate}</div>
+              </div>
+              <div class="timeline-item" data-year="2010">
+                <h4 class="timeline-year">2010</h4>
+                <div class="timeline-dot"></div>
+                <div class="timeline-segment-line"></div>
+                <div class="timeline-text p-boxed text-center">{'porg_about_us_milestone_2010'|translate}</div>
+              </div>
+              <div class="timeline-item" data-year="2011">
+                <h4 class="timeline-year">2011</h4>
+                <div class="timeline-dot"></div>
+                <div class="timeline-segment-line"></div>
+                <div class="timeline-text p-boxed text-center">{'porg_about_us_milestone_2011'|translate}</div>
+              </div>
+              <div class="timeline-item" data-year="2015">
+                <h4 class="timeline-year">2015</h4>
+                <div class="timeline-dot"></div>
+                <div class="timeline-segment-line"></div>
+                <div class="timeline-text p-boxed text-center">{'porg_about_us_milestone_2015'|translate}</div>
+              </div>
+              <div class="timeline-item" data-year="2017">
+                <h4 class="timeline-year">2017</h4>
+                <div class="timeline-dot"></div>
+                <div class="timeline-segment-line"></div>
+                <div class="timeline-text p-boxed text-center">{'porg_about_us_milestone_2017'|translate}</div>
+              </div>
+              <div class="timeline-item" data-year="2018">
+                <h4 class="timeline-year">2018</h4>
+                <div class="timeline-dot"></div>
+                <div class="timeline-segment-line"></div>
+                <div class="timeline-text p-boxed text-center">{'porg_about_us_milestone_2018'|translate}</div>
+              </div>
+              <div class="timeline-item" data-year="2019">
+                <h4 class="timeline-year">2019</h4>
+                <div class="timeline-dot"></div>
+                <div class="timeline-segment-line"></div>
+                <div class="timeline-text p-boxed text-center">{'porg_about_us_milestone_2019'|translate}</div>
+              </div>
+              <div class="timeline-item" data-year="2020">
+                <h4 class="timeline-year">2020</h4>
+                <div class="timeline-dot"></div>
+                <div class="timeline-segment-line"></div>
+                <div class="timeline-text p-boxed text-center">{'porg_about_us_milestone_2020'|translate}</div>
+              </div>
+              <div class="timeline-item" data-year="2025">
+                <h4 class="timeline-year">2025</h4>
+                <div class="timeline-dot"></div>
+                <div class="timeline-segment-line"></div>
+                <div class="timeline-text p-boxed text-center">{'porg_about_us_milestone_2025'|translate}</div>
+              </div>
+              <div class="timeline-item" data-year="Today">
+                <h4 class="timeline-year">{'Today'|translate}</h4>
+                <div class="timeline-dot"></div>
+                <div class="timeline-segment-line"></div>
+                <div class="timeline-text p-boxed text-center">{'porg_about_us_milestone_today'|translate}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-pagination">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container-join">
+  <div class="container justify-content-center">
+    <div class="row text-center justify-content-center">
+      <div class="col-md-10">
+        {include file="template/include/card/global_text_image.tpl" title={'porg_about_us_join_title'|translate} desc={'porg_about_us_join_desc'|translate} image="{$PORG_ROOT_URL}images/about-us/join.webp" btn_text={'Get Involved'|translate} btn_link="#" btn_orange=true}
+      </div>
+    </div>
+  </div>
+</section>

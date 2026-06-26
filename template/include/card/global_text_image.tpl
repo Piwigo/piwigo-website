@@ -11,9 +11,15 @@
         {$desc}
       </p>
       {if $btn_text}
-        <div class="d-none d-md-block" {if $desc2 != ''}style="margin-bottom: 1.5rem;{/if}">
-          {include file='template/include/buttons/button.tpl' variant='cta_secondary' label={$btn_text} href='{$btn_link}'}
-        </div>
+        {if $btn_orange}
+          <div class="d-none d-md-flex justify-content-start" {if $desc2 != ''}style="margin-bottom: 1.5rem;{/if}">
+            {include file='template/include/buttons/button.tpl' variant='cta_primary' label={$btn_text} href='{$btn_link}'}
+          </div>
+        {else}
+          <div class="d-none d-md-block" {if $desc2 != ''}style="margin-bottom: 1.5rem;{/if}">
+            {include file='template/include/buttons/button.tpl' variant='cta_secondary' label={$btn_text} href='{$btn_link}'}
+          </div>
+        {/if}
       {/if}
       <p class="feature-description feature-description-desktop mb-4">
         {$desc2}
@@ -24,7 +30,7 @@
 
   <div class="col-12 col-md-6" style="padding-right: 0; padding-left: 0;">
     <div class="feature-image-container {if $imageoffbeat}pe-5 ps-5{/if}" style="margin: 0 20px; {if $reverse}justify-content: flex-end;{/if}">
-      <img src="{$image}" class="feature-image img-fluid" alt="{$title|escape}">
+      <img src="{$image}" class="feature-image img-fluid {if $btn_orange}rounded-4{/if}" alt="{$title|escape}">
     </div>
   </div>
 
@@ -33,9 +39,15 @@
       {$desc}
     </p>
     {if $btn_text}
-      <div style="margin-bottom: 1.5rem;">
-        {include file='template/include/buttons/button.tpl' variant='cta_secondary' label={$btn_text} href='{$btn_link}'}
-      </div>
+      {if $btn_orange}
+        <div class="d-flex justify-content-start" {if $desc2 != ''}style="margin-bottom: 1.5rem;{/if}">
+          {include file='template/include/buttons/button.tpl' variant='cta_primary' label={$btn_text} href='{$btn_link}'}
+        </div>
+      {else}
+        <div style="margin-bottom: 1.5rem;">
+          {include file='template/include/buttons/button.tpl' variant='cta_secondary' label={$btn_text} href='{$btn_link}'}
+        </div>
+      {/if}
     {/if}
     <p class="feature-description feature-description-mobile">
       {$desc2}

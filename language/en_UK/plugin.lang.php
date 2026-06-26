@@ -252,6 +252,8 @@ $lang['Plugin'] = 'Plugin';
 $lang['Search'] = 'Search';
 $lang['years'] = 'years';
 $lang['M (the one for millions)'] = 'M';
+$lang['Today'] = 'Today';
+$lang['Get Involved'] = 'Get Involved';
 
 /*Used in guide pages*/
 // $lang['porg_guides'] = 'Guides';

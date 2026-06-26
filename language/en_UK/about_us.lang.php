@@ -50,4 +50,21 @@ $lang['porg_about_us_model_desc3'] = 'We also collect donations that help cover 
 $lang['porg_about_us_model_title4'] = 'A virtuous circle';
 $lang['porg_about_us_model_desc4'] = 'The success of Piwigo Cloud helps fund the development of Piwigo Open Source.<br><br>In return, improvements made to the software benefit both self-hosted users and Piwigo Cloud customers.<br>The success of one strengthens the other.';
 
+$lang['porg_about_us_milestone_2002'] = 'Piwigo is born under the name PHPWebGallery, as a personal project created by Pierrick Le Gall.';
+$lang['porg_about_us_milestone_2007'] = 'The plugin system is introduced, opening the door to customization and community contributions.';
+$lang['porg_about_us_milestone_2009'] = 'PHPWebGallery becomes Piwigo, marking a new chapter in the project’s evolution.';
+$lang['porg_about_us_milestone_2010'] = 'Launch of Piwigo.com, making Piwigo available as a hosted solution.';
+$lang['porg_about_us_milestone_2011'] = 'The first mobile applications for iOS and Android are released.';
+$lang['porg_about_us_milestone_2015'] = 'Piwigo moves its source code and development workflow to GitHub.';
+$lang['porg_about_us_milestone_2017'] = 'The team grows, strengthening Piwigo’s professional development and long-term sustainability.';
+$lang['porg_about_us_milestone_2018'] = 'Piwigo launches a major UX/UI redesign project, bringing designers into the product development process.';
+$lang['porg_about_us_milestone_2019'] = 'Growing adoption by businesses, public institutions and nonprofits leads Piwigo to expand its professional offerings.';
+$lang['porg_about_us_milestone_2020'] = 'The shift to remote work highlights the value of Piwigo for distributed teams. Increased demand for collaborative photo management helps drive 30% growth in both 2020 and 2021.';
+$lang['porg_about_us_milestone_2025'] = 'Piwigo launches its first AI initiatives, paving the way for new features focused on photo management and user productivity.';
+$lang['porg_about_us_milestone_today'] = 'Piwigo is used by individuals and organizations around the world to manage, share and preserve their photo and video collections.';
+
+$lang['porg_about_us_join_title'] = 'Join the adventure';
+$lang['porg_about_us_join_desc'] = '<span class="orange-text strong-text">Piwigo exists thanks to its users, contributors, customers and partners.</span><br><br>Whether you want to contribute code, improve translations, report bugs, make a donation, or choose Piwigo Cloud for your organization, there are many ways to get involved.';
+$lang['porg_about_us_join_title'] = 'Join the adventure';
+
 ?>
