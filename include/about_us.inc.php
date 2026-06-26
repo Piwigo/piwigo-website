@@ -25,4 +25,12 @@ if (isset($user['language']) && $user['language'] === 'fr_FR') {
 }
 
 $template->assign('INDE_IMAGE', $inde_image);
+
+$circle_image ='circle-eu.webp';
+
+if (isset($user['language']) && $user['language'] === 'fr_FR') {
+	$circle_image ='circle-fr.webp';
+}
+
+$template->assign('CIRCLE_IMAGE', $circle_image);
 ?>

@@ -316,13 +316,229 @@
   </div>
 </section>
 
+<section class="container why-container d-none d-md-block">
+  <div class="row text-center justify-content-center">
+    <div class="col-md-10 text-center justify-content-center">
+      <div class="row justify-content-center align-items-stretch">
+        <div class="col-md-10 text-center mb-5">
+          <h2 class="text-center mb-4">{'porg_about_us_model_title'|translate}</h2>
+          <p class="text-center">{'porg_about_us_model_desc'|translate}</p>
+        </div>
+        <div class="why-items-list">
+          <div class="row why-split-row">
+            <div class="col-md-6 why-titles-col">
+              <div class="why-titles-stack">
+                <div class="why-title-container h-100">
+                  <div class="why-title-item" style="--item-index: 0;">
+                    <i class="icon-langage orange-text"></i>
+                    <h3 class="dark-text">{'porg_about_us_model_title1'|translate}</h3>
+                  </div>
+                  <div class="why-title-container">
+                    <div class="why-title-item" style="--item-index: 1;">
+                      <i class="icon-help orange-text"></i>
+                      <h3 class="dark-text">{'porg_about_us_model_title2'|translate}</h3>
+                    </div>
+                    <div class="why-title-container">
+                      <div class="why-title-item" style="--item-index: 2;">
+                        <i class="icon-contribute orange-text"></i>
+                        <h3 class="dark-text">{'porg_about_us_model_title3'|translate}</h3>
+                      </div>
+                      <div class="why-title-container">
+                        <div class="why-title-item" style="--item-index: 3;">
+                          <i class="icon-contribute orange-text"></i>
+                          <h3 class="dark-text">{'porg_about_us_model_title4'|translate}</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 why-cards-col">
+              <div class="test-card mb-4">
+                <p class="mb-0">{'porg_about_us_model_desc1'|translate}</p>
+              </div>
+              <div class="test-card mb-4">
+                <p class="mb-0">{'porg_about_us_model_desc2'|translate}</p>
+              </div>
+              <div class="test-card mb-4">
+                <p class="mb-0">{'porg_about_us_model_desc3'|translate}</p>
+              </div>
+              <div class="test-card mb-4">
+                <p class="mb-0">{'porg_about_us_model_desc4'|translate}</p>
+                <img class="img-circle w-100 mt-3" src="{$PORG_ROOT_URL}images/about-us/{$CIRCLE_IMAGE}" alt="Piwigo screenshot">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
 
-<section class="container-model">
-  <div class="container justify-content-center">
-    <div class="row text-center justify-content-center">
-      <div class="col-md-10">
+{literal}
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function() {
 
+      const titleItems = document.querySelectorAll('.why-title-item');
+      const cardItems = document.querySelectorAll('.why-cards-col .test-card');
+      const titlesStack = document.querySelector('.why-titles-stack');
+      const titlesCol = document.querySelector('.why-titles-col');
+
+      if (!titleItems.length || !cardItems.length || !titlesStack || !titlesCol) return;
+
+      function handlePositions() {
+        const cardsCol = document.querySelector('.why-cards-col');
+        const titlesCol = document.querySelector('.why-titles-col');
+        const titleContainers = document.querySelectorAll('.why-titles-stack > .why-title-container, .why-title-container .why-title-container');
+
+        if (!cardsCol || !titlesCol) return;
+
+        titlesCol.style.height = cardsCol.offsetHeight + 'px';
+
+        const cards = Array.from(document.querySelectorAll('.why-cards-col .test-card'));
+        const cardHeights = cards.map(card => card.offsetHeight);
+        const containers = document.querySelectorAll('.why-title-container');
+
+        const container1 = containers[0];
+        const container2 = containers[1];
+        const container3 = containers[2];
+        const container4 = containers[3];
+
+        const container1Height = cardHeights[0] + cardHeights[1] + cardHeights[2] + cardHeights[3] + 104 + 104 + 104 + 24;
+        const container2Height = cardHeights[1] + cardHeights[2] + cardHeights[3] + 104 + 104 + 24;
+        const container3Height = cardHeights[2] + cardHeights[3] + 104 + 24;
+        const container4Height = cardHeights[3] + 24;
+
+        if (container1) container1.style.minHeight = container1Height + 'px';
+        if (container2) container2.style.minHeight = container2Height + 'px';
+        if (container3) container3.style.minHeight = container3Height + 'px';
+        if (container4) container4.style.minHeight = container4Height + 'px';
+
+        const gap = 10;
+        let cumulativeTop = 40;
+        let cumulativeBottom = 20;
+
+        titleItems.forEach(function(item) {
+          item.style.top = cumulativeTop + 'px';
+          cumulativeTop += item.offsetHeight + gap;
+        });
+
+        Array.from(titleItems).reverse().forEach(function(item) {
+          item.style.marginBottom = cumulativeBottom + 'px';
+          cumulativeBottom += item.offsetHeight + gap;
+        });
+
+        let activeIndex = 0;
+
+        titleItems.forEach((item, index) => {
+          const stickyTop = parseFloat(item.style.top) || 0;
+
+          if (item.getBoundingClientRect().top <= stickyTop + 1) {
+            activeIndex = index;
+          }
+        });
+
+        titleItems.forEach((item, index) => {
+          const h3 = item.querySelector('h3');
+          if (h3) h3.classList.toggle('dark-text', index !== activeIndex);
+          const icon = item.querySelector('i');
+          if (icon) icon.classList.toggle('orange-text', index === activeIndex);
+          if (icon) icon.classList.toggle('dark-text', index !== activeIndex);
+        });
+      }
+
+      handlePositions();
+      window.addEventListener('resize', handlePositions);
+      window.addEventListener('load', handlePositions);
+      window.addEventListener('orientationchange', handlePositions);
+      window.addEventListener('scroll', handlePositions);
+
+      // --- Mobile Carousel Logic ---
+      const carousel = document.querySelector('.model-mobile-carousel');
+      const dots = document.querySelectorAll('.model-mobile-dot');
+
+      if (carousel && dots.length) {
+        // Update dots on scroll
+        carousel.addEventListener('scroll', function() {
+          const width = carousel.offsetWidth;
+          const currentIndex = Math.round(carousel.scrollLeft / width);
+
+          dots.forEach((dot, index) => {
+            dot.classList.toggle('is-active', index === currentIndex);
+          });
+        });
+
+        // Scroll to slide on dot click
+        dots.forEach((dot, index) => {
+          dot.addEventListener('click', function() {
+            const width = carousel.offsetWidth;
+            carousel.scrollTo({
+              left: width * index,
+              behavior: 'smooth'
+            });
+          });
+        });
+      }
+    });
+  </script>
+{/literal}
+
+
+<section class="container model-container-mobile d-md-none">
+  <div class="model-mobile-header text-center mb-4">
+    <h2 class="text-center mb-2">{'porg_about_us_model_title'|translate}</h2>
+    <p class="text-center">{'porg_about_us_model_desc'|translate}</p>
+  </div>
+
+  <div class="model-mobile-carousel">
+
+    <div class="model-mobile-slide">
+      <div class="model-mobile-heading-row">
+        <i class="icon-langage orange-text"></i>
+        <h3>{'porg_about_us_model_title1'|translate}</h3>
+      </div>
+      <div class="test-card">
+        <p class="mb-0">{'porg_about_us_model_desc1'|translate}</p>
+      </div>
+    </div>
+
+    <div class="model-mobile-slide">
+      <div class="model-mobile-heading-row">
+        <i class="icon-help orange-text"></i>
+        <h3>{'porg_about_us_model_title2'|translate}</h3>
+      </div>
+      <div class="test-card">
+        <p class="mb-0">{'porg_about_us_model_desc2'|translate}</p>
+      </div>
+    </div>
+
+    <div class="model-mobile-slide">
+      <div class="model-mobile-heading-row">
+        <i class="icon-contribute orange-text"></i>
+        <h3>{'porg_about_us_model_title3'|translate}</h3>
+      </div>
+      <div class="test-card">
+        <p class="mb-0">{'porg_about_us_model_desc3'|translate}</p>
+      </div>
+    </div>
+
+    <div class="model-mobile-slide">
+      <div class="model-mobile-heading-row">
+        <i class="icon-contribute orange-text"></i>
+        <h3>{'porg_about_us_model_title4'|translate}</h3>
+      </div>
+      <div class="test-card">
+        <p class="mb-0">{'porg_about_us_model_desc4'|translate}</p>
+        <img class="img-circle w-100 mt-3" src="{$PORG_ROOT_URL}images/about-us/{$CIRCLE_IMAGE}" alt="Piwigo screenshot">
       </div>
     </div>
   </div>
+
+  <div class="model-mobile-dots mt-3">
+    <span class="model-mobile-dot is-active" data-dot="0"></span>
+    <span class="model-mobile-dot" data-dot="1"></span>
+    <span class="model-mobile-dot" data-dot="2"></span>
+    <span class="model-mobile-dot" data-dot="3"></span>
+  </div>
 </section>
+
