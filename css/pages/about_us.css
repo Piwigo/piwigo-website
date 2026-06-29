@@ -276,31 +276,30 @@
 }
 
 .person-card-actions {
-  display: flex;
   gap: 8px;
+  display: flex;
   padding: 0 18px;
   margin-top: auto;
 }
 
 .person-card-btn {
-  flex: 1;
-  background-color: var(--secondary_orange);
+  flex: 0 1 auto;
+  background-color: var(--clear);
   border: none;
-  color: var(--dark);
-  border-radius: 4px;
+  color: var(--accent_green);
   transition: all 0.3s ease;
   height: 30px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   max-height: 30px;
+  padding: 0;
 }
 
 .person-card-btn:hover,
 .person-card-btn:focus {
-  background-color: var(--secondary_orange);
-  color: var(--dark);
-  box-shadow: 0px 4px 20px 0px rgba(217, 217, 217, 0.5);
+  background-color: var(--clear);
+  color: var(--main_flash_green);
   outline: none;
 }
 

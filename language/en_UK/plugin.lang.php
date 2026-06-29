@@ -18,30 +18,30 @@ $lang['English (UK)'] = 'English (UK)';
 
 /* get started sub menu*/
 $lang['Cloud'] = 'Cloud';
-$lang['Cloud desc'] = 'Lorem ipsum dolor sit amet';
+$lang['Cloud desc'] = 'Hosted and managed by Piwigo';
 $lang['Self-hosted'] = 'Self-hosted';
-$lang['Self-hosted desc'] = 'Lorem ipsum dolor sit amet';
+$lang['Self-hosted desc'] = 'Hosted on your own server';
 $lang['Pricing'] = 'Pricing';
-$lang['Pricing desc'] = 'Lorem ipsum dolor sit amet';
+$lang['Pricing desc'] = '';
 $lang['Get started btn1'] = 'Free trial';
 $lang['Get started btn2'] = 'Ask for a demo!';
 
 /* product sub menu */
 $lang['Features'] = 'Features';
 $lang['Import & Centralize'] = 'Import & Centralize';
-$lang['Import & Centralize desc'] = 'Lorem ipsum dolor sit amet';
+$lang['Import & Centralize desc'] = 'Bring all your media together';
 $lang['Organize your media'] = 'Organize your media';
-$lang['Organize your media desc'] = 'Lorem ipsum dolor sit amet';
+$lang['Organize your media desc'] = 'Structure your library';
 $lang['Search & Find'] = 'Search & Find';
-$lang['Search & Find desc'] = 'Lorem ipsum dolor sit amet';
+$lang['Search & Find desc'] = 'Find any file instantly';
 $lang['Share & Collaborate'] = 'Share & Collaborate';
-$lang['Share & Collaborate desc'] = 'Lorem ipsum dolor sit amet';
+$lang['Share & Collaborate desc'] = 'Manage rights and access';
 $lang['Customize & Extend'] = 'Customize & Extend';
-$lang['Customize & Extend desc'] = 'Lorem ipsum dolor sit amet';
+$lang['Customize & Extend desc'] = 'Make Piwigo truly yours';
 $lang['Measure & Monitor'] = 'Measure & Monitor';
-$lang['Measure & Monitor desc'] = 'Lorem ipsum dolor sit amet';
+$lang['Measure & Monitor desc'] = 'Track activity and usage';
 $lang['Security & Privacy'] = 'Security & Privacy';
-$lang['Security & Privacy desc'] = 'Lorem ipsum dolor sit amet';
+$lang['Security & Privacy desc'] = 'Stay in control';
 $lang['Use cases'] = 'Use cases';
 $lang['Travel & Tourism'] = 'Travel & Tourism';
 $lang['Public Sector'] = 'Public Sector';
@@ -51,15 +51,15 @@ $lang['Nonprofits'] = 'Nonprofits';
 $lang['Photographers & individuals'] = 'Photographers & individuals';
 $lang['Explore'] = 'Explore';
 $lang['Piwigo AI'] = 'Piwigo AI';
-$lang['Piwigo AI desc'] = 'lorem ipsum dolor sit amet';
+$lang['Piwigo AI desc'] = 'AI that respects your data';
 $lang['Live demos'] = 'Live demos';
-$lang['Live demos desc'] = 'lorem ipsum dolor sit amet';
+$lang['Live demos desc'] = 'See Piwigo in action';
 $lang['Mobile apps'] = 'Mobile apps';
-$lang['Mobile apps desc'] = 'lorem ipsum dolor sit amet';
+$lang['Mobile apps desc'] = 'iOS';
 $lang['API & integrations'] = 'API & integrations';
-$lang['API & integrations desc'] = 'lorem ipsum dolor sit amet';
+$lang['API & integrations desc'] = 'Connect Piwigo to your tools';
 $lang['Extensions'] = 'Extensions';
-$lang['Extensions desc'] = 'lorem ipsum dolor sit amet';
+$lang['Extensions desc'] = 'Plugins, themes and more';
 $lang['product btn'] = 'Contact us for a demo!';
 
 /* Our users sub menu */
@@ -70,33 +70,33 @@ $lang['Case studies desc'] = 'Lorem ipsum dolor sit amet';
 
 /* support sub menu */
 $lang['Professional support'] = 'Professional support';
-$lang['Professional support desc'] = 'Lorem ipsum dolor sit amet';
+$lang['Professional support desc'] = 'Expert help from the Piwigo team';
 $lang['Forum'] = 'Forum';
-$lang['Forum desc'] = 'Lorem ipsum dolor sit amet';
+$lang['Forum desc'] = '';
 $lang['Documentation'] = 'Documentation';
-$lang['Documentation desc'] = 'Lorem ipsum dolor sit amet';
+$lang['Documentation desc'] = '';
 $lang['Installation guides'] = 'Installation guides';
-$lang['Installation guides desc'] = 'Lorem ipsum dolor sit amet';
+$lang['Installation guides desc'] = '';
 $lang['Developer resources'] = 'Developer resources';
-$lang['Developer resources desc'] = 'Lorem ipsum dolor sit amet';
-$lang['support btn'] = 'Contact us for more support!';
+$lang['Developer resources desc'] = '';
+$lang['support btn'] = 'Need expert help?';
 
 /* behind the code sub menu */
 $lang['About Piwigo'] = 'About Piwigo';
-$lang['About Piwigo desc'] = 'Lorem ipsum dolor sit amet';
+$lang['About Piwigo desc'] = 'Our team, mission and history';
 $lang['Contribute'] = 'Contribute';
-$lang['Contribute desc'] = 'Lorem ipsum dolor sit amet';
+$lang['Contribute desc'] = 'Get involved in your own way';
 
 /* news sub menu */
 $lang['Latest news'] = 'Latest news';
-$lang['Latest news desc'] = 'Lorem ipsum dolor sit amet';
+$lang['Latest news desc'] = '';
 $lang['Newsletter'] = 'Newsletter';
-$lang['Newsletter desc'] = 'Lorem ipsum dolor sit amet';
+$lang['Newsletter desc'] = '';
 $lang['Blog'] = 'Blog';
-$lang['Blog desc'] = 'Lorem ipsum dolor sit amet';
+$lang['Blog desc'] = '';
 $lang['Product Updates'] = 'Product Updates';
-$lang['Product Updates desc'] = 'Lorem ipsum dolor sit amet';
-$lang['news btn'] = 'Lorem ipsum dolor sit amet';
+$lang['Product Updates desc'] = 'What’s new in Piwigo';
+$lang['news btn'] = 'Subscribe to newsletter';
 
 /* error */
 $lang['porg_contact_error_message_7'] = 'It must be a valid mail address';

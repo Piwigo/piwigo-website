@@ -243,14 +243,14 @@
           name="Pierrick"
           role={'Founder & Lead Developer'|translate}
           image="pierrick.webp"
-          buttons=[['icon' => 'icon-cursor', 'link' => 'https://pierrick.le-gall.net/']]
+          buttons=[['icon' => 'icon-website', 'link' => 'https://pierrick.le-gall.net/']]
           }
 
           {include file="template/include/card/person_card.tpl"
           name="Damien"
           role={'Support & Plugin Developer'|translate}
           image="damien.webp"
-          buttons=[['icon' => 'icon-cursor', 'link' => 'https://pierrick.le-gall.net/']]
+          buttons=[['icon' => 'icon-website', 'link' => 'https://pierrick.le-gall.net/']]
           }
 
           {include file="template/include/card/person_card.tpl"
@@ -276,7 +276,6 @@
           image="lana.webp"
           buttons=
           [
-          ['icon' => 'icon-longhouse', 'link' => 'https://la-taniere-solidaire.fr/'],
           ['icon' => 'icon-codeberg', 'link' => 'https://codeberg.org/Renarde-Dev'],
           ['icon' => 'icon-git', 'link' => 'https://github.com/Renarde-dev']
           ]
@@ -300,7 +299,7 @@
           [
           ['icon' => 'icon-linkedin', 'link' => 'https://www.linkedin.com/in/alice-bossuat-abcd-studio/'],
           ['icon' => 'icon-insta2', 'link' => 'https://www.instagram.com/abcdstudio_/'],
-          ['icon' => 'icon-cursor', 'link' => 'https://abcd-studio.fr/']
+          ['icon' => 'icon-website', 'link' => 'https://abcd-studio.fr/']
           ]
           }
 
@@ -311,7 +310,7 @@
           buttons=
           [
           ['icon' => 'icon-linkedin', 'link' => 'https://www.linkedin.com/in/stevenlardeux/'],
-          ['icon' => 'icon-cursor', 'link' => 'https://www.ohmydaf.com/']
+          ['icon' => 'icon-website', 'link' => 'https://www.ohmydaf.com/']
           ]
           }
         </div>
@@ -319,6 +318,8 @@
     </div>
   </div>
 </section>
+{* ['icon' => 'icon-longhouse', 'link' => 'https://la-taniere-solidaire.fr/'], 
+add it for lana*}
 
 <section class="container why-container d-none d-md-block">
   <div class="row text-center justify-content-center">

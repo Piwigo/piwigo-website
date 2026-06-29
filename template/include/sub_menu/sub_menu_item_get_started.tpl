@@ -29,11 +29,7 @@
 	<div class="menu-horizontal-divider"></div>
 
 	<div class="menu-footer d-flex">
-		{include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'Get started btn1'|translate}}
-		{include
-			file='template/include/buttons/button.tpl'
-			variant='menu_btn_white'
-			label={'Get started btn2'|translate} href="{$PORG_ROOT}{$URL.contact}"
-		}
+		{include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'Get started btn1'|translate}  href="{$PORG_ROOT}{$URL.signup}"}
+		{include file='template/include/buttons/button.tpl' variant='menu_btn_white' label={'Get started btn2'|translate} href="{$PORG_ROOT}{$URL.contact}"}
 	</div>
 </div>
