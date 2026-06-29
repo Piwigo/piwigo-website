@@ -97,11 +97,11 @@
 
     <div class="menu-column">
       <div class="column-header header-green">{'Explore'|translate}</div>
-      {include
+      {* {include
 				file='template/include/sub_menu_items/sub_menu_itemc.tpl'
 				category_type='ai-submenu'
 				title={'Piwigo AI'|translate|cat:' ✨'} description={'Piwigo AI desc'|translate} icon_svg='images/icons/AI.svg'
-      }
+      } *}
 
       {include
 				file='template/include/sub_menu_items/sub_menu_itemc.tpl'

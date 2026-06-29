@@ -56,7 +56,7 @@
                 <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#security">{'Security & privacy'|translate}</a></li>
               </ul>
               <ul class="mt-3">
-                <li><a class="footer-feature-link footer-menu-item" href="#">{'Piwigo AI'|translate|cat: ' ✨'}</a></li>
+                {* <li><a class="footer-feature-link footer-menu-item" href="#">{'Piwigo AI'|translate|cat: ' ✨'}</a></li> *}
                 <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.mobile_applications}">{'Mobile apps'|translate}</a></li>
                 <li><a class="footer-feature-link footer-menu-item" href="#">{'Extensions'|translate}</a></li>
                 <li><a class="footer-feature-link footer-menu-item" href="#">{'API & Integrations'|translate}</a></li>
@@ -155,7 +155,7 @@
         </ul>
         <ul class="mt-4">
           <li>
-            <a class="footer-feature-link footer-menu-item" href="#">{'Piwigo AI'|translate|cat: ' ✨'}</a>
+            {* <a class="footer-feature-link footer-menu-item" href="#">{'Piwigo AI'|translate|cat: ' ✨'}</a> *}
           </li>
           <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.mobile_applications}">{'Mobile apps'|translate}</a></li>
           <li><a class="footer-feature-link footer-menu-item" href="#">{'Extensions'|translate}</a></li>
