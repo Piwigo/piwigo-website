@@ -3,11 +3,11 @@
   <div class="col-12 col-md-6 {if $reverse}order-md-last{/if}">
     <div class="feature-copy">
       {if $title}
-        <h2 class="feature-title mb-4">
+        <h2 class="feature-title mb-4 text-center text-md-start">
           {$title}
         </h2>
       {/if}
-      <p class="feature-description feature-description-desktop mb-4 d-none d-md-block">
+      <p class="feature-description feature-description-desktop mb-4 d-none d-md-block text-center text-md-start">
         {$desc}
       </p>
       {if $btn_text}
@@ -21,7 +21,7 @@
           </div>
         {/if}
       {/if}
-      <p class="feature-description feature-description-desktop mb-4">
+      <p class="feature-description feature-description-desktop mb-4 text-center text-md-start">
         {$desc2}
       </p>
 
@@ -35,7 +35,7 @@
   </div>
 
   <div class="col-12 d-md-none">
-    <p class="feature-description feature-description-mobile {if $btn_text}mb-4{else}mb-0{/if}">
+    <p class="feature-description feature-description-mobile {if $btn_text}mb-4{else}mb-0{/if} text-center text-md-start">
       {$desc}
     </p>
     {if $btn_text}
@@ -49,7 +49,7 @@
         </div>
       {/if}
     {/if}
-    <p class="feature-description feature-description-mobile">
+    <p class="feature-description feature-description-mobile text-center text-md-start">
       {$desc2}
     </p>
   </div>

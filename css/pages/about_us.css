@@ -138,10 +138,16 @@
   margin-bottom: 155px;
 }
 
-.container-desc img {
-  max-width: 100%;
+.container-desc .orange-bar {
   height: 180px;
   border-radius: 10px;
+  overflow: hidden;
+}
+
+.container-desc .orange-bar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .container-desc .glass-card {
@@ -167,13 +173,27 @@
   }
 
   .container-desc .orange-bar {
-    width: 60px;
-    max-width: 60px;
+    width: 80px;
+    max-width: 80px;
+    position: relative;
     margin-left: 20px;
+  }
+
+  .container-desc .orange-bar img {
+    width: 100vh;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
   }
 
   .container-desc {
     margin-bottom: 130px;
+  }
+
+  .container-beginning {
+    padding: 50px 20px;
   }
 }
 
@@ -286,6 +306,33 @@
 
 .person-card-btn i {
   font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .person-card-actions {
+    padding: 0 10px;
+  }
+
+  .person-card-content {
+    padding: 15px 12px 20px;
+  }
+
+  .person-card-image {
+    height: 160px;
+    min-height: 160px;
+  }
+
+  .person-card-btn {
+    padding: 6px;
+  }
+
+  .person-card {
+    padding-bottom: 12px;
+  }
+
+  .person-card p {
+    margin: 0;
+  }
 }
 
 .container-team .col-md-10 .col-lg-3 {
@@ -518,23 +565,15 @@
 }
 
 .timeline-item.active .timeline-segment-line {
-  background: linear-gradient(to right, 
-    var(--main_flash_green) 0%, 
-    var(--accent_green) 50%, 
-    var(--main_flash_green) 100%);
+  background: linear-gradient(to right, var(--main_flash_green) 0%, var(--accent_green) 50%, var(--main_flash_green) 100%);
 }
 
 .timeline-item.active:first-child .timeline-segment-line {
-  background: linear-gradient(to right, 
-    var(--accent_green) 0%, 
-    var(--main_flash_green) 100%);
+  background: linear-gradient(to right, var(--accent_green) 0%, var(--main_flash_green) 100%);
 }
 
 .timeline-item.active:last-child .timeline-segment-line {
-  background: linear-gradient(to right, 
-    var(--main_flash_green) 0%,
-    var(--accent_green) 15%,
-    var(--main_flash_green) 40%);
+  background: linear-gradient(to right, var(--main_flash_green) 0%, var(--accent_green) 15%, var(--main_flash_green) 40%);
 }
 
 /* Pagination */

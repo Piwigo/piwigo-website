@@ -13,8 +13,6 @@
 <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/card/storage_card.css"> *}
 <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/card/global_text_image.css">
 
-<a href="{$PORG_ROOT}{$URL.plugins}"> plugins ici </a>
-
 <section class="pricing-header-main container-fluid">
 	<div class="row align-items-center text-center">
 		<div class="col-12 pricing-header-text">

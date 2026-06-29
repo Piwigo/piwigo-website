@@ -137,7 +137,9 @@
   <div class="container">
     <div class="row text-center">
       <h2 class="mb-5 text-center">{'porg_about_us_desc_title'|translate}</h2>
-      <img src="{$PORG_ROOT_URL}images/about-us/orange_bar.webp" class="px-0 orange-bar">
+      <div class="px-0 orange-bar">
+        <img src="{$PORG_ROOT_URL}images/about-us/orange_bar.webp" alt="">
+      </div>
       <div class="glass-card-container">
         <div class="row">
           <div class="col-12 col-lg-4">
@@ -165,40 +167,42 @@
 </section>
 
 
-<section class="container-beginning">
-  <div class="container justify-content-center">
-    <div class="row text-center justify-content-center">
-      <div class="col-md-10">
-        {include file="template/include/card/global_text_image.tpl" title={'porg_about_us_beginning_title'|translate} desc={'porg_about_us_beginning_desc'|translate} image="{$PORG_ROOT_URL}images/about-us/plg.webp" }
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="container-open">
-  <div class="container justify-content-center">
-    <div class="row text-center justify-content-center">
-      <div class="col-md-9">
-        <div class="grey-box">
-          <h2 class="mb-4 text-center">{'porg_about_us_open_title'|translate}</h2>
-          {include file="template/include/card/global_text_image.tpl" desc={'porg_about_us_open_desc'|translate} image="{$PORG_ROOT_URL}images/about-us/git.webp" }
+<div class="px-4 px-md-0">
+  <section class="container-beginning">
+    <div class="container justify-content-center">
+      <div class="row text-center justify-content-center">
+        <div class="col-md-10">
+          {include file="template/include/card/global_text_image.tpl" title={'porg_about_us_beginning_title'|translate} desc={'porg_about_us_beginning_desc'|translate} image="{$PORG_ROOT_URL}images/about-us/plg.webp" }
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
-<section class="container-inde">
-  <div class="container justify-content-center">
-    <div class="row text-center justify-content-center">
-      <div class="col-md-10">
-        {include file="template/include/card/global_text_image.tpl" reverse=true title={'porg_about_us_inde_title'|translate} desc={'porg_about_us_inde_desc'|translate} image="{$PORG_ROOT_URL}images/about-us/{$INDE_IMAGE}" }
+  <section class="container-open">
+    <div class="container justify-content-center">
+      <div class="row text-center justify-content-center">
+        <div class="col-md-9">
+          <div class="grey-box">
+            <h2 class="mb-4 text-center">{'porg_about_us_open_title'|translate}</h2>
+            {include file="template/include/card/global_text_image.tpl" desc={'porg_about_us_open_desc'|translate} image="{$PORG_ROOT_URL}images/about-us/git.webp" }
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+
+
+  <section class="container-inde">
+    <div class="container justify-content-center">
+      <div class="row text-center justify-content-center">
+        <div class="col-md-10">
+          {include file="template/include/card/global_text_image.tpl" reverse=true title={'porg_about_us_inde_title'|translate} desc={'porg_about_us_inde_desc'|translate} image="{$PORG_ROOT_URL}images/about-us/{$INDE_IMAGE}" }
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
 
 
 <section class="container-team">
@@ -479,7 +483,7 @@
           });
         });
       }
-      
+
       const timelineContainer = document.querySelector('.timeline-scroll-container');
       const timelineItems = document.querySelectorAll('.timeline-item');
       const paginationContainer = document.querySelector('.timeline-pagination');
@@ -527,7 +531,7 @@
           if (timelineItems.length === 0) return;
           const itemWidth = timelineItems[0].offsetWidth;
           const scrollPadding = (timelineContainer.offsetWidth / 2) - (itemWidth / 2);
-          
+
           timelineContainer.style.paddingLeft = `${scrollPadding}px`;
           timelineContainer.style.paddingRight = `${scrollPadding}px`;
         };
@@ -555,10 +559,10 @@
 
         adjustTimeline();
         window.addEventListener('resize', adjustTimeline);
-        
+
         const initialActiveIndex = 0;
         updateActiveMilestone(initialActiveIndex);
-        
+
         setTimeout(checkCenterItem, 150);
       }
     });
