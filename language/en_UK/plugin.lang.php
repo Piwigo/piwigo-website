@@ -55,7 +55,7 @@ $lang['Piwigo AI desc'] = 'AI that respects your data';
 $lang['Live demos'] = 'Live demos';
 $lang['Live demos desc'] = 'See Piwigo in action';
 $lang['Mobile apps'] = 'Mobile apps';
-$lang['Mobile apps desc'] = 'iOS';
+$lang['Mobile apps desc'] = 'For iOS and Android';
 $lang['API & integrations'] = 'API & integrations';
 $lang['API & integrations desc'] = 'Connect Piwigo to your tools';
 $lang['Extensions'] = 'Extensions';
@@ -64,13 +64,13 @@ $lang['product btn'] = 'Contact us for a demo!';
 
 /* Our users sub menu */
 $lang['Who uses Piwigo'] = 'Who uses Piwigo';
-$lang['Who uses Piwigo desc'] = 'Lorem ipsum dolor sit amet';
+$lang['Who uses Piwigo desc'] = 'Countless ways to use Piwigo';
 $lang['Case studies'] = 'Case studies';
-$lang['Case studies desc'] = 'Lorem ipsum dolor sit amet';
+$lang['Case studies desc'] = 'From challenge to solution';
 
 /* support sub menu */
 $lang['Professional support'] = 'Professional support';
-$lang['Professional support desc'] = 'Expert help from the Piwigo team';
+$lang['Professional support desc'] = '';
 $lang['Forum'] = 'Forum';
 $lang['Forum desc'] = '';
 $lang['Documentation'] = 'Documentation';
@@ -95,7 +95,7 @@ $lang['Newsletter desc'] = '';
 $lang['Blog'] = 'Blog';
 $lang['Blog desc'] = '';
 $lang['Product Updates'] = 'Product Updates';
-$lang['Product Updates desc'] = 'What’s new in Piwigo';
+$lang['Product Updates desc'] = '';
 $lang['news btn'] = 'Subscribe to newsletter';
 
 /* error */
@@ -254,6 +254,7 @@ $lang['years'] = 'years';
 $lang['M (the one for millions)'] = 'M';
 $lang['Today'] = 'Today';
 $lang['Get Involved'] = 'Get Involved';
+$lang['Send us a testimonial'] = 'Send us a testimonial';
 
 /*Used in guide pages*/
 // $lang['porg_guides'] = 'Guides';

@@ -9,7 +9,7 @@ $(document).ready(function () {
   const emailCheckIcon = jQuery('#emailCheckIcon');
 
   const messageInput = jQuery('#form-message');
-  const topicInput = jQuery('#form-topic');
+  const topicInput = jQuery('#form-topic-value');
   const errorContainer = jQuery('#error');
   const errorMessage = jQuery('.error_message');
   let errorTimeoutId = null;
@@ -20,6 +20,63 @@ $(document).ready(function () {
   jQuery(emailWarningIcon).hide();
   jQuery(emailCheckIcon).hide();
   jQuery(errorContainer).hide();
+
+  // --- Custom Select Logic ---
+  const customSelectWrapper = $('.custom-select-wrapper');
+  if (customSelectWrapper.length) {
+    const header = customSelectWrapper.find('.custom-select-header');
+    const optionsContainer = customSelectWrapper.find('.custom-select-options');
+    const options = customSelectWrapper.find('.custom-option');
+    const hiddenInput = $('#form-topic-value');
+    const selectedValueSpan = customSelectWrapper.find('.selected-value');
+
+    header.on('click', function () {
+      customSelectWrapper.toggleClass('open');
+      optionsContainer.toggle(customSelectWrapper.hasClass('open'));
+    });
+
+    options.on('click', function () {
+      const $this = $(this);
+      const value = $this.data('value');
+      const text = $this.find('.custom-option-label').text();
+
+      hiddenInput.val(value);
+      selectedValueSpan.text(text);
+
+      options.removeClass('selected');
+      $this.addClass('selected');
+
+      customSelectWrapper.addClass('has-value');
+      customSelectWrapper.removeClass('open');
+      optionsContainer.hide();
+
+      hiddenInput.trigger('change');
+    });
+
+    $(document).on('click', function (e) {
+      if (!customSelectWrapper.is(e.target) && customSelectWrapper.has(e.target).length === 0) {
+        customSelectWrapper.removeClass('open');
+        optionsContainer.hide();
+      }
+    });
+
+    // --- Pre-select topic from URL ---
+    const urlParams = new URLSearchParams(window.location.search);
+    const topicIdFromUrl = urlParams.get('topic_id');
+    if (topicIdFromUrl) {
+      let dataValueToSelect;
+      if (topicIdFromUrl === 'testimonial') {
+        dataValueToSelect = 'Send a testimonial';
+      }
+      // add more 'else if' for other topic_ids here
+
+      if (dataValueToSelect) {
+        const optionToSelect = options.filter(`[data-value="${dataValueToSelect}"]`);
+        optionToSelect.trigger('click');
+        checkFormValidity();
+      }
+    }
+  }
 
   function showTemporaryError(message) {
     if (errorTimeoutId) {
@@ -143,7 +200,7 @@ $(document).ready(function () {
     let email = jQuery("#form-email").val();
     let message = jQuery("#form-message").val();
     let piwigoUrl = jQuery("#form-piwigo-url").val();
-    let topic = jQuery("#form-topic").val();
+    let topic = jQuery("#form-topic-value").val();
     let key = jQuery("#form-key").val();
 
     //If the honeyMessage has something in it then its a bot and we don't want it to send
@@ -169,8 +226,7 @@ $(document).ready(function () {
             jQuery('.contact-form').hide();
             jQuery('#success').show();
 
-            // Clear all form fields
-            jQuery('#form-email, #form-message, #form-piwigo-url, #form-topic, #email').val('');
+            jQuery('#form-email, #form-message, #form-piwigo-url, #email').val('');
 
             // Hide help texts
             jQuery('#urlHelp, #emailHelp').hide();

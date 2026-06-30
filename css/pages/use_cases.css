@@ -7,39 +7,13 @@
 }
 
 .use-case-header {
-  position: relative;
-  overflow: hidden;
-  padding-top: 70px;
-  padding-bottom: 130px;
-  padding-left: 0;
-  padding-right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-top: 80px;
+  margin-bottom: 115px;
 }
 
-.use-case-header > .row {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.use-case-header-text {
-  flex: 0 0 40%;
-}
-
-.use-case-title {
-  margin-bottom: 45px;
-}
-
-.use-case-title-underlined {
-  background-image: url("../../images/use-case/underliner.svg");
-  background-repeat: no-repeat;
-  background-position: left bottom;
-}
-
-.use-case-description {
-  margin-bottom: 35px;
+.use-case-header .col-md-6:first-child {
+  padding-left: 0px;
+  padding-right: 80px;
 }
 
 .use-case-header-text .btn-menu span {

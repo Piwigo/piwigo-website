@@ -649,7 +649,7 @@ input {
 
 select.form-control {
   height: 50px;
-  padding: 18px 13px 6px !important;
+  padding: 20px 13px 4px !important;
   appearance: none;
   -webkit-appearance: none;
 }
@@ -836,13 +836,13 @@ input.is-invalid {
 }
 
 /* Mask browser validation background with inset box-shadow */
-#form-email,
-#form-email:valid {
+.signup-header #form-email,
+.signup-header #form-email:valid {
   box-shadow: inset 0 0 0 9999px rgba(255, 255, 255, 1) !important;
 }
 
-#form-email:focus,
-#form-email:valid:focus {
+.signup-header #form-email:focus,
+.signup-header #form-email:valid:focus {
   box-shadow: inset 0 0 0 9999px rgba(255, 255, 255, 1) !important;
   border-color: var(--main_flash_green) !important;
 }

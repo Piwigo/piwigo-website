@@ -104,6 +104,7 @@ function ws_porg_contact_send($params, &$service)
   $allowed_topics = array(
     'Sales inquiry',
     'Report a security issue',
+    'Send a testimonial',
     'Other'
   );
 

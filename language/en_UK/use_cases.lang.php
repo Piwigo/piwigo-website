@@ -1,12 +1,10 @@
 <?php
 
 /* Tourism */
-$lang['use cases tourism header title'] = 'The <span class="orange-text">ultimate image library</span> software for the ';
-$lang['tourism industry'] = 'tourism industry';
-$lang['use cases tourism header description'] = 'Lorem ipsum dolor sit amet consectetur. Ipsum facilisis ultrices nec diam. Aliquam iaculis interdum malesuada sed pretium. Pellentesque habitant quam eget congue mattis magna in risus netus. Libero elementum ac dui.';
-$lang['use cases tourism header btn'] = 'Plan a meeting with our team';
+$lang['use cases tourism header title'] = 'Photo management software for <span class="orange-text">tourism organizations</span>';
+$lang['use cases tourism header description'] = 'Manage, organize and share your destination’s photos, videos and marketing assets from one central library.<br><br>Used by tourism boards, museums, resorts, hotels and visitor attractions worldwide.';
+$lang['use cases header btn'] = 'Start your free trial';
 
-$lang['use cases tourism carousel title'] = 'Trusted by many tourism industry companies';
 
 $lang['use cases tourism content1 title'] = 'Title introducing cool features for this industry';
 

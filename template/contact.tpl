@@ -87,16 +87,34 @@
 
       <div data-toggle="validator" role="form" class="contact-form">
 
-        <div class="form-group position-relative">
-          <select class="form-control" id="form-topic" name="topic" required>
-            <option value="" selected></option>
-            <option value="Sales inquiry">{'Sales inquiry'|translate}</option>
-            <option value="Report a security issue">{'Report a security issue'|translate}</option>
-            <option value="Other">{'Other'|translate}</option>
-          </select>
-          <span class="topic-placeholder p-boxed">{'Topic'|translate}<span class="orange-text"> *</span></span>
-          <span class="little-topic-placeholder form-input">{'Topic'|translate}<span class="orange-text"> *</span></span>
-          <i class="icon-down-open topic-arrow" aria-hidden="true"></i>
+        <div class="form-group position-relative custom-select-wrapper">
+          <input type="hidden" id="form-topic-value" name="topic" required>
+          <div class="custom-select-header" tabindex="0">
+            <span class="topic-placeholder p-boxed">{'Topic'|translate}<span class="orange-text"> *</span></span>
+            <span class="little-topic-placeholder form-input">{'Topic'|translate}<span class="orange-text"> *</span></span>
+            <span class="selected-value p-boxed"></span>
+            <i class="icon-down-open topic-arrow" aria-hidden="true"></i>
+          </div>
+          <div class="custom-select-options">
+            <div class="custom-select-options-content">
+              <div class="custom-option" data-value="Sales inquiry">
+                <span class="custom-radio"></span>
+                <span class="custom-option-label p-boxed">{'Sales inquiry'|translate}</span>
+              </div>
+              <div class="custom-option" data-value="Report a security issue">
+                <span class="custom-radio"></span>
+                <span class="custom-option-label p-boxed">{'Report a security issue'|translate}</span>
+              </div>
+              <div class="custom-option" data-value="Send a testimonial">
+                <span class="custom-radio"></span>
+                <span class="custom-option-label p-boxed">{'Send a testimonial'|translate}</span>
+              </div>
+              <div class="custom-option" data-value="Other">
+                <span class="custom-radio"></span>
+                <span class="custom-option-label p-boxed">{'Other'|translate}</span>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="form-group position-relative">

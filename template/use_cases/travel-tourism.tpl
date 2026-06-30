@@ -1,29 +1,7 @@
-﻿<section class="use-case-header container-fluid">
-  <div class="row justify-content-evenly">
-    <div class="col-md-6 use-case-header-text">
-      <h1 class="d-none d-md-block use-case-title"><span
-          class="use-case-title-main">{'use cases tourism header title'|translate}</span><span
-          class="use-case-title-underlined">{'tourism industry'|translate}</span>
-      </h1>
-      <p class="use-case-description">
-        {'use cases tourism header description'|translate}
-      </p>
-      {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'use cases tourism header btn'|translate}
-      href='#'}
-    </div>
-    <div class="col-md-6 text-center use-case-header-image">
-      <img id="use-case-main-image" src="{$PORG_ROOT_URL}images/use-case/tourism_header.webp"
-        alt="Piwigo use-case illustration" class="img-fluid">
-    </div>
-  </div>
-</section>
+﻿{include file='template/use_cases/parts/top_page.tpl' title={'use cases tourism header title'|translate} description={'use cases tourism header description'|translate} img_src="{$PORG_ROOT_URL}images/use-case/tourism_header.webp"}
 
 <section class="tourism-carousel">
   <div class="container-fluid px-0">
-    <div class="container text-center mb-md-5 mb-3">
-      <h2 class="h2-top-page text-center">{'use cases tourism carousel title'|translate}</h2>
-    </div>
-
     <div class="logos-marquee-wrapper">
       <div class="logos-marquee-track">
         {foreach $tourism_logos as $logo}

@@ -8,7 +8,7 @@
           <h2 class="mb-4">{'porg_users_title'|translate}</h2>
           <img src="{$PORG_ROOT_URL}images/users/topimg.webp" alt="Piwigo screenshot" class="img-fluid d-md-none">
           <p class="mb-4">{'porg_users_intro'|translate}</p>
-          {include file='template/include/buttons/button.tpl' variant='menu_btn_green' label={'Start your 30-day free trial'|translate} href="{$PORG_ROOT}{$URL.signup}"}
+          {include file='template/include/buttons/button.tpl' variant='menu_btn_green' label={'Start your 30-day free trial'|translate} href="{$PORG_ROOT}{$URL.signup}" class="px-4 align-self-start"}
         </div>
         <div class="col-md-6 responsive-image d-flex flex-column justify-content-center users-header-image">
           <img class="img-fluid d-none d-md-block" src="{$PORG_ROOT_URL}images/users/topimg.webp" alt="Piwigo screenshot">
@@ -112,6 +112,8 @@
             </div>
           </div>
         </div>
+        {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'Send us a testimonial'|translate}
+        href="{$PORG_ROOT}{$URL.contact}&topic_id=testimonial#form" class="w-100 mt-4"}
       </div>
     </div>
 
