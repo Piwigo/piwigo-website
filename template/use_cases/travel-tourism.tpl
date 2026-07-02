@@ -20,110 +20,86 @@
   </div>
 </section>
 
-<section class="tourism-content-1">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12 col-md-6">
-        <h2 class="text-center">{'use cases tourism content1 title'|translate}</h2>
-      </div>
-    </div>
-  </div>
-</section>
+{assign var="tourism_features" value=[
+  [
+    'img_src' => "{$PORG_ROOT_URL}images/use-case/tourism_thumb_1.webp",
+'title' => {'use cases tourism thumb1 title'|translate},
+'description' => {'use cases tourism thumb1 description'|translate}
+],
+[
+'img_src' => "{$PORG_ROOT_URL}images/use-case/tourism_thumb_2.webp",
+'title' => {'use cases tourism thumb2 title'|translate},
+'description' => {'use cases tourism thumb2 description'|translate}
+],
+[
+'img_src' => "{$PORG_ROOT_URL}images/use-case/tourism_thumb_3.webp",
+'title' => {'use cases tourism thumb3 title'|translate},
+'description' => {'use cases tourism thumb3 description'|translate}
+],
+[
+'img_src' => "{$PORG_ROOT_URL}images/use-case/tourism_thumb_4.webp",
+'title' => {'use cases tourism thumb4 title'|translate},
+'description' => {'use cases tourism thumb4 description'|translate}
+],
+[
+'img_src' => "{$PORG_ROOT_URL}images/use-case/tourism_thumb_5.webp",
+'title' => {'use cases tourism thumb5 title'|translate},
+'description' => {'use cases tourism thumb5 description'|translate}
+],
+[
+'img_src' => "{$PORG_ROOT_URL}images/use-case/tourism_thumb_6.webp",
+'title' => {'use cases tourism thumb6 title'|translate},
+'description' => {'use cases tourism thumb6 description'|translate}
+]
+]}
 
-<section class="tourism-features-section">
-  <img src="{$PORG_ROOT_URL}images/use-case/tourism_bg_1.webp" alt="Tourism background" class="tourism-bg-image">
-  <div class="container tourism-features-container">
-    <div class="row">
-      <div class="col-12 col-md-4">
-        <div class="glass-card">
-          <h3>{'use cases tourism content1 card1 title'|translate}</h3>
-          <p class="sub-h3">{'use cases tourism content1 card1 description'|translate}</p>
-        </div>
-      </div>
-      <div class="col-12 col-md-4">
-        <div class="glass-card">
-          <h3>{'use cases tourism content1 card2 title'|translate}</h3>
-          <p class="sub-h3">{'use cases tourism content1 card2 description'|translate}</p>
-        </div>
-      </div>
-      <div class="col-12 col-md-4">
-        <div class="glass-card">
-          <h3>{'use cases tourism content1 card3 title'|translate}</h3>
-          <p class="sub-h3">{'use cases tourism content1 card3 description'|translate}</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+{include file='template/use_cases/parts/thumbs.tpl' features=$tourism_features title={'use cases tourism thumbs title'|translate} description={'use cases tourism thumbs description'|translate}}
 
-<section class="tourism-features-section">
-  <img src="{$PORG_ROOT_URL}images/use-case/tourism_bg_2.webp" alt="Tourism background" class="tourism-bg-image">
-  <div class="container tourism-features-container">
-    <div class="row">
-      <div class="col-12 col-md-4">
-        <div class="glass-card">
-          <h3>{'use cases tourism content1 card4 title'|translate}</h3>
-          <p class="sub-h3">{'use cases tourism content1 card4 description'|translate}</p>
-        </div>
-      </div>
-      <div class="col-12 col-md-4">
-        <div class="glass-card">
-          <h3>{'use cases tourism content1 card5 title'|translate}</h3>
-          <p class="sub-h3">{'use cases tourism content1 card5 description'|translate}</p>
-        </div>
-      </div>
-      <div class="col-12 col-md-4">
-        <div class="glass-card">
-          <h3>{'use cases tourism content1 card6 title'|translate}</h3>
-          <p class="sub-h3">{'use cases tourism content1 card6 description'|translate}</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+{assign var="tourism_challenges_list" value=[
+  {'use cases tourism challenge li1'|translate},
+{'use cases tourism challenge li2'|translate},
+{'use cases tourism challenge li3'|translate},
+{'use cases tourism challenge li4'|translate},
+{'use cases tourism challenge li5'|translate}
+]}
+{include file='template/use_cases/parts/challenge.tpl'
+  title={'use cases tourism challenge title'|translate}
+description={'use cases tourism challenge description'|translate}
+title2={'use cases tourism challenge title2'|translate}
+list_items=$tourism_challenges_list
+subtext={'use cases tourism challenge subtext'|translate}
+}
 
-<section class="tourism-content-1">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12 col-md-6">
-        <h2 class="text-center mb-5">{'use cases tourism content2 title'|translate}</h2>
-        <p class="text-center">{'use cases tourism content2 description'|translate}</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="tourism-features-section-2 position-relative">
-  <img src="{$PORG_ROOT_URL}images/use-case/tourism_bg_3.webp" alt="" class="tourism-bg-image-2">
-  <div class="container tourism-features-container-2-top">
-    {if isset($tourism_testimonials) && count($tourism_testimonials) > 0}
-      {foreach $tourism_testimonials as $testimonial name=tourism_testimonials_loop}
-        {if $smarty.foreach.tourism_testimonials_loop.first}
-          <div class="row g-3">
-          {/if}
-          <div class="col-6">
-            <div class="testimonial-card">
-              <i class="icon-quote quote-icon position-absolute" aria-hidden="true"></i>
-              {if isset($testimonial.img_src)}
-                <img src="{$testimonial.img_src}" alt="{$testimonial.author}" class="testimonial-image mb-3" loading="lazy" decoding="async">
-              {/if}
-              <p class="p-testimonial mb-5">{$testimonial.comment}</p>
-              <p class="mb-0 name-testimonial">{$testimonial.author}</p>
-              <div class="testimonial_badges">
-                {if isset($testimonial.country)}<p class="d-inline-block country-testimonial mb-0"><span class="flag-icon flag-icon-{$testimonial.country|lower} me-2"></span>{"country_{$testimonial.country}"|translate}
-                </p>{/if}
-              </div>
-            </div>
-          </div>
-          {if $smarty.foreach.tourism_testimonials_loop.index % 2 == 1}
-          </div>
-          {if !$smarty.foreach.tourism_testimonials_loop.last}
-            <div class="row g-3 mt-5">
-            {/if}
-          {/if}
-        {/foreach}
-      </div>
-    {/if}
-  </div>
-</section>
+{assign var="how_cards" value=[
+  [
+    'icon' => "icon-cloud-oneplace",
+'title' => {'use cases tourism how card1 title'|translate},
+'description' => {'use cases tourism how card1 description'|translate}
+],
+[
+'icon' => "icon-help",
+'title' => {'use cases tourism how card2 title'|translate},
+'description' => {'use cases tourism how card2 description'|translate}
+],
+[
+'icon' => "icon-paint",
+'title' => {'use cases tourism how card3 title'|translate},
+'description' => {'use cases tourism how card3 description'|translate}
+],
+[
+'icon' => "icon-hide",
+'title' => {'use cases tourism how card4 title'|translate},
+'description' => {'use cases tourism how card4 description'|translate}
+],
+[
+'icon' => "icon-flash-1",
+'title' => {'use cases tourism how card5 title'|translate},
+'description' => {'use cases tourism how card5 description'|translate}
+],
+[
+'icon' => "icon-shield",
+'title' => {'use cases tourism how card6 title'|translate},
+'description' => {'use cases tourism how card6 description'|translate}
+]
+]}
+{include file='template/use_cases/parts/how.tpl' title={'use cases tourism how title'|translate} list_items=$how_cards}

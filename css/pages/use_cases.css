@@ -82,118 +82,120 @@
   }
 }
 
-/* Tourism features section */
-.tourism-features-section,
-.tourism-features-section-2 {
+.container-features {
+  margin-top: 100px;
+  margin-bottom: 155px;
+}
+
+.cloud-features {
   position: relative;
-  border-radius: 12px;
-  overflow: visible;
-  margin: 80px 90px 230px;
-  height: 500px;
-}
-
-.tourism-bg-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  border-radius: 10px;
-}
-
-.tourism-features-container {
-  position: absolute;
-  bottom: -50px;
-  left: 0;
-  right: 0;
   z-index: 1;
-  padding: 0 80px;
-  align-items: flex-end;
 }
 
-.tourism-features-container .row {
-  align-items: flex-end;
-}
-
-.tourism-features-section-2 {
-  height: 950px;
-  margin-top: 250px;
-}
-
-.tourism-bg-image-2 {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  border-radius: 10px;
-}
-
-.tourism-features-container-2-top {
+.cloud-features::before {
+  content: "";
   position: absolute;
-  top: -160px;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  padding: 0 80px;
+  top: 80px;
+  bottom: 180px;
+  left: 80px;
+  right: 80px;
+  background-color: var(--clear_orange);
+  border-radius: 10px;
+  z-index: -1;
 }
 
-.tourism-features-container-2-top .col-6 {
-  flex: 0 1 calc(50% - 30px);
+.cloud-features .col-xl-4 {
+  margin-bottom: 40px;
 }
 
-.tourism-features-container-2-top .row {
+.facts-card {
+  border-radius: 10px;
+  padding: 25px;
+  background-color: var(--clear_card);
+  border: none;
+  position: relative;
+  margin: 0 20px;
+}
+
+.facts-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  padding: 1px;
+  background: linear-gradient(91.79deg, #d9d9d9 16.42%, #f7f7f7 98.39%);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.facts-card img {
+  display: block;
+  object-fit: cover;
+  width: calc(100% + 50px);
+  max-width: none;
+  margin: -25px -25px 20px;
+  border-radius: 10px 10px 0 0;
+  max-height: 200px;
+  min-height: 200px;
+}
+
+.challenge-card {
+  padding: 50px 70px;
+  border-radius: 10px;
+  background-color: var(--grey);
+}
+
+.challenge-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.challenge-list li {
+  display: flex;
   align-items: flex-start;
 }
 
-.tourism-features-container-2-top .row .col-6:first-child {
-  margin-right: 30px;
-}
-
-.tourism-features-container-2-top .row .col-6:last-child {
-  margin-left: 30px;
-}
-
-.testimonial-card {
+.challenge-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 13px;
+  height: 13px;
+  background-color: var(--main_orange);
+  border-radius: 50%;
+  color: var(--grey);
+  margin-right: 10px;
+  font-size: 8px;
   position: relative;
-  background: var(--grey);
-  border-radius: 10px;
-  padding: 70px 75px 60px;
+  top: 6px;
 }
 
-.testimonial-card .testimonial-image {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  margin: 0 0 30px;
-  border-radius: 10px;
-  object-fit: cover;
+.how-card {
+  min-height: 200px;
+  border-left: 2px solid var(--secondary_flash_green);
+  padding-left: 25px;
+  margin-bottom: 55px;
 }
 
-.tourism-features-container-2-top .testimonial-card .quote-icon {
-  top: -23px;
-  left: 23px;
-  font-size: 34px;
-  color: var(--main_flash_green);
-  opacity: 0.95;
-}
-
-.testimonial_badges .flag-icon {
-  border-radius: 2px;
-}
-
-@media (max-width: 768px) {
-  /* carousel */
-  .logos-marquee-item {
-    width: 150px;
-    height: 80px;
-    padding: 10px;
-  }
-
-  .logos-marquee-item img {
-    width: auto;
-    height: auto;
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-  }
+.how-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  background-color: var(--secondary_flash_green);
+  border-radius: 4px;
+  color: var(--accent_green);
+  margin-right: 15px;
+  font-size: 15px;
+  position: relative;
 }
