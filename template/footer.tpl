@@ -229,11 +229,12 @@
           <hr class="footer-divider-mobile">
           <p class="footer-menu-item footer-copyright">Piwigo © 2002 – {$CURRENT_YEAR}</p>
           <ul class="footer-legal-links">
-            <li><a class="footer-legal-link footer-menu-item" href="{$lang.porg_urls.privacy_policy}">{'Footer legal 1 Privacy Policy'|translate}</a></li>
-            <li><a class="footer-legal-link footer-menu-item" href="{$lang.porg_urls.cookie_policy}">{'Footer legal 2 Cookie Policy'|translate}</a></li>
-            <li><a class="footer-legal-link footer-menu-item" href="{$lang.porg_urls.legal_notice}">{'Footer legal 3 Legal Notice'|translate}</a></li>
-            <li><a class="footer-legal-link footer-menu-item" href="{$lang.porg_urls.terms_of_use}">{'Footer legal 4 Terms of Use'|translate}</a></li>
-            <li><a class="footer-legal-link footer-menu-item" href="{$lang.porg_urls.gdpr}">{'Footer legal 5 GDPR'|translate}</a></li>
+            <li><a class="footer-legal-link footer-menu-item" href="{$PORG_ROOT}{$URL.privacy}">{'Footer legal 1 Privacy Policy'|translate}</a></li>
+            {* <li><a class="footer-legal-link footer-menu-item" href="{$PORG_ROOT}{$URL.cookie_policy}">{'Footer legal 2 Cookie Policy'|translate}</a></li>
+            <li><a class="footer-legal-link footer-menu-item" href="{$PORG_ROOT}{$URL.legal_notice}">{'Footer legal 3 Legal Notice'|translate}</a></li> *}
+            <li><a class="footer-legal-link footer-menu-item" href="{$PORG_ROOT}{$URL.terms_of_service}">{'Footer legal 4 Terms of Use'|translate}</a></li>
+            {* <li><a class="footer-legal-link footer-menu-item" href="{$PORG_ROOT}{$URL.gdpr}">{'Footer legal 5 GDPR'|translate}</a></li> *}
+            <li><a class="footer-legal-link footer-menu-item" href="{$PORG_ROOT}{$URL.dpa}">{'Footer legal 6 DPA'|translate}</a></li>
           </ul>
         </div>
 

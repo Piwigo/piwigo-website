@@ -187,6 +187,7 @@ $lang['Footer legal 2 Cookie Policy'] = 'Cookie Policy';
 $lang['Footer legal 3 Legal Notice'] = 'Legal Notice';
 $lang['Footer legal 4 Terms of Use'] = 'Terms of Use';
 $lang['Footer legal 5 GDPR'] = 'GDPR';
+$lang['Footer legal 6 DPA'] = 'DPA';
 
 /* form */
 
