@@ -43,3 +43,32 @@ $lang['use cases tourism how card5 title'] = 'Produce communication materials fa
 $lang['use cases tourism how card5 description'] = 'Quickly find approved visuals for websites, brochures, social media, press kits and advertising campaigns. Reduce time spent searching and requesting files.';
 $lang['use cases tourism how card6 title'] = 'Preserve your visual heritage';
 $lang['use cases tourism how card6 description'] = 'Keep years of photos and videos organized, searchable and accessible.<br><br>Build a long-term visual archive that remains valuable even as teams evolve.';
+
+$lang['use cases tourism discover title'] = 'Explore the features behind these use cases';
+$lang['use cases tourism discover description'] = 'From advanced search and access permissions to metadata management and public galleries, Piwigo provides all the tools tourism organizations need to organize, manage and share their visual assets efficiently.';
+$lang['use cases tourism discover btn text'] = 'Discover Piwigo features';
+
+$lang['use cases tourism stacks title'] = 'Why tourism organizations choose Piwigo';
+$lang['use cases tourism stacks card1 title'] = 'Easy for everyone to use';
+$lang['use cases tourism stacks card1 description'] = 'Communication teams, partners and external contributors can get started quickly without extensive training.';
+$lang['use cases tourism stacks card2 title'] = 'Scales with your library';
+$lang['use cases tourism stacks card2 description'] = 'Manage thousands or even hundreds of thousands of assets without losing control.';
+$lang['use cases tourism stacks card3 title'] = 'Built for collaboration';
+$lang['use cases tourism stacks card3 description'] = 'Share the right assets with the right people, while maintaining full control over permissions and access rights.';
+$lang['use cases tourism stacks card4 title'] = 'Your data stays yours';
+$lang['use cases tourism stacks card4 description'] = 'Unlike many proprietary platforms, Piwigo does not lock you in. Export your content for free whenever you want.';
+$lang['use cases tourism stacks card5 title'] = 'Open source and sustainable';
+$lang['use cases tourism stacks card5 description'] = 'Piwigo has been continuously developed for more than 20 years and is trusted by organizations worldwide.';
+
+$lang['use cases tourism host title'] = 'Host it your way';
+$lang['use cases tourism host description'] = 'Choose the deployment model that fits your organization’s requirements.<br>Whether you prefer a fully managed cloud service or complete control over your infrastructure, Piwigo gives you the flexibility to choose.';
+$lang['use cases tourism host cloud'] = 'Fully managed by the Piwigo team.';
+$lang['use cases tourism host self'] = 'Deploy Piwigo on your own infrastructure.';
+
+$lang['use cases tourism use title'] = 'See how tourism organizations use Piwigo';
+$lang['use cases tourism use description1'] = 'Cotentin Tourism Office: <br>A collaborative and secure photo library for the tourism communication of 130 municipalities';
+$lang['use cases tourism use description2'] = 'The Cotentin Tourist Office needed a secure and collaborative way to organize and distribute its growing collection of photos.<br><br>With contributors, communication teams and external partners all needing access to visual assets, managing files through shared drives had become increasingly difficult.<br><br>Piwigo enabled the organization to create a centralized photo library with controlled access rights, making it easier to share, find and manage content across the destination.';
+$lang['use cases tourism use btn text'] = 'Read the customer story';
+
+$lang['use cases tourism comments title'] = 'What tourism professionals say about Piwigo';
+$lang['use cases tourism comments btn'] = 'Explore more customer stories';

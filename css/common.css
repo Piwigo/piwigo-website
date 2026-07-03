@@ -571,6 +571,10 @@ Text Color
   color: var(--accent_green);
 }
 
+.secondary-orange-text {
+  color: var(--secondary_orange);
+}
+
 .main-green-text {
   color: var(--main_flash_green) !important;
 }

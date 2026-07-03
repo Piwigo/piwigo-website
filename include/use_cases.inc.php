@@ -18,10 +18,10 @@ $use_cases = array(
 $filtered_logos = array();
 foreach ($use_cases as $use_case_key => $use_case_tag) {
   $filtered_logos[$use_case_key] = array();
-  
+
   foreach ($all_logos as $logo) {
     $logo_tags = get_ressources_infos($logo['id']);
-    
+
     // Check if logo has the matching use case tag
     if (isset($logo_tags['useCase']) && $logo_tags['useCase'] === $use_case_tag) {
       $filtered_logos[$use_case_key][] = $logo;
@@ -50,10 +50,10 @@ foreach ($all_examples as $example) {
 $filtered_testimonials = array();
 foreach ($use_cases as $use_case_key => $use_case_tag) {
   $filtered_testimonials[$use_case_key] = array();
-  
+
   foreach ($all_testimonials as $testimonial) {
     $testimonial_tags = get_ressources_infos($testimonial['id']);
-    
+
     // Check if testimonial has the matching use case tag
     if (isset($testimonial_tags['useCase']) && $testimonial_tags['useCase'] === $use_case_tag) {
       // Prepare testimonial data
@@ -85,7 +85,7 @@ $template->assign(
     'education_research_logos' => $filtered_logos['education-research'],
     'nonprofits_logos' => $filtered_logos['nonprofits'],
     'photographers_individuals_logos' => $filtered_logos['photographers-individuals'],
-    'tourism_testimonials' => array_slice($filtered_testimonials['travel-tourism'], 0, 4),
+    'tourism_testimonials' => $filtered_testimonials['travel-tourism'],
     'public_sector_testimonials' => array_slice($filtered_testimonials['public-sector'], 0, 4),
     'companies_testimonials' => array_slice($filtered_testimonials['companies'], 0, 4),
     'education_research_testimonials' => array_slice($filtered_testimonials['education-research'], 0, 4),
@@ -93,4 +93,3 @@ $template->assign(
     'photographers_individuals_testimonials' => array_slice($filtered_testimonials['photographers-individuals'], 0, 4),
   )
 );
-?>

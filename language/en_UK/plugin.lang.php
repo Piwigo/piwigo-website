@@ -255,6 +255,7 @@ $lang['M (the one for millions)'] = 'M';
 $lang['Today'] = 'Today';
 $lang['Get Involved'] = 'Get Involved';
 $lang['Send us a testimonial'] = 'Send us a testimonial';
+$lang['Choose your setup'] = 'Choose your setup';
 
 /*Used in guide pages*/
 // $lang['porg_guides'] = 'Guides';

@@ -22,6 +22,3 @@
     {include file='template/use_cases/photographers-individuals.tpl'}
   </div>
 </div>
-
-
-{include file="template/include/card/get_started_cta.tpl" }
