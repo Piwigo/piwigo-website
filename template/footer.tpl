@@ -60,7 +60,7 @@
                 <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.mobile_applications}">{'Mobile apps'|translate}</a></li>
                 <li><a class="footer-feature-link footer-menu-item" href="#">{'Extensions'|translate}</a></li>
                 <li><a class="footer-feature-link footer-menu-item" href="#">{'API & Integrations'|translate}</a></li>
-                <li><a class="footer-feature-link footer-menu-item" href="#">{'Live demos'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.demo}">{'Live demos'|translate}</a></li>
               </ul>
             </div>
           </div>
@@ -160,7 +160,7 @@
           <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.mobile_applications}">{'Mobile apps'|translate}</a></li>
           <li><a class="footer-feature-link footer-menu-item" href="#">{'Extensions'|translate}</a></li>
           <li><a class="footer-feature-link footer-menu-item" href="#">{'API & Integrations'|translate}</a></li>
-          <li><a class="footer-feature-link footer-menu-item" href="#">{'Live demos'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.demo}">{'Live demos'|translate}</a></li>
         </ul>
       </div>
 

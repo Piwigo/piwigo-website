@@ -106,6 +106,7 @@
       {include
 				file='template/include/sub_menu_items/sub_menu_itemc.tpl'
 				category_type='explore-submenu'
+        href="{$PORG_ROOT}{$URL.demo}"
 				title={'Live demos'|translate} description={'Live demos desc'|translate} icon_class='icon-examples'
       }
 
