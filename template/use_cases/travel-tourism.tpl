@@ -138,4 +138,4 @@ subtext={'use cases tourism challenge subtext'|translate}
 
 {include file='template/use_cases/parts/use.tpl' title={'use cases tourism use title'|translate} description1={'use cases tourism use description1'|translate} description2={'use cases tourism use description2'|translate} btn_text={'use cases tourism use btn text'|translate} btn_link="#TODO" img_src="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/02/20260702160631-a2c76169-xl.webp"}
 
-{include file='template/use_cases/parts/comments.tpl' title={'use cases tourism comments title'|translate} comments=$tourism_testimonials btn_text={'use cases tourism comments btn'|translate} btn_link="{$PORG_ROOT}{$URL.users}"}
+{include file='template/use_cases/parts/comments.tpl' title={'use cases tourism comments title'|translate} comments=$tourism_testimonials btn_text={'use cases tourism comments btn'|translate} btn_link="{$PORG_ROOT}{$URL.users}{if $URL.users|strstr:'?'}&{else}?{/if}use_case=tourism"}

@@ -32,20 +32,6 @@ foreach ($use_cases as $use_case_key => $use_case_tag) {
 // Get all testimonials
 $all_testimonials = get_ressources("testimonials");
 
-// Index example images by gallery url so testimonials can reuse them when available
-$example_images_by_url = array();
-foreach ($all_examples as $example) {
-  $example_tags = get_ressources_infos($example['id']);
-  if (!isset($example_tags['url'])) {
-    continue;
-  }
-
-  $example_url = rtrim($example_tags['url'], '/');
-  if (!isset($example_images_by_url[$example_url])) {
-    $example_images_by_url[$example_url] = $example['element_url'];
-  }
-}
-
 // Filter testimonials by use case
 $filtered_testimonials = array();
 foreach ($use_cases as $use_case_key => $use_case_tag) {
@@ -61,17 +47,11 @@ foreach ($use_cases as $use_case_key => $use_case_tag) {
         "id" => $testimonial['id'],
         "comment" => trigger_change('render_category_name', $testimonial['comment'] ?? ''),
         "author" => $testimonial['name'],
+        "url" => $testimonial_tags['url'] ?? null,
+        "hosting" => $testimonial_tags['hosting'] ?? null,
       );
 
-      if (isset($testimonial_tags['url'])) {
-        $testimonial_url = rtrim($testimonial_tags['url'], '/');
-        if (isset($example_images_by_url[$testimonial_url])) {
-          $item_content['img_src'] = $example_images_by_url[$testimonial_url];
-        }
-      }
-
-      $item = array_merge($item_content, $testimonial_tags);
-      $filtered_testimonials[$use_case_key][] = $item;
+      $filtered_testimonials[$use_case_key][] = array_merge($item_content, $testimonial_tags);
     }
   }
 }

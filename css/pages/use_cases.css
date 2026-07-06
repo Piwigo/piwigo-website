@@ -412,8 +412,12 @@
 }
 
 .testi-author-link,
-.testi-author-link:hover {
+.testi-author-link:hover i {
   text-decoration: none;
+}
+
+.testi-author-link:hover {
+  text-decoration: underline;
 }
 
 .testi-author-link:hover .icon-ext2 {

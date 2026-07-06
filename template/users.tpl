@@ -182,3 +182,19 @@
 </section>
 
 <script src="{$PORG_ROOT_URL_PLUGINS}js/users.js"></script>
+{literal}
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // This script checks for a 'use_case' URL parameter and applies the corresponding filter on page load.
+      const urlParams = new URLSearchParams(window.location.search);
+      const useCase = urlParams.get('use_case');
+
+      if (useCase) {
+        const checkbox = document.getElementById(useCase);
+        if (checkbox && typeof filterExamples === 'function') {
+          checkbox.click();
+        }
+      }
+    });
+  </script>
+{/literal}

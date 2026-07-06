@@ -575,6 +575,10 @@ Text Color
   color: var(--secondary_orange);
 }
 
+.secondary-pink-text {
+  color: var(--secondary_pink);
+}
+
 .main-green-text {
   color: var(--main_flash_green) !important;
 }

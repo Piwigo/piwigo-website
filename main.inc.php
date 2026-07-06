@@ -652,6 +652,9 @@ function get_ressources_infos($img_id)
       case 'country':
         $tags['country'] = $tag[1];
         break;
+      case 'hosting':
+        $tags['hosting'] = $tag[1];
+        break;
       case 'organization':
         $tags['organization'] = $tag[1];
         break;
