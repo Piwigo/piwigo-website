@@ -503,15 +503,21 @@ function porg_load_content()
       'features',
       'use_cases',
       'mobile-applications',
+      'demo'
     ), true),
     'users' => in_array($current_page, array(
-      'users'
+      'users',
+      'cases'
     ), true),
     'support' => in_array($current_page, array(), true),
-    'behind_code' => in_array($current_page, array(), true),
+    'behind_code' => in_array($current_page, array(
+      'about-us',
+      'contribute'
+    ), true),
     'news' => in_array($current_page, array(
       'product_update',
-      'newsletters'
+      'newsletters',
+      'news'
     ), true),
   );
 
