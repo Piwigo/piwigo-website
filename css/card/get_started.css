@@ -9,6 +9,7 @@ CTA
   position: relative;
   border-radius: 10px;
   padding: 40px;
+  padding-left: 15px;
   background: var(--grey);
   max-width: 1080px;
 }
@@ -90,10 +91,6 @@ CTA
   min-width: 188px;
 }
 
-.get-started-buttons {
-  justify-content: center;
-}
-
 .get-started-copy .cta-secondary {
   background: var(--clear) !important;
   min-width: 131px;
@@ -143,6 +140,10 @@ CTA
 }
 
 @media (max-width: 768px) {
+  .get-started-hero .container {
+    padding-left: 40px;
+  }
+
   .get-started-hero {
     height: auto;
     margin: 0 20px;

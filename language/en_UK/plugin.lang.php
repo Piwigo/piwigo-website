@@ -261,6 +261,9 @@ $lang['Choose your setup'] = 'Choose your setup';
 $lang['Start your free trial'] = 'Start your free trial';
 $lang['Try Piwigo Cloud free for 30 days. No credit card required.'] = 'Try Piwigo Cloud free for 30 days. No credit card required.';
 $lang['Create my account'] = 'Create my account';
+$lang['Read customer story'] = 'Read customer story';
+$lang['Trusted by organizations worldwide'] = 'Trusted by organizations worldwide';
+$lang['Explore our users'] = 'Explore our users';
 
 /*Used in guide pages*/
 // $lang['porg_guides'] = 'Guides';

@@ -23,6 +23,4 @@ $lang['Topic'] = 'Topic';
 $lang['Sales inquiry'] = 'Sales inquiry';
 $lang['Report a security issue'] = 'Report a security issue';
 $lang['Other'] = 'Other';
-
-$lang['Trusted by organizations worldwide'] = 'Trusted by organizations worldwide';
 ?>

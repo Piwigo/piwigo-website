@@ -15,6 +15,10 @@
           <div class="d-none d-md-flex justify-content-start" {if $desc2 != ''}style="margin-bottom: 1.5rem;{/if}">
             {include file='template/include/buttons/button.tpl' variant='cta_primary' label={$btn_text} href='{$btn_link}'}
           </div>
+        {else if $btn_green}
+          <div class="d-none d-md-flex justify-content-start" {if $desc2 != ''}style="margin-bottom: 1.5rem;{/if}">
+            {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={$btn_text} href='{$btn_link}'}
+          </div>
         {else}
           <div class="d-none d-md-block" {if $desc2 != ''}style="margin-bottom: 1.5rem;{/if}">
             {include file='template/include/buttons/button.tpl' variant='cta_secondary' label={$btn_text} href='{$btn_link}'}
@@ -42,6 +46,10 @@
       {if $btn_orange}
         <div class="d-flex justify-content-start" {if $desc2 != ''}style="margin-bottom: 1.5rem;{/if}">
           {include file='template/include/buttons/button.tpl' variant='cta_primary' label={$btn_text} href='{$btn_link}'}
+        </div>
+      {else if $btn_green}
+        <div style="margin-bottom: 1.5rem;">
+          {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={$btn_text} href='{$btn_link}'}
         </div>
       {else}
         <div style="margin-bottom: 1.5rem;">
