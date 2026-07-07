@@ -46,6 +46,7 @@ function porg_get_pages()
     'signin' => 'Signin',
     'product' => 'Product',
     'plugins' => 'Plugins',
+    'cases' => 'Cases studies',
     );
 }
 
