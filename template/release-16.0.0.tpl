@@ -44,7 +44,7 @@
         <h2 class="country-testimonial nav-card-title">{'On this page'|translate}</h2>
 
         <nav class="nav flex-column mt-3 version-16-nav-list" aria-label="On this page">
-          <a class="nav-link minimenus-item icon-star"
+          <a class="nav-link minimenus-item icon-star-1"
             href="#standard_pages">{'pwg_org_release16_menu_std_pages'|translate}</a>
           <a class="nav-link minimenus-item icon-puzzle" href="#2fa">{'pwg_org_release16_menu_2FA'|translate}</a>
           <a class="nav-link minimenus-item icon-paint"
@@ -55,7 +55,7 @@
             <a class="interview-nav-link nav-link minimenus-item icon-icon28"
               href="#interview_romain">{'Interview %s'|translate:'Romain'}</a>
           </div>
-          <a class="nav-link minimenus-item icon-star"
+          <a class="nav-link minimenus-item icon-star-1"
             href="#widget_management">{'pwg_org_release16_menu_gallery_search'|translate}</a>
           <a class="nav-link minimenus-item icon-paint"
             href="#comments_manager">{'pwg_org_release16_menu_comment_manager'|translate}</a>
@@ -63,7 +63,7 @@
             href="#activity_log_filter">{'pwg_org_release16_menu_activity_log_filter'|translate}</a>
           <a class="nav-link minimenus-item icon-arrows-cw"
             href="#image_update">{'pwg_org_release16_menu_update_img_batches'|translate}</a>
-          <a class="nav-link minimenus-item icon-star"
+          <a class="nav-link minimenus-item icon-star-1"
             href="#expert_mode">{'pwg_org_release16_menu_expert_mode'|translate}</a>
           <div class="interview-nav-item">
             <a class="interview-nav-link nav-link minimenus-item icon-icon28"
@@ -104,7 +104,7 @@
 
       <div class="section-part justify-content-center text-center">
         <h3 id="standard_pages">{'pwg_org_release16_menu_title_std_pages'|translate}<span
-            class="badge badge-new icon-star">{'pwg_org_release16_new_badge'|translate}</span></h3>
+            class="badge badge-new icon-star-1">{'pwg_org_release16_new_badge'|translate}</span></h3>
 
         <p class="col-sm-10 col-md-8 descriptive-text">{'pwg_org_release16_menu_std_pages_desc'|translate}</p>
 
@@ -142,6 +142,20 @@
       </div>
 
       <div class="section-part">
+        <h3 id="related_tags">{'pwg_org_release16_title_related_tags'|translate}<span
+            class="badge badge-refresh icon-paint">{'pwg_org_release16_badge_refresh'|translate}</span></h3>
+        <p class="col-sm-10 col-md-8 descriptive-text">{'pwg_org_release16_related_tags_desc'|translate}</p>
+
+        <img src="https://ressources.piwigo.com/uploads/c/v/7/cv7jpz6hf8//2025/10/27/20251027162930-54d9a828.png"
+          class="screenshot">
+        <p class="sub-h3">{'pwg_org_release16_related_tags_desc2'|translate}</p>
+        <img src="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2025/10/28/20251028142108-cfab77cf-xx.png"
+          class="screenshot">
+        <p class="sub-h3">{'pwg_org_release16_related_tags_desc3'|translate}</p>
+
+      </div>
+
+      <div class="section-part">
         <h3 id="save_buttons">{'pwg_org_release16_title_mv_save_btn'|translate}<span
             class="badge badge-refresh icon-paint">{'pwg_org_release16_badge_refresh'|translate}</span></h3>
 
@@ -164,7 +178,7 @@
 
       <div class="section-part">
         <h3 id="widget_management">{'pwg_org_release16_title_gallery_search'|translate}<span
-            class="badge badge-new icon-star">{'pwg_org_release16_new_badge'|translate}</span></h3>
+            class="badge badge-new icon-star-1">{'pwg_org_release16_new_badge'|translate}</span></h3>
 
         <p class="col-sm-10 col-md-8 descriptive-text">{'pwg_org_release16_gallery_search_desc'|translate}</p>
 
@@ -243,7 +257,7 @@
 
       <div class="section-part">
         <h3 id="expert_mode">{'pwg_org_release16_title_expert_mode'|translate}<span
-            class="badge badge-new icon-star">{'pwg_org_release16_new_badge'|translate}</span></h3>
+            class="badge badge-new icon-star-1">{'pwg_org_release16_new_badge'|translate}</span></h3>
 
         <p class="col-sm-10 col-md-8 descriptive-text">{'pwg_org_release16_expert_mode_desc'|translate}</p>
 
