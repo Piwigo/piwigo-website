@@ -24,6 +24,7 @@ $lang['upload sub1 description'] = 'Your online administration panel allows you 
 
 $lang['upload sub2 title'] = 'Add photos from your mobile phone';
 $lang['upload sub2 description'] = 'Download the Piwigo mobile app for Android or iOS and upload photos to your photo library directly from your smartphone: very useful for teams in the field!';
+$lang['upload sub2 btn'] = 'Learn more about mobile apps';
 
 $lang['upload sub3 title'] = 'Allow teammates and partners to upload files';
 $lang['upload sub3 description'] = 'With Piwigo, you can allow third parties to upload files to your photo library, without giving them admin rights. This will save time to your teams and external contributors (forget emails and large file transfers!)';
@@ -69,7 +70,7 @@ $lang['search text 1'] = 'Find the right file quickly, even in large libraries';
 $lang['search text 2'] = 'Narrow down results in seconds instead of browsing endlessly';
 $lang['search text 3'] = 'Access exactly what you need, when you need it';
 
-$lang['search sub1 title'] = 'Keyword search';
+$lang['search sub1 title'] = 'Text search';
 $lang['search sub1 description'] = 'Use the search bar to run a text search across your files.<br>Piwigo searches across titles, file names, descriptions, tags and more to return relevant results.';
 
 $lang['search sub2 title'] = 'Advanced search';
@@ -96,7 +97,7 @@ $lang['share sub1 title'] = 'Users and groups';
 $lang['share sub1 description'] = 'With Piwigo, invite an unlimited number of users to your photo library, and customize their permissions according to their needs. Administrators, contributors or simple viewers: you can manage different levels of access and customize permissions precisely: upload and download, access to albums… Permissions can be defined per user or group, depending on your organization.';
 
 $lang['share sub2 title'] = 'Link sharing';
-$lang['share sub2 description'] = "Need to share a file or album with someone outside your organization? You can send them a download link by email with a limited validity period, even if they don't have a user account on your photo library. This allows you to share content externally without opening access to your entire library.";
+$lang['share sub2 description'] = "Need to share a file or album with someone outside your organization? You can send them a download link by email, even if they don't have a user account on your photo library. This allows you to share content externally without opening access to your entire library.";
 
 $lang['share sub3 title'] = 'Public or Private gallery';
 $lang['share sub3 description'] = "Piwigo allows you to create beautiful public photo galleries, for photographers who want to exhibit their work, or for organizations who share their photo library on the internet. But your photo library can also be completely private, and accessible only to identified users. You can also mix the two approaches, with a private part and a public part: it's up to you! You decide what is public and what remains private.";

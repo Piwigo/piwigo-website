@@ -5,7 +5,7 @@
 
     <div class="feature-parts-stack">
       {include file="template/include/card/global_text_image.tpl" title={'upload sub1 title'|translate} desc={'upload sub1 description'|translate} image="{$PORG_ROOT_URL}images/features/import/upload.webp" }
-      {include file="template/include/card/global_text_image.tpl" reverse=true title={'upload sub2 title'|translate} desc={'upload sub2 description'|translate} image="{$PORG_ROOT_URL}images/features/import/add.webp"}
+      {include file="template/include/card/global_text_image.tpl" reverse=true title={'upload sub2 title'|translate} desc={'upload sub2 description'|translate} image="{$PORG_ROOT_URL}images/features/import/add.webp" btn_text={'upload sub2 btn'|translate} btn_link="{$PORG_ROOT}{$URL.mobile_applications}"}
       {include file="template/include/card/global_text_image.tpl" title={'upload sub3 title'|translate} desc={'upload sub3 description'|translate} image="{$PORG_ROOT_URL}images/features/import/teammates.webp"}
       {include file="template/include/card/global_text_image.tpl" reverse=true title={'upload sub4 title'|translate} desc={'upload sub4 description'|translate} image="{$PORG_ROOT_URL}images/features/import/formats.webp"}
     </div>

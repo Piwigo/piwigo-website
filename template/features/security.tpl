@@ -6,7 +6,7 @@
     <div class="feature-parts-stack">
       {include file="template/include/card/global_text_image.tpl" title={'security sub1 title'|translate} desc={'security sub1 description'|translate} image="{$PORG_ROOT_URL}images/features/security/{$security_sub1_image}"}
       {include file="template/include/card/global_text_image.tpl" reverse=true title={'security sub2 title'|translate} desc={'security sub2 description'|translate} image="{$PORG_ROOT_URL}images/features/security/confidential.webp"}
-      {include file="template/include/card/global_text_image.tpl" title={'security sub3 title'|translate} desc={'security sub3 description'|translate} image="{$PORG_ROOT_URL}images/features/security/backups.webp"  btn_text={'security sub3 btn'|translate} btn_link="#"}
+      {include file="template/include/card/global_text_image.tpl" title={'security sub3 title'|translate} desc={'security sub3 description'|translate} image="{$PORG_ROOT_URL}images/features/security/backups.webp"  btn_text={'security sub3 btn'|translate} btn_link="#todo"}
       {include file="template/include/card/global_text_image.tpl" reverse=true imageoffbeat=true title={'security sub4 title'|translate} desc={'security sub4 description'|translate} image="{$PORG_ROOT_URL}images/features/security/access.webp"}
       {include file="template/include/card/global_text_image.tpl" title={'security sub5 title'|translate} desc={'security sub5 description'|translate} image="{$PORG_ROOT_URL}images/features/security/yours.webp"}
     </div>
