@@ -43,7 +43,7 @@
 
         <h2 class="country-testimonial nav-card-title">{'On this page'|translate}</h2>
 
-        <nav class="nav flex-column mt-3 version-16-nav-list" aria-label="On this page">
+        <nav class="nav flex-column mt-3 version-16-nav-list v16" aria-label="On this page">
           <a class="nav-link minimenus-item icon-star-1"
             href="#standard_pages">{'pwg_org_release16_menu_std_pages'|translate}</a>
           <a class="nav-link minimenus-item icon-puzzle" href="#2fa">{'pwg_org_release16_menu_2FA'|translate}</a>

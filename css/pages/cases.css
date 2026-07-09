@@ -26,7 +26,6 @@
   object-fit: contain;
 }
 
-
 /* carousel */
 .logos-marquee-wrapper {
   overflow: hidden;
@@ -100,4 +99,95 @@
 .container-example {
   margin-top: 155px;
   margin-bottom: 155px;
+}
+
+.cases-header {
+  margin-top: 60px;
+}
+
+.client-full-width-banner {
+  height: 314px;
+  background-image: url(https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/08/20260708095125-039fed6b-xx.webp);
+  background-size: cover;
+  background-position: right;
+  margin: 90px 0;
+}
+
+.sidebar-sticky {
+  position: sticky;
+  top: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+@media (max-width: 767px) {
+  .sidebar-sticky {
+    position: static;
+    top: auto;
+    gap: 15px;
+  }
+}
+
+.version-16-nav-card {
+  position: relative !important;
+  top: 0 !important;
+}
+
+.trial-card {
+  padding: 25px;
+  border-radius: 10px;
+  background-color: var(--grey);
+}
+
+.testi-role {
+  font-size: 13px;
+  color: var(--dark_text);
+}
+.testi-card {
+  position: relative;
+  background: var(--grey);
+  border-radius: 10px;
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+}
+
+.testi-card .icon-quote {
+  font-size: 40px;
+  position: absolute;
+  top: -28px;
+  left: 25px;
+}
+
+.testi-footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+
+.testi-author-link .icon-ext2 {
+  display: none;
+}
+
+.testi-author-link,
+.testi-author-link:hover i {
+  text-decoration: none;
+}
+
+.testi-author-link:hover {
+  text-decoration: underline;
+}
+
+.testi-author-link:hover .icon-ext2 {
+  display: inline-block;
+}
+
+.testi-author-link:hover .icon-ext1 {
+  display: none;
+}
+
+.bottom-section {
+  margin-top: 110px;
+  margin-bottom: 110px;
 }

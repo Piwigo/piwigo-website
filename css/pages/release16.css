@@ -72,7 +72,7 @@
     padding: 5px 0 !important;
   }
 
-  .version-16-nav-list .nav-link:last-child {
+  .version-16-nav-list.v16 .nav-link:last-child {
     border-bottom: none !important;
   }
 

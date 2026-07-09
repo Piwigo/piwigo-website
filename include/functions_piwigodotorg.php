@@ -47,6 +47,7 @@ function porg_get_pages()
     'product' => 'Product',
     'plugins' => 'Plugins',
     'cases' => 'Cases studies',
+    'cotentin' => 'Case Study: Cotentin',
     );
 }
 

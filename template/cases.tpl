@@ -71,7 +71,7 @@
               <h3 class="card-title main-menu-item-title">{'porg_cases5_title'|translate}</h3>
               <p class="card-text sub-h3">"{'porg_cases5_description'|translate}"</p>
               <div class="mt-auto">
-                {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'Read customer story'|translate} href="#" target="_blank" class="card-btn w-100"}
+                {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'Read customer story'|translate} href="{$PORG_ROOT}{$URL.cotentin}" class="card-btn w-100"}
               </div>
             </div>
           </div>

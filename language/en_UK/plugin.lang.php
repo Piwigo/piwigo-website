@@ -265,6 +265,10 @@ $lang['Read customer story'] = 'Read customer story';
 $lang['Trusted by organizations worldwide'] = 'Trusted by organizations worldwide';
 $lang['Explore our users'] = 'Explore our users';
 
+$lang['The challenge'] = 'The challenge';
+$lang['The choice of Piwigo'] = 'The choice of Piwigo';
+$lang['Benefits'] = 'Benefits';
+
 /*Used in guide pages*/
 // $lang['porg_guides'] = 'Guides';
 // $lang['Installation'] = 'Installation';
