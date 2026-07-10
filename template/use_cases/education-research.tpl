@@ -1,1 +1,0 @@
-<h1>Education & Research</h1>

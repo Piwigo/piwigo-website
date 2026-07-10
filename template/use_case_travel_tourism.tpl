@@ -1,4 +1,7 @@
-﻿{include file='template/use_cases/parts/top_page.tpl' title={'use cases tourism header title'|translate} description={'use cases tourism header description'|translate} img_src="{$PORG_ROOT_URL}images/use-case/tourism_header.webp"}
+<link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL_PLUGINS}css/pages/use_cases.css">
+<link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL_PLUGINS}css/card/get_started.css">
+
+{include file='template/use_cases/parts/top_page.tpl' title={'use cases tourism header title'|translate} description={'use cases tourism header description'|translate} img_src="{$PORG_ROOT_URL}images/use-case/tourism_header.webp"}
 
 <section class="tourism-carousel">
   <div class="container-fluid px-0">
@@ -104,7 +107,7 @@ subtext={'use cases tourism challenge subtext'|translate}
 ]}
 {include file='template/use_cases/parts/how.tpl' title={'use cases tourism how title'|translate} list_items=$how_cards}
 
-{include file='template/use_cases/parts/discover.tpl' title={'use cases tourism discover title'|translate} description={'use cases tourism discover description'|translate} btn_text={'use cases tourism discover btn text'|translate} btn_link="{$PORG_ROOT}{$URL.signup}"}
+{include file='template/use_cases/parts/discover.tpl' title={'use cases discover title'|translate} description={'use cases discover description'|translate} btn_text={'use cases discover btn text'|translate} btn_link="{$PORG_ROOT}{$URL.signup}"}
 
 {assign var="stacks_cards" value=[
   [
@@ -132,10 +135,12 @@ subtext={'use cases tourism challenge subtext'|translate}
 'title' => {'use cases tourism stacks card5 title'|translate},
 'description' => {'use cases tourism stacks card5 description'|translate}
 ]]}
-{include file='template/use_cases/parts/stacks.tpl' title={'use cases tourism stacks title'|translate} list_items=$stacks_cards}
+{include file='template/use_cases/parts/stacks.tpl' page='tourism' title={'use cases tourism stacks title'|translate} list_items=$stacks_cards}
 
 {include file='template/use_cases/parts/host.tpl' title={'use cases tourism host title'|translate} description={'use cases tourism host description'|translate} cloud_description={'use cases tourism host cloud'|translate} self_hosted_description={'use cases tourism host self'|translate} cloud_btn_text={'use cases tourism host cloud btn text'|translate} cloud_btn_link="{$PORG_ROOT}{$URL.signup}" self_hosted_btn_text={'use cases tourism host self hosted btn text'|translate}}
 
-{include file='template/use_cases/parts/use.tpl' title={'use cases tourism use title'|translate} description1={'use cases tourism use description1'|translate} description2={'use cases tourism use description2'|translate} btn_text={'use cases tourism use btn text'|translate} btn_link="#TODO" img_src="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/02/20260702160631-a2c76169-xl.webp"}
+{include file='template/use_cases/parts/use.tpl' title={'use cases tourism use title'|translate} description1={'use cases tourism use description1'|translate} description2={'use cases tourism use description2'|translate} btn_text={'use cases tourism use btn text'|translate} btn_link="{$PORG_ROOT}{$URL.cotentin}" img_src="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/02/20260702160631-a2c76169-xl.webp"}
 
 {include file='template/use_cases/parts/comments.tpl' title={'use cases tourism comments title'|translate} comments=$tourism_testimonials btn_text={'use cases tourism comments btn'|translate} btn_link="{$PORG_ROOT}{$URL.users}{if $URL.users|strstr:'?'}&{else}?{/if}use_case=tourism"}
+
+{include file='template/use_cases/parts/start.tpl' title={'use cases tourism start title'|translate} description={'use cases tourism start description'|translate}}

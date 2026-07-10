@@ -59,37 +59,37 @@
       {include
 				file='template/include/sub_menu_items/sub_menu_itemc.tpl'
 				category_type='use-case-submenu'
-				title={'Travel & Tourism'|translate} icon_class='icon-travel' href="{$PORG_ROOT}{$URL.use_cases}#travel-tourism"
+				title={'Travel & Tourism'|translate} icon_class='icon-travel' href="{$PORG_ROOT}{$URL.use_case_travel_tourism}"
       }
 
       {include
 				file='template/include/sub_menu_items/sub_menu_itemc.tpl'
 				category_type='use-case-submenu'
-				title={'Public Sector'|translate} icon_class='icon-public' href="{$PORG_ROOT}{$URL.use_cases}#public-sector"
+				title={'Public Sector'|translate} icon_class='icon-public' href="{$PORG_ROOT}{$URL.use_case_public_sector}"
       }
 
       {include
 				file='template/include/sub_menu_items/sub_menu_itemc.tpl'
 				category_type='use-case-submenu'
-				title={'Companies'|translate} icon_class='icon-companies' href="{$PORG_ROOT}{$URL.use_cases}#companies"
+				title={'Companies'|translate} icon_class='icon-companies' href="{$PORG_ROOT}{$URL.use_case_companies}"
       }
 
       {include
 				file='template/include/sub_menu_items/sub_menu_itemc.tpl'
 				category_type='use-case-submenu'
-				title={'Education & Research'|translate} icon_class='icon-education' href="{$PORG_ROOT}{$URL.use_cases}#education-research"
+				title={'Education & Research'|translate} icon_class='icon-education' href="{$PORG_ROOT}{$URL.use_case_education_research}"
       }
 
       {include
 				file='template/include/sub_menu_items/sub_menu_itemc.tpl'
 				category_type='use-case-submenu'
-				title={'Nonprofits'|translate} icon_class='icon-nonprofit' href="{$PORG_ROOT}{$URL.use_cases}#nonprofits"
+				title={'Nonprofits'|translate} icon_class='icon-nonprofit' href="{$PORG_ROOT}{$URL.use_case_nonprofits}"
       }
 
       {include
 				file='template/include/sub_menu_items/sub_menu_itemc.tpl'
 				category_type='use-case-submenu'
-				title={'Photographers & individuals'|translate} icon_class='icon-photographers' href="{$PORG_ROOT}{$URL.use_cases}#photographers-individuals"
+				title={'Photographers & individuals'|translate} icon_class='icon-photographers' href="{$PORG_ROOT}{$URL.use_case_photographers_individuals}"
       }
     </div>
 

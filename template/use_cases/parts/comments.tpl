@@ -60,7 +60,7 @@
       const total = cards.length;
       let current = 0;
 
-      const THRESHOLD = 300;
+      const THRESHOLD = 250;
 
       const dots = cards.map((_, i) => {
         const d = document.createElement('button');
