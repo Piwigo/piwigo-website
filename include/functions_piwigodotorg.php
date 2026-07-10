@@ -48,6 +48,10 @@ function porg_get_pages()
     'plugins' => 'Plugins',
     'cases' => 'Cases studies',
     'cotentin' => 'Case Study: Cotentin',
+    'ect' => 'Case Study: ECT',
+    'icam' => 'Case Study: Icam',
+    'indre' => 'Case Study: Indre',
+    'wessex' => 'Case Study: Wessex',
     );
 }
 

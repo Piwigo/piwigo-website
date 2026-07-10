@@ -31,7 +31,7 @@
                     {if $comment.hosting == 'self-hosted'}
                       <p class="sector-testimonial mb-0 mt-1 dark-text"><i class="icon-self-host orange-text me-1"></i>{'Self-hosted'|translate}</p>
                     {else if $comment.hosting == 'cloud'}
-                      <p class="sector-testimonial mb-0 mt-1 dark-text"><i class="icon-cloud-oneplace pink-text me-1"></i>{'Cloud'|translate}</p>
+                      <p class="sector-testimonial mb-0 mt-1 dark-text"><i class="icon-cloud-oneplace pink-text me-1"></i>Piwigo {'Cloud'|translate}</p>
                     {/if}
                   {/if}
                 </div>

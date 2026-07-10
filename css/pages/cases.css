@@ -140,6 +140,10 @@
   background-color: var(--grey);
 }
 
+.trial-card .mb-5 {
+  margin-bottom: 30px !important;
+}
+
 .testi-role {
   font-size: 13px;
   color: var(--dark_text);
@@ -164,6 +168,7 @@
   display: flex;
   flex-direction: column;
   margin-top: auto;
+  margin-top: 30px;
 }
 
 .testi-author-link .icon-ext2 {
@@ -190,4 +195,57 @@
 .bottom-section {
   margin-top: 110px;
   margin-bottom: 110px;
+}
+
+.client-full-width-banner-ect {
+  height: 300px;
+  background-image: url(https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/09/20260709102812-16adb7aa-xx.webp);
+  background-size: cover;
+  background-position: right;
+  margin: 90px 0;
+}
+
+.client-full-width-banner-icam {
+  height: 300px;
+  background-image: url(https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/09/20260709111937-bfdffce7-xx.webp);
+  background-size: cover;
+  background-position: right;
+  margin: 90px 0;
+}
+
+.client-full-width-banner-indre {
+  height: 300px;
+  background-image: url(https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/09/20260709150507-643f5caa-xx.webp);
+  background-size: cover;
+  background-position: right;
+  margin: 90px 0;
+}
+
+.client-full-width-banner-wessex {
+  height: 300px;
+  background-image: url(https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/09/20260709154430-bc222b4e-xx.webp);
+  background-size: cover;
+  background-position: right;
+  margin: 90px 0;
+}
+
+@media (max-width: 768px) {
+
+  .client-full-width-banner,
+  .client-full-width-banner-ect,
+  .client-full-width-banner-icam,
+  .client-full-width-banner-indre,
+  .client-full-width-banner-wessex {
+    height: 150px;
+    margin: 30px 0 20px;
+  }
+
+  section {
+    padding: 0 20px !important;
+  }
+
+  .bottom-section {
+    margin-bottom: 30px;
+  }
+
 }

@@ -23,7 +23,7 @@
               <h3 class="card-title main-menu-item-title">{'porg_cases1_title'|translate}</h3>
               <p class="card-text sub-h3">"{'porg_cases1_description'|translate}"</p>
               <div class="mt-auto">
-                {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'Read customer story'|translate} href="#" target="_blank" class="card-btn w-100"}
+                {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'Read customer story'|translate} href="{$PORG_ROOT}{$URL.wessex}" class="card-btn w-100"}
               </div>
             </div>
           </div>
@@ -35,19 +35,19 @@
               <h3 class="card-title main-menu-item-title">{'porg_cases2_title'|translate}</h3>
               <p class="card-text sub-h3">"{'porg_cases2_description'|translate}"</p>
               <div class="mt-auto">
-                {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'Read customer story'|translate} href="#" target="_blank" class="card-btn w-100"}
+                {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'Read customer story'|translate} href="{$PORG_ROOT}{$URL.indre}" class="card-btn w-100"}
               </div>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4 d-flex">
           <div class="case-card h-100 d-flex flex-column">
-            <img src="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2022/05/11/20220511105709-33fa95bf-me.png" class="card-img-top">
+            <img src="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/09/20260709111938-507d82ee-me.webp" class="card-img-top">
             <div class="card-body d-flex flex-column">
               <h3 class="card-title main-menu-item-title">{'porg_cases3_title'|translate}</h3>
               <p class="card-text sub-h3"> "{'porg_cases3_description'|translate}"</p>
               <div class="mt-auto">
-                {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'Read customer story'|translate} href="#" target="_blank" class="card-btn w-100"}
+                {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'Read customer story'|translate} href="{$PORG_ROOT}{$URL.icam}" class="card-btn w-100"}
               </div>
             </div>
           </div>
@@ -59,7 +59,7 @@
               <h3 class="card-title main-menu-item-title">{'porg_cases4_title'|translate}</h3>
               <p class="card-text sub-h3">"{'porg_cases4_description'|translate}"</p>
               <div class="mt-auto">
-                {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'Read customer story'|translate} href="#" target="_blank" class="card-btn w-100"}
+                {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'Read customer story'|translate} href="{$PORG_ROOT}{$URL.ect}" class="card-btn w-100"}
               </div>
             </div>
           </div>

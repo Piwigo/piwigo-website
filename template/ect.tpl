@@ -3,18 +3,18 @@
 
 <section class="container cases-header">
   <div class="row justify-content-center">
-    <div class="col-md-5"></div>
-    <div class="col-md-2 col-6 text-center mb-5">
-      <img src="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/08/20260708095125-ebc291f5-me.webp" alt="Logo Cotentin" class="img-fluid">
+    <div class="col-md-4"></div>
+    <div class="col-md-3 col-6 text-center mb-5">
+      <img src="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2022/05/11/20220511105653-ba73b387-me.png" alt="Logo ect" class="img-fluid">
     </div>
-    <div class="col-md-5"></div>
+    <div class="col-md-4"></div>
     <div class="col-md-10 text-center">
-      <h1 class="text-center">{'porg_cases_cotentin_title'|translate}</h1>
+      <h1 class="text-center">{'porg_cases_ect_title'|translate}</h1>
     </div>
   </div>
 </section>
 
-<section class="client-full-width-banner"></section>
+<section class="client-full-width-banner-ect"></section>
 
 <a href="#release_menu" class="btn-back-to-menu" title="go to menu"></a>
 
@@ -48,20 +48,20 @@
     </div>
     <div class="col-md-8">
 
-      <p class="mb-5">{'porg_cases_cotentin_description'|translate}</p>
+      <p class="mb-5">{'porg_cases_ect_description'|translate}</p>
 
       <div class="section-part justify-content-center text-center" id="challenge">
-        <h2 class="mb-4">{'porg_cases_cotentin_challenge_title'|translate}</h2>
+        <h2 class="mb-4">{'porg_cases_ect_challenge_title'|translate}</h2>
 
-        <p class="mb-5">{'porg_cases_cotentin_challenge_description'|translate}</p>
+        <p class="mb-5">{'porg_cases_ect_challenge_description'|translate}</p>
 
         <div class="row g-2">
           <div class="col-6">
-            <img src="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/08/20260708095126-666611cd-me.webp" class="mb-0 w-100 h-100 object-fit-cover rounded">
+            <img src="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/09/20260709102814-18fdd38a-me.webp" class="mb-0 w-100 h-100 object-fit-cover rounded">
           </div>
           <div class="col-6 d-flex flex-column gap-2">
-            <img src="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/08/20260708095125-f5a51fd3-me.webp" class="mb-0 w-100 object-fit-cover rounded" style="height: 50%">
-            <img src="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/08/20260708095125-60b6feee-me.webp" class="mb-0 w-100 object-fit-cover rounded" style="height: 50%">
+            <img src="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/09/20260709102814-42f90352-me.webp" class="mb-0 w-100 object-fit-cover rounded" style="height: 50%">
+            <img src="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/09/20260709102814-49d11585-me.webp" class="mb-0 w-100 object-fit-cover rounded" style="height: 50%">
           </div>
         </div>
 
@@ -70,24 +70,36 @@
       <div class="section-framed-container" id="choice">
         <h2 class="mb-4">{'The choice of Piwigo'|translate}</h2>
 
-        <p class="mb-5">{'porg_cases_cotentin_choice_description'|translate}</p>
+        <p class="mb-5">{'porg_cases_ect_choice_description'|translate}</p>
 
-        <img src="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/08/20260708095124-81967142-la.webp" class="mb-0 w-100 object-fit-cover rounded">
+        <img src="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/09/20260709102813-8ed94df9-la.webp" class="mb-0 w-100 object-fit-cover rounded">
 
+        <div class="testi-card mt-5">
+          <i class="icon-quote main-green-text"></i>
+          <p class="p-testimonial testi-text mb-0">{'porg_cases_ect_choice_text'|translate}</p>
+          <div class="testi-footer">
+
+            <p class="name-testimonial mb-0">Cindy D</p>
+            <p class="p-testimonial testi-role mb-0">{'porg_cases_ect_benefits_person'|translate}</p>
+            <a href="https://www.groupe-ect.com" target="_blank" rel="noopener noreferrer" class="testi-author-link sector-testimonial pink-text">ECT<i class="icon-ext1 secondary-pink-text ms-1"></i><i class="icon-ext2 secondary-pink-text ms-1"></i></a>
+
+            <p class="sector-testimonial mb-0 mt-1 dark-text"><i class="icon-self-host pink-text me-1"></i>Piwigo {'Cloud'|translate}</p>
+          </div>
+        </div>
       </div>
 
       <div id="benefits" class="section-part technical-features">
         <h2 class="mb-4">{'Benefits'|translate}</h2>
 
-        <p class="mb-5">{'porg_cases_cotentin_benefits_description'|translate}</p>
+        <p class="mb-5">{'porg_cases_ect_benefits_description'|translate}</p>
         <div class="testi-card">
           <i class="icon-quote main-green-text"></i>
-          <p class="p-testimonial testi-text mb-0">{'porg_cases_cotentin_benefits_text'|translate}</p>
+          <p class="p-testimonial testi-text mb-0">{'porg_cases_ect_benefits_text'|translate}</p>
           <div class="testi-footer">
 
-            <p class="name-testimonial mb-0">Christine Semilly-Lagalle</p>
-            <p class="p-testimonial testi-role mb-0">{'porg_cases_cotentin_benefits_person'|translate}</p>
-            <a href="http://www.encotentin.fr" target="_blank" rel="noopener noreferrer" class="testi-author-link sector-testimonial pink-text">{'porg_cases_cotentin_benefits_structure'|translate}<i class="icon-ext1 secondary-pink-text ms-1"></i><i class="icon-ext2 secondary-pink-text ms-1"></i></a>
+            <p class="name-testimonial mb-0">Cindy D</p>
+            <p class="p-testimonial testi-role mb-0">{'porg_cases_ect_benefits_person'|translate}</p>
+            <a href="https://www.groupe-ect.com" target="_blank" rel="noopener noreferrer" class="testi-author-link sector-testimonial pink-text">ECT<i class="icon-ext1 secondary-pink-text ms-1"></i><i class="icon-ext2 secondary-pink-text ms-1"></i></a>
 
             <p class="sector-testimonial mb-0 mt-1 dark-text"><i class="icon-self-host pink-text me-1"></i>Piwigo {'Cloud'|translate}</p>
           </div>
@@ -140,12 +152,12 @@
       </div>
       <div class="col-lg-3 col-md-6 mb-4 d-flex">
         <div class="case-card h-100 d-flex flex-column">
-          <img src="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2022/05/11/20220511105653-ba73b387-me.png" class="card-img-top">
+          <img src="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2022/05/11/20220511105738-69c84770-me.png" class="card-img-top">
           <div class="card-body d-flex flex-column">
-            <h3 class="card-title main-menu-item-title">{'porg_cases4_title'|translate}</h3>
-            <p class="card-text sub-h3">"{'porg_cases4_description'|translate}"</p>
+            <h3 class="card-title main-menu-item-title">{'porg_cases5_title'|translate}</h3>
+            <p class="card-text sub-h3">"{'porg_cases5_description'|translate}"</p>
             <div class="mt-auto">
-              {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'Read customer story'|translate} href="{$PORG_ROOT}{$URL.ect}" class="card-btn w-100"}
+              {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'Read customer story'|translate} href="{$PORG_ROOT}{$URL.cotentin}" class="card-btn w-100"}
             </div>
           </div>
         </div>
