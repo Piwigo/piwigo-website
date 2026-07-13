@@ -24,7 +24,7 @@
                   {if $author_name}<p class="name-testimonial mb-0">{$author_name}</p>{/if}
                   {if $company_name}
                     {if isset($comment.url) && $comment.url}
-                      <a href="{$comment.url}" target="_blank" rel="noopener noreferrer" class="testi-author-link sector-testimonial {if $comment.hosting == 'self-hosted'}orange-text{else}pink-text{/if}">{$company_name}<i class="icon-ext1 {if $comment.hosting == 'self-hosted'}secondary-orange-text{else}secondary-pink-text{/if}-text ms-1"></i><i class="icon-ext2 {if $comment.hosting == 'self-hosted'}secondary-orange-text{else}secondary-pink-text{/if} ms-1"></i></a>
+                      <a href="{$comment.url}" target="_blank" rel="noopener noreferrer" class="testi-author-link sector-testimonial {if $comment.hosting == 'self-hosted'}orange-text{else}pink-text{/if}">{$company_name}<i class="icon-ext1 {if $comment.hosting == 'self-hosted'}secondary-orange-text{else}secondary-pink-text{/if} ms-1"></i><i class="icon-ext2 {if $comment.hosting == 'self-hosted'}secondary-orange-text{else}secondary-pink-text{/if} ms-1"></i></a>
                     {else}
                       <span class="sector-testimonial {if $comment.hosting == 'self-hosted'}orange-text{else}pink-text{/if}">{$company_name}</span>
                     {/if}
@@ -102,7 +102,7 @@
           // On desktop, width is based on text length
           cards.forEach(card => {
             const text = card.querySelector('.testi-text');
-            card.style.width = (text && text.textContent.trim().length > THRESHOLD) ? '685px' : '365px';
+            card.style.width = (text && text.textContent.trim().length > THRESHOLD) ? '700px' : '365px';
           });
         }
         // Recalculate position after width change

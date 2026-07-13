@@ -96,43 +96,42 @@ subtext={'use cases tourism challenge subtext'|translate}
 ],
 [
 'icon' => "icon-flash-1",
-'title' => {'use cases tourism how card5 title'|translate},
+'title' => {'scales with your library'|translate},
 'description' => {'use cases tourism how card5 description'|translate}
 ],
 [
 'icon' => "icon-shield",
-'title' => {'use cases tourism how card6 title'|translate},
+'title' => {'built for collaboration'|translate},
 'description' => {'use cases tourism how card6 description'|translate}
 ]
 ]}
 {include file='template/use_cases/parts/how.tpl' title={'use cases tourism how title'|translate} list_items=$how_cards}
-
 {include file='template/use_cases/parts/discover.tpl' title={'use cases discover title'|translate} description={'use cases discover description'|translate} btn_text={'use cases discover btn text'|translate} btn_link="{$PORG_ROOT}{$URL.signup}"}
 
 {assign var="stacks_cards" value=[
   [
-    'icon' => "icon-monk",
-'title' => {'use cases tourism stacks card1 title'|translate},
+'icon' => "icon-monk",
+'title' => {'easy for everyone to use'|translate},
 'description' => {'use cases tourism stacks card1 description'|translate}
 ],
 [
 'icon' => "icon-calc",
-'title' => {'use cases tourism stacks card2 title'|translate},
+'title' => {'scales with your library'|translate},
 'description' => {'use cases tourism stacks card2 description'|translate}
 ],
 [
 'icon' => "icon-help",
-'title' => {'use cases tourism stacks card3 title'|translate},
+'title' => {'built for collaboration'|translate},
 'description' => {'use cases tourism stacks card3 description'|translate}
 ],
 [
 'icon' => "icon-arrows-cw",
-'title' => {'use cases tourism stacks card4 title'|translate},
+'title' => {'your data stays yours'|translate},
 'description' => {'use cases tourism stacks card4 description'|translate}
 ],
 [
 'icon' => "icon-contribute",
-'title' => {'use cases tourism stacks card5 title'|translate},
+'title' => {'open source and sustainable'|translate},
 'description' => {'use cases tourism stacks card5 description'|translate}
 ]]}
 {include file='template/use_cases/parts/stacks.tpl' page='tourism' title={'use cases tourism stacks title'|translate} list_items=$stacks_cards}

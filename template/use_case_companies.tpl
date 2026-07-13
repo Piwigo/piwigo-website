@@ -97,48 +97,47 @@ subtext={'use cases company challenge subtext'|translate}
 ],
 [
 'icon' => "icon-flash-1",
-'title' => {'use cases company how card5 title'|translate},
+'title' => {'scales with your business'|translate},
 'description' => {'use cases company how card5 description'|translate}
 ],
 [
 'icon' => "icon-shield",
-'title' => {'use cases company how card6 title'|translate},
+'title' => {'built for collaboration'|translate},
 'description' => {'use cases company how card6 description'|translate}
 ]
 ]}
 {include file='template/use_cases/parts/how.tpl' title={'use cases company how title'|translate} list_items=$how_cards}
-
 {include file='template/use_cases/parts/discover.tpl' title={'use cases discover title'|translate} description={'use cases discover description'|translate} btn_text={'use cases discover btn text'|translate} btn_link="{$PORG_ROOT}{$URL.signup}"}
 
 {assign var="stacks_cards" value=[
   [
-    'icon' => "icon-monk",
-'title' => {'use cases company stacks card1 title'|translate},
+'icon' => "icon-monk",
+'title' => {'easy for everyone to use'|translate},
 'description' => {'use cases company stacks card1 description'|translate}
 ],
 [
 'icon' => "icon-calc",
-'title' => {'use cases company stacks card2 title'|translate},
+'title' => {'scales with your business'|translate},
 'description' => {'use cases company stacks card2 description'|translate}
 ],
 [
 'icon' => "icon-help",
-'title' => {'use cases company stacks card3 title'|translate},
+'title' => {'built for collaboration'|translate},
 'description' => {'use cases company stacks card3 description'|translate}
 ],
 [
 'icon' => "icon-arrows-cw",
-'title' => {'use cases company stacks card4 title'|translate},
+'title' => {'your data stays yours'|translate},
 'description' => {'use cases company stacks card4 description'|translate}
 ],
 [
 'icon' => "icon-contribute",
-'title' => {'use cases company stacks card5 title'|translate},
+'title' => {'open source and sustainable'|translate},
 'description' => {'use cases company stacks card5 description'|translate}
 ]]}
 {include file='template/use_cases/parts/stacks.tpl' page='public-sector' title={'use cases company stacks title'|translate} list_items=$stacks_cards}
 
-{include file='template/use_cases/parts/host.tpl' title={'use cases public host title'|translate} description={'use cases company host description'|translate} cloud_description={'use cases public host cloud'|translate} self_hosted_description={'use cases public host self'|translate}}
+{include file='template/use_cases/parts/host.tpl' title={'use cases public host title'|translate} description={'use cases tourism host description'|translate} cloud_description={'use cases public host cloud'|translate} self_hosted_description={'use cases public host self'|translate}}
 
 {include file='template/use_cases/parts/use.tpl' title={'use cases company use title'|translate} description1={'use cases company use description1'|translate} description2={'use cases company use description2'|translate} btn_text={'use cases public use btn text'|translate} btn_link="{$PORG_ROOT}{$URL.wessex}" img_src="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/02/20260702160631-a2c76169-xl.webp"}
 
