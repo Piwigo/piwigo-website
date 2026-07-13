@@ -69,7 +69,7 @@
 {include file='template/use_cases/parts/challenge.tpl'
   title={'use cases public challenge title'|translate}
 description={'use cases public challenge description'|translate}
-title2={'use cases public challenge title2'|translate}
+title2={'use cases tourism challenge title2'|translate}
 list_items=$public_challenges_list
 subtext={'use cases public challenge subtext'|translate}
 }
