@@ -51,7 +51,7 @@ if (isset($porg_releases[$version]['subtitle'])) {
 }
 
 /* Release date */
-$released_on = porg_date_format($porg_releases[$version]['released_on']);
+$released_on = format_date($porg_releases[$version]['released_on'], ['day', 'month', 'year']);
 
 /* Download versions for the current major branch */
 $download_versions = array();
@@ -179,7 +179,7 @@ foreach ($porg_releases as $download_version => $download_version_content) {
 
   $download_versions[] = array(
     'version' => $download_version,
-    'released_on' => porg_date_format($download_version_content['released_on']),
+    'released_on' => format_date($download_version_content['released_on'], ['day', 'month', 'year']),
     'md5sum' => $download_version_content['md5sum'],
     'download_url' => '//piwigo.org/download/dlcounter.php?code=' . $download_version,
     'features' => $download_version_features,

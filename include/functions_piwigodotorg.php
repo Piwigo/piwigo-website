@@ -253,9 +253,8 @@ function porg_get_latest_version()
 {
   global $conf;
 
-  $cache_path = $conf['data_location'].'/'.PORG_ID.'/porg_latest_version.cache.php';
-  // echo "<pre>data  = ".filemtime(PORG_PATH.'/data/release.data.php')."\n";
-  // echo "cache = ".filemtime($cache_path).'</pre>';
+  $cache_path = PHPWG_ROOT_PATH . $conf['data_location'].'/'.PORG_ID.'/porg_latest_version.cache.php';
+
   if (!is_file($cache_path) or filemtime($cache_path) < filemtime(PORG_PATH.'/data/release.data.php'))
   {
     $latest_version = porg_get_latest_version_nocache();
@@ -302,9 +301,12 @@ function porg_get_news($start, $count)
     return $topics;
   }
 
-  $cache_path = $conf['data_location'].'/'.PORG_ID.'/porg_news-'.$lang_info['code'].'.cache.php';
-  if (!is_file($cache_path) or filemtime($cache_path) < strtotime('15 minutes ago'))
+  $cache_path = PHPWG_ROOT_PATH . $conf['data_location'].'/'.PORG_ID.'/porg_news-'.$lang_info['code'].'.cache.php';
+
+  if ('refresh_ressources_cache' == script_basename())
   {
+    $function_start_time = get_moment();
+
     $forum_url = 'https://'.$page['porg_domain_prefix'].'piwigo.org/forum';
     $url = $forum_url.'/news.php?format=json';
 
@@ -365,7 +367,7 @@ function porg_get_news($start, $count)
 
         $topics[$idx]['message'] = $message;
         $topics[$idx]['id'] = $topic['topic_id'];
-        $topics[$idx]['posted'] = porg_date_format($topic['posted_on'], true);
+        $topics[$idx]['posted'] = format_date($topic['posted_on'], ['day', 'month', 'year']);
         $topics[$idx]['url'] = $forum_url.'/viewtopic.php?id='.$topic['topic_id'];
 
         $topics[$idx]['state'] = 'right';
@@ -380,6 +382,11 @@ function porg_get_news($start, $count)
         file_put_contents($cache_path, serialize($topics));
       }
     }
+
+    global $logger;
+    $logger->info(__FUNCTION__.' executed in '.get_elapsed_time($function_start_time, get_moment()));
+
+    return;
   }
 
   if (is_null($topics) and file_exists($cache_path))
@@ -445,7 +452,7 @@ function porg_get_newsletters($lang_code)
     {
       $newsletters[$idx]['id'] = $lang_code.'-'.$idx;
       $newsletters[$idx]['image'] = preg_replace('{http://([a-z]{2,3}\.)?piwigo.org/}', '//${1}piwigo.org/', $newsletters[$idx]['image']);
-      $newsletters[$idx]['date_label'] = porg_date_format($idx);
+      $newsletters[$idx]['date_label'] = format_date($idx, ['day', 'month', 'year']);
       $newsletters[$idx]['url'] = porg_get_page_url('newsletters').'-'.str_replace('-', '', $idx);
     }
 
@@ -478,35 +485,6 @@ function porg_display_newsletter($newsletter_id)
   }
 
   exit();
-}
-
-function porg_date_format($datetime, $is_timestamp=false)
-{
-  global $lang_info, $lang;
-
-  $timestamp = $datetime;
-  if (!$is_timestamp)
-  {
-    // in case we have a date without time, we force time to be noon, to avoid
-    // summer/winter time to impact the date when calling format_date
-    if (preg_match('/^\d\d\d\d-\d\d-\d\d$/', $datetime))
-    {
-      $datetime.= ' 12:00:00';
-    }
-    $timestamp = strtotime($datetime);
-  }
-
-  if ('en' == $lang_info['code'])
-  {
-    return date("F jS, Y", $timestamp);
-  }
-
-  if ('de' == $lang_info['code'])
-  {
-    return date('j. ', $timestamp).$lang['month'][date('n', $timestamp)].date(' Y', $timestamp);
-  }
-
-  return format_date($timestamp, array('day', 'month', 'year'));
 }
 
 function porg_get_nb_years()
@@ -582,10 +560,13 @@ function porg_set_pcom_urls()
 function porg_get_coding_activity()
 {
   global $conf;
-  $cache_path = $conf['data_location'].'/'.PORG_ID.'/porg_coding_activity.cache.php';  
+  $cache_path = PHPWG_ROOT_PATH . $conf['data_location'].'/'.PORG_ID.'/porg_coding_activity.cache.php';  
   $coding_activity = null;
-  if (!is_file($cache_path) or filemtime($cache_path) < strtotime('5 minutes ago'))
+
+  if ('refresh_ressources_cache' == script_basename())
   {
+    $function_start_time = get_moment();
+
     $url = "https://piwigo.org/activity/api/commits.get.php";
 
     if (conf_get_param('porg_fetch_news_check_ssl', true))
@@ -612,6 +593,11 @@ function porg_get_coding_activity()
         file_put_contents($cache_path, serialize($coding_activity));
       }
     }
+
+    global $logger;
+    $logger->info(__FUNCTION__.' executed in '.get_elapsed_time($function_start_time, get_moment()));
+
+    return;
   }
     
   if (is_null($coding_activity))
@@ -620,5 +606,171 @@ function porg_get_coding_activity()
   }
 
   return $coding_activity;
+}
+
+function ressources_api_request($method, $data=array(), $get_data=array())
+{
+  global $logger;
+
+  $logger->info(__FUNCTION__.' called on method='.$method);
+
+  $url = 'https://ressources.piwigo.com/ws.php?method='.$method.'&format=json';
+  if (!empty($get_data))
+  {
+    $url .= '&'.http_build_query($get_data);
+  }
+  $logger->info(__FUNCTION__.' url='.$url);
+  $headers = [];
+
+  $ch = curl_init();
+
+  curl_setopt($ch, CURLOPT_URL, $url);
+  curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+  curl_setopt($ch, CURLOPT_POST, true);
+  curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data));
+  curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+
+  $result = curl_exec($ch);
+
+  curl_close($ch);
+
+  return $result;
+}
+
+function get_tags_of($img_id)
+{
+  global $conf;
+
+  $cache_path = PHPWG_ROOT_PATH . $conf['data_location'] . PORG_ID . '/porg_tags_of.cache.php';
+
+  if ('refresh_ressources_cache' == script_basename())
+  {
+    $function_start_time = get_moment();
+
+    $tag_name_of = [];
+    $result = json_decode(ressources_api_request('pwg.tags.getList'), true);
+
+    foreach ($result['result']['tags'] as $tag)
+    {
+      $tag_name_of[ $tag['id'] ] = $tag['name'];
+    }
+
+    $tags_of_image = array();
+
+    // $conf['ws_max_images_per_page'] was increased to 10000 on ressources.piwigo.com
+    $result = ressources_api_request('pwg.tags.getImages', ['tag_id'=>array_keys($tag_name_of), 'per_page'=>10000, 'tag_mode_and'=>'false']);
+    $result = json_decode($result, true);
+
+    foreach ($result['result']['images'] as $image)
+    {
+      $tags_of_image[ $image['id'] ] = [];
+
+      $img_tags = $image['tags'];
+      foreach ($img_tags as $tag)
+      {
+        $tag = explode(':', $tag_name_of[ $tag['id'] ], 2);
+        switch ($tag[0])
+        {
+          case 'country':
+            $tags_of_image[ $image['id'] ]['country'] = $tag[1];
+            break;
+          case 'hosting':
+            $tags_of_image[ $image['id'] ]['hosting'] = $tag[1];
+            break;
+          case 'organization':
+            $tags_of_image[ $image['id'] ]['organization'] = $tag[1];
+            break;
+          case 'use-case':
+            $tags_of_image[ $image['id'] ]['useCase'] = $tag[1];
+            break;
+          case 'url':
+            $tags_of_image[ $image['id'] ]['url'] = $tag[1];
+            break;
+        }
+      }
+    }
+
+    if (mkgetdir(dirname($cache_path)))
+    {
+      file_put_contents($cache_path, serialize($tags_of_image));
+    }
+
+    global $logger;
+    $logger->info(__FUNCTION__.' executed in '.get_elapsed_time($function_start_time, get_moment()));
+
+    return;
+  }
+
+  $tags_of_image = unserialize(file_get_contents($cache_path));
+
+  return $tags_of_image[$img_id] ?? [];
+}
+
+function get_ressources($ressources_type, $get_types=false)
+{
+  global $conf;
+
+  $ressources_types = array(
+    'home_logos' => array(
+      'cache_filename' => 'porg_home_logos.cache.php',
+      'album_id' => conf_get_param('home_logos_cat_id', 3)
+    ),
+    'home_examples' => array(
+      'cache_filename' => 'porg_home_examples.cache.php',
+      'album_id' => conf_get_param('home_examples_cat_id', 39)
+    ),
+    'logos' => array(
+      'cache_filename' => 'porg_users_logos.cache.php',
+      'album_id' => conf_get_param('user_logos_cat_id', 18)
+    ),
+    'examples' => array(
+      'cache_filename' => 'porg_users_examples.cache.php',
+      'album_id' => conf_get_param('user_examples_cat_id', 7)
+    ),
+    'testimonials' => array(
+      'cache_filename' => 'porg_users_testimonials.cache.php',
+      'album_id' => conf_get_param('user_testimonials_cat_id', 33)
+    ),
+    'pcomlogos' => array(
+      'cache_filename' => 'pcom_users_logos.cache.php',
+      'album_id' => conf_get_param('pcom_logos_cat_id', 10)
+    ),
+  );
+
+  if ($get_types)
+  {
+    return array_keys($ressources_types);
+  }
+
+  $cache_path = PHPWG_ROOT_PATH . $conf['data_location'] . PORG_ID . '/' . $ressources_types[$ressources_type]['cache_filename'];
+  $album_id = $ressources_types[$ressources_type]['album_id'];
+
+  if ('refresh_ressources_cache' == script_basename())
+  {
+    $function_start_time = get_moment();
+
+    $result = ressources_api_request('pwg.categories.getImages', [], ['cat_id'=>$album_id, 'per_page'=>1000]);
+
+    if ($result !== false)
+    {
+      $ressources = json_decode($result, true);
+
+      if (mkgetdir(dirname($cache_path)))
+      {
+        file_put_contents($cache_path, serialize($ressources));
+      }
+    }
+
+    global $logger;
+    $logger->info(__FUNCTION__.' (type='.$ressources_type.') executed in '.get_elapsed_time($function_start_time, get_moment()));
+
+    return;
+  }
+
+  $result = unserialize(file_get_contents($cache_path));
+
+  $items = $result['result']['images'];
+
+  return $items;
 }
 ?>

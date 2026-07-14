@@ -19,7 +19,7 @@ foreach ($commits as $commit)
   }
   else
   {
-    $date_formated = porg_date_format($commit['occured_on']);
+    $date_formated = format_date($commit['occured_on'], ['day', 'month', 'year']);
   }
 
   $commit_id = $commit['local_id'];

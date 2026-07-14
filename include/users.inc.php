@@ -74,7 +74,8 @@ for ($i = 0; $i < $total; $i++)
     $filtered_data['author'] = $item['name'];
   }
 
-  $item_tags = get_ressources_infos($item['id']);
+  // $item_tags = get_tags_of($item['id']);
+  $item_tags = get_tags_of($item['id']);
 
   $filtered_data = array_merge($filtered_data, $item_tags);
 

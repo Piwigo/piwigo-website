@@ -44,7 +44,7 @@ if (isset($_GET['version'])) {
     }
 
     /* Release date */
-    $released_on = porg_date_format($porg_releases[$version]['released_on']);
+    $released_on = format_date($porg_releases[$version]['released_on'], ['day', 'month', 'year']);
 
     /* Get bugs issue */
     $bugs = $porg_releases[$version]['bugs'];

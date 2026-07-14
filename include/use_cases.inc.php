@@ -20,7 +20,7 @@ foreach ($use_cases as $use_case_key => $use_case_tag) {
   $filtered_logos[$use_case_key] = array();
 
   foreach ($all_logos as $logo) {
-    $logo_tags = get_ressources_infos($logo['id']);
+    $logo_tags = get_tags_of($logo['id']);
 
     // Check if logo has the matching use case tag
     if (isset($logo_tags['useCase']) && $logo_tags['useCase'] === $use_case_tag) {
@@ -38,7 +38,7 @@ foreach ($use_cases as $use_case_key => $use_case_tag) {
   $filtered_testimonials[$use_case_key] = array();
 
   foreach ($all_testimonials as $testimonial) {
-    $testimonial_tags = get_ressources_infos($testimonial['id']);
+    $testimonial_tags = get_tags_of($testimonial['id']);
 
     // Check if testimonial has the matching use case tag
     if (isset($testimonial_tags['useCase']) && $testimonial_tags['useCase'] === $use_case_tag) {

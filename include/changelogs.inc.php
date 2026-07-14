@@ -46,7 +46,7 @@ foreach ($porg_releases as $version => $version_content)
       $porg_releases[$version]['majorVersion'] = $major_version[0].".".$major_version[1];
   }
 
-  $porg_releases[$version]['released_on'] = porg_date_format($porg_releases[$version]['released_on']);
+  $porg_releases[$version]['released_on'] = format_date($porg_releases[$version]['released_on'], ['day', 'month', 'year']);
 
   unset($porg_releases[$version]['md5sum']);
   unset($porg_releases[$version]['languages']);

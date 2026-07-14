@@ -136,7 +136,7 @@ if (is_array($coding_activity_commits)) {
 
     $coding_activity_weeks[$week_index]['commits'][$commit_type][] = array(
       'message' => $commit['message'] ?? '',
-      'date' => porg_date_format($commit['occured_on']),
+      'date' => format_date($commit['occured_on'], ['day', 'month', 'year']),
       'occured_on' => $commit['occured_on'],
       'repo' => $commit['name'] ?? '',
       'url' => $commit_url,
@@ -171,7 +171,7 @@ foreach ($porg_releases as $version => $version_content) {
       'version' => $version,
       'title' => 'Version ' . preg_replace('/(\.0){1,2}$/', '', $version),
       'slug' => 'version-' . str_replace('.', '-', $version),
-      'released_on' => porg_date_format($version_content['released_on']),
+      'released_on' => format_date($version_content['released_on'], ['day', 'month', 'year']),
     );
 
     if (isset($version_content['changelogs_image'])) {

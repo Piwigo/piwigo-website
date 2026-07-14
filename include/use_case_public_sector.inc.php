@@ -13,7 +13,7 @@ $all_logos = get_ressources('logos');
 $public_sector_logos = array();
 
 foreach ($all_logos as $logo) {
-  $logo_tags = get_ressources_infos($logo['id']);
+  $logo_tags = get_tags_of($logo['id']);
 
   if (isset($logo_tags['useCase']) && $logo_tags['useCase'] === 'public') {
     $public_sector_logos[] = $logo;
@@ -24,7 +24,7 @@ $all_testimonials = get_ressources('testimonials');
 $public_sector_testimonials = array();
 
 foreach ($all_testimonials as $testimonial) {
-  $testimonial_tags = get_ressources_infos($testimonial['id']);
+  $testimonial_tags = get_tags_of($testimonial['id']);
 
   if (isset($testimonial_tags['useCase']) && $testimonial_tags['useCase'] === 'public') {
     $item_content = array(
