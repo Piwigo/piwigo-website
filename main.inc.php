@@ -555,7 +555,13 @@ function porg_load_content()
   /**
    * Use ressources.piwigo.com to get logos and examples
    */
-  $home_logos = get_ressources("home_logos");
+  $all_logos = get_ressources("home_logos");
+  $home_logos = [];
+  foreach ($all_logos as $logo) {
+    $logo_tags = get_tags_of($logo['id']);
+    $logo['url'] = $logo_tags['url'] ?? '#';
+    $home_logos[] = $logo;
+  }
 
   $template->assign(
     array(

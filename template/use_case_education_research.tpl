@@ -9,13 +9,17 @@
       <div class="logos-marquee-track">
         {foreach $education_logos as $logo}
           <div class="logos-marquee-item">
-            <img class="logo-remove-bg" src="{$logo.element_url}" alt="{$logo.name}" loading="lazy" decoding="async">
+            <a href="{$logo.url}" target="_blank" rel="noopener noreferrer">
+              <img class="logo-remove-bg" src="{$logo.element_url}" alt="{$logo.name}" loading="lazy" decoding="async">
+            </a>
           </div>
         {/foreach}
         {* duplicate so it doesn't end *}
         {foreach $education_logos as $logo}
           <div class="logos-marquee-item">
-            <img class="logo-remove-bg" src="{$logo.element_url}" alt="{$logo.name}" loading="lazy" decoding="async">
+            <a href="{$logo.url}" target="_blank" rel="noopener noreferrer">
+              <img class="logo-remove-bg" src="{$logo.element_url}" alt="{$logo.name}" loading="lazy" decoding="async">
+            </a>
           </div>
         {/foreach}
       </div>

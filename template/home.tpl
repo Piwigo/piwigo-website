@@ -518,16 +518,18 @@
 
           {foreach $home_logos as $logo}
             <div class="logos-marquee-item">
-              <img src="{$logo.element_url}" alt="{$logo.name}" loading="lazy" decoding="async">
+              <a href="{$logo.url}" target="_blank" rel="noopener noreferrer">
+                <img src="{$logo.element_url}" alt="{$logo.name}" loading="lazy" decoding="async">
+              </a>
             </div>
-
           {/foreach}
 
           {foreach $home_logos as $logo}
             <div class="logos-marquee-item">
-              <img src="{$logo.element_url}" alt="{$logo.name}" loading="lazy" decoding="async">
+              <a href="{$logo.url}" target="_blank" rel="noopener noreferrer">
+                <img src="{$logo.element_url}" alt="{$logo.name}" loading="lazy" decoding="async">
+              </a>
             </div>
-
           {/foreach}
         </div>
       </div>

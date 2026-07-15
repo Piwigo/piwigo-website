@@ -16,6 +16,7 @@ foreach ($all_logos as $logo) {
   $logo_tags = get_tags_of($logo['id']);
 
   if (isset($logo_tags['useCase']) && $logo_tags['useCase'] === 'education') {
+    $logo['url'] = $logo_tags['url'] ?? '#';
     $education_logos[] = $logo;
   }
 }
