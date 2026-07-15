@@ -62,7 +62,18 @@ for ($i = 0; $i < $total; $i++)
 
   if (in_array($type, array('logo', 'example')))
   {
-    $filtered_data['img_src'] = $item['element_url'];
+    // derivatives.small.url: https://ressources.piwigo.com/_datas/c/v/7/cv7jpz6hf8/i/uploads/c/v/7/cv7jpz6hf8//2023/10/13/20231013103716-842a657d-sm.png
+    // to convert to https://ressources.piwigo.com/i.php?/uploads/c/v/7/cv7jpz6hf8//2023/10/13/20231013103716-842a657d-sm.png
+    //
+    // _datas/c/v/7/cv7jpz6hf8/i/ => i.php?/
+    if ('logo' == $type)
+    {
+      $filtered_data['img_src'] = $item['element_url'];
+    }
+    else
+    {
+      $filtered_data['img_src'] = str_replace('_datas/c/v/7/cv7jpz6hf8/i/', 'i.php?/', $item['derivatives']['xsmall']['url']);
+    }
   }
 
   if (in_array($type, array('testimonial', 'example')))
