@@ -57,7 +57,6 @@ $lang['use cases public use description2'] = 'The Indre County Council needed to
 $lang['use cases public use btn text'] = 'Read the customer story';
 
 $lang['use cases public comments title'] = 'What public organizations say about Piwigo';
-$lang['use cases public comments btn'] = 'Explore more customer stories';
 
 $lang['use cases public start title'] = 'Ready to organize your institution’s photo library?';
 $lang['use cases public start description'] = 'Join public organizations already using Piwigo to organize, manage and securely share their visual assets.';

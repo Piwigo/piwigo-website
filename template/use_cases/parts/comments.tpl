@@ -3,7 +3,7 @@
     <div class="col-md-10 text-center justify-content-center">
       <div class="row justify-content-center">
         <div class="col-md-8 text-center mb-5 pb-2">
-          <h3 class="text-center mb-0">{$title}</h3>
+          <h{if $no_use}2{else}3{/if} class="text-center mb-0 {if $no_use}mt-5{/if}">{$title}</h{if $no_use}2{else}3{/if}>
         </div>
         <div class="testi-slider-wrap px-0">
           <div class="testi-track" id="testiTrack">

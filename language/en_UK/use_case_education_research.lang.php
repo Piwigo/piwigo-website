@@ -1,7 +1,7 @@
 <?php
 
 $lang['use cases education header title'] = 'Photo management software for <span class="orange-text">Education and Research</span>';
-$lang['use cases education header description'] = 'Centralize photos, videos and scientific media in one secure library. Organize, manage and share visual content with staff, students, researchers and the public, from everyday school life to research projects and institutional communication.';
+$lang['use cases education header description'] = 'Centralize photos, videos and visual assets in one secure library. Organize, manage and share content with staff, students, researchers and the public, from everyday school life to research projects and institutional communication.';
 
 $lang['use cases education thumbs title'] = 'Trusted by universities and research organizations worldwide';
 $lang['use cases education thumbs description'] = 'From primary schools and higher education institutions to research institutes and scientific organizations, Piwigo helps organizations organize growing photo and video collections, collaborate more efficiently and share visual content with staff, students, partners and the public.';
@@ -19,12 +19,12 @@ $lang['use cases education thumb6 title'] = 'Training organizations';
 $lang['use cases education thumb6 description'] = 'Manage photos and videos for courses, events and communication in one centralized and searchable media library.';
 
 $lang['use cases education challenge title'] = 'Common challenges for education and research organizations';
-$lang['use cases education challenge description'] = 'Public organizations produce and manage thousands of photos and videos every year across multiple departments, projects and public services.';
-$lang['use cases education challenge li1'] = 'Photos are scattered across staff members, departments and shared drives.';
-$lang['use cases education challenge li2'] = 'Communication teams spend time requesting and searching for images.';
-$lang['use cases education challenge li3'] = 'Years of school life, events and research projects become difficult to archive.';
-$lang['use cases education challenge li4'] = 'Different audiences need different levels of access.';
-$lang['use cases education challenge li5'] = 'Large collections become increasingly difficult to search and maintain.';
+$lang['use cases education challenge description'] = 'Education and research organizations produce thousands of photos, videos and scientific media across classrooms, campuses, laboratories and institutional events.';
+$lang['use cases education challenge li1'] = 'Photos are scattered across staff members, departments and shared drives';
+$lang['use cases education challenge li2'] = 'Communication teams spend too much time requesting and searching for photos and other medias';
+$lang['use cases education challenge li3'] = 'Years of school life, events and research projects become difficult to organize and preserve';
+$lang['use cases education challenge li4'] = 'Different audiences need different levels of access';
+$lang['use cases education challenge li5'] = 'Growing photo libraries become increasingly difficult to search and maintain';
 $lang['use cases education challenge li6'] = 'Sharing photos publicly without losing control can be challenging.';
 $lang['use cases education challenge subtext'] = 'Piwigo provides a secure, centralized photo library that keeps your visual assets organized and accessible over time.';
 
@@ -57,5 +57,5 @@ $lang['use cases education use description2'] = 'Before Piwigo, each campus mana
 
 $lang['use cases education comments title'] = 'What education and research organizations say about Piwigo';
 
-$lang['use cases education start title'] = 'Ready to organize your institution’s photo library?';
-$lang['use cases education start description'] = 'Join public organizations already using Piwigo to organize, manage and securely share their visual assets.';
+$lang['use cases education start title'] = 'Ready to build a shared photo library?';
+$lang['use cases education start description'] = 'Join hundreds of education and research organizations already using Piwigo to organize, manage and share their photos and videos.';

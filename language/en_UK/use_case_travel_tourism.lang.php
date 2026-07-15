@@ -20,7 +20,6 @@ $lang['use cases tourism thumb6 description'] = 'Preserve, organize and showcase
 
 $lang['use cases tourism challenge title'] = 'Common challenges for tourism organizations';
 $lang['use cases tourism challenge description'] = 'Tourism organizations manage thousands of photos and videos across teams, partners and communication channels.';
-$lang['use cases tourism challenge title2'] = 'Common challenges include:';
 $lang['use cases tourism challenge li1'] = 'Media scattered across folders, drives and employee computers';
 $lang['use cases tourism challenge li2'] = 'Difficulty sharing approved visuals with partners and journalists';
 $lang['use cases tourism challenge li3'] = 'Outdated content still being used';
