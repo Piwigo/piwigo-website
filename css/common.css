@@ -91,7 +91,7 @@ h3 {
   font-size: 18px;
   text-align: left;
   color: var(--dark);
-  line-height: 100%;
+  line-height: 140%;
 }
 
 p,
@@ -260,7 +260,6 @@ li p,
   font-size: 16px;
   text-align: left;
   color: var(--dark);
-  line-height: 100%;
 }
 
 .main-menu-drop-item-title {
