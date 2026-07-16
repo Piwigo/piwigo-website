@@ -47,7 +47,8 @@
   display: flex;
   gap: 20px;
   width: max-content;
-  animation: marquee 90s linear infinite;
+  animation: marquee-use-cases 130s linear infinite;
+  transform: translateZ(0);
 }
 
 .logos-marquee-wrapper:hover .logos-marquee-track {
@@ -79,7 +80,7 @@
   mix-blend-mode: multiply;
 }
 
-@keyframes marquee {
+@keyframes marquee-use-cases {
   from {
     transform: translateX(0);
   }

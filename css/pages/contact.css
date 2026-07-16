@@ -253,7 +253,7 @@
   display: flex;
   gap: 20px;
   width: max-content;
-  animation: marquee 90s linear infinite;
+  animation: marquee-contact 110s linear infinite;
 }
 
 .logos-marquee-wrapper:hover .logos-marquee-track {
@@ -284,7 +284,7 @@
   font-size: 16px;
 }
 
-@keyframes marquee {
+@keyframes marquee-contact {
   from {
     transform: translateX(0);
   }

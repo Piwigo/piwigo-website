@@ -36,9 +36,10 @@
   display: flex;
   gap: 20px;
   width: max-content;
-  animation: marquee 90s linear infinite;
+  animation: marquee-cases 130s linear infinite;
   padding-top: 20px;
   padding-bottom: 20px;
+  transform: translateZ(0);
 }
 
 .logos-marquee-wrapper:hover .logos-marquee-track {
@@ -56,7 +57,6 @@
   border-radius: 10px;
   background: var(--grey);
   box-sizing: border-box;
-  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.2);
 }
 
 .logos-marquee-item img {
@@ -70,7 +70,7 @@
   font-size: 16px;
 }
 
-@keyframes marquee {
+@keyframes marquee-cases {
   from {
     transform: translateX(0);
   }

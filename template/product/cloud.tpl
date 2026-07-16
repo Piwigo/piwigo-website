@@ -128,13 +128,13 @@
         <div class="logos-marquee-track">
           {foreach $cloud_logos as $logo}
             <div class="logos-marquee-item">
-              <img src="{$logo.element_url}" alt="{$logo.name}" loading="lazy" decoding="async">
+              <img src="{$logo.element_url}" alt="{$logo.name}" loading="lazy" decoding="async" class="d-block">
             </div>
           {/foreach}
           {* duplicate so it doesn't end *}
           {foreach $cloud_logos as $logo}
             <div class="logos-marquee-item">
-              <img src="{$logo.element_url}" alt="{$logo.name}" loading="lazy" decoding="async">
+              <img src="{$logo.element_url}" alt="{$logo.name}" loading="lazy" decoding="async" class="d-block">
             </div>
           {/foreach}
         </div>
@@ -236,7 +236,7 @@
             file='template/include/buttons/button.tpl'
             variant='menu_btn_green'
             href="{$PORG_ROOT}{$URL.signup}"
-            label={'cloud_start_btn'|translate}
+          label={'cloud_start_btn'|translate}
           }
         </div>
       </div>

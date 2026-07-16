@@ -153,8 +153,8 @@
   display: flex;
   gap: 20px;
   width: max-content;
-  animation: marquee 500s linear infinite;
-  will-change: transform;
+  animation: marquee-product 1000s linear infinite;
+  transform: translateZ(0);
 }
 
 .logos-marquee-wrapper:hover .logos-marquee-track {
@@ -186,7 +186,7 @@
   object-fit: contain;
 }
 
-@keyframes marquee {
+@keyframes marquee-product {
   from {
     transform: translateX(0);
   }

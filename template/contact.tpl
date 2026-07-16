@@ -174,16 +174,16 @@
       <div class="logos-marquee-track">
         {foreach $home_logos as $logo}
           <div class="logos-marquee-item">
-            <a href="{$logo.url}" target="_blank" rel="noopener noreferrer">
-              <img src="{$logo.element_url}" alt="{$logo.name}" loading="lazy" decoding="async">
+            <a>
+              <img src="{$logo.element_url}" alt="{$logo.name}" loading="lazy" decoding="async" class="d-block">
             </a>
           </div>
         {/foreach}
         {* duplicate so it doesn't end *}
         {foreach $home_logos as $logo}
           <div class="logos-marquee-item">
-            <a href="{$logo.url}" target="_blank" rel="noopener noreferrer">
-              <img src="{$logo.element_url}" alt="{$logo.name}" loading="lazy" decoding="async">
+            <a>
+              <img src="{$logo.element_url}" alt="{$logo.name}" loading="lazy" decoding="async" class="d-block">
             </a>
           </div>
         {/foreach}
