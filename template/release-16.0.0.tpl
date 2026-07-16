@@ -38,7 +38,7 @@
 
 <section class="container mb-5">
   <div class="row version-16-content pt-5">
-    <div class="col-md-4">
+    <div class="col-md-4 pe-md-4">
       <div class="version-16-nav-card" id="release_menu">
 
         <h2 class="country-testimonial nav-card-title">{'On this page'|translate}</h2>
