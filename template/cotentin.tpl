@@ -89,7 +89,7 @@
             <p class="p-testimonial testi-role mb-0">{'porg_cases_cotentin_benefits_person'|translate}</p>
             <a href="http://www.encotentin.fr" target="_blank" rel="noopener noreferrer" class="testi-author-link sector-testimonial pink-text">{'porg_cases_cotentin_benefits_structure'|translate}<i class="icon-ext1 secondary-pink-text ms-1"></i><i class="icon-ext2 secondary-pink-text ms-1"></i></a>
 
-            <p class="sector-testimonial mb-0 mt-1 dark-text"><i class="icon-self-host pink-text me-1"></i>Piwigo {'Cloud'|translate}</p>
+            <p class="sector-testimonial mb-0 mt-1 dark-text"><i class="icon-cloud-oneplace pink-text me-1"></i>Piwigo {'Cloud'|translate}</p>
           </div>
         </div>
       </div>
