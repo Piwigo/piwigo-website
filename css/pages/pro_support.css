@@ -1,0 +1,87 @@
+.container-toppage {
+  margin-top: 70px;
+  margin-bottom: 120px;
+}
+
+.users-trial-btn {
+  align-self: flex-start;
+  width: fit-content;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 20px;
+}
+
+.users-header-text {
+  padding-right: 60px;
+}
+
+@media (max-width: 768px) {
+  .users-header-text {
+    padding-right: 12px;
+  }
+}
+
+.compare-plans-container {
+  width: 100%;
+  margin-top: 50px;
+  overflow-x: auto;
+}
+
+.compare-plans-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.compare-plans-table tr.section-header td {
+  padding: 18px 24px;
+  font-weight: bold;
+}
+
+.compare-plans-table tr.section-header td.section-title {
+  text-align: left;
+}
+
+.compare-plans-table tr.section-header td.section-plan-name {
+  text-align: center;
+  width: 30%;
+}
+
+.compare-plans-table tr.feature-row td {
+  padding: 16px 21px;
+  vertical-align: top;
+}
+
+.compare-plans-table tr.feature-row td:first-child {
+  text-align: left;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.compare-plans-table tr.feature-row td:not(:first-child) {
+  text-align: center;
+}
+
+.compare-plans-table tr.feature-row td:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.compare-plans-table tr.feature-row:nth-child(even) td {
+  background-color: var(--grey);
+}
+
+.label-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon-rounded-check {
+  font-size: 20px;
+  color: var(--main_flash_green);
+}
+
+.value-text {
+  font-size: 16px;
+}

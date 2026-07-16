@@ -58,6 +58,7 @@ function porg_get_pages()
     'icam' => 'Case Study: Icam',
     'indre' => 'Case Study: Indre',
     'wessex' => 'Case Study: Wessex',
+    'pro_support' => 'Professional Support',
     );
 }
 
@@ -493,68 +494,6 @@ function porg_get_nb_years()
   $d2 = new DateTime();
   $diff = $d2->diff($d1);
   return $diff->y;
-}
-
-function porg_set_pcom_urls()
-{
-  global $page, $template;
-
-  $pcom_prefix = isset($page['porg_pcom_prefix']) ? $page['porg_pcom_prefix'] : '';
-
-  $pcom_url = array(
-    'pricing' => 'https://piwigo.com/pricing',
-    'signup' => 'https://piwigo.com/signup',
-    'why' => 'https://piwigo.com/why',
-    'blog' => 'https://piwigo.com/blog/',
-    'clients' => 'https://piwigo.com/clients',
-    'pro_support' => 'https://piwigo.com/pricing?plan=self_hosted',
-  );
-
-  if ('fr.' == $pcom_prefix)
-  {
-    $pcom_url = array(
-      'pricing' => 'https://'.$pcom_prefix.'piwigo.com/tarifs',
-      'signup' => 'https://'.$pcom_prefix.'piwigo.com/inscription',
-      'why' => 'https://'.$pcom_prefix.'piwigo.com/pourquoi-choisir-piwigo',
-      'blog' => 'https://'.$pcom_prefix.'piwigo.com/blog/',
-      'clients' => 'https://'.$pcom_prefix.'piwigo.com/clients',
-      'pro_support' => 'https://'.$pcom_prefix.'piwigo.com/tarifs?plan=self_hosted',
-    );
-  }
-  elseif ('de.' == $pcom_prefix)
-  {
-    $pcom_url['pricing'] = 'https://'.$pcom_prefix.'piwigo.com/preise';
-    $pcom_url['signup'] = 'https://'.$pcom_prefix.'piwigo.com/anmelden';
-    $pcom_url['why'] = 'https://'.$pcom_prefix.'piwigo.com/warum-piwigo-wählen';
-    $pcom_url['clients'] = 'https://'.$pcom_prefix.'piwigo.com/kunden';
-    $pcom_url['pro_support'] = 'https://'.$pcom_prefix.'piwigo.com/preise?plan=self_hosted';
-  }
-  elseif ('es.' == $pcom_prefix)
-  {
-    $pcom_url['pricing'] = 'https://'.$pcom_prefix.'piwigo.com/precios';
-    $pcom_url['signup'] = 'https://'.$pcom_prefix.'piwigo.com/registrarse';
-    $pcom_url['why'] = 'https://'.$pcom_prefix.'piwigo.com/por-que';
-    $pcom_url['clients'] = 'https://'.$pcom_prefix.'piwigo.com/clientes';
-    $pcom_url['pro_support'] = 'https://'.$pcom_prefix.'piwigo.com/precios?plan=self_hosted';
-  }
-  elseif ('it.' == $pcom_prefix)
-  {
-    $pcom_url['pricing'] = 'https://'.$pcom_prefix.'piwigo.com/plan';
-    $pcom_url['signup'] = 'https://'.$pcom_prefix.'piwigo.com/signup';
-    $pcom_url['why'] = 'https://'.$pcom_prefix.'piwigo.com/position';
-    $pcom_url['clients'] = 'https://'.$pcom_prefix.'piwigo.com/examples';
-    $pcom_url['pro_support'] = 'https://'.$pcom_prefix.'piwigo.com/plan?plan=self_hosted';
-  }
-  elseif ('nl.' == $pcom_prefix)
-  {
-    $pcom_url['pricing'] = 'https://'.$pcom_prefix.'piwigo.com/prijzen';
-    $pcom_url['signup'] = 'https://'.$pcom_prefix.'piwigo.com/aanmelden';
-    $pcom_url['why'] = 'https://'.$pcom_prefix.'piwigo.com/waarom';
-    $pcom_url['clients'] = 'https://'.$pcom_prefix.'piwigo.com/klanten';
-    $pcom_url['pro_support'] = 'https://'.$pcom_prefix.'piwigo.com/prijzen?plan=self_hosted';
-  }
-
-  $template->assign('PCOM_URL', $pcom_url);
 }
 
 function porg_get_coding_activity()

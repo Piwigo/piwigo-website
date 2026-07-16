@@ -7,6 +7,7 @@
 				file='template/include/sub_menu_items/sub_menu_itemc.tpl'
 				category_type='feature-submenu'
 				title={'Professional support'|translate} description={'Professional support desc'|translate} icon_class='icon-wrench'
+        href="{$PORG_ROOT}{$URL.pro_support}"
 			}
 
 			{include

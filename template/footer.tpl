@@ -109,7 +109,7 @@
             </button>
             <div id="footerMobileSupport" class="collapse footer-mobile-collapse" data-bs-parent=".footer-mobile-nav-accordion">
               <ul>
-                <li><a class="footer-feature-link footer-menu-item" href="#">{'Professional support'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.pro_support}">{'Professional support'|translate}</a></li>
                 <li><a class="footer-feature-link footer-menu-item" href="https://piwigo.org/forum" target="_blank" rel="noopener noreferrer">{'Community forum'|translate}</a></li>
                 <li><a class="footer-feature-link footer-menu-item" href="{$DOCUMENTATION_URL}" target="_blank" rel="noopener noreferrer">{'Documentation'|translate}</a></li>
                 <li><a class="footer-feature-link footer-menu-item" href="#">{'Installation guides'|translate}</a></li>
@@ -191,7 +191,7 @@
 
         <h6 class="footer-title mt-4">{'Support'|translate}</h6>
         <ul>
-          <li><a class="footer-feature-link footer-menu-item" href="#">{'Professional support'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.pro_support}">{'Professional support'|translate}</a></li>
           <li><a class="footer-feature-link footer-menu-item" href="https://piwigo.org/forum" target="_blank" rel="noopener noreferrer">{'Community forum'|translate}</a></li>
           <li><a class="footer-feature-link footer-menu-item" href="{$DOCUMENTATION_URL}" target="_blank" rel="noopener noreferrer">{'Documentation'|translate}</a></li>
           <li><a class="footer-feature-link footer-menu-item" href="#">{'Installation guides'|translate}</a></li>
