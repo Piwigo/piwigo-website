@@ -176,9 +176,7 @@ $lang['language_zh_HK'] = 'Hong-Kong Chinese';
 $lang['language_zh_TW'] = 'Traditional Chinese';
 
 /* FOOTER */
-$lang['Footer Piwigo description part 1'] = 'Piwigo is open source photo management software.';
-$lang['Footer Piwigo description part 2'] = 'Manage, organize and share your photo easily on the web.';
-$lang['Footer Piwigo description part 3'] = 'Designed for organisations, teams and individuals.';
+$lang['Footer Piwigo description'] = 'Piwigo is open source photo management software. Organize, manage and share your photos securely online. Built for organizations, teams and individuals.';
 $lang['Footer Button 1 Plan a demo'] = 'Plan a demo';
 $lang['Footer Button 3 Meet our users'] = 'Meet our users';
 $lang['Footer Button 4 Subscribe to newsletter'] = 'Subscribe to newsletter';

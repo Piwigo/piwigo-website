@@ -10,9 +10,7 @@
           <img src="{$PORG_ROOT_URL}images/piwigo.org.svg" alt="Piwigo logo">
         </div>
         <p class="p-footer footer-tagline">
-          {'Footer Piwigo description part 1'|translate} <br>
-          {'Footer Piwigo description part 2'|translate} <br>
-          {'Footer Piwigo description part 3'|translate}
+          {'Footer Piwigo description'|translate}
         </p>
       </div>
 
