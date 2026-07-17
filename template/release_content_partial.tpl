@@ -7,7 +7,7 @@
       {foreach from=$bugs key=key item=bug}
         <div class="col-md-3">
           <p class="release-type-sub-title"><i class="icon-check-1" {if $bug.is_security} title="{'Security'|translate}" {/if}></i> <a href="{$bug.url}" class="dark-green-text">{$bug.id} {$bug.section}</a></p>
-          <p class="pricing-list">{$bug.label}</p>
+          <p class="pricing-list">{'porg_issue_'|cat:$bug.id|translate}</p>
         </div>
       {/foreach}
     </div>
@@ -45,7 +45,7 @@
       {foreach from=$known_issues key=key item=known_issue}
         <div class="col-md-3">
           <p class="release-type-sub-title"><i class="icon-cross"></i> <a href="{$known_issue.url}" class="dark-green-text">{$known_issue.id} {$known_issue.section}</a></p>
-          <p class="pricing-list">{$known_issue.label}</p>
+          <p class="pricing-list">{'porg_issue_'|cat:$known_issue.id|translate}</p>
         </div>
       {/foreach}
     </div>
@@ -59,13 +59,13 @@
       {foreach from=$features key=key item=feature}
         <div class="col-md-3">
           <p class="release-type-sub-title"><i class="icon-check-1"></i><a href="{$feature.url}" class="dark-green-text">{$feature.id} {$feature.section}</a></p>
-          <p class="pricing-list">{$feature.label}</p>
+          <p class="pricing-list">{'porg_issue_'|cat:$feature.id|translate}</p>
         </div>
       {/foreach}
     </div>
   {/if}
 
-  <div class="row release-sub-section mt-4 justify-content-center">
+  <div class="row release-sub-section mt-5 justify-content-center">
     <div class="col-12 d-flex justify-content-center">
       {include file='template/include/buttons/button.tpl' variant='menu_btn_green' class='release-note-cta' label={'See the full page of Release note %s'|translate:$version} href="{$URL.release}-{$version}"}
     </div>

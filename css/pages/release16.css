@@ -483,3 +483,14 @@
     background-size: cover;
   }
 }
+
+.release-content {
+  padding: 0 20px;
+}
+
+.release-content .icon-wrench::before,
+.release-content .icon-langage::before,
+.release-content .icon-attention::before,
+.release-content .icon-plus-circled::before{
+  margin-left: 0;
+}

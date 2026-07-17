@@ -27,6 +27,14 @@ load_language('release-' . $version . '.lang', PORG_PATH, array('language' => 'e
 /* Load user translation */
 load_language('release-' . $version . '.lang', PORG_PATH);
 
+foreach ($porg_releases as $release_version => $release_content) {
+  if (preg_match('/^16\./', $release_version)) {
+    load_language('release-' . $release_version . '.lang', PORG_PATH, array('language' => 'en_UK', 'no_fallback' => true));
+    load_language('release-' . $release_version . '.lang', PORG_PATH);
+  }
+}
+
+
 /* Major or minor release */
 $nb_digits = 1;
 if (version_compare($version, '11') < 0) {

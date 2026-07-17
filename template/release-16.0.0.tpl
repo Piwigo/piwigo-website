@@ -84,7 +84,7 @@
           <div class="accordion-item mb-3 border-0">
             <button class="accordion-button collapsed release-version-button" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapse-{$download_version.version|replace:'.':'-'}" aria-expanded="false"
-              aria-controls="collapse-{$download_version.version|replace:'.':'-'}">
+              aria-controls="collapse-{$download_version.version|replace:'.':'-'}" id="button-{$download_version.version|replace:'.':'-'}">
               <h4 class="release-version-title mb-0">Piwigo {$download_version.version}:
                 {$download_version.features|join:', '} • <span
                   class="release-version-date">{$download_version.released_on}</span></h4>
@@ -100,6 +100,28 @@
             </div>
           </div>
         {/foreach}
+
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            var accordion = document.getElementById('releaseVersionAccordion');
+
+            accordion.addEventListener('show.bs.collapse', function(event) {
+              var button = document.getElementById(event.target.id.replace('collapse-', 'button-'));
+              if (button) {
+                var h4 = button.querySelector('.release-version-title');
+                if (h4) {
+                  h4.classList.add('dark-text');
+                }
+              }
+            });
+
+            accordion.addEventListener('hide.bs.collapse', function(event) {
+              var button = document.getElementById(event.target.id.replace('collapse-', 'button-'));
+              var h4 = button.querySelector('.release-version-title');
+              h4.classList.remove('dark-text');
+            });
+          });
+        </script>
       </div>
 
       <div class="section-part justify-content-center text-center">
@@ -288,11 +310,11 @@
           <h3>{'Technical features'|translate}</h3>
 
           <div class="col-md-8">
-          <p class="text-center" id="technical-first-paragraph">
-            {'pwg_org_release16_end_notes'|translate} <a
-              href="https://github.com/Piwigo/Piwigo/wiki/Technical-changes-in-Piwigo-16"
-              class="icon-info-circled">{'pwg_org_release16_end_notes2'|translate}</a>.
-            {'pwg_org_release16_end_notes3'|translate}</p>
+            <p class="text-center" id="technical-first-paragraph">
+              {'pwg_org_release16_end_notes'|translate} <a
+                href="https://github.com/Piwigo/Piwigo/wiki/Technical-changes-in-Piwigo-16"
+                class="icon-info-circled">{'pwg_org_release16_end_notes2'|translate}</a>.
+              {'pwg_org_release16_end_notes3'|translate}</p>
           </div>
 
           <h4 class="text-center">{'pwg_org_release16_compatibility'|translate}</h4>
@@ -313,7 +335,7 @@
           <h4 class="text-center">{'pwg_org_release16_tech_features_docker_image'|translate}</h4>
           <p class=" descriptive-text mb-3">{'pwg_org_release16_tech_features_docker_image_desc'|translate}
             <span class="docker-inline">{include file='template/include/buttons/button.tpl' variant='menu_btn_blue' class='docker-cta' label={'pwg_org_release16_tech_features_docker_image_get'|translate}
-            href="https://hub.docker.com/r/piwigo/piwigo"}</span>
+              href="https://hub.docker.com/r/piwigo/piwigo"}</span>
           </p>
 
         </div>
