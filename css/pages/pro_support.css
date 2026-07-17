@@ -25,6 +25,7 @@
   width: 100%;
   margin-top: 50px;
   overflow-x: auto;
+  padding: 0;
 }
 
 .compare-plans-table {
@@ -84,4 +85,244 @@
 
 .value-text {
   font-size: 16px;
+}
+
+.support-tip-box {
+  background-color: var(--clear_orange);
+  border-radius: 10px;
+  padding: 30px 20px;
+  margin-top: 50px;
+}
+
+.tip-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.tip-icon {
+  color: var(--main_orange);
+  font-size: 20px;
+  display: inline-block;
+  line-height: 1;
+}
+
+.tip-text {
+  padding-left: 40px;
+}
+
+@media (max-width: 768px) {
+  .tip-text {
+    padding-left: 0;
+  }
+
+  .container-how {
+    padding: 0 32px;
+  }
+}
+
+.way-to-use-card {
+  padding: 30px 70px 40px;
+  border-radius: 10px;
+  background: var(--grey);
+}
+
+@media (min-width: 1400px) {
+  .ways-to-use-card-col-l {
+    padding-right: 32px;
+  }
+
+  .ways-to-use-card-col-r {
+    padding-left: 32px;
+  }
+}
+
+.way-to-use-card .btn-cta {
+  align-self: center;
+}
+
+.icon-wrapper {
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 30px;
+  width: fit-content;
+  margin-bottom: 25px;
+}
+
+.end-way-to-use-card {
+  padding: 35px 0 30px;
+  border-radius: 10px;
+  background: var(--grey);
+  margin-bottom: 200px;
+}
+
+@media (min-width: 768px) {
+  .end-way-to-use-card {
+    padding: 110px 170px 85px;
+    margin-top: -75px;
+    background: var(--clear_green);
+    z-index: -1;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+}
+
+.comments-container,
+.way-container {
+  margin-top: 155px;
+  margin-bottom: 155px;
+}
+
+.support-intro-container {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.support-intro-header {
+  background-color: var(--clear_pink);
+  border-radius: 10px;
+  padding: 35px 70px;
+  margin-bottom: 40px;
+}
+
+.support-intro-header .header-right {
+  margin-top: 10px;
+  font-size: 40px;
+}
+
+.intro-text-col {
+  padding-left: 70px;
+}
+
+.intro-features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+.intro-features-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  margin-bottom: 30px;
+}
+
+.icon-cube {
+  width: 20px;
+  height: 20px;
+  background-color: var(--secondary_flash_green);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 2px;
+}
+
+.intro-features-list li i {
+  color: var(--accent_green);
+  font-size: 10px;
+  line-height: 1;
+}
+
+.intro-features-list li .icon-check-1::before {
+  margin-right: 0;
+}
+
+.comments-container {
+  overflow: hidden;
+}
+
+.testi-slider-wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+.testi-track {
+  display: flex;
+  gap: 30px;
+  transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  will-change: transform;
+  align-items: stretch;
+  padding: 15px 0px;
+}
+
+.testi-card {
+  flex: 0 0 auto;
+  position: relative;
+  background: var(--grey, #f8f9fa);
+  border-radius: 12px;
+  padding: 70px 30px 30px;
+  padding-bottom: 65px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .testi-card {
+    height: auto;
+    padding: 40px 25px;
+  }
+  .testi-track {
+    gap: 0;
+  }
+}
+
+.testi-card .icon-quote {
+  font-size: 40px;
+  position: absolute;
+  top: -28px;
+  left: 25px;
+}
+
+.testi-footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+
+.testi-author-link .icon-ext2 {
+  display: none;
+}
+
+.testi-author-link,
+.testi-author-link:hover i {
+  text-decoration: none;
+}
+
+.testi-author-link:hover {
+  text-decoration: underline;
+}
+
+.testi-author-link:hover .icon-ext2 {
+  display: inline-block;
+}
+
+.testi-author-link:hover .icon-ext1 {
+  display: none;
+}
+
+.testi-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 1.25rem;
+}
+
+.testi-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--light_grey);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.3s;
+}
+
+.testi-dot.active {
+  border: 1px solid var(--main_flash_green);
+  background: var(--secondary_flash_green);
 }
