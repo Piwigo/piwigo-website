@@ -43,7 +43,7 @@
 
             <div class="form-check mb-3 position-relative">
               <input class="form-check-input" type="checkbox" id="agree_rgpd" name="agree_rgpd" required />
-              <label class="form-check-label p-boxed" for="agree_rgpd">{'RGPD agreement'|translate} <span
+              <label class="form-check-label p-boxed" for="agree_rgpd" title="{'because GDPR matters!'|translate}">{'RGPD agreement'|translate} <span
                   class="orange-text">*</span></label>
               <div class="invalid-feedback form-input">{'porg_news_error_rgpd'|translate}</div>
             </div>
