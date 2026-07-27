@@ -82,6 +82,10 @@
 .icon-calc:before { content: '\e850'; } /* '' */
 .icon-monk:before { content: '\e851'; } /* '' */
 .icon-idea:before { content: '\e852'; } /* '' */
+.icon-share:before { content: '\e853'; } /* '' */
+.icon-folder:before { content: '\e854'; } /* '' */
+.icon-stonks:before { content: '\e855'; } /* '' */
+.icon-pics:before { content: '\e856'; } /* '' */
 .icon-users:before { content: '\e867'; } /* '' */
 .icon-search:before { content: '\e868'; } /* '' */
 .icon-codeberg:before { content: '\e869'; } /* '' */
