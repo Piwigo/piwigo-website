@@ -583,7 +583,7 @@ Text Color
 }
 
 .clear-text {
-  color: var(--clear);
+  color: var(--clear) !important;
 }
 
 .dark-green-text {
@@ -621,6 +621,10 @@ Text Color
 
 .green-bg {
   background-color: var(--secondary_flash_green);
+}
+
+.main-green-bg {
+  background-color: var(--main_flash_green) !important;
 }
 
 /******

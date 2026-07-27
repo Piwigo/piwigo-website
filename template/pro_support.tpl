@@ -1,4 +1,5 @@
 <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL_PLUGINS}css/pages/pro_support.css">
+<link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/card/get_started.css">
 
 <section class="container container-toppage">
   <div class="row text-center justify-content-center">
@@ -6,12 +7,17 @@
       <div class="row justify-content-center align-items-stretch">
         <div class="col-md-6 d-flex flex-column justify-content-center users-header-text">
           <h1 class="mb-4">{'porg_pro_support_header_title'|translate}</h1>
-          <img src="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/16/20260716100025-f41a8ce1-me.webp" alt="Piwigo screenshot" class="img-fluid d-md-none">
+          <img
+            src="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/16/20260716100025-f41a8ce1-me.webp"
+            alt="Piwigo screenshot" class="img-fluid d-md-none">
           <p class="mb-4">{'porg_pro_support_header_description'|translate}</p>
-          {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'porg_pro_support_header_btn'|translate} href="{$PORG_ROOT}{$URL.product}" class="px-4 align-self-start"}
+          {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'porg_pro_support_header_btn'|translate}
+          href="{$PORG_ROOT}{$URL.product}" class="px-4 align-self-start"}
         </div>
         <div class="col-md-6 responsive-image d-flex flex-column justify-content-center users-header-image">
-          <img class="img-fluid d-none d-md-block" src="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/16/20260716100025-f41a8ce1-me.webp" alt="Piwigo screenshot">
+          <img class="img-fluid d-none d-md-block"
+            src="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/16/20260716100025-f41a8ce1-me.webp"
+            alt="Piwigo screenshot">
         </div>
       </div>
     </div>
@@ -175,7 +181,8 @@
             </div>
             <h3 class="text-center mb-4">Piwigo {'Cloud'|translate}</h3>
             <p class="text-center mb-5">{'porg_support_deploy_cloud_desc'|translate}</p>
-            {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'porg_support_deploy_cloud_btn'|translate} href="{$PORG_ROOT}{$URL.product}#cloud" class='mt-auto'}
+            {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'porg_support_deploy_cloud_btn'|translate}
+            href="{$PORG_ROOT}{$URL.product}#cloud" class='mt-auto'}
           </div>
         </div>
         <div class="col-md-6 text-center mb-4 d-flex ways-to-use-card-col-r">
@@ -185,7 +192,8 @@
             </div>
             <h3 class="text-center mb-4">Piwigo {'Self-hosted'|translate}</h3>
             <p class="text-center mb-5">{'porg_support_deploy_self_hosted_desc'|translate}</p>
-            {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'porg_support_deploy_self_hosted_btn'|translate} href="{$PORG_ROOT}{$URL.product}#self-hosted " class='mt-auto'}
+            {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'porg_support_deploy_self_hosted_btn'|translate}
+            href="{$PORG_ROOT}{$URL.product}#self-hosted " class='mt-auto'}
           </div>
         </div>
       </div>
@@ -259,8 +267,9 @@
               </li>
             </ul>
 
-            <div class="text-start">
-              {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'porg_support_intro_btn'|translate} href="{$PORG_ROOT}{$URL.about_us}"}
+            <div class="text-md-start">
+              {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'porg_support_intro_btn'|translate}
+              href="{$PORG_ROOT}{$URL.about_us}"}
             </div>
           </div>
         </div>
@@ -299,11 +308,14 @@
                   {if $author_name}<p class="name-testimonial mb-0">{$author_name}</p>{/if}
                   {if $company_name}
                     {if isset($comment.url) && $comment.url}
-                      <a href="{$comment.url}" target="_blank" rel="noopener noreferrer" class="testi-author-link sector-testimonial green-text">{$company_name}<i class="icon-ext1 main-green-text ms-1"></i><i class="icon-ext2 main-green-text ms-1"></i></a>
+                      <a href="{$comment.url}" target="_blank" rel="noopener noreferrer"
+                        class="testi-author-link sector-testimonial green-text">{$company_name}<i
+                          class="icon-ext1 main-green-text ms-1"></i><i class="icon-ext2 main-green-text ms-1"></i></a>
                     {else}
                       <span class="sector-testimonial green-text">{$company_name}</span>
                     {/if}
                   {/if}
+                  <p class="country-testimonial mb-0 mt-1 dark-text">- {'country_'|cat:$comment.country|translate}</p>
                 </div>
               </div>
             {/foreach}
@@ -361,18 +373,14 @@
         const isMobile = window.innerWidth <= 768;
 
         if (isMobile) {
-          // On mobile, cards take the full width of the track
           const trackWidth = track.parentElement.offsetWidth;
           cards.forEach(card => card.style.width = trackWidth + 'px');
         } else {
-          // On desktop, width is fixed
           cards.forEach(card => card.style.width = '315px');
         }
-        // Recalculate position after width change
         goTo(current);
       }
 
-      // Debounce resize event
       let resizeTimeout;
       window.addEventListener('resize', () => {
         clearTimeout(resizeTimeout);
@@ -420,8 +428,239 @@
         }
       }
 
-      // Initial layout setup
       updateLayout();
     });
   </script>
 {/literal}
+
+<section class="container-desc">
+  <div class="container">
+    <div class="row text-center">
+      <h2 class="mb-5 text-center">{'porg_support_help_title'|translate}</h2>
+      <div class="px-0 orange-bar">
+        <img src="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/27/20260727095420-dabef6c9-me.webp"
+          alt="">
+      </div>
+      <div class="glass-card-container">
+        <div class="row">
+          <div class="col-12 col-lg-4">
+            <div class="glass-card d-flex flex-column">
+              <h3 class="text-center">{'porg_support_help_card1_title'|translate}</h3>
+              <p class="strong-text">{'porg_support_help_card1_desc'|translate}</p>
+              <ul class="help-card-list">
+                <li class="p"><i class="icon-check-1"></i><span>{'porg_support_help_card1_li1'|translate}</span></li>
+                <li class="p"><i class="icon-check-1"></i><span>{'porg_support_help_card1_li2'|translate}</span></li>
+                <li class="p"><i class="icon-check-1"></i><span>{'porg_support_help_card1_li3'|translate}</span></li>
+                <li class="p"><i class="icon-check-1"></i><span>{'porg_support_help_card1_li4'|translate}</span></li>
+                <li class="p"><i class="icon-check-1"></i><span>{'porg_support_help_card1_li5'|translate}</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="glass-card d-flex flex-column">
+              <h3 class="text-center">{'porg_support_help_card2_title'|translate}</h3>
+              <p class="strong-text">{'porg_support_help_card2_desc'|translate}</p>
+              <ul class="help-card-list">
+                <li class="p"><i class="icon-check-1"></i><span>{'porg_support_help_card2_li1'|translate}</span></li>
+                <li class="p"><i class="icon-check-1"></i><span>{'porg_support_help_card2_li2'|translate}</span></li>
+                <li class="p"><i class="icon-check-1"></i><span>{'porg_support_help_card2_li3'|translate}</span></li>
+                <li class="p"><i class="icon-check-1"></i><span>{'porg_support_help_card2_li4'|translate}</span></li>
+                <li class="p"><i class="icon-check-1"></i><span>{'porg_support_help_card2_li5'|translate}</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="glass-card d-flex flex-column">
+              <h3 class="text-center">{'porg_support_help_card3_title'|translate}</h3>
+              <p class="strong-text">{'porg_support_help_card3_desc'|translate}</p>
+              <ul class="help-card-list">
+                <li class="p"><i class="icon-check-1"></i><span>{'porg_support_help_card3_li1'|translate}</span></li>
+                <li class="p"><i class="icon-check-1"></i><span>{'porg_support_help_card3_li2'|translate}</span></li>
+                <li class="p"><i class="icon-check-1"></i><span>{'porg_support_help_card3_li3'|translate}</span></li>
+                <li class="p"><i class="icon-check-1"></i><span>{'porg_support_help_card3_li4'|translate}</span></li>
+                <li class="p"><i class="icon-check-1"></i><span>{'porg_support_help_card3_li5'|translate}</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{literal}
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+
+      // --- Equalize card title heights ---
+      function equalizeCardTitleHeights() {
+        const cards = document.querySelectorAll('.container-desc .glass-card');
+        if (cards.length === 0) return;
+
+        const titles = document.querySelectorAll('.container-desc .glass-card h3');
+        let maxHeight = 0;
+
+        titles.forEach(title => {
+          title.style.minHeight = '0px';
+        });
+
+        titles.forEach(title => {
+          if (title.offsetHeight > maxHeight) {
+            maxHeight = title.offsetHeight;
+          }
+        });
+
+        titles.forEach(title => {
+          title.style.minHeight = maxHeight + 'px';
+        });
+      }
+      equalizeCardTitleHeights();
+      window.addEventListener('resize', equalizeCardTitleHeights);
+
+      // --- Adjust orange bar height on mobile ---
+      const orangeBar = document.querySelector('.orange-bar');
+      const glassCards = document.querySelectorAll('.container-desc .glass-card');
+      const glassCardContainer = document.querySelector('.glass-card-container');
+
+      function adjustOrangeBarHeight() {
+        if (window.innerWidth <= 992) {
+          let totalHeight = 0;
+          glassCards.forEach(card => {
+            totalHeight += card.offsetHeight;
+          });
+          orangeBar.style.height = (totalHeight + 170) + 'px';
+          glassCardContainer.style.marginTop = '-' + (totalHeight + 120) + 'px';
+        } else {
+          orangeBar.style.height = '';
+          glassCardContainer.style.marginTop = '-120px';
+        }
+      }
+      adjustOrangeBarHeight();
+      window.addEventListener('resize', adjustOrangeBarHeight);
+    });
+  </script>
+{/literal}
+
+<section class="container way-container">
+  <div class="row text-center justify-content-center">
+    <div class="col-md-11 text-center justify-content-center">
+      <div class="row justify-content-center align-items-stretch">
+        <div class="col-md-7 text-center mb-3">
+          <h2 class="text-center mb-3">{'porg_support_expertise_title'|translate}</h2>
+          <p class="text-center mb-5">{'porg_support_expertise_subtitle'|translate}</p>
+        </div>
+        <div class="col-md-6 text-center mb-4 d-flex ways-to-use-card-col-l">
+          <div class="way-to-use-card w-100 d-flex flex-column">
+            <h3 class="text-center mb-4">{'porg_support_expertise_card1_title'|translate}</h3>
+            <p class="strong-text">{'porg_support_expertise_card1_desc'|translate}</p>
+            <ul class="help-card-list">
+              <li class="p"><i
+                  class="icon-check-1 main-green-bg clear-text"></i><span>{'porg_support_expertise_card1_li1'|translate}</span>
+              </li>
+              <li class="p"><i
+                  class="icon-check-1 main-green-bg clear-text"></i><span>{'porg_support_expertise_card1_li2'|translate}</span>
+              </li>
+              <li class="p"><i
+                  class="icon-check-1 main-green-bg clear-text"></i><span>{'porg_support_expertise_card1_li3'|translate}</span>
+              </li>
+              <li class="p"><i
+                  class="icon-check-1 main-green-bg clear-text"></i><span>{'porg_support_expertise_card1_li4'|translate}</span>
+              </li>
+              <li class="p"><i
+                  class="icon-check-1 main-green-bg clear-text"></i><span>{'porg_support_expertise_card1_li5'|translate}</span>
+              </li>
+              <li class="p"><i
+                  class="icon-check-1 main-green-bg clear-text"></i><span>{'porg_support_expertise_card1_li6'|translate}</span>
+              </li>
+            </ul>
+            {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'porg_support_expertise_card1_btn'|translate}
+            href="{$PORG_ROOT}{$URL.pricing}" class='mt-auto'}
+          </div>
+        </div>
+        <div class="col-md-6 text-center mb-4 d-flex ways-to-use-card-col-r">
+          <div class="way-to-use-card w-100 d-flex flex-column">
+            <h3 class="text-center mb-4">{'porg_support_expertise_card2_title'|translate}</h3>
+            <p class="strong-text">{'porg_support_expertise_card2_desc'|translate}</p>
+            <ul class="help-card-list">
+              <li class="p"><i
+                  class="icon-check-1 main-green-bg clear-text"></i><span>{'porg_support_expertise_card2_li1'|translate}</span>
+              </li>
+              <li class="p"><i
+                  class="icon-check-1 main-green-bg clear-text"></i><span>{'porg_support_expertise_card2_li2'|translate}</span>
+              </li>
+              <li class="p"><i
+                  class="icon-check-1 main-green-bg clear-text"></i><span>{'porg_support_expertise_card2_li3'|translate}</span>
+              </li>
+              <li class="p"><i
+                  class="icon-check-1 main-green-bg clear-text"></i><span>{'porg_support_expertise_card2_li4'|translate}</span>
+              </li>
+              <li class="p"><i
+                  class="icon-check-1 main-green-bg clear-text"></i><span>{'porg_support_expertise_card2_li5'|translate}</span>
+              </li>
+            </ul>
+            {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'porg_support_expertise_card2_btn'|translate}
+            href="{$PORG_ROOT}{$URL.contact}" class='mt-auto'}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container way-container">
+  <div class="row text-center justify-content-center">
+    <div class="col-md-11 text-center justify-content-center">
+      <div class="row justify-content-center align-items-stretch">
+
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-6 text-center mb-3">
+          <h2 class="text-center mb-3">{'porg_support_before_title'|translate}</h2>
+          <p class="text-center mb-5">{'porg_support_before_subtitle'|translate}</p>
+        </div>
+        <div class="col-md-2">
+        </div>
+
+        <div class="col-md-4 text-center mb-4 d-flex">
+          <div class="way-to-use-card w-100 d-flex flex-column px-3 py-4">
+            <div class="icon-wrapper orange-bg mx-auto">
+              <i class="orange-text icon-doc"></i>
+            </div>
+            <h4 class="text-center mb-5 pb-4">{'porg_support_before_card1_title'|translate}</h4>
+            {include file='template/include/buttons/button.tpl' variant='cta_primary' label={'porg_support_before_card1_btn'|translate}
+            href="https://doc.piwigo.org" class='mt-auto'}
+          </div>
+        </div>
+        <div class="col-md-4 text-center mb-4 d-flex">
+          <div class="way-to-use-card w-100 d-flex flex-column px-3 py-4">
+            <div class="icon-wrapper orange-bg mx-auto">
+              <i class="orange-text icon-dev"></i>
+            </div>
+            <h4 class="text-center mb-5 pb-4">{'porg_support_before_card2_title'|translate}</h4>
+            {include file='template/include/buttons/button.tpl' variant='cta_primary' label={'porg_support_before_card2_btn'|translate}
+            href="#todo" class='mt-auto'}
+          </div>
+        </div>
+        <div class="col-md-4 text-center mb-4 d-flex">
+          <div class="way-to-use-card w-100 d-flex flex-column px-3 py-4">
+            <div class="icon-wrapper orange-bg mx-auto">
+              <i class="orange-text icon-help"></i>
+            </div>
+            <h4 class="text-center mb-5 pb-4">{'porg_support_before_card3_title'|translate}</h4>
+            {include file='template/include/buttons/button.tpl' variant='cta_primary' label={'porg_support_before_card3_btn'|translate}
+            href="https://piwigo.org/forum/" class='mt-auto'}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="container mb-5">
+  <div class="row text-center justify-content-center">
+    <div class="col-md-11 text-center justify-content-center">
+      {include file='template/include/card/get_started_cta2.tpl'}
+    </div>
+  </div>
+</section>

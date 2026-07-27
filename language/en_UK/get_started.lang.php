@@ -10,4 +10,10 @@ $lang['Get started CTA btn 2'] = 'Contact us';
 
 $lang['Get started CTA short title'] = 'Ready to start managing your photos with Piwigo?';
 $lang['Get started CTA short subtitle'] = 'Try Piwigo Cloud free for 30 days. Create your account, upload your files and start working right away.';
+
+$lang['Get started CTA 2 title part 1'] = 'Ready to get started with';
+$lang['Get started CTA 2 title part 2'] = 'Piwigo?';
+$lang['Get started CTA 2 description'] = 'Whether you choose our Cloud platform or a self-hosted deployment, you’ll have access to the support option that fits your organization.';
+$lang['Get started CTA 2 btn 1'] = 'Piwigo Cloud plans';
+$lang['Get started CTA 2 btn 2'] = 'Self-hosted services & support';
 ?>

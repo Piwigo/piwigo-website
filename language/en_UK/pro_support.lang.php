@@ -52,8 +52,62 @@ $lang['porg_support_intro_feat6'] = 'No AI chatbot replacing human expertise';
 $lang['porg_support_intro_btn'] = 'Meet the team behind Piwigo';
 
 $lang['porg_support_comment_title'] = 'What our customers say';
-$lang['porg_support_comment_text_461'] = 'I appreciate the ease of use, the quality of the support, and the fact that it is an open source product.';
-$lang['porg_support_comment_text_471'] = 'Piwigo is a full-featured, ergonomic and intuitive tool managed by an attentive and responsive team.';
-$lang['porg_support_comment_text_468'] = 'As far as service is concerned, I have to say that in the past almost all problems and queries have been solved quickly and easily.';
-$lang['porg_support_comment_text_586'] = 'Support is always so helpful and the creativity and freedom you get with Piwigo is amazing!';
+$lang['porg_support_comment_text_461'] = 'The features are complete, the support is responsive and the price very competitive.';
+$lang['porg_support_comment_text_471'] = 'I appreciate the ease of use, the quality of the support, and the fact that it is an open source product.';
+$lang['porg_support_comment_text_468'] = 'Piwigo is a full-featured, ergonomic and intuitive tool managed by an attentive and responsive team.';
+$lang['porg_support_comment_text_586'] = 'As far as service is concerned, I have to say that in the past almost all problems and queries have been solved quickly and easily. ';
+$lang['porg_support_comment_text_465'] = 'Support is always so helpful and the creativity and freedom you get with Piwigo is amazing!';
+
+$lang['porg_support_help_title'] = 'What our team can help you with';
+$lang['porg_support_help_card1_title'] = 'Getting started';
+$lang['porg_support_help_card1_desc'] = 'You’re deploying Piwigo for the first time or onboarding a new team.';
+$lang['porg_support_help_card1_li1'] = 'Structuring your albums';
+$lang['porg_support_help_card1_li2'] = 'Setting up properties and tags';
+$lang['porg_support_help_card1_li3'] = 'Managing users and permissions';
+$lang['porg_support_help_card1_li4'] = 'Customizing your web gallery';
+$lang['porg_support_help_card1_li5'] = 'Migrating data from your previous library';
+$lang['porg_support_help_card2_title'] = 'Everyday use';
+$lang['porg_support_help_card2_desc'] = 'Questions that come up once your organization is using Piwigo.';
+$lang['porg_support_help_card2_li1'] = 'Getting the most from a feature';
+$lang['porg_support_help_card2_li2'] = 'Troubleshooting unexpected behaviour';
+$lang['porg_support_help_card2_li3'] = 'Finding the right plugin for your needs';
+$lang['porg_support_help_card2_li4'] = 'Advanced search and filters';
+$lang['porg_support_help_card2_li5'] = 'Sharing and collaboration';
+$lang['porg_support_help_card3_title'] = 'Growing with Piwigo';
+$lang['porg_support_help_card3_desc'] = 'When your needs evolve.';
+$lang['porg_support_help_card3_li1'] = 'Supporting larger teams and growing media libraries';
+$lang['porg_support_help_card3_li2'] = 'Integrating Piwigo with your existing tools';
+$lang['porg_support_help_card3_li3'] = 'Optimizing workflows';
+$lang['porg_support_help_card3_li4'] = 'Diagnosing performance issues';
+$lang['porg_support_help_card3_li5'] = 'Evaluating custom development needs';
+
+$lang['porg_support_expertise_title'] = 'Need additional expertise?';
+$lang['porg_support_expertise_subtitle'] = 'Some projects require expertise beyond day-to-day support.';
+$lang['porg_support_expertise_card1_title'] = 'Professional Services';
+$lang['porg_support_expertise_card1_desc'] = 'Our team can help with services such as:';
+$lang['porg_support_expertise_card1_li1'] = 'Custom data imports';
+$lang['porg_support_expertise_card1_li2'] = 'Custom feature development';
+$lang['porg_support_expertise_card1_li3'] = 'Graphic branding and customization';
+$lang['porg_support_expertise_card1_li4'] = 'Piwigo installation (self-hosted)';
+$lang['porg_support_expertise_card1_li5'] = 'Piwigo upgrades (self-hosted)';
+$lang['porg_support_expertise_card1_li6'] = 'Managed infrastructure (self-hosted)';
+$lang['porg_support_expertise_card1_btn'] = 'Discover Professional Services';
+$lang['porg_support_expertise_card2_title'] = 'Photo library consulting';
+$lang['porg_support_expertise_card2_desc'] = 'We work with experienced photo library consultants who know Piwigo inside out. They can help you define and implement your media organization, including:';
+$lang['porg_support_expertise_card2_li1'] = 'Your indexing strategy';
+$lang['porg_support_expertise_card2_li2'] = 'Album hierarchy';
+$lang['porg_support_expertise_card2_li3'] = 'Properties model';
+$lang['porg_support_expertise_card2_li4'] = 'Titles and descriptions';
+$lang['porg_support_expertise_card2_li5'] = 'Tags and controlled vocabularies';
+$lang['porg_support_expertise_card2_btn'] = 'Contact us for a quote';
+
+$lang['porg_support_before_title'] = 'Before contacting support';
+$lang['porg_support_before_subtitle'] = 'Looking for self-service resources ? Most questions can be answered through our documentation, installation guides and community forum.';
+$lang['porg_support_before_card1_title'] = 'Looking for documentation?';
+$lang['porg_support_before_card1_btn'] = 'Read the documentation';
+$lang['porg_support_before_card2_title'] = 'Installing Piwigo?';
+$lang['porg_support_before_card2_btn'] = 'Follow our installation guides';
+$lang['porg_support_before_card3_title'] = 'Need help from other users?';
+$lang['porg_support_before_card3_btn'] = 'Ask the community';
+
 ?>

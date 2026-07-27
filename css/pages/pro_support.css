@@ -268,6 +268,16 @@
   .testi-track {
     gap: 0;
   }
+  .comments-container {
+    padding: 0 20px;
+  }
+  .support-intro-header {
+    padding: 25px;
+  }
+  .intro-text-col {
+    padding-left: 20px;
+    margin-bottom: 40px;
+  }
 }
 
 .testi-card .icon-quote {
@@ -325,4 +335,100 @@
 .testi-dot.active {
   border: 1px solid var(--main_flash_green);
   background: var(--secondary_flash_green);
+}
+
+.container-desc {
+  margin-bottom: 155px;
+}
+
+.container-desc .orange-bar {
+  height: 180px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.container-desc .orange-bar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container-desc .glass-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-desc .glass-card-container {
+  padding: 0 90px;
+  margin-top: -120px;
+}
+
+@media (max-width: 992px) {
+  .container-desc .glass-card-container {
+    padding: 0 40px;
+    margin-top: 0;
+  }
+
+  .container-desc .col-12.col-lg-4 {
+    margin-bottom: 35px;
+  }
+
+  .container-desc .orange-bar {
+    width: 80px;
+    max-width: 80px;
+    position: relative;
+    margin-left: 20px;
+  }
+
+  .container-desc .orange-bar img {
+    width: 100vh;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    border-radius: 10px;
+  }
+
+  .container-desc {
+    margin-bottom: 130px;
+  }
+
+  .container-beginning {
+    padding: 50px 20px;
+  }
+}
+
+.help-card-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.help-card-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.help-card-list li:last-child {
+  margin-bottom: 14px;
+}
+
+.help-card-list .icon-check-1 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  border-radius: 2px;
+  background-color: var(--secondary_flash_green);
+  color: var(--accent_green);
+  font-size: 8px;
+  margin-top: 3px;
 }
