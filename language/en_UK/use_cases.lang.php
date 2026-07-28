@@ -12,6 +12,8 @@ $lang['your data stays yours'] = 'Your data stays yours';
 $lang['open source and sustainable'] = 'Open source and sustainable';
 $lang['use cases tourism challenge title2'] = 'Common challenges include:';
 
+$lang['use cases public use btn text'] = 'Read the customer story';
+
 $lang['use cases public comments btn'] = 'Explore more customer stories';
 $lang['use cases discover title'] = 'Explore the features behind these use cases';
 $lang['use cases discover description'] = 'From advanced search and access permissions to metadata management and public galleries, Piwigo provides all the tools tourism organizations need to organize, manage and share their visual assets efficiently.';

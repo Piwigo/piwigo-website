@@ -117,11 +117,11 @@
       title={'Mobile apps'|translate} description={'Mobile apps desc'|translate} icon_class='icon-app'
       }
 
-      {include
+      {* {include
 				file='template/include/sub_menu_items/sub_menu_itemc.tpl'
 				category_type='explore-submenu'
 				title={'API & integrations'|translate} description={'API & integrations desc'|translate} icon_class='icon-dev'
-      }
+      } *}
 
       {include
 				file='template/include/sub_menu_items/sub_menu_itemc.tpl'

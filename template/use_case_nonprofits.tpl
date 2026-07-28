@@ -2,7 +2,7 @@
 <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL_PLUGINS}css/card/get_started.css">
 
 <div class="use-cases-content">
-  {include file='template/use_cases/parts/top_page.tpl' title={'use cases association header title'|translate} description={'use cases association header description'|translate} img_src="{$PORG_ROOT_URL}images/use-case/tourism_header.webp"}
+  {include file='template/use_cases/parts/top_page.tpl' title={'use cases association header title'|translate} description={'use cases association header description'|translate} img_src="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/27/20260727160506-83c9409f-me.webp"}
 
   <section class="tourism-carousel">
     <div class="container-fluid px-0">
@@ -31,32 +31,32 @@
 
   {assign var="association_features" value=[
   [
-    'img_src' => "{$PORG_ROOT_URL}images/use-case/tourism_thumb_1.webp",
+  'img_src' => "https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/28/20260728110448-4bd818cc-me.webp",
   'title' => {'use cases association thumb1 title'|translate},
   'description' => {'use cases association thumb1 description'|translate}
   ],
   [
-  'img_src' => "{$PORG_ROOT_URL}images/use-case/tourism_thumb_2.webp",
+  'img_src' => "https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/28/20260728110445-fd3b0f16-me.webp",
   'title' => {'use cases association thumb2 title'|translate},
   'description' => {'use cases association thumb2 description'|translate}
   ],
   [
-  'img_src' => "{$PORG_ROOT_URL}images/use-case/tourism_thumb_3.webp",
+  'img_src' => "https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/28/20260728110440-6cbad6ef-me.webp",
   'title' => {'use cases association thumb3 title'|translate},
   'description' => {'use cases association thumb3 description'|translate}
   ],
   [
-  'img_src' => "{$PORG_ROOT_URL}images/use-case/tourism_thumb_4.webp",
+  'img_src' => "https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/28/20260728110502-3ec53e10-me.webp",
   'title' => {'use cases association thumb4 title'|translate},
   'description' => {'use cases association thumb4 description'|translate}
   ],
   [
-  'img_src' => "{$PORG_ROOT_URL}images/use-case/tourism_thumb_5.webp",
+  'img_src' => "https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/28/20260728110443-215e6b6b-me.webp",
   'title' => {'use cases association thumb5 title'|translate},
   'description' => {'use cases association thumb5 description'|translate}
   ],
   [
-  'img_src' => "{$PORG_ROOT_URL}images/use-case/tourism_thumb_6.webp",
+  'img_src' => "https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/28/20260728110438-e4b34640-me.webp",
   'title' => {'use cases association thumb6 title'|translate},
   'description' => {'use cases association thumb6 description'|translate}
   ]
@@ -82,7 +82,7 @@
 
   {assign var="how_cards" value=[
   [
-    'icon' => "icon-cloud-oneplace",
+    'icon' => "icon-pics",
 'title' => {'use cases association how card1 title'|translate},
   'description' => {'use cases association how card1 description'|translate}
   ],
@@ -92,23 +92,23 @@
   'description' => {'use cases association how card2 description'|translate}
   ],
   [
-  'icon' => "icon-paint",
+  'icon' => "icon-share",
   'title' => {'use cases association how card3 title'|translate},
   'description' => {'use cases association how card3 description'|translate}
   ],
   [
-  'icon' => "icon-hide",
+  'icon' => "icon-contribute",
   'title' => {'use cases association how card4 title'|translate},
   'description' => {'use cases association how card4 description'|translate}
   ],
   [
-  'icon' => "icon-flash-1",
-  'title' => {'scales with your library'|translate},
+  'icon' => "icon-photographers",
+  'title' => {'use cases association how card5 title'|translate},
   'description' => {'use cases association how card5 description'|translate}
   ],
   [
-  'icon' => "icon-shield",
-  'title' => {'built for collaboration'|translate},
+  'icon' => "icon-doc",
+  'title' => {'use cases association how card6 title'|translate},
   'description' => {'use cases association how card6 description'|translate}
   ]
   ]}
@@ -122,7 +122,7 @@
   'description' => {'use cases association stacks card1 description'|translate}
   ],
   [
-  'icon' => "icon-calc",
+  'icon' => "icon-stonks",
   'title' => {'scales with your organization'|translate},
   'description' => {'use cases association stacks card2 description'|translate}
   ],
@@ -132,7 +132,7 @@
   'description' => {'use cases association stacks card3 description'|translate}
   ],
   [
-  'icon' => "icon-arrows-cw",
+  'icon' => "icon-secu",
   'title' => {'your data stays yours'|translate},
   'description' => {'use cases association stacks card4 description'|translate}
   ],

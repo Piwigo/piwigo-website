@@ -8,34 +8,36 @@
         <div class="testi-slider-wrap px-0">
           <div class="testi-track" id="testiTrack">
             {foreach $comments as $key => $comment}
-              <div class="testi-card">
-                <i class="icon-quote main-green-text"></i>
-                <p class="p-testimonial testi-text mb-0">{$comment.comment}</p>
-                <div class="testi-footer">
-                  {if $comment.author|strpos:"," !== false}
-                    {assign var="author_parts" value=$comment.author|split:","}
-                    {assign var="author_name" value=$author_parts[0]|trim}
-                    {assign var="company_name" value=$author_parts[1]|default:''|trim}
-                  {else}
-                    {assign var="author_name" value=''}
-                    {assign var="company_name" value=$comment.author|trim}
-                  {/if}
-
-                  {if $author_name}<p class="name-testimonial mb-0">{$author_name}</p>{/if}
-                  {if $company_name}
-                    {if isset($comment.url) && $comment.url}
-                      <a href="{$comment.url}" target="_blank" rel="noopener noreferrer" class="testi-author-link sector-testimonial {if $comment.hosting == 'self-hosted'}orange-text{else}pink-text{/if}">{$company_name}<i class="icon-ext1 {if $comment.hosting == 'self-hosted'}secondary-orange-text{else}secondary-pink-text{/if} ms-1"></i><i class="icon-ext2 {if $comment.hosting == 'self-hosted'}secondary-orange-text{else}secondary-pink-text{/if} ms-1"></i></a>
+              {if $comment.comment|strlen <= 650}
+                <div class="testi-card">
+                  <i class="icon-quote main-green-text"></i>
+                  <p class="p-testimonial testi-text mb-0">{$comment.comment}</p>
+                  <div class="testi-footer">
+                    {if $comment.author|strpos:"," !== false}
+                      {assign var="author_parts" value=$comment.author|split:","}
+                      {assign var="author_name" value=$author_parts[0]|trim}
+                      {assign var="company_name" value=$author_parts[1]|default:''|trim}
                     {else}
-                      <span class="sector-testimonial {if $comment.hosting == 'self-hosted'}orange-text{else}pink-text{/if}">{$company_name}</span>
+                      {assign var="author_name" value=''}
+                      {assign var="company_name" value=$comment.author|trim}
                     {/if}
-                    {if $comment.hosting == 'self-hosted'}
-                      <p class="sector-testimonial mb-0 mt-1 dark-text"><i class="icon-self-host orange-text me-1"></i>{'Self-hosted'|translate}</p>
-                    {else if $comment.hosting == 'cloud'}
-                      <p class="sector-testimonial mb-0 mt-1 dark-text"><i class="icon-cloud-oneplace pink-text me-1"></i>Piwigo {'Cloud'|translate}</p>
+
+                    {if $author_name}<p class="name-testimonial mb-0">{$author_name}</p>{/if}
+                    {if $company_name}
+                      {if isset($comment.url) && $comment.url}
+                        <a href="{$comment.url}" target="_blank" rel="noopener noreferrer" class="testi-author-link sector-testimonial {if $comment.hosting == 'self-hosted'}orange-text{else}pink-text{/if}">{$company_name}<i class="icon-ext1 {if $comment.hosting == 'self-hosted'}secondary-orange-text{else}secondary-pink-text{/if} ms-1"></i><i class="icon-ext2 {if $comment.hosting == 'self-hosted'}secondary-orange-text{else}secondary-pink-text{/if} ms-1"></i></a>
+                      {else}
+                        <span class="sector-testimonial {if $comment.hosting == 'self-hosted'}orange-text{else}pink-text{/if}">{$company_name}</span>
+                      {/if}
+                      {if $comment.hosting == 'self-hosted'}
+                        <p class="sector-testimonial mb-0 mt-1 dark-text"><i class="icon-self-host orange-text me-1"></i>{'Self-hosted'|translate}</p>
+                      {else if $comment.hosting == 'cloud'}
+                        <p class="sector-testimonial mb-0 mt-1 dark-text"><i class="icon-cloud-oneplace pink-text me-1"></i>Piwigo {'Cloud'|translate}</p>
+                      {/if}
                     {/if}
-                  {/if}
+                  </div>
                 </div>
-              </div>
+              {/if}
             {/foreach}
           </div>
         </div>

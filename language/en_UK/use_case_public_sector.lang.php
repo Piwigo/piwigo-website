@@ -54,7 +54,6 @@ $lang['use cases public host description'] = 'Choose the deployment model that m
 $lang['use cases public use title'] = 'See how public organizations use Piwigo';
 $lang['use cases public use description1'] = 'Indre County Council:<br>A simpler, more affordable photo library for public communication';
 $lang['use cases public use description2'] = 'The Indre County Council needed to replace an outdated photo library used by its communication department to manage images for publications, the website, social media and printed materials.<br><br>Looking for a solution that was both easier to use and more affordable, the team chose Piwigo. Today, communication staff can quickly organize, find and share approved photos from one centralized library, making everyday content management faster and more efficient.';
-$lang['use cases public use btn text'] = 'Read the customer story';
 
 $lang['use cases public comments title'] = 'What public organizations say about Piwigo';
 

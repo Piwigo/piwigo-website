@@ -4,11 +4,13 @@ $(document).ready(function () {
   const emailWarningIcon = jQuery("#emailWarningIcon");
   const emailCheckIcon = jQuery("#emailCheckIcon");
   const emailHelp = jQuery("#emailHelp");
+  const rgpdCheckbox = jQuery("#agree_rgpd");
+  const submitButton = jQuery("#form-submit");
 
   jQuery(emailWarningIcon).hide();
   jQuery(emailCheckIcon).hide();
   jQuery(emailHelp).hide();
-
+  
   function isValidEmail(email) {
     const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return pattern.test(email);
@@ -18,6 +20,7 @@ $(document).ready(function () {
     if (value === "") {
       jQuery(emailHelp).hide();
       jQuery(emailWarningIcon).hide();
+      submitButton.prop("disabled", true);
       jQuery(emailCheckIcon).hide();
       jQuery(emailInput).removeClass("is-invalid");
       return;
@@ -26,6 +29,7 @@ $(document).ready(function () {
     if (!isValidEmail(value)) {
       jQuery(emailHelp).show();
       jQuery(emailWarningIcon).show();
+      submitButton.prop("disabled", true);
       jQuery(emailCheckIcon).hide();
       jQuery(emailInput).addClass("is-invalid");
       return;
@@ -34,60 +38,58 @@ $(document).ready(function () {
     jQuery(emailHelp).hide();
     jQuery(emailWarningIcon).hide();
     jQuery(emailCheckIcon).show();
+    submitButton.prop("disabled", !rgpdCheckbox.is(":checked"));
     jQuery(emailInput).removeClass("is-invalid");
   }
 
   jQuery(emailInput).on("input", function () {
     updateEmailValidationState(jQuery(this).val().trim());
   });
-
-  updateEmailValidationState(jQuery(emailInput).val().trim());
-
-  // RGPD checkbox validation
-  jQuery("#form-submit").on("click", function (e) {
-    const checkbox = jQuery("#agree_rgpd");
-    if (!checkbox.is(":checked")) {
-      e.preventDefault();
-      checkbox.addClass("is-invalid");
-      checkbox.siblings(".invalid-feedback").show();
-    } else {
-      checkbox.removeClass("is-invalid");
-      checkbox.siblings(".invalid-feedback").hide();
-    }
-  });
-
-  jQuery("#agree_rgpd").on("change", function () {
+  
+  rgpdCheckbox.on("change", function () {
     if (jQuery(this).is(":checked")) {
       jQuery(this).removeClass("is-invalid");
       jQuery(this).siblings(".invalid-feedback").hide();
+      submitButton.prop("disabled", !isValidEmail(emailInput.val().trim()));
+    } else {
+      submitButton.prop("disabled", true);
     }
   });
 
+  // Initial state
+  updateEmailValidationState(emailInput.val().trim());
+
   jQuery(".form-newsletter-subscribe").on("submit", function (e) {
     e.preventDefault();
+
+    const isEmailValid = isValidEmail(emailInput.val().trim());
+    const isRgpdChecked = rgpdCheckbox.is(":checked");
+
+    if (!isRgpdChecked) {
+      rgpdCheckbox.addClass("is-invalid");
+      rgpdCheckbox.siblings(".invalid-feedback").show();
+    }
+
+    if (!isEmailValid || !isRgpdChecked) {
+      return;
+    }
+
     var $form = jQuery(this);
     var action = $form.attr("action");
     var data = $form.serialize();
     var email = jQuery("#form-email").val().trim();
     var escapedEmail = jQuery("<div>").text(email).html();
 
-    jQuery
-      .ajax({
-        url: action,
-        method: "GET",
-        data: data,
-      })
-      .always(function () {
+    jQuery.ajax({
+      url: action,
+      method: "GET",
+      data: data,
+    }).always(function () {
         var successMessage = jQuery("#newsletter-success-message").data(
           "template",
         );
         if (successMessage && email) {
-          jQuery("#newsletter-success-message").html(
-            successMessage.replace(
-              "__NEWSLETTER_EMAIL__",
-              "<strong>" + escapedEmail + "</strong>",
-            ),
-          );
+          jQuery("#newsletter-success-message").html(successMessage.replace("__NEWSLETTER_EMAIL__", "<strong>" + escapedEmail + "</strong>"));
         }
 
         jQuery("#newsletter-form").hide();

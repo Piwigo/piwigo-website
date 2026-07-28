@@ -2,7 +2,7 @@
 <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL_PLUGINS}css/card/get_started.css">
 
 <div class="use-cases-content">
-  {include file='template/use_cases/parts/top_page.tpl' title={'use cases company header title'|translate} description={'use cases company header description'|translate} img_src="{$PORG_ROOT_URL}images/use-case/tourism_header.webp"}
+  {include file='template/use_cases/parts/top_page.tpl' title={'use cases company header title'|translate} description={'use cases company header description'|translate} img_src="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/27/20260727160505-e6a8df65-me.webp"}
 
   <section class="tourism-carousel">
     <div class="container-fluid px-0">
@@ -31,32 +31,32 @@
 
   {assign var="company_features" value=[
   [
-    'img_src' => "{$PORG_ROOT_URL}images/use-case/tourism_thumb_1.webp",
+  'img_src' => "https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/28/20260728104951-256d583f-me.webp",
   'title' => {'use cases company thumb1 title'|translate},
   'description' => {'use cases company thumb1 description'|translate}
   ],
   [
-  'img_src' => "{$PORG_ROOT_URL}images/use-case/tourism_thumb_2.webp",
+  'img_src' => "https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/28/20260728105004-8262cfe2-me.webp",
   'title' => {'use cases company thumb2 title'|translate},
   'description' => {'use cases company thumb2 description'|translate}
   ],
   [
-  'img_src' => "{$PORG_ROOT_URL}images/use-case/tourism_thumb_3.webp",
+  'img_src' => "https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/28/20260728104955-b75d86ca-me.webp",
   'title' => {'use cases company thumb3 title'|translate},
   'description' => {'use cases company thumb3 description'|translate}
   ],
   [
-  'img_src' => "{$PORG_ROOT_URL}images/use-case/tourism_thumb_4.webp",
+  'img_src' => "https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/28/20260728104959-722144f3-me.webp",
   'title' => {'use cases company thumb4 title'|translate},
   'description' => {'use cases company thumb4 description'|translate}
   ],
   [
-  'img_src' => "{$PORG_ROOT_URL}images/use-case/tourism_thumb_5.webp",
+  'img_src' => "https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/28/20260728105009-c26dc581-me.webp",
   'title' => {'use cases company thumb5 title'|translate},
   'description' => {'use cases company thumb5 description'|translate}
   ],
   [
-  'img_src' => "{$PORG_ROOT_URL}images/use-case/tourism_thumb_6.webp",
+  'img_src' => "https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/28/20260728104953-b862d42e-me.webp",
   'title' => {'use cases company thumb6 title'|translate},
   'description' => {'use cases company thumb6 description'|translate}
   ]
@@ -81,33 +81,33 @@
 
   {assign var="how_cards" value=[
   [
-    'icon' => "icon-cloud-oneplace",
+    'icon' => "icon-arrows-cw",
 'title' => {'use cases company how card1 title'|translate},
   'description' => {'use cases company how card1 description'|translate}
   ],
   [
-  'icon' => "icon-help",
+  'icon' => "icon-pics",
   'title' => {'use cases company how card2 title'|translate},
   'description' => {'use cases company how card2 description'|translate}
   ],
   [
-  'icon' => "icon-paint",
+  'icon' => "icon-help",
   'title' => {'use cases company how card3 title'|translate},
   'description' => {'use cases company how card3 description'|translate}
   ],
   [
-  'icon' => "icon-hide",
+  'icon' => "icon-flash-1",
   'title' => {'use cases company how card4 title'|translate},
   'description' => {'use cases company how card4 description'|translate}
   ],
   [
-  'icon' => "icon-flash-1",
-  'title' => {'scales with your business'|translate},
+  'icon' => "icon-organize",
+  'title' => {'use cases company how card5 title'|translate},
   'description' => {'use cases company how card5 description'|translate}
   ],
   [
-  'icon' => "icon-shield",
-  'title' => {'built for collaboration'|translate},
+  'icon' => "icon-doc",
+  'title' => {'use cases company how card6 title'|translate},
   'description' => {'use cases company how card6 description'|translate}
   ]
   ]}
@@ -121,7 +121,7 @@
   'description' => {'use cases company stacks card1 description'|translate}
   ],
   [
-  'icon' => "icon-calc",
+  'icon' => "icon-stonks",
   'title' => {'scales with your business'|translate},
   'description' => {'use cases company stacks card2 description'|translate}
   ],
@@ -131,7 +131,7 @@
   'description' => {'use cases company stacks card3 description'|translate}
   ],
   [
-  'icon' => "icon-arrows-cw",
+  'icon' => "icon-secu",
   'title' => {'your data stays yours'|translate},
   'description' => {'use cases company stacks card4 description'|translate}
   ],
@@ -142,9 +142,9 @@
   ]]}
   {include file='template/use_cases/parts/stacks.tpl' page='public-sector' title={'use cases company stacks title'|translate} list_items=$stacks_cards}
 
-  {include file='template/use_cases/parts/host.tpl' title={'use cases public host title'|translate} description={'use cases tourism host description'|translate} cloud_description={'use cases public host cloud'|translate} self_hosted_description={'use cases public host self'|translate}}
+  {include file='template/use_cases/parts/host.tpl' title={'use cases public host title'|translate} description={'use cases company host description'|translate} cloud_description={'use cases public host cloud'|translate} self_hosted_description={'use cases public host self'|translate}}
 
-  {include file='template/use_cases/parts/use.tpl' title={'use cases company use title'|translate} description1={'use cases company use description1'|translate} description2={'use cases company use description2'|translate} btn_text={'use cases public use btn text'|translate} btn_link="{$PORG_ROOT}{$URL.wessex}" img_src="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/02/20260702160631-a2c76169-xl.webp"}
+  {include file='template/use_cases/parts/use.tpl' title={'use cases company use title'|translate} description1={'use cases company use description1'|translate} description2={'use cases company use description2'|translate} btn_text={'use cases public use btn text'|translate} btn_link="{$PORG_ROOT}{$URL.wessex}" img_src="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/28/20260728094136-a1e00519-xl.webp"}
 
   {include file='template/use_cases/parts/comments.tpl' title={'use cases company comments title'|translate} comments=$company_testimonials btn_text={'use cases public comments btn'|translate} btn_link="{$PORG_ROOT}{$URL.users}{if $URL.users|strstr:'?'}&{else}?{/if}use_case=company"}
 

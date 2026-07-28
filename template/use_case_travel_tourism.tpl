@@ -130,7 +130,7 @@
   'description' => {'use cases tourism stacks card3 description'|translate}
   ],
   [
-  'icon' => "icon-arrows-cw",
+  'icon' => "icon-secu",
   'title' => {'your data stays yours'|translate},
   'description' => {'use cases tourism stacks card4 description'|translate}
   ],

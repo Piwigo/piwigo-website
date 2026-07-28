@@ -9,9 +9,9 @@
       {foreach  $list_items as $item}
         <div class="col-md-4">
           <div class="how-card">
-            <div class="d-flex align-items-start mb-3">
+            <div class="d-flex align-items-center mb-3">
               <span class="how-icon"><i class="{$item.icon}"></i></span>
-              <h4 class="mb-0">{$item.title}</h4>
+              <h4 class="mb-0 justify-content-center">{$item.title}</h4>
             </div>
             <p class="mb-0">{$item.description|nl2br}</p>
           </div>
