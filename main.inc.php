@@ -241,6 +241,8 @@ SELECT state
       'PORG_ROOT_URL_PLUGINS' => $porg_root_url_piwigodotorg,
       'URL' => porg_get_page_urls(),
       'DOCUMENTATION_URL' => $lang['porg_urls']['documentation'] ?? '//' . $page['porg_domain_prefix'] . 'piwigo.org/doc/',
+      'FORUM_URL' => $lang['porg_urls']['forum'] ?? '//' . $page['porg_domain_prefix'] . 'piwigo.org/forum/',
+      'INSTALL_GUIDE_URL' => $lang['porg_urls']['installation_guide'] ?? '//' . $page['porg_domain_prefix'] . 'piwigo.org/doc/doku.php?id=fr:user_guide:installation',
       'DOC_URL' => $lang['porg_doc_urls'],
       'PORG_DOMAIN_PREFIX' => $page['porg_domain_prefix'],
       'PCOM_PREFIX' => isset($page['porg_pcom_prefix']) ? $page['porg_pcom_prefix'] : '',

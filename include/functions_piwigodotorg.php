@@ -674,6 +674,10 @@ function get_ressources($ressources_type, $get_types=false)
       'cache_filename' => 'pcom_users_logos.cache.php',
       'album_id' => conf_get_param('pcom_logos_cat_id', 10)
     ),
+    'pro_support_testimonials' => array(
+      'cache_filename' => 'porg_users_pro_support_testimonials.cache.php',
+      'album_id' => conf_get_param('user_pro_support_testimonials_cat_id', 227)
+    ),
   );
 
   if ($get_types)

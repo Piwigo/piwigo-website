@@ -52,11 +52,6 @@ $lang['porg_support_intro_feat6'] = 'No AI chatbot replacing human expertise';
 $lang['porg_support_intro_btn'] = 'Meet the team behind Piwigo';
 
 $lang['porg_support_comment_title'] = 'What our customers say';
-$lang['porg_support_comment_text_461'] = 'The features are complete, the support is responsive and the price very competitive.';
-$lang['porg_support_comment_text_471'] = 'I appreciate the ease of use, the quality of the support, and the fact that it is an open source product.';
-$lang['porg_support_comment_text_468'] = 'Piwigo is a full-featured, ergonomic and intuitive tool managed by an attentive and responsive team.';
-$lang['porg_support_comment_text_586'] = 'As far as service is concerned, I have to say that in the past almost all problems and queries have been solved quickly and easily. ';
-$lang['porg_support_comment_text_465'] = 'Support is always so helpful and the creativity and freedom you get with Piwigo is amazing!';
 
 $lang['porg_support_help_title'] = 'What our team can help you with';
 $lang['porg_support_help_card1_title'] = 'Getting started';

@@ -1,18 +1,40 @@
 <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/pages/plugins.css">
+<link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/buttons/pricing_switch.css">
 
 <section class="plugins-title">
-  <div class="container">
+  <div class="container justify-content-center">
     <div class="justify-content-center row">
       <div class="col-md-6 pt-5 mt-5">
         <h1 class="text-center mb-4">{'porg_plugins_title'|translate}</h1>
         <p class="text-center">{'porg_plugins_desc'|translate}</p>
       </div>
     </div>
+    <div class="text-center mt-5">
+      {include file="template/include/buttons/pricing_switch.tpl"}
+    </div>
   </div>
 </section>
 
+{assign var=display_mode value=$smarty.get.display|default:'cloud'}
 
-<section class="container container-feature">
+{assign var=self_hosted_names value=['team'=>'Light', 'enterprise'=>'Standard', 'vip'=>'Premium']}
+
+{if $display_mode == 'cloud'}
+  {assign var=plans value=['pro', 'team', 'enterprise', 'vip']}
+  {assign var=plan_names value=['Pro', 'Team', 'Enterprise', 'VIP']}
+{else}
+  {assign var=plans value=['team', 'enterprise', 'vip']}
+  {assign var=plan_names value=$self_hosted_names}
+{/if}
+
+{assign var=plan_key_to_index value=[
+  'pro' => 0,
+  'team' => 1,
+  'enterprise' => 2,
+  'vip' => 3
+]}
+
+<section class="container container-feature" {if $display_mode != 'cloud'}style="display:none;"{/if}>
   <div class="row text-center features-content justify-content-center">
     <div class="col-xxl-11">
 
@@ -27,10 +49,9 @@
             <tr>
               <th scope="col" class="h3-pricing-option pink-text">{'Feature'|translate}</th>
               <th scope="col" class="h3-pricing-option dark-text">{'Description'|translate}</th>
-              <th scope="col" class="h3-pricing-option text-center">{'Pro'|translate}</th>
-              <th scope="col" class="h3-pricing-option text-center">{'Team'|translate}</th>
-              <th scope="col" class="h3-pricing-option text-center">{'Enterprise'|translate}</th>
-              <th scope="col" class="h3-pricing-option text-center">{'VIP'|translate}</th>
+              {foreach from=$plans item=plan_key}
+                <th scope="col" class="h3-pricing-option text-center">{if $display_mode == 'cloud'}{$plan_key|capitalize}{else}{$plan_names[$plan_key]}{/if}</th>
+              {/foreach}
             </tr>
           </thead>
           <tbody>
@@ -38,9 +59,10 @@
               <tr>
                 <td class="pricing-list strong-text text-start">{"porg_plugins_s1_f`$feature_id`_title"|translate}</td>
                 <td class="pricing-list text-start">{"porg_plugins_s1_f`$feature_id`_desc"|translate}</td>
-                {foreach from=$feature_row item=feature_value}
+                {foreach from=$plans item=plan_key}
                   <td class="text-center">
-                    {if $feature_value}
+                    {assign var=plan_index value=$plan_key_to_index[$plan_key]}
+                    {if isset($feature_row[$plan_index]) && $feature_row[$plan_index]}
                       <div class="small-check-icon">
                         <i class="icon-check-1"></i>
                       </div>
@@ -83,10 +105,9 @@
             <tr>
               <th scope="col" class="h3-pricing-option pink-text">{'Plugin'|translate}</th>
               <th scope="col" class="h3-pricing-option dark-text">{'Description'|translate}</th>
-              <th scope="col" class="h3-pricing-option text-center">{'Pro'|translate}</th>
-              <th scope="col" class="h3-pricing-option text-center">{'Team'|translate}</th>
-              <th scope="col" class="h3-pricing-option text-center">{'Enterprise'|translate}</th>
-              <th scope="col" class="h3-pricing-option text-center">{'VIP'|translate}</th>
+              {foreach from=$plans item=plan_key}
+                <th scope="col" class="h3-pricing-option text-center">{if $display_mode == 'cloud'}{$plan_key|capitalize}{else}{$plan_names[$plan_key]}{/if}</th>
+              {/foreach}
             </tr>
           </thead>
           <tbody id="plugins-table-body">
@@ -95,9 +116,10 @@
                 <td class="pricing-list strong-text text-start">{$plugin_name}</td>
                 <td class="pricing-list text-start">{"premium_plugins_`$plugin_name|replace:' ':''`_desc"|translate}</td>
                 {assign var=plugin_row value=$PLUGIN_TABLE[$plugin_id]}
-                {foreach from=$plugin_row item=plugin_value}
+                {foreach from=$plans item=plan_key}
                   <td class="text-center">
-                    {if $plugin_value}
+                    {assign var=plan_index value=$plan_key_to_index[$plan_key]}
+                    {if isset($plugin_row[$plan_index]) && $plugin_row[$plan_index]}
                       <div class="small-check-icon">
                         <i class="icon-check-1"></i>
                       </div>
@@ -119,6 +141,8 @@
     </div>
   </div>
 </section>
+
+<script src="{$PORG_ROOT_URL}js/plugins_switch.js"></script>
 
 {literal}
   <script>

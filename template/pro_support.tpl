@@ -291,7 +291,7 @@
             {foreach $comments as $key => $comment}
               <div class="testi-card">
                 <i class="icon-quote main-green-text"></i>
-                <p class="p-testimonial testi-text mb-0">{'porg_support_comment_text_'|cat:$comment.id|translate}</p>
+                <p class="p-testimonial testi-text mb-0">{$comment.comment}</p>
                 <div class="testi-footer">
                   {if $comment.author|substr:0:10 == 'Webmaster '}
                     {assign var="author_name" value='Webmaster'}
@@ -628,7 +628,7 @@
             </div>
             <h4 class="text-center mb-5 pb-4">{'porg_support_before_card1_title'|translate}</h4>
             {include file='template/include/buttons/button.tpl' variant='cta_primary' label={'porg_support_before_card1_btn'|translate}
-            href="https://doc.piwigo.org" class='mt-auto'}
+            href="{$DOCUMENTATION_URL}" class='mt-auto' target="_blank"}
           </div>
         </div>
         <div class="col-md-4 text-center mb-4 d-flex">
@@ -638,7 +638,7 @@
             </div>
             <h4 class="text-center mb-5 pb-4">{'porg_support_before_card2_title'|translate}</h4>
             {include file='template/include/buttons/button.tpl' variant='cta_primary' label={'porg_support_before_card2_btn'|translate}
-            href="#todo" class='mt-auto'}
+            href="{$INSTALL_GUIDE_URL}" class='mt-auto' target="_blank"}
           </div>
         </div>
         <div class="col-md-4 text-center mb-4 d-flex">
@@ -648,7 +648,7 @@
             </div>
             <h4 class="text-center mb-5 pb-4">{'porg_support_before_card3_title'|translate}</h4>
             {include file='template/include/buttons/button.tpl' variant='cta_primary' label={'porg_support_before_card3_btn'|translate}
-            href="https://piwigo.org/forum/" class='mt-auto'}
+            href="{$FORUM_URL}" class='mt-auto' target="_blank"}
           </div>
         </div>
       </div>

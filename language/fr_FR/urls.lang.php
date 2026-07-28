@@ -32,3 +32,5 @@ $lang['porg_doc_urls']['install'] = 'https://fr.piwigo.org/doc/doku.php?id=utili
 $lang['porg_doc_urls']['upgrade'] = 'https://fr.piwigo.org/doc/doku.php?id=utiliser:apprendre:install:maj';
 $lang['porg_doc_urls']['upgrade_auto'] = 'https://fr.piwigo.org/doc/doku.php?id=utiliser:apprendre:install:maj:maj_auto';
 $lang['porg_doc_urls']['upgrade_manual'] = 'https://fr.piwigo.org/doc/doku.php?id=utiliser:apprendre:install:maj:maj_manuelle';
+$lang['porg_urls']['forum'] = 'https://fr.piwigo.org/forum/';
+$lang['porg_urls']['installation_guide'] = 'https://doc-fr.piwigo.org/hebergez-votre-piwigo';

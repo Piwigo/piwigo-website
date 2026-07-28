@@ -34,4 +34,6 @@ $lang['porg_doc_urls']['install'] = 'https://piwigo.org/doc/doku.php?id=user_doc
 $lang['porg_doc_urls']['upgrade'] = 'https://piwigo.org/doc/doku.php?id=user_documentation:learn:upgrade';
 $lang['porg_doc_urls']['upgrade_auto'] = 'https://piwigo.org/doc/doku.php?id=user_documentation:learn:upgrade:upgrade_automatic';
 $lang['porg_doc_urls']['upgrade_manual'] = 'https://piwigo.org/doc/doku.php?id=user_documentation:learn:upgrade:upgrade_manual';
+$lang['porg_urls']['forum'] = 'https://piwigo.org/forum/';
+$lang['porg_urls']['installation_guide'] = 'https://doc.piwigo.org/self-hosting-piwigo';
 ?>

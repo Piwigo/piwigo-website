@@ -1,56 +1,57 @@
-
-
 <div class="container-fluid menu-mega-container">
-	<div class="row g-0 menu-columns">
-		<div class="col-12 col-md-5 menu-column">
-			{include
+  <div class="row g-0 menu-columns">
+    <div class="col-12 col-md-5 menu-column">
+      {include
 				file='template/include/sub_menu_items/sub_menu_itemc.tpl'
 				category_type='feature-submenu'
-				title={'Professional support'|translate} description={'Professional support desc'|translate} icon_class='icon-wrench'
-        href="{$PORG_ROOT}{$URL.pro_support}"
-			}
+				title={'Professional support'|translate} description={'Professional support desc'|translate}
+      icon_class='icon-wrench'
+      href="{$PORG_ROOT}{$URL.pro_support}"
+      }
 
-			{include
+      {include
 				file='template/include/sub_menu_items/sub_menu_itemc.tpl'
 				category_type='feature-submenu'
 				is_ext=true
 				title={'Forum'|translate} description={'Forum desc'|translate} icon_class='icon-icon28'
-        href="https://piwigo.org/forum"
-			}
-		</div>
+      href="{$FORUM_URL}"
+      }
+    </div>
 
-		<div class="d-none d-md-block menu-divider"></div>
+    <div class="d-none d-md-block menu-divider"></div>
 
-		<div class="col-12 col-md-5 menu-column">
-			{include
+    <div class="col-12 col-md-5 menu-column">
+      {include
 				file='template/include/sub_menu_items/sub_menu_itemc.tpl'
 				category_type='use-case-submenu'
 				is_ext=true
 				title={'Documentation'|translate} description={'Documentation desc'|translate} icon_class='icon-doc'
-        href="{$DOCUMENTATION_URL}"
-			}
+      href="{$DOCUMENTATION_URL}"
+      }
 
-			{include
+      {include
 				file='template/include/sub_menu_items/sub_menu_itemc.tpl'
 				category_type='use-case-submenu'
+				is_ext=true
 				title={'Installation guides'|translate} description={'Installation guides desc'|translate} icon_class='icon-dev'
-			}
+      href="{$INSTALL_GUIDE_URL}"
+      }
 
-			{include
+      {include
 				file='template/include/sub_menu_items/sub_menu_itemc.tpl'
 				category_type='use-case-submenu'
 				title={'Developer resources'|translate} description={'Developer resources desc'|translate} icon_class='icon-git'
-			}
-		</div>
-	</div>
+      }
+    </div>
+  </div>
 
-	<div class="menu-horizontal-divider"></div>
+  <div class="menu-horizontal-divider"></div>
 
-	<div class="menu-footer d-flex justify-content-center">
-		{include
+  <div class="menu-footer d-flex justify-content-center">
+    {include
 			file='template/include/buttons/button.tpl'
 			variant='menu_btn_white'
 			label={'support btn'|translate} href="{$PORG_ROOT}{$URL.contact}"
-		}
-	</div>
+    }
+  </div>
 </div>
