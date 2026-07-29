@@ -14,14 +14,7 @@ $coding_activity_commits = porg_get_coding_activity();
 $coding_activity_weeks = array();
 
 // load commit classification lists (plugins / tools / android repos)
-$commit_classification = array();
-$classification_file = __DIR__ . '/commit_classification.php';
-if (file_exists($classification_file)) {
-  $cfg = include $classification_file;
-  if (is_array($cfg)) {
-    $commit_classification = $cfg;
-  }
-}
+include(PORG_PATH . "data/commit_classification.data.php");
 
 $timezone = new DateTimeZone(date_default_timezone_get());
 $current_week_start = (new DateTimeImmutable('now', $timezone))->modify('monday this week')->setTime(0, 0, 0);
@@ -81,15 +74,15 @@ if (is_array($coding_activity_commits)) {
     }
 
     // sort commit here
-    $commit_type = 'core';
+    $commit_type = 'plugin'; // Default type is now 'plugin'
 
     // iOS app (Piwigo-Mobile)
     if (isset($commit['url']) && stripos($commit['url'], 'github.com/Piwigo/Piwigo-Mobile') !== false) {
       $commit_type = 'ios';
     }
 
-    // Android detection via configured android repo names
-    if ($commit_type === 'core' && !empty($commit_classification['android_repos']) && isset($commit['url'])) {
+    // Android detection
+    if ($commit_type === 'plugin' && !empty($commit_classification['android_repos']) && isset($commit['url'])) {
       foreach ($commit_classification['android_repos'] as $repo) {
         if ($repo && stripos($commit['url'], $repo) !== false) {
           $commit_type = 'android';
@@ -98,8 +91,8 @@ if (is_array($coding_activity_commits)) {
       }
     }
 
-    // Theme detection: repo name contains 'theme'
-    if ($commit_type === 'core' && !empty($commit_classification['theme_repos']) && isset($commit['url'])) {
+    // Theme detection
+    if ($commit_type === 'plugin' && !empty($commit_classification['theme_repos']) && isset($commit['url'])) {
       foreach ($commit_classification['theme_repos'] as $repo) {
         if ($repo && stripos($commit['url'], $repo) !== false) {
           $commit_type = 'theme';
@@ -108,19 +101,8 @@ if (is_array($coding_activity_commits)) {
       }
     }
 
-    // Plugin detection via configured plugin repo names
-    if ($commit_type === 'core' && !empty($commit_classification['plugin_repos'])) {
-      $search_target = ($commit['url'] ?? '') . ' ' . ($commit['name'] ?? '');
-      foreach ($commit_classification['plugin_repos'] as $repo) {
-        if ($repo && stripos($search_target, $repo) !== false) {
-          $commit_type = 'plugin';
-          break;
-        }
-      }
-    }
-
-    // Tool detection via configured tool repo names
-    if ($commit_type === 'core' && !empty($commit_classification['tool_repos'])) {
+    // Tool detection
+    if ($commit_type === 'plugin' && !empty($commit_classification['tool_repos'])) {
       $search_target = ($commit['url'] ?? '') . ' ' . ($commit['name'] ?? '');
       foreach ($commit_classification['tool_repos'] as $repo) {
         if ($repo && stripos($search_target, $repo) !== false) {
@@ -128,6 +110,11 @@ if (is_array($coding_activity_commits)) {
           break;
         }
       }
+    }
+
+    // Core detection
+    if (isset($commit['name']) && $commit['name'] === 'Piwigo') {
+      $commit_type = 'core';
     }
 
     if (isset($commit['author']) && $commit['author'] === 'Piwigo-TranslationTeam') {

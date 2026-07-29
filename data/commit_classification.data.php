@@ -32,13 +32,13 @@ $commit_classification = array(
     'Piwigo-MenuTags',
     'Piwigo-Private_share',
     'piwigo-pem',
+    'centralAdmin',
   ),
 
   'tool_repos' => array(
     'piwigo-docker',
     'piwigo-ai',
     'AdminTools',
-    'centralAdmin',
     'Lexiglot',
     'GrumPluginClasses',
     'Piwigo-Java',
@@ -61,5 +61,3 @@ $commit_classification = array(
     'luciano',
   ),
 );
-
-return $commit_classification;
