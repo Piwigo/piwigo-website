@@ -21,7 +21,9 @@
       <p class="mb-4">{'porg_contact_project_desc'|translate}</p>
       <div class="d-flex gap-3">
         {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'porg_contact_project_btn1'|translate} href="#form"}
-        {include file='template/include/buttons/button.tpl' variant='cta_secondary' label={'porg_contact_project_btn2'|translate} href="{$PORG_ROOT}{$URL.get_piwigo}#self-hosted"}
+        {if $IS_FRENCH_LANGUAGE}
+          {include file='template/include/buttons/button.tpl' variant='cta_secondary' label={'porg_contact_project_btn2'|translate} href="#todo"}
+        {/if}
       </div>
     </div>
   </div>
