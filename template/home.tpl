@@ -33,7 +33,7 @@
             <span class="minimenus-item pink-badge" style="margin-left: 20px;">{$LATEST_VERSION_DATE}</span>
           </p>
           <p class="pwg-activities latest-news"><i class="orange-text icon-pwg" style="width: 20px;"></i>
-            <a href="{$PORG_ROOT}{$URL.product_update}#updatesSection" class="dark-text non-decorated-text country-testimonial">{$LATEST_NEWS_TITLE}</a>
+            <a href="{$PORG_ROOT}{$URL.news}" class="dark-text non-decorated-text country-testimonial">{$LATEST_NEWS_TITLE}</a>
             <span class="minimenus-item orange-badge" style="margin-left: 20px;">{$LATEST_NEWS_DATE}</span>
           </p>
           <p class="pwg-activities latest-code-change"><i class="green-text icon-code-branch"></i>
