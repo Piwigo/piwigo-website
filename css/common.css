@@ -1032,3 +1032,9 @@ Glass cards
 .glass-card p {
   margin-bottom: 0;
 }
+
+.logos-marquee-item img[src$=".svg"] {
+  width: auto;
+  height: 100px;
+  max-width: 100%;
+}
