@@ -38,6 +38,7 @@ $commit_classification = array(
     'piwigo-docker',
     'piwigo-ai',
     'AdminTools',
+    'centralAdmin',
     'Lexiglot',
     'GrumPluginClasses',
     'Piwigo-Java',
@@ -57,6 +58,7 @@ $commit_classification = array(
     'piwigo-elegant',
     'piwigo-clear',
     'piwigo-sylvia',
+    'luciano',
   ),
 );
 
