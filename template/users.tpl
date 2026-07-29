@@ -193,6 +193,12 @@
         const checkbox = document.getElementById(useCase);
         if (checkbox && typeof filterExamples === 'function') {
           checkbox.click();
+
+          const filterContainer = checkbox.closest('[id^="filter-"]');
+          if (filterContainer && getComputedStyle(filterContainer).display === 'none') {
+            const filterTitle = filterContainer.previousElementSibling;
+            filterTitle.click();
+          }
         }
       }
     });
