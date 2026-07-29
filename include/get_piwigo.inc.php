@@ -1,10 +1,9 @@
 <?php
-$latest_version = porg_get_latest_version();
+
+$all_logos = get_ressources("pcomlogos");
+
 $template->assign(
   array(
-    'LATEST_VERSION_NUMBER' => $latest_version['version'],
+    'cloud_logos' => $all_logos,
   )
 );
-
-porg_set_pcom_urls();
-?>

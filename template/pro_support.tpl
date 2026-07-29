@@ -12,7 +12,7 @@
             alt="Piwigo screenshot" class="img-fluid d-md-none">
           <p class="mb-4">{'porg_pro_support_header_description'|translate}</p>
           {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'porg_pro_support_header_btn'|translate}
-          href="{$PORG_ROOT}{$URL.product}" class="px-4 align-self-start"}
+          href="{$PORG_ROOT}{$URL.get_piwigo}" class="px-4 align-self-start"}
         </div>
         <div class="col-md-6 responsive-image d-flex flex-column justify-content-center users-header-image">
           <img class="img-fluid d-none d-md-block"
@@ -182,7 +182,7 @@
             <h3 class="text-center mb-4">Piwigo {'Cloud'|translate}</h3>
             <p class="text-center mb-5">{'porg_support_deploy_cloud_desc'|translate}</p>
             {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'porg_support_deploy_cloud_btn'|translate}
-            href="{$PORG_ROOT}{$URL.product}#cloud" class='mt-auto'}
+            href="{$PORG_ROOT}{$URL.get_piwigo}#cloud" class='mt-auto'}
           </div>
         </div>
         <div class="col-md-6 text-center mb-4 d-flex ways-to-use-card-col-r">
@@ -193,7 +193,7 @@
             <h3 class="text-center mb-4">Piwigo {'Self-hosted'|translate}</h3>
             <p class="text-center mb-5">{'porg_support_deploy_self_hosted_desc'|translate}</p>
             {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'porg_support_deploy_self_hosted_btn'|translate}
-            href="{$PORG_ROOT}{$URL.product}#self-hosted " class='mt-auto'}
+            href="{$PORG_ROOT}{$URL.get_piwigo}#self-hosted " class='mt-auto'}
           </div>
         </div>
       </div>
