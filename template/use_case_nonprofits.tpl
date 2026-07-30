@@ -2,7 +2,7 @@
 <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL_PLUGINS}css/card/get_started.css">
 
 <div class="use-cases-content">
-  {include file='template/use_cases/parts/top_page.tpl' title={'use cases association header title'|translate} description={'use cases association header description'|translate} img_src="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/27/20260727160506-83c9409f-me.webp"}
+  {include file='template/use_cases/parts/top_page.tpl' title={'use cases association header title'|translate} description={'use cases association header description'|translate} img_src="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/27/20260727160506-83c9409f-xl.webp"}
 
   <section class="tourism-carousel">
     <div class="container-fluid px-0">

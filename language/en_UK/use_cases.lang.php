@@ -11,6 +11,11 @@ $lang['built for collaboration'] = 'Built for collaboration';
 $lang['your data stays yours'] = 'Your data stays yours';
 $lang['open source and sustainable'] = 'Open source and sustainable';
 $lang['use cases tourism challenge title2'] = 'Common challenges include:';
+$lang['built for growing photo libraries'] = 'Built for growing photo libraries';
+$lang['powerful, yet easy to use'] = 'Powerful, yet easy to use';
+$lang['highly customizable'] = 'Highly customizable';
+$lang['your photos stay yours'] = 'Your photos stay yours';
+$lang['open source and built to last'] = 'Open source and built to last';
 
 $lang['use cases public use btn text'] = 'Read the customer story';
 
