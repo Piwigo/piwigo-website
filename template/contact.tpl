@@ -32,7 +32,7 @@
 <section class="contact-cards justify-content-center d-flex">
   <div class="container justify-content-center d-flex row">
     <div class="col-md-6 pe-md-4 mt-4 pt-2">
-      <div class="contact-card h-100 d-flex flex-column justify-content-center align-items-center">
+      <div class="contact-card h-100 d-flex flex-column align-items-center">
         <span class="icon-wrapper pink-bg">
           <i class="icon-help pink-text"></i>
         </span>
@@ -41,7 +41,7 @@
       </div>
     </div>
     <div class="col-md-6 ps-md-4 mt-4 pt-2">
-      <div class="contact-card h-100 d-flex flex-column justify-content-center align-items-center">
+      <div class="contact-card h-100 d-flex flex-column align-items-center">
         <span class="icon-wrapper orange-bg">
           <i class="icon-doc orange-text"></i>
         </span>

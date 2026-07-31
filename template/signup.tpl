@@ -15,7 +15,7 @@
   }
 </style>
 
-<section class="signup-header" id="signup-page">
+<section class="signup-header d-flex align-items-center" id="signup-page" style="min-height: 100vh;">
   <div class="container">
     <div class="row align-items-center form-side-container">
       <div class="col-12 col-md-5 form-side">
@@ -85,7 +85,7 @@
             </div>
 
             <div class="text-end">
-              <button type="submit" id="form-submit" class="btn-menu menu-btn-green ms-auto">
+              <button type="submit" id="form-submit" class="btn-menu menu-btn-green ms-auto" disabled>
                 <span id="submit-text">{'signup_button'|translate}</span>
               </button>
             </div>
@@ -169,3 +169,27 @@
   });
 </script>
 <script src="{$PORG_ROOT_URL}js/signup.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('signupForm');
+    const submitButton = document.getElementById('form-submit');
+
+    function validateForm() {
+      const emailValid = document.getElementById('emailCheckIcon').style.display !== 'none';
+      const userValid = document.getElementById('userError').style.display === 'none' && document.getElementById('userHelp').style.display === 'none';
+      const passwordValid = document.getElementById('passCheckIcon').style.display !== 'none';
+      const termsChecked = document.getElementById('form-terms').checked;
+
+      if (emailValid && userValid && passwordValid && termsChecked) {
+        submitButton.disabled = false;
+      } else {
+        submitButton.disabled = true;
+      }
+    }
+
+    form.addEventListener('input', validateForm);
+    form.addEventListener('change', validateForm);
+
+    validateForm();
+  });
+</script>

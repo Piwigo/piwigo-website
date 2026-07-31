@@ -1,7 +1,7 @@
 {assign var="color" value="orange"}
 
 <section id="specific-cases-section" class="specific-cases-container container">
-	<h2 class="specific-cases-title text-center">{'specific cases title'|translate}</h2>
+	<h2 class="specific-cases-title text-center">{'pricing specific cases title'|translate}</h2>
 	<div class="specific-cases-strip">
 		{foreach from=$SPECIFIC_CASES item=case}
 			<div class="specific-cases-item">

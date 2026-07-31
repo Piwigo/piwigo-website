@@ -424,6 +424,7 @@ Specific cases section
   justify-content: center;
   margin-bottom: 20px;
   font-size: 30px !important;
+  border-radius: 4px;
 }
 
 .orange-specific-cases-icon {
@@ -520,7 +521,7 @@ Professional services section
 
 .professional-service-card {
   background: var(--grey);
-  /* border-radius: 10px; */
+  border-radius: 10px;
   padding: 40px 30px;
   flex: 1;
   display: flex;
@@ -537,6 +538,7 @@ Professional services section
   justify-content: center;
   margin-bottom: 25px;
   font-size: 24px;
+  border-radius: 4px;
 }
 
 .orange-professional-services-icon {

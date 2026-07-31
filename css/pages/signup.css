@@ -1,3 +1,8 @@
+body {
+  background: linear-gradient(0.25turn, #fffaf3, #ffeacf);
+  justify-content: center;
+}
+
 .signup-header {
   position: relative;
   overflow: hidden;

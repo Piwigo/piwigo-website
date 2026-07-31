@@ -60,7 +60,7 @@
   </div>
 </section>
 
-<div class="d-flex justify-content-center gap-3 mb-5 product-toggle-buttons">
+<div class="pricing-toggle-container text-center py-3" style="position: sticky; top: 0; background: white; z-index: 10;">
   {include file="template/include/buttons/pricing_switch.tpl"}
 </div>
 
@@ -114,9 +114,26 @@
         e.preventDefault();
         e.stopPropagation();
         window.location.hash = e.currentTarget.classList.contains('self-hosted') ? '#self-hosted' : '#cloud';
+
+        window.scrollTo({ top: 800, behavior: 'smooth' });
+
+        const mobileMenu = document.getElementById('bs-example-navbar-collapse-1');
+        if (mobileMenu && mobileMenu.classList.contains('show')) {
+          const bsCollapse = new bootstrap.Collapse(mobileMenu);
+          bsCollapse.hide();
+        }
       }, true);
     });
   });
   window.addEventListener('load', updateProductView);
   window.addEventListener('hashchange', updateProductView);
+  window.addEventListener('hashchange', function() {
+    const mobileMenu = document.getElementById('bs-example-navbar-collapse-1');
+    if (mobileMenu && mobileMenu.classList.contains('show')) {
+      const bsCollapse = new bootstrap.Collapse(mobileMenu, {
+        toggle: false
+      });
+      bsCollapse.hide();
+    }
+  });
 </script>

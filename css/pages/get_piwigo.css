@@ -297,7 +297,6 @@
   }
 }
 
-
 /******
 Professional services section
 ******/
@@ -320,7 +319,6 @@ Professional services section
   justify-content: space-between;
   gap: 20px;
 }
-
 
 .professional-service-card {
   background: var(--grey);
@@ -396,7 +394,6 @@ Professional services section
     width: 100% !important;
     max-width: 100% !important;
   } */
-
 }
 
 .container-transparent,
@@ -427,4 +424,10 @@ Professional services section
   background: var(--grey);
   border-radius: 10px;
   padding: 44px;
+}
+
+@media (max-width: 678px) {
+  .btn-pricing-switch {
+    width: 322px !important;
+  }
 }

@@ -13,7 +13,7 @@
 <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/card/storage_card.css"> *}
 <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/card/global_text_image.css">
 
-<section class="pricing-header-main container-fluid">
+<section class="pricing-header-main container-fluid  pb-0">
 	<div class="row align-items-center text-center">
 		<div class="col-12 pricing-header-text">
 			<h1 class="pricing-title">
@@ -27,11 +27,15 @@
 				{'pricing main description'|translate}
 			</p>
 		</div>
+	</div>
+</section>
 
-		<div class="col-12 pricing-toggle-container">
-			{include file="template/include/buttons/pricing_switch.tpl"}
-		</div>
+<div class="col-12 pricing-toggle-container text-center py-3" style="position: sticky; top: 0; background: white; z-index: 10;">
+	{include file="template/include/buttons/pricing_switch.tpl"}
+</div>
 
+<section class="pricing-header-main container-fluid pt-0">
+	<div class="row align-items-center text-center">
 		<div class="col-12 pricing-toggle-description">
 			<p id="desc-cloud" class="toggle-desc">
 				{'pricing toggle description 1'|translate}
@@ -66,15 +70,17 @@
 	<div class="faq_pricing_header">
 		<h3 class="faq_pricing_title text-center">{'pricing faq pricing title'|translate}</h2>
 	</div>
-	<div class="row faq_pricing_grid g-0">
-		{foreach from=$faqs item=faq}
-			{include
-				file="template/include/card/faq_item.tpl"
-				faq_id=$faq.id
-				faq_question=$faq.question
-				faq_answer=$faq.answer
-			}
-		{/foreach}
+	<div class="accordion accordion-flush" id="faqPiwigo">
+		<div class="row faq_pricing_grid g-0">
+			{foreach from=$faqs item=faq}
+				{include
+					file="template/include/card/faq_item.tpl"
+					faq_id=$faq.id
+					faq_question=$faq.question
+					faq_answer=$faq.answer
+				}
+			{/foreach}
+		</div>
 	</div>
 </section>
 
