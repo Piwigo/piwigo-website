@@ -43,7 +43,7 @@ CTA
   transform: translate(-50%, -52%);
   width: 100%;
   pointer-events: none;
-  z-index: 0;
+  z-index: -1;
 }
 
 .get-started-subtitle .highlight {
@@ -146,7 +146,7 @@ CTA
 
 @media (max-width: 768px) {
   .get-started-hero .container {
-    padding-left: 40px;
+    padding: 20px;
   }
 
   .cta2-copy {
@@ -162,7 +162,7 @@ CTA
   }
 
   .get-started-copy {
-    padding: 18px 0 0;
+    padding: 20px 0 0;
   }
 
   .get-started-mobile-image {
@@ -187,7 +187,7 @@ CTA
   }
 
   .get-started-list {
-    margin-bottom: 22px !important;
+    margin-bottom: 40px !important;
   }
 
   .get-started-buttons {
@@ -210,7 +210,7 @@ CTA
     font-size: inherit;
   }
 
-  .green-text {
+  .get-started-copy .green-text {
     color: var(--main_orange) !important;
   }
 
@@ -309,5 +309,13 @@ Short CTA
   .short-gs-subtitle {
     max-width: 260px;
     line-height: 120%;
+  }
+
+  .get-started-hero {
+    margin: 0 10px;
+  }
+
+  .feature-icon {
+    display: none;
   }
 }

@@ -416,24 +416,30 @@
         window.addEventListener('scroll', handlePositions);
 
         const carousel = document.querySelector('.why-mobile-carousel');
-        const dots = document.querySelectorAll('.why-mobile-dot');
+        const dotContainers = document.querySelectorAll('.why-mobile-dots');
 
-        if (carousel && dots.length) {
+        if (carousel && dotContainers.length) {
           carousel.addEventListener('scroll', function() {
             const width = carousel.offsetWidth;
             const currentIndex = Math.round(carousel.scrollLeft / width);
 
-            dots.forEach((dot, index) => {
-              dot.classList.toggle('is-active', index === currentIndex);
+            dotContainers.forEach(container => {
+              const dots = container.querySelectorAll('.why-mobile-dot');
+              dots.forEach((dot, index) => {
+                dot.classList.toggle('is-active', index === currentIndex);
+              });
             });
           });
 
-          dots.forEach((dot, index) => {
-            dot.addEventListener('click', function() {
-              const width = carousel.offsetWidth;
-              carousel.scrollTo({
-                left: width * index,
-                behavior: 'smooth'
+          dotContainers.forEach(container => {
+            const dots = container.querySelectorAll('.why-mobile-dot');
+            dots.forEach((dot, index) => {
+              dot.addEventListener('click', function() {
+                const width = carousel.offsetWidth;
+                carousel.scrollTo({
+                  left: width * index,
+                  behavior: 'smooth'
+                });
               });
             });
           });
@@ -657,20 +663,21 @@
       <p class="text-center">{'porg_home_why_desc'|translate}</p>
     </div>
 
+    <div class="why-mobile-dots mt-3">
+      <span class="why-mobile-dot is-active" data-dot="0"></span>
+      <span class="why-mobile-dot" data-dot="1"></span>
+      <span class="why-mobile-dot" data-dot="2"></span>
+      <span class="why-mobile-dot" data-dot="3"></span>
+      <span class="why-mobile-dot" data-dot="4"></span>
+    </div>
+
     <div class="why-mobile-carousel">
 
       <div class="why-mobile-slide" data-slide="0">
         <div class="why-mobile-heading-row">
           <p class="number-typo main-green-text mb-0">01.</p>
-          <div class="why-mobile-dots">
-            <span class="why-mobile-fake-dot is-active"></span>
-            <span class="why-mobile-fake-dot"></span>
-            <span class="why-mobile-fake-dot"></span>
-            <span class="why-mobile-fake-dot"></span>
-            <span class="why-mobile-fake-dot"></span>
-          </div>
+          <h3>{'porg_home_why_li_1_title'|translate}</h3>
         </div>
-        <h3>{'porg_home_why_li_1_title'|translate}</h3>
         <div class="test-card">
           <div class="upper-card green-bg">
             <p class="p-strong mb-0">{'porg_home_why_li_1_desc'|translate}</p>
@@ -689,15 +696,8 @@
       <div class="why-mobile-slide" data-slide="1">
         <div class="why-mobile-heading-row">
           <p class="number-typo main-green-text mb-0">02.</p>
-          <div class="why-mobile-dots">
-            <span class="why-mobile-fake-dot"></span>
-            <span class="why-mobile-fake-dot is-active"></span>
-            <span class="why-mobile-fake-dot"></span>
-            <span class="why-mobile-fake-dot"></span>
-            <span class="why-mobile-fake-dot"></span>
-          </div>
+          <h3>{'porg_home_why_li_2_title'|translate}</h3>
         </div>
-        <h3>{'porg_home_why_li_2_title'|translate}</h3>
         <div class="test-card">
           <div class="upper-card orange-bg">
             <p class="p-strong mb-0">{'porg_home_why_li_2_desc'|translate}</p>
@@ -716,15 +716,8 @@
       <div class="why-mobile-slide" data-slide="2">
         <div class="why-mobile-heading-row">
           <p class="number-typo main-green-text mb-0">03.</p>
-          <div class="why-mobile-dots">
-            <span class="why-mobile-fake-dot"></span>
-            <span class="why-mobile-fake-dot"></span>
-            <span class="why-mobile-fake-dot is-active"></span>
-            <span class="why-mobile-fake-dot"></span>
-            <span class="why-mobile-fake-dot"></span>
-          </div>
+          <h3>{'porg_home_why_li_3_title'|translate}</h3>
         </div>
-        <h3>{'porg_home_why_li_3_title'|translate}</h3>
         <div class="test-card">
           <div class="upper-card pink-bg">
             <p class="p-strong mb-0">{'porg_home_why_li_3_desc'|translate}</p>
@@ -742,15 +735,8 @@
       <div class="why-mobile-slide" data-slide="3">
         <div class="why-mobile-heading-row">
           <p class="number-typo main-green-text mb-0">04.</p>
-          <div class="why-mobile-dots">
-            <span class="why-mobile-fake-dot"></span>
-            <span class="why-mobile-fake-dot"></span>
-            <span class="why-mobile-fake-dot"></span>
-            <span class="why-mobile-fake-dot is-active"></span>
-            <span class="why-mobile-fake-dot"></span>
-          </div>
+          <h3>{'porg_home_why_li_4_title'|translate}</h3>
         </div>
-        <h3>{'porg_home_why_li_4_title'|translate}</h3>
         <div class="test-card">
           <div class="upper-card green-bg">
             <p class="p-strong mb-0">{'porg_home_why_li_4_desc'|translate}</p>
@@ -769,15 +755,8 @@
       <div class="why-mobile-slide" data-slide="4">
         <div class="why-mobile-heading-row">
           <p class="number-typo main-green-text mb-0">05.</p>
-          <div class="why-mobile-dots">
-            <span class="why-mobile-fake-dot"></span>
-            <span class="why-mobile-fake-dot"></span>
-            <span class="why-mobile-fake-dot"></span>
-            <span class="why-mobile-fake-dot"></span>
-            <span class="why-mobile-fake-dot is-active"></span>
-          </div>
+          <h3>{'porg_home_why_li_5_title'|translate}</h3>
         </div>
-        <h3>{'porg_home_why_li_5_title'|translate}</h3>
         <div class="test-card">
           <div class="upper-card orange-bg">
             <p class="p-strong mb-0">{'porg_home_why_li_5_desc'|translate}</p>

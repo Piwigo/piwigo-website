@@ -78,7 +78,7 @@
                 {if $first_commit_date == $last_commit_date}
                   {include file='template/include/card/commit_card.tpl' type='commits' meta=$commit_label date=$first_commit_date commits=$type_commits}
                 {else}
-                  {include file='template/include/card/commit_card.tpl' type='commits' meta=$commit_label date="{'From'|translate} {$first_commit_date} {'to'|translate} {$last_commit_date}" commits=$type_commits}
+                  {include file='template/include/card/commit_card.tpl' type='commits' meta=$commit_label date="{'From'|translate} {$last_commit_date} {'to'|translate} {$first_commit_date}" commits=$type_commits}
                 {/if}
               {/if}
             {/foreach}

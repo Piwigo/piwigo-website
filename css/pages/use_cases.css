@@ -36,6 +36,8 @@
 /* carousel */
 .tourism-carousel {
   padding-bottom: 110px;
+  margin-left: -20px;
+  margin-right: -20px;
 }
 
 .logos-marquee-wrapper {
@@ -90,6 +92,7 @@
 }
 
 .container-features {
+  margin-top: 155px;
   margin-bottom: 155px;
 }
 
@@ -402,6 +405,15 @@
   text-align: left;
 }
 
+@media (min-width: 768px) {
+  .testi-card:first-child {
+    margin-left: var(--testimonial-margin, 250px);
+  }
+  .testi-card:last-child {
+    margin-right: var(--testimonial-margin, 250px);
+  }
+}
+
 @media (max-width: 768px) {
   .testi-card {
     height: auto;
@@ -453,7 +465,8 @@
   margin-top: 1.25rem;
 }
 
-.testi-dot {
+.testi-dot,
+.model-mobile-dot {
   width: 14px;
   height: 14px;
   border-radius: 50%;
@@ -464,7 +477,88 @@
   transition: all 0.3s;
 }
 
-.testi-dot.active {
+.testi-dot.active,
+.model-mobile-dot.is-active {
   border: 1px solid var(--main_flash_green);
   background: var(--secondary_flash_green);
+}
+
+@media (max-width: 768px) {
+  .challenge-card {
+    padding: 20px;
+  }
+
+  .challenge-card .strong-text {
+    padding: 0;
+  }
+
+  .container-features .challenge-card {
+    padding: 25px;
+  }
+
+  .container-features .challenge-card .col-md-10 {
+    padding: 0;
+  }
+
+  .model-container-mobile {
+    padding: 30px 0;
+    overflow: hidden;
+  }
+
+  .model-mobile-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 25px;
+    margin-left: auto;
+  }
+
+  .model-mobile-heading-row .model-mobile-dots {
+    justify-content: flex-end;
+    margin-bottom: 0;
+  }
+
+  .model-mobile-heading-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+
+  .model-mobile-heading-row i {
+    color: var(--main_flash_green) !important;
+  }
+
+  .model-mobile-carousel {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+
+  .model-mobile-carousel::-webkit-scrollbar {
+    display: none;
+  }
+
+  .model-mobile-slide {
+    flex: 0 0 100%;
+    width: 100%;
+    scroll-snap-align: center;
+    box-sizing: border-box;
+  }
+
+  .use-case-header .col-md-6:first-child {
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  .test-card,
+  .way-to-use-card {
+    padding: 25px;
+  }
+
+  .way-to-use-card .col-lg-6 {
+    padding: 0;
+  }
 }

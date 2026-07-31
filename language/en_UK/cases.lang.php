@@ -21,7 +21,7 @@ $lang['porg_cases_example_description'] = 'Looking for more inspiration? Browse 
 // Cotentin
 
 $lang['porg_cases_cotentin_title'] = 'The Cotentin Tourist Office simplifies the sharing and distribution of its digital media';
-$lang['porg_cases_cotentin_description'] = 'The “Société Publique Locale de développement touristique du Cotentin” was created in 2017; it is the result of the merger of Cotentin tourist offices in Normandy, France...<br><br>It manages tourist communication and its website <a href="http://www.encotentin.fr " target="_blank">http://www.encotentin.fr</a>.';
+$lang['porg_cases_cotentin_description'] = 'The “Société Publique Locale de développement touristique du Cotentin” was created in 2017; it is the result of the merger of Cotentin tourist offices in Normandy, France...<br><br>It manages tourist communication and its website <a class="orange-text" href="http://www.encotentin.fr " target="_blank">http://www.encotentin.fr</a>.';
 $lang['porg_cases_start_title'] = 'Ready to start managing your photos with Piwigo?';
 $lang['porg_cases_start_description'] = 'Try Piwigo Cloud free for 30 days. Create your account, upload your files and start working right away.';
 
@@ -88,7 +88,7 @@ $lang['porg_cases_indre_benefits_structure'] = 'Indre County Council';
 // Wessex
 
 $lang['porg_cases_wessex_title'] = 'Wessex Water chose Piwigo for Digital Asset Management';
-$lang['porg_cases_wessex_description'] = '<a href="https://www.wessexwater.co.uk" target="_blank">Wessex Water</a> is a water supply and sewerage utility company serving 2.8 million customers across the south west of England, with about 3,500 employees.';
+$lang['porg_cases_wessex_description'] = '<a class="orange-text" href="https://www.wessexwater.co.uk" target="_blank">Wessex Water</a> is a water supply and sewerage utility company serving 2.8 million customers across the south west of England, with about 3,500 employees.';
 
 $lang['porg_cases_wessex_challenge_title'] = 'The challenge : a centralised and safe photo library for corporate images';
 $lang['porg_cases_wessex_challenge_description'] = 'Wessex Water has an important use of digital assets, for both internal and external uses. Photos and videos are used by all the departments, for various purposes : Intranet, Digital signage, presentations, websites, events, PR campaigns and social media.<br><br>Before Piwigo, all these assets were stored in lots of different places : Computers, Sharepoint, Onedrive, Outlook, Network drives, Local drives and CDs.<br><br>When someone needed a picture, they never knew who to go to, or where to look for it. It was also difficult to know which version of a file was the right one, and managing GDPR and image rights was complicated.';

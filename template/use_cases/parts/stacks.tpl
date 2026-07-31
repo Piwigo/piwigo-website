@@ -111,32 +111,35 @@
       window.addEventListener('orientationchange', handlePositions);
       window.addEventListener('scroll', handlePositions);
 
-      // --- Mobile Carousel Logic ---
       const carousel = document.querySelector('.model-mobile-carousel');
-      const dots = document.querySelectorAll('.model-mobile-dot');
+        const dotContainers = document.querySelectorAll('.model-mobile-dots');
 
-      if (carousel && dots.length) {
-        // Update dots on scroll
-        carousel.addEventListener('scroll', function() {
-          const width = carousel.offsetWidth;
-          const currentIndex = Math.round(carousel.scrollLeft / width);
-
-          dots.forEach((dot, index) => {
-            dot.classList.toggle('is-active', index === currentIndex);
-          });
-        });
-
-        // Scroll to slide on dot click
-        dots.forEach((dot, index) => {
-          dot.addEventListener('click', function() {
+        if (carousel && dotContainers.length) {
+          carousel.addEventListener('scroll', function() {
             const width = carousel.offsetWidth;
-            carousel.scrollTo({
-              left: width * index,
-              behavior: 'smooth'
+            const currentIndex = Math.round(carousel.scrollLeft / width);
+
+            dotContainers.forEach(container => {
+              const dots = container.querySelectorAll('.model-mobile-dot');
+              dots.forEach((dot, index) => {
+                dot.classList.toggle('is-active', index === currentIndex);
+              });
             });
           });
-        });
-      }
+
+          dotContainers.forEach(container => {
+            const dots = container.querySelectorAll('.model-mobile-dot');
+            dots.forEach((dot, index) => {
+              dot.addEventListener('click', function() {
+                const width = carousel.offsetWidth;
+                carousel.scrollTo({
+                  left: width * index,
+                  behavior: 'smooth'
+                });
+              });
+            });
+          });
+        }
 
     });
   </script>
@@ -145,6 +148,12 @@
 <section class="container model-container-mobile d-md-none">
   <div class="model-mobile-header text-center mb-4">
     <h2 class="text-center mb-2">{$title}</h2>
+  </div>
+
+  <div class="model-mobile-dots mt-3">
+    {foreach $list_items as $item name=dotloop}
+      <span class="model-mobile-dot {if $smarty.foreach.dotloop.first}is-active{/if}" data-dot="{$smarty.foreach.dotloop.index}"></span>
+    {/foreach}
   </div>
 
   <div class="model-mobile-carousel">

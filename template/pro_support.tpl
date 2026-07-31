@@ -279,48 +279,63 @@
   </div>
 </section>
 
-<section class="container comments-container">
+<section class="container comments-container mb-0">
   <div class="row text-center justify-content-center">
     <div class="col-md-11 text-center justify-content-center">
       <div class="row justify-content-center">
+
         <div class="col-md-7 text-center mb-4">
           <h2 class="text-center mb-0">{'porg_support_comment_title'|translate}</h2>
         </div>
-        <div class="testi-slider-wrap px-0">
-          <div class="testi-track" id="testiTrack">
-            {foreach $comments as $key => $comment}
-              <div class="testi-card">
-                <i class="icon-quote main-green-text"></i>
-                <p class="p-testimonial testi-text mb-0">{$comment.comment}</p>
-                <div class="testi-footer">
-                  {if $comment.author|substr:0:10 == 'Webmaster '}
-                    {assign var="author_name" value='Webmaster'}
-                    {assign var="company_name" value=$comment.author|substr:10|trim}
-                  {elseif $comment.author|strpos:"," !== false}
-                    {assign var="author_parts" value=$comment.author|split:","}
-                    {assign var="author_name" value=$author_parts[0]|trim}
-                    {assign var="company_name" value=$author_parts[1]|default:''|trim}
-                  {else}
-                    {assign var="author_name" value=''}
-                    {assign var="company_name" value=$comment.author|trim}
-                  {/if}
 
-                  {if $author_name}<p class="name-testimonial mb-0">{$author_name}</p>{/if}
-                  {if $company_name}
-                    {if isset($comment.url) && $comment.url}
-                      <a href="{$comment.url}" target="_blank" rel="noopener noreferrer"
-                        class="testi-author-link sector-testimonial green-text">{$company_name}<i
-                          class="icon-ext1 main-green-text ms-1"></i><i class="icon-ext2 main-green-text ms-1"></i></a>
-                    {else}
-                      <span class="sector-testimonial green-text">{$company_name}</span>
-                    {/if}
-                  {/if}
-                  <p class="country-testimonial mb-0 mt-1 dark-text">- {'country_'|cat:$comment.country|translate}</p>
-                </div>
-              </div>
-            {/foreach}
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="comments-container m-0">
+  <div class="testi-slider-wrap px-0">
+    <div class="testi-track" id="testiTrack">
+      {foreach $comments as $key => $comment}
+        <div class="testi-card">
+          <i class="icon-quote main-green-text"></i>
+          <p class="p-testimonial testi-text mb-0">{$comment.comment}</p>
+          <div class="testi-footer">
+            {if $comment.author|substr:0:10 == 'Webmaster '}
+              {assign var="author_name" value='Webmaster'}
+              {assign var="company_name" value=$comment.author|substr:10|trim}
+            {elseif $comment.author|strpos:"," !== false}
+              {assign var="author_parts" value=$comment.author|split:","}
+              {assign var="author_name" value=$author_parts[0]|trim}
+              {assign var="company_name" value=$author_parts[1]|default:''|trim}
+            {else}
+              {assign var="author_name" value=''}
+              {assign var="company_name" value=$comment.author|trim}
+            {/if}
+
+            {if $author_name}<p class="name-testimonial mb-0">{$author_name}</p>{/if}
+            {if $company_name}
+              {if isset($comment.url) && $comment.url}
+                <a href="{$comment.url}" target="_blank" rel="noopener noreferrer"
+                  class="testi-author-link sector-testimonial green-text">{$company_name}<i
+                    class="icon-ext1 main-green-text ms-1"></i><i class="icon-ext2 main-green-text ms-1"></i></a>
+              {else}
+                <span class="sector-testimonial green-text">{$company_name}</span>
+              {/if}
+            {/if}
+            <p class="country-testimonial mb-0 mt-1 dark-text">- {'country_'|cat:$comment.country|translate}</p>
           </div>
         </div>
+      {/foreach}
+    </div>
+  </div>
+</section>
+
+<section class="container comments-container mt-0">
+  <div class="row text-center justify-content-center">
+    <div class="col-md-11 text-center justify-content-center">
+      <div class="row justify-content-center">
 
         <div class="testi-dots" id="testiDots"></div>
 
@@ -332,6 +347,21 @@
 {literal}
   <script>
     document.addEventListener('DOMContentLoaded', function() {
+      function setTestimonialMargin() {
+        const contentColumn = document.querySelector('.comments-container .col-md-11');
+        if (contentColumn) {
+          const screenWidth = window.innerWidth;
+          const contentWidth = contentColumn.offsetWidth;
+          const margin = (screenWidth - contentWidth) / 2;
+          document.documentElement.style.setProperty('--testimonial-margin', margin + 'px');
+        }
+      }
+
+      // Set on load and on resize
+      setTestimonialMargin();
+      window.addEventListener('resize', setTestimonialMargin);
+
+
       const track = document.getElementById('testiTrack');
       const dotsWrap = document.getElementById('testiDots');
       if (!track) return;
@@ -339,6 +369,8 @@
       const cards = Array.from(track.querySelectorAll('.testi-card'));
       const total = cards.length;
       let current = 0;
+
+      const THRESHOLD = 250;
 
       const dots = cards.map((_, i) => {
         const d = document.createElement('button');
@@ -357,14 +389,32 @@
         const card = cards[current];
         const cardW = card.offsetWidth;
 
+        const testimonialMargin = parseFloat(getComputedStyle(document.documentElement).getPropertyValue(
+          '--testimonial-margin')) || 0;
+
         let cardLeft = 0;
         for (let i = 0; i < current; i++) {
           cardLeft += cards[i].offsetWidth + gap;
         }
 
-        const offset = Math.max(0, cardLeft - (wrapW - cardW) / 2);
-        const maxOffset = track.scrollWidth - wrapW;
-        track.style.transform = `translateX(-${Math.min(offset, maxOffset)}px)`;
+        const isMobile = window.innerWidth <= 768;
+        let offset;
+
+        if (isMobile) {
+          offset = current * cardW;
+        } else {
+          if (current === 0) {
+            offset = 0;
+          } else if (current === total - 1 || current === total - 2) {
+            const testimonialMargin = parseFloat(getComputedStyle(document.documentElement).getPropertyValue(
+              '--testimonial-margin')) || 0;
+            offset = track.scrollWidth - wrapW + testimonialMargin;
+          } else {
+            offset = Math.max(0, testimonialMargin + cardLeft - (wrapW - cardW) / 2);
+          }
+        }
+
+        track.style.transform = `translateX(-${offset}px)`;
 
         dots.forEach((d, i) => d.classList.toggle('active', i === current));
       }
@@ -373,14 +423,21 @@
         const isMobile = window.innerWidth <= 768;
 
         if (isMobile) {
+          // On mobile, cards take the full width of the track
           const trackWidth = track.parentElement.offsetWidth;
           cards.forEach(card => card.style.width = trackWidth + 'px');
         } else {
-          cards.forEach(card => card.style.width = '315px');
+          // On desktop, width is based on text length
+          cards.forEach(card => {
+            const text = card.querySelector('.testi-text');
+            card.style.width = (text && text.textContent.trim().length > THRESHOLD) ? '700px' : '365px';
+          });
         }
+        // Recalculate position after width change
         goTo(current);
       }
 
+      // Debounce resize event
       let resizeTimeout;
       window.addEventListener('resize', () => {
         clearTimeout(resizeTimeout);
@@ -428,6 +485,7 @@
         }
       }
 
+      // Initial layout setup
       updateLayout();
     });
   </script>

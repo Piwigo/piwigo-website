@@ -9,7 +9,7 @@
 
         <div class="col-lg-5 text-start">
           <div class="challenge-list-card">
-            <p class="mb-5 mt-2 strong-text">{$title2}</p>
+            <p class="mb-md-5 mt-md-2 mb-4 mt-4 strong-text">{$title2}</p>
             <ul class="challenge-list">
               {foreach $list_items as $item}
                 <li class="p mb-2"><span class="challenge-icon"><i class="icon-warning"></i></span>{$item}</li>

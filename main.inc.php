@@ -429,24 +429,6 @@ function porg_load_content()
     shuffle($showcases);
     $rand_showcases = array_slice($showcases, 0, 4);
 
-    // compute latest coding activity as total hours (e.g. "91 hours ago")
-    $latest_code_activity_value = null;
-    $coding_activity = porg_get_coding_activity();
-    if (is_array($coding_activity) && isset($coding_activity[0]['occured_on']) && $coding_activity[0]['occured_on']) {
-      $ts = strtotime($coding_activity[0]['occured_on']);
-      if ($ts === false) {
-        $ts = 0;
-      }
-      $hours = floor((time() - $ts) / 3600);
-      if ($hours < 0) {
-        $hours = 0;
-      }
-      $latest_code_activity_value = $hours . ' ' . ($hours === 1 ? 'hour' : 'hours') . ' ago';
-    } else {
-      // fallback to existing humanized value
-      $latest_code_activity_value = time_since(porg_get_coding_activity()[0]['occured_on'], 'hour');
-    }
-
     $host_badge = 'europe-host.svg';
 
     if (isset($user['language']) && $user['language'] === 'fr_FR') {
@@ -461,7 +443,7 @@ function porg_load_content()
         'NB_YEARS' => porg_get_nb_years(),
         'LATEST_NEWS_TITLE' => $latest_article['subject'],
         'LATEST_NEWS_DATE' => time_since($latest_article['posted_on'], 'week'),
-        'LATEST_CODE_ACTIVTY' => $latest_code_activity_value,
+        'LATEST_CODE_ACTIVTY' =>  time_since(porg_get_coding_activity()[0]['occured_on'], 'hour'),
         'HOST_BADGE' => $host_badge
       )
     );

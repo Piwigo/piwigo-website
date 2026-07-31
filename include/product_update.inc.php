@@ -18,12 +18,11 @@ include(PORG_PATH . "data/commit_classification.data.php");
 
 $timezone = new DateTimeZone(date_default_timezone_get());
 $current_week_start = (new DateTimeImmutable('now', $timezone))->modify('monday this week')->setTime(0, 0, 0);
-$most_recent_complete_week_start = $current_week_start->modify('-7 days');
 $weeks_count = 4;
 $coding_activity_week_indexes = array();
 
 for ($week_offset = 0; $week_offset < $weeks_count; $week_offset++) {
-  $week_start = $most_recent_complete_week_start->modify('-' . $week_offset . ' weeks');
+  $week_start = $current_week_start->modify('-' . $week_offset . ' weeks');
   $week_end = $week_start->modify('+6 days');
 
   $week_key = $week_start->format('o-W');
@@ -139,7 +138,7 @@ foreach ($coding_activity_weeks as &$week) {
     usort($commits, function ($a, $b) {
       $ta = strtotime($a['occured_on'] ?? 0);
       $tb = strtotime($b['occured_on'] ?? 0);
-      return $ta <=> $tb;
+      return $tb <=> $ta; // Sort in anti-chronological order (most recent first)
     });
   }
   unset($commits);
