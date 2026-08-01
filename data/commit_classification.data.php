@@ -5,7 +5,9 @@
  */
 
 $commit_classification = array(
+  // plugins is the default classification, so there is no need to list them all
   'plugin_repos' => array(
+/*
     'piwigo-videojs',
     'Piwigo-SmartAlbums',
     'Piwigo-BatchDownloader',
@@ -33,14 +35,15 @@ $commit_classification = array(
     'Piwigo-Private_share',
     'piwigo-pem',
     'centralAdmin',
+    'piwigo-ai',
+    'AdminTools',
+    'GrumPluginClasses',
+*/
   ),
 
   'tool_repos' => array(
     'piwigo-docker',
-    'piwigo-ai',
-    'AdminTools',
     'Lexiglot',
-    'GrumPluginClasses',
     'Piwigo-Java',
     'PEM',
   ),
