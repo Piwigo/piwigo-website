@@ -5,6 +5,11 @@
   box-shadow: 0px 0px 4px 0px rgba(60, 60, 60, 0.2);
   padding: 25px;
   margin: 0 4px;
+  transition: box-shadow 300ms ease-out;
+}
+
+.case-card:hover {
+  box-shadow: 0px 0px 20px 0px rgba(60, 60, 60, 0.25);
 }
 
 .case-card .card-title {
@@ -243,7 +248,7 @@
     margin: 30px 0 20px;
   }
 
-  section {
+  section:not(.contact-content) {
     padding: 0 20px !important;
   }
 

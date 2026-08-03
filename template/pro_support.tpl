@@ -7,15 +7,12 @@
       <div class="row justify-content-center align-items-stretch">
         <div class="col-md-6 d-flex flex-column justify-content-center users-header-text">
           <h1 class="mb-4">{'porg_pro_support_header_title'|translate}</h1>
-          <img
-            src="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/16/20260716100025-f41a8ce1-me.webp"
-            alt="Piwigo screenshot" class="img-fluid d-md-none">
           <p class="mb-4">{'porg_pro_support_header_description'|translate}</p>
           {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'porg_pro_support_header_btn'|translate}
           href="{$PORG_ROOT}{$URL.get_piwigo}" class="px-4 align-self-start"}
         </div>
         <div class="col-md-6 responsive-image d-flex flex-column justify-content-center users-header-image">
-          <img class="img-fluid d-none d-md-block"
+          <img class="img-fluid mt-md-0 mt-4 pt-1"
             src="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/16/20260716100025-f41a8ce1-me.webp"
             alt="Piwigo screenshot">
         </div>
@@ -125,13 +122,7 @@
                   <tr class="feature-row">
                     <td class="feature-label">
                       <div class="label-content">
-                        <span>{$row.label}</span>
-                        {if $row.help}
-                          <div class="pwg-tooltip" tabindex="0">
-                            <i class="icon-rounded-warning bi-info-circle-fill"></i>
-                            <span class="tooltip-text">{$row.help}</span>
-                          </div>
-                        {/if}
+                        <span class="p">{$row.label}</span>
                       </div>
                     </td>
                     {foreach from=$row.values item=val}
@@ -139,9 +130,9 @@
                         {if $val == 'check'}
                           <i class="icon-rounded-check bi-check-circle-fill"></i>
                         {elseif $val == '-'}
-                          <span class="value-text">-</span>
+                          <span class="value-text p">-</span>
                         {else}
-                          <span class="value-text">{$val}</span>
+                          <span class="value-text p">{$val}</span>
                         {/if}
                       </td>
                     {/foreach}
@@ -684,7 +675,7 @@
             <div class="icon-wrapper orange-bg mx-auto">
               <i class="orange-text icon-doc"></i>
             </div>
-            <h4 class="text-center mb-5 pb-4">{'porg_support_before_card1_title'|translate}</h4>
+            <h4 class="text-center mb-5">{'porg_support_before_card1_title'|translate}</h4>
             {include file='template/include/buttons/button.tpl' variant='cta_primary' label={'porg_support_before_card1_btn'|translate}
             href="{$DOCUMENTATION_URL}" class='mt-auto' target="_blank"}
           </div>
@@ -694,7 +685,7 @@
             <div class="icon-wrapper orange-bg mx-auto">
               <i class="orange-text icon-dev"></i>
             </div>
-            <h4 class="text-center mb-5 pb-4">{'porg_support_before_card2_title'|translate}</h4>
+            <h4 class="text-center mb-5">{'porg_support_before_card2_title'|translate}</h4>
             {include file='template/include/buttons/button.tpl' variant='cta_primary' label={'porg_support_before_card2_btn'|translate}
             href="{$INSTALL_GUIDE_URL}" class='mt-auto' target="_blank"}
           </div>
@@ -704,7 +695,7 @@
             <div class="icon-wrapper orange-bg mx-auto">
               <i class="orange-text icon-help"></i>
             </div>
-            <h4 class="text-center mb-5 pb-4">{'porg_support_before_card3_title'|translate}</h4>
+            <h4 class="text-center mb-5">{'porg_support_before_card3_title'|translate}</h4>
             {include file='template/include/buttons/button.tpl' variant='cta_primary' label={'porg_support_before_card3_btn'|translate}
             href="{$FORUM_URL}" class='mt-auto' target="_blank"}
           </div>

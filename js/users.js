@@ -1,17 +1,48 @@
 jQuery(document).ready(function () {
+  var masonryInitialized = false;
+  var $usersGrid = $('#users');
 
-  if ($(document).width() > 768) {
-    // On page load add masonry effect to use-case cards, masonry only applied once images have loaded
-    $('#users').imagesLoaded(function () {
-      $('#users').masonry({
-        itemSelector: '.user',
-        horizontalOrder: true,
-      });
-    });
-
+  function handleMasonry() {
+    var screenWidth = $(window).width();
+    if (screenWidth > 768) {
+      if (!masonryInitialized) {
+        $usersGrid.imagesLoaded(function () {
+          $usersGrid.masonry({
+            itemSelector: '.user',
+            horizontalOrder: true,
+          });
+          masonryInitialized = true;
+        });
+      }
+    } else {
+      if (masonryInitialized && $usersGrid.data('masonry')) {
+        $usersGrid.masonry('destroy');
+        masonryInitialized = false;
+      }
+      // Ensure inline styles are removed on mobile
+      $usersGrid.find('.user').css({ position: '', left: '', top: '' });
+    }
   }
 
+  // Initial check on page load
+  handleMasonry();
+
+  // Re-check on window resize (with a debounce to avoid performance issues)
+  var resizeTimer;
+  $(window).on('resize', function () {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function () {
+      handleMasonry();
+    }, 250);
+  });
+
+  // The rest of your mobile-specific filter header logic can be removed
+  // as it's now handled by Bootstrap collapse and CSS.
+  // I'll leave it for now in case you want to restore it, but it's likely not needed.
   if ($(document).width() < 768) {
+    // This part is likely superseded by the Bootstrap collapse implementation
+    // but I'm leaving it commented out for reference.
+    /*
     jQuery('.filter-header').append('<i class="icon-down-open rotate"></i>');
     jQuery('.filters').hide();
 
@@ -20,8 +51,8 @@ jQuery(document).ready(function () {
       jQuery('.filter-header').css('border-bottom', '2px solid var(--main_orange);');
       jQuery('.filters').toggle();
     });
+    */
   }
-
 });
 
 
@@ -31,17 +62,17 @@ jQuery("#country").on("change", function () {
 });
 
 function toggleFilter(filter) {
-  // For each filter toggle checkboxes visibilty
-  jQuery('#' + filter).toggle();
-  jQuery('#' + filter).siblings('.filter-title').children('.icon-down-open').toggleClass('rotate');
+  // This function is now handled by Bootstrap's data-bs-toggle="collapse"
+  // and can likely be removed if not used elsewhere.
+  // jQuery('#' + filter).toggle();
+  // jQuery('#' + filter).siblings('.filter-title').children('.icon-down-open').toggleClass('rotate');
 }
 
 // Called on each click of a checkbox
 function filterExamples(filter) {
-  if ($(document).width() > 768) {
-    // Remove masonry effect
-    jQuery('#users').masonry('destroy');
-    jQuery('#users').removeData('masonry');
+  // Destroy masonry before filtering if on desktop
+  if ($(window).width() > 768 && $('#users').data('masonry')) {
+    $('#users').masonry('destroy');
   }
 
   // remove d-block class from previoulsy chanegd filters
@@ -77,10 +108,10 @@ function filterExamples(filter) {
 
     checkedFilters.push(jQuery(this).val());
     // 
-    if (jQuery(this).parent().parent().attr('id') == 'filter-display') {
+    if (jQuery(this).closest('.collapse').attr('id') == 'filter-display') {
       filterDisplay.push(jQuery(this).val());
     }
-    else if (jQuery(this).parent().parent().attr('id') == 'filter-users') {
+    else if (jQuery(this).closest('.collapse').attr('id') == 'filter-users') {
       filterUsers.push(jQuery(this).val());
     }
   });
@@ -164,8 +195,13 @@ function filterExamples(filter) {
     .appendTo("#users");
 
   if ($(document).width() > 768) {
-    // Reapply masonry to filtered cards
-    jQuery('#users').masonry();
+    // Reapply masonry to filtered cards, but let the resize handler do the init
+    $('#users').imagesLoaded(function () {
+      $('#users').masonry({
+        itemSelector: '.user',
+        horizontalOrder: true,
+      });
+    });
   }
 
 }

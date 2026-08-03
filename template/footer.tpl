@@ -78,10 +78,20 @@
                 <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.use_case_nonprofits}">{'Nonprofits'|translate}</a></li>
                 <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.use_case_photographers_individuals}">{'Photographers & Individuals'|translate}</a></li>
               </ul>
-              <div class="footer-users-btn">
-                {include file='template/include/buttons/button.tpl' variant='menu_btn_white' label={'Footer Button 3 Meet our users'|translate}
-                href="{$PORG_ROOT}{$URL.users}"}
-              </div>
+            </div>
+          </div>
+
+          <div class="footer-mobile-section">
+            <button class="footer-mobile-toggle footer-title collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#footerMobileOurUsers" aria-expanded="false" aria-controls="footerMobileOurUsers">
+              <span>{'Our users'|translate}</span>
+              <i class="icon-down-open" aria-hidden="true"></i>
+            </button>
+            <div id="footerMobileOurUsers" class="collapse footer-mobile-collapse" data-bs-parent=".footer-mobile-nav-accordion">
+              <ul>
+                <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.users}">{'Who uses Piwigo'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.cases}">{'Case studies'|translate}</a></li>
+              </ul>
             </div>
           </div>
 
@@ -162,7 +172,7 @@
         </ul>
       </div>
 
-      <!-- ── Col 4 : Use cases ── -->
+      <!-- ── Col 4 : Use cases + Our users ── -->
       <div class="col-6 col-md-4 col-lg-2 footer-nav-col d-none d-lg-block">
         <h6 class="footer-title">{'Use cases'|translate}</h6>
         <ul>
@@ -173,10 +183,12 @@
           <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.use_case_nonprofits}">{'Nonprofits'|translate}</a></li>
           <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.use_case_photographers_individuals}">{'Photographers & Individuals'|translate}</a></li>
         </ul>
-        <div class="footer-users-btn">
-          {include file='template/include/buttons/button.tpl' variant='menu_btn_white' label={'Footer Button 3 Meet our users'|translate}
-          href="{$PORG_ROOT}{$URL.users}"}
-        </div>
+
+        <h6 class="footer-title mt-4">{'Our users'|translate}</h6>
+        <ul>
+          <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.users}">{'Who uses Piwigo'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.cases}">{'Case studies'|translate}</a></li>
+        </ul>
       </div>
 
       <!-- ── Col 5 : Behind the code + Support ── -->

@@ -296,11 +296,11 @@
 }
 
 .footer-mobile-collapse {
-  padding: 4px 0 14px;
+  padding-bottom: 4px;
 }
 
 .footer-mobile-collapse ul li {
-  margin-bottom: 10px;
+  margin-bottom: 3px;
 }
 
 @media (max-width: 991px) {

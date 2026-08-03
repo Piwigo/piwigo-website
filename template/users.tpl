@@ -25,82 +25,73 @@
       <div class="filter-container">
         <div class="filter-header mb-3 d-flex justify-content-between align-items-center">
           <h4 class="m-0">{"porg_users_filter"|translate}</h4>
-          <h4 class="clear-btn m-0" id="clear-filters" onclick="clearFilters()">
+          <h4 class="clear-btn m-0 d-none d-md-block" id="clear-filters" onclick="clearFilters()">
             {"Clear all"|translate}
           </h4>
         </div>
 
-        <div class="filters mt-4">
+        <div class="filters mt-md-4 mt-3">
 
           <div class="filter-section">
-            <a class="filter-title" onclick="toggleFilter('filter-display')">
+            <a class="filter-title" data-bs-toggle="collapse" href="#filter-display" role="button" aria-expanded="false" aria-controls="filter-display">
               <span>{"porg_users_display"|translate}</span>
               <i class="icon-down-open"></i>
             </a>
-            <div id="filter-display">
+            <div class="collapse" id="filter-display"><div class="filter-content">
               <div class="checkbox my-2">
-                <span class="checkmark"></span>
                 <input type="checkbox" id="example" value="example" onclick="filterExamples('example')" />
                 <label for="example">{"porg_users_examples"|translate}</label>
               </div>
               <div class="checkbox my-2">
-                <span class="checkmark"></span>
                 <input type="checkbox" id="testimonial" value="testimonial" onclick="filterExamples('testimonial')" />
                 <label for="testimonial">{"porg_users_testimonials"|translate}</label>
               </div>
               <div class="checkbox my-2">
-                <span class="checkmark"></span>
                 <input type="checkbox" id="logo" value="logo" onclick="filterExamples('logo')" />
                 <label for="logo">{"porg_users_logos"|translate}</label>
               </div>
-            </div>
+            </div></div>
           </div>
 
           <div class="filter-section">
-            <a class="filter-title" onclick="toggleFilter('filter-users')">
+            <a class="filter-title" data-bs-toggle="collapse" href="#filter-users" role="button" aria-expanded="false" aria-controls="filter-users">
               <span>{"porg_users_use_cases"|translate}</span>
               <i class="icon-down-open"></i>
             </a>
-            <div id="filter-users">
+            <div class="collapse" id="filter-users"><div class="filter-content">
               <div class="checkbox my-2">
-                <span class="checkmark"></span>
                 <input type="checkbox" id="company" value="company" class="filter-btn" onclick="filterExamples('company')" />
                 <label for="company">{"Company"|translate}</label>
               </div>
               <div class="checkbox my-2">
-                <span class="checkmark"></span>
                 <input type="checkbox" id="education" value="education" class="filter-btn" onclick="filterExamples('education')" />
                 <label for="education">{"Education & Research"|translate}</label>
               </div>
               <div class="checkbox my-2">
-                <span class="checkmark"></span>
                 <input type="checkbox" id="tourism" value="tourism" class="filter-btn" onclick="filterExamples('tourism')" />
                 <label for="tourism">{"Travel & Tourism"|translate}</label>
               </div>
               <div class="checkbox my-2">
-                <span class="checkmark"></span>
                 <input type="checkbox" id="association" value="association" class="filter-btn" onclick="filterExamples('association')" />
                 <label for="association">{"Nonprofits"|translate}</label>
               </div>
               <div class="checkbox my-2">
-                <span class="checkmark"></span>
                 <input type="checkbox" id="perso" value="perso" class="filter-btn" onclick="filterExamples('perso')" />
                 <label for="perso">{"Photographers & individuals"|translate}</label>
               </div>
               <div class="checkbox my-2">
-                <span class="checkmark"></span>
                 <input type="checkbox" id="public" value="public" class="filter-btn" onclick="filterExamples('public')" />
                 <label for="public">{"Public Sector"|translate}</label>
               </div>
-            </div>
+            </div></div>
           </div>
 
           <div class="filter-section">
-            <a class="filter-title" onclick="toggleFilter('filter-country')">
+            <a class="filter-title" data-bs-toggle="collapse" href="#filter-country" role="button" aria-expanded="false" aria-controls="filter-country">
               <span>{"porg_users_country"|translate}</span>
               <i class="icon-down-open"></i>
             </a>
-            <div id="filter-country">
+            <div class="collapse" id="filter-country"><div class="filter-content">
               <div class="my-2">
                 <select id="country" class="w-100">
                   <option value="all">{"porg_users_all_countries"|translate}</option>
@@ -109,11 +100,11 @@
                   {/foreach}
                 </select>
               </div>
-            </div>
+            </div></div>
           </div>
         </div>
         {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'Send us a testimonial'|translate}
-        href="{$PORG_ROOT}{$URL.contact}&topic_id=testimonial#form" class="w-100 mt-4"}
+        href="{$PORG_ROOT}{$URL.contact}&topic_id=testimonial#form" class="w-100 mt-4 d-none d-md-inline-flex"}
       </div>
     </div>
 
@@ -130,7 +121,7 @@
         <div id="users" class="mb-5 w-100">
 
           {foreach $piwigo_users as $users}
-            <div data-pos="{$users.position}" class="user col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 {if isset($users.type)}{$users.type} {/if}{if isset($users.country)}{$users.country} {/if}{if isset($users.useCase)}{$users.useCase} {/if}">
+            <div data-pos="{$users.position}" class="user col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 {if isset($users.type)}{$users.type}{/if} {if isset($users.country)}{$users.country}{/if} {if isset($users.useCase)}{$users.useCase}{/if}">
               <div class="card">
                 {if $users.type == "logo" }
                   {if isset($users.url)}<a href="{$users.url}" target="blank">{/if}

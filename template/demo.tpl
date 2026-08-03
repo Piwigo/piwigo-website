@@ -2,7 +2,7 @@
 
 <div class="demo-page mt-5 pt-5">
 
-  <section class="container pt-5 pb-5 mb-5">
+  <section class="container pt-md-5">
     <div class="row justify-content-center">
       <div class="col-md-8 text-center">
         <h1 class="text-center">{'porg_demo_page_title'|translate}</h1>
@@ -13,7 +13,7 @@
  
   <section class="container mt-5 pt-5 px-4">
     <div class="row justify-content-center pt-5">
-      <div class="col-12 pt-5">
+      <div class="col-12">
 
         <div class="row demo-gallery-screenshots align-items-center py-5">
           <div class="col-md-6 order-md-2 ps-md-5">

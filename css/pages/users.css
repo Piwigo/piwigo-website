@@ -17,7 +17,7 @@
 
 @media (max-width: 768px) {
   .users-header-text {
-    padding-right: 12px;
+    padding: 0 20px;
   }
 }
 
@@ -230,6 +230,8 @@
 
 .users-page .checkbox label {
   position: relative;
+  display: flex;
+  align-items: center;
   cursor: pointer;
   padding-left: 0;
   font-family: "Red Hat Display", sans-serif;
@@ -253,6 +255,7 @@
     inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
   padding: 10px;
   display: inline-block;
+  flex-shrink: 0;
   position: relative;
   vertical-align: middle;
   cursor: pointer;
@@ -268,7 +271,6 @@
   content: "";
   display: block;
   position: absolute;
-  top: 3px;
   left: 8px;
   width: 6px;
   height: 14px;
@@ -285,10 +287,7 @@
   text-decoration: none;
 }
 
-#filter-display,
-#filter-users,
-#filter-country {
-  display: none;
+.filter-section .filter-content {
   margin-top: 15px;
   padding-top: 10px;
   border-top: 1px solid var(--dark_text);
@@ -296,17 +295,15 @@
 
 .users-page-examples .filter-title .icon-down-open {
   color: var(--main_flash_green);
-  transition:
-    color 0.2s ease-in-out,
-    transform 0.2s ease-in-out;
+  transition: transform 0.35s ease;
 }
 
 .filter-title:hover .icon-down-open {
   color: var(--main_orange);
 }
 
-.users-page-examples .rotate {
-    transform: rotate(180deg);
+.users-page-examples .filter-title:not(.collapsed) .icon-down-open {
+  transform: rotate(180deg);
 }
 
 .users-page .rounded-button {
@@ -355,14 +352,6 @@
 .users-page .user {
   padding-left: 10px;
   padding-right: 10px;
-}
-
-@media (max-width: 576px) {
-
-  #our-users {
-    margin-left: 10px;
-    margin-right: 20px
-  }
 }
 
 @media (max-width: 768px) {
@@ -433,6 +422,34 @@
 
   .users-page-examples .filter-title span {
     font-size: 15px;
+  }
+
+  .users-page{
+    padding: 0 20px;
+  }
+
+  .users-page-examples .filter-container {
+    margin-bottom: 30px;
+    top: 10px !important;
+    padding: 20px 20px 10px;
+    box-shadow: 0px 4px 20px 0px var(--card-shadow);
+  }
+
+  .filter-section {
+    padding: 10px 13px;
+  }
+
+  .users-page .card {
+    padding: 15px;
+  }
+
+  .users-page .card-img-top:not(.w-100) {
+    margin: -14px;
+    padding-bottom: 15px;
+  }
+
+  .users-page #our-users {
+    padding-left: 12px;
   }
 }
 
