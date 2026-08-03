@@ -21,23 +21,21 @@ foreach ($all_logos as $logo) {
   }
 }
 
-$all_testimonials = get_ressources('testimonials');
+$all_testimonials = get_ressources('use_case_companies_testimonials');
 $company_testimonials = array();
 
 foreach ($all_testimonials as $testimonial) {
   $testimonial_tags = get_tags_of($testimonial['id']);
 
-  if (isset($testimonial_tags['useCase']) && $testimonial_tags['useCase'] === 'company') {
-    $item_content = array(
-      'id' => $testimonial['id'],
-      'comment' => trigger_change('render_category_name', $testimonial['comment'] ?? ''),
-      'author' => $testimonial['name'],
-      'url' => $testimonial_tags['url'] ?? null,
-      'hosting' => $testimonial_tags['hosting'] ?? null,
-    );
+  $item_content = array(
+    'id' => $testimonial['id'],
+    'comment' => trigger_change('render_category_name', $testimonial['comment'] ?? ''),
+    'author' => $testimonial['name'],
+    'url' => $testimonial_tags['url'] ?? null,
+    'hosting' => $testimonial_tags['hosting'] ?? null,
+  );
 
-    $company_testimonials[] = array_merge($item_content, $testimonial_tags);
-  }
+  $company_testimonials[] = array_merge($item_content, $testimonial_tags);
 }
 
 $template->assign(

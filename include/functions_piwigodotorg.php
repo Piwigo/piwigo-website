@@ -604,6 +604,26 @@ function get_ressources($ressources_type, $get_types = false)
       'cache_filename' => 'porg_users_pro_support_testimonials.cache.php',
       'album_id' => conf_get_param('user_pro_support_testimonials_cat_id', 227)
     ),
+    'use_case_tourism_testimonials' => array(
+      'cache_filename' => 'porg_users_use_case_tourism_testimonials.cache.php',
+      'album_id' => conf_get_param('user_use_case_tourism_testimonials_cat_id', 229)
+    ),
+    'use_case_public_testimonials' => array(
+      'cache_filename' => 'porg_users_use_case_public_testimonials.cache.php',
+      'album_id' => conf_get_param('user_use_case_public_testimonials_cat_id', 230)
+    ),
+    'use_case_companies_testimonials' => array(
+      'cache_filename' => 'porg_users_use_case_companies_testimonials.cache.php',
+      'album_id' => conf_get_param('user_use_case_companies_testimonials_cat_id', 231)
+    ),
+    'use_case_education_testimonials' => array(
+      'cache_filename' => 'porg_users_use_case_education_testimonials.cache.php',
+      'album_id' => conf_get_param('user_use_case_education_testimonials_cat_id', 232)
+    ),
+    'use_case_nonprofits_testimonials' => array(
+      'cache_filename' => 'porg_users_use_case_nonprofits_testimonials.cache.php',
+      'album_id' => conf_get_param('user_use_case_nonprofits_testimonials_cat_id', 233)
+    ),
   );
 
   if ($get_types) {
