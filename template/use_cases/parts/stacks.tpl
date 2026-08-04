@@ -150,12 +150,6 @@
     <h2 class="text-center mb-2">{$title}</h2>
   </div>
 
-  <div class="model-mobile-dots mt-3">
-    {foreach $list_items as $item name=dotloop}
-      <span class="model-mobile-dot {if $smarty.foreach.dotloop.first}is-active{/if}" data-dot="{$smarty.foreach.dotloop.index}"></span>
-    {/foreach}
-  </div>
-
   <div class="model-mobile-carousel">
     {foreach $list_items as $item}
       <div class="model-mobile-slide">

@@ -238,7 +238,7 @@
         {'Meet our staff'|translate}
       </h3>
       <div class="col-md-10">
-        <div class="row justify-content-center justify-content-md-start">
+        <div class="row justify-content-center justify-content-md-start px-2 px-md-0">
           {include file="template/include/card/person_card.tpl"
           name="Pierrick"
           role={'Founder & Lead Developer'|translate}
@@ -488,14 +488,15 @@ add it for lana*}
       const timelineContainer = document.querySelector('.timeline-scroll-container');
       const timelineItems = document.querySelectorAll('.timeline-item');
       const paginationContainer = document.querySelector('.timeline-pagination');
-      const timelineLine = document.querySelector('.timeline-line');
 
       if (timelineContainer && timelineItems.length > 0) {
         timelineItems.forEach((_, index) => {
           const dot = document.createElement('div');
           dot.classList.add('pagination-dot');
           dot.dataset.index = index;
-          paginationContainer.appendChild(dot);
+          if (paginationContainer) {
+            paginationContainer.appendChild(dot);
+          }
         });
         const paginationDots = document.querySelectorAll('.pagination-dot');
 
@@ -503,7 +504,6 @@ add it for lana*}
         const updateActiveMilestone = (activeIndex) => {
           if (activeIndex === lastActiveIndex) return;
           lastActiveIndex = activeIndex;
-
           timelineItems.forEach((item, index) => {
             item.classList.toggle('active', index === activeIndex);
           });
@@ -513,42 +513,44 @@ add it for lana*}
         };
 
         const checkCenterItem = () => {
-          const containerCenter = timelineContainer.getBoundingClientRect().left + (timelineContainer.offsetWidth / 2);
+          const containerCenter = timelineContainer.getBoundingClientRect().left + timelineContainer.offsetWidth / 2;
           let closestIndex = 0;
           let minDistance = Infinity;
 
           timelineItems.forEach((item, index) => {
-            const itemCenter = item.getBoundingClientRect().left + (item.offsetWidth / 2);
+            const itemCenter = item.getBoundingClientRect().left + item.offsetWidth / 2;
             const distance = Math.abs(containerCenter - itemCenter);
             if (distance < minDistance) {
               minDistance = distance;
               closestIndex = index;
             }
           });
-          updateActiveMilestone(closestIndex);
+          if (closestIndex !== lastActiveIndex) {
+            updateActiveMilestone(closestIndex);
+          }
+        };
+
+        const scrollToItem = (index, behavior = 'smooth') => {
+          const targetItem = timelineItems[index];
+          if (targetItem) {
+            targetItem.scrollIntoView({
+              behavior,
+              block: 'nearest',
+              inline: 'center'
+            });
+          }
         };
 
         const adjustTimeline = () => {
           if (timelineItems.length === 0) return;
           const itemWidth = timelineItems[0].offsetWidth;
           const scrollPadding = (timelineContainer.offsetWidth / 2) - (itemWidth / 2);
-
           timelineContainer.style.paddingLeft = `${scrollPadding}px`;
           timelineContainer.style.paddingRight = `${scrollPadding}px`;
+          scrollToItem(lastActiveIndex === -1 ? 0 : lastActiveIndex, 'instant');
         };
 
         timelineContainer.addEventListener('scroll', checkCenterItem);
-
-        const scrollToItem = (index) => {
-          const targetItem = timelineItems[index];
-          if (targetItem) {
-            const scrollLeft = targetItem.offsetLeft - (timelineContainer.offsetWidth / 2) + (targetItem.offsetWidth / 2);
-            timelineContainer.scrollTo({
-              left: scrollLeft,
-              behavior: 'smooth'
-            });
-          }
-        };
 
         timelineItems.forEach((item, index) => {
           item.addEventListener('click', () => scrollToItem(index));
@@ -558,13 +560,16 @@ add it for lana*}
           dot.addEventListener('click', () => scrollToItem(index));
         });
 
-        adjustTimeline();
-        window.addEventListener('resize', adjustTimeline);
+        const resizeObserver = new ResizeObserver(() => {
+          adjustTimeline();
+        });
+        resizeObserver.observe(timelineContainer);
 
-        const initialActiveIndex = 0;
-        updateActiveMilestone(initialActiveIndex);
+        window.addEventListener('orientationchange', () => {
+          setTimeout(adjustTimeline, 100);
+        });
 
-        setTimeout(checkCenterItem, 150);
+        updateActiveMilestone(0);
       }
     });
   </script>
@@ -574,15 +579,23 @@ add it for lana*}
 <section class="container model-container-mobile d-md-none">
   <div class="model-mobile-header text-center mb-4">
     <h2 class="text-center mb-2">{'porg_about_us_model_title'|translate}</h2>
-    <p class="text-center">{'porg_about_us_model_desc'|translate}</p>
+    <p class="text-center mb-4">{'porg_about_us_model_desc'|translate}</p>
   </div>
 
+  
+
+  <div class="model-mobile-dots">
+    <span class="model-mobile-dot is-active" data-dot="0"></span>
+    <span class="model-mobile-dot" data-dot="1"></span>
+    <span class="model-mobile-dot" data-dot="2"></span>
+    <span class="model-mobile-dot" data-dot="3"></span>
+  </div>
   <div class="model-mobile-carousel">
 
     <div class="model-mobile-slide">
       <div class="model-mobile-heading-row">
-        <i class="icon-langage orange-text"></i>
-        <h3>{'porg_about_us_model_title1'|translate}</h3>
+        <i class="icon-langage main-green-text"></i>
+        <h3 class="mt-1">{'porg_about_us_model_title1'|translate}</h3>
       </div>
       <div class="test-card">
         <p class="mb-0">{'porg_about_us_model_desc1'|translate}</p>
@@ -591,8 +604,8 @@ add it for lana*}
 
     <div class="model-mobile-slide">
       <div class="model-mobile-heading-row">
-        <i class="icon-help orange-text"></i>
-        <h3>{'porg_about_us_model_title2'|translate}</h3>
+        <i class="icon-help main-green-text"></i>
+        <h3 class="mt-1">{'porg_about_us_model_title2'|translate}</h3>
       </div>
       <div class="test-card">
         <p class="mb-0">{'porg_about_us_model_desc2'|translate}</p>
@@ -601,8 +614,8 @@ add it for lana*}
 
     <div class="model-mobile-slide">
       <div class="model-mobile-heading-row">
-        <i class="icon-contribute orange-text"></i>
-        <h3>{'porg_about_us_model_title3'|translate}</h3>
+        <i class="icon-contribute main-green-text"></i>
+        <h3 class="mt-1">{'porg_about_us_model_title3'|translate}</h3>
       </div>
       <div class="test-card">
         <p class="mb-0">{'porg_about_us_model_desc3'|translate}</p>
@@ -611,21 +624,14 @@ add it for lana*}
 
     <div class="model-mobile-slide">
       <div class="model-mobile-heading-row">
-        <i class="icon-contribute orange-text"></i>
-        <h3>{'porg_about_us_model_title4'|translate}</h3>
+        <i class="icon-contribute main-green-text"></i>
+        <h3 class="mt-1">{'porg_about_us_model_title4'|translate}</h3>
       </div>
       <div class="test-card">
         <p class="mb-0">{'porg_about_us_model_desc4'|translate}</p>
         <img class="img-circle w-100 mt-3" src="{$PORG_ROOT_URL}images/about-us/{$CIRCLE_IMAGE}" alt="Piwigo screenshot">
       </div>
     </div>
-  </div>
-
-  <div class="model-mobile-dots mt-3">
-    <span class="model-mobile-dot is-active" data-dot="0"></span>
-    <span class="model-mobile-dot" data-dot="1"></span>
-    <span class="model-mobile-dot" data-dot="2"></span>
-    <span class="model-mobile-dot" data-dot="3"></span>
   </div>
 </section>
 
