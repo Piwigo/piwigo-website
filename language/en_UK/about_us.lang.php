@@ -1,4 +1,6 @@
 <?php
+$lang['page_meta_title'] = 'About Piwigo - Open source and SaaS image library software';
+$lang['page_meta_description'] = 'Piwigo isn\'t just image library software, it is also a story, a team, and values. Let\'s get to know each other!';
 
 $lang['porg_about_us_title'] = 'Open source photo management software <br><span class="orange-text">since 2002</span>';
 $lang['porg_about_us_desc'] = 'For more than 20 years, Piwigo has remained true to the same idea: giving people full control over their photo and video collections through open source software that is independent, sustainable and built around real user needs.';

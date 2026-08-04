@@ -1,4 +1,6 @@
 <?php
+$lang['page_meta_title'] = 'Photo gallery for photographers and individuals - Piwigo';
+$lang['page_meta_description'] = 'Piwigo is a simple, secure way for professional and amateur photographers to host and share their photo galleries on the web.';
 
 $lang['use cases perso header title'] = 'Photo gallery software for <span class="orange-text">photographers and individuals</span>';
 $lang['use cases perso header description'] = 'Organize, manage and share your photos in a gallery that you fully control, whether you’re preserving memories, showcasing your work or documenting a lifelong passion.';

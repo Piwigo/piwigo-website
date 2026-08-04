@@ -1,4 +1,6 @@
 <?php
+$lang['page_meta_title'] = 'Image library software for travel and tourism industry - Piwigo';
+$lang['page_meta_description'] = 'Image library and digital asset management software for travel and tourism industry: tourist information centers, hotels, museums, ski resorts, etc.';
 
 $lang['use cases tourism header title'] = 'Photo management software for <span class="orange-text">tourism organizations</span>';
 $lang['use cases tourism header description'] = 'Manage, organize and share your destination’s photos, videos and marketing assets from one central library.<br><br>Used by tourism boards, museums, resorts, hotels and visitor attractions worldwide.';

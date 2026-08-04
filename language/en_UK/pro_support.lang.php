@@ -1,4 +1,6 @@
 <?php
+$lang['page_meta_title'] = 'Professional support, from the people behind Piwigo';
+$lang['page_meta_description'] = 'Our support team helps organizations deploy, configure and make the most of Piwigo.';
 
 $lang['porg_pro_support_header_title'] = '<span class="orange-text">Professional support</span> from the people behind Piwigo';
 $lang['porg_pro_support_header_description'] = 'Whether you’re using Piwigo Cloud or hosting Piwigo on your own infrastructure, our professional support helps organizations deploy, configure and make the most of Piwigo.<br><br><span class="strong-text">Real people. Real product expertise. Direct access to the team behind Piwigo.</span>';

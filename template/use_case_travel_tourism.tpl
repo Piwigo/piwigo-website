@@ -143,7 +143,7 @@
 
   {include file='template/use_cases/parts/host.tpl' title={'use cases tourism host title'|translate} description={'use cases tourism host description'|translate} cloud_description={'use cases tourism host cloud'|translate} self_hosted_description={'use cases tourism host self'|translate} cloud_btn_text={'use cases tourism host cloud btn text'|translate} cloud_btn_link="{$PORG_ROOT}{$URL.signup}" self_hosted_btn_text={'use cases tourism host self hosted btn text'|translate}}
 
-  {include file='template/use_cases/parts/use.tpl' title={'use cases tourism use title'|translate} description1={'use cases tourism use description1'|translate} description2={'use cases tourism use description2'|translate} btn_text={'use cases tourism use btn text'|translate} btn_link="{$PORG_ROOT}{$URL.cotentin}" img_src="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/02/20260702160631-a2c76169-xl.webp"}
+  {include file='template/use_cases/parts/use.tpl' title={'use cases tourism use title'|translate} description1={'use cases tourism use description1'|translate} description2={'use cases tourism use description2'|translate} btn_text={'use cases tourism use btn text'|translate} btn_link="{$PORG_ROOT}{$URL.case_study_cotentin}" img_src="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/02/20260702160631-a2c76169-xl.webp"}
 
   {include file='template/use_cases/parts/comments.tpl' title={'use cases tourism comments title'|translate} comments=$tourism_testimonials btn_text={'use cases tourism comments btn'|translate} btn_link="{$PORG_ROOT}{$URL.users}{if $URL.users|strstr:'?'}&{else}?{/if}use_case=tourism"}
 

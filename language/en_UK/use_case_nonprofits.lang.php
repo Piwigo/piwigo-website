@@ -1,4 +1,6 @@
 <?php
+$lang['page_meta_title'] = 'Image library software and DAM for non-profit organizations - Piwigo';
+$lang['page_meta_description'] = 'Piwigo photo library software enables non-profit organizations to manage their digital assets efficiently and at a lower cost.';
 
 $lang['use cases association header title'] = 'Photo management software for <span class="orange-text">non-profit organizations</span>';
 $lang['use cases association header description'] = 'Centralize photos, videos and visual assets in one secure library. Organize, manage and share media across your organization, whether you support communities, protect nature, promote culture, run sports organizations or defend a cause.';

@@ -1,4 +1,6 @@
 <?php
+$lang['page_meta_title'] = 'Cloud or self-hosting your photo library - Piwigo';
+$lang['page_meta_description'] = 'Run Piwigo as a cloud service hosted in Europe or self-host Piwigo on your own infrastructure';
 
 $lang['pricing btn cloud description'] = 'Piwigo SaaS, hosting & support';
 $lang['pricing btn selfhosted description'] = 'Piwigo on your own server';

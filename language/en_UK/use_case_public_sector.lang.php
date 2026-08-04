@@ -1,4 +1,6 @@
 <?php
+$lang['page_meta_title'] = 'Image library software for the public sector - Piwigo';
+$lang['page_meta_description'] = 'Piwigo image library software enables institutions and public services to manage their digital resources efficiently and at a lower cost.';
 
 $lang['use cases public header title'] = 'Photo management made simple for <span class="orange-text">public organizations</span>  ';
 $lang['use cases public header description'] = 'Centralize your photos, videos and communication assets in one secure place. Help every department organize, preserve and share visual content, from communication teams to technical services and field teams.';

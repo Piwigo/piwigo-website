@@ -1,4 +1,7 @@
 <?php
+$lang['page_meta_title'] = 'Pricing - Piwigo';
+$lang['page_meta_description'] = 'Piwigo fits all budgets and all sizes of organizations. Cloud-hosted or self-hosted plans.';
+
 $lang['pricing main title part 1'] = 'Choose <span class="main-orange-text">the plan that</span><br><span class="main-orange-text">suits you</span>';
 $lang['pricing main title part 2'] = 'most';
 $lang['pricing main description'] = 'Piwigo fits all budgets and all sizes of organizations.';

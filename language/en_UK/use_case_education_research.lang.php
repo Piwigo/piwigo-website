@@ -1,4 +1,6 @@
 <?php
+$lang['page_meta_title'] = 'Image library software and DAM for Education and Research - Piwigo';
+$lang['page_meta_description'] = 'Piwigo image library software enables schools, colleges and universities to manage their digital assets efficiently and at a lower cost.';
 
 $lang['use cases education header title'] = 'Photo management software for <span class="orange-text">Education and Research</span>';
 $lang['use cases education header description'] = 'Centralize photos, videos and visual assets in one secure library. Organize, manage and share content with staff, students, researchers and the public, from everyday school life to research projects and institutional communication.';

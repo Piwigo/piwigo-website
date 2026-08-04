@@ -118,7 +118,7 @@
           <div class="card-body d-flex flex-column">
             <h3 class="card-title main-menu-item-title my-4">{'porg_cases1_title'|translate}</h3>
             <div class="mt-auto pt-2">
-              {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'Read customer story'|translate} href="{$PORG_ROOT}{$URL.wessex}" class="card-btn w-100"}
+              {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'Read customer story'|translate} href="{$PORG_ROOT}{$URL.case_study_wessex}" class="card-btn w-100"}
             </div>
           </div>
         </div>
@@ -129,7 +129,7 @@
           <div class="card-body d-flex flex-column">
             <h3 class="card-title main-menu-item-title my-4">{'porg_cases2_title'|translate}</h3>
             <div class="mt-auto pt-2">
-              {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'Read customer story'|translate} href="{$PORG_ROOT}{$URL.indre}" class="card-btn w-100"}
+              {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'Read customer story'|translate} href="{$PORG_ROOT}{$URL.case_study_indre}" class="card-btn w-100"}
             </div>
           </div>
         </div>
@@ -140,7 +140,7 @@
           <div class="card-body d-flex flex-column">
             <h3 class="card-title main-menu-item-title my-4">{'porg_cases3_title'|translate}</h3>
             <div class="mt-auto pt-2">
-              {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'Read customer story'|translate} href="{$PORG_ROOT}{$URL.icam}" class="card-btn w-100"}
+              {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'Read customer story'|translate} href="{$PORG_ROOT}{$URL.case_study_icam}" class="card-btn w-100"}
             </div>
           </div>
         </div>
@@ -151,7 +151,7 @@
           <div class="card-body d-flex flex-column">
             <h3 class="card-title main-menu-item-title my-4">{'porg_cases5_title'|translate}</h3>
             <div class="mt-auto pt-2">
-              {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'Read customer story'|translate} href="{$PORG_ROOT}{$URL.cotentin}" class="card-btn w-100"}
+              {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'Read customer story'|translate} href="{$PORG_ROOT}{$URL.case_study_cotentin}" class="card-btn w-100"}
             </div>
           </div>
         </div>

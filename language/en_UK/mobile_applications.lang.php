@@ -1,4 +1,6 @@
 <?php
+$lang['page_meta_title'] = 'Mobile app for iOS and Android - Piwigo';
+$lang['page_meta_description'] = 'Use the free Piwigo mobile app to manage your photo library on the go.';
 
 $lang['mobile_applications_title_pt1'] = 'Piwigo <span class="orange-text">mobile app</span> for ' ;
 $lang['mobile_applications_title_pt2'] = 'iOS' ;

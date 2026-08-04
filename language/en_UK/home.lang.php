@@ -1,9 +1,12 @@
 <?php
-$lang['page_meta_description'] = 'Manage your photo library with Piwigo! Free and open source software to organize and share your photos and digital media on the web.';
+$lang['page_meta_title'] = 'Piwigo | Image library software and DAM for organizations';
+$lang['page_meta_description'] = 'Manage and share your media with image library software for organizations. A flexible DAM solution, developed and hosted in Europe.';
+
 $lang['Piwigo - Manage your photo collection'] = 'Piwigo - Open source photo management software';
 $lang['porg_home_title'] = 'Manage, share and organize your photos and videos.';
-$lang['porg_home_desc1'] = 'Piwigo is an open source digital asset management solution and photo library software.';
-$lang['porg_home_desc2'] = 'Use it as a hosted service or self-host it on your own infrastructure, with full control and no feature limitations.';
+$lang['porg_home_desc1'] = 'Piwigo is an open source digital asset management solution and photo library software. Developed and hosted in Europe.';
+$lang['porg_home_desc2'] = 'Use it as a cloud service or self-host it on your own infrastructure, with full control and no feature limitations.';
+
 $lang['porg_home_btn1'] = 'Start your free trial';
 $lang['porg_home_btn2'] = 'Choose your setup';
 

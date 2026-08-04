@@ -23,7 +23,7 @@
               <h3 class="card-title main-menu-item-title">{'porg_cases1_title'|translate}</h3>
               <p class="card-text sub-h3">"{'porg_cases1_description'|translate}"</p>
               <div class="mt-auto">
-                {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'Read customer story'|translate} href="{$PORG_ROOT}{$URL.wessex}" class="card-btn w-100"}
+                {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'Read customer story'|translate} href="{$PORG_ROOT}{$URL.case_study_wessex}" class="card-btn w-100"}
               </div>
             </div>
           </div>
@@ -35,7 +35,7 @@
               <h3 class="card-title main-menu-item-title">{'porg_cases2_title'|translate}</h3>
               <p class="card-text sub-h3">"{'porg_cases2_description'|translate}"</p>
               <div class="mt-auto">
-                {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'Read customer story'|translate} href="{$PORG_ROOT}{$URL.indre}" class="card-btn w-100"}
+                {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'Read customer story'|translate} href="{$PORG_ROOT}{$URL.case_study_indre}" class="card-btn w-100"}
               </div>
             </div>
           </div>
@@ -47,7 +47,7 @@
               <h3 class="card-title main-menu-item-title">{'porg_cases3_title'|translate}</h3>
               <p class="card-text sub-h3"> "{'porg_cases3_description'|translate}"</p>
               <div class="mt-auto">
-                {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'Read customer story'|translate} href="{$PORG_ROOT}{$URL.icam}" class="card-btn w-100"}
+                {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'Read customer story'|translate} href="{$PORG_ROOT}{$URL.case_study_icam}" class="card-btn w-100"}
               </div>
             </div>
           </div>
@@ -59,7 +59,7 @@
               <h3 class="card-title main-menu-item-title">{'porg_cases4_title'|translate}</h3>
               <p class="card-text sub-h3">"{'porg_cases4_description'|translate}"</p>
               <div class="mt-auto">
-                {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'Read customer story'|translate} href="{$PORG_ROOT}{$URL.ect}" class="card-btn w-100"}
+                {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'Read customer story'|translate} href="{$PORG_ROOT}{$URL.case_study_ect}" class="card-btn w-100"}
               </div>
             </div>
           </div>
@@ -71,7 +71,7 @@
               <h3 class="card-title main-menu-item-title">{'porg_cases5_title'|translate}</h3>
               <p class="card-text sub-h3">"{'porg_cases5_description'|translate}"</p>
               <div class="mt-auto">
-                {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'Read customer story'|translate} href="{$PORG_ROOT}{$URL.cotentin}" class="card-btn w-100"}
+                {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'Read customer story'|translate} href="{$PORG_ROOT}{$URL.case_study_cotentin}" class="card-btn w-100"}
               </div>
             </div>
           </div>

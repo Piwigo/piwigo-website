@@ -1,4 +1,6 @@
 <?php
+$lang['page_meta_title'] = 'Digital Asset Management for companies - Piwigo';
+$lang['page_meta_description'] = 'Piwigo is professional image library software that meets the needs of every type of company, from small businesses to large corporations.';
 
 $lang['use cases company header title'] = 'Digital asset management made simple for <span class="orange-text">companies</span>';
 $lang['use cases company header description'] = 'Centralize your company’s photos, videos and brand assets in one secure place. Give every team easy access to the right content, from marketing and communication to sales and product teams.';
