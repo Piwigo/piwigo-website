@@ -21,7 +21,7 @@
           </div>
         {else}
           <div class="d-none d-md-block" {if $desc2 != ''}style="margin-bottom: 1.5rem;{/if}">
-            {include file='template/include/buttons/button.tpl' variant='cta_secondary' label={$btn_text} href='{$btn_link}'}
+            {include file='template/include/buttons/button.tpl' variant='cta_secondary' label={$btn_text} href={$btn_link}}
           </div>
         {/if}
       {/if}
