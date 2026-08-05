@@ -68,6 +68,9 @@ $(document).ready(function () {
       if (topicIdFromUrl === 'testimonial') {
         dataValueToSelect = 'Send a testimonial';
       }
+      if (topicIdFromUrl === 'donation') {
+        dataValueToSelect = 'Make a donation';
+      }
       // add more 'else if' for other topic_ids here
 
       if (dataValueToSelect) {

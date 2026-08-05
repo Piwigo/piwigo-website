@@ -40,7 +40,9 @@
       {include
 				file='template/include/sub_menu_items/sub_menu_itemc.tpl'
 				category_type='use-case-submenu'
+				is_ext=true
 				title={'Developer resources'|translate} description={'Developer resources desc'|translate} icon_class='icon-git'
+        href="https://github.com/Piwigo/Piwigo/wiki"
       }
     </div>
   </div>

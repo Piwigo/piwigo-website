@@ -111,6 +111,10 @@
                 <span class="custom-radio"></span>
                 <span class="custom-option-label p-boxed">{'Send a testimonial'|translate}</span>
               </div>
+              <div class="custom-option" data-value="Make a donation">
+                <span class="custom-radio"></span>
+                <span class="custom-option-label p-boxed">{'Make a donation'|translate}</span>
+              </div>
               <div class="custom-option" data-value="Other">
                 <span class="custom-radio"></span>
                 <span class="custom-option-label p-boxed">{'Other'|translate}</span>

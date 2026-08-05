@@ -48,7 +48,7 @@
 .highlight-wrap span,
 p.mobile-app-title-circle {
   font-size: 48px;
-  font-family: "SOra", sans-serif;
+  font-family: "Sora", sans-serif;
   font-weight: 800;
 }
 
@@ -404,4 +404,17 @@ p.mobile-app-perm-description {
   .triple-true-title {
     font-size: 36px;
   }
+}
+
+
+
+@media (max-width: 768px) {
+  section:not(.mobile-app-perm-part):not(.mobile-colleagues-part) {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .mobile-app-title-footer {
+    margin-bottom: 30px;
+}
 }

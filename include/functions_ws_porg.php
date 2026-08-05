@@ -105,6 +105,7 @@ function ws_porg_contact_send($params, &$service)
     'Sales inquiry',
     'Report a security issue',
     'Send a testimonial',
+    'Make a donation',
     'Other'
   );
 

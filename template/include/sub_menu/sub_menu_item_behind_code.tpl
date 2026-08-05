@@ -12,6 +12,7 @@
 			{include
 				file='template/include/sub_menu_items/sub_menu_itemc.tpl'
 				category_type='feature-submenu'
+        href="{$PORG_ROOT}{$URL.get_involved}"
 				title={'Contribute'|translate} description={'Contribute desc'|translate} icon_class='icon-contribute'
 			}
 		</div>

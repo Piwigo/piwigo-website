@@ -1,0 +1,160 @@
+.container-toppage {
+  margin-top: 70px;
+  margin-bottom: 120px;
+}
+
+.users-trial-btn {
+  align-self: flex-start;
+  width: fit-content;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 20px;
+}
+
+.users-header-text {
+  padding-right: 60px;
+}
+
+.grey-box {
+  background-color: var(--grey);
+  border-radius: 10px;
+  padding: 50px 150px;
+}
+
+.help-list-item {
+  display: flex;
+  align-items: center;
+  font-family: "Kanit", sans-serif;
+  font-size: 14px;
+}
+
+.help-list-item i {
+  color: var(--main_flash_green);
+  font-size: 12px;
+  margin-right: 6px;
+}
+
+.help-key-points {
+  margin: 30px 25px 50px;
+}
+
+.container-trans {
+  padding-top: 180px;
+  padding-bottom: 150px;
+}
+
+.trans-list-item {
+  display: flex;
+  align-items: center;
+}
+
+.icon-cube {
+  width: 20px;
+  height: 20px;
+  background-color: var(--secondary_flash_green);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 2px;
+  margin-right: 10px;
+}
+
+.icon-cube i {
+  color: var(--accent_green);
+  font-size: 11px;
+  line-height: 1;
+}
+
+.container-users {
+  padding-top: 150px;
+  padding-bottom: 120px;
+}
+
+.container-more {
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+.container-flower {
+  padding-bottom: 270px;
+}
+
+.container-flower-part {
+  position: relative;
+  padding: 40px 0;
+}
+
+.flower-container-img {
+  width: 100%;
+  height: 475px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.flower-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.glass-card1 {
+  left: -8%;
+  top: -1%;
+  max-width: 400px;
+}
+
+.glass-card2 {
+  right: -8%;
+  bottom: -14%;
+  max-width: 500px;
+}
+
+@media (max-width: 768px) {
+  .users-header-text {
+    padding: 0 20px;
+  }
+
+  .grey-box {
+    padding: 30px 20px;
+  }
+
+  .container-open,
+  .container-toppage,
+  .container-trans,
+  .container-dev,
+  .container-users,
+  .container-finance,
+  .container-more,
+  .container-flower {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .help-key-points {
+    margin: 30px 10px 30px;
+  }
+
+  .container-open .btn-text,
+  .container-more .btn-text {
+    font-size: 13px;
+    font-weight: 800;
+    padding: 9px 16px;
+  }
+
+  .glass-card1 {
+    left: unset;
+    margin: 0 20px;
+    top: -6%;
+  }
+
+  .glass-card2 {
+    right: unset;
+    margin: 0 20px;
+    bottom: -32%;
+  }
+}

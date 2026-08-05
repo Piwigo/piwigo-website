@@ -22,5 +22,6 @@ $lang['porg_contact_form_title'] = 'Send us a message';
 $lang['Topic'] = 'Topic';
 $lang['Sales inquiry'] = 'Sales inquiry';
 $lang['Report a security issue'] = 'Report a security issue';
+$lang['Make a donation'] = 'Make a donation';
 $lang['Other'] = 'Other';
 ?>
