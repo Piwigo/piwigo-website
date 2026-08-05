@@ -11,19 +11,16 @@
         {$desc}
       </p>
       {if $btn_text}
-        {if $btn_orange}
-          <div class="d-none d-md-flex justify-content-start" {if $desc2 != ''}style="margin-bottom: 1.5rem;{/if}">
-            {include file='template/include/buttons/button.tpl' variant='cta_primary' label={$btn_text} href='{$btn_link}'}
-          </div>
-        {else if $btn_green}
-          <div class="d-none d-md-flex justify-content-start" {if $desc2 != ''}style="margin-bottom: 1.5rem;{/if}">
-            {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={$btn_text} href='{$btn_link}'}
-          </div>
-        {else}
-          <div class="d-none d-md-block" {if $desc2 != ''}style="margin-bottom: 1.5rem;{/if}">
-            {include file='template/include/buttons/button.tpl' variant='cta_secondary' label={$btn_text} href={$btn_link}}
-          </div>
-        {/if}
+        {assign var="btn_variant" value="cta_secondary"}
+        {if $btn_orange}{assign var="btn_variant" value="cta_primary"}{/if}
+        {if $btn_green}{assign var="btn_variant" value="cta_primary_green"}{/if}
+        <div class="d-none {if $btn_variant == 'cta_secondary'}d-md-block{else}d-md-flex justify-content-start{/if}" {if $desc2 != ''}style="margin-bottom: 1.5rem;"{/if}>
+          {if isset($target)}
+            {include file='template/include/buttons/button.tpl' variant=$btn_variant label=$btn_text href=$btn_link target=$target}
+          {else}
+            {include file='template/include/buttons/button.tpl' variant=$btn_variant label=$btn_text href=$btn_link}
+          {/if}
+        </div>
       {/if}
       <p class="feature-description feature-description-desktop mb-4 text-center text-md-start">
         {$desc2}
@@ -43,19 +40,16 @@
       {$desc}
     </p>
     {if $btn_text}
-      {if $btn_orange}
-        <div class="d-flex justify-content-center" {if $desc2 != ''}style="margin-bottom: 1.5rem;{/if}">
-          {include file='template/include/buttons/button.tpl' variant='cta_primary' label={$btn_text} href='{$btn_link}'}
-        </div>
-      {else if $btn_green}
-        <div style="margin-bottom: 1.5rem;">
-          {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={$btn_text} href='{$btn_link}'}
-        </div>
-      {else}
-        <div style="margin-bottom: 1.5rem;">
-          {include file='template/include/buttons/button.tpl' variant='cta_secondary' label={$btn_text} href='{$btn_link}'}
-        </div>
-      {/if}
+      {assign var="btn_variant" value="cta_secondary"}
+      {if $btn_orange}{assign var="btn_variant" value="cta_primary"}{/if}
+      {if $btn_green}{assign var="btn_variant" value="cta_primary_green"}{/if}
+      <div class="{if $btn_variant == 'cta_primary'}d-flex justify-content-center{/if}" {if $desc2 != '' or $btn_variant != 'cta_primary'}style="margin-bottom: 1.5rem;"{/if}>
+        {if isset($target)}
+          {include file='template/include/buttons/button.tpl' variant=$btn_variant label=$btn_text href=$btn_link target=$target}
+        {else}
+          {include file='template/include/buttons/button.tpl' variant=$btn_variant label=$btn_text href=$btn_link}
+        {/if}
+      </div>
     {/if}
     <p class="feature-description feature-description-mobile text-center text-md-start">
       {$desc2}
