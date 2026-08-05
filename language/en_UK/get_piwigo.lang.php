@@ -109,7 +109,7 @@ $lang['selfhosted-professional-serv-list3-text1'] = 'Installation & configuratio
 $lang['selfhosted-professional-serv-list3-text2'] = 'Update support';
 $lang['selfhosted-professional-serv-list3-text3'] = 'Full server management';
 
-$lang['selfhosted-professional-serv-btn'] = 'View self-hosted offers';
+$lang['selfhosted-professional-serv-btn'] = 'View self-hosted plans';
 
 $lang['selfhosted-ecosystem-title'] = 'A living open-source ecosystem';
 $lang['selfhosted-ecosystem-desc'] = 'Piwigo is an actively maintained open-source project backed by a large ecosystem of contributors, plugins, themes and community resources.';
