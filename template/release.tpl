@@ -114,7 +114,7 @@
       <div class="col-md-3">
       </div>
       <div class="col-md-3 mb-5 mb-md-0 d-flex align-items-center">
-        {include file='template/include/buttons/button.tpl' variant='menu_btn_green' label={'Automatic upgrade'|translate} href="{$URL.automatic_update}"}
+        {include file='template/include/buttons/button.tpl' variant='menu_btn_green' label={'Automatic upgrade'|translate} href="{$AUTOMATIC_UPGRADE_URL}" target="_blank"}
       </div>
     </div>
     <div class="transfer-upgrade row">
@@ -138,7 +138,7 @@
       <div class="col-md-3">
       </div>
       <div class="col-md-3 mb-5 mb-md-0 d-flex align-items-center">
-        {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'Manual Upgrade'|translate} href="{$URL.manual_update}"}
+        {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'Manual Upgrade'|translate} href="{$MANUAL_UPGRADE_URL}" target="_blank"}
       </div>
     </div>
   </div>

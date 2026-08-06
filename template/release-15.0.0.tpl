@@ -27,22 +27,22 @@
         <ul>
           <li><a href="#user_manager" class="icon-arrows-cw">{'porg_v15_user_manager_title'|translate}</a></li>
           <li class="badge badge-quote"><a href="#interview_willy"><img src="{$PORG_ROOT_URL}images/changelogs/quotes.svg" class="quotes me-1">{'Interview %s'|translate:'Willy'}</a></li>
-          <li><a href="#system_activities" class="icon-star">{'porg_v15_system_activities_title'|translate}</a></li>
+          <li><a href="#system_activities" class="icon-star-1">{'porg_v15_system_activities_title'|translate}</a></li>
           <li><a href="#batch_manager" class="icon-arrows-cw">{'porg_v15_batch_manager_title'|translate}</a></li>
         </ul>
       </div>
       <div class="col-md-4">
         <ul>
           <li class="badge badge-quote"><a href="#interview_marceau"><img src="{$PORG_ROOT_URL}images/changelogs/quotes.svg" class="quotes me-1">{'Interview %s'|translate:'Marceau'}</a></li>
-          <li><a href="#embedpdf" class="icon-star">{'porg_v15_embedpdf_title'|translate}</a></li>
-          <li><a href="#album_selector" class="icon-star">{'porg_v15_album_selector_title'|translate}</a></li>
-          <li><a href="#search_engine" class="icon-star">{'porg_v15_search_engine_title'|translate}</a></li>
+          <li><a href="#embedpdf" class="icon-star-1">{'porg_v15_embedpdf_title'|translate}</a></li>
+          <li><a href="#album_selector" class="icon-star-1">{'porg_v15_album_selector_title'|translate}</a></li>
+          <li><a href="#search_engine" class="icon-star-1">{'porg_v15_search_engine_title'|translate}</a></li>
         </ul>
       </div>
       <div class="col-md-4">
         <ul>
           <li><a href="#album_manager" class="icon-brush">{'porg_v15_album_manager_title'|translate}</a></li>
-          <li><a href="#anonymous_stats" class="icon-star">{'porg_v15_anonymous_stats_title'|translate}</a></li>
+          <li><a href="#anonymous_stats" class="icon-star-1">{'porg_v15_anonymous_stats_title'|translate}</a></li>
           <li><a href="#technical_features" class="icon-tools">{'Technical features'|translate}</a></li>
         </ul>
 
@@ -51,7 +51,7 @@
   </div>
 </section>
 
-<a href="#release_menu" class="btn-back-to-menu" title="go to menu"></a>
+<a href="#release_menu" class="btn-back-to-menu" title="go to menu"><i class="icon-down-open"></i></a>
 
 <section class="container">
 
@@ -143,7 +143,7 @@
 </div>
 
 <div class="section-part">
-  <h3 id="system_activities">{'porg_v15_system_activities_title'|translate}<span class="badge badge-new icon-star">{'porg_v15_badge_new'|translate}</span></h3>
+  <h3 id="system_activities">{'porg_v15_system_activities_title'|translate}<span class="badge badge-new icon-star-1">{'porg_v15_badge_new'|translate}</span></h3>
 
   <div class="row second-image-and-caption ">
     <div class="col-sm-12 col-md-4">
@@ -201,7 +201,7 @@
 {* embedpdf *}
 
 <div class="section-part">
-  <h3 id="embedpdf">{'porg_v15_embedpdf_title'|translate}<span class="badge badge-new icon-star">{'porg_v15_badge_new'|translate}</span></h3>
+  <h3 id="embedpdf">{'porg_v15_embedpdf_title'|translate}<span class="badge badge-new icon-star-1">{'porg_v15_badge_new'|translate}</span></h3>
 
   <div class="row second-image-and-caption">
     <div class="col-sm-12 col-md-4">
@@ -245,7 +245,7 @@
 {* search_engine *}
 
 <div class="section-part">
-  <h3 id="search_engine">{'porg_v15_search_engine_title'|translate}<span class="badge badge-new icon-star">{'porg_v15_badge_new'|translate}</span></h3>
+  <h3 id="search_engine">{'porg_v15_search_engine_title'|translate}<span class="badge badge-new icon-star-1">{'porg_v15_badge_new'|translate}</span></h3>
 
   <div class="row first-image-and-caption">
     <div class="col-sm-12 col-md-8 ">

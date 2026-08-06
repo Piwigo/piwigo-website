@@ -249,6 +249,8 @@ SELECT state
       'PORG_IS_PRODUCTION' => preg_match('/^([a-z]+\.)?piwigo\.org$/', $_SERVER['HTTP_HOST']),
       'HEADER_SHOW_HOME' => in_array($user['language'], array('en_UK', 'zh_CN', 'it_IT', 'pt_BR')),
       'switch_languages' => $switch_languages,
+      'AUTOMATIC_UPGRADE_URL' => $lang['porg_urls']['automatic_update'] ?? '//' . $page['porg_domain_prefix'] . 'piwigo.org/guides/mise-a-jour/automatique',
+      'MANUAL_UPGRADE_URL' => $lang['porg_urls']['manual_update'] ?? '//' . $page['porg_domain_prefix'] . 'piwigo.org/guides/mise-a-jour/manuelle',
     )
   );
 

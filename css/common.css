@@ -474,6 +474,16 @@ h4 {
   line-height: 100%;
 }
 
+.releases-menu-item-small {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 20px;
+  text-align: left;
+  color: var(--dark);
+  line-height: 100%;
+}
+
 @media (max-width: 1200px) {
   .btn-menu {
     font-size: 12px;
@@ -870,7 +880,11 @@ input.is-invalid {
 }
 
 #emailWarningIcon {
-  background: linear-gradient(92.17deg, #ff2f63 19.22%, var(--main_orange) 96.41%);
+  background: linear-gradient(
+    92.17deg,
+    #ff2f63 19.22%,
+    var(--main_orange) 96.41%
+  );
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -885,7 +899,6 @@ input.is-invalid {
   right: 40px;
   color: var(--main_flash_green);
 }
-
 
 #emailCheckIcon {
   color: var(--main_flash_green);
@@ -1012,14 +1025,18 @@ Glass cards
 }
 
 .glass-card::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   border-radius: 10px;
   padding: 1px;
   background: linear-gradient(91.79deg, #d9d9d9 16.42%, var(--grey) 98.39%);
-  -webkit-mask: linear-gradient(var(--clear) 0 0) content-box, linear-gradient(var(--clear) 0 0);
-  mask: linear-gradient(var(--clear) 0 0) content-box, linear-gradient(var(--clear) 0 0);
+  -webkit-mask:
+    linear-gradient(var(--clear) 0 0) content-box,
+    linear-gradient(var(--clear) 0 0);
+  mask:
+    linear-gradient(var(--clear) 0 0) content-box,
+    linear-gradient(var(--clear) 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   pointer-events: none;
@@ -1049,7 +1066,7 @@ Glass cards
   inset: 0;
   border-radius: 10px;
   padding: 1px;
-  background: linear-gradient(91.79deg, #D9D9D9 16.42%, #F7F7F7 98.39%);
+  background: linear-gradient(91.79deg, #d9d9d9 16.42%, #f7f7f7 98.39%);
   -webkit-mask:
     linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
@@ -1059,4 +1076,60 @@ Glass cards
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   pointer-events: none;
+}
+
+.tos {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.tos.container {
+  max-width: 1100px;
+}
+
+.tos h1 {
+  margin-bottom: 40px;
+}
+
+.tos h3 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.tos p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.tos ul {
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.tos ul li {
+  margin-bottom: 10px;
+}
+
+.tos em {
+  font-size: 16px;
+}
+
+.tos em a {
+  color: var(--main_orange);
+}
+
+.tos .pcom-tos-history {
+  margin-top: 60px;
+  padding-top: 30px;
+  border-top: 1px solid var(--light_grey);
+}
+
+.tos .pcom-tos-history h3 {
+  margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  .tos {
+    padding: 20px 40px;
+  }
 }

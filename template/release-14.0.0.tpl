@@ -26,15 +26,15 @@
       <div class="col-md-4">
         <ul>
           <li><a href="#search_engine" class="icon-arrows-cw">{'porg_v14_search_title'|translate}</a></li>
-          <li><a href="#newfiles" class="icon-star">{'porg_v14_newfiles_title_menu'|translate}</a></li>
+          <li><a href="#newfiles" class="icon-star-1">{'porg_v14_newfiles_title_menu'|translate}</a></li>
           <li><a href="#albumeditor" class="icon-arrows-cw">{'porg_v14_albumeditor_title'|translate}</a></li>
           <li class="badge badge-quote"><a href="#interview_alice"><img src="{$PORG_ROOT_URL}images/changelogs/quotes.svg" class="quotes me-1">{'Interview %s'|translate:'Alice'}</a></li>
         </ul>
       </div>
       <div class="col-md-4">
         <ul>
-          <li><a href="#notificationgroup" class="icon-star">{'porg_v14_notificationgroup_title'|translate}</a></li>
-          <li><a href="#duplicates" class="icon-star">{'porg_v14_duplicates_title'|translate}</a></li>
+          <li><a href="#notificationgroup" class="icon-star-1">{'porg_v14_notificationgroup_title'|translate}</a></li>
+          <li><a href="#duplicates" class="icon-star-1">{'porg_v14_duplicates_title'|translate}</a></li>
           <li><a href="#mimetypes" class="icon-brush">{'porg_v14_mimetypes_title'|translate}</a></li>
           <li class="badge badge-quote"><a href="#interview_claire"><img src="{$PORG_ROOT_URL}images/changelogs/quotes.svg" class="quotes me-1">{'Interview %s'|translate:'Claire'}</a></li>
         </ul>
@@ -50,7 +50,7 @@
   </div>
 </section>
 
-<a href="#release_menu" class="btn-back-to-menu" title="go to menu"></a>
+<a href="#release_menu" class="btn-back-to-menu" title="go to menu"><i class="icon-down-open"></i></a>
 
 <section class="container">
 
@@ -133,7 +133,7 @@
 
 
 <div class="section-part">
-  <h3 id="notificationgroup">{'porg_v14_notificationgroup_title'|translate}<span class="badge badge-new icon-star">{'porg_v14_badge_new'|translate}</span></h3>
+  <h3 id="notificationgroup">{'porg_v14_notificationgroup_title'|translate}<span class="badge badge-new icon-star-1">{'porg_v14_badge_new'|translate}</span></h3>
 
   <div class="row first-image-and-caption">
     <div class="col-sm-12 col-md-8 ">
@@ -183,7 +183,7 @@
 </div>
 
 <div class="section-part">
-  <h3 id="storagetooltips">{'porg_v14_storagetooltips_title'|translate}<span class="badge badge-new icon-star">{'porg_v14_badge_new'|translate}</span></h3>
+  <h3 id="storagetooltips">{'porg_v14_storagetooltips_title'|translate}<span class="badge badge-new icon-star-1">{'porg_v14_badge_new'|translate}</span></h3>
 
   <div class="row first-image-and-caption">
     <div class="col-sm-12 col-md-8 ">

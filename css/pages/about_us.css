@@ -627,7 +627,7 @@
   }
 
   .container-team .feature-benefits-strip {
-    padding: 30px 50px;
+    padding: 30px;
   }
 
   .container-team .feature-benefits-strip .feature-benefit-text {
@@ -644,6 +644,7 @@
 
   .milestones-title {
     margin-left: 20px;
+    margin-right: 20px;
     margin-bottom: 50px;
   }
 

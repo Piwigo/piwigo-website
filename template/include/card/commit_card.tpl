@@ -34,7 +34,7 @@
         <h4 class="mb-0">{$title}</h4>
         <p style="margin-bottom: 25px;">{$desc}</p>
         {include file='template/include/buttons/button.tpl' variant='menu_btn_white' label={'See details'|translate}
-        href=$btn_link}
+        href=$btn_link target="_blank"}
       </div>
     </div>
     <img src="{$image}" alt="{$title|escape}" class="version-image">
@@ -77,7 +77,7 @@
                 <div>
                   <p class="footer-title mb-1">{$commit.message}<span style="font-weight: 400; color: var(--dark_text);"> •
                       {$commit.date}</span></p>
-                  <p class="mb-0 mobile-test-sub-h3">{$commit.repo} <a href="{$commit.url}">{$commit.hash}</a>
+                  <p class="mb-0 mobile-test-sub-h3">{$commit.repo} <a href="{$commit.url}" target="_blank">{$commit.hash}</a>
                     {$commit.author}
                   </p>
                 </div>

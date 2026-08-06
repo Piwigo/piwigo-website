@@ -130,3 +130,23 @@
     </div>
   </div>
 </section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var timeline = document.querySelector('.timeline');
+    if (timeline) {
+      timeline.addEventListener('hide.bs.collapse', function (event) {
+        var collapsingElement = event.target;
+        var card = collapsingElement.closest('.commits-card');
+
+        if (card) {
+          var cardRect = card.getBoundingClientRect();
+          var offset = 300;
+          var top = cardRect.top + window.pageYOffset - offset;
+
+          window.scrollTo({ top: top, behavior: 'smooth' });
+        }
+      });
+    }
+  });
+</script>

@@ -23,7 +23,8 @@
           </div>
         </div>
 
-        <div class="col-md-7 responsive-image d-flex flex-column justify-content-center">
+        <div class="col-md-7 responsive-image d-flex flex-column justify-content-center position-relative">
+          <img src="{$PORG_ROOT_URL}images/{$HOST_BADGE}" class="badge-home">
           <img class="img-fluid" src="{$PORG_ROOT_URL}images/home/top.webp" alt="Piwigo screenshot">
         </div>
 

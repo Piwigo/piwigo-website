@@ -2,11 +2,14 @@
   {if $bugs != null}
     <div class="row release-sub-section">
       <div class="col-md-12">
-        <h1 class="releases-menu-item mb-4"><i class="icon-wrench"></i>{'Bugs fixed'|translate}</h1>
-      </div>
+        <h1 class="releases-menu-item-small mb-4"><i class="icon-wrench"></i>{'Bugs fixed'|translate}</h1>
+      </div> 
       {foreach from=$bugs key=key item=bug}
-        <div class="col-md-3">
-          <p class="release-type-sub-title"><i class="icon-check-1" {if $bug.is_security} title="{'Security'|translate}" {/if}></i> <a href="{$bug.url}" class="dark-green-text">{$bug.id} {$bug.section}</a></p>
+        <div class="col-md-4"> 
+          <p class="release-type-sub-title d-flex"><i class="icon-check-1"></i> <a href="{$bug.url}" class="dark-green-text non-decorated-text">{if $bug.id|substr:0:4 eq 'GHSA'} {'Security'|translate} {else} {$bug.id} {$bug.section} {/if}</a></p>
+          {if $bug.id|substr:0:4 eq 'GHSA'}
+            <p class="strong-text pricing-list mb-0">{$bug.id}</p>
+          {/if}
           <p class="pricing-list">{'porg_issue_'|cat:$bug.id|translate}</p>
         </div>
       {/foreach}
@@ -14,9 +17,9 @@
   {/if}
 
   {if $news_languages != null || $updated_languages != null}
-    <div class="row mt-5">
+    <div class="row mt-md-5 mt-4">
       <div class="col-md-12">
-        <h1 class="releases-menu-item mb-4"><i class="icon-langage"></i>{'Languages'|translate}</h1>
+        <h1 class="releases-menu-item-small mb-4"><i class="icon-langage"></i>{'Languages'|translate}</h1>
       </div>
       {if $news_languages != null}
         <div class="col-md-12 d-flex flex-wrap align-items-start mb-3">
@@ -30,7 +33,7 @@
         <p class="release-type-sub-title mb-3"><i class="icon-check-1"></i> <a class="non-decorated-text dark-green-text">{'Updated languages'|translate}</a></p>
         {foreach from=$updated_languages key=key item=language}
           <div class="col-md-4">
-            <p class="pricing-list mb-3">{$language.lang} {if $language.lang != $language.nativ_lang} ({$language.nativ_lang}) {/if}</p>
+            <p class="pricing-list mb-md-3 mb-0">{$language.lang} {if $language.lang != $language.nativ_lang} ({$language.nativ_lang}) {/if}</p>
           </div>
         {/foreach}
       {/if}
@@ -38,9 +41,9 @@
   {/if}
 
   {if $known_issues != null}
-    <div class="row release-sub-section release-sub-section-issue mt-5">
+    <div class="row release-sub-section release-sub-section-issue mt-md-5 mt-4">
       <div class="col-md-12">
-        <h1 class="releases-menu-item mb-4"><i class="icon-attention"></i>{'Known issues'|translate}</h1>
+        <h1 class="releases-menu-item-small mb-4"><i class="icon-attention"></i>{'Known issues'|translate}</h1>
       </div>
       {foreach from=$known_issues key=key item=known_issue}
         <div class="col-md-3">
@@ -52,9 +55,9 @@
   {/if}
 
   {if $features != null}
-    <div class="row release-sub-section mt-5">
+    <div class="row release-sub-section mt-md-5 mt-4">
       <div class="col-md-12">
-        <h1 class="releases-menu-item mb-4"><i class="icon-plus-circled"></i>{'Features added'|translate}</h1>
+        <h1 class="releases-menu-item-small mb-4"><i class="icon-plus-circled"></i>{'Features added'|translate}</h1>
       </div>
       {foreach from=$features key=key item=feature}
         <div class="col-md-3">
@@ -65,7 +68,7 @@
     </div>
   {/if}
 
-  <div class="row release-sub-section mt-5 justify-content-center">
+  <div class="row release-sub-section mt-md-5 mt-3 justify-content-center">
     <div class="col-12 d-flex justify-content-center">
       {include file='template/include/buttons/button.tpl' variant='menu_btn_green' class='release-note-cta' label={'See the full page of Release note %s'|translate:$version} href="{$URL.release}-{$version}"}
     </div>

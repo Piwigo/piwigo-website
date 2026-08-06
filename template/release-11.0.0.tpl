@@ -129,7 +129,7 @@
 </div>
 
 <div class="section-part">
-  <h3 id="upload-form">{'porg_v11_activity_chart_title'|translate}<span class="badge badge-new icon-star">{'porg_v11_badge_new'|translate}</span></h3>
+  <h3 id="upload-form">{'porg_v11_activity_chart_title'|translate}<span class="badge badge-new icon-star-1">{'porg_v11_badge_new'|translate}</span></h3>
 
   <div class="row">
     <div class="col-sm-2 col-md-3"></div>
@@ -296,7 +296,7 @@
 </div>
 
 <div class="section-part">
-  <h3 id="admin-redesign">{'porg_v11_album_search_title'|translate}<span class="badge badge-new icon-star">{'porg_v11_badge_new'|translate}</span></h3>
+  <h3 id="admin-redesign">{'porg_v11_album_search_title'|translate}<span class="badge badge-new icon-star-1">{'porg_v11_badge_new'|translate}</span></h3>
 
   <div class="row second-image-and-caption ">
     <div class="col-sm-12 col-md-4">
@@ -311,7 +311,7 @@
 </div>
 
 <div class="section-part">
-  <h3 id="upload-form">{'porg_v11_mobile_title'|translate}<span class="badge badge-new icon-star">{'porg_v11_badge_new'|translate}</span></h3>
+  <h3 id="upload-form">{'porg_v11_mobile_title'|translate}<span class="badge badge-new icon-star-1">{'porg_v11_badge_new'|translate}</span></h3>
 
   <div class="row">
     <div class="col-sm-2 col-md-3"></div>
@@ -341,7 +341,7 @@
 </div>
 
 <div class="section-part">
-  <h3 id="admin-redesign">{'porg_v11_requirements_title'|translate}<span class="badge badge-new icon-star">{'porg_v11_badge_new'|translate}</span></h3>
+  <h3 id="admin-redesign">{'porg_v11_requirements_title'|translate}<span class="badge badge-new icon-star-1">{'porg_v11_badge_new'|translate}</span></h3>
 
   <div class="row second-image-and-caption ">
     <div class="col-sm-12 col-md-4">
@@ -356,7 +356,7 @@
 </div>
 
 <div class="section-part">
-  <h3 id="upload-form">{'porg_v11_related_albums_title'|translate}<span class="badge badge-new icon-star">{'porg_v11_badge_new'|translate}</span></h3>
+  <h3 id="upload-form">{'porg_v11_related_albums_title'|translate}<span class="badge badge-new icon-star-1">{'porg_v11_badge_new'|translate}</span></h3>
 
   <div class="row first-image-and-caption">
     <div class="col-sm-12 col-md-8 ">

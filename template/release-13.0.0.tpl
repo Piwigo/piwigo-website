@@ -34,16 +34,16 @@
       <div class="col-md-4">
         <ul>
           <li><a href="#associations" class="icon-arrows-cw">{'porg_v13_associations_title'|translate}</a></li>
-          <li><a href="#multiformat" class="icon-star">{'porg_v13_multiformat_title'|translate}</a></li>
-          <li><a href="#apppromo"  class="icon-star">{'porg_v13_apppromo_title'|translate}</a></li>
+          <li><a href="#multiformat" class="icon-star-1">{'porg_v13_multiformat_title'|translate}</a></li>
+          <li><a href="#apppromo"  class="icon-star-1">{'porg_v13_apppromo_title'|translate}</a></li>
           <li class="badge badge-quote"><a href="#interview_remi"><img src="{$PORG_ROOT_URL}images/changelogs/quotes.svg" class="quotes me-1">{'Interview %s'|translate:'Rémi'}</a></li>
         </ul>
       </div>
       <div class="col-md-4">
         <ul>
           <li><a href="#tagrename" class="icon-brush">{'porg_v13_tagrename_title'|translate}</a></li>
-          <li><a href="#news" class="icon-star">{'porg_v13_news_title'|translate}</a></li>
-          <li><a href="#svg" class="icon-star">{'porg_v13_svg_title'|translate}</a></li>
+          <li><a href="#news" class="icon-star-1">{'porg_v13_news_title'|translate}</a></li>
+          <li><a href="#svg" class="icon-star-1">{'porg_v13_svg_title'|translate}</a></li>
           <li><a href="#technical_features" class="icon-tools">{'Technical features'|translate}</a></li>
         </ul>
 
@@ -52,7 +52,7 @@
   </div>
 </section>
 
-<a href="#release_menu" class="btn-back-to-menu" title="go to menu"></a>
+<a href="#release_menu" class="btn-back-to-menu" title="go to menu"><i class="icon-down-open"></i></a>
 
 <section class="container">
 
@@ -155,7 +155,7 @@
 </div>
 
 <div class="section-part">
-  <h3 id="multiformat">{'porg_v13_multiformat_title'|translate}<span class="badge badge-new icon-star">{'porg_v13_badge_new'|translate}</span></h3>
+  <h3 id="multiformat">{'porg_v13_multiformat_title'|translate}<span class="badge badge-new icon-star-1">{'porg_v13_badge_new'|translate}</span></h3>
 
   <div class="row">
     <div class="col-sm-2 col-md-2"></div>
@@ -176,7 +176,7 @@
 </div>
 
 <div class="section-part">
-  <h3 id="apppromo">{'porg_v13_apppromo_title'|translate}<span class="badge badge-new icon-star">{'porg_v13_badge_new'|translate}</span></h3>
+  <h3 id="apppromo">{'porg_v13_apppromo_title'|translate}<span class="badge badge-new icon-star-1">{'porg_v13_badge_new'|translate}</span></h3>
 
   <div class="row">
     <div class="col-sm-2 col-md-2"></div>
@@ -223,7 +223,7 @@
 </div>
 
 <div class="section-part">
-  <h3 id="news">{'porg_v13_news_title'|translate}<span class="badge badge-new icon-star">{'porg_v13_badge_new'|translate}</span></h3>
+  <h3 id="news">{'porg_v13_news_title'|translate}<span class="badge badge-new icon-star-1">{'porg_v13_badge_new'|translate}</span></h3>
 
   <div class="row second-image-and-caption">
     <div class="col-sm-12 col-md-4">

@@ -79,7 +79,7 @@
             <div class="feature-image-container">
               <img
                 src="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/08/04/20260804155124-642c587a-la.webp"
-                class="feature-image img-fluid mt-4 mt-md-0" alt="Piwigo translation tool screenshot">
+                class=" feature-image img-fluid mt-5 mt-md-0" alt="Piwigo translation tool screenshot">
             </div>
           </div>
 
@@ -128,7 +128,7 @@
             <div class="feature-image-container">
               <img
                 src="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/08/04/20260804162244-2f09cc34-la.webp"
-                class="feature-image img-fluid mt-4 mt-md-0" alt="Piwigo translation tool screenshot">
+                class=" feature-image img-fluid mt-5 mt-md-0" alt="Piwigo translation tool screenshot">
             </div>
           </div>
 
@@ -177,7 +177,7 @@
             <div class="feature-image-container">
               <img
                 src="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/08/04/20260804163017-3e09437b-la.webp"
-                class="feature-image img-fluid mt-4 mt-md-0" alt="Piwigo translation tool screenshot">
+                class=" feature-image img-fluid mt-5 mt-md-0" alt="Piwigo translation tool screenshot">
             </div>
           </div>
 
@@ -212,7 +212,7 @@
             <div class="feature-image-container">
               <img
                 src="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/08/05/20260805095446-63d715fd-la.webp"
-                class="feature-image img-fluid mt-4 mt-md-0" alt="Piwigo translation tool screenshot">
+                class=" feature-image img-fluid mt-5 mt-md-0" alt="Piwigo translation tool screenshot">
             </div>
           </div>
 

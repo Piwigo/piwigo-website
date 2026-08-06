@@ -23,7 +23,6 @@
 
 .help-list-item {
   display: flex;
-  align-items: center;
   font-family: "Kanit", sans-serif;
   font-size: 14px;
 }
@@ -156,5 +155,14 @@
     right: unset;
     margin: 0 20px;
     bottom: -32%;
+  }
+
+  .container-trans {
+    padding-bottom: 100px;
+  }
+
+  .container-users {
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 }

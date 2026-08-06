@@ -8,6 +8,14 @@
   z-index: 2;
 }
 
+.badge-home {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  width: 100px;
+  height: auto;
+}
+
 .highlight-circle {
   position: absolute;
   top: 50%;
@@ -602,5 +610,11 @@
 
   .way-to-use-card {
     padding: 30px;
+  }
+
+  .badge-home {
+    top: 17px;
+    left: 26px;
+    width: 80px;
   }
 }

@@ -33,15 +33,15 @@
       </div>
       <div class="col-md-4">
         <ul>
-          <li><a href="#activites" class="icon-star">{'porg_v12_activities_title'|translate}</a></li>
-          <li><a href="#album_sort" class="icon-star">{'porg_v12_album_sort_title'|translate}</a></li>
+          <li><a href="#activites" class="icon-star-1">{'porg_v12_activities_title'|translate}</a></li>
+          <li><a href="#album_sort" class="icon-star-1">{'porg_v12_album_sort_title'|translate}</a></li>
           <li><a href="#maintenance"  class="icon-brush">{'porg_v12_maintenance_title'|translate}</a></li>
         </ul>
       </div>
       <div class="col-md-4">
         <ul>
           <li class="badge badge-quote"><a href="#interview_louis"><img src="{$PORG_ROOT_URL}images/changelogs/quotes.svg" class="quotes  me-1">{'Interview %s'|translate:'Louis'}</a></li>
-          <li><a href="#alternate_views" class="icon-star">{'porg_v12_alternate_views_title'|translate}</a></li>
+          <li><a href="#alternate_views" class="icon-star-1">{'porg_v12_alternate_views_title'|translate}</a></li>
           <li><a href="#technical_features" class="icon-tools">{'Technical features'|translate}</a></li>
         </ul>
 
@@ -50,7 +50,7 @@
   </div>
 </section>
 
-<a href="#release_menu" class="btn-back-to-menu" title="go to menu"></a>
+<a href="#release_menu" class="btn-back-to-menu" title="go to menu"><i class="icon-down-open"></i></a>
 
 <section class="container">
 
@@ -128,7 +128,7 @@
 </div>
 
 <div class="section-part">
-  <h3 id="activities">{'porg_v12_activities_title'|translate}<span class="badge badge-new icon-star">{'porg_v12_badge_new'|translate}</span></h3>
+  <h3 id="activities">{'porg_v12_activities_title'|translate}<span class="badge badge-new icon-star-1">{'porg_v12_badge_new'|translate}</span></h3>
 
   <div class="row">
     <div class="col-sm-2 col-md-2"></div>
@@ -149,7 +149,7 @@
 </div>
 
 <div class="section-part">
-  <h3 id="album_sort">{'porg_v12_album_sort_title'|translate}<span class="badge badge-new icon-star">{'porg_v12_badge_new'|translate}</span></h3>
+  <h3 id="album_sort">{'porg_v12_album_sort_title'|translate}<span class="badge badge-new icon-star-1">{'porg_v12_badge_new'|translate}</span></h3>
 
   <div class="row second-image-and-caption">
     <div class="col-sm-12 col-md-4">
@@ -200,7 +200,7 @@
 </div>
 
 <div class="section-part">
-  <h3 id="alternate_views">{'porg_v12_alternate_views_title'|translate}<span class="badge badge-new icon-star">{'porg_v12_badge_new'|translate}</span></h3>
+  <h3 id="alternate_views">{'porg_v12_alternate_views_title'|translate}<span class="badge badge-new icon-star-1">{'porg_v12_badge_new'|translate}</span></h3>
 
   <div class="row first-image-and-caption">
     <div class="col-sm-12 col-md-8 ">

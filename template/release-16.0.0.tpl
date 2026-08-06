@@ -26,14 +26,14 @@
   </div>
 </section>
 
-<section class="container-fluid mb-5">
+<section class="container-fluid mb-5 banner">
   <div class="row text-center">
     <img class="piwigo-realease-banner px-0"
       src="https://sandbox.piwigo.com/uploads/4/y/1/4y1zzhnrnw//2025/09/02/20250902113553-22ad2a8c.png">
   </div>
 </section>
 
-<a href="#release_menu" class="btn-back-to-menu" title="go to menu"></a>
+<a href="#release_menu" class="btn-back-to-menu" title="go to menu"><i class="icon-down-open"></i></a>
 
 
 <section class="container mb-5">

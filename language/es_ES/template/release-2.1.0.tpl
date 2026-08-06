@@ -17,7 +17,7 @@
   <div class="container">
     <div class="row equal user-features">
       <div class="col-xs-12">
-        <h3><i class="icon-star"></i>Funcionalidades para los usuarios</h3>
+        <h3><i class="icon-star-1"></i>Funcionalidades para los usuarios</h3>
       </div>
       <div class="col-md-4">
 <ul>
