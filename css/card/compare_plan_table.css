@@ -130,6 +130,10 @@
   transition: color 0.2s ease;
 }
 
+/* .pwg-tooltip .tablepopover .custom-tooltip-content{
+  width: 548px !important;
+} */
+
 .pwg-tooltip .tooltip-text {
   visibility: hidden;
   width: 280px;
@@ -165,6 +169,10 @@
 .pwg-tooltip:hover .icon-rounded-warning,
 .pwg-tooltip:focus .icon-rounded-warning {
   color: var(--main_pink);
+}
+
+.pwg-tooltip .tablepopover{
+  min-width: 548px;
 }
 
 @media (max-width: 991px) {
