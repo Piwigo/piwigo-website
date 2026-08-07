@@ -262,9 +262,12 @@
 .menu-btn-main-pink::before {
   content: "";
   position: absolute;
-  inset: 0;
+  inset: -2px;
   border-radius: inherit;
-  background: linear-gradient(90deg, var(--main_pink) 0%, var(--main_orange) 100%);
+  border: 2px solid transparent;
+  background:
+    linear-gradient(90deg, var(--main_pink) 0%, var(--main_orange) 100%) padding-box,
+    linear-gradient(92.17deg, var(--main_orange) 19.22%, var(--main_pink) 96.41%) border-box;
   opacity: 0;
   transition: opacity 300ms ease-out;
   z-index: 0;

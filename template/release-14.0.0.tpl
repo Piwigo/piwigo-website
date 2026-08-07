@@ -43,6 +43,7 @@
         <ul>
           <li><a href="#storagetooltips" class="icon-brush">{'porg_v14_storagetooltips_title'|translate}</a></li>
           <li><a href="#technical_features" class="icon-tools">{'Technical features'|translate}</a></li>
+          <li><a href="#download_details" class="icon-download">{'Older versions'|translate}</a></li>
         </ul>
 
       </div>
@@ -237,3 +238,62 @@
 </div>
 
 <script src="{$PORG_ROOT_URL_PLUGINS}js/release-major.js"></script>
+
+<section class="container" id="download_details">
+  <div class="row justify-content-center">
+    <div class="col-11 col-md-10 dowload-other-versions">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-7 text-center">
+          <h2 class="mb-5 text-center">{'Download details and older versions'|translate}</h2>
+        </div>
+      </div>
+
+      <div class="table-responsive">
+        <table class="table align-middle download-versions-table mb-0">
+          <thead>
+            <tr>
+              <th scope="col">{'Version'|translate}</th>
+              <th scope="col">{'Checksum'|translate}</th>
+              <th scope="col">{'Release date'|translate}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {foreach $download_versions as $download_version}
+              <tr>
+                <td class="text-version">{$download_version.version} {if $download_version@first}<span
+                    class="btn-menu badge-latest">Latest</span>{/if}</td>
+                <td class="text-checksum">{$download_version.md5sum}</td>
+                <td class="release-date">{$download_version.released_on}</td>
+                <td class="text-end">
+                  <a href="{$download_version.download_url}" class="orange-text release-date">
+                    <i class="icon-download pe-1"></i>{'Download'|translate}
+                  </a>
+                </td>
+                <td class="text-end">
+                  <a href="{$releases_url}-{$download_version.version}" class="orange-text release-date">
+                    <i class="icon-info-circled-1 pe-1"></i>{'Details'|translate}
+                  </a>
+                </td>
+              </tr>
+            {/foreach}
+            <tr>
+              <td class="text-version">14.0.0</td>
+              <td class="text-checksum">{$md5sum}</td>
+              <td class="release-date">{$released_on}</td>
+              <td class="text-end">
+                <a href="//piwigo.org/download/dlcounter.php?code={$version}" class="orange-text release-date">
+                  <i class="icon-download pe-1"></i>{'Download'|translate}
+                </a>
+              </td>
+              <td class="text-end">
+                <a href="{$releases_url}-{$version}" class="orange-text release-date">
+                  <i class="icon-info-circled-1 pe-1"></i>{'Details'|translate}
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>

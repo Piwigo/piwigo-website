@@ -1133,3 +1133,9 @@ Glass cards
     padding: 20px 40px;
   }
 }
+
+.logos-marquee-item img[src$=".svg"] {
+  width: auto;
+  height: 100px;
+  max-width: 100%;
+}

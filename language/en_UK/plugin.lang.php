@@ -267,6 +267,8 @@ $lang['The challenge'] = 'The challenge';
 $lang['The choice of Piwigo'] = 'The choice of Piwigo';
 $lang['Benefits'] = 'Benefits';
 
+$lang['Older versions'] = 'Older versions';
+
 // in all case studies pages
 $lang['porg_cases1_title'] = 'Wessex Water chose Piwigo for Digital Asset Management';
 $lang['porg_cases1_description'] = 'With Piwigo, we are getting good value for money. The support is really helpful, and the product is easy to use.';

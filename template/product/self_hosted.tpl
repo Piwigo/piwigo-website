@@ -42,7 +42,7 @@
   </div>
 </section>
 
-<section class="short-get-started-cta py-5 py-md-5">
+<section class="short-get-started-cta py-5 py-md-5" id="download-piwigo">
   <div class="container short-get-started-container">
     <div class="row justify-content-center">
       <div class="col-12 col-lg-10 text-center short-get-started-content">
@@ -51,7 +51,7 @@
           {include
             file='template/include/buttons/button.tpl'
             variant='cta_primary_green'
-            label={'selfhosted-short-cta-btn'|translate} href="{$PORG_ROOT}{$URL.signup}"
+            label={'selfhosted-short-cta-btn'|translate} href="https://piwigo.org/download/dlcounter.php?code=latest"
           }
         </div>
         <div class="short-get-started-links justify-content-center">
@@ -130,13 +130,13 @@
           {include
             file='template/include/buttons/button.tpl'
             variant='menu_btn_green'
-            href="#"
+            href="{$PORG_ROOT}{$URL.about_us}"
             label={'selfhosted-ecosystem-btn1'|translate}
           }
           {include
             file='template/include/buttons/button.tpl'
             variant='menu_btn_blue' 
-            href="#"
+            href="{$PORG_ROOT}{$URL.get_involved}"
             label={'selfhosted-ecosystem-btn2'|translate}
           }
         </div>
@@ -155,11 +155,11 @@
 
           <div class="short-get-started-links justify-content-center">
             <div class="d-flex flex-row flex-wrap short-get-started-links-r1 pb-2 gap-4 row-gap-2 justify-content-center">
-              <p class="short-get-started-links-text mb-0 gap-1 d-flex"><i class="icon-latest-news"></i>{'selfhosted-ecosystem-community-badge1'|translate}</p>
-              <p class="short-get-started-links-text mb-0 gap-1 d-flex"><i class="icon-git"></i>{'selfhosted-ecosystem-community-badge2'|translate}</p>
-              <p class="short-get-started-links-text mb-0 gap-1 d-flex"><i class="icon-contribute"></i>{'selfhosted-ecosystem-community-badge3'|translate}</p>
-              <p class="short-get-started-links-text mb-0 gap-1 d-flex"><i class="icon-extension"></i>{'selfhosted-ecosystem-community-badge4'|translate}</p>
-              <p class="short-get-started-links-text mb-0 gap-1 d-flex"><i class="icon-dev"></i>{'selfhosted-ecosystem-community-badge5'|translate}</p>
+              <a href="{$FORUM_URL}" target="_blank" rel="noopener noreferrer" class="short-get-started-links-text mb-0 gap-1 d-flex non-decorated-text"><i class="icon-latest-news"></i>{'selfhosted-ecosystem-community-badge1'|translate}</a>
+              <a href="https://github.com/Piwigo" target="_blank" rel="noopener noreferrer" class="short-get-started-links-text mb-0 gap-1 d-flex non-decorated-text"><i class="icon-git"></i>{'selfhosted-ecosystem-community-badge2'|translate}</a>
+              <a href="https://piwigo.org/ext/" target="_blank" rel="noopener noreferrer" class="short-get-started-links-text mb-0 gap-1 d-flex non-decorated-text"><i class="icon-contribute"></i>{'selfhosted-ecosystem-community-badge3'|translate}</a>
+              <a href="https://piwigo.org/ext/" target="_blank" rel="noopener noreferrer" class="short-get-started-links-text mb-0 gap-1 d-flex non-decorated-text"><i class="icon-extension"></i>{'selfhosted-ecosystem-community-badge4'|translate}</a>
+              <a href="https://github.com/Piwigo/Piwigo/wiki" target="_blank" rel="noopener noreferrer" class="short-get-started-links-text mb-0 gap-1 d-flex non-decorated-text"><i class="icon-dev"></i>{'selfhosted-ecosystem-community-badge5'|translate}</a>
             </div>
           </div>
         </div>

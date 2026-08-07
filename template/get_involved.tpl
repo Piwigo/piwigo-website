@@ -168,7 +168,7 @@
 
               <div class="d-flex justify-content-start mt-4">
                 {include file='template/include/buttons/button.tpl' variant='menu_btn_orange' label="{'porg_get_involved_users_btn'|translate}"
-                href="//{$PORG_DOMAIN_PREFIX}piwigo.org/forum/" class="text-start px-4" target="_blank"}
+                href="{$FORUM_URL}" class="text-start px-4" target="_blank"}
               </div>
             </div>
           </div>
@@ -201,7 +201,7 @@
 
               <div class="d-flex justify-content-start mt-4 gap-4">
                 {include file='template/include/buttons/button.tpl' variant='menu_btn_orange' label="{'porg_get_involved_finance_btn1'|translate}"
-                href="{$PORG_ROOT}{$URL.contact}&topic_id=donation#form" class="text-start px-4" target="_blank"}
+                href="{$PORG_ROOT}{$URL.contact}&topic_id=donation#form" class="text-start px-4"}
                 {include file='template/include/buttons/button.tpl' variant='menu_btn_white' label="{'porg_get_involved_finance_btn2'|translate}"
                 href="{$PORG_ROOT}{$URL.pricing}" class="text-start px-4"}
               </div>

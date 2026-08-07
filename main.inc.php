@@ -382,9 +382,6 @@ function porg_load_content()
       $meta_description = isset($lang['page_meta_description']) ? $lang['page_meta_description'] : null;
 
       $page_inc = $porg_file . '.inc.php';
-      if (basename($tpl_file) === 'release-16.0.0.tpl') {
-        $page_inc = 'release-16.inc.php';
-      }
 
       if (file_exists(PORG_PATH . '/include/' . $page_inc)) {
         include(PORG_PATH . '/include/' . $page_inc);

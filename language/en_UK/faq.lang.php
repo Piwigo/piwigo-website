@@ -1,9 +1,9 @@
 <?php
 $lang['faq question 1'] = 'Is there a free version of Piwigo ?';
-$lang['faq answer 1'] = 'After the trial period, all piwigo.com plans are subject to a fee. However, you can download Piwigo for free from piwigo.org and install it on the server of your choice.';
+$lang['faq answer 1'] = 'After the trial period, all piwigo.com plans are subject to a fee. However, you can download Piwigo for free from piwigo.org and install it on the server of your choice. To do this, you need to have an existing infrastructure, and the skills to manage Piwigo’s installation, updates and backups, as well as its setup and customization.';
 
 $lang['faq question 2'] = 'Are there any setup fees for Piwigo?';
-$lang['faq answer 2'] = 'No, there are no hidden costs or setup fees on any of our plans.';
+$lang['faq answer 2'] = 'At Piwigo, we charge <span class="strong-text">no</span> setup fees for the implementation of your Piwigo hosting.<br><br>This allows us to offer transparent and affordable pricing - unlike some digital asset management or photo library software that charge both a software subscription and numerous custom setup or consulting services.<br><br>This is a deliberate choice: our job is to provide great software, not to sell consulting hours. We do not offer project management or consulting services. If you need help getting started with Piwigo, you can simply contact our support team.<br><br>However, we do work with partner photo librarians and iconographers who can assist you if you’re looking for guidance and hands-on support to structure and configure your Piwigo. <a class="orange-text non-decorated-text">Contact us</a> if this service interests you.';
 
 $lang['faq question 3'] = 'What happens if I run out of storage space?';
 $lang['faq answer 3'] = 'You can upgrade your storage space at any time directly from your account. If you exceed your limit, you will be notified to upgrade your plan.';

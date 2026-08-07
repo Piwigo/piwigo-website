@@ -86,7 +86,7 @@
                 <li>{'porg_home_ways_to_use_self_hosted_li_4'|translate}</li>
                 <li>{'porg_home_ways_to_use_self_hosted_li_5'|translate}</li>
               </ul>
-              {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label="{'Download'|translate} Piwigo" href="#ways-to-use" class='mt-auto'}
+              {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label="{'Download'|translate} Piwigo" href="https://piwigo.org/download/dlcounter.php?code=latest" class='mt-auto'}
             </div>
           </div>
           <div class="col-12 text-center d-flex">
@@ -796,8 +796,8 @@
             <img src="{$PORG_ROOT_URL}images/home/opensource.webp" alt="Piwigo screenshot" class="img-fluid d-md-none">
             <p class="mb-4">{'porg_home_opensource_desc'|translate}</p>
             <div class="btn-row">
-              {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'porg_home_opensource_btn1'|translate} href="{$PORG_ROOT}{$URL.signup}"}
-              {include file='template/include/buttons/button.tpl' variant='cta_secondary' label={'porg_home_opensource_btn2'|translate} href="#ways-to-use"}
+              {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'porg_home_opensource_btn1'|translate} href="{$PORG_ROOT}{$URL.about_us}"}
+              {include file='template/include/buttons/button.tpl' variant='cta_secondary' label={'porg_home_opensource_btn2'|translate} href="{$PORG_ROOT}{$URL.get_involved}"}
             </div>
           </div>
         </div>

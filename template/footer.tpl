@@ -56,7 +56,7 @@
               <ul class="mt-3">
                 {* <li><a class="footer-feature-link footer-menu-item" href="#">{'Piwigo AI'|translate|cat: ' ✨'}</a></li> *}
                 <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.mobile_applications}">{'Mobile apps'|translate}</a></li>
-                <li><a class="footer-feature-link footer-menu-item" href="#">{'Extensions'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="https://piwigo.org/ext/" target="_blank" rel="noopener noreferrer">{'Extensions'|translate}</a></li>
                 {* <li><a class="footer-feature-link footer-menu-item" href="#">{'API & Integrations'|translate}</a></li> *}
                 <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.demo}">{'Live demos'|translate}</a></li>
               </ul>
@@ -166,7 +166,7 @@
             {* <a class="footer-feature-link footer-menu-item" href="#">{'Piwigo AI'|translate|cat: ' ✨'}</a> *}
           </li>
           <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.mobile_applications}">{'Mobile apps'|translate}</a></li>
-          <li><a class="footer-feature-link footer-menu-item" href="#">{'Extensions'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="https://piwigo.org/ext/" target="_blank" rel="noopener noreferrer">{'Extensions'|translate}</a></li>
           {* <li><a class="footer-feature-link footer-menu-item" href="#">{'API & Integrations'|translate}</a></li> *}
           <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.demo}">{'Live demos'|translate}</a></li>
         </ul>

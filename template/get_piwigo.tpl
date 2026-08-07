@@ -19,7 +19,7 @@
         {include
           file='template/include/buttons/button.tpl'
           variant='menu_btn_blue'
-          href='{$PORG_ROOT}{$URL.pricing}'
+          href="{$PORG_ROOT}{$URL.pricing}"
         label={'product-header-cloud-btn2'|translate}
         }
       </div>
@@ -41,13 +41,14 @@
         {include
           file='template/include/buttons/button.tpl'
           variant='menu_btn_green'
-          href="{$PORG_ROOT}{$URL.signup}"
+          href="https://piwigo.org/download/dlcounter.php?code=latest"
         label={'product-header-self-hosted-btn1'|translate}
         }
         {include
           file='template/include/buttons/button.tpl'
           variant='menu_btn_blue'
-          href='{$PORG_ROOT}{$URL.pricing}'
+          href="{$INSTALL_GUIDE_URL}"
+          target="_blank"
         label={'product-header-self-hosted-btn2'|translate}
         }
       </div>
