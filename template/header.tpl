@@ -47,30 +47,7 @@
   <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL_PLUGINS}vendor/flag-icons-master/css/flag-icon.css">
 
   {if $PORG_IS_PRODUCTION}
-    {* temporary remove analytics
-    <script type="text/javascript">
-      var _paq = _paq || [];
-      _paq.push(["setDomains", ["*.piwigo.org", "*.fr.piwigo.org"]]);
-      _paq.push(['trackPageView']);
-      _paq.push(['enableLinkTracking']);
-      (function() {
-        var u = "//piwigo.us/piwik/";
-        _paq.push(['setTrackerUrl', u + 'piwik.php']);
-        _paq.push(['setSiteId', '1']);
-        var d = document,
-          g = d.createElement('script'),
-          s = d.getElementsByTagName('script')[0];
-        g.type = 'text/javascript';
-        g.async = true;
-        g.defer = true;
-        g.src = u + 'piwik.js';
-        s.parentNode.insertBefore(g, s);
-      })();
-    </script>
-    <noscript>
-      <p><img src="//piwigo.us/piwik/piwik.php?idsite=1" style="border:0;" alt="" /></p>
-    </noscript>
-    *}
+  <script defer data-domain="piwigo.org" src="https://plausible.piwigo.org/js/script.js"></script>
   {/if}
 </head>
 
