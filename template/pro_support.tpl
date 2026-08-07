@@ -13,7 +13,7 @@
         </div>
         <div class="col-md-6 responsive-image d-flex flex-column justify-content-center users-header-image">
           <img class="img-fluid mt-md-0 mt-4 pt-1"
-            src="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/16/20260716100025-f41a8ce1-me.webp"
+            src="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/16/20260716100025-f41a8ce1-xl.webp"
             alt="Piwigo screenshot">
         </div>
       </div>
