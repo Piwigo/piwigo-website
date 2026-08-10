@@ -1,7 +1,7 @@
 <div class="pricing-card card-{$type} {if $is_best_deal}best-deal-border{/if} shadow-sm d-flex flex-column p-4 rounded-4 bg-white h-100">
 
 	{if $is_best_deal}
-		<div class="best-deal-badge">{'Best deal'|translate}</div>
+		<div class="best-deal-badge">{'best_deal'|translate}</div>
 	{/if}
 
 	<div class="text-center mb-4 pricing-header">
@@ -13,7 +13,7 @@
 		<div class="fw-bolder price-text">
 			{$price}
 		</div>
-		<div class="text-muted small">{'pricing plan_excl_vat_month'|translate}<br>{'pricing plan_billed_annually'|translate}</div>
+		<div class="text-muted small">{'pcom_pricing_page_ht_month'|translate}<br>{'annual payment'|translate}</div>
 	</div>
 
 	<div class="mb-4 text-center">
@@ -24,7 +24,7 @@
 			"menu_btn_main_pink"
 			:
 			"menu_btn_green"
-			href={(isset($btn_link_try)) ? $btn_link_try : "#"} label={(isset($btn_try)) ? ($btn_try|translate) : ('pricing free'|translate)} 
+			href={(isset($btn_link_try)) ? $btn_link_try : "#"} label={(isset($btn_try)) ? ($btn_try|translate) : ('pcom_pricing_page_try_it_free'|translate)} 
 		}
 	</div>
 
@@ -85,7 +85,7 @@
 			</ul>
 		</div>
 		<div class="features-list text-start bottom-features-list">
-			<p class="fw-bold small mb-3 text-dark">{'pricing features_services'|translate}</p>
+			<p class="fw-bold small mb-3 text-dark">{'pcom_pricing_page_features_services'|translate}</p>
 			<ul class="list-unstyled mb-0">
 				{foreach from=$services item=service}
 					<li class="d-flex align-items-start mb-3">
@@ -98,7 +98,7 @@
 									<i class="icon-rounded-warning text-info-light flex-shrink-0"></i>
 								</a>
 
-							{elseif $service.text|lower|strpos:"custom graphic personalization" !== false}
+							{elseif $service.text|lower|strpos:"custom graphic personalisation" !== false}
 								<span class="custom-link-container js-custom-tooltip-trigger d-flex align-items-center" style="cursor: pointer;">
 									<span class="link-text">{$service.text|translate}</span>
 									<i class="icon-rounded-warning text-info-light flex-shrink-0"></i>
@@ -130,7 +130,7 @@
 		{include
 			file="template/include/buttons/button.tpl"
 			variant="menu_btn_white"
-			href={(isset($btn_link_try)) ? $btn_link_try : "#"} label={(isset($btn_trial)) ? ($btn_trial|translate) : ('pricing free_trial'|translate)} 
+			href={(isset($btn_link_try)) ? $btn_link_try : "#"} label={(isset($btn_trial)) ? ($btn_trial|translate) : ('pcom_pricing_page_start_30_day_free_trial'|translate)} 
 		}
 	</div>
 	<h2 class="h2-mobile-top-page text-center">{$title|translate}</h2>

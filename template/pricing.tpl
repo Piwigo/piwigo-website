@@ -24,7 +24,7 @@
 				</span>
 			</h1>
 			<p class="pricing-subtitle">
-				{'pricing main description'|translate}
+				{'pcom_pricing_page_subtitle'|translate}
 			</p>
 		</div>
 	</div>
@@ -38,10 +38,10 @@
 	<div class="row align-items-center text-center">
 		<div class="col-12 pricing-toggle-description">
 			<p id="desc-cloud" class="toggle-desc">
-				{'pricing toggle description 1'|translate}
+				{'pcom_pricing_page_cloud_subtitle'|translate}
 			</p>
 			<p id="desc-selfhosted" class="toggle-desc d-none">
-				{'pricing toggle description 2'|translate}
+				{'pcom_pricing_page_on_premise_subtitle'|translate}
 			</p>
 		</div>
 	</div>
@@ -50,7 +50,7 @@
 <div id="card-selfhosted" class="selfhosted-card-container d-none-card">
 	{include
 		file="template/include/card/global_text_image.tpl"
-		title={'pricing title selfhosted card'|translate} desc={'pricing selfhosted description card'|translate} image="{$PORG_ROOT_URL}images/pricing/selfhosted_deploy.webp" 
+		title={'pcom_pricing_page_intro_title'|translate} desc={'pricing selfhosted description card'|translate} image="{$PORG_ROOT_URL}images/pricing/selfhosted_deploy.webp" 
 	}
 </div>
 
@@ -68,7 +68,7 @@
 
 <section class="faq_pricing_container container">
 	<div class="faq_pricing_header">
-		<h3 class="faq_pricing_title text-center">{'pricing faq pricing title'|translate}</h2>
+		<h3 class="faq_pricing_title text-center">{'pcom_pricing_page_faq_title'|translate}</h2>
 	</div>
 	<div class="accordion accordion-flush" id="faqPiwigo">
 		<div class="row faq_pricing_grid g-0">

@@ -48,7 +48,7 @@ if ($user['language'] == 'fr_FR') {
 } else {
 	$pricing_pdf_link = "https://ressources.piwigo.com/action.php?id=623&part=e&download";
 	$doc_link = 'https://doc.piwigo.org/';
-	$download_link = "https://piwigo.org/download/dlcounter.php?code=latest";
+	$download_link = 'https://piwigo.org/get-piwigo';
 	$forum_link = ($user['language'] == 'de_DE') ? 'https://de.piwigo.org/forum/' : 'https://piwigo.org/forum/';
 }
 
@@ -57,16 +57,16 @@ $other_formats = 'psd, ai, eps, tif, tiff, svg, pdf';
 
 $plans = array(
 	'plan_pro' => array(
-		'title' => l10n('Pro'),
+		'title' => l10n('pcom_pricing_page_pro'),
 		'is_best_deal' => false,
 		'admins_count' => '1',
 		'storage_size' => '10GB',
 		'price' => l10n('€%d', 29),
-		'subtitle' => l10n('pricing card pro description'),
+		'subtitle' => l10n('pcom_pricing_page_pro_explanation'),
 		'features' => array(
 			array('text' => l10n('1 administrator')),
-			array('text' => l10n('unlimited users')),
-			array('text' => l10n('no contributors'), 'not_included' => true),
+			array('text' => l10n('pcom_pricing_page_unlimited_users')),
+			array('text' => l10n('pcom_pricing_page_no_contributors'), 'not_included' => true),
 			array('text' => l10n('pro storage'), 'info' => true),
 			array(
 				'text' => l10n('format only'),
@@ -76,23 +76,23 @@ $plans = array(
 					l10n('image_formats'),
 				)
 			),
-			array('text' => l10n('Email support')),
+			array('text' => l10n('pcom_pricing_page_email_support')),
 			array(
-				'text' => l10n('plugins to customize'),
+				'text' => l10n('pcom_pricing_page_personal_pro_details_2'),
 				'info' => true,
 				'tooltip' => array(
-					l10n('pricing_page_personal_pro_details_7'),
-					l10n('pricing_page_personal_pro_details_8'),
-					l10n('pricing_page_personal_pro_details_9'),
-					l10n('pricing_page_personal_pro_details_10'),
-					l10n('pricing_page_personal_pro_details_11'),
-					l10n('pricing etc..')
+					l10n('pcom_pricing_page_personal_pro_details_7'),
+					l10n('pcom_pricing_page_personal_pro_details_8'),
+					l10n('pcom_pricing_page_personal_pro_details_9'),
+					l10n('pcom_pricing_page_personal_pro_details_10'),
+					l10n('pcom_pricing_page_personal_pro_details_11'),
+					l10n('pcom_pricing_page_etc')
 				)
 			),
 		),
 		'services' => array(
 			array(
-				'text' => l10n('features of Piwigo'),
+				'text' => l10n('pcom_pricing_page_personal_pro_details_1'),
 				'info' => true,
 				'tooltip' => array(
 					l10n('pricing_page_personal_details_6'),
@@ -106,87 +106,87 @@ $plans = array(
 				'text' => l10n('Host'),
 				'info' => true,
 				'tooltip' => array(
-					l10n('pricing_page_personal_pro_details_18')
+					l10n('pcom_pricing_page_personal_pro_details_18')
 				)
 			),
 			array(
-				'text' => l10n('Import'),
+				'text' => l10n('pcom_pricing_page_import_piwigo'),
 				'info' => true,
 				'tooltip' => array(
-					l10n('pricing_page_import_piwigo_detail')
+					l10n('pcom_pricing_page_import_piwigo_detail')
 				)
 			),
 		)
 	),
 	'plan_team' => array(
-		'title' => l10n('Team'),
+		'title' => l10n('pcom_pricing_page_team'),
 		'is_best_deal' => false,
 		'admins_count' => '3',
 		'storage_size' => '100GB',
 		'price' => l10n('€%d', 99),
-		'subtitle' => l10n('pricing card team description'),
+		'subtitle' => l10n('pcom_pricing_page_team_explanation'),
 		'features' => array(
 			array('text' => l10n('3 administrators')),
-			array('text' => l10n('unlimited users')),
-			array('text' => l10n('unlimited contributors')),
+			array('text' => l10n('pcom_pricing_page_unlimited_users')),
+			array('text' => l10n('pcom_pricing_page_unlimited_contributors')),
 			array('text' => l10n('team storage'), 'info' => true),
 			array(
-				'text' => l10n('All file formats'),
+				'text' => l10n('pcom_pricing_page_all_formats'),
 				'info' => true,
 				'tooltip' => array(
 					l10n('other_formats'),
 				)
 			),
-			array('text' => l10n('Priority email support')),
+			array('text' => l10n('pcom_pricing_page_priority_email_support')),
 			array(
 				'text' => l10n('plugins to customize2'),
 				'info' => true,
 				'tooltip' => array(
-					l10n('pricing_page_personal_pro_details_7'),
-					l10n('pricing_page_personal_pro_details_8'),
-					l10n('pricing_page_personal_pro_details_9'),
-					l10n('pricing_page_personal_pro_details_10'),
-					l10n('pricing_page_personal_pro_details_11'),
-					l10n('pricing etc..')
+					l10n('pcom_pricing_page_personal_pro_details_7'),
+					l10n('pcom_pricing_page_personal_pro_details_8'),
+					l10n('pcom_pricing_page_personal_pro_details_9'),
+					l10n('pcom_pricing_page_personal_pro_details_10'),
+					l10n('pcom_pricing_page_personal_pro_details_11'),
+					l10n('pcom_pricing_page_etc')
 				)
 			),
 		),
 		'services' => array(
-			array('text' => l10n('All the features pro')),
-			array('text' => l10n('Contributor')),
-			array('text' => l10n("Administrators activity")),
+			array('text' => l10n('pcom_pricing_page_team_details_1')),
+			array('text' => l10n('pcom_pricing_page_team_details_3')),
+			array('text' => l10n('pcom_pricing_page_team_details_2')),
 			array(
-				'text' => l10n('Advanced user management'),
+				'text' => l10n('pcom_pricing_page_user_management'),
 				'info' => true,
 				'tooltip' => array(
-					l10n('pricing_page_team_details_4'),
-					l10n('pricing_page_team_details_5'),
-					l10n('pricing_page_team_details_6'),
-					l10n('pricing etc..')
+					l10n('pcom_pricing_page_team_details_4'),
+					l10n('pcom_pricing_page_team_details_5'),
+					l10n('pcom_pricing_page_team_details_6'),
+					l10n('pcom_pricing_page_etc')
 				)
 			),
 		)
 	),
 	'plan_enterprise' => array(
-		'title' => l10n('Enterprise'),
+		'title' => l10n('pcom_pricing_page_enterprise'),
 		'is_best_deal' => true,
 		'admins_count' => '5',
 		'storage_size' => '250GB',
 		'price' => l10n('€%d', 199),
-		'subtitle' => l10n('pricing card entreprise description'),
+		'subtitle' => l10n('pcom_pricing_page_enterprise_explanation'),
 		'features' => array(
 			array('text' => l10n('5 administrators')),
 			array('text' => l10n('unlimited users')),
 			array('text' => l10n('unlimited contributors')),
 			array('text' => l10n('entreprise storage'), 'info' => true),
 			array(
-				'text' => l10n('All file formats'),
+				'text' => l10n('pcom_pricing_page_all_formats'),
 				'info' => true,
 				'tooltip' => array(
 					l10n('other_formats'),
 				)
 			),
-			array('text' => l10n('Priority email support')),
+			array('text' => l10n('pcom_pricing_page_priority_email_support')),
 			array(
 				'text' => l10n('plugins to customize3'),
 				'info' => true,
@@ -196,98 +196,98 @@ $plans = array(
 					l10n('pricing_page_personal_pro_details_9'),
 					l10n('pricing_page_personal_pro_details_10'),
 					l10n('pricing_page_personal_pro_details_11'),
-					l10n('pricing etc..')
+					l10n('pcom_pricing_page_etc')
 				)
 			),
 		),
 		'services' => array(
-			array('text' => l10n('All the features team')),
+			array('text' => l10n('pcom_pricing_page_enterprise_details_1')),
 			array(
-				'text' => l10n('More options'),
+				'text' => l10n('pcom_pricing_page_enterprise_details_2'),
 				'info' => true,
 				'tooltip' => array(
-					l10n('pricing_page_user_custom_search_filters'),
-					l10n('pricing_page_custom_properties'),
-					l10n('pricing_page_enterprise_details_3'),
-					l10n('pricing_page_enterprise_details_4')
+					l10n('pcom_pricing_page_user_custom_search_filters'),
+					l10n('pcom_pricing_page_custom_properties'),
+					l10n('pcom_pricing_page_enterprise_details_3'),
+					l10n('pcom_pricing_page_enterprise_details_4')
 				)
 			),
 			array(
-				'text' => l10n('More automation'),
+				'text' => l10n('pcom_pricing_page_enterprise_details_5'),
 				'info' => true,
 				'tooltip' => array(
-					l10n('pricing_page_enterprise_details_6'),
-					l10n('pricing_page_enterprise_details_7'),
-					l10n('pricing_page_enterprise_details_8')
+					l10n('pcom_pricing_page_enterprise_details_6'),
+					l10n('pcom_pricing_page_enterprise_details_7'),
+					l10n('pcom_pricing_page_enterprise_details_8')
 				)
 			),
 			array(
-				'text' => l10n('More features'),
+				'text' => l10n('pcom_pricing_page_enterprise_details_9'),
 				'info' => true,
 				'tooltip' => array(
-					l10n('pricing_page_enterprise_details_10'),
-					l10n('pricing_page_enterprise_details_11'),
-					l10n('pricing_page_enterprise_details_12'),
-					l10n('pricing etc..')
+					l10n('pcom_pricing_page_enterprise_details_10'),
+					l10n('pcom_pricing_page_enterprise_details_11'),
+					l10n('pcom_pricing_page_enterprise_details_12'),
+					l10n('pcom_pricing_page_etc')
 				)
 			),
 			array(
-				'text' => l10n('Custom graphic'),
+				'text' => l10n('pcom_pricing_page_enterprise_details_13'),
 
 			),
-			array('text' => l10n('Custom data')),
+			array('text' => l10n('pcom_pricing_page_enterprise_details_14')),
 		)
 	),
 	'plan_vip' => array(
-		'title' => l10n('VIP'),
+		'title' => l10n('pcom_pricing_page_vip'),
 		'is_best_deal' => false,
-		'admins_count' => l10n('pricing plan_unlimited'),
+		'admins_count' => l10n('pcom_pricing_page_unlimited'),
 		'storage_size' => '1000GB',
 		'price' => l10n('€%d', 399),
-		'subtitle' => l10n('pricing card vip description'),
+		'subtitle' => l10n('pcom_pricing_page_vip_explanation'),
 		'features' => array(
-			array('text' => l10n('unlimited administrators')),
-			array('text' => l10n('unlimited users')),
-			array('text' => l10n('unlimited contributors')),
+			array('text' => l10n('pcom_pricing_page_unlimited_admins')),
+			array('text' => l10n('pcom_pricing_page_unlimited_users')),
+			array('text' => l10n('pcom_pricing_page_unlimited_contributors')),
 			array('text' => l10n('vip storage'), 'info' => true),
 			array(
-				'text' => l10n('All file formats'),
+				'text' => l10n('pcom_pricing_page_all_formats'),
 				'info' => true,
 				'tooltip' => array(
 					l10n('other_formats'),
 				)
 			),
-			array('text' => l10n('Priority vip')),
+			array('text' => l10n('pcom_pricing_page_priority_email_phone_support')),
 			array(
 				'text' => l10n('plugins to customize4'),
 				'info' => true,
 				'tooltip' => array(
-					l10n('pricing_page_personal_pro_details_7'),
-					l10n('pricing_page_personal_pro_details_8'),
-					l10n('pricing_page_personal_pro_details_9'),
-					l10n('pricing_page_personal_pro_details_10'),
-					l10n('pricing_page_personal_pro_details_11'),
-					l10n('pricing etc..')
+					l10n('pcom_pricing_page_personal_pro_details_7'),
+					l10n('pcom_pricing_page_personal_pro_details_8'),
+					l10n('pcom_pricing_page_personal_pro_details_9'),
+					l10n('pcom_pricing_page_personal_pro_details_10'),
+					l10n('pcom_pricing_page_personal_pro_details_11'),
+					l10n('pcom_pricing_page_etc')
 				)
 			),
 		),
 		'services' => array(
-			array('text' => l10n('All the features vip')),
-			array('text' => l10n('Advanced')),
+			array('text' => l10n('pcom_pricing_page_vip_details_1')),
+			array('text' => l10n('pcom_pricing_page_vip_details_2')),
 			array(
-				'text' => l10n('Enhanced'),
+				'text' => l10n('pcom_pricing_page_vip_details_3'),
 				'info' => true,
 				'tooltip' => array(
-					l10n('pricing_page_vip_details_6')
+					l10n('pcom_pricing_page_vip_details_6')
 				)
 			),
-			array('text' => l10n('Custom dev')),
-			array('text' => l10n('Dedicated server')),
+			array('text' => l10n('pcom_pricing_page_vip_details_4')),
+			array('text' => l10n('pcom_pricing_page_vip_details_5')),
 			array(
-				'text' => l10n('Custom data import included'),
+				'text' => l10n('pcom_pricing_page_vip_details_7'),
 				'info' => true,
 				'tooltip' => array(
-					l10n('pricing_page_vip_details_8')
+					l10n('pcom_pricing_page_vip_details_8')
 				)
 			),
 		)
@@ -296,65 +296,65 @@ $plans = array(
 
 $support_plans = array(
 	'free' => array(
-		'title' => l10n('Free'),
+		'title' => l10n('pcom_pricing_page_support_free'),
 		'price' => l10n('€%d', 0),
-		'subtitle' => l10n('pricing card free description'),
+		'subtitle' => l10n('pcom_pricing_page_support_free_explanation'),
 		'features' => array(
-			array('text' => l10n('Access_f')),
+			array('text' => l10n('pcom_pricing_page_support_functionalities')),
 			array('text' => l10n('Access_doc')),
 		)
 	),
 	'light' => array(
-		'title' => l10n('Light'),
+		'title' => l10n('pcom_pricing_page_support_light'),
 		'price' => l10n('€%d', 39),
-		'subtitle' => l10n('pricing card light description'),
+		'subtitle' => l10n('pcom_pricing_page_support_light_explanation'),
 		'features' => array(
-			array('text' => l10n('Access_f')),
+			array('text' => l10n('pcom_pricing_page_support_functionalities')),
 			array('text' => l10n('Access_doc')),
-			array('text' => l10n('Professional_support')),
+			array('text' => l10n('pcom_pricing_page_user_support')),
 			array('text' => l10n('Response_48')),
 			array('text' => l10n('3 administrators')),
 			array(
-				'text' => l10n('Support_100'),
+				'text' => l10n('pcom_pricing_page_support_light_plugins'),
 
 			),
 		)
 	),
 	'standard' => array(
-		'title' => l10n('Standard'),
+		'title' => l10n('pcom_pricing_page_support_standard'),
 		'price' => l10n('€%d', 79),
-		'subtitle' => l10n('pricing card standard description'),
+		'subtitle' => l10n('pcom_pricing_page_support_standard_explanation'),
 		'features' => array(
-			array('text' => l10n('Access_f')),
+			array('text' => l10n('pcom_pricing_page_support_functionalities')),
 			array('text' => l10n('Access_doc')),
-			array('text' => l10n('Professional_support')),
+			array('text' => l10n('pcom_pricing_page_user_support')),
 			array('text' => l10n('Response_24')),
 			array('text' => l10n('5 administrators')),
 			array(
-				'text' => l10n('Support_100_20'),
+				'text' => l10n('pcom_pricing_page_support_standard_plugins'),
 
 			),
 		)
 	),
 	'premium' => array(
-		'title' => l10n('Premium'),
+		'title' => l10n('pcom_pricing_page_support_premium'),
 		'price' => l10n('€%d', 150),
-		'subtitle' => l10n('pricing card premium description'),
+		'subtitle' => l10n('pcom_pricing_page_support_premium_explanation'),
 		'features' => array(
-			array('text' => l10n('Access_f')),
+			array('text' => l10n('pcom_pricing_page_support_functionalities')),
 			array('text' => l10n('Access_doc')),
-			array('text' => l10n('Professional_support')),
+			array('text' => l10n('pcom_pricing_page_user_support')),
 			array('text' => l10n('Response_8')),
-			array('text' => l10n('unlimited administrators')),
+			array('text' => l10n('pcom_pricing_page_unlimited_admins')),
 			array(
-				'text' => l10n('Support_120'),
+				'text' => l10n('pcom_pricing_page_support_premium_plugins'),
 
 			),
 			array(
-				'text' => l10n('Annual audit'),
+				'text' => l10n('pcom_pricing_page_support_premium_audit'),
 				'info' => true,
 				'tooltip' => array(
-					l10n('pricing_annual_audit_info'),
+					l10n('pcom_pricing_annual_audit_info'),
 				)
 			),
 		)
@@ -383,52 +383,52 @@ $extra_storage = array(
 $specific_cases = array(
 	array(
 		'icon' => 'icon-dev',
-		'title' => l10n('pricing specific_case_title_1'),
-		'text' => l10n('pricing specific_case_text_1'),
+		'title' => l10n('pcom_pricing_page_code_plugins_title'),
+		'text' => l10n('pcom_pricing_page_code_plugins_paragraph'),
 	),
 	array(
 		'icon' => 'icon-key',
-		'title' => l10n('pricing specific_case_title_2'),
-		'text' => l10n('pricing specific_case_text_2'),
+		'title' => l10n('pcom_pricing_page_ssh_title'),
+		'text' => l10n('pcom_pricing_page_ssh_paragraph'),
 	),
 );
 
 $prof_services = array(
 	array(
 		'img' => 'personalize_orange.svg',
-		'title' => l10n('pricing prof_service_title_3'),
-		'text' => l10n('pricing prof_service_text_3'),
-		'btn' => l10n('pricing label_see_examples'),
+		'title' => l10n('pcom_pricing_page_on_premise_11'),
+		'text' => l10n('pcom_pricing_page_on_premise_12'),
+		'btn' => l10n('pcom_pricing_page_see_examples'),
 		'price' => l10n('€%d', 490),
-		'suffix' => l10n('pricing price_excl_taxes'),
+		'suffix' => l10n('pcom_pricing_page_ht'),
 	),
 	array(
 		'icon' => 'icon-import',
-		'title' => l10n('pricing prof_service_title_4'),
-		'text' => l10n('pricing prof_service_text_4'),
-		'btn' => l10n('pricing label_learn_more'),
-		'label' => l10n('pricing professional services lil text'),
+		'title' => l10n('pcom_pricing_page_custom_data_import'),
+		'text' => l10n('pcom_pricing_page_on_premise_13'),
+		'btn' => l10n('pcom_pricing_page_learn_more'),
+		'label' => l10n('on_quotation'),
 		'price' => l10n('€%d', 150),
-		'suffix' => l10n('pricing price_excl_taxes_hour'),
+		'suffix' => l10n('pcom_pricing_page_ht_hour'),
 	),
 	array(
 		'icon' => 'icon-wrench',
-		'title' => l10n('pricing prof_service_title_5'),
-		'text' => l10n('pricing prof_service_text_5'),
-		'btn' => l10n('pricing label_see_prerequisites'),
-		'label' => l10n('pricing professional services lil text'),
+		'title' => l10n('pcom_pricing_page_on_premise_18'),
+		'text' => l10n('pcom_pricing_page_on_premise_19'),
+		'btn' => l10n('pcom_pricing_page_see_prerequistes'),
+		'label' => l10n('on_quotation'),
 		'price' => l10n('€%d', 150),
-		'suffix' => l10n('pricing price_excl_taxes_hour'),
+		'suffix' => l10n('pcom_pricing_page_ht_hour'),
 	),
 );
 
 $tech_table_prices = array(
 	'install_customer' => l10n('from €%d', 200),
 	'install_external' => l10n('from €%d', 250),
-	'update_customer' => l10n('€%d', 500, 'pricing price_excl_taxes_year'),
-	'update_external' => l10n('€%d', 600, 'pricing price_excl_taxes_year'),
-	'managed_customer' => l10n('€%d', 1500, 'pricing price_excl_taxes_year'),
-	'na' => l10n('pricing price_na'),
+	'update_customer' => l10n('€%d', 500, 'pcom_pricing_page_ht_year'),
+	'update_external' => l10n('€%d', 600, 'pcom_pricing_page_ht_year'),
+	'managed_customer' => l10n('€%d', 1500, 'pcom_pricing_page_ht_year'),
+	'na' => l10n('pcom_pricing_page_non_applicable'),
 );
 
 $template->assign(array(

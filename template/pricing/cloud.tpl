@@ -1,8 +1,8 @@
 <section class="storage-section container">
 	<div class="storage-header text-center">
-		<h2 class="storage-title text-center">{'pricing storage big title'|translate}</h2>
+		<h2 class="storage-title text-center">{'pcom_pricing_page_storage_popin_1'|translate}</h2>
 		<p class="storage-subtitle text-center">
-			{'pricing storage big description'|translate}
+			{'pcom_pricing_page_storage_popin_2'|translate}
 		</p>
 	</div>
 
@@ -22,14 +22,14 @@
 		file='template/include/buttons/button.tpl'
 		variant='menu_btn_white'
 		href=$PRICING_PDF_LINK
-		label={'pricing storage downloader'|translate} 
+		label={'pcom_pricing_page_download_pdf'|translate} 
 	}
 </div>
 
 <section class="compare_table_container container">
 	<div class="compare_table_toggle text-center">
 		<button class="compare_table_btn" id="compareTableBtn">
-			{'pricing compare table toggle'|translate}
+			{'pcom_pricing_page_compare_plans'|translate}
 			<i class="icon-down-open" id="compareIcon"></i>
 		</button>
 	</div>

@@ -1,9 +1,9 @@
 ﻿<div class="custom-tooltip-content">
 	<div class="row g-0 align-items-center mb-4">
 		<div class="col-7">
-			<h5 class="fw-bolder mb-2 text-dark">{'pricing Free custom graphic personalisation'|translate}</h5>
+			<h5 class="fw-bolder mb-2 text-dark">{'pcom_pricing_page_team_details_8'|translate}</h5>
 			<p class="small text-muted mb-0">
-				{'pricing text_tootlip_custom'|translate}
+				{'pcom_pricing_page_personalisation_popin_1'|translate}
 			</p>
 		</div>
 		<div class="col-5 text-end">
@@ -20,7 +20,7 @@
 					href="https://customizations.piwigo.com/"
 					target="_blank"
 					rel="noopener"
-					label={'pricing See examples'|translate} 
+					label={'pcom_pricing_page_see_examples'|translate} 
 				}
 			</div>
 		</div>
