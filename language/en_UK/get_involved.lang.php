@@ -1,4 +1,6 @@
 <?php
+$lang['page_meta_title'] = 'Get involved in your own way, contribute to Piwigo';
+$lang['page_meta_description'] = 'Help shape the future of Piwigo with code contribution, translation, community support or donate money.';
 
 $lang['porg_get_involved_title'] = 'Help <span class="orange-text">shape the future</span> of Piwigo';
 $lang['porg_get_involved_desc1'] = 'Piwigo has been built with its community since 2002.<br>Whether you write code, translate the interface, report bugs or help other users, every contribution helps make Piwigo better.';
