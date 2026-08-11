@@ -44,11 +44,11 @@ if ($user['language'] == 'fr_FR') {
 	$pricing_pdf_link = "https://ressources.piwigo.com/action.php?id=624&part=e&download";
 	$doc_link = 'https://doc-fr.piwigo.org/';
 	$forum_link = 'https://fr.piwigo.org/forum/';
-	$download_link = 'https://fr.piwigo.org/obtenir-piwigo';
+	$download_link = 'https://piwigo.org/download/dlcounter.php?code=latest';
 } else {
 	$pricing_pdf_link = "https://ressources.piwigo.com/action.php?id=623&part=e&download";
 	$doc_link = 'https://doc.piwigo.org/';
-	$download_link = 'https://piwigo.org/get-piwigo';
+	$download_link = 'https://piwigo.org/download/dlcounter.php?code=latest';
 	$forum_link = ($user['language'] == 'de_DE') ? 'https://de.piwigo.org/forum/' : 'https://piwigo.org/forum/';
 }
 

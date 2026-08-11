@@ -45,7 +45,7 @@
 								<i class="icon-rounded-warning text-info-light"></i>
 
 							{elseif $feature.text|lower|strpos:"over" !== false}
-								<a href="{$PORG_ROOT}{$URL.plugins|default:'#'}" class="text-decoration-underline text-inherit">
+								<a href="{$PORG_ROOT}{$URL.plugins}" class="text-decoration-underline text-inherit">
 									{$feature.text|translate}
 								</a>
 
