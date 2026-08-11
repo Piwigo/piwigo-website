@@ -48,6 +48,15 @@
   line-height: 130%;
 }
 
+.faq-answer a {
+  color: var(--main_orange) !important;
+  text-decoration: none !important;
+}
+
+.faq-answer a:hover {
+  text-decoration: underline !important
+}
+
 .faq-section .accordion-body {
   padding: 0 15px 10px 15px;
 }
