@@ -40,6 +40,7 @@ function porg_get_pages()
     'case-study-indre' => 'Case Study: Indre',
     'case-study-wessex' => 'Case Study: Wessex',
     'pro-support' => 'Professional Support',
+    'missing-account' => 'Missing account',
   );
 }
 
