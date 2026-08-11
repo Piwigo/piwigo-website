@@ -103,10 +103,12 @@
                 <span class="custom-radio"></span>
                 <span class="custom-option-label p-boxed">{'Sales inquiry'|translate}</span>
               </div>
+              {if substr($lang_info.code, 0, 2) != 'fr'}
               <div class="custom-option" data-value="Book a demo">
                 <span class="custom-radio"></span>
                 <span class="custom-option-label p-boxed">{'Book a demo'|translate}</span>
               </div>
+              {/if}
               <div class="custom-option" data-value="Report a security issue">
                 <span class="custom-radio"></span>
                 <span class="custom-option-label p-boxed">{'Report a security issue'|translate}</span>

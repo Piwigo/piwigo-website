@@ -179,6 +179,7 @@
       // This script checks for a 'use_case' URL parameter and applies the corresponding filter on page load.
       const urlParams = new URLSearchParams(window.location.search);
       const useCase = urlParams.get('use_case');
+      const category = urlParams.get('category');
 
       if (useCase) {
         const checkbox = document.getElementById(useCase);
@@ -186,8 +187,23 @@
           checkbox.click();
 
           const filterContainer = checkbox.closest('[id^="filter-"]');
-          if (filterContainer && getComputedStyle(filterContainer).display === 'none') {
-            const filterTitle = filterContainer.previousElementSibling;
+          const filterSection = checkbox.closest('.filter-section');
+          if (filterContainer && filterSection && getComputedStyle(filterContainer).display === 'none') {
+            const filterTitle = filterSection.querySelector('.filter-title');
+            filterTitle.click();
+          }
+        }
+      }
+
+      if (category) {
+        const checkbox = document.getElementById(category);
+        if (checkbox && typeof filterExamples === 'function') {
+          checkbox.click();
+
+          const filterContainer = checkbox.closest('[id^="filter-"]');
+          const filterSection = checkbox.closest('.filter-section');
+          if (filterContainer && filterSection && getComputedStyle(filterContainer).display === 'none') {
+            const filterTitle = filterSection.querySelector('.filter-title');
             filterTitle.click();
           }
         }
