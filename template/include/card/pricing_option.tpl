@@ -1,4 +1,5 @@
-<div class="pricing-card card-{$type} {if $is_best_deal}best-deal-border{/if} shadow-sm d-flex flex-column p-4 rounded-4 bg-white h-100">
+<div
+	class="pricing-card card-{$type} {if $is_best_deal}best-deal-border{/if} shadow-sm d-flex flex-column p-4 rounded-4 bg-white h-100">
 
 	{if $is_best_deal}
 		<div class="best-deal-badge">{'best_deal'|translate}</div>
@@ -24,7 +25,8 @@
 			"menu_btn_main_pink"
 			:
 			"menu_btn_green"
-			href={(isset($btn_link_try)) ? $btn_link_try : "#"} label={(isset($btn_try)) ? ($btn_try|translate) : ('pcom_pricing_page_try_it_free'|translate)} 
+			href={(isset($btn_link_try)) ? $btn_link_try : "#"}
+		label={(isset($btn_try)) ? ($btn_try|translate) : ('pcom_pricing_page_try_it_free'|translate)}
 		}
 	</div>
 
@@ -39,13 +41,15 @@
 							<i class="icon-check-1 me-2 mt-1"></i>
 						{/if}
 
-						<span class="small {if isset($feature.not_included) && $feature.not_included}text-muted{else}text-secondary{/if}">
+						<span
+							class="small {if isset($feature.not_included) && $feature.not_included}text-muted{else}text-secondary{/if}">
 							{if isset($feature.url)}
 								<a href="{$feature.url}" class="text-decoration-underline text-inherit">{$feature.text|translate}</a>
 								<i class="icon-rounded-warning text-info-light"></i>
 
 							{elseif $feature.text|lower|strpos:"over" !== false}
-								<a href="{$PORG_ROOT}{$URL.plugins}" class="text-decoration-underline text-inherit">
+								<a href="{$PORG_ROOT}{$URL.plugins}&plan={if isset($plan_id) && $plan_id != 'free'}selfhosted&display=self-hosted{elseif isset($plan.id) && $plan.id != 'free'}selfhosted{else}cloud{/if}"
+									class="text-decoration-underline text-inherit">
 									{$feature.text|translate}
 								</a>
 
@@ -54,7 +58,8 @@
 								{$translated_text|replace:'documentation':"<a href='$DOC_LINK' class='text-decoration-underline text-inherit' target='_blank' rel='noopener'>documentation</a>"|replace:'community forum':"<a href='$FORUM_LINK' class='text-decoration-underline text-inherit' target='_blank' rel='noopener'>community forum</a>"}
 
 							{elseif $feature.text|lower|strpos:"support included" !== false}
-								<span class="custom-link-container js-plugin-tooltip-trigger d-flex align-items-top" style="cursor: pointer;">
+								<span class="custom-link-container js-plugin-tooltip-trigger d-flex align-items-top"
+									style="cursor: pointer;">
 									<span class="link-text">{$feature.text|translate}</span>
 									<i class="icon-rounded-warning text-info-light ms-1 flex-shrink-0"></i>
 									<div class="pricing-plugin-popover">
@@ -99,7 +104,8 @@
 								</a>
 
 							{elseif $service.text|lower|strpos:"custom graphic personalisation" !== false}
-								<span class="custom-link-container js-custom-tooltip-trigger d-flex align-items-center" style="cursor: pointer;">
+								<span class="custom-link-container js-custom-tooltip-trigger d-flex align-items-center"
+									style="cursor: pointer;">
 									<span class="link-text">{$service.text|translate}</span>
 									<i class="icon-rounded-warning text-info-light flex-shrink-0"></i>
 
@@ -130,7 +136,8 @@
 		{include
 			file="template/include/buttons/button.tpl"
 			variant="menu_btn_white"
-			href={(isset($btn_link_try)) ? $btn_link_try : "#"} label={(isset($btn_trial)) ? ($btn_trial|translate) : ('pcom_pricing_page_start_30_day_free_trial'|translate)} 
+			href={(isset($btn_link_try)) ? $btn_link_try : "#"}
+		label={(isset($btn_trial)) ? ($btn_trial|translate) : ('pcom_pricing_page_start_30_day_free_trial'|translate)}
 		}
 	</div>
 	<h2 class="h2-mobile-top-page text-center">{$title|translate}</h2>
