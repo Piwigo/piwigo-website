@@ -175,11 +175,11 @@ $lang['pricing Add user comments'] = 'Add user comments';
 $lang['pcom_pricing_page_etc'] = 'etc..';
 
 // PRO line : All the standard features of Piwigo
-$lang['pricing_page_personal_details_6'] = 'Albums, sub-albums, tags';
-$lang['pricing_page_personal_details_3'] = 'Import of your files\' metadata';
-$lang['pricing_page_personal_pro_details_5'] = 'User rights management';
-$lang['pricing_page_personal_details_5'] = 'Private or public content';
-$lang['pricing_page_personal_details_4'] = 'Your web gallery can be customized with our selection of themes';
+$lang['pcom_pricing_page_personal_details_6'] = 'Albums, sub-albums, tags';
+$lang['pcom_pricing_page_personal_details_3'] = 'Import of your files\' metadata';
+$lang['pcom_pricing_page_personal_pro_details_5'] = 'User rights management';
+$lang['pcom_pricing_page_personal_details_5'] = 'Private or public content';
+$lang['pcom_pricing_page_personal_details_4'] = 'Your web gallery can be customized with our selection of themes';
 
 
 // PRO line : Over 80 plugins to customize your Piwigo

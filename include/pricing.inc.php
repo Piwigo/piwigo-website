@@ -95,11 +95,11 @@ $plans = array(
 				'text' => l10n('pcom_pricing_page_personal_pro_details_1'),
 				'info' => true,
 				'tooltip' => array(
-					l10n('pricing_page_personal_details_6'),
-					l10n('pricing_page_personal_details_3'),
-					l10n('pricing_page_personal_pro_details_5'),
-					l10n('pricing_page_personal_details_5'),
-					l10n('pricing_page_personal_details_4')
+					l10n('pcom_pricing_page_personal_details_6'),
+					l10n('pcom_pricing_page_personal_details_3'),
+					l10n('pcom_pricing_page_personal_pro_details_5'),
+					l10n('pcom_pricing_page_personal_details_5'),
+					l10n('pcom_pricing_page_personal_details_4')
 				)
 			),
 			array(
@@ -191,11 +191,11 @@ $plans = array(
 				'text' => l10n('plugins to customize3'),
 				'info' => true,
 				'tooltip' => array(
-					l10n('pricing_page_personal_pro_details_7'),
-					l10n('pricing_page_personal_pro_details_8'),
-					l10n('pricing_page_personal_pro_details_9'),
-					l10n('pricing_page_personal_pro_details_10'),
-					l10n('pricing_page_personal_pro_details_11'),
+					l10n('pcom_pricing_page_personal_pro_details_7'),
+					l10n('pcom_pricing_page_personal_pro_details_8'),
+					l10n('pcom_pricing_page_personal_pro_details_9'),
+					l10n('pcom_pricing_page_personal_pro_details_10'),
+					l10n('pcom_pricing_page_personal_pro_details_11'),
 					l10n('pcom_pricing_page_etc')
 				)
 			),
