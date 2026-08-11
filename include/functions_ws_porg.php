@@ -103,6 +103,7 @@ function ws_porg_contact_send($params, &$service)
   /* TOPIC */
   $allowed_topics = array(
     'Sales inquiry',
+    'Book a demo',
     'Report a security issue',
     'Send a testimonial',
     'Make a donation',

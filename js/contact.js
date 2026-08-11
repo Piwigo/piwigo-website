@@ -71,6 +71,9 @@ $(document).ready(function () {
       if (topicIdFromUrl === 'donation') {
         dataValueToSelect = 'Make a donation';
       }
+      if (topicIdFromUrl === 'demo') {
+        dataValueToSelect = 'Book a demo';
+      }
       // add more 'else if' for other topic_ids here
 
       if (dataValueToSelect) {
