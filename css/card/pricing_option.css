@@ -238,7 +238,7 @@ Pricing Card
   font-size: 14px;
   font-weight: 645;
   text-transform: uppercase;
-  z-index: 10;
+  z-index: 8;
 }
 
 .card-selfhosted .icon-check-1 {
@@ -529,6 +529,14 @@ Pricing Global Tooltip
     left: 0;
     color: #333333;
     font-weight: bold;
+}
+
+.global-popover-content ul.global-popover-list li:only-child {
+    padding-left: 0;
+}
+
+.global-popover-content ul.global-popover-list li:only-child::before {
+    content: none;
 }
 
 /******
