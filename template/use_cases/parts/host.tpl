@@ -25,7 +25,7 @@
           </div>
         </div>
         <div class="text-center mt-4">
-          {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'Choose your setup'|translate} href="{$PORG_ROOT}{$URL.pricing}"}
+          {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'Choose your setup'|translate} href="{$PORG_ROOT}{$URL.get_piwigo}"}
         </div>
       </div>
     </div>

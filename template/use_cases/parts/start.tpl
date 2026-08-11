@@ -6,7 +6,7 @@
           <h2 class="text-center mb-0">{$title}</h2>
           <p class="text-center mb-4">{$description}</p>
           <div class="d-flex justify-content-center">
-            {include file='template/include/buttons/button.tpl' variant='cta_primary' label={'use cases header btn'|translate} href="{$PORG_ROOT}{$URL.get_piwigo}"}
+            {include file='template/include/buttons/button.tpl' variant='cta_primary' label={'use cases header btn'|translate} href="{$PORG_ROOT}{$URL.signup}"}
           </div>
         </div>
       </div>
