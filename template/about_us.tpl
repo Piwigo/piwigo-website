@@ -547,7 +547,6 @@ add it for lana*}
           const scrollPadding = (timelineContainer.offsetWidth / 2) - (itemWidth / 2);
           timelineContainer.style.paddingLeft = `${scrollPadding}px`;
           timelineContainer.style.paddingRight = `${scrollPadding}px`;
-          scrollToItem(lastActiveIndex === -1 ? 0 : lastActiveIndex, 'instant');
         };
 
         timelineContainer.addEventListener('scroll', checkCenterItem);
@@ -560,14 +559,20 @@ add it for lana*}
           dot.addEventListener('click', () => scrollToItem(index));
         });
 
-        const resizeObserver = new ResizeObserver(() => {
-          adjustTimeline();
-        });
-        resizeObserver.observe(timelineContainer);
+        const timelineObserver = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              adjustTimeline();
+              scrollToItem(lastActiveIndex === -1 ? 0 : lastActiveIndex, 'instant');
+              // On peut se déconnecter après la première initialisation si le layout est fixe
+              // timelineObserver.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.1 });
 
-        window.addEventListener('orientationchange', () => {
-          setTimeout(adjustTimeline, 100);
-        });
+        timelineObserver.observe(timelineContainer);
+        window.addEventListener('resize', adjustTimeline);
+        window.addEventListener('orientationchange', () => setTimeout(adjustTimeline, 100));
 
         updateActiveMilestone(0);
       }
@@ -730,7 +735,7 @@ add it for lana*}
   <div class="container justify-content-center">
     <div class="row text-center justify-content-center">
       <div class="col-md-10">
-        {include file="template/include/card/global_text_image.tpl" title={'porg_about_us_join_title'|translate} desc={'porg_about_us_join_desc'|translate} image="{$PORG_ROOT_URL}images/about-us/join.webp" btn_text={'Get Involved'|translate} btn_link="#" btn_orange=true}
+        {include file="template/include/card/global_text_image.tpl" title={'porg_about_us_join_title'|translate} desc={'porg_about_us_join_desc'|translate} image="{$PORG_ROOT_URL}images/about-us/join.webp" btn_text={'Get Involved'|translate} btn_link="{$PORG_ROOT}{$URL.get_involved}" btn_orange=true}
       </div>
     </div>
   </div>

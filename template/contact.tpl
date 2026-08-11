@@ -47,7 +47,7 @@
         </span>
         <h2 class="h2-top-page text-center mb-0">{'porg_contact_orange_title'|translate}</h2>
         <p class="text-center mb-0">{'porg_contact_orange_desc'|translate}</p>
-        {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'porg_contact_orange_btn'|translate} href="{$DOCUMENTATION_URL}"}
+        {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'porg_contact_orange_btn'|translate} href="{$EXT_URL.documentation}"}
       </div>
     </div>
     <div class="col-md-12 mt-4 pt-2">

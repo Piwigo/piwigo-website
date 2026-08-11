@@ -1,7 +1,7 @@
 <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/pages/plugins.css">
 <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/buttons/pricing_switch.css">
 
-<section class="plugins-title">
+<section class="plugins-title mb-0">
   <div class="container justify-content-center">
     <div class="justify-content-center row">
       <div class="col-md-6 pt-5 mt-5">
@@ -9,11 +9,13 @@
         <p class="text-center">{'porg_plugins_desc'|translate}</p>
       </div>
     </div>
-    <div class="text-center mt-5">
-      {include file="template/include/buttons/pricing_switch.tpl"}
-    </div>
   </div>
 </section>
+
+
+<div class="pricing-toggle-container text-center py-3 plugins-title" style="position: sticky; top: 0; background: white; z-index: 10;">
+  {include file="template/include/buttons/pricing_switch.tpl"}
+</div>
 
 {assign var=display_mode value=$smarty.get.display|default:'cloud'}
 

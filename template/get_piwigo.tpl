@@ -47,7 +47,7 @@
         {include
           file='template/include/buttons/button.tpl'
           variant='menu_btn_blue'
-          href="{$INSTALL_GUIDE_URL}"
+          href="{$EXT_URL.installation_guide}"
           target="_blank"
         label={'product-header-self-hosted-btn2'|translate}
         }

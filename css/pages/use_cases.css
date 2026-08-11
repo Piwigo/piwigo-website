@@ -562,3 +562,80 @@
     padding: 0;
   }
 }
+
+.container-features .card {
+  margin-top: 20px;
+  border: none;
+  border-radius: 20px;
+  background: var(--clear);
+  position: relative;
+  padding: 30px;
+  text-align: left;
+}
+
+.container-features .card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 1px;
+  background: linear-gradient(91.79deg, #d9d9d9 16.42%, #f7f7f7 98.39%);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.container-features .card-img-top {
+  object-fit: contain;
+  width: auto;
+  border-radius: 20px 20px 0 0;
+  margin: 1px 1px 0;
+}
+
+.container-features .card-img-top:not(.w-100) {
+  margin: -29px -29px 30px;
+}
+
+.container-features .sector-testimonial {
+  color: var(--accent_green);
+}
+
+.container-features .flag-icon {
+  border-radius: 2px;
+}
+
+.container-features .country-testimonial {
+  color: var(--dark_text);
+  margin-bottom: 10px;
+}
+
+.container-features .author i {
+  font-size: 13px;
+  color: var(--main_flash_green);
+  margin-left: 5px;
+}
+
+.container-features .author:hover i.icon-ext1::before {
+  content: '\e82d';
+}
+
+.container-features .author:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--dark);
+}
+
+.container-features a .author {
+  margin-bottom: 10px;
+}
+
+.container-features .p-testimonial {
+  font-size: 14px;
+  line-height: 1.63;
+  margin-bottom: 0;
+}

@@ -168,7 +168,7 @@
 
               <div class="d-flex justify-content-start mt-4">
                 {include file='template/include/buttons/button.tpl' variant='menu_btn_orange' label="{'porg_get_involved_users_btn'|translate}"
-                href="{$FORUM_URL}" class="text-start px-4" target="_blank"}
+                href="http://{$PORG_DOMAIN_PREFIX}piwigo.org/forum/" class="text-start px-4" target="_blank"}
               </div>
             </div>
           </div>

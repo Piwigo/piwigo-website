@@ -14,7 +14,7 @@
 				category_type='feature-submenu'
 				is_ext=true
 				title={'Forum'|translate} description={'Forum desc'|translate} icon_class='icon-icon28'
-      href="{$FORUM_URL}"
+      href="http://{$PORG_DOMAIN_PREFIX}piwigo.org/forum/"
       }
     </div>
 
@@ -26,7 +26,7 @@
 				category_type='use-case-submenu'
 				is_ext=true
 				title={'Documentation'|translate} description={'Documentation desc'|translate} icon_class='icon-doc'
-      href="{$DOCUMENTATION_URL}"
+      href="{$EXT_URL.documentation}"
       }
 
       {include
@@ -34,7 +34,7 @@
 				category_type='use-case-submenu'
 				is_ext=true
 				title={'Installation guides'|translate} description={'Installation guides desc'|translate} icon_class='icon-dev'
-      href="{$INSTALL_GUIDE_URL}"
+      href="{$EXT_URL.installation_guide}"
       }
 
       {include

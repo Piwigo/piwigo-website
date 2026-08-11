@@ -16,7 +16,7 @@
 
 <section class="client-full-width-banner-indre"></section>
 
-<a href="#release_menu" class="btn-back-to-menu" title="go to menu"><i class="icon-down-open"></i></a>
+<a href="#release_menu" class="btn-back-to-menu d-md-none" title="go to menu"><i class="icon-down-open"></i></a>
 
 <section class="container mb-5">
   <div class="row version-16-content pt-5">

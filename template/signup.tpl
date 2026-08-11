@@ -55,7 +55,7 @@
             <div class="form-group position-relative mb-3">
               <input type="password" class="form-control" id="form-password" name="password" placeholder=" " required>
               <span class="password-placeholder p-boxed">{'signup_form_password'|translate}</span>
-              <span class="password-example-placeholder p-boxed d-none">{'Piwigo password example'|translate}</span>
+              {* <span class="password-example-placeholder p-boxed d-none">{'Piwigo password example'|translate}</span> *}
               <span class="little-password-placeholder form-input">{'signup_form_password'|translate}</span>
               <i id="passWarningIcon" class="icon-rounded-warning" aria-hidden="true" style="display:none;"></i>
               <i id="passCheckIcon" class="icon-rounded-check" aria-hidden="true" style="display: none;"></i>

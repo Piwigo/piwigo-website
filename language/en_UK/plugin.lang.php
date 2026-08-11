@@ -280,6 +280,8 @@ $lang['porg_cases4_title'] = 'ECT manages its corporate image bank with Piwigo, 
 $lang['porg_cases4_description'] = 'Since the implementation of Piwigo, we lose much less time looking for the photos we need, it’s instantaneous, we’re always up to date.';
 $lang['porg_cases5_title'] = 'Cotentin Tourism Office: A collaborative et secure photo library for the tourist communication of 130 municipalities.';
 $lang['porg_cases5_description'] = 'Piwigo allows us to save our photos in a secure and shared space: it is a collaborative tool that makes it much easier to share files.';
+$lang['porg_cases_start_title'] = 'Ready to start managing your photos with Piwigo?';
+$lang['porg_cases_start_description'] = 'Try Piwigo Cloud free for 30 days. Create your account, upload your files and start working right away.';
 
 
 /*Used in guide pages*/

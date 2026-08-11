@@ -114,3 +114,17 @@
 #plugins-table-body tr.odd-row {
   background-color: #f9f9f9;
 }
+
+@media (max-width: 678px) {
+  .btn-pricing-switch {
+    width: 322px !important;
+  }
+
+  .plugins-title,
+  .container-featurem
+  .container-plugin,
+  .col-xxl-11 {
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+  }
+}

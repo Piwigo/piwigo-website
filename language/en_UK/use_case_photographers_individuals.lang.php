@@ -43,6 +43,9 @@ $lang['use cases perso stacks card5 description'] = 'Developed openly since 2002
 
 $lang['use cases perso host description'] = 'Choose the deployment model that fits your needs. Use Piwigo Cloud for a ready-to-use hosted gallery, or install the open-source version on your own server.';
 
+$lang['use cases perso use title'] = 'See how photographers and individuals use Piwigo';
+$lang['use cases perso use btn'] = 'Discover more galeries';
+
 $lang['use cases perso comments title'] = 'What photographers say about Piwigo';
 
 $lang['use cases perso start title'] = 'Ready to organize and share your photo library?';

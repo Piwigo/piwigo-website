@@ -33,7 +33,16 @@
 				<h4 class="professional-services-title-text text-center">{$service.title}</h4>
 				<p class="professional-services-text text-center">{$service.text}</p>
 				<div class="service-action">
-					{include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label=$service.btn}
+					{assign var="btn_href" value="#"}
+					{if $service@index == 0}
+						{assign var="btn_href" value="{$EXT_URL.customizations}"}
+					{elseif $service@index == 1}
+						{assign var="btn_href" value="{$EXT_URL.data_import}"}
+					{elseif $service@index == 2}
+						{assign var="btn_href" value="{$EXT_URL.prerequisites}"}
+					{/if}
+
+					{include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label=$service.btn href=$btn_href}
 				</div>
 				<div class="service-price justify-content-end">
 					{if isset($service.label)}

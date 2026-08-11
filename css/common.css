@@ -621,6 +621,10 @@ Text Color
   font-size: 12px !important;
 }
 
+.threec-text-hover:hover {
+  color: var(--dark) !important;
+}
+
 .pink-bg {
   background-color: var(--secondary_pink);
 }

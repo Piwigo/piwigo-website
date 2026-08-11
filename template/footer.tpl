@@ -25,8 +25,10 @@
               <li><a class="footer-feature-link" href="{$PORG_ROOT}{$URL.pricing}">{'Pricing'|translate}</a></li>
             </ul>
             <div class="footer-get-started-actions">
-              {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'Footer Button 1 Plan a demo'|translate}
-              href="#"}
+              {if substr($lang_info.code, 0, 2) == 'fr'}
+                {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'Footer Button 1 Plan a demo'|translate}
+                href="#todo"}
+              {/if}
               {include file='template/include/buttons/button.tpl' variant='menu_btn_green' label={'Contact us'|translate}
               href="{$PORG_ROOT}{$URL.contact}"}
             </div>
@@ -118,9 +120,9 @@
             <div id="footerMobileSupport" class="collapse footer-mobile-collapse" data-bs-parent=".footer-mobile-nav-accordion">
               <ul>
                 <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.pro_support}">{'Professional support'|translate}</a></li>
-                <li><a class="footer-feature-link footer-menu-item" href="{$FORUM_URL}" target="_blank" rel="noopener noreferrer">{'Community forum'|translate}</a></li>
-                <li><a class="footer-feature-link footer-menu-item" href="{$DOCUMENTATION_URL}" target="_blank" rel="noopener noreferrer">{'Documentation'|translate}</a></li>
-                <li><a class="footer-feature-link footer-menu-item" href="{$INSTALL_GUIDE_URL}" target="_blank" rel="noopener noreferrer">{'Installation guides'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="http://{$PORG_DOMAIN_PREFIX}piwigo.org/forum/" target="_blank" rel="noopener noreferrer">{'Community forum'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="{$EXT_URL.documentation}" target="_blank" rel="noopener noreferrer">{'Documentation'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="{$EXT_URL.installation_guide}" target="_blank" rel="noopener noreferrer">{'Installation guides'|translate}</a></li>
                 <li><a class="footer-feature-link footer-menu-item" href="https://github.com/Piwigo/Piwigo/wiki" target="_blank" rel="noopener noreferrer">{'Developer resources'|translate}</a></li>
               </ul>
             </div>
@@ -202,9 +204,9 @@
         <h6 class="footer-title mt-4">{'Support'|translate}</h6>
         <ul>
           <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.pro_support}">{'Professional support'|translate}</a></li>
-          <li><a class="footer-feature-link footer-menu-item" href="{$FORUM_URL}" target="_blank" rel="noopener noreferrer">{'Community forum'|translate}</a></li>
-          <li><a class="footer-feature-link footer-menu-item" href="{$DOCUMENTATION_URL}" target="_blank" rel="noopener noreferrer">{'Documentation'|translate}</a></li>
-          <li><a class="footer-feature-link footer-menu-item" href="{$INSTALL_GUIDE_URL}" target="_blank" rel="noopener noreferrer">{'Installation guides'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="http://{$PORG_DOMAIN_PREFIX}piwigo.org/forum/" target="_blank" rel="noopener noreferrer">{'Community forum'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="{$EXT_URL.documentation}" target="_blank" rel="noopener noreferrer">{'Documentation'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="{$EXT_URL.installation_guide}" target="_blank" rel="noopener noreferrer">{'Installation guides'|translate}</a></li>
           <li><a class="footer-feature-link footer-menu-item" href="https://github.com/Piwigo/Piwigo/wiki" target="_blank" rel="noopener noreferrer">{'Developer resources'|translate}</a></li>
         </ul>
       </div>
@@ -244,7 +246,9 @@
             <li><a class="footer-legal-link footer-menu-item" href="{$PORG_ROOT}{$URL.legal_notice}">{'Footer legal 3 Legal Notice'|translate}</a></li> *}
             <li><a class="footer-legal-link footer-menu-item" href="{$PORG_ROOT}{$URL.terms_of_service}">{'Footer legal 4 Terms of Use'|translate}</a></li>
             {* <li><a class="footer-legal-link footer-menu-item" href="{$PORG_ROOT}{$URL.gdpr}">{'Footer legal 5 GDPR'|translate}</a></li> *}
-            <li><a class="footer-legal-link footer-menu-item" href="{$PORG_ROOT}{$URL.dpa}">{'Footer legal 6 DPA'|translate}</a></li>
+            {if substr($lang_info.code, 0, 2) == 'fr'}
+              <li><a class="footer-legal-link footer-menu-item" href="{$PORG_ROOT}{$URL.dpa}">{'Footer legal 6 DPA'|translate}</a></li>
+            {/if}
           </ul>
         </div>
 

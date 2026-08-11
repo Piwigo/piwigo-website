@@ -264,6 +264,7 @@
   font-family: "Kanit", sans-serif;
   font-size: 14px;
   color: var(--dark_text);
+  transition: all 350ms ease;
 }
 
 @media (max-width: 768px) {

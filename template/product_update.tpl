@@ -87,7 +87,7 @@
 
       </div>
 
-      <div class="timeline">
+      {* <div class="timeline">
 
         <!-- Hard-coded demo data -->
         <div class="timeline-week">
@@ -126,7 +126,7 @@
 
         </div>
 
-      </div>
+      </div> *}
     </div>
   </div>
 </section>

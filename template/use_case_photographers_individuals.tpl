@@ -113,7 +113,47 @@
   description={'use cases perso host description'|translate} cloud_description={'use cases public host cloud'|translate}
   self_hosted_description={'use cases public host self'|translate}}
 
-
+  <section class="container container-features">
+    <div class="row text-center features-content justify-content-center">
+      <div class="col-md-9 text-center justify-content-center row">
+        <h2 class="text-center mb-5">{'use cases perso use title'|translate}</h2>
+        {assign var="col_count" value=0}
+        {foreach $users_examples as $user}
+          {if $col_count % 2 == 0}
+            <div class="col-12 col-md-4 {if $col_count >= 4}d-none d-md-block{/if}">
+            {/if}
+            <div class="card">
+              <img class="card-img-top"
+                src="{$user.derivatives.medium.url|replace:'_datas/c/v/7/cv7jpz6hf8/i/':'i.php?/'}">
+              <div class="">
+                <div class="col-12">
+                  <p class="sector-testimonial d-inline-block pe-2 mb-0">{"Photographers & individuals"|translate}</p>
+                  {if isset($user.country)}<p class="d-inline-block country-testimonial"><span
+                        class="flag-icon flag-icon-{$user.country|lower} me-2"></span>{"country_{$user.country}"|translate}
+                  </p>{/if}
+                </div>
+                {if isset($user.page_url)}
+                  <a href="{$user.page_url}" target='blank' class="non-decorated-text">
+                    <p class="author name-testimonial">{$user.name}<i class="icon-ext1"></i></p>
+                  </a>
+                {else}
+                  <p class="author name-testimonial">{$user.name}</p>
+                {/if}
+                {if isset($user.comment)}<p class="p-testimonial">{$user.comment}</p>{/if}
+              </div>
+            </div>
+            {assign var="col_count" value=$col_count+1}
+            {if $col_count % 2 == 0}
+            </div>
+          {/if}
+        {/foreach}
+        <div class="col-12">
+          {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'use cases perso use title'|translate}
+          href="{$PORG_ROOT}{$URL.users}{if $URL.users|strstr:'?'}&{else}?{/if}use_case=perso" class="mt-5"}
+        </div>
+      </div>
+    </div>
+  </section>
 
   {include file='template/use_cases/parts/comments.tpl' title={'use cases perso comments title'|translate}
   comments=$perso_testimonials btn_text={'use cases public comments btn'|translate}

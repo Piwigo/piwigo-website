@@ -56,12 +56,12 @@
         </div>
         <div class="short-get-started-links justify-content-center">
           <div class="d-flex flex-row short-get-started-links-r1 pb-2 gap-4 justify-content-center">
-            <p class="short-get-started-links-text mb-0 gap-1 d-flex"><i class="icon-doc"></i>{'selfhosted-short-cta-guides'|translate}</p>
-            <p class="short-get-started-links-text mb-0 gap-1 d-flex"><i class="icon-dev"></i>{'selfhosted-short-cta-sys'|translate}</p>
+            <a href="{$EXT_URL.installation_guide}" target="_blank" rel="noopener noreferrer"  class="threec-text-hover short-get-started-links-text mb-0 gap-1 d-flex non-decorated-text"><i class="icon-doc"></i>{'selfhosted-short-cta-guides'|translate}</a>
+            <a href="{$EXT_URL.prerequisites}" target="_blank" rel="noopener noreferrer"  class="threec-text-hover short-get-started-links-text mb-0 gap-1 d-flex non-decorated-text"><i class="icon-dev"></i>{'selfhosted-short-cta-sys'|translate}</a>
           </div>
           <div class="d-flex flex-row short-get-started-links-r2 pb-2 gap-4 justify-content-center">
-            <p class="short-get-started-links-text mb-0 gap-1 d-flex"><i class="icon-docker"></i>{'selfhosted-short-cta-docker'|translate}</p>
-            <p class="short-get-started-links-text mb-0 gap-1 d-flex"><i class="icon-arrows-cw"></i>{'selfhosted-short-cta-updt'|translate}</p>
+            <a href="{$EXT_URL.docker}" target="_blank" rel="noopener noreferrer"  class="threec-text-hover short-get-started-links-text mb-0 gap-1 d-flex non-decorated-text"><i class="icon-docker"></i>{'selfhosted-short-cta-docker'|translate}</a>
+            <a href="{$PORG_ROOT}{$URL.product_update}" target="_blank" rel="noopener noreferrer"  class="threec-text-hover short-get-started-links-text mb-0 gap-1 d-flex non-decorated-text"><i class="icon-arrows-cw"></i>{'selfhosted-short-cta-updt'|translate}</a>
           </div>
         </div>
       </div>
@@ -155,11 +155,11 @@
 
           <div class="short-get-started-links justify-content-center">
             <div class="d-flex flex-row flex-wrap short-get-started-links-r1 pb-2 gap-4 row-gap-2 justify-content-center">
-              <a href="{$FORUM_URL}" target="_blank" rel="noopener noreferrer" class="short-get-started-links-text mb-0 gap-1 d-flex non-decorated-text"><i class="icon-latest-news"></i>{'selfhosted-ecosystem-community-badge1'|translate}</a>
-              <a href="https://github.com/Piwigo" target="_blank" rel="noopener noreferrer" class="short-get-started-links-text mb-0 gap-1 d-flex non-decorated-text"><i class="icon-git"></i>{'selfhosted-ecosystem-community-badge2'|translate}</a>
-              <a href="https://piwigo.org/ext/" target="_blank" rel="noopener noreferrer" class="short-get-started-links-text mb-0 gap-1 d-flex non-decorated-text"><i class="icon-contribute"></i>{'selfhosted-ecosystem-community-badge3'|translate}</a>
-              <a href="https://piwigo.org/ext/" target="_blank" rel="noopener noreferrer" class="short-get-started-links-text mb-0 gap-1 d-flex non-decorated-text"><i class="icon-extension"></i>{'selfhosted-ecosystem-community-badge4'|translate}</a>
-              <a href="https://github.com/Piwigo/Piwigo/wiki" target="_blank" rel="noopener noreferrer" class="short-get-started-links-text mb-0 gap-1 d-flex non-decorated-text"><i class="icon-dev"></i>{'selfhosted-ecosystem-community-badge5'|translate}</a>
+              <a href="http://{$PORG_DOMAIN_PREFIX}piwigo.org/forum/" target="_blank" rel="noopener noreferrer" class="threec-text-hover short-get-started-links-text mb-0 gap-1 d-flex non-decorated-text"><i class="icon-latest-news"></i>{'selfhosted-ecosystem-community-badge1'|translate}</a>
+              <a href="https://github.com/Piwigo" target="_blank" rel="noopener noreferrer" class="threec-text-hover short-get-started-links-text mb-0 gap-1 d-flex non-decorated-text"><i class="icon-git"></i>{'selfhosted-ecosystem-community-badge2'|translate}</a>
+              <a href="https://piwigo.org/ext/" target="_blank" rel="noopener noreferrer" class="threec-text-hover short-get-started-links-text mb-0 gap-1 d-flex non-decorated-text"><i class="icon-contribute"></i>{'selfhosted-ecosystem-community-badge3'|translate}</a>
+              <a href="https://piwigo.org/ext/" target="_blank" rel="noopener noreferrer" class="threec-text-hover short-get-started-links-text mb-0 gap-1 d-flex non-decorated-text"><i class="icon-extension"></i>{'selfhosted-ecosystem-community-badge4'|translate}</a>
+              <a href="https://github.com/Piwigo/Piwigo/wiki" target="_blank" rel="noopener noreferrer" class="threec-text-hover short-get-started-links-text mb-0 gap-1 d-flex non-decorated-text"><i class="icon-dev"></i>{'selfhosted-ecosystem-community-badge5'|translate}</a>
             </div>
           </div>
         </div>

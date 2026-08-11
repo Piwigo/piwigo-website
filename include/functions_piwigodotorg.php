@@ -624,6 +624,14 @@ function get_ressources($ressources_type, $get_types = false)
       'cache_filename' => 'porg_users_use_case_nonprofits_testimonials.cache.php',
       'album_id' => conf_get_param('user_use_case_nonprofits_testimonials_cat_id', 233)
     ),
+    'use_case_photographers_testimonials' => array(
+      'cache_filename' => 'porg_users_use_case_photographers_testimonials.cache.php',
+      'album_id' => conf_get_param('user_use_case_photographers_testimonials_cat_id', 236)
+    ),
+    'use_case_photographers_examples' => array(
+      'cache_filename' => 'porg_users_use_case_photographers_examples.cache.php',
+      'album_id' => conf_get_param('user_use_case_photographers_examples_cat_id', 235)
+    ),
   );
 
   if ($get_types) {

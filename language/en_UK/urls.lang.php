@@ -18,12 +18,9 @@ $lang['porg_urls']['showcases'] = 'examples';
 $lang['porg_urls']['guides'] = 'guides';
 $lang['porg_urls']['requirements'] = 'guides/install/requirements';
 $lang['porg_urls']['netinstall'] = 'guides/install/netinstall';
-$lang['porg_urls']['manual_installation'] = 'https://piwigo.org/guides/update/manual';
 $lang['porg_urls']['docker_installation'] = 'guides/install/docker';
-$lang['porg_urls']['automatic_update'] = 'https://piwigo.org/guides/update/automatic';
 $lang['porg_urls']['manual_update'] = 'guides/update/manual';
 $lang['porg_urls']['docker_update'] = 'guides/update/docker';
-$lang['porg_urls']['documentation'] = 'https://doc.piwigo.org/';
 $lang['porg_urls']['users'] = 'who-uses-piwigo';
 $lang['porg_urls']['get-help'] = 'get-help';
 $lang['porg_urls']['use_cases'] = 'use-cases';
@@ -42,11 +39,13 @@ $lang['porg_urls']['case-study-ect'] = 'case-study/ect-corporate-photo-library';
 $lang['porg_urls']['case-study-cotentin'] = 'case-study/photo-library-cotentin-tourism-office';
 $lang['porg_urls']['pro-support'] = 'professional-support';
 
-$lang['porg_doc_urls']['requirements'] = 'https://piwigo.org/doc/doku.php?id=user_documentation:learn:install:before';
-$lang['porg_doc_urls']['install'] = 'https://piwigo.org/doc/doku.php?id=user_documentation:learn:install';
-$lang['porg_doc_urls']['upgrade'] = 'https://piwigo.org/doc/doku.php?id=user_documentation:learn:upgrade';
-$lang['porg_doc_urls']['upgrade_auto'] = 'https://piwigo.org/doc/doku.php?id=user_documentation:learn:upgrade:upgrade_automatic';
-$lang['porg_doc_urls']['upgrade_manual'] = 'https://piwigo.org/doc/doku.php?id=user_documentation:learn:upgrade:upgrade_manual';
-$lang['porg_urls']['forum'] = 'https://piwigo.org/forum/';
-$lang['porg_urls']['installation_guide'] = 'https://doc.piwigo.org/self-hosting-piwigo';
+    
+$lang['porg_ext_urls']['installation_guide'] = 'https://doc.piwigo.org/self-hosting-piwigo';
+$lang['porg_ext_urls']['automatic_update'] = 'https://piwigo.org/guides/update/automatic';
+$lang['porg_ext_urls']['manual_update'] = 'https://piwigo.org/guides/update/manual';
+$lang['porg_ext_urls']['documentation'] = 'https://doc.piwigo.org/';
+$lang['porg_ext_urls']['customizations'] = 'https://customizations.piwigo.com';
+$lang['porg_ext_urls']['data_import'] = 'https://piwigo.com/blog/2025/07/01/importing-an-existing-photo-library-into-piwigo/';
+$lang['porg_ext_urls']['prerequisites'] = 'https://doc.piwigo.org/self-hosting-piwigo/install-guides/requirements/';
+$lang['porg_ext_urls']['docker'] = 'https://piwigo.org/guides/install/docker';
 ?>
