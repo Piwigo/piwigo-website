@@ -1,5 +1,5 @@
 <?php
-$lang['page_meta_title'] = 'Piwigo Image library software - 30 days free trial';
+$lang['page_meta_title'] = 'Signup for Piwigo, Image library software - 30 days free trial';
 $lang['page_meta_description'] = 'Online photo library software and digital asset management for all professionals. Signup for a free trial today!';
 
 $lang['signup_header_title'] = 'Get your <span class="orange-text">Piwigo Cloud</span> account';
