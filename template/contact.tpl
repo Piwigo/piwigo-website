@@ -22,7 +22,7 @@
       <div class="d-flex gap-3">
         {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'porg_contact_project_btn1'|translate} href="#form"}
         {if $IS_FRENCH_LANGUAGE}
-          {include file='template/include/buttons/button.tpl' variant='cta_secondary' label={'porg_contact_project_btn2'|translate} href="#todo"}
+          {include file='template/include/buttons/button.tpl' variant='cta_secondary' label={'porg_contact_project_btn2'|translate} href="{$PORG_ROOT}{$URL.book_a_meeting}"}
         {/if}
       </div>
     </div>

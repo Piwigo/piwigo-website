@@ -1,0 +1,16 @@
+#srgdev-ncfp_frm {
+  width: 100% !important;
+  padding: 40px;
+  border: 1px solid var(--secondary_flash_green);
+  border-radius: 10px;
+  background: var(--clear);
+  box-shadow: 0px 4px 20px 0px rgba(217, 217, 217, 0.4);
+}
+
+.srgdev-ncfp-form-header {
+  display: none;
+}
+
+.srgdev-ncfp-form-label {
+  margin: 0 !important;
+}

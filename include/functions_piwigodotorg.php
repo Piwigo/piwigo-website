@@ -41,6 +41,7 @@ function porg_get_pages()
     'case-study-wessex' => 'Case Study: Wessex',
     'pro-support' => 'Professional Support',
     'missing-account' => 'Missing account',
+    'book-a-meeting' => 'Book a meeting',
   );
 }
 

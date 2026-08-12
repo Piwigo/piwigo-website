@@ -4,7 +4,7 @@
   <script type="text/javascript">
     $(document).ready(function() {
       $('.btn-news-see-more').click(function() {
-        var $start = $(".news-releases").length;
+        var $start = $(".row-news .news-releases-card").length;
         $.ajax({
           type: "GET",
           url: "ws.php",

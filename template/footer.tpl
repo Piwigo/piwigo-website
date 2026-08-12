@@ -27,7 +27,7 @@
             <div class="footer-get-started-actions">
               {if substr($lang_info.code, 0, 2) == 'fr'}
                 {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'Footer Button 1 Plan a demo'|translate}
-                href="#todo"}
+                href="{$PORG_ROOT}{$URL.book_a_meeting}"}
               {/if}
               {include file='template/include/buttons/button.tpl' variant='menu_btn_green' label={'Contact us'|translate}
               href="{$PORG_ROOT}{$URL.contact}"}
