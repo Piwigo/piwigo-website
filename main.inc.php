@@ -274,69 +274,9 @@ function porg_load_content()
 
   $porg_root_url = get_absolute_root_url();
   if (isset($_GET['porg'])) {
-    $redirects = array(
-      'basics' => 'what-is-piwigo',
-      'basics/' => 'what-is-piwigo',
-      'basics/features' => 'features',
-      'basics/requirements' => 'get-started', // TODO change to wiki page
-      'basics/installation' => 'get-started', // TODO change to wiki page
-      'basics/installation_netinstall' => 'get-started', // TODO change to wiki page
-      'basics/installation_manual' => 'get-started', // TODO change to wiki page
-      'basics/upgrade' => 'get-started', // TODO change to wiki page
-      'basics/upgrade_automatic' => 'get-started', // TODO change to wiki page
-      'basics/upgrade_manual' => 'get-started', // TODO change to wiki page
-      'basics/downloads' => 'get-piwigo',
-      'basics/archive' => 'changelogs',
-      'basics/newsletter' => 'newsletters',
-      'basics/license' => 'what-is-piwigo', // TODO redirect on the #license
-      'basics/contribute' => 'get-involved',
-      'news/' => 'news',
-      'hosting' => 'get-piwigo',
-      'hosting/' => 'get-piwigo',
-      'donate' => 'get-involved', // TODO redirect on the #donate
-    );
-
-    // on all Piwigo photo upload form, since version 13, we display an add for the
-    // mobile-applications page but Piwigo doesn't know the url in each language, so
-    // let's redirect it properly
-    if ('mobile-applications' == $_GET['porg'] and !preg_match('/^(index\.php\?porg=)?mobile-applications$/', porg_get_page_url('mobile-applications'))) {
-      $redirects['mobile-applications'] = 'mobile-applications';
-    }
-    if ('guide-update-docker' == $_GET['porg']) // Redirect even if using en locale
-    {
-      $redirects['guide-update-docker'] = 'docker_update';
-    }
-
-    // specific case for releases/a.b.c => release-a.b.c
-    if (preg_match('/^releases\/(\d+\.\d+\.\d+)$/', $_GET['porg'], $matches)) {
-      $redirects[$_GET['porg']] = $lang['porg_urls']['release'] . '-' . $matches[1];
-    }
-
     // specific case for mobile-apps-privacy-policy, ability to go headless
     if ('mobile-apps-privacy-policy' == $_GET['porg'] and isset($_GET['webview'])) {
       $template->assign('WEBVIEW', true);
-    }
-
-    // For get help page
-    if ('get-help' == $_GET['porg']) {
-      $doc_urls = array(
-        'en_UK' => 'https://doc.piwigo.org/',
-        'fr_FR' => 'https://doc-fr.piwigo.org/',
-      );
-
-      $doc_url = $doc_urls['en_UK'];
-      if (isset($doc_url[$user['language']])) {
-        $doc_url = $doc_url[$user['language']];
-      }
-
-      $template->assign(array(
-        'DOC_URL' => $doc_url,
-      ));
-    }
-    if (isset($redirects[$_GET['porg']])) {
-      set_status_header(301);
-      redirect_http($porg_root_url . porg_get_page_url($redirects[$_GET['porg']]));
-      exit();
     }
 
     $porg_page = porg_label_to_page($_GET['porg']);

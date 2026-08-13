@@ -40,6 +40,25 @@ function porg_get_pages()
     'book-a-meeting' => 'Book a meeting',
 
     // redirections for legacy pages
+    'basics' => 'porg_redirect_to:home',
+    'basics/' => 'porg_redirect_to:home',
+    'basics/features' => 'porg_redirect_to:features',
+    'basics/requirements' => 'porg_redirect_to:get-piwigo',
+    'basics/installation' => 'gporg_redirect_to:https://doc.piwigo.org/self-hosting-piwigo/install-guides/manual-install/',
+    'basics/installation_netinstall' => 'porg_redirect_to:https://doc.piwigo.org/self-hosting-piwigo/install-guides/manual-install/',
+    'basics/installation_manual' => 'porg_redirect_to:https://doc.piwigo.org/self-hosting-piwigo/install-guides/manual-install/',
+    'basics/upgrade' => 'porg_redirect_to:https://doc.piwigo.org/self-hosting-piwigo/update-guides/automatic-update/',
+    'basics/upgrade_automatic' => 'porg_redirect_to:https://doc.piwigo.org/self-hosting-piwigo/update-guides/automatic-update/',
+    'basics/upgrade_manual' => 'porg_redirect_to:https://doc.piwigo.org/self-hosting-piwigo/update-guides/manual-update/',
+    'basics/downloads' => 'porg_redirect_to:get-piwigo',
+    'basics/archive' => 'porg_redirect_to:product_update',
+    'basics/newsletter' => 'porg_redirect_to:newsletters',
+    'basics/license' => 'porg_redirect_to:home',
+    'basics/contribute' => 'porg_redirect_to:get-involved',
+    'news/' => 'porg_redirect_to:news',
+    'hosting' => 'porg_redirect_to:get-piwigo',
+    'hosting/' => 'porg_redirect_to:get-piwigo',
+    'donate' => 'porg_redirect_to:get-involved',
     'what-is-piwigo' => 'porg_redirect_to:home',
     'changelogs' => 'porg_redirect_to:product_update',
     'get-started' => 'porg_redirect_to:get-piwigo',
@@ -54,6 +73,7 @@ function porg_get_pages()
     'automatic_update' => 'porg_redirect_to:https://doc.piwigo.org/self-hosting-piwigo/update-guides/automatic-update/',
     'manual_update' => 'porg_redirect_to:https://doc.piwigo.org/self-hosting-piwigo/update-guides/manual-update/',
     'docker_update' => 'porg_redirect_to:https://doc.piwigo.org/self-hosting-piwigo/update-guides/docker-update/',
+    'guide-update-docker' => 'porg_redirect_to:https://doc.piwigo.org/self-hosting-piwigo/update-guides/docker-update/',
   );
 }
 
@@ -164,9 +184,14 @@ function porg_label_to_page($label)
   $porg_page_labels = porg_get_page_labels();
   $flip = array_flip($porg_page_labels);
 
+  if (preg_match('/^releases\/(\d+\.\d+\.\d+)$/', $_GET['porg'], $matches)) {
+    global $lang;
+    redirect_http(get_absolute_root_url().porg_get_page_url($lang['porg_urls']['release'].'-'.$matches[1]));
+  }
+
   if (isset($flip[$label])) {
     // manage redirection from legacy pages
-    if (preg_match('/^porg_redirect_to:(.*)$/', $porg_pages[ $flip[$label] ], $matches))
+    if (isset($porg_pages[ $flip[$label] ]) and preg_match('/^porg_redirect_to:(.*)$/', $porg_pages[ $flip[$label] ], $matches))
     {
       set_status_header(301);
 
@@ -183,8 +208,10 @@ function porg_label_to_page($label)
 
       redirect_http(get_absolute_root_url() . porg_get_page_url($matches[1]));
     }
-
-    return $flip[$label];
+    else
+    {
+      return $flip[$label];
+    }
   }
 
   if (isset($porg_pages[$label])) {
