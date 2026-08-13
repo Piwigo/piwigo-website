@@ -220,15 +220,15 @@
 
         <div class="feature-benefits-strip">
           <div class="feature-benefit-item">
-            <span class="feature-benefit-icon pink-feature-benefit-icon" aria-hidden="true"><i class="icon-check-1"></i></span>
+            <span class="feature-benefit-icon pink-feature-benefit-icon" aria-hidden="true"><i class="icon-langage"></i></span>
             <p class="feature-benefit-text mb-0 li-centered">{'porg_about_us_team_text1'|translate}</p>
           </div>
           <div class="feature-benefit-item">
-            <span class="feature-benefit-icon pink-feature-benefit-icon" aria-hidden="true"><i class="icon-check-1"></i></span>
+            <span class="feature-benefit-icon pink-feature-benefit-icon" aria-hidden="true"><i class="icon-icon28"></i></span>
             <p class="feature-benefit-text mb-0 li-centered">{'porg_about_us_team_text2'|translate}</p>
           </div>
           <div class="feature-benefit-item">
-            <span class="feature-benefit-icon pink-feature-benefit-icon" aria-hidden="true"><i class="icon-check-1"></i></span>
+            <span class="feature-benefit-icon pink-feature-benefit-icon" aria-hidden="true"><i class="icon-contribute"></i></span>
             <p class="feature-benefit-text mb-0 li-centered">{'porg_about_us_team_text3'|translate}</p>
           </div>
         </div>

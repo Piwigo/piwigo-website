@@ -1,11 +1,9 @@
-  <section class="container-fluide container-about-us">
+  <section class="container-fluide porg-privacy-content">
     <div class="container">
-      <div class="equal">
-        <div class="col-md-6">
+      <div class="justify-content-center d-flex">
+        <div class="col-md-6 mt-5 pt-5">
           <h1>{'Privacy Policy for Mobile Apps'|translate}</h1>
           <p>{'porg_privacy_mobile_banner'|translate}</p>
-        </div>
-        <div class="col-md-6 crowd-background">
         </div>
       </div>
     </div>

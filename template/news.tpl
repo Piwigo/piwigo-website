@@ -57,32 +57,38 @@
 </section>
 
 
-<section class="container py-5">
+<section class="container py-5 px-4 px-md-none">
   <div class="row features-content justify-content-center align-items-center">
 
-      <div class="col-12 col-lg-5 text-center text-lg-start order-1">
-        <div class="d-flex flex-column gap-3 pb-4">
-          <h2 class="">{'porg_news_foot_title'|translate}</h2>
-          <p class="">{'porg_news_foot_desc'|translate}</p>
+    <div class="col-12 col-lg-5 text-center text-lg-start order-1">
+      <div class="d-flex flex-column gap-3 pb-md-4 pb-0">
+        <h2 class="">{'porg_news_foot_title'|translate}</h2>
+
+        <div class="col-12 col-lg-6 text-center d-block d-md-none">
+          <div class="">
+            <img class="img-fluid" src="{$PORG_ROOT_URL}images/news/blog.webp" alt="blog">
+          </div>
         </div>
 
-        <div
-          class="d-flex flex-column justify-content-center justify-content-lg-start align-items-center align-items-lg-start gap-3">
-          {include
+        <p class="">{'porg_news_foot_desc'|translate}</p>
+      </div>
+
+      <div class="d-flex text-start">
+        {include
             file='template/include/buttons/button.tpl'
             variant='menu_btn_green'
             href="https://piwigo.com/blog/"
             label={'porg_news_foot_btn'|translate}
-            class="px-5"
-          }
-        </div>
+        class="px-5"
+        }
       </div>
+    </div>
 
-      <div class="col-12 col-lg-6 text-center order-2 mt-4 mt-lg-0">
-        <div class="">
-          <img class="img-fluid" src="{$PORG_ROOT_URL}images/news/blog.webp" alt="blog">
-        </div>
+    <div class="col-12 col-lg-6 text-center order-2 mt-0 d-none d-md-block">
+      <div class="">
+        <img class="img-fluid" src="{$PORG_ROOT_URL}images/news/blog.webp" alt="blog">
       </div>
+    </div>
 
   </div>
 </section>

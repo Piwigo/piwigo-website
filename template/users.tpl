@@ -25,7 +25,7 @@
       <div class="filter-container">
         <div class="filter-header mb-3 d-flex justify-content-between align-items-center">
           <h4 class="m-0">{"porg_users_filter"|translate}</h4>
-          <h4 class="clear-btn m-0 d-none d-md-block" id="clear-filters" onclick="clearFilters()">
+          <h4 class="clear-btn m-0" id="clear-filters" onclick="clearFilters()">
             {"Clear all"|translate}
           </h4>
         </div>

@@ -147,8 +147,12 @@
             </div>
           {/if}
         {/foreach}
-        <div class="col-12">
+        <div class="col-12 d-md-block d-none">
           {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'use cases perso use title'|translate}
+          href="{$PORG_ROOT}{$URL.users}{if $URL.users|strstr:'?'}&{else}?{/if}use_case=perso&category=example" class="mt-5"}
+        </div>
+        <div class="col-12 d-md-none">
+          {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'Show more'|translate}
           href="{$PORG_ROOT}{$URL.users}{if $URL.users|strstr:'?'}&{else}?{/if}use_case=perso&category=example" class="mt-5"}
         </div>
       </div>

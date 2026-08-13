@@ -89,3 +89,56 @@
   </table>
 </div>
 
+{literal}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const tooltips = document.querySelectorAll('.compare-plans-table .pwg-tooltip');
+
+  function isMobile() {
+    return window.innerWidth <= 991;
+  }
+
+  function closeAllTooltips() {
+    document.querySelectorAll('.tooltip-text.mobile-modal-open').forEach(function(openTooltip) {
+      openTooltip.classList.remove('mobile-modal-open');
+    });
+    document.documentElement.classList.remove('tooltip-modal-active');
+    document.body.classList.remove('tooltip-modal-active'); // for safety
+  }
+
+  tooltips.forEach(function(tooltip) {
+    tooltip.addEventListener('click', function(e) {
+      if (!isMobile()) {
+        return;
+      }
+
+      e.preventDefault();
+      e.stopPropagation();
+
+      const tooltipText = this.querySelector('.tooltip-text');
+      const isAlreadyOpen = tooltipText.classList.contains('mobile-modal-open');
+
+      closeAllTooltips();
+
+      if (!isAlreadyOpen) {
+        tooltipText.classList.add('mobile-modal-open');
+        document.documentElement.classList.add('tooltip-modal-active');
+        document.body.classList.add('tooltip-modal-active'); // for safety
+      }
+    });
+  });
+
+  // Global click listener to close the modal when clicking anywhere outside the modal content
+  document.addEventListener('click', function(e) {
+    if (!isMobile()) {
+      return; // Only apply this logic on mobile
+    }
+
+    const openTooltipText = document.querySelector('.tooltip-text.mobile-modal-open');
+    if (openTooltipText && !openTooltipText.contains(e.target)) {
+      closeAllTooltips();
+    }
+  });
+});
+</script>
+{/literal}

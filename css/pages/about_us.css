@@ -125,7 +125,7 @@
 
 @media (max-width: 768px) {
   .about-us-header .badge-number {
-    font-weight: 700;
+    font-weight: 800;
     font-size: 25px;
   }
 
@@ -658,4 +658,8 @@
   .milestones-title[data-sr-id] {
     transform: none !important;
   }
+}
+
+.feature-benefit-text {
+  max-width: 200px !important;
 }

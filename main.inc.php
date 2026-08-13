@@ -487,10 +487,12 @@ function porg_load_content()
       'users',
       'cases'
     ), true),
-    'support' => in_array($current_page, array(), true),
+    'support' => in_array($current_page, array(
+      'pro-support'
+    ), true),
     'behind_code' => in_array($current_page, array(
       'about-us',
-      'contribute'
+      'get-involved'
     ), true),
     'news' => in_array($current_page, array(
       'product_update',

@@ -317,8 +317,10 @@ Compare table section
   transition: transform 0.4s ease;
 }
 
-.compare_table_btn .icon-down-open:hover {
-  color: var(--main_orange);
+@media (min-width: 768px) {
+  .compare_table_btn .icon-down-open:hover {
+    color: var(--main_orange);
+  }
 }
 
 .compare_table_btn.active {
@@ -518,7 +520,6 @@ Professional services section
   gap: 20px;
 }
 
-
 .professional-service-card {
   background: var(--grey);
   border-radius: 10px;
@@ -620,7 +621,6 @@ Professional services section
     width: 100% !important;
     max-width: 100% !important;
   } */
-
 }
 
 /******
@@ -862,6 +862,6 @@ Technical table section
   }
 }
 
-.icon-rounded-warning{
+.icon-rounded-warning {
   transform: rotate(180deg);
 }

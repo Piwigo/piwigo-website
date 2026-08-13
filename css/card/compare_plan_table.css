@@ -70,7 +70,7 @@
 }
 
 .feature-row:nth-child(odd) {
-  background-color: var(--grey) !important; 
+  background-color: var(--grey) !important;
 }
 
 .feature-label {
@@ -108,22 +108,21 @@
 }
 
 .feature-row td:first-child {
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .feature-row td:last-child {
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
-
 
 .pwg-tooltip {
   position: relative;
   display: inline-flex;
   align-items: center;
   margin-left: 8px;
-  outline: none; 
+  outline: none;
 }
 
 .icon-rounded-warning {
@@ -148,12 +147,14 @@
   white-space: normal;
   position: absolute;
   z-index: 100;
-  top: 150%; 
+  top: 150%;
   left: 50%;
-  transform: translateX(-20px); 
+  transform: translateX(-20px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
   opacity: 0;
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
   pointer-events: none;
 }
 
@@ -171,7 +172,7 @@
   color: var(--main_pink);
 }
 
-.pwg-tooltip .tablepopover{
+.pwg-tooltip .tablepopover {
   min-width: 548px;
 }
 
@@ -186,5 +187,49 @@
 
   .compare-plans-table::-webkit-scrollbar {
     display: none;
+  }
+
+  .pwg-tooltip:hover .tooltip-text,
+  .pwg-tooltip:focus .tooltip-text,
+  .pwg-tooltip:focus-within .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(-20px) translateY(0);
+    pointer-events: auto;
+  }
+
+  .pwg-tooltip:hover .tooltip-text {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .pwg-tooltip .tooltip-text.mobile-modal-open {
+    visibility: visible;
+    opacity: 1;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    max-width: 500px;
+    min-width: 0;
+    z-index: 1051;
+    pointer-events: auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border: 1px solid #ddd;
+  }
+
+  html.tooltip-modal-active::after, body.tooltip-modal-active::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1050;
+  }
+
+  html.tooltip-modal-active, body.tooltip-modal-active {
+    overflow: hidden;
   }
 }

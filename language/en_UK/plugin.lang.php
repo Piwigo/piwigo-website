@@ -255,6 +255,7 @@ $lang['Today'] = 'Today';
 $lang['Get Involved'] = 'Get Involved';
 $lang['Send us a testimonial'] = 'Send us a testimonial';
 $lang['Choose your setup'] = 'Choose your setup';
+$lang['Show more'] = 'Show more';
 
 $lang['Start your free trial'] = 'Start your free trial';
 $lang['Try Piwigo Cloud free for 30 days. No credit card required.'] = 'Try Piwigo Cloud free for 30 days. No credit card required.';

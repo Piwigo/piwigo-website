@@ -271,7 +271,7 @@ $template->add_index_button($content, $rank);</p>
                 </td>
                 <td class="text-end">
                   <a href="{$releases_url}-{$download_version.version}" class="orange-text release-date">
-                    <i class="icon-info-circled-1 pe-1"></i>{'Details'|translate}
+                    <i class="icon-info-circled-1 pe-1"></i><span class="d-none d-md-inline">{'Details'|translate}</span>
                   </a>
                 </td>
               </tr>
@@ -287,7 +287,7 @@ $template->add_index_button($content, $rank);</p>
               </td>
               <td class="text-end">
                 <a href="{$releases_url}-{$version}" class="orange-text release-date">
-                  <i class="icon-info-circled-1 pe-1"></i>{'Details'|translate}
+                  <i class="icon-info-circled-1 pe-1"></i><span class="d-none d-md-inline">{'Details'|translate}</span>
                 </a>
               </td>
             </tr>

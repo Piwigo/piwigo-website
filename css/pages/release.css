@@ -978,3 +978,20 @@ code {
   border-radius: 30px;
   margin-left: 8px;
 }
+
+@media (max-width: 768px) {
+
+  .dowload-other-versions {
+    padding: 30px;
+  }
+
+  .dowload-other-versions .badge-latest {
+    display: none;
+  }
+
+  .download-versions-table th:nth-child(2),
+  .download-versions-table td:nth-child(2),
+  .download-versions-table td:nth-child(4) {
+    display: none;
+  }
+}

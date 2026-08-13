@@ -525,8 +525,12 @@
     border-radius: 50%;
     padding: 1px;
     background: linear-gradient(91.79deg, #d9d9d9 16.42%, #f7f7f7 98.39%);
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
     pointer-events: none;
@@ -541,6 +545,20 @@
 
   .accordion-body {
     padding: 40px 0;
+  }
+
+  .dowload-other-versions {
+    padding: 30px;
+  }
+
+  .dowload-other-versions .badge-latest {
+    display: none;
+  }
+
+  .download-versions-table th:nth-child(2),
+  .download-versions-table td:nth-child(2),
+  .download-versions-table td:nth-child(4) {
+    display: none;
   }
 }
 

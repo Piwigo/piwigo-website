@@ -431,4 +431,13 @@ Professional services section
   .btn-pricing-switch {
     width: 322px !important;
   }
+
+  .container-ecosystem .community-card,
+  .start-card {
+    padding: 30px;
+  }
+
+  .container-start {
+    padding: 0 30px 40px;
+  }
 }

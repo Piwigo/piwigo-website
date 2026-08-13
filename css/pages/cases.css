@@ -109,6 +109,11 @@
   margin-bottom: 155px;
 }
 
+.feature-image {
+  margin: 0 -20px;
+  max-width: 110%;
+}
+
 .cases-header {
   margin-top: 60px;
 }

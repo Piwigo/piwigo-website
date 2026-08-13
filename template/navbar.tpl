@@ -67,19 +67,18 @@
           {include file='template/include/buttons/button.tpl' variant='cta_primary' label={'Free trial'|translate} href="{$PORG_ROOT}{$URL.signup}"}
         </div>
 
-        <div class="mobile-footer-row d-flex">
-          <a href="{$PORG_ROOT}{$URL.contact}" class="header-mail-btn btn-text w-50 mr-2">
+        <div class="mobile-footer-row">
+          <a href="{$PORG_ROOT}{$URL.contact}" class="header-mail-btn btn-text">
             {'Contact us'|translate} <i class="icon-mailext header-mail-icon"></i>
           </a>
 
-          <a href="#" class="header-lang-btn btn-text w-50">
+          <a href="#" class="header-lang-btn btn-text js-lang-toggle" aria-expanded="false"
+            aria-controls="header-lang-menu" aria-haspopup="true">
             {'English (UK)'|translate}
             <span class="lang-label-group">
-
               <i class="icon-langage header-lang-icon"></i>
               <i class="icon-down-open arrow-lang"></i>
             </span>
-
           </a>
         </div>
       </div>
@@ -103,21 +102,3 @@
     </div>
   </div>
 </nav>
-
-{literal}
-  <script>
-    $(document).ready(function() {
-      $('.submenu_button').on('click', function(e) {
-        var isIpadAir = window.innerWidth >= 820 && window.innerWidth <= 1180;
-
-        if (isIpadAir) {
-          e.preventDefault();
-          var $subContent = $(this).next('.mobile-sub-content');
-          $subContent.toggle();
-          $(this).find('.icon-down-open').toggleClass('icon-rotate-180');
-
-        }
-      });
-    });
-  </script>
-{/literal}

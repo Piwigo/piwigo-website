@@ -1082,58 +1082,58 @@ Glass cards
   pointer-events: none;
 }
 
-.tos {
+.porg-privacy-content {
   padding-top: 80px;
   padding-bottom: 80px;
 }
 
-.tos.container {
+.porg-privacy-content.container {
   max-width: 1100px;
 }
 
-.tos h1 {
+.porg-privacy-content h1 {
   margin-bottom: 40px;
 }
 
-.tos h3 {
+.porg-privacy-content h3 {
   margin-top: 50px;
   margin-bottom: 20px;
 }
 
-.tos p {
+.porg-privacy-content p {
   margin-bottom: 20px;
   line-height: 1.6;
 }
 
-.tos ul {
+.porg-privacy-content ul {
   margin-bottom: 20px;
   padding-left: 20px;
 }
 
-.tos ul li {
+.porg-privacy-content ul li {
   margin-bottom: 10px;
 }
 
-.tos em {
+.porg-privacy-content em {
   font-size: 16px;
 }
 
-.tos em a {
+.porg-privacy-content a {
   color: var(--main_orange);
 }
 
-.tos .pcom-tos-history {
+.porg-privacy-content .pcom-porg-privacy-content-history {
   margin-top: 60px;
   padding-top: 30px;
   border-top: 1px solid var(--light_grey);
 }
 
-.tos .pcom-tos-history h3 {
+.porg-privacy-content .pcom-porg-privacy-content-history h3 {
   margin-top: 0;
 }
 
 @media (max-width: 768px) {
-  .tos {
+  .porg-privacy-content {
     padding: 20px 40px;
   }
 }

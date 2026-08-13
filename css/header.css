@@ -440,6 +440,12 @@
     font-size: 16px;
   }
 
+  .mobile-footer-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
   #header-lang-menu {
     display: none;
     z-index: 2000;
@@ -449,4 +455,9 @@
   #header-lang-menu.is-open {
     display: block !important;
   }
+}
+
+html.mobile-menu-open,
+body.mobile-menu-open {
+  overflow: hidden !important;
 }
