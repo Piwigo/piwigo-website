@@ -1,28 +1,15 @@
 <?php
 $lang['porg_urls']['features'] = 'features';
-$lang['porg_urls']['what-is-piwigo'] = 'what-is-piwigo';
-$lang['porg_urls']['changelogs'] = 'changelogs';
 $lang['porg_urls']['about-us'] = 'about-us';
 $lang['porg_urls']['contact'] = 'contact';
 $lang['porg_urls']['get-involved'] = 'get-involved';
 $lang['porg_urls']['get-piwigo'] = 'get-piwigo';
-$lang['porg_urls']['get-started'] = 'get-started';
-$lang['porg_urls']['coding-activity'] = 'coding-activity';
 $lang['porg_urls']['mobile-applications'] = 'mobile-applications';
 $lang['porg_urls']['news'] = 'news';
 $lang['porg_urls']['newsletters'] = 'newsletter';
 $lang['porg_urls']['press'] = 'press';
 $lang['porg_urls']['release'] = 'release';
-$lang['porg_urls']['testimonials'] = 'testimonials';
-$lang['porg_urls']['showcases'] = 'examples';
-$lang['porg_urls']['guides'] = 'guides';
-$lang['porg_urls']['requirements'] = 'guides/install/requirements';
-$lang['porg_urls']['netinstall'] = 'guides/install/netinstall';
-$lang['porg_urls']['docker_installation'] = 'guides/install/docker';
-$lang['porg_urls']['manual_update'] = 'guides/update/manual';
-$lang['porg_urls']['docker_update'] = 'guides/update/docker';
 $lang['porg_urls']['users'] = 'who-uses-piwigo';
-$lang['porg_urls']['get-help'] = 'get-help';
 $lang['porg_urls']['use_cases'] = 'use-cases';
 $lang['porg_urls']['use-case-travel-tourism'] = 'use-case/photo-library-for-tourism';
 $lang['porg_urls']['use-case-public-sector'] = 'use-case/image-library-for-public-sector';
@@ -39,6 +26,21 @@ $lang['porg_urls']['case-study-ect'] = 'case-study/ect-corporate-photo-library';
 $lang['porg_urls']['case-study-cotentin'] = 'case-study/photo-library-cotentin-tourism-office';
 $lang['porg_urls']['pro-support'] = 'professional-support';
 
+// legacy pages DO NOT REMOVE : used for redirections
+$lang['porg_urls']['what-is-piwigo'] = 'what-is-piwigo';
+$lang['porg_urls']['changelogs'] = 'changelogs';
+$lang['porg_urls']['get-started'] = 'get-started';
+$lang['porg_urls']['get-help'] = 'get-help';
+$lang['porg_urls']['coding-activity'] = 'coding-activity';
+$lang['porg_urls']['testimonials'] = 'testimonials';
+$lang['porg_urls']['guides'] = 'guides';
+$lang['porg_urls']['requirements'] = 'guides/install/requirements';
+$lang['porg_urls']['netinstall'] = 'guides/install/netinstall';
+$lang['porg_urls']['manual_installation'] = 'guides/install/manual';
+$lang['porg_urls']['docker_installation'] = 'guides/install/docker';
+$lang['porg_urls']['automatic_update'] = 'guides/update/automatic';
+$lang['porg_urls']['manual_update'] = 'guides/update/manual';
+$lang['porg_urls']['docker_update'] = 'guides/update/docker';
     
 $lang['porg_ext_urls']['installation_guide'] = 'https://doc.piwigo.org/self-hosting-piwigo';
 $lang['porg_ext_urls']['automatic_update'] = 'https://doc.piwigo.org/update-guides/automatic-update/';

@@ -9,7 +9,6 @@ function porg_get_pages()
     'features' => 'Features',
     'contact' => 'Contact',
     'about-us' => 'About us',
-    'extensions' => null,
     'get-involved' => 'Get Involved',
     'get-piwigo' => 'Get Piwigo',
     'news' => 'News',
@@ -28,9 +27,6 @@ function porg_get_pages()
     'use-case-photographers-individuals' => 'Use cases - Photographers & Individuals',
     'mobile-applications' => 'Mobile applications',
     'product_update' => 'Product Updates',
-    'terms_of_service' => 'Terms of service',
-    'privacy' => 'Privacy',
-    'dpa' => 'Data Processing Agreement',
     'signin' => 'Signin',
     'plugins' => 'Plugins',
     'cases' => 'Cases studies',
@@ -42,6 +38,22 @@ function porg_get_pages()
     'pro-support' => 'Professional Support',
     'missing-account' => 'Missing account',
     'book-a-meeting' => 'Book a meeting',
+
+    // redirections for legacy pages
+    'what-is-piwigo' => 'porg_redirect_to:home',
+    'changelogs' => 'porg_redirect_to:product_update',
+    'get-started' => 'porg_redirect_to:get-piwigo',
+    'get-help' => 'porg_redirect_to:contact',
+    'coding-activity' => 'porg_redirect_to:product_update',
+    'testimonials' => 'porg_redirect_to:users',
+    'guides' => 'porg_redirect_to:https://doc.piwigo.org/self-hosting-piwigo/',
+    'requirements' => 'porg_redirect_to:https://doc.piwigo.org/self-hosting-piwigo/install-guides/requirements/',
+    'netinstall' => 'porg_redirect_to:https://doc.piwigo.org/self-hosting-piwigo/install-guides/manual-install/',
+    'manual_installation' => 'porg_redirect_to:https://doc.piwigo.org/self-hosting-piwigo/install-guides/manual-install/',
+    'docker_installation' => 'porg_redirect_to:https://doc.piwigo.org/self-hosting-piwigo/install-guides/docker-install/',
+    'automatic_update' => 'porg_redirect_to:https://doc.piwigo.org/self-hosting-piwigo/update-guides/automatic-update/',
+    'manual_update' => 'porg_redirect_to:https://doc.piwigo.org/self-hosting-piwigo/update-guides/manual-update/',
+    'docker_update' => 'porg_redirect_to:https://doc.piwigo.org/self-hosting-piwigo/update-guides/docker-update/',
   );
 }
 
@@ -148,16 +160,46 @@ function porg_label_to_page($label)
     $_GET['newsletter_id'] = $matches[1];
   }
 
+  $porg_pages = porg_get_pages();
   $porg_page_labels = porg_get_page_labels();
   $flip = array_flip($porg_page_labels);
 
   if (isset($flip[$label])) {
+    // manage redirection from legacy pages
+    if (preg_match('/^porg_redirect_to:(.*)$/', $porg_pages[ $flip[$label] ], $matches))
+    {
+      set_status_header(301);
+
+      // legacy pages (like get-help or guides) that must be redirected
+      if (preg_match('/^http/', $matches[1]))
+      {
+        redirect_http($matches[1]);
+      }
+
+      if ('home' == $matches[1])
+      {
+        redirect_http(get_absolute_root_url());
+      }
+
+      redirect_http(get_absolute_root_url() . porg_get_page_url($matches[1]));
+    }
+
     return $flip[$label];
   }
 
-  $porg_pages = porg_get_pages();
   if (isset($porg_pages[$label])) {
-    return $label;
+    // we are certainly on a page redirected by piwigo.com which doesn't know
+    // the label but only the page_id, so we need to redirect to the page label
+    //
+    // fr.piwigo.com/produit
+    //   => fr.piwigo.org/features
+    //     => fr.piwigo.org/fonctionnalites
+    //
+    // fr.piwigo.com/clients/phototheque-office-tourisme-cotentin
+    //   => fr.piwigo.org/case-study-cotentin
+    //     => fr.piwigo.org/etude-cas/phototheque-office-tourisme-cotentin
+    set_status_header(301);
+    redirect_http(get_absolute_root_url() . porg_get_page_url($label));
   }
 
   return false;
