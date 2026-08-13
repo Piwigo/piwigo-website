@@ -37,7 +37,7 @@
 
         </div>
 
-        <div class="trial-card text-center">
+        <div class="trial-card text-center d-none d-md-block">
 
           <h3 class="h3-mobile text-center mb-1">{'porg_cases_start_title'|translate}</h3>
           <p class="text-center mb-5">{'porg_cases_start_description'|translate}</p>
@@ -103,9 +103,19 @@
             <p class="sector-testimonial mb-0 mt-1 dark-text"><i class="icon-cloud-oneplace pink-text me-1"></i>Piwigo {'Cloud'|translate}</p> *}
           </div>
         </div>
+
+        <div class="trial-card text-center d-md-none mt-4">
+
+          <h3 class="h3-mobile text-center mb-1">{'porg_cases_start_title'|translate}</h3>
+          <p class="text-center mb-5">{'porg_cases_start_description'|translate}</p>
+          {include file='template/include/buttons/button.tpl' variant='cta_primary' label={'Start your free trial'|translate}
+          href="{$PORG_ROOT}{$URL.signup}"}
+
+        </div>
       </div>
 
     </div>
+  </div>
 </section>
 
 <section class="container bottom-section">

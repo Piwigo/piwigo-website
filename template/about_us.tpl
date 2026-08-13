@@ -249,20 +249,24 @@
           {include file="template/include/card/person_card.tpl"
           name="Damien"
           role={'Support & Plugin Developer'|translate}
-          image="damien.webp"
-          buttons=[['icon' => 'icon-website', 'link' => 'https://pierrick.le-gall.net/']]
+          image="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/08/13/20260813102625-fb5f2a14-la.webp"
+          buttons=
+          [
+          ['icon' => 'icon-linkedin', 'link' => 'https://www.facebook.com/TEMMIInformatique'],
+          ['icon' => 'icon-fcb', 'link' => 'https://www.linkedin.com/in/damien-thomas-a5724850/']
+          ]
           }
 
           {include file="template/include/card/person_card.tpl"
           name="Hannah"
           role={'Developer'|translate}
-          image="hannah.webp"
+          image="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8/2026/07/07/20260707120252-e4b7ec43-me.webp"
           }
 
           {include file="template/include/card/person_card.tpl"
           name="Willy"
           role={'Developer'|translate}
-          image="willy.webp"
+          image="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8/2026/07/07/20260707120251-0e47fd06-me.webp"
           buttons=
           [
           ['icon' => 'icon-linkedin', 'link' => 'https://www.linkedin.com/in/linty/'],

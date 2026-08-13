@@ -316,6 +316,13 @@
   font-size: 20px;
 }
 
+.person-card-btn i.icon-fcb {
+  font-size: 30px;
+}
+.person-card-btn i.icon-fcb:before {
+  margin-left: -2px;
+}
+
 @media (max-width: 768px) {
   .person-card-actions {
     padding: 0 10px;

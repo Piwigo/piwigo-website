@@ -173,7 +173,7 @@
             <h3 class="text-center mb-4">Piwigo {'Cloud'|translate}</h3>
             <p class="text-center mb-5">{'porg_support_deploy_cloud_desc'|translate}</p>
             {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'porg_support_deploy_cloud_btn'|translate}
-            href="{$PORG_ROOT}{$URL.get_piwigo}#cloud" class='mt-auto'}
+            href="{$PORG_ROOT}{$URL.pricing}#cloud" class='mt-auto'}
           </div>
         </div>
         <div class="col-md-6 text-center mb-4 d-flex ways-to-use-card-col-r">
@@ -184,7 +184,7 @@
             <h3 class="text-center mb-4">Piwigo {'Self-hosted'|translate}</h3>
             <p class="text-center mb-5">{'porg_support_deploy_self_hosted_desc'|translate}</p>
             {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'porg_support_deploy_self_hosted_btn'|translate}
-            href="{$PORG_ROOT}{$URL.get_piwigo}#self-hosted " class='mt-auto'}
+            href="{$PORG_ROOT}{$URL.pricing}#self-hosted " class='mt-auto'}
           </div>
         </div>
       </div>
@@ -257,12 +257,13 @@
                 <span class="p">{'porg_support_intro_feat6'|translate}</span>
               </li>
             </ul>
-
-            <div class="text-md-start">
-              {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'porg_support_intro_btn'|translate}
-              href="{$PORG_ROOT}{$URL.about_us}"}
-            </div>
           </div>
+
+          <div class="text-center mt-5">
+            {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'porg_support_intro_btn'|translate}
+            href="{$PORG_ROOT}{$URL.about_us}"}
+          </div>
+
         </div>
       </div>
 
@@ -487,7 +488,7 @@
     <div class="row text-center">
       <h2 class="mb-5 text-center">{'porg_support_help_title'|translate}</h2>
       <div class="px-0 orange-bar">
-        <img src="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/27/20260727095420-dabef6c9-me.webp"
+        <img src="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/27/20260727095420-dabef6c9-xx.webp"
           alt="">
       </div>
       <div class="glass-card-container">
@@ -623,7 +624,7 @@
               </li>
             </ul>
             {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'porg_support_expertise_card1_btn'|translate}
-            href="{$PORG_ROOT}{$URL.pricing}" class='mt-auto'}
+            href="{$PORG_ROOT}{$URL.pricing}&plan=self_hosted" class='mt-auto'}
           </div>
         </div>
         <div class="col-md-6 text-center mb-4 d-flex ways-to-use-card-col-r">
@@ -648,7 +649,7 @@
               </li>
             </ul>
             {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'porg_support_expertise_card2_btn'|translate}
-            href="{$PORG_ROOT}{$URL.contact}" class='mt-auto'}
+            href="{$PORG_ROOT}{$URL.contact}&topic_id=sale#form" class='mt-auto'}
           </div>
         </div>
       </div>
@@ -670,7 +671,7 @@
         <div class="col-md-2">
         </div>
 
-        <div class="col-md-4 text-center mb-4 d-flex">
+        <div class="col-md-6 col-xl-4 text-center mb-4 d-flex">
           <div class="way-to-use-card w-100 d-flex flex-column px-3 py-4">
             <div class="icon-wrapper orange-bg mx-auto">
               <i class="orange-text icon-doc"></i>
@@ -680,7 +681,7 @@
             href="{$EXT_URL.documentation}" class='mt-auto' target="_blank"}
           </div>
         </div>
-        <div class="col-md-4 text-center mb-4 d-flex">
+        <div class="col-md-6 col-xl-4 text-center mb-4 d-flex">
           <div class="way-to-use-card w-100 d-flex flex-column px-3 py-4">
             <div class="icon-wrapper orange-bg mx-auto">
               <i class="orange-text icon-dev"></i>
@@ -690,7 +691,7 @@
             href="{$EXT_URL.installation_guide}" class='mt-auto' target="_blank"}
           </div>
         </div>
-        <div class="col-md-4 text-center mb-4 d-flex">
+        <div class="col-md-6 col-xl-4 text-center mb-4 d-flex">
           <div class="way-to-use-card w-100 d-flex flex-column px-3 py-4">
             <div class="icon-wrapper orange-bg mx-auto">
               <i class="orange-text icon-help"></i>

@@ -230,7 +230,7 @@
           <h2 class="mb-3 text-center">{'porg_get_involved_more_title'|translate}</h2>
           <p class="text-center">{'porg_get_involved_more_desc'|translate}</p>
 
-          <div class="row help-key-points">
+          <div class="row help-key-points mb-0">
 
             <div class="col-md-6">
               <p class="help-list-item"><i class="icon-check-1"></i>
@@ -252,8 +252,6 @@
             <p class="text-center mb-0 mt-3">{'porg_get_involved_more_desc2'|translate}</p>
 
           </div>
-          {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label="{'porg_get_involved_more_btn'|translate}"
-          href="//{$PORG_DOMAIN_PREFIX}piwigo.org/forum/" target="_blank"}
         </div>
       </div>
     </div>

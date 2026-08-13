@@ -37,7 +37,7 @@ $lang['porg_support_deploy_title'] = 'Support for every deployment';
 $lang['porg_support_deploy_cloud_desc'] = 'Professional support is included with every Cloud subscription.<br><br>Email support is available for all customers, with priority support included in higher plans.';
 $lang['porg_support_deploy_cloud_btn'] = 'View Cloud plans';
 $lang['porg_support_deploy_self_hosted_desc'] = 'Running Piwigo on your own infrastructure?<br><br>Professional support, managed services and technical assistance are available through dedicated support plans.';
-$lang['porg_support_deploy_self_hosted_btn'] = 'View Self-hosted offers';
+$lang['porg_support_deploy_self_hosted_btn'] = 'View support plans on self-hosted';
 
 $lang['porg_support_intro_title_left'] = 'Support from the people who build Piwigo';
 $lang['porg_support_intro_title_right_1'] = 'Real people.';
@@ -96,7 +96,7 @@ $lang['porg_support_expertise_card2_li2'] = 'Album hierarchy';
 $lang['porg_support_expertise_card2_li3'] = 'Properties model';
 $lang['porg_support_expertise_card2_li4'] = 'Titles and descriptions';
 $lang['porg_support_expertise_card2_li5'] = 'Tags and controlled vocabularies';
-$lang['porg_support_expertise_card2_btn'] = 'Contact us for a quote';
+$lang['porg_support_expertise_card2_btn'] = 'Contact us for a price quote';
 
 $lang['porg_support_before_title'] = 'Before contacting support';
 $lang['porg_support_before_subtitle'] = 'Looking for self-service resources ? Most questions can be answered through our documentation, installation guides and community forum.';

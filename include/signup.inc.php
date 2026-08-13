@@ -40,17 +40,15 @@ SELECT
 
 $porg_urls = porg_get_page_urls();
 
+load_language('urls.lang', PORG_PATH);
+
 $template->assign(
   array(
     'SIGNUP_HOST_BADGE' => 'fr_FR' == $user['language'] ? 'france-host.svg' : 'europe-host.svg',
     'STATS_NB_LAST_ACOUNTS' => $nb_accounts,
     'STATS_AVG_DURATION' => sprintf('%.1f', $median_duration),
     'registration_enabled' => conf_get_param('registration_enabled', true),
-    'SIGNUP_CHECK_LABEL' => sprintf(
-      l10n('signup_check_RPG'),
-      $porg_urls['terms_of_service'],
-      $porg_urls['privacy']
-    ),
+    'SIGNUP_CHECK_LABEL' => sprintf(l10n('signup_check_RPG'), $lang['porg_ext_urls']['terms_of_service'], $lang['porg_ext_urls']['privacy']),
     'STATS_GLOBAL_INSTALLS' => l10n('%s+', '100.000'),
     'STATS_GLOBAL_FILES'    => l10n('%s+ millions', '67'),
     'STATS_GLOBAL_UPTIME'   => l10n('%s uptime', '99.98%'),

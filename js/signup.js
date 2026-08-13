@@ -296,20 +296,17 @@ $(document).ready(function () {
 
           if (data.result && data.result.error) {
             userError.show();
-            $(".form-group-user").addClass("mb-3");
             userInput.addClass("is-invalid");
             $(".username-error")
               .html(data.result.error)
               .css("visibility", "visible");
           } else {
             userError.hide();
-            $(".form-group-user").addClass("mb-3");
             userInput.removeClass("is-invalid");
           }
         },
         error: function () {
           userError.hide();
-          $(".form-group-user").removeClass("mb-3");
         },
       });
     } else {

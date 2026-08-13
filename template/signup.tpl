@@ -91,7 +91,7 @@
             </div>
 
             <p class="text-end mt-3 small">
-              {'signup_signin'|translate}
+              {'signup_signin'|translate:"{$PORG_ROOT}{$URL.signin}"}
             </p>
 
             <div id="error" class="mt-2 text-center pink-text" style="display:none;"><span></span></div>

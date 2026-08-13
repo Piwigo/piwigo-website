@@ -1143,3 +1143,31 @@ Glass cards
   height: 100px;
   max-width: 100%;
 }
+
+/*****************************
+* Piwigo banner CSS *
+******************************/
+
+.language-available {
+  background-color: #e2faf4;
+  color: #29554a;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.language-available a {
+  color: #29554a;
+}
+
+.announcement-bar {
+  background-color: #e2faf4;
+  color: #29554a;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.announcement-bar a {
+  color: #29554a;
+}

@@ -74,6 +74,9 @@ $(document).ready(function () {
       if (topicIdFromUrl === 'demo') {
         dataValueToSelect = 'Book a demo';
       }
+      if (topicIdFromUrl === 'sale') {
+        dataValueToSelect = 'Sales inquiry';
+      }
       // add more 'else if' for other topic_ids here
 
       if (dataValueToSelect) {
