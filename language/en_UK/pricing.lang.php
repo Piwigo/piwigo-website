@@ -317,3 +317,5 @@ $lang['pcom_pricing_page_support_free'] = 'Free';
 $lang['pcom_pricing_page_support_light'] = 'Light';
 $lang['pcom_pricing_page_support_standard'] = 'Standard';
 $lang['pcom_pricing_page_support_premium'] = 'Premium';
+
+$lang['As of September 1st 2026, a 10% price increase is planned for all our subscribers, both existing and new.'] = 'As of September 1st 2026, a 10% price increase is planned for all our subscribers, both existing and new.';

@@ -1,4 +1,10 @@
 <?php
+$template->assign(
+	'ANNOUNCEMENT_INFO',
+	array(
+		'label' => l10n('As of September 1st 2026, a 10% price increase is planned for all our subscribers, both existing and new.'),
+	)
+);
 
 $faqs = array();
 $faq_number = 12;

@@ -52,11 +52,15 @@
 </head>
 
 <body{if isset($RELEASE_VERSION)} class="release-{$RELEASE_VERSION}" {/if}>
-  {if isset($ANNOUNCEMENT_INFO)}
-    <div class="container-fluid language-available">
-      <a href="{$ANNOUNCEMENT_INFO.url}"><i class="glyphicon glyphicon-calendar"></i> {$ANNOUNCEMENT_INFO.label}</a>
-    </div>
+{if isset($ANNOUNCEMENT_INFO)}
+  <div class="container-fluid language-available">
+  {if isset($ANNOUNCEMENT_INFO.url)}
+    <a href="{$ANNOUNCEMENT_INFO.url}" target="_blank"><i class="glyphicon glyphicon-bullhorn"></i> {$ANNOUNCEMENT_INFO.label}</a>
+  {else}
+    <i class="glyphicon glyphicon-bullhorn"></i> {$ANNOUNCEMENT_INFO.label}
   {/if}
+  </div>
+{/if}
   {if isset($LANGUAGE_INFO)}
     <div class="container-fluid language-available">
       <a href="{$LANGUAGE_INFO.url}"><i class="glyphicon glyphicon-globe"></i> {$LANGUAGE_INFO.label}</a>
