@@ -31,3 +31,6 @@ $lang['existing languages'] = 'available languages';
 $lang['clients'] = 'clients';
 
 $lang['average_stats_signup_loader'] = 'On average for the last %d accounts created, the installation took %s seconds.';
+
+$lang['Registrations are closed for now! Come back in a few minutes :-)'] = 'Registrations are closed for now! Come back in a few minutes :-)';
+$lang['return to home page'] = 'return to home page';

@@ -18,7 +18,15 @@
 <section class="signup-header d-flex align-items-center" id="signup-page" style="min-height: 100vh;">
   <div class="container">
     <div class="row align-items-center form-side-container">
-      <div class="col-12 col-md-5 form-side">
+
+      <div class="col-12 col-md-5 form-side" style="display:{if !$registration_enabled}block{else}none{/if}">
+        <h4 class="text-center">{'Registrations are closed for now! Come back in a few minutes :-)'|translate}</h4>
+        <div class="mt-5 text-center">
+          {include file='template/include/buttons/button.tpl' variant='cta_primary' href="{$PORG_ROOT}{$URL.home}" label={'return to home page'|translate}}
+        </div>
+      </div>
+
+      <div class="col-12 col-md-5 form-side" {if !$registration_enabled} style="display:none"{/if}>
         <div class="signup-text-header text-center mb-4">
           <h1 class="fw-bold text-center">{'signup_header_title'|translate}</h1>
           <p class="text-muted small text-center">{'signup_header_desc'|translate}</p>
