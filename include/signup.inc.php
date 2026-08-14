@@ -6,20 +6,20 @@ $median_duration = 9.6;
 
 if (isset($pwg_loaded_plugins['piwigo-website-pcomws']) and !conf_get_param('pcom_signup_simulate', true))
 {
-  accounts_db_connect();
-
-  $query = '
+  if (accounts_db_connect(false))
+  {
+    $query = '
 SELECT
     MAX(account_id)
   FROM accounts
 ;';
-  list($max_account_id) = pwg_db_fetch_row(pwg_query($query));
+    list($max_account_id) = pwg_db_fetch_row(pwg_query($query));
 
-  if (!empty($max_account_id))
-  {
-    $sample_size = 100;
+    if (!empty($max_account_id))
+    {
+      $sample_size = 100;
 
-    $query = '
+      $query = '
 SELECT
     TIMESTAMPDIFF(SECOND,registered_on,installed_on) AS duration
   FROM accounts
@@ -27,15 +27,20 @@ SELECT
     AND installed_on IS NOT NULL
   ORDER BY duration ASC
 ;';
-    $durations = query2array($query, null, 'duration');
-    if (count($durations) == $sample_size)
-    {
-      $nb_accounts = $sample_size;
-      $median_duration = $durations[floor($sample_size / 2)];
+      $durations = query2array($query, null, 'duration');
+      if (count($durations) == $sample_size)
+      {
+        $nb_accounts = $sample_size;
+        $median_duration = $durations[floor($sample_size / 2)];
+      }
     }
-  }
 
-  accounts_db_disconnect();
+    accounts_db_disconnect();
+  }
+  else
+  {
+    $conf['registration_enabled'] = false;
+  }
 }
 
 $porg_urls = porg_get_page_urls();
