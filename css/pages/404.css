@@ -6,9 +6,15 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
   width: 100%;
   overflow: hidden;
+}
+
+.container-error404 {
+  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 .error-title {
@@ -23,7 +29,6 @@ body {
 }
 
 .content-error404{
-  margin-top: 20%;
   gap: 60px;
 }
 

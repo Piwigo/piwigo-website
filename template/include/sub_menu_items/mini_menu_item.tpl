@@ -1,1 +1,1 @@
-<a href="{$href|default:'#'}" class="minimenu_item{if $is_selected|default:false} selected_minimenu_item{/if}">{$label|default:'Import & Centralize'}</a>
+<a href="{$href|default:'#'}" class="minimenu_item{if $is_selected|default:false} selected_minimenu_item{/if}" {if isset($data_attribute)}{$data_attribute}{/if}>{$label|default:'Import & Centralize'}</a>

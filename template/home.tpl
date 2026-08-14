@@ -178,15 +178,15 @@
             <h2 class="text-center mb-4">{'porg_home_features_title'|translate}</h2>
           </div>
           <div class="col-12 d-flex justify-content-center flex-wrap mini-menu-buttons" style="gap: 20px;">
-            {include file='template/include/sub_menu_items/mini_menu_item.tpl' is_selected=true label={'Import & Centralize'|translate}}
-            {include file='template/include/sub_menu_items/mini_menu_item.tpl' is_selected=false label={'Organize your media'|translate}}
-            {include file='template/include/sub_menu_items/mini_menu_item.tpl' is_selected=false label={'Search & Find'|translate}}
-            {include file='template/include/sub_menu_items/mini_menu_item.tpl' is_selected=false label={'Share & Collaborate'|translate}}
-            {include file='template/include/sub_menu_items/mini_menu_item.tpl' is_selected=false label={'Customize & Extend'|translate}}
-            {include file='template/include/sub_menu_items/mini_menu_item.tpl' is_selected=false label={'Measure & Monitor'|translate}}
-            {include file='template/include/sub_menu_items/mini_menu_item.tpl' is_selected=false label={'Security & Privacy'|translate}}
+            {include file='template/include/sub_menu_items/mini_menu_item.tpl' is_selected=true label={'Import & Centralize'|translate} data_attribute='data-feature-target="0"'}
+            {include file='template/include/sub_menu_items/mini_menu_item.tpl' is_selected=false label={'Organize your media'|translate} data_attribute='data-feature-target="1"'}
+            {include file='template/include/sub_menu_items/mini_menu_item.tpl' is_selected=false label={'Search & Find'|translate} data_attribute='data-feature-target="2"'}
+            {include file='template/include/sub_menu_items/mini_menu_item.tpl' is_selected=false label={'Share & Collaborate'|translate} data_attribute='data-feature-target="3"'}
+            {include file='template/include/sub_menu_items/mini_menu_item.tpl' is_selected=false label={'Customize & Extend'|translate} data_attribute='data-feature-target="4"'}
+            {include file='template/include/sub_menu_items/mini_menu_item.tpl' is_selected=false label={'Measure & Monitor'|translate} data_attribute='data-feature-target="5"'}
+            {include file='template/include/sub_menu_items/mini_menu_item.tpl' is_selected=false label={'Security & Privacy'|translate} data_attribute='data-feature-target="6"'}
           </div>
-          <div class="col-12 text-center d-flex justify-content-center feature-card-panel-list">
+          <div class="col-12 text-center d-flex feature-card-panel-list">
             <div class="feature-card-panel is-active" data-feature-panel="0">
               <div class="feature-card row w-100">
                 <div class="col-md-6 justify-content-center d-flex flex-column">
@@ -303,9 +303,11 @@
     <script type="text/javascript">
       document.addEventListener('DOMContentLoaded', function() {
 
+        var featureControls = document.querySelectorAll('[data-feature-target]');
         var menuButtons = document.querySelectorAll('.mini-menu-buttons .minimenu_item');
         var PaginationButtons = document.querySelectorAll('.feature-card-pagination .feature-card-dot');
         var featurePanels = document.querySelectorAll('.feature-card-panel');
+        var featurePanelList = document.querySelector('.feature-card-panel-list');
 
         if (!menuButtons.length || !featurePanels.length) {
           return;
@@ -313,9 +315,13 @@
 
         function setActivePanel(index) {
           featurePanels.forEach(function(panel, panelIndex) {
-            panel.classList.toggle('is-active', panelIndex === index);
+            if (window.innerWidth >= 768) {
+              panel.classList.toggle('is-active', panelIndex === index);
+            }
           });
-
+          if (window.innerWidth < 768) {
+            featurePanelList.scrollTo({ left: featurePanelList.offsetWidth * index, behavior: 'smooth' });
+          }
           menuButtons.forEach(function(button, buttonIndex) {
             button.classList.toggle('selected_minimenu_item', buttonIndex === index);
           });
@@ -325,20 +331,41 @@
           });
         }
 
-        setActivePanel(0);
+        if (window.innerWidth >= 768) {
+          setActivePanel(0);
+        } else {
+          // Force scroll instantané à 0 sans attendre un clic
+          if (featurePanelList) {
+            featurePanelList.scrollLeft = 0;
+            menuButtons.forEach(btn => btn.classList.remove('selected_minimenu_item'));
+            if (menuButtons[0]) menuButtons[0].classList.add('selected_minimenu_item');
+            PaginationButtons.forEach(dot => dot.classList.remove('is-active'));
+            if (PaginationButtons[0]) PaginationButtons[0].classList.add('is-active');
+          }
+        }
 
-        menuButtons.forEach(function(button, index) {
+        featureControls.forEach(function(button) {
           button.addEventListener('click', function(event) {
             event.preventDefault();
+            var index = parseInt(this.getAttribute('data-feature-target'), 10);
             setActivePanel(index);
           });
         });
-        PaginationButtons.forEach(function(button, index) {
-          button.addEventListener('click', function(event) {
-            event.preventDefault();
-            setActivePanel(index);
-          });
-        });
+
+        function updateActiveOnScroll() {
+          if (window.innerWidth < 768 && featurePanelList) {
+            var currentIndex = Math.round(featurePanelList.scrollLeft / featurePanelList.offsetWidth);
+            
+            menuButtons.forEach(btn => btn.classList.remove('selected_minimenu_item'));
+            if (menuButtons[currentIndex]) menuButtons[currentIndex].classList.add('selected_minimenu_item');
+            
+            PaginationButtons.forEach(dot => dot.classList.remove('is-active'));
+            if (PaginationButtons[currentIndex]) PaginationButtons[currentIndex].classList.add('is-active');
+          }
+        }
+        featurePanelList.addEventListener('scrollend', updateActiveOnScroll);
+
+
 
         const titleItems = document.querySelectorAll('.why-title-item');
         const cardItems = document.querySelectorAll('.why-cards-col .test-card');

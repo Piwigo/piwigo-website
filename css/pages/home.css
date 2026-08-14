@@ -162,6 +162,10 @@
   margin-top: 50px;
 }
 
+.feature-card-panel-list {
+  justify-content: center;
+}
+
 .feature-card-panel {
   display: none;
   width: 100%;
@@ -235,6 +239,30 @@
     margin-top: 20px;
     gap: 10px;
   }
+
+  .feature-card-panel-list {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    justify-content: flex-start;
+  }
+
+  .feature-card-panel-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .feature-card-panel {
+    display: block !important;
+    flex: 0 0 100%;
+    width: 100%;
+    scroll-snap-align: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
 }
 
 .feature-card-pagination {

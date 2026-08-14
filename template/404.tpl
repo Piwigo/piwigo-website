@@ -1,7 +1,7 @@
 <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/pages/404.css">
 <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/buttons/common_button.css">
 
-<section class="container-fluide container-error404">
+<section class="container-fluid container-error404 d-flex align-items-center justify-content-center">
   <div class="container equal content-error404">
     <h1 class="error-title text-center">{'404_error_title'|translate}</h1>
     <p class="error-description text-center">{'404_error_desc'|translate}</p>
