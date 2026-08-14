@@ -70,6 +70,8 @@ if (is_array($coding_activity_commits)) {
       $commit_url = 'http://piwigo.org/dev/changeset/' . $commit['local_id'];
     } elseif (preg_match('{https://github.com}', $commit['url'])) {
       $commit_url = $commit['url'] . '/commit/' . $commit['local_id'];
+    } elseif (preg_match('{gitlab\.gravisdev\.com}', $commit['url'])) {
+      $commit_url = $commit['url'].'/-/commit/'.$commit['local_id'];
     }
 
     // sort commit here
