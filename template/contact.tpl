@@ -121,6 +121,10 @@
                 <span class="custom-radio"></span>
                 <span class="custom-option-label p-boxed">{'Make a donation'|translate}</span>
               </div>
+              <div class="custom-option" data-value="Customer support request">
+                <span class="custom-radio"></span>
+                <span class="custom-option-label p-boxed">{'Customer support request'|translate}</span>
+              </div>
               <div class="custom-option" data-value="Other">
                 <span class="custom-radio"></span>
                 <span class="custom-option-label p-boxed">{'Other'|translate}</span>

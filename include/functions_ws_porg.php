@@ -107,6 +107,7 @@ function ws_porg_contact_send($params, &$service)
     'Report a security issue',
     'Send a testimonial',
     'Make a donation',
+    'Customer support request',
     'Other'
   );
 

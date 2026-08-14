@@ -24,5 +24,6 @@ $lang['Sales inquiry'] = 'Sales inquiry';
 $lang['Book a demo'] = 'Book a demo';
 $lang['Report a security issue'] = 'Report a security issue';
 $lang['Make a donation'] = 'Make a donation';
+$lang['Customer support request'] = 'Customer support request';
 $lang['Other'] = 'Other';
 ?>
