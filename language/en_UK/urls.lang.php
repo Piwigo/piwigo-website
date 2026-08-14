@@ -43,13 +43,13 @@ $lang['porg_urls']['manual_update'] = 'guides/update/manual';
 $lang['porg_urls']['docker_update'] = 'guides/update/docker';
     
 $lang['porg_ext_urls']['installation_guide'] = 'https://doc.piwigo.org/self-hosting-piwigo';
-$lang['porg_ext_urls']['automatic_update'] = 'https://doc.piwigo.org/update-guides/automatic-update/';
-$lang['porg_ext_urls']['manual_update'] = 'https://doc.piwigo.org/update-guides/manual-update/';
+$lang['porg_ext_urls']['automatic_update'] = 'https://doc.piwigo.org/self-hosting-piwigo/update-guides/automatic-update/';
+$lang['porg_ext_urls']['manual_update'] = 'https://doc.piwigo.org/self-hosting-piwigo/update-guides/manual-update/';
 $lang['porg_ext_urls']['documentation'] = 'https://doc.piwigo.org/';
 $lang['porg_ext_urls']['customizations'] = 'https://customizations.piwigo.com';
 $lang['porg_ext_urls']['data_import'] = 'https://piwigo.com/blog/2025/07/01/importing-an-existing-photo-library-into-piwigo/';
 $lang['porg_ext_urls']['prerequisites'] = 'https://doc.piwigo.org/self-hosting-piwigo/install-guides/requirements/';
-$lang['porg_ext_urls']['docker'] = 'https://doc.piwigo.org/install-guides/docker-install/';
+$lang['porg_ext_urls']['docker'] = 'https://doc.piwigo.org/self-hosting-piwigo/install-guides/docker-install/';
 $lang['porg_ext_urls']['privacy'] = 'https://doc.piwigo.org/legal/privacy/';
 $lang['porg_ext_urls']['terms_of_service'] = 'https://doc.piwigo.org/legal/terms-of-service/';
 $lang['porg_ext_urls']['dpa'] = 'https://doc.piwigo.org/legal/dpa/';
