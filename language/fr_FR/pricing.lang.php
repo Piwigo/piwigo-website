@@ -1,0 +1,321 @@
+<?php
+$lang['page_meta_title'] = 'Tarifs - Piwigo';
+$lang['page_meta_description'] = 'Piwigo s\'adapte à tous les budgets et à toutes les tailles d\'organisations. Offres hébergées dans le cloud ou auto-hébergées.';
+
+$lang['pricing main title part 1'] = 'Choisissez <span class="main-orange-text">l\'offre qui vous</span><br><span class="main-orange-text">convient</span>';
+$lang['pricing main title part 2'] = 'le mieux';
+$lang['pcom_pricing_page_subtitle'] = 'Piwigo s\'adapte à tous les budgets et à toutes les tailles d\'organisations.';
+
+$lang['pcom_pricing_page_switch_cloud2'] = 'Piwigo SaaS, hébergement & support';
+$lang['pcom_pricing_page_switch_self_hosted'] = 'Piwigo sur votre propre serveur';
+
+$lang['pricing toggle title cloud'] = 'Cloud';
+$lang['pricing toggle title selfhosted'] = 'Auto-hébergé';
+$lang['pricing toggle piwigo'] = 'Piwigo';
+
+$lang['best_deal'] = 'Meilleure offre';
+
+$lang['pcom_pricing_page_cloud_subtitle'] = '<span class="main-pink-text">Piwigo tout compris, avec l\'hébergement, les mises à jour et le support client.</span>';
+$lang['pcom_pricing_page_on_premise_subtitle'] = '<span class="main-orange-text">Téléchargez Piwigo et déployez-le sur votre infrastructure, seul ou<br>avec l\'aide de notre équipe.</span>';
+
+$lang['pcom_pricing_page_intro_title'] = 'Vous souhaitez déployer<br>Piwigo dans votre propre<br>environnement ?';
+$lang['pricing selfhosted description card'] = '<span class="main-orange-text">Piwigo est un logiciel libre et open source</span>. Installez Piwigo sur votre infrastructure si vous avez les compétences pour le configurer et l\'administrer.
+Et si vous avez besoin d\'aide pour installer, configurer ou utiliser Piwigo, nous proposons des prestations dédiées aux organisations qui hébergent Piwigo sur leur propre serveur.';
+
+$lang['pcom_pricing_page_storage_popin_1'] = 'L\'espace de stockage inclus dans votre offre ne vous suffit pas ?';
+$lang['pcom_pricing_page_storage_popin_2'] = 'Vous pouvez commander de l\'espace de stockage supplémentaire. Le prix s\'ajoutera à celui de votre abonnement (facturé annuellement).';
+$lang['pcom_pricing_page_download_pdf'] = 'Télécharger nos tarifs en PDF';
+
+$lang['pcom_pricing_page_compare_plans'] = 'Comparer nos offres';
+$lang['pcom_pricing_page_faq_title'] = 'Questions fréquentes';
+
+$lang['pcom_pricing_page_particular_cases'] = 'Cas particuliers';
+$lang['pcom_pricing_page_on_premise_10'] = 'Prestations professionnelles';
+$lang['on_quotation'] = 'sur devis';
+
+$lang['pcom_pricing_page_code_plugins_title'] = 'Code et plugins sur mesure';
+$lang['pcom_pricing_page_code_plugins_paragraph'] = 'Le support s\'applique tant que vous n\'avez pas modifié le code source de Piwigo. Toute demande de support liée à un code source modifié ou à des plugins développés sur mesure est facturée à part (150 € HT de l\'heure).';
+
+$lang['pcom_pricing_page_ssh_title'] = 'Accès SSH';
+$lang['pcom_pricing_page_ssh_paragraph'] = 'Pour assurer un support de qualité, nous demandons un accès SSH à votre serveur. Si ce n\'est pas possible, un supplément de 300 € HT par an s\'applique.';
+
+$lang['pcom_pricing_page_on_premise_11'] = 'Personnalisation graphique sur mesure';
+$lang['pcom_pricing_page_on_premise_12'] = 'Notre équipe personnalise votre galerie Piwigo à vos couleurs et selon votre usage.';
+
+$lang['pcom_pricing_page_custom_data_import'] = 'Import de données sur mesure';
+$lang['pcom_pricing_page_on_premise_13'] = 'Notre équipe importe vos données existantes depuis n\'importe quelle source (serveur partagé, logiciel de photothèque, etc.).';
+
+$lang['pcom_pricing_page_on_premise_18'] = 'Développement de fonctionnalités spécifiques';
+$lang['pcom_pricing_page_on_premise_19'] = 'À partir de votre cahier des charges, notre équipe peut développer des fonctionnalités sur mesure (plugins, connecteurs, etc.).';
+
+$lang['pcom_pricing_page_ht'] = 'HT';
+$lang['pcom_pricing_page_ht_hour'] = 'HT/heure';
+$lang['pcom_pricing_page_see_examples'] = 'Voir des exemples';
+$lang['pcom_pricing_page_learn_more'] = 'En savoir plus';
+$lang['pcom_pricing_page_see_prerequistes'] = 'Voir les prérequis';
+
+$lang['pcom_pricing_page_assistance_title'] = 'Support technique et infogérance';
+$lang['pcom_pricing_page_assistance_paragraph'] = 'Trop souvent, nous voyons des organisations installer Piwigo sur un serveur puis l\'oublier. Résultat : des utilisateurs confrontés à des problèmes de performance, des mises à jour jamais installées, ou un serveur mal configuré.
+Pour que Piwigo fonctionne au mieux sur votre infrastructure, nous proposons des prestations de support technique, de la simple assistance à la gestion complète du serveur.';
+
+$lang['pcom_pricing_page_on_premise_14'] = 'Installation et configuration de Piwigo';
+$lang['pcom_pricing_page_assistance_updates'] = 'Accompagnement des mises<br>à jour de Piwigo';
+$lang['pcom_pricing_page_server_management'] = 'Gestion complète du serveur';
+
+$lang['pcom_pricing_page_price_for_support_clients'] = 'Tarif pour les clients disposant d\'une offre de support';
+$lang['pcom_pricing_page_price_for_non_support_clients'] = 'Tarif si vous n\'êtes pas client d\'une offre de support';
+$lang['pcom_pricing_page_included'] = 'Qu\'est-ce qui est inclus ?';
+
+$lang['pcom_pricing_page_installation_on_server'] = 'Installation de Piwigo sur votre serveur';
+$lang['pcom_pricing_page_major_updates'] = 'Mises à jour majeures de Piwigo (4 fois par an) et des plugins';
+$lang['pcom_pricing_page_server_updates'] = 'Mises à jour du serveur (PHP, MySQL, Debian, etc.)';
+$lang['pcom_pricing_page_server_monitoring'] = 'Supervision du serveur (erreurs, performance)';
+$lang['pcom_pricing_page_automatic_backups'] = 'Sauvegardes automatisées';
+
+$lang['pcom_pricing_page_ht_year'] = 'HT/an';
+$lang['pcom_pricing_page_non_applicable'] = 'N/A';
+
+
+$lang['pcom_pricing_page_usage'] = 'Usage';
+$lang['pcom_pricing_page_supported_file'] = 'Formats de fichiers pris en charge';
+$lang['pcom_pricing_page_customization'] = 'Personnalisation';
+$lang['pcom_pricing_page_statistics'] = 'Statistiques';
+$lang['pcom_pricing_page_collaboration_sharing'] = 'Collaboration et partage';
+$lang['pcom_pricing_page_data_organization'] = 'Organisation des données et productivité';
+$lang['pcom_pricing_page_service_support'] = 'Service et support';
+
+$lang['pcom_pricing_page_administrators'] = 'Administrateurs';
+$lang['pcom_pricing_page_users'] = 'Utilisateurs';
+$lang['pcom_pricing_page_contributors'] = 'Contributeurs';
+$lang['pcom_pricing_page_storage'] = 'Stockage';
+$lang['pcom_pricing_page_unlimited_plugins'] = 'Plugins illimités';
+$lang['pcom_pricing_page_image_video_audio'] = 'Images, vidéos & audio';
+$lang['pcom_pricing_page_other_file'] = 'Autres formats de fichiers';
+$lang['pcom_pricing_page_customization_details'] = 'Accès à plus de 20 thèmes graphiques personnalisables';
+$lang['pcom_pricing_page_plugin_installation'] = 'Installation de plugins';
+$lang['pcom_pricing_page_geolocation'] = 'Géolocalisation';
+$lang['pcom_pricing_page_multilingual'] = 'Galerie web multilingue';
+$lang['pcom_pricing_page_custom_domain'] = 'Nom de domaine personnalisé';
+$lang['pcom_pricing_page_custom_pages'] = 'Ajout de pages personnalisées';
+$lang['pcom_pricing_page_contact_form'] = 'Formulaire de contact';
+$lang['pcom_pricing_page_menu_customization'] = 'Personnalisation avancée du menu';
+$lang['pcom_pricing_page_personal_pro_details_6'] = 'Pied de page personnalisé';
+$lang['pcom_pricing_page_custom_banner'] = 'Ajout d\'une bannière personnalisée';
+$lang['pcom_pricing_page_seo'] = 'Réglages SEO';
+$lang['pcom_pricing_page_custom_javascript'] = 'Ajout de javascript personnalisé';
+$lang['pcom_pricing_page_content_translation'] = 'Traduction du contenu';
+$lang['pcom_pricing_page_free_graphic_personalization'] = 'Personnalisation graphique offerte (réalisée par notre équipe)';
+
+$lang['pcom_pricing_page_statistics_built_in'] = 'Statistiques intégrées à Piwigo';
+$lang['pcom_pricing_page_advanced_search'] = 'Recherche avancée dans l\'historique';
+$lang['pcom_pricing_page_external_analytics'] = 'Ajout d\'un outil d\'analyse externe (Google Analytics, Matomo...)';
+$lang['pcom_pricing_page_admin_activity'] = 'Suivi de l\'activité des administrateurs';
+
+$lang['pcom_pricing_page_collaboration_sharing'] = 'Collaboration et partage';
+$lang['pcom_pricing_page_private_public_albums'] = 'Albums privés et publics';
+$lang['pcom_pricing_page_user_permissions'] = 'Permissions utilisateurs par album';
+$lang['pcom_pricing_page_link_sharing'] = 'Partage par lien';
+$lang['pcom_pricing_page_link_sharing_details'] = 'Partager un fichier ou un album entier via un lien sécurisé';
+$lang['pcom_pricing_page_batch_downloader'] = 'Téléchargement par lot';
+$lang['pcom_pricing_page_multi_size_download'] = 'Téléchargement multi-tailles';
+$lang['pcom_pricing_page_contributor_management'] = 'Gestion des contributeurs';
+$lang['pcom_pricing_page_contributor_management_details'] = 'Autoriser des non-administrateurs à déposer des fichiers';
+$lang['pcom_pricing_page_team_details_4'] = 'Permissions de téléchargement avancées';
+$lang['pcom_pricing_page_team_details_5'] = 'Formulaires d\'inscription avec champs personnalisés';
+$lang['pcom_pricing_page_enterprise_details_4'] = 'Collections utilisateurs';
+$lang['pcom_pricing_page_user_collection_details'] = 'Permettre à un utilisateur de créer plusieurs sélections de fichiers partageables';
+$lang['pcom_pricing_page_enterprise_details_10'] = 'Validation des demandes de téléchargement';
+$lang['pcom_pricing_page_sso'] = 'SSO : connexion à votre Active Directory / LDAP';
+$lang['pcom_pricing_page_password_rules'] = 'Règles de mot de passe';
+
+$lang['pcom_pricing_page_albums_sub_albums'] = 'Albums et sous-albums (profondeur illimitée)';
+$lang['pcom_pricing_page_unlimited_tags'] = 'Tags illimités';
+$lang['pcom_pricing_page_automatic_import_metadata'] = 'Import automatique des métadonnées des fichiers';
+$lang['pcom_pricing_page_sell_files'] = 'Vendre des fichiers en ligne avec Paypal';
+$lang['pcom_pricing_page_automatic_watermark'] = 'Mettre en place un filigrane automatique pour protéger vos images';
+$lang['pcom_pricing_page_copyright_management'] = 'Gestion des droits d\'auteur';
+$lang['pcom_pricing_page_csv_export'] = 'Export des données en csv';
+$lang['pcom_pricing_page_mass_tag_creation'] = 'Création de tags en masse';
+$lang['pcom_pricing_page_custom_properties'] = 'Propriétés personnalisées (champs)';
+$lang['pcom_pricing_page_file_expiration_date'] = 'Gérer la date d\'expiration des fichiers';
+$lang['pcom_pricing_page_enterprise_details_3'] = 'Plusieurs formats pour un même fichier';
+$lang['pcom_pricing_page_enterprise_details_12'] = 'Mise à jour des propriétés en masse';
+$lang['pcom_pricing_page_enterprise_details_11'] = 'Création d\'utilisateurs en masse';
+$lang['pcom_pricing_page_smart_albums'] = 'Albums intelligents';
+$lang['pcom_pricing_page_user_custom_search_filters'] = 'Filtres de recherche personnalisés';
+$lang['pcom_pricing_page_enterprise_details_7'] = 'Étiquetage automatique par IA';
+
+$lang['pcom_pricing_page_email_support'] = 'Support par email';
+$lang['pcom_pricing_page_import_piwigo'] = 'Importer votre Piwigo existant';
+$lang['pcom_pricing_page_import_piwigo_detail'] = 'Si vous déplacez Piwigo depuis votre propre serveur';
+$lang['pcom_pricing_page_priority_support'] = 'Support prioritaire';
+$lang['pcom_pricing_page_vip_details_3'] = 'Accompagnement renforcé pour la mise en place de Piwigo';
+$lang['pcom_pricing_page_vip_details_6'] = '1 rendez-vous par mois pendant les 6 premiers mois pour tirer le meilleur parti de Piwigo';
+$lang['pcom_pricing_page_phone_support'] = 'Support téléphonique';
+$lang['pcom_pricing_page_dedicated_hosting'] = 'Hébergement sur serveur dédié (sur devis)';
+$lang['pcom_pricing_page_vip_details_4'] = 'Développement sur mesure (sur devis)';
+$lang['pcom_pricing_page_administrators_details'] = 'Les administrateurs ont accès à l\'administration de Piwigo, et donc à toutes les fonctionnalités : créer / modifier / supprimer des fichiers, des albums, des tags, des utilisateurs, accéder aux statistiques... Certains super-administrateurs peuvent changer l\'apparence de votre Piwigo et installer ou désinstaller des plugins. Dans Piwigo, les administrateurs regroupent les statuts « administrateur » et « webmaster ».';
+$lang['pcom_pricing_page_users_details'] = 'Les utilisateurs peuvent uniquement se connecter à votre galerie Piwigo pour consulter et télécharger les contenus auxquels un administrateur leur a donné accès. Dans Piwigo, les utilisateurs regroupent les statuts « Utilisateur » et « Générique ».';
+$lang['pcom_pricing_page_contributors_details'] = 'Les contributeurs sont réservés aux clients disposant d\'une offre Team, Enterprise ou VIP. Ce sont des utilisateurs particuliers, autorisés à importer des fichiers dans votre photothèque depuis votre galerie web. Ils n\'ont pas accès à l\'administration. Dans Piwigo, il s\'agit des utilisateurs non administrateurs qui ont le droit d\'ajouter des fichiers à la galerie grâce au plugin Community.';
+$lang['pcom_pricing_page_unlimited_plugins_details'] = 'Les plugins permettent d\'enrichir et de personnaliser Piwigo. Certains plugins ne sont disponibles que dans certaines offres commerciales.';
+$lang['pcom_pricing_page_multilingual_details'] = 'L\'interface utilisateur de Piwigo est traduite en 70 langues';
+$lang['pcom_pricing_page_custom_domain_details'] = 'Par défaut, votre Piwigo est accessible depuis une URL du type monsite.piwigo.com. Nous pouvons l\'associer à votre propre nom de domaine si vous le souhaitez.';
+
+$lang['pcom_pricing_page_unlimited'] = 'Illimité';
+$lang['pcom_pricing_page_ht_month'] = 'HT / mois';
+$lang['annual payment'] = 'Facturé annuellement';
+
+$lang['pcom_pricing_page_team_details_8'] = 'Personnalisation graphique offerte';
+$lang['pcom_pricing_page_personalisation_popin_1'] = 'Pour les clients d\'une offre Enterprise ou VIP : notre équipe se charge de personnaliser votre galerie Piwigo à vos couleurs, en concertation avec vous et dans le respect de votre identité visuelle.';
+
+$lang['pricing Advanced'] = 'Permissions de téléchargement avancées';
+$lang['pricing Registration'] = 'Formulaires d\'inscription avec champs personnalisés';
+$lang['pcom_pricing_page_team_details_6'] = 'Ajout de commentaires utilisateurs';
+$lang['pricing Add user comments'] = 'Ajout de commentaires utilisateurs';
+$lang['pcom_pricing_page_etc'] = 'etc..';
+
+// PRO line : All the standard features of Piwigo
+$lang['pcom_pricing_page_personal_details_6'] = 'Albums, sous-albums, tags';
+$lang['pcom_pricing_page_personal_details_3'] = 'Import des métadonnées de vos fichiers';
+$lang['pcom_pricing_page_personal_pro_details_5'] = 'Gestion des droits des utilisateurs';
+$lang['pcom_pricing_page_personal_details_5'] = 'Contenus privés ou publics';
+$lang['pcom_pricing_page_personal_details_4'] = 'Votre galerie web peut être personnalisée avec notre sélection de thèmes';
+
+
+// PRO line : Over 80 plugins to customize your Piwigo
+$lang['pcom_pricing_page_personal_pro_details_7'] = 'Partager un album ou un fichier via un lien sécurisé';
+$lang['pcom_pricing_page_personal_pro_details_8'] = 'Téléchargement d\'un album en un clic';
+$lang['pcom_pricing_page_personal_pro_details_9'] = 'Choisir la taille du fichier à télécharger';
+$lang['pcom_pricing_page_personal_pro_details_10'] = 'Pages de contenu (à propos...)';
+$lang['pcom_pricing_page_personal_pro_details_11'] = 'Formulaires de contact';
+$lang['pricing_page_seo'] = 'Réglages SEO';
+
+// PRO line : Host your gallery on a secure cloud
+$lang['pcom_pricing_page_personal_pro_details_18'] = 'nom de domaine du type maphototheque.piwigo.com ou nom de domaine personnalisé';
+$lang['pricing_page_user_custom_search_filters'] = 'Filtres de recherche personnalisés';
+
+// ENTREPRISE line : More automation and productivity
+$lang['pcom_pricing_page_enterprise_details_6'] = 'Albums intelligents (albums automatisés selon différents critères)';
+$lang['pcom_pricing_page_enterprise_details_7'] = 'Étiquetage automatique par IA';
+$lang['pcom_pricing_page_enterprise_details_8'] = 'Date d\'expiration automatique des fichiers';
+
+// VIP line : Custom data import included
+$lang['pcom_pricing_page_vip_details_8'] = 'Durée estimée : 1 jour ouvré. Nous pouvons facturer un supplément si la complexité de vos données l\'exige.';
+$lang['pcom_pricing_annual_audit_info'] = 'Une fois par an, nous analysons votre usage de Piwigo et vous faisons des recommandations pour l\'optimiser (performance, utilisation des plugins, fonctionnalités sous-exploitées, etc.).';
+
+$lang['image_formats'] = 'jpg, jpeg, png, gif, webp, heic, ogg, ogv, mp4, m4v, webm, webmv, mp3';
+$lang['other_formats'] = 'jpg, jpeg, png, gif, webp, heic, ogg, ogv, mp4, m4v, webm, webmv, mp3, psd, ai, eps, tif, tiff, svg, pdf';
+
+$lang['pricing tooltip_vip'] = 'L\'offre de support VIP inclut le support des plugins Pro, Team, Enterprise et VIP.';
+$lang['pricing tooltip_list_vip'] = 'Voir la liste des plugins et des fonctionnalités par offre';
+
+$lang['pricing storage_p'] = 'Vous pouvez commander de l\'espace de stockage supplémentaire. Le prix s\'ajoutera à celui de votre abonnement (facturé annuellement).';
+
+$lang['pricing excl_vat'] = 'HT';
+$lang['pricing excl_month'] = '/ mois';
+
+$lang['pcom_pricing_page_try_it_free'] = 'Essayer gratuitement';
+$lang['pcom_pricing_page_features_services'] = 'Fonctionnalités & services';
+$lang['pcom_pricing_page_start_30_day_free_trial'] = 'Démarrer mon essai gratuit de 30 jours';
+
+/* CARDS */
+$lang['pcom_pricing_page_pro_explanation'] = 'Vous êtes photographe ou designer indépendant, vous utilisez Piwigo pour partager votre travail en ligne et avec vos clients';
+
+$lang['1 administrator'] = '1 administrateur';
+$lang['pcom_pricing_page_unlimited_users'] = 'utilisateurs illimités';
+$lang['pcom_pricing_page_no_contributors'] = 'aucun contributeur';
+$lang['pro storage'] = '10 Go de stockage';
+$lang['pcom_pricing_page_image_formats'] = 'Fichiers image, vidéo & audio uniquement';
+$lang['format only'] = 'Fichiers image, vidéo & audio uniquement';
+
+$lang['pcom_pricing_page_personal_pro_details_1'] = 'Toutes les fonctionnalités standard de Piwigo';
+$lang['pcom_pricing_page_personal_pro_details_2'] = 'Plus de 80 plugins pour personnaliser votre Piwigo';
+$lang['plugins to customize2'] = 'Plus de 95 plugins pour personnaliser votre Piwigo';
+$lang['plugins to customize3'] = 'Plus de 108 plugins pour personnaliser votre Piwigo';
+$lang['plugins to customize4'] = 'Plus de 111 plugins pour personnaliser votre Piwigo';
+$lang['pcom_pricing_page_personal_pro_details_16'] = 'Hébergez votre galerie sur un cloud sécurisé';
+$lang['Host'] = 'Hébergez votre galerie sur un cloud sécurisé';
+$lang['pcom_pricing_page_import_piwigo'] = 'Importer votre Piwigo existant';
+
+
+$lang['pcom_pricing_page_team_explanation'] = 'Vous utilisez Piwigo au sein d\'une petite équipe';
+
+$lang['3 administrators'] = '3 administrateurs';
+$lang['pcom_pricing_page_unlimited_contributors'] = 'contributeurs illimités';
+$lang['team storage'] = '100 Go de stockage';
+$lang['pcom_pricing_page_all_formats'] = 'Tous les formats de fichiers';
+$lang['pcom_pricing_page_priority_email_support'] = 'Support prioritaire par email';
+
+$lang['pcom_pricing_page_team_details_1'] = 'Toutes les fonctionnalités de l\'offre Pro, et en plus...';
+$lang['pcom_pricing_page_team_details_3'] = 'Gestion des contributeurs (autoriser des non-administrateurs à déposer des fichiers)';
+$lang['pcom_pricing_page_team_details_2'] = "Historique d'activité des administrateurs (ajouts, suppressions, etc.)";
+$lang['pcom_pricing_page_user_management'] = 'Gestion avancée des utilisateurs';
+
+
+$lang['pcom_pricing_page_enterprise_explanation'] = 'Vous utilisez Piwigo au sein d\'une équipe de taille moyenne';
+
+$lang['5 administrators'] = '5 administrateurs';
+$lang['entreprise storage'] = '250 Go de stockage';
+
+$lang['pcom_pricing_page_enterprise_details_1'] = 'Toutes les fonctionnalités de l\'offre Team, et en plus...';
+$lang['pcom_pricing_page_enterprise_details_2'] = 'Plus d\'options pour organiser, catégoriser et présenter vos contenus';
+$lang['pcom_pricing_page_enterprise_details_5'] = 'Plus d\'automatisation et de productivité';
+$lang['pcom_pricing_page_enterprise_details_9'] = 'Des fonctionnalités plus avancées';
+$lang['pcom_pricing_page_enterprise_details_14'] = 'Import de données sur mesure (sur devis)';
+$lang['pcom_pricing_page_enterprise_details_13'] = 'Personnalisation graphique sur mesure';
+
+
+$lang['pcom_pricing_page_vip_explanation'] = 'Vous utilisez Piwigo dans une grande organisation et souhaitez un accompagnement personnalisé';
+
+$lang['pcom_pricing_page_unlimited_admins'] = 'administrateurs illimités';
+$lang['vip storage'] = '1000 Go de stockage';
+$lang['pcom_pricing_page_priority_email_phone_support'] = 'Support prioritaire par email + support téléphonique';
+
+$lang['pcom_pricing_page_vip_details_1'] = 'Toutes les fonctionnalités de l\'offre Enterprise, et en plus...';
+$lang['pcom_pricing_page_vip_details_2'] = 'Fonctionnalités d\'authentification avancées (authentification unique, règles de mot de passe...)';
+$lang['pcom_pricing_page_vip_details_3'] = 'Accompagnement renforcé pour la mise en place de Piwigo';
+$lang['pcom_pricing_page_vip_details_4'] = 'Développement sur mesure (sur devis)';
+$lang['pcom_pricing_page_vip_details_5'] = 'Serveur dédié (sur devis)';
+$lang['pcom_pricing_page_vip_details_7'] = 'Import de données sur mesure inclus';
+
+$lang['pcom_pricing_page_support_free_explanation'] = 'Pour les particuliers et les organisations 100 % autonomes';
+
+$lang['pcom_pricing_page_support_functionalities'] = 'Accès à toutes les fonctionnalités, thèmes et plugins';
+$lang['Access_doc'] = 'Accès à la documentation et au forum de la communauté';
+
+
+$lang['pcom_pricing_page_support_light_explanation'] = 'Pour les petites organisations';
+
+$lang['pcom_pricing_page_user_support'] = 'Support utilisateur professionnel par email, visioconférence et téléphone sur rendez-vous';
+$lang['Response_48'] = 'Délai de réponse : 48 heures ouvrées';
+$lang['pcom_pricing_page_support_light_plugins'] = 'Support inclus sur plus de 100 plugins';
+
+
+$lang['pcom_pricing_page_support_standard_explanation'] = 'Pour les professionnels, les PME, les collectivités';
+
+$lang['Response_24'] = 'Délai de réponse : 24 heures ouvrées';
+$lang['pcom_pricing_page_support_standard_plugins'] = 'Support inclus sur plus de 100 plugins et 20 plugins Enterprise';
+
+
+$lang['pcom_pricing_page_support_premium_explanation'] = 'Pour les grandes photothèques à usage intensif';
+
+$lang['Response_8'] = 'Délai de réponse : 8 heures ouvrées (prioritaire)';
+$lang['pcom_pricing_page_support_premium_plugins'] = 'Support inclus sur plus de 120 plugins et les plugins VIP';
+$lang['pcom_pricing_page_support_premium_audit'] = 'Audit annuel de votre usage de Piwigo';
+
+$lang['View Documentation'] = 'Voir la documentation';
+$lang['Visit Community Forum'] = 'Visiter le forum de la communauté';
+$lang['Download Piwigo'] = 'Télécharger Piwigo';
+$lang['Contact us'] = 'Nous contacter';
+$lang['Best deal'] = 'Meilleure offre';
+
+$lang['pcom_pricing_page_pro'] = 'Pro';
+$lang['pcom_pricing_page_team'] = 'Team';
+$lang['pcom_pricing_page_enterprise'] = 'Enterprise';
+$lang['pcom_pricing_page_vip'] = 'VIP';
+$lang['pcom_pricing_page_support_free'] = 'Free';
+$lang['pcom_pricing_page_support_light'] = 'Light';
+$lang['pcom_pricing_page_support_standard'] = 'Standard';
+$lang['pcom_pricing_page_support_premium'] = 'Premium';
+
+$lang['As of September 1st 2026, a 10% price increase is planned for all our subscribers, both existing and new.'] = 'À compter du 1er septembre 2026, une augmentation tarifaire de 10 % est prévue pour tous nos abonnés, existants comme nouveaux.';

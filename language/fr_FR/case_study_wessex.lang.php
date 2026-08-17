@@ -1,0 +1,22 @@
+<?php
+$lang['page_meta_title'] = 'Étude de cas Piwigo : un gestionnaire de médias numériques pour Wessex Water';
+$lang['page_meta_description'] = 'Wessex Water cherchait un logiciel de Digital Asset Management simple et abordable : découvrez pourquoi l\'équipe a choisi Piwigo.';
+
+$lang['porg_cases_wessex_title'] = 'Wessex Water a choisi Piwigo pour gérer ses médias numériques';
+$lang['porg_cases_wessex_description'] = '<a class="orange-text" href="https://www.wessexwater.co.uk" target="_blank">Wessex Water</a> est une société de distribution d\'eau et d\'assainissement qui dessert 2,8 millions de clients dans le sud-ouest de l\'Angleterre, avec environ 3 500 salariés.';
+
+$lang['porg_cases_wessex_challenge_title'] = 'Le défi : une photothèque centralisée et sécurisée pour les images de l\'entreprise';
+$lang['porg_cases_wessex_challenge_description'] = 'Wessex Water fait un usage important de ses médias numériques, en interne comme en externe. Les photos et les vidéos sont utilisées par tous les services, à des fins variées : intranet, affichage dynamique, présentations, sites web, évènements, campagnes de relations presse et réseaux sociaux.<br><br>Avant Piwigo, tous ces contenus étaient stockés à de multiples endroits : ordinateurs, SharePoint, OneDrive, Outlook, lecteurs réseau, disques locaux et CD.<br><br>Quand quelqu\'un avait besoin d\'une image, il ne savait jamais à qui s\'adresser ni où la chercher. Il était également difficile de savoir quelle version d\'un fichier était la bonne, et la gestion du RGPD et des droits à l\'image était compliquée.';
+$lang['porg_cases_wessex_challenge_text'] = 'Nous avions un vrai problème de contrôle qualité, et nous peinions à retrouver et organiser l\'ensemble de nos médias numériques.';
+
+$lang['porg_cases_wessex_choice_description'] = 'Chez Wessex Water, l\'équipe digitale (10 personnes) est responsable de tout ce qui touche aux outils et aux médias numériques : gestion des canaux, contenus, design digital, production vidéo... Elle travaille avec tous les autres services pour comprendre leurs besoins en contenus et en médias.<br><br>En 2020, elle a décidé de chercher un logiciel de Digital Asset Management (DAM), afin de structurer et d\'organiser la diffusion des médias dans toute l\'entreprise.<br><br>Après avoir étudié plusieurs DAM du marché, elle a découvert Piwigo, sur la recommandation d\'une collectivité déjà cliente de Piwigo.';
+$lang['porg_cases_wessex_choice_text'] = 'Nous ne voulions pas quelque chose de trop compliqué. Piwigo était simple à utiliser et rapide à mettre en place, et le coût était un vrai plus. Il n\'y avait pas de produit équivalent sur le marché à ce prix-là.';
+
+$lang['porg_cases_wessex_deploy_title'] = 'Un déploiement facile';
+$lang['porg_cases_wessex_deploy_description'] = 'Avant de déployer Piwigo, l\'équipe digitale a réalisé un vrai travail de fond pour définir les règles de classement et le processus de soumission et de publication d\'une ressource dans la galerie Piwigo. Une checklist et des règles de tagging ont été rédigées.';
+$lang['porg_cases_wessex_deploy_text'] = 'Il nous a fallu 3 mois pour caler l\'organisation. Le travail se situe en dehors de Piwigo : il s\'agissait de définir les processus et de communiquer. Les gens n\'ont eu aucune difficulté à adopter Piwigo, c\'est vraiment simple à utiliser.';
+
+$lang['porg_cases_wessex_benefits_description'] = 'Au moment où nous écrivons cet article, le Piwigo de Wessex Water compte 50 utilisateurs dans le service (dont 4 administrateurs). Le déploiement est progressif : beaucoup de salariés n\'ont pas encore d\'accès direct à la plateforme et doivent toujours passer par une demande lorsqu\'ils ont besoin d\'un média précis, mais l\'équipe digitale étend peu à peu l\'usage de Piwigo à toute l\'entreprise.<br><br>Les bénéfices sont déjà nombreux. Disposer d\'un catalogue centralisé de tous les médias numériques, avec un moteur de recherche pour trouver ce que l\'on cherche, est vraiment précieux. Il n\'y a plus de risque de doublon ni de problème de version. Tout est sécurisé et le risque de perdre des données a disparu.';
+$lang['porg_cases_wessex_benefits_text'] = 'Avec Piwigo, nous avons un excellent rapport qualité-prix. Le support est vraiment efficace, et le produit est simple à utiliser.';
+$lang['porg_cases_wessex_benefits_person'] = 'Digital Delivery Manager';
+$lang['porg_cases_wessex_benefits_structure'] = 'Wessex Water';

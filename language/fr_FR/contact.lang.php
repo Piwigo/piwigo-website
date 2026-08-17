@@ -1,17 +1,29 @@
 <?php
 
-$lang['porg_contact_desc1'] = 'Vous pouvez nous laisser un message grâce au formulaire ci-dessous.';
-$lang['porg_contact_desc2'] = 'Utilisez le pour des demandes, questions ou remarques privées.';
-$lang['porg_contact_desc3'] = 'Merci d\'utiliser le forum pour tout ce qui peut se discuter publiquement, cela simplifie le suivi pour l\'équipe.';
-$lang['Your email address'] = 'Votre adresse email';
-$lang['porg_contact_error_email'] = 'Oups, cette adresse email n\'est pas valide';
-$lang['Category'] = 'Catégorie';
-$lang['Press inquiry'] = 'Relation Presse';
-$lang['Partnership'] = 'Partenariat';
-$lang['Security report'] = 'Rapport de faille de sécurité';
-$lang['Testimonial'] = 'Témoignage';
-$lang['Your message'] = 'Votre message';
-$lang['porg_contact_error_message'] = 'Oups, il y a un problème avec votre message';
-$lang['Send message'] = 'Envoyer le message';
+$lang['porg_contact_title'] = '<span class="orange-text">Contactez</span> l\'équipe Piwigo';
+$lang['porg_contact_desc'] = 'Obtenez de l\'aide, échangez avec notre équipe ou trouvez la ressource adaptée à vos besoins.';
 
+$lang['porg_contact_project_title'] = 'Échanger avec notre équipe';
+$lang['porg_contact_project_desc'] = '<span class="orange-text strong-text">Vous préparez un projet DAM ?</span><br>Besoin de conseils sur l\'hébergement, la migration, un déploiement en entreprise ou Piwigo Cloud ?<br>Choisissez l\'option qui vous convient le mieux.';
+$lang['porg_contact_project_btn1'] = 'Envoyer un message';
+$lang['porg_contact_project_btn2'] = 'Réserver un rendez-vous';
+
+$lang['porg_contact_pink_title'] = 'Support payant';
+$lang['porg_contact_pink_desc'] = '<span class="pink-text strong-text">Vous êtes déjà client avec une offre payante ?</span><br><br>Contactez notre équipe support via votre canal de support habituel.';
+$lang['porg_contact_orange_title'] = 'Documentation';
+$lang['porg_contact_orange_desc'] = 'Guides d\'installation, aide à la configuration, plugins et tutoriels.';
+$lang['porg_contact_orange_btn'] = 'Lire la documentation';
+$lang['porg_contact_green_title'] = 'Forum de la communauté';
+$lang['porg_contact_green_desc'] = 'Besoin d\'aide pour utiliser Piwigo ou pour résoudre un problème ?<br>Posez votre question à la communauté et trouvez des réponses dans la documentation.';
+$lang['porg_contact_green_btn'] = 'Visiter le forum';
+
+$lang['porg_contact_form_title'] = 'Envoyez-nous un message';
+
+$lang['Topic'] = 'Sujet';
+$lang['Sales inquiry'] = 'Demande commerciale';
+$lang['Book a demo'] = 'Réserver une démo';
+$lang['Report a security issue'] = 'Signaler un problème de sécurité';
+$lang['Make a donation'] = 'Faire un don';
+$lang['Customer support request'] = 'Demande de support client';
+$lang['Other'] = 'Autre';
 ?>
