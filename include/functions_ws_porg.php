@@ -603,7 +603,7 @@ UPDATE '.PORG_INSTALL_EXTENSION_USAGE_TABLE.'
 
 function ws_porg_get_footer_template($params, &$service)
 {
-  global $template, $t2, $page;
+  global $template, $t2, $page, $lang;
 
   //From header
   $is_production = preg_match('/^([a-z]+\.)?piwigo\.org$/', $_SERVER['HTTP_HOST']);
@@ -626,9 +626,9 @@ function ws_porg_get_footer_template($params, &$service)
 
   $template->assign(
     array(
-      'PORG_ROOT' => $porg_root,
+      'PORG_ROOT' => get_absolute_root_url(),
       'URL' => porg_get_page_urls(),
-      'DOCUMENTATION_URL' => $lang['porg_urls']['documentation'] ?? '//'.$page['porg_domain_prefix'].'piwigo.org/doc/',
+      'EXT_URL' => $lang['porg_ext_urls'],
       'PORG_DOMAIN_PREFIX' => $page['porg_domain_prefix'],
     )
   );
@@ -659,10 +659,12 @@ function ws_porg_get_footer_template($params, &$service)
     }
 
     $template->assign('switch_languages', $switch_languages);
+    $template->set_template_dir(PORG_PATH . '/');
     $template->set_filenames(array('footer_porg' => realpath(PORG_PATH .'template/footer.tpl')));
     $template->assign(array(
         'PORG_ROOT_URL' => $porg_root_url . PORG_PATH,
-        'CURRENT_YEAR' => date('Y'),
+	'CURRENT_YEAR' => date('Y'),
+	'PORG_ROOT_URL_PLUGINS' => get_absolute_root_url().'plugins/piwigo-website/',
     ));
 
     $template->assign('time', get_elapsed_time($t2, get_moment()));
