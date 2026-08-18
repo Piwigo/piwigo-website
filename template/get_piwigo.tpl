@@ -66,11 +66,11 @@
 </div>
 
 <div class="js-content-cloud product-content">
-  {include file='template/product/cloud.tpl'}
+  {include file='template/get-piwigo/cloud.tpl'}
 </div>
 
 <div class="js-content-self-hosted product-content" style="display: none !important;">
-  {include file='template/product/self_hosted.tpl'}
+  {include file='template/get-piwigo/self_hosted.tpl'}
 </div>
 
 <script>
