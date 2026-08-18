@@ -33,7 +33,7 @@
 	<div class="features-wrapper">
 		<div class="features-list text-start top-features-list">
 			<ul class="list-unstyled mb-4">
-				{foreach from=$features item=feature}
+				{foreach from=$features item=feature name=features_loop}
 					<li class="d-flex align-items-start mb-3">
 						{if isset($feature.not_included) && $feature.not_included}
 							<i class="icon-cross text-muted opacity-50 cross"></i>
@@ -44,14 +44,9 @@
 						<span
 							class="small {if isset($feature.not_included) && $feature.not_included}text-muted{else}text-secondary{/if}">
 							{if isset($feature.url)}
-								<a href="{$feature.url}" class="text-decoration-underline text-inherit">{$feature.text|translate}</a>
+								<a href="{$feature.url}"
+									class="text-decoration-underline text-inherit">{$feature.text|translate}</a>
 								<i class="icon-rounded-warning text-info-light"></i>
-
-							{elseif $feature.text|lower|strpos:"over" !== false}
-								<a href="{$PORG_ROOT}{$URL.plugins}{$URL_PARAM_SEPARATOR}plan={if isset($plan_id) && $plan_id != 'free'}selfhosted&display=self-hosted{elseif isset($plan.id) && $plan.id != 'free'}selfhosted{else}cloud{/if}"
-									class="text-decoration-underline text-inherit">
-									{$feature.text|translate}
-								</a>
 
 							{elseif $feature.text|lower|strpos:"documentation" !== false}
 								{assign var="translated_text" value=$feature.text|translate}
@@ -66,6 +61,12 @@
 										{include file="template/include/card/pricing_plugin_card.tpl"}
 									</div>
 								</span>
+
+							{elseif $smarty.foreach.features_loop.last || $feature.text|lower|strpos:"plugins" !== false}
+								<a href="{$PORG_ROOT}{$URL.plugins}{$URL_PARAM_SEPARATOR}plan={if isset($plan_id) && $plan_id != 'free'}selfhosted&display=self-hosted{elseif isset($plan.id) && $plan.id != 'free'}selfhosted{else}cloud{/if}"
+									class="text-decoration-underline text-inherit">
+									{$feature.text|translate}
+								</a>
 							{else}
 								{$feature.text|translate}
 							{/if}
@@ -74,13 +75,13 @@
 						{if isset($feature.info) && $feature.info}
 							<div class="info-icon-container ms-auto">
 								<i class="icon-rounded-warning text-info-light flex-shrink-0"></i>
-								{if $feature.text|lower|strpos:"storage" !== false}
+								{if $smarty.foreach.features_loop.iteration == 4}
 									<div class="storage-hover-popover shadow-lg">
 										{include file="template/include/card/storage_card_display.tpl"}
 									</div>
 								{else}
 									<div class="global-hover-popover shadow-lg">
-										{include file="template/include/card/pricing_global_card.tpl" tooltip_items=$feature.tooltip }
+										{include file="template/include/card/pricing_global_card.tpl" tooltip_items=(isset($feature.tooltip)) ? $feature.tooltip : [] }
 									</div>
 								{/if}
 							</div>
@@ -122,7 +123,7 @@
 							<div class="info-icon-container ms-auto">
 								<i class="icon-rounded-warning text-info-light flex-shrink-0"></i>
 								<div class="global-hover-popover shadow-lg">
-									{include file="template/include/card/pricing_global_card.tpl" tooltip_items=$service.tooltip }
+									{include file="template/include/card/pricing_global_card.tpl" tooltip_items=(isset($service.tooltip)) ? $service.tooltip : [] }
 								</div>
 							</div>
 						{/if}

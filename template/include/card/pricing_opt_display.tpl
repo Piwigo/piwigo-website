@@ -39,7 +39,7 @@
 							features=$plan.features
 							services=[]
 							link_try=$DOC_LINK
-							label_try={'View Documentation'|translate} link_trial=$FORUM_LINK label_trial={'Visit Community Forum'|translate} btn_try={'Download Piwigo'|translate} btn_trial={'Download Piwigo'|translate} btn_link_try=$DOWNLOAD_LINK btn_link_trial=$DOWNLOAD_LINK target="_blank" 
+							label_try={'View Documentation'|translate} link_trial=$FORUM_LINK label_trial={'Visit Community Forum'|translate} btn_try={'pcom_pricing_download_piwigo'|translate} btn_trial={'pcom_pricing_download_piwigo'|translate} btn_link_try=$DOWNLOAD_LINK btn_link_trial=$DOWNLOAD_LINK target="_blank" 
 						}
 					{else}
 						{include
@@ -51,7 +51,7 @@
 							features=$plan.features
 							services=[]
 							link_try=$CONTACT_URL
-							label_try={'Contact us'|translate} link_trial=$CONTACT_URL label_trial={'Contact us'|translate} btn_try={'Contact us'|translate} btn_trial={'Contact us'|translate} btn_link_try=$CONTACT_URL btn_link_trial=$CONTACT_URL target="_blank" 
+							label_try={'pcom_pricing_page_contact_us'|translate} link_trial=$CONTACT_URL label_trial={'pcom_pricing_page_contact_us'|translate} btn_try={'pcom_pricing_page_contact_us'|translate} btn_trial={'pcom_pricing_page_contact_us'|translate} btn_link_try=$CONTACT_URL btn_link_trial=$CONTACT_URL target="_blank" 
 						}
 					{/if}
 				</div>
