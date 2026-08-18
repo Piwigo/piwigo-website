@@ -2,6 +2,8 @@
 $lang['page_meta_title'] = 'Demos live galleries - Piwigo';
 $lang['page_meta_description'] = 'Explore our demo galleries and discover what’s possible with Piwigo.';
 
+$lang['Visit gallery'] = 'Visit gallery';
+
 $lang['porg_demo_page_title'] = 'Piwigo <span class="orange-text">demo galleries</span>';
 $lang['porg_demo_into_text'] = 'Explore our demo galleries and discover what’s possible with Piwigo. Each demo showcases a different combination of themes, plugins and customizations, from the default interface to more advanced layouts.';
 

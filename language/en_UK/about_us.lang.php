@@ -35,7 +35,7 @@ $lang['porg_about_us_team_text2'] = 'The community has always been an essential 
 $lang['porg_about_us_team_text3'] = 'Together, the team and the community ensure that Piwigo remains active, reliable and continuously evolving.';
 $lang['Meet our staff'] = 'Meet our staff';
 $lang['Founder & Lead Developer'] = 'Founder & Lead Developer';
-$lang['Support & Plugin Developer'] = 'Support & Plugin Developer';
+$lang['Support & Translation coordinator'] = 'Support & Translation coordinator';
 $lang['Developer'] = 'Developer';
 $lang['Marketing'] = 'Marketing';
 $lang['UX/UI Designer'] = 'UX/UI Designer';
@@ -52,6 +52,7 @@ $lang['porg_about_us_model_desc3'] = 'We also collect donations that help cover 
 $lang['porg_about_us_model_title4'] = 'A virtuous circle';
 $lang['porg_about_us_model_desc4'] = 'The success of Piwigo Cloud helps fund the development of Piwigo Open Source.<br><br>In return, improvements made to the software benefit both self-hosted users and Piwigo Cloud customers.<br>The success of one strengthens the other.';
 
+$lang['A few milestones'] = 'A few milestones';
 $lang['porg_about_us_milestone_2002'] = 'Piwigo is born under the name PHPWebGallery, as a personal project created by Pierrick Le Gall.';
 $lang['porg_about_us_milestone_2007'] = 'The plugin system is introduced, opening the door to customization and community contributions.';
 $lang['porg_about_us_milestone_2009'] = 'PHPWebGallery becomes Piwigo, marking a new chapter in the project’s evolution.';

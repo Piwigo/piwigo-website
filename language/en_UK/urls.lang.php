@@ -25,6 +25,11 @@ $lang['porg_urls']['case-study-icam'] = 'case-study/photo-library-icam-universit
 $lang['porg_urls']['case-study-ect'] = 'case-study/ect-corporate-photo-library';
 $lang['porg_urls']['case-study-cotentin'] = 'case-study/photo-library-cotentin-tourism-office';
 $lang['porg_urls']['pro-support'] = 'professional-support';
+$lang['porg_urls']['pricing'] = 'pricing';
+$lang['porg_urls']['signup'] = 'signup';
+$lang['porg_urls']['signin'] = 'signin';
+$lang['porg_urls']['plugins'] = 'plugins';
+$lang['porg_urls']['book-a-meeting'] = 'book-a-meeting';
 
 // legacy pages DO NOT REMOVE : used for redirections
 $lang['porg_urls']['what-is-piwigo'] = 'what-is-piwigo';

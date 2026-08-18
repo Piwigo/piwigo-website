@@ -14,7 +14,7 @@ $lang['porg_contact_orange_title'] = 'Documentation';
 $lang['porg_contact_orange_desc'] = 'Installation guides, configuration help, plugins and tutorials.';
 $lang['porg_contact_orange_btn'] = 'Read docs';
 $lang['porg_contact_green_title'] = 'Community forum';
-$lang['porg_contact_green_desc'] = 'Need help using Piwigo or troubleshooting an issue?<br>Ask the community and find answers in the documentation.';
+$lang['porg_contact_green_desc'] = 'Need help using Piwigo or troubleshooting an issue?<br>Ask the community and read answers from contributing helpers.';
 $lang['porg_contact_green_btn'] = 'Visit forum';
 
 $lang['porg_contact_form_title'] = 'Send us a message';
@@ -24,6 +24,7 @@ $lang['Sales inquiry'] = 'Sales inquiry';
 $lang['Book a demo'] = 'Book a demo';
 $lang['Report a security issue'] = 'Report a security issue';
 $lang['Make a donation'] = 'Make a donation';
+$lang['Send a testimonial'] = 'Send a testimonial';
 $lang['Customer support request'] = 'Customer support request';
 $lang['Other'] = 'Other';
 ?>

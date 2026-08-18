@@ -5,9 +5,9 @@ $lang['porg_newsletters_desc'] = 'Vous recevrez un email à chaque nouvelle vers
 
 $lang['Sign up to newsletter'] = 'S\'inscrire à la newsletter';
 $lang['RGPD agreement'] = 'J\'accepte de recevoir des emails de Piwigo. Désinscription à tout moment.';
-$lang['because GDPR matters!'] = 'parce que le RGPD compte !';
+$lang['because GDPR matters!'] = 'parce que le RGPD, ça compte !';
 
-$lang['porg_newsletters_content_title'] = 'Les anciennes, mais les meilleures';
+$lang['porg_newsletters_content_title'] = 'Nos anciens numéros';
 
 $lang['porg_newsletter_success_title'] = 'Consultez votre email pour finaliser votre inscription';
 

@@ -3,12 +3,12 @@ $lang['page_meta_title'] = 'Piwigo | Logiciel de photothèque et DAM pour les or
 $lang['page_meta_description'] = 'Gérez et partagez vos médias avec un logiciel de photothèque pensé pour les organisations. Une solution DAM flexible, développée et hébergée en Europe.';
 
 $lang['Piwigo - Manage your photo collection'] = 'Piwigo - Logiciel open source de gestion de photos';
-$lang['porg_home_title'] = 'Gérez, partagez et organisez vos photos et vos vidéos.';
+$lang['porg_home_title'] = 'Gérez, partagez et organisez vos photos et vidéos.';
 $lang['porg_home_desc1'] = 'Piwigo est une solution open source de gestion des médias numériques et un logiciel de photothèque. Développé et hébergé en Europe.';
-$lang['porg_home_desc2'] = 'Utilisez-le en service cloud ou hébergez-le sur votre propre infrastructure, avec la maîtrise complète et sans limitation de fonctionnalités.';
+$lang['porg_home_desc2'] = 'Utilisez-le en service cloud ou hébergez-le sur votre propre infrastructure, en gardant la maîtrise complète et sans limitation de fonctionnalités.';
 
 $lang['porg_home_btn1'] = 'Démarrer mon essai gratuit';
-$lang['porg_home_btn2'] = 'Choisir ma formule';
+$lang['porg_home_btn2'] = 'Choisir mon setup';
 
 $lang['porg_home_ways_to_use_title'] = 'Deux façons d\'utiliser Piwigo';
 $lang['porg_home_ways_to_use_desc'] = 'Utilisez Piwigo en service hébergé ou faites-le tourner sur votre propre infrastructure.';
@@ -22,12 +22,12 @@ $lang['porg_home_ways_to_use_cloud_li_5'] = 'Support client illimité';
 $lang['porg_home_ways_to_use_self_hosted_li_1'] = 'Maîtrise complète de l\'hébergement et de l\'environnement';
 $lang['porg_home_ways_to_use_self_hosted_li_2'] = 'Les mêmes fonctionnalités de base que Piwigo Cloud';
 $lang['porg_home_ways_to_use_self_hosted_li_3'] = 'Possibilité de modifier le code et de créer vos propres plugins';
-$lang['porg_home_ways_to_use_self_hosted_li_4'] = 'Documentation et forum de la communauté';
+$lang['porg_home_ways_to_use_self_hosted_li_4'] = 'Documentation et forum communautaire';
 $lang['porg_home_ways_to_use_self_hosted_li_5'] = 'Support et prestations professionnelles disponibles en option';
 $lang['porg_home_ways_to_use_end_box'] = 'Les deux versions reposent sur le même cœur open source et donnent accès à l\'API Piwigo pour les usages avancés.';
 
-$lang['porg_home_road_title'] = 'Aucun enfermement. Conçu pour durer.';
-$lang['porg_home_road_desc'] = 'Avec Piwigo, vous n\'êtes jamais enfermé dans un seul mode d\'hébergement';
+$lang['porg_home_road_title'] = 'Aucun verrouillage. Conçu pour durer.';
+$lang['porg_home_road_desc'] = 'Avec Piwigo, vous n\'êtes jamais verrouilé chez un seul hébergeur';
 $lang['porg_home_road_li_1'] = '<span class="p-strong">Vous pouvez exporter</span> vos photos, vos vidéos et vos métadonnées <span class="p-strong">à tout moment, gratuitement</span>';
 $lang['porg_home_road_li_2'] = '<span class="p-strong">Passer</span> de Piwigo Cloud à une installation auto-hébergée, et inversement, <span class="p-strong">est toujours possible</span>';
 $lang['porg_home_road_li_3'] = '<span class="p-strong">Aucun enfermement propriétaire</span>, ni technique <span class="p-strong">ni contractuel</span>';
@@ -55,7 +55,7 @@ $lang['porg_home_features_measure_desc'] = 'Surveillez les usages, l\'activité 
 $lang['porg_home_features_security_subtitle'] = 'Contrôlez les accès et protégez vos médias';
 $lang['porg_home_features_security_desc'] = 'Gérez les rôles, les groupes et les permissions pour sécuriser vos contenus à tous les niveaux. La confidentialité et le contrôle des accès sont au cœur de Piwigo, pour les médiathèques internes comme pour les galeries publiques.';
 
-$lang['porg_home_who_title'] = 'Qui utilise Piwigo';
+$lang['porg_home_who_title'] = 'Qui utilise Piwigo ?';
 $lang['porg_home_who_desc'] = 'Piwigo est utilisé dans le monde entier par :';
 $lang['porg_home_who_li_1'] = 'Des organisations du secteur public';
 $lang['porg_home_who_li_2'] = 'Des entreprises et des équipes communication';
@@ -77,7 +77,7 @@ $lang['porg_home_why_li_2_end'] = 'Si vos besoins évoluent, vous pouvez passer 
 $lang['porg_home_why_li_2_testimonial'] = 'J\'ai choisi Piwigo pour gérer notre photothèque et j\'en suis pleinement satisfait. Piwigo est moins cher, plus simple et plus performant que notre ancien logiciel. Une bibliothèque de plugins permet une véritable personnalisation de la solution. J\'apprécie particulièrement l\'ergonomie, et je recommande Piwigo sans hésiter !';
 $lang['porg_home_why_li_3_title'] = 'L\'open source au cœur du projet';
 $lang['porg_home_why_li_3_desc'] = 'Piwigo est un projet open source, développé de façon transparente et durable.';
-$lang['porg_home_why_li_3_end'] = 'La communauté qui l\'entoure renforce son rapport coût-efficacité, sa pérennité et sa capacité d\'adaptation dans le temps, sans enfermement propriétaire.';
+$lang['porg_home_why_li_3_end'] = 'La communauté qui l\'entoure renforce son rapport coût-efficacité, sa pérennité et sa capacité d\'adaptation dans le temps, sans verrouillage propriétaire.';
 $lang['porg_home_why_li_3_testimonial'] = 'Piwigo a toutes les fonctionnalités dont j\'ai besoin et son développement est actif, donc il s\'améliore en permanence. J\'aime Piwigo parce qu\'il est plutôt facile à installer puis à administrer, facile à sauvegarder, et que c\'est un logiciel libre et open source.';
 $lang['porg_home_why_li_4_title'] = 'Un support qui vous comprend';
 $lang['porg_home_why_li_4_desc'] = 'Les utilisateurs de Piwigo peuvent compter sur un support humain et expert quand ils en ont besoin.';

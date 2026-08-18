@@ -19,10 +19,10 @@ $lang['porg_about_us_desc_desc_card2'] = 'Nous pensons que la gestion de photos 
 $lang['porg_about_us_desc_title_card3'] = 'Les utilisateurs avant la technique';
 $lang['porg_about_us_desc_desc_card3'] = 'Nous cherchons avant tout à offrir la meilleure expérience possible à nos utilisateurs, en plaçant l\'ergonomie et les besoins concrets avant la technique pour la technique.';
 
-$lang['porg_about_us_beginning_title'] = 'Comment tout a commencé';
+$lang['porg_about_us_beginning_title'] = 'Comment tout a commencé ?';
 $lang['porg_about_us_beginning_desc'] = 'En 2001, alors étudiant en informatique, Pierrick Le Gall achète son premier appareil photo numérique. Cherchant un moyen de partager ses photos avec sa famille et ses amis, il décide de combiner sa passion pour la photographie et le développement logiciel.<br><br>En 2002, il publie PHPWebGallery en tant que projet open source. Ce qui n\'était au départ qu\'une solution personnelle pour partager des photos allait devenir Piwigo, une plateforme utilisée par des particuliers et des organisations dans le monde entier.';
 
-$lang['porg_about_us_open_title'] = 'L\'open source dans l\'ADN';
+$lang['porg_about_us_open_title'] = 'L\'open source dans le sang';
 $lang['porg_about_us_open_desc'] = 'Piwigo est un logiciel open source publié sous licence GPL.<br><br><span class="orange-text">Chacun peut le télécharger, l\'installer, le personnaliser et contribuer à son développement.</span><br><br>Au fil des années, des centaines de contributeurs ont aidé à améliorer Piwigo par du code, des traductions, de la documentation, du support et des retours d\'expérience. Cet esprit collaboratif reste aujourd\'hui encore une composante essentielle du projet.';
 
 $lang['porg_about_us_inde_title'] = 'Indépendant et européen';
@@ -35,7 +35,7 @@ $lang['porg_about_us_team_text2'] = 'La communauté a toujours été une composa
 $lang['porg_about_us_team_text3'] = 'Ensemble, l\'équipe et la communauté font en sorte que Piwigo reste actif, fiable et en évolution permanente.';
 $lang['Meet our staff'] = 'Rencontrez notre équipe';
 $lang['Founder & Lead Developer'] = 'Fondateur & développeur principal';
-$lang['Support & Plugin Developer'] = 'Support & développement de plugins';
+$lang['Support & Translation coordinator'] = 'Support & coordination des traductions';
 $lang['Developer'] = 'Développement';
 $lang['Marketing'] = 'Marketing';
 $lang['UX/UI Designer'] = 'Design UX/UI';
@@ -52,6 +52,7 @@ $lang['porg_about_us_model_desc3'] = 'Nous collectons aussi des dons qui aident 
 $lang['porg_about_us_model_title4'] = 'Un cercle vertueux';
 $lang['porg_about_us_model_desc4'] = 'Le succès de Piwigo Cloud contribue à financer le développement de Piwigo Open Source.<br><br>En retour, les améliorations apportées au logiciel profitent aussi bien aux utilisateurs auto-hébergés qu\'aux clients de Piwigo Cloud.<br>Le succès de l\'un renforce l\'autre.';
 
+$lang['A few milestones'] = 'Quelques dates à retenir';
 $lang['porg_about_us_milestone_2002'] = 'Piwigo naît sous le nom de PHPWebGallery, projet personnel créé par Pierrick Le Gall.';
 $lang['porg_about_us_milestone_2007'] = 'Le système de plugins fait son apparition et ouvre la voie à la personnalisation et aux contributions de la communauté.';
 $lang['porg_about_us_milestone_2009'] = 'PHPWebGallery devient Piwigo, marquant un nouveau chapitre dans l\'évolution du projet.';

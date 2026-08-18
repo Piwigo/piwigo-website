@@ -13,7 +13,7 @@
 				file='template/include/sub_menu_items/sub_menu_itemc.tpl'
 				category_type='feature-submenu'
 				is_ext=true
-				title={'Forum'|translate} description={'Forum desc'|translate} icon_class='icon-icon28'
+				title={'Community Forum'|translate} description={'Community Forum desc'|translate} icon_class='icon-icon28'
       href="http://{$PORG_DOMAIN_PREFIX}piwigo.org/forum/"
       }
     </div>

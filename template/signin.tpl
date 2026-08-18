@@ -18,7 +18,7 @@
   {include
     file='template/include/buttons/button.tpl'
     variant='menu_btn_green'
-    href="{$PORG_ROOT}{$URL.contact}"
+    href="{$PORG_ROOT}{$URL.contact}{$URL_PARAM_SEPARATOR}topic_id=support#form"
     label={'signin_btn_contact'|translate} 
   }
 </section>

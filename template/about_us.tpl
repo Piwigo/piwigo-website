@@ -248,7 +248,7 @@
 
           {include file="template/include/card/person_card.tpl"
           name="Damien"
-          role={'Support & Plugin Developer'|translate}
+          role={'Support & Translation coordinator'|translate}
           image="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/08/13/20260813102625-fb5f2a14-la.webp"
           buttons=
           [

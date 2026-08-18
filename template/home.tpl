@@ -11,7 +11,7 @@
           <h1 class="mb-4">{'porg_home_title'|translate}<br>
             <span class="highlight-wrap mt-1">
               <img class="highlight-circle" src="{$PORG_ROOT_URL}images/home/circle.svg" alt="">
-              <span class="orange-text">{'Your way'|translate}.</span>
+              <span class="orange-text">{'Your way.'|translate}</span>
             </span>
           </h1>
 
@@ -194,7 +194,7 @@
                   <p class="sub-h3 pink-text mb-0">{'porg_home_features_upload_subtitle'|translate}</p>
                   <img src="{$PORG_ROOT_URL}images/features/import/upload.webp" alt="Feature 1" class="img-fluid mt-3 d-md-none">
                   <p class="p-boxed feature-card-desc">{'porg_home_features_upload_desc'|translate}</p>
-                  {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'Explore solution  <i class="icon-forward-arrow" style="font-size: 10px; position: relative; top: -1px;"></i>'|translate} href="{$PORG_ROOT}{$URL.features}#upload"}
+                  {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'Explore solution %s'|translate:'<i class="icon-forward-arrow" style="font-size: 10px; position: relative; top: -1px;"></i>'} href="{$PORG_ROOT}{$URL.features}#upload"}
                 </div>
                 <div class="col-md-6 justify-content-center d-flex flex-column">
                   <img src="{$PORG_ROOT_URL}images/features/import/upload.webp" alt="Feature 1" class="img-fluid d-none d-md-block">
@@ -208,7 +208,7 @@
                   <p class="sub-h3 pink-text mb-0">{'porg_home_features_organize_subtitle'|translate}</p>
                   <img src="{$PORG_ROOT_URL}images/home/organize.webp" alt="Feature 2" class="img-fluid mt-3 d-md-none">
                   <p class="p-boxed feature-card-desc">{'porg_home_features_organize_desc'|translate}</p>
-                  {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'Explore solution  <i class="icon-forward-arrow" style="font-size: 10px; position: relative; top: -1px;"></i>'|translate} href="{$PORG_ROOT}{$URL.features}#organize"}
+                  {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'Explore solution %s'|translate:'<i class="icon-forward-arrow" style="font-size: 10px; position: relative; top: -1px;"></i>'} href="{$PORG_ROOT}{$URL.features}#organize"}
                 </div>
                 <div class="col-md-6 justify-content-center d-flex flex-column">
                   <img src="{$PORG_ROOT_URL}images/home/organize.webp" alt="Feature 2" class="img-fluid d-none d-md-block">
@@ -222,7 +222,7 @@
                   <p class="sub-h3 pink-text mb-0">{'porg_home_features_search_subtitle'|translate}</p>
                   <img src="{$PORG_ROOT_URL}images/features/search/keyword.webp" alt="Feature 3" class="img-fluid mt-3 d-md-none">
                   <p class="p-boxed feature-card-desc">{'porg_home_features_search_desc'|translate}</p>
-                  {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'Explore solution  <i class="icon-forward-arrow" style="font-size: 10px; position: relative; top: -1px;"></i>'|translate} href="{$PORG_ROOT}{$URL.features}#search"}
+                  {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'Explore solution %s'|translate:'<i class="icon-forward-arrow" style="font-size: 10px; position: relative; top: -1px;"></i>'} href="{$PORG_ROOT}{$URL.features}#search"}
                 </div>
                 <div class="col-md-6 justify-content-center d-flex flex-column">
                   <img src="{$PORG_ROOT_URL}images/features/search/keyword.webp" alt="Feature 3" class="img-fluid d-none d-md-block">
@@ -236,7 +236,7 @@
                   <p class="sub-h3 pink-text mb-0">{'porg_home_features_share_subtitle'|translate}</p>
                   <img src="{$PORG_ROOT_URL}images/home/share.webp" alt="Feature 4" class="img-fluid mt-3 d-md-none">
                   <p class="p-boxed feature-card-desc">{'porg_home_features_share_desc'|translate}</p>
-                  {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'Explore solution  <i class="icon-forward-arrow" style="font-size: 10px; position: relative; top: -1px;"></i>'|translate} href="{$PORG_ROOT}{$URL.features}#share"}
+                  {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'Explore solution %s'|translate:'<i class="icon-forward-arrow" style="font-size: 10px; position: relative; top: -1px;"></i>'} href="{$PORG_ROOT}{$URL.features}#share"}
                 </div>
                 <div class="col-md-6 justify-content-center d-flex flex-column">
                   <img src="{$PORG_ROOT_URL}images/home/share.webp" alt="Feature 4" class="img-fluid d-none d-md-block">
@@ -250,7 +250,7 @@
                   <p class="sub-h3 pink-text mb-0">{'porg_home_features_customize_subtitle'|translate}</p>
                   <img src="{$PORG_ROOT_URL}images/features/customize/themes.webp" alt="Feature 5" class="img-fluid mt-3 d-md-none">
                   <p class="p-boxed feature-card-desc">{'porg_home_features_customize_desc'|translate}</p>
-                  {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'Explore solution  <i class="icon-forward-arrow" style="font-size: 10px; position: relative; top: -1px;"></i>'|translate} href="{$PORG_ROOT}{$URL.features}#customize"}
+                  {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'Explore solution %s'|translate:'<i class="icon-forward-arrow" style="font-size: 10px; position: relative; top: -1px;"></i>'} href="{$PORG_ROOT}{$URL.features}#customize"}
                 </div>
                 <div class="col-md-6 justify-content-center d-flex flex-column">
                   <img src="{$PORG_ROOT_URL}images/features/customize/themes.webp" alt="Feature 5" class="img-fluid d-none d-md-block">
@@ -264,7 +264,7 @@
                   <p class="sub-h3 pink-text mb-0">{'porg_home_features_measure_subtitle'|translate}</p>
                   <img src="{$PORG_ROOT_URL}images/home/measure.webp" alt="Feature 6" class="img-fluid mt-3 d-md-none">
                   <p class="p-boxed feature-card-desc">{'porg_home_features_measure_desc'|translate}</p>
-                  {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'Explore solution  <i class="icon-forward-arrow" style="font-size: 10px; position: relative; top: -1px;"></i>'|translate} href="{$PORG_ROOT}{$URL.features}#measure"}
+                  {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'Explore solution %s'|translate:'<i class="icon-forward-arrow" style="font-size: 10px; position: relative; top: -1px;"></i>'} href="{$PORG_ROOT}{$URL.features}#measure"}
                 </div>
                 <div class="col-md-6 justify-content-center d-flex flex-column">
                   <img src="{$PORG_ROOT_URL}images/home/measure.webp" alt="Feature 6" class="img-fluid d-none d-md-block">
