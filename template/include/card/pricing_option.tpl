@@ -48,7 +48,7 @@
 								<i class="icon-rounded-warning text-info-light"></i>
 
 							{elseif $feature.text|lower|strpos:"over" !== false}
-								<a href="{$PORG_ROOT}{$URL.plugins}&plan={if isset($plan_id) && $plan_id != 'free'}selfhosted&display=self-hosted{elseif isset($plan.id) && $plan.id != 'free'}selfhosted{else}cloud{/if}"
+								<a href="{$PORG_ROOT}{$URL.plugins}{$URL_PARAM_SEPARATOR}plan={if isset($plan_id) && $plan_id != 'free'}selfhosted&display=self-hosted{elseif isset($plan.id) && $plan.id != 'free'}selfhosted{else}cloud{/if}"
 									class="text-decoration-underline text-inherit">
 									{$feature.text|translate}
 								</a>

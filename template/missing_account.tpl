@@ -6,7 +6,7 @@
       {include
         file='template/include/buttons/button.tpl'
         variant='menu_btn_green'
-        href="{$PORG_ROOT}{$URL.signup}&username={$smarty.get.account|escape:'html'}"
+        href="{$PORG_ROOT}{$URL.signup}{$URL_PARAM_SEPARATOR}username={$smarty.get.account|escape:'html'}"
         label={'missing_account_button'|translate} 
         class='px-5'
       }

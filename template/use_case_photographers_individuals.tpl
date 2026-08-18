@@ -149,11 +149,11 @@
         {/foreach}
         <div class="col-12 d-md-block d-none">
           {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'use cases perso use title'|translate}
-          href="{$PORG_ROOT}{$URL.users}{if $URL.users|strstr:'?'}&{else}?{/if}use_case=perso&category=example" class="mt-5"}
+          href="{$PORG_ROOT}{$URL.users}{$URL_PARAM_SEPARATOR}use_case=perso&category=example" class="mt-5"}
         </div>
         <div class="col-12 d-md-none">
           {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'Show more'|translate}
-          href="{$PORG_ROOT}{$URL.users}{if $URL.users|strstr:'?'}&{else}?{/if}use_case=perso&category=example" class="mt-5"}
+          href="{$PORG_ROOT}{$URL.users}{$URL_PARAM_SEPARATOR}use_case=perso&category=example" class="mt-5"}
         </div>
       </div>
     </div>
@@ -161,7 +161,7 @@
 
   {include file='template/use_cases/parts/comments.tpl' title={'use cases perso comments title'|translate}
   comments=$perso_testimonials btn_text={'use cases public comments btn'|translate}
-  btn_link="{$PORG_ROOT}{$URL.users}{if $URL.users|strstr:'?'}&{else}?{/if}use_case=perso&category=testimonial"}
+  btn_link="{$PORG_ROOT}{$URL.users}{$URL_PARAM_SEPARATOR}use_case=perso&category=testimonial"}
 
   {include file='template/use_cases/parts/start.tpl' title={'use cases perso start title'|translate}
   description={'use cases perso start description'|translate}}

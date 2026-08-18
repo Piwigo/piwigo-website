@@ -624,7 +624,7 @@
               </li>
             </ul>
             {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'porg_support_expertise_card1_btn'|translate}
-            href="{$PORG_ROOT}{$URL.pricing}&plan=self_hosted" class='mt-auto'}
+            href="{$PORG_ROOT}{$URL.pricing}{$URL_PARAM_SEPARATOR}plan=self_hosted" class='mt-auto'}
           </div>
         </div>
         <div class="col-md-6 text-center mb-4 d-flex ways-to-use-card-col-r">
@@ -649,7 +649,7 @@
               </li>
             </ul>
             {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'porg_support_expertise_card2_btn'|translate}
-            href="{$PORG_ROOT}{$URL.contact}&topic_id=sale#form" class='mt-auto'}
+            href="{$PORG_ROOT}{$URL.contact}{$URL_PARAM_SEPARATOR}topic_id=sale#form" class='mt-auto'}
           </div>
         </div>
       </div>

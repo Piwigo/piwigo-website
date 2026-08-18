@@ -111,7 +111,7 @@
     {include
       file='template/include/buttons/button.tpl'
       variant='cta_primary_green'
-      label={'selfhosted-professional-serv-btn'|translate} href="{$PORG_ROOT}{$URL.pricing}&plan=self_hosted"
+      label={'selfhosted-professional-serv-btn'|translate} href="{$PORG_ROOT}{$URL.pricing}{$URL_PARAM_SEPARATOR}plan=self_hosted"
     }
   </div>
 </section>

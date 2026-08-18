@@ -147,7 +147,7 @@
 
   {include file='template/use_cases/parts/use.tpl' title={'use cases public use title'|translate} description1={'use cases public use description1'|translate} description2={'use cases public use description2'|translate} btn_text={'use cases public use btn text'|translate} btn_link="{$PORG_ROOT}{$URL.case_study_indre}" img_src="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2026/07/28/20260728094135-b27a3569-xl.webp"}
 
-  {include file='template/use_cases/parts/comments.tpl' title={'use cases public comments title'|translate} comments=$public_sector_testimonials btn_text={'use cases public comments btn'|translate} btn_link="{$PORG_ROOT}{$URL.users}{if $URL.users|strstr:'?'}&{else}?{/if}use_case=public"}
+  {include file='template/use_cases/parts/comments.tpl' title={'use cases public comments title'|translate} comments=$public_sector_testimonials btn_text={'use cases public comments btn'|translate} btn_link="{$PORG_ROOT}{$URL.users}{$URL_PARAM_SEPARATOR}use_case=public"}
 
   {include file='template/use_cases/parts/start.tpl' title={'use cases public start title'|translate} description={'use cases public start description'|translate}}
 </div>

@@ -146,7 +146,7 @@
 
   {include file='template/use_cases/parts/host.tpl' title={'use cases public host title'|translate} description={'use cases association host description'|translate} cloud_description={'use cases public host cloud'|translate} self_hosted_description={'use cases public host self'|translate}}
 
-  {include file='template/use_cases/parts/comments.tpl' title={'use cases association comments title'|translate} comments=$association_testimonials btn_text={'use cases public comments btn'|translate} btn_link="{$PORG_ROOT}{$URL.users}{if $URL.users|strstr:'?'}&{else}?{/if}use_case=association" no_use=true}
+  {include file='template/use_cases/parts/comments.tpl' title={'use cases association comments title'|translate} comments=$association_testimonials btn_text={'use cases public comments btn'|translate} btn_link="{$PORG_ROOT}{$URL.users}{$URL_PARAM_SEPARATOR}use_case=association" no_use=true}
 
   {include file='template/use_cases/parts/start.tpl' title={'use cases association start title'|translate} description={'use cases association start description'|translate}}
 </div>

@@ -104,7 +104,7 @@
           </div>
         </div>
         {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'Send us a testimonial'|translate}
-        href="{$PORG_ROOT}{$URL.contact}&topic_id=testimonial#form" class="w-100 mt-4 d-none d-md-inline-flex"}
+        href="{$PORG_ROOT}{$URL.contact}{$URL_PARAM_SEPARATOR}topic_id=testimonial#form" class="w-100 mt-4 d-none d-md-inline-flex"}
       </div>
     </div>
 

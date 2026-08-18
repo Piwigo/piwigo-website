@@ -21,7 +21,7 @@
             {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'Get started CTA 2 btn 1'|translate}
             href="{$PORG_ROOT}{$URL.pricing}"}
             {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'Get started CTA 2 btn 2'|translate}
-            href="{$PORG_ROOT}{$URL.pricing}&plan=self_hosted" class="px-4"}
+            href="{$PORG_ROOT}{$URL.pricing}{$URL_PARAM_SEPARATOR}plan=self_hosted" class="px-4"}
           </div>
         </div>
       </div>

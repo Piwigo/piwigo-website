@@ -33,7 +33,7 @@
 		{if substr($lang_info.code, 0, 2) == 'fr'}
 			{include file='template/include/buttons/button.tpl' variant='menu_btn_white' label={'Get started btn2'|translate} href="{$PORG_ROOT}{$URL.book_a_meeting}"}
 		{else}
-			{include file='template/include/buttons/button.tpl' variant='menu_btn_white' label={'Get started btn2'|translate} href="{$PORG_ROOT}{$URL.contact}&topic_id=demo#form"}
+			{include file='template/include/buttons/button.tpl' variant='menu_btn_white' label={'Get started btn2'|translate} href="{$PORG_ROOT}{$URL.contact}{$URL_PARAM_SEPARATOR}topic_id=demo#form"}
 		{/if}
 	</div>
 </div>
