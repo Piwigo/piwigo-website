@@ -201,7 +201,7 @@
 
               <div class="d-flex justify-content-start mt-4 gap-4">
                 {include file='template/include/buttons/button.tpl' variant='menu_btn_orange' label="{'porg_get_involved_finance_btn1'|translate}"
-                href="{$PORG_ROOT}{$URL.contact}&topic_id=donation#form" class="text-start px-4"}
+                href="{$PORG_ROOT}{$URL.contact}{$URL_PARAM_SEPARATOR}topic_id=donation#form" class="text-start px-4"}
                 {include file='template/include/buttons/button.tpl' variant='menu_btn_white' label="{'porg_get_involved_finance_btn2'|translate}"
                 href="{$PORG_ROOT}{$URL.pricing}" class="text-start px-4"}
               </div>

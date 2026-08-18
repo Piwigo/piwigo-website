@@ -247,6 +247,7 @@ SELECT state
       'PORG_IS_PRODUCTION' => preg_match('/^([a-z]+\.)?piwigo\.org$/', $_SERVER['HTTP_HOST']),
       'HEADER_SHOW_HOME' => in_array($user['language'], array('en_UK', 'zh_CN', 'it_IT', 'pt_BR')),
       'current_language' => array('label' => $porg_languages[$user['language']]),
+      'URL_PARAM_SEPARATOR' => (isset($conf['porg_url_rewrite']) and $conf['porg_url_rewrite']) ? '?' : '&',
       'switch_languages' => $switch_languages,
     )
   );
