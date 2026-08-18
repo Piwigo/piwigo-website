@@ -59,6 +59,9 @@ $template->assign(
     'STATS_GLOBAL_UPTIME'   => l10n('%s uptime', '99.98%'),
     'STATS_GLOBAL_LANGS'    => l10n('+%d', 59),
     'STATS_GLOBAL_CLIENTS'  => l10n('%s+', '5.800'),
+    'EMAIL_FIELD_NAME' => bin2hex(random_bytes(8)),
+    'USERNAME_FIELD_NAME' => bin2hex(random_bytes(8)),
+    'PASSWORD_FIELD_NAME' => bin2hex(random_bytes(8)),
   )
 );
 

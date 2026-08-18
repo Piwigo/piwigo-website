@@ -1,4 +1,5 @@
 <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL_PLUGINS}css/footer.css">
+<link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/buttons/common_button.css">
 
 <footer class="site-footer">
   <div class="container">
@@ -164,9 +165,9 @@
           <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#security">{'Security & privacy'|translate}</a></li>
         </ul>
         <ul class="mt-4">
-          <li>
-            {* <a class="footer-feature-link footer-menu-item" href="#">{'Piwigo AI'|translate|cat: ' ✨'}</a> *}
-          </li>
+          {* <li>
+            <a class="footer-feature-link footer-menu-item" href="#">{'Piwigo AI'|translate|cat: ' ✨'}</a>
+          </li> *}
           <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.mobile_applications}">{'Mobile apps'|translate}</a></li>
           <li><a class="footer-feature-link footer-menu-item" href="https://piwigo.org/ext/" target="_blank" rel="noopener noreferrer">{'Extensions'|translate}</a></li>
           {* <li><a class="footer-feature-link footer-menu-item" href="#">{'API & Integrations'|translate}</a></li> *}
@@ -260,10 +261,10 @@
           </div>
 
           <div class="footer-social-icons">
-            <a href="https://github.com/Piwigo" class="footer-social-icon footer-social-icon-git" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="icon-git" aria-hidden="true"></i></a>
-            <a href="https://www.linkedin.com/company/piwigo" class="footer-social-icon footer-social-icon-linkedin" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i
+            <a href="https://github.com/Piwigo" class="footer-social-icon footer-social-icon-git non-decorated-text" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="icon-git" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/company/piwigo" class="footer-social-icon footer-social-icon-linkedin non-decorated-text" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i
                 class="icon-linkedin" aria-hidden="true"></i></a>
-            <a href="{$PORG_ROOT}{$URL.contact}" class="footer-social-icon footer-social-icon-mailint" aria-label="Contact"><i
+            <a href="{$PORG_ROOT}{$URL.contact}" class="footer-social-icon footer-social-icon-mailint non-decorated-text" aria-label="Contact"><i
                 class="icon-mailint" aria-hidden="true"></i></a>
           </div>
         </div>

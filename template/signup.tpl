@@ -15,7 +15,7 @@
   }
 </style>
 
-<section class="signup-header d-flex align-items-center" id="signup-page" style="min-height: 100vh;">
+<section class="signup-header align-items-center" id="signup-page" style="min-height: 100vh;">
   <div class="container">
     <div class="row align-items-center form-side-container">
 
@@ -37,10 +37,10 @@
             <p class="mt-3">{'Creating your Piwigo account...'|translate}</p>
           </div>
 
-          <form id="signupForm" class="signup-form">
+          <form id="signupForm" class="signup-form" autocomplete="off">
 
             <div class="form-group position-relative form-group-mail mb-3">
-              <input type="email" class="form-control" id="form-email" name="email" placeholder=" " required>
+              <input type="email" class="form-control" id="form-email" name="{$EMAIL_FIELD_NAME}" placeholder=" " required autoComplete="new-email">
               <span class="mail-placeholder p-boxed">{'Your email address'|translate}<span class="orange-text"> *</span></span>
               <span class="mail-example-placeholder p-boxed">{'email example'|translate}</span>
               <span class="little-mail-placeholder form-input">{'Your email address'|translate}<span class="orange-text"> *</span></span>
@@ -51,7 +51,7 @@
 
             <div class="form-group position-relative form-group-user mb-3">
               <div class="input-group piwigo-input-group">
-                <input type="text" class="form-control" id="form-user" name="username" aria-describedby="userHelp" placeholder=" " value="{$username|default:''}">
+                <input type="text" class="form-control" id="form-user" name="{$USERNAME_FIELD_NAME}" aria-describedby="userHelp" placeholder=" " value="{$username|default:''}" autoComplete="new-username">
                 <span class="piwigo-url-placeholder p-boxed">{'signup_form_username'|translate}</span>
                 <span class="piwigo-url-example-placeholder p-boxed">{'Piwigo name example'|translate}</span>
                 <span class="little-piwigo-url-placeholder form-input">{'signup_form_username'|translate}</span>
@@ -61,7 +61,7 @@
             <span id="userError" class="error-username-placeholder pink-text" style="display:none;">{'signup_form_username_error'|translate}</span><span id="userHelp" class="help-username-placeholder pink-text" style="display:none;">{'signup_form_username_help'|translate}</span>
 
             <div class="form-group position-relative mb-3">
-              <input type="password" class="form-control" id="form-password" name="password" placeholder=" " required>
+              <input type="password" class="form-control" id="form-password" name="{$PASSWORD_FIELD_NAME}" placeholder=" " required autoComplete="new-password">
               <span class="password-placeholder p-boxed">{'signup_form_password'|translate}</span>
               {* <span class="password-example-placeholder p-boxed d-none">{'Piwigo password example'|translate}</span> *}
               <span class="little-password-placeholder form-input">{'signup_form_password'|translate}</span>

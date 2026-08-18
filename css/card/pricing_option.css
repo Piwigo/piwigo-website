@@ -227,6 +227,7 @@ Pricing Card
 }
 
 .best-deal-badge {
+  width: max-content;
   position: absolute;
   top: -15px;
   left: 50%;

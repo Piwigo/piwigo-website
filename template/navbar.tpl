@@ -1,8 +1,3 @@
-<link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL_PLUGINS}css/header.css">
-<link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/menu/common_menu.css">
-<link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/menu/menu_item_common.css">
-<link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/menu/menu_button_common.css">
-<link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/buttons/common_button.css">
 <script src="{$PORG_ROOT_URL_PLUGINS}js/header.js"></script>
 
 <nav class="navbar navbar-default navbar-expand-lg">
@@ -74,7 +69,7 @@
 
           <a href="#" class="header-lang-btn btn-text js-lang-toggle" aria-expanded="false"
             aria-controls="header-lang-menu" aria-haspopup="true">
-            {'English (UK)'|translate}
+            {$current_language.label}
             <span class="lang-label-group">
               <i class="icon-langage header-lang-icon"></i>
               <i class="icon-down-open arrow-lang"></i>

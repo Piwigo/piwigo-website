@@ -33,12 +33,12 @@
     class="horizontal-menu-container horizontal-menu-container--features d-flex align-items-center justify-content-start">
     <div class="horizontal-menu-track d-flex align-items-center justify-content-start">
       {include file='template/include/sub_menu/horizontal_menu_button.tpl' is_selected=true feature_key='upload'}
-      {include file='template/include/sub_menu/horizontal_menu_button.tpl' is_selected=false label={'nav title 2'|translate} feature_key='organize'}
-      {include file='template/include/sub_menu/horizontal_menu_button.tpl' is_selected=false label={'nav title 3'|translate} feature_key='search'}
-      {include file='template/include/sub_menu/horizontal_menu_button.tpl' is_selected=false label={'nav title 4'|translate} feature_key='share'}
-      {include file='template/include/sub_menu/horizontal_menu_button.tpl' is_selected=false label={'nav title 5'|translate} feature_key='customize'}
-      {include file='template/include/sub_menu/horizontal_menu_button.tpl' is_selected=false label={'nav title 6'|translate} feature_key='measure'}
-      {include file='template/include/sub_menu/horizontal_menu_button.tpl' is_selected=false label={'nav title 7'|translate} feature_key='security'}
+      {include file='template/include/sub_menu/horizontal_menu_button.tpl' is_selected=false label={'Organize your media'|translate} feature_key='organize'}
+      {include file='template/include/sub_menu/horizontal_menu_button.tpl' is_selected=false label={'Search & Find'|translate} feature_key='search'}
+      {include file='template/include/sub_menu/horizontal_menu_button.tpl' is_selected=false label={'Share & Collaborate'|translate} feature_key='share'}
+      {include file='template/include/sub_menu/horizontal_menu_button.tpl' is_selected=false label={'Customize your gallery'|translate} feature_key='customize'}
+      {include file='template/include/sub_menu/horizontal_menu_button.tpl' is_selected=false label={'Measure & Analyze'|translate} feature_key='measure'}
+      {include file='template/include/sub_menu/horizontal_menu_button.tpl' is_selected=false label={'Security & Privacy'|translate} feature_key='security'}
     </div>
   </nav>
 </div>

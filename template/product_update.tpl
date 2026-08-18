@@ -59,7 +59,7 @@
           <div class="timeline-week">
             <div class="medium-gray-text timeline-week-header">
               <span class="dot"></span>
-              <h3 class="h3-mobile mb-0">{'Week'|translate} {$week.weeknumber} • <span class="p-testimonial">{$week.start_date} {'to'|translate} {$week.end_date}</span></h3>
+              <h3 class="h3-mobile mb-0">{'Week %s'|translate:$week.weeknumber}  • <span class="p-testimonial">{$week.start_date} {'to'|translate} {$week.end_date}</span></h3>
             </div>
 
             {foreach from=$commit_type_labels key=commit_type item=commit_label}

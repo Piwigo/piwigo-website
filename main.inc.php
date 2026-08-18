@@ -37,7 +37,7 @@ function porg_user_init()
   global $user, $page;
 
   $page['porg_domain_prefix'] = '';
-  $user["language"] = "fr_FR";
+  $user["language"] = "en_UK";
 
   $raw_url = $_SERVER['HTTP_HOST'] . $_SERVER['SCRIPT_NAME'];
 
@@ -134,6 +134,7 @@ function porg_add_methods($arr)
       'message' => array(),
       'topic' => array(),
       'piwigo_url' => array('default' => null),
+      'account' => array('default' => null),
       'key' => array(),
     ),
     'Send email to Piwigo.org (PLG)'
@@ -245,6 +246,7 @@ SELECT state
       'PCOM_PREFIX' => isset($page['porg_pcom_prefix']) ? $page['porg_pcom_prefix'] : '',
       'PORG_IS_PRODUCTION' => preg_match('/^([a-z]+\.)?piwigo\.org$/', $_SERVER['HTTP_HOST']),
       'HEADER_SHOW_HOME' => in_array($user['language'], array('en_UK', 'zh_CN', 'it_IT', 'pt_BR')),
+      'current_language' => array('label' => $porg_languages[$user['language']]),
       'switch_languages' => $switch_languages,
     )
   );

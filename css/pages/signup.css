@@ -271,8 +271,11 @@ body {
 .passHelp i,
 .passHelp2 i {
   font-size: 14px !important;
-  color: var(--main_pink) !important;
   margin: 0 !important;
+}
+
+.passHelp i.icon-warning {
+  color: var(--main_pink) !important;
 }
 
 .passHelp p,

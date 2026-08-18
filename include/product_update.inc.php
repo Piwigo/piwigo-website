@@ -157,7 +157,7 @@ foreach ($porg_releases as $version => $version_content) {
   if (preg_match('/' . preg_quote($major_version_ends_with) . '$/', $version)) {
     $update = array(
       'version' => $version,
-      'title' => 'Version ' . preg_replace('/(\.0){1,2}$/', '', $version),
+      'title' => l10n('version %s', preg_replace('/(\.0){1,2}$/', '', $version)),
       'slug' => 'version-' . str_replace('.', '-', $version),
       'released_on' => format_date($version_content['released_on'], ['day', 'month', 'year']),
     );
