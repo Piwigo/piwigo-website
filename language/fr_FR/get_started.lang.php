@@ -1,7 +1,7 @@
 <?php
 
 $lang['Get started CTA subtitle part 1'] = 'Choisissez la formule';
-$lang['Get started CTA subtitle part 2'] = 'qui correspond à vos besoins';
+$lang['Get started CTA subtitle part 2'] = 'qui correspond à vos besoins :';
 $lang['Get started CTA cloud'] = 'Démarrez votre <span class="green-text">essai gratuit de 30 jours</span>';
 $lang['Get started CTA selfhost'] = 'Installez Piwigo sur <span class="green-text">votre propre serveur</span>';
 $lang['Get started CTA support'] = 'Contactez-nous pour <span class="green-text">échanger sur votre projet</span>';

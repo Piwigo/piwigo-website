@@ -80,7 +80,8 @@
 
 .product-header .menu-btn-blue,
 .product-header .menu-btn-green {
-  min-width: 187px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .product-header {

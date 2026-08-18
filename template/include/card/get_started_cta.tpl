@@ -8,7 +8,7 @@
             {'Get started CTA subtitle part 1'|translate}
             <span class="highlight-wrap">
               <img class="highlight-circle" src="{$PORG_ROOT_URL}images/get_started/circle.svg" alt="">
-              <span class="highlight">{'Get started CTA subtitle part 2'|translate}:</span>
+              <span class="highlight">{'Get started CTA subtitle part 2'|translate}</span>
             </span>
           </p>
 
