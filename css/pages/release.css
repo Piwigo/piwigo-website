@@ -971,11 +971,11 @@ code {
 }
 
 .badge-latest {
-  height: unset;
+  height: unset !important;
   background: var(--clear_green);
   color: var(--accent_green);
-  padding: 2px 10px;
-  border-radius: 30px;
+  padding: 2px 10px !important;
+  border-radius: 30px !important;
   margin-left: 8px;
 }
 

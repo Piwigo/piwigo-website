@@ -399,11 +399,11 @@
 }
 
 .docker-cta {
-  display: inline-flex;
+  display: inline-flex !important;
   width: max-content;
   flex: 0 0 auto;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 50px !important;
+  padding-right: 50px !important;
 }
 
 .docker-inline {
@@ -456,11 +456,11 @@
 }
 
 .badge-latest {
-  height: unset;
+  height: unset !important;
   background: var(--clear_green);
   color: var(--accent_green);
-  padding: 2px 10px;
-  border-radius: 30px;
+  padding: 2px 10px !important;
+  border-radius: 30px !important;
   margin-left: 8px;
 }
 
