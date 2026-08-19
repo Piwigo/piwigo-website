@@ -14,6 +14,11 @@ $(document).ready(function () {
   const errorMessage = jQuery('.error_message');
   let errorTimeoutId = null;
 
+  // --- Get URL parameters ---
+  const urlParams = new URLSearchParams(window.location.search);
+  const topicIdFromUrl = urlParams.get('topic_id');
+  const accountFromUrl = urlParams.get('account');
+
   // hide input help texts
   jQuery(urlHelp).hide();
   jQuery(emailHelp).hide();
@@ -61,8 +66,6 @@ $(document).ready(function () {
     });
 
     // --- Pre-select topic from URL ---
-    const urlParams = new URLSearchParams(window.location.search);
-    const topicIdFromUrl = urlParams.get('topic_id');
     if (topicIdFromUrl) {
       let dataValueToSelect;
       if (topicIdFromUrl === 'testimonial') {
@@ -219,18 +222,24 @@ $(document).ready(function () {
     var honeyMessage = jQuery("#message").val();
 
     if (!honeyMessage) {
+      let dataToSend = {
+        method: 'porg.contact.send',
+        email: email,
+        message: message,
+        topic: topic,
+        key: key,
+        piwigo_url: piwigoUrl
+      };
+
+      if (accountFromUrl) {
+        dataToSend.account = accountFromUrl;
+      }
+
       jQuery.ajax({
         type: "POST",
         url: "ws.php?format=json",
         dataType: "json",
-        data: {
-          method: 'porg.contact.send',
-          email: email,
-          message: message,
-          topic: topic,
-          key: key,
-          piwigo_url: piwigoUrl
-        },
+        data: dataToSend,
         success: function (data) {
           if (data.code == "200") {
             // Hide the form and display success message temporarily
@@ -266,4 +275,4 @@ $(document).ready(function () {
       });
     }
   });
-});
+});	

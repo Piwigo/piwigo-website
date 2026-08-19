@@ -28,9 +28,9 @@ for ($week_offset = 0; $week_offset < $weeks_count; $week_offset++) {
   $week_key = $week_start->format('o-W');
 
   $coding_activity_weeks[] = array(
-    'weeknumber' => (int) $week_start->format('W'),
-    'start_date' => $week_start->format('F jS'),
-    'end_date' => ($week_start->format('Y-m') === $week_end->format('Y-m')) ? $week_end->format('jS, Y') : $week_end->format('F jS, Y'),
+    'weeknumber' => $week_start->format('W'),
+    'start_date' => format_date($week_start->format('Y-m-d'), ['day', 'month']),
+    'end_date' => format_date($week_end->format('Y-m-d'), ['day', 'month', 'year']),
     'commits' => array(
       'translation' => array(),
       'core' => array(),

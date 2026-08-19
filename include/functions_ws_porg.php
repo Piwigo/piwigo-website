@@ -74,13 +74,14 @@ function ws_porg_contact_send($params, &$service)
     }
   }
 
-  if (!isset($conf['porg_contact_form_to']))
+  if (!isset($conf['porg_contact_form_to']) || !isset($conf['porg_contact_form_to_biz']))
   {
-    echo json_encode(['code'=>400, 'msg'=>'contact form recipient not configured']);
+    echo json_encode(['code'=>400, 'msg'=>'contact form recipients not configured']);
     exit;
   }
 
-  $to = $conf['porg_contact_form_to'];
+  $to1 = $conf['porg_contact_form_to'];
+  $to2 = $conf['porg_contact_form_to_biz'];
 
   $error = '';
 
@@ -159,6 +160,12 @@ function ws_porg_contact_send($params, &$service)
     }
   }
 
+  $is_account = isset($params['account']) && !empty($params['account']);
+  if ($is_account)
+  {
+    $message .= "\n\nAccount: " . $params['account'];
+  }
+
   if (empty($error))
   {
     $headers = 'From: '.$params['email']."\n";
@@ -167,6 +174,12 @@ function ws_porg_contact_send($params, &$service)
     $headers.= "MIME-Version: 1.0\n";
     $headers.= "Content-type: text/plain; charset=utf-8\n";
     $headers.= "Content-Transfer-Encoding: quoted-printable\n";
+
+    $to = $to1;
+    if ($params['topic'] == 'Customer support request')
+    {
+      $to = $to2;
+    }
 
     mail($to, $subject, $message, $headers);
     echo json_encode(['code'=>200, 'msg'=>$message, 'subject'=>$subject]);
