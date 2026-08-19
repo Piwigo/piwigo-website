@@ -299,7 +299,8 @@ Compare table section
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border: 5px solid var(--grey) !important;
+  box-shadow: none;
   transition: all 0.3s ease;
 }
 
@@ -314,26 +315,17 @@ Compare table section
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 @media (min-width: 768px) {
-  .compare_table_btn .icon-down-open:hover {
-    color: var(--main_orange);
+  .compare_table_btn:hover .icon-down-open {
+    color: var(--accent_green);
   }
-}
-
-.compare_table_btn.active {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .compare_table_btn.active .icon-down-open {
   transform: rotate(180deg);
-}
-
-.compare_table_btn.active {
-  border: 5px solid var(--grey) !important;
-  box-shadow: none;
 }
 
 .compare_table_display {
