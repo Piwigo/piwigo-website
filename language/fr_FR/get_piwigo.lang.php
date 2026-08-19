@@ -1,10 +1,6 @@
 <?php
 $lang['page_meta_title'] = 'Cloud ou auto-hébergement de votre photothèque - Piwigo';
 $lang['page_meta_description'] = 'Utilisez Piwigo en service cloud hébergé en Europe ou hébergez Piwigo vous-même sur votre propre infrastructure';
-
-$lang['pcom_pricing_page_switch_cloud2'] = 'Piwigo SaaS, hébergement & support';
-$lang['pcom_pricing_page_switch_self_hosted'] = 'Piwigo sur votre propre serveur';
-
 $lang['pricing toggle title cloud'] = 'Cloud';
 $lang['pricing toggle title selfhosted'] = 'Self-hosted';
 $lang['pricing toggle piwigo'] = 'Piwigo';

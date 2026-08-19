@@ -70,9 +70,6 @@ $lang['pcom_pricing_page_features_services'] = 'Fonctionnalités & services';
 $lang['pcom_pricing_page_compare_plans'] = 'Comparez nos offres';
 $lang['pcom_pricing_page_contact_us'] = 'Contactez nous';
 $lang['pcom_pricing_page_see_examples'] = 'Voir les exemples';
-$lang['pcom_pricing_page_switch_cloud1'] = 'Piwigo en saas';
-$lang['pcom_pricing_page_switch_cloud2'] = 'Hébergement et support';
-$lang['pcom_pricing_page_switch_self_hosted'] = 'Piwigo sur votre propre serveur';
 $lang['pcom_pricing_page_etc'] = 'etc.';
 $lang['on_quotation'] = 'sur devis';
 

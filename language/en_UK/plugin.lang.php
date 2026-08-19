@@ -242,6 +242,9 @@ $lang['Send us a testimonial'] = 'Send us a testimonial';
 $lang['Choose your setup'] = 'Choose your setup';
 $lang['Show more'] = 'Show more';
 
+$lang['pcom_pricing_page_switch_cloud2'] = 'Piwigo SaaS, hosting & support';
+$lang['pcom_pricing_page_switch_self_hosted'] = 'Piwigo on your own server';
+
 $lang['Start your free trial'] = 'Start your free trial';
 $lang['Try Piwigo Cloud free for 30 days. No credit card required.'] = 'Try Piwigo Cloud free for 30 days. No credit card required.';
 $lang['Create my account'] = 'Create my account';

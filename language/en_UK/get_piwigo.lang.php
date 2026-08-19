@@ -2,9 +2,6 @@
 $lang['page_meta_title'] = 'Cloud or self-hosting your photo library - Piwigo';
 $lang['page_meta_description'] = 'Run Piwigo as a cloud service hosted in Europe or self-host Piwigo on your own infrastructure';
 
-$lang['pcom_pricing_page_switch_cloud2'] = 'Piwigo SaaS, hosting & support';
-$lang['pcom_pricing_page_switch_self_hosted'] = 'Piwigo on your own server';
-
 $lang['pricing toggle title cloud'] = 'Cloud';
 $lang['pricing toggle title selfhosted'] = 'Self-hosted';
 $lang['pricing toggle piwigo'] = 'Piwigo';

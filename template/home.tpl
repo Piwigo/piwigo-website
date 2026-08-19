@@ -70,6 +70,7 @@
                 <li>{'porg_home_ways_to_use_cloud_li_5'|translate}</li>
               </ul>
               {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'porg_home_btn1'|translate} href="{$PORG_ROOT}{$URL.signup}" class='mt-auto'}
+              {include file='template/include/buttons/button.tpl' variant='menu_btn_green' label={'Contact us'|translate} href="{$PORG_ROOT}{$URL.get_piwigo}#cloud"}
             </div>
           </div>
           <div class="col-md-6 text-center mb-4 d-flex ways-to-use-card-col-r">
@@ -87,6 +88,7 @@
                 <li>{'porg_home_ways_to_use_self_hosted_li_5'|translate}</li>
               </ul>
               {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label="{'Download'|translate} Piwigo" href="https://piwigo.org/download/dlcounter.php?code=latest" class='mt-auto'}
+              {include file='template/include/buttons/button.tpl' variant='menu_btn_green' label={'Contact us'|translate} href="{$PORG_ROOT}{$URL.get_piwigo}self-hosted"}
             </div>
           </div>
           <div class="col-12 text-center d-flex">

@@ -3,9 +3,6 @@
 $lang['porg_plugins_title'] = 'List of <br><span class="orange-text">plugins</span> & <span class="orange-text">features</span>';
 $lang['porg_plugins_desc'] = 'Upcoming events, new releases, beta versions and more...';
 
-$lang['pcom_pricing_page_switch_cloud2'] = 'Piwigo SaaS, hosting & support';
-$lang['pcom_pricing_page_switch_self_hosted'] = 'Piwigo on your own server';
-
 $lang['pricing toggle title cloud'] = 'Cloud';
 $lang['pricing toggle title selfhosted'] = 'Self-hosted';
 $lang['pricing toggle piwigo'] = 'Piwigo';
