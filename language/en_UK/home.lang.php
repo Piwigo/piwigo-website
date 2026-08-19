@@ -92,3 +92,5 @@ $lang['porg_home_opensource_title'] = 'An open source project, built to last';
 $lang['porg_home_opensource_desc'] = 'Piwigo is developed by a community of contributors and supported by a company that provides hosting, services and long-term maintenance.<br><br><span class="p-strong">This model ensures transparency, sustainability and continuous improvement.</span>';
 $lang['porg_home_opensource_btn1'] = 'Learn more about the project';
 $lang['porg_home_opensource_btn2'] = 'Contribute';
+
+$lang['Latest activity'] = 'Latest activity';
