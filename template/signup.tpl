@@ -43,7 +43,7 @@
               <input type="email" class="form-control" id="form-email" name="{$EMAIL_FIELD_NAME}" placeholder=" " required autoComplete="new-email">
               <span class="mail-placeholder p-boxed">{'Your email address 1'|translate}<span class="orange-text"> *</span></span>
               <span class="mail-example-placeholder p-boxed">{'email example'|translate}</span>
-              <span class="little-mail-placeholder form-input">{'Your email address 2'|translate}<span class="orange-text"> *</span></span>
+              <span class="little-mail-placeholder form-input">{'Your email address 1'|translate}<span class="orange-text"> *</span></span>
               <i id="emailWarningIcon" class="icon-rounded-warning" aria-hidden="true"></i>
               <i id="emailCheckIcon" class="icon-rounded-check" aria-hidden="true"></i>
             </div>

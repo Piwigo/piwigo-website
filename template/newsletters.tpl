@@ -34,7 +34,7 @@
               <span class="mail-placeholder p-boxed">{'Your email address 1'|translate}<span
                   class="orange-text"> *</span></span>
               <span class="mail-example-placeholder p-boxed">{'email example'|translate}</span>
-              <span class="little-mail-placeholder form-input">{'Your email address 2'|translate}<span
+              <span class="little-mail-placeholder form-input">{'Your email address 1'|translate}<span
                   class="orange-text"> *</span> <span id="emailHelp"
                   class="error-mail-placeholder pink-text">{'porg_contact_error_message_7'|translate}</span></span>
               <i id="emailWarningIcon" class="icon-rounded-warning" aria-hidden="true"></i>

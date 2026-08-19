@@ -38,6 +38,7 @@
         </span>
         <h2 class="h2-top-page text-center mb-0">{'porg_contact_pink_title'|translate}</h2>
         <p class="text-center mb-0">{'porg_contact_pink_desc'|translate}</p>
+        {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'porg_contact_pink_btn'|translate} class="mt-auto js-select-support" href="#form"}
       </div>
     </div>
     <div class="col-md-6 ps-md-4 mt-4 pt-2">
@@ -47,7 +48,7 @@
         </span>
         <h2 class="h2-top-page text-center mb-0">{'porg_contact_orange_title'|translate}</h2>
         <p class="text-center mb-0">{'porg_contact_orange_desc'|translate}</p>
-        {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'porg_contact_orange_btn'|translate} href="{$EXT_URL.documentation}"}
+        {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'porg_contact_orange_btn'|translate} class="mt-auto" href="{$EXT_URL.documentation}"}
       </div>
     </div>
     <div class="col-md-12 mt-4 pt-2">
@@ -137,7 +138,7 @@
           <input type="email" class="form-control" id="form-email" name="email" placeholder=" " required>
           <span class="mail-placeholder p-boxed">{'Your email address 1'|translate}<span class="orange-text"> *</span></span>
           <span class="mail-example-placeholder p-boxed">{'email example'|translate}</span>
-          <span class="little-mail-placeholder form-input">{'Your email address 2'|translate}<span class="orange-text"> *</span> <span id="emailHelp" class="error-mail-placeholder pink-text">{'porg_contact_error_message_7'|translate}</span></span>
+          <span class="little-mail-placeholder form-input">{'Your email address 1'|translate}<span class="orange-text"> *</span> <span id="emailHelp" class="error-mail-placeholder pink-text">{'porg_contact_error_message_7'|translate}</span></span>
           <i id="emailWarningIcon" class="icon-rounded-warning" aria-hidden="true"></i>
           <i id="emailCheckIcon" class="icon-rounded-check" aria-hidden="true"></i>
         </div>
@@ -146,13 +147,13 @@
           <input type="text" class="form-control" id="form-piwigo-url" aria-describedby="urlHelp" placeholder=" ">
           <span class="piwigo-url-placeholder p-boxed">{'Your Piwigo url 1'|translate}</span>
           <span class="piwigo-url-example-placeholder p-boxed">{'Piwigo url example'|translate}</span>
-          <span class="little-piwigo-url-placeholder form-input">{'Your Piwigo url 2'|translate}</span>
+          <span class="little-piwigo-url-placeholder form-input">{'Your Piwigo url 1'|translate}</span>
         </div>
 
         <div class="form-group position-relative">
           <textarea class="form-control" id="form-message" rows="8" placeholder=" " required></textarea>
           <span class="your-message-placeholder p-boxed">{'Your message 1'|translate}<span class="orange-text"> *</span></span>
-          <span class="little-your-message-placeholder form-input">{'Your message 2'|translate}<span class="orange-text"> *</span></span>
+          <span class="little-your-message-placeholder form-input">{'Your message 1'|translate}<span class="orange-text"> *</span></span>
         </div>
 
         <div>

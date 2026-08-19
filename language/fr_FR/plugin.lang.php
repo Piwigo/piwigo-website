@@ -186,11 +186,8 @@ $lang['Footer legal 6 DPA'] = 'DPA';
 
 /* Formulaire */
 $lang['Your email address 1'] = 'Votre adresse e-mail';
-$lang['Your email address 2'] = 'Votre adresse e-mail';
 $lang['Your Piwigo url 1'] = 'Votre URL Piwigo (si vous êtes déjà utilisateur)';
-$lang['Your Piwigo url 2'] = 'Votre URL Piwigo (si vous êtes déjà utilisateur)';
 $lang['Your message 1'] = 'Votre message';
-$lang['Your message 2'] = 'Votre message';
 $lang['Send message'] = 'Envoyer le message';
 $lang['porg_contact_error_email'] = 'Oups, cette adresse e-mail n\'est pas valide';
 $lang['porg_contact_error_message'] = 'Oups, votre message semble incorrect';

@@ -91,6 +91,14 @@ $(document).ready(function () {
         checkFormValidity();
       }
     }
+
+    $('.js-select-support').on('click', function() {
+      const dataValueToSelect = 'Customer support request';
+      const optionToSelect = options.filter(`[data-value="${dataValueToSelect}"]`);
+      if (optionToSelect.length) {
+          optionToSelect.trigger('click');
+      }
+    });
   }
 
   function showTemporaryError(message) {

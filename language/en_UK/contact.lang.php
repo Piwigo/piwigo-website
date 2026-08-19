@@ -9,7 +9,8 @@ $lang['porg_contact_project_btn1'] = 'Send a message';
 $lang['porg_contact_project_btn2'] = 'Book a meeting';
 
 $lang['porg_contact_pink_title'] = 'Paid support';
-$lang['porg_contact_pink_desc'] = '<span class="pink-text strong-text">Already a customer with a paid plan?</span><br><br>Contact our support team through your usual support channel.';
+$lang['porg_contact_pink_desc'] = 'Already a customer with a paid plan?';
+$lang['porg_contact_pink_btn'] = 'Contact our support team';
 $lang['porg_contact_orange_title'] = 'Documentation';
 $lang['porg_contact_orange_desc'] = 'Installation guides, configuration help, plugins and tutorials.';
 $lang['porg_contact_orange_btn'] = 'Read docs';

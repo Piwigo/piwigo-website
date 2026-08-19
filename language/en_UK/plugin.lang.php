@@ -190,11 +190,8 @@ $lang['Footer legal 6 DPA'] = 'DPA';
 /* form */
 
 $lang['Your email address 1'] = 'Your email address';
-$lang['Your email address 2'] = 'Your email address';
 $lang['Your Piwigo url 1'] = 'Your Piwigo url (if you are already a Piwigo user)';
-$lang['Your Piwigo url 2'] = 'Your Piwigo url (if you are already a Piwigo user)';
 $lang['Your message 1'] = 'Your message';
-$lang['Your message 2'] = 'Your message';
 $lang['Send message'] = 'Send message';
 $lang['porg_contact_error_email'] = 'Whoops, that email address is invalid';
 $lang['porg_contact_error_message'] = 'Whoops, your message seems to be wrong';

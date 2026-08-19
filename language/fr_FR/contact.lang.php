@@ -9,7 +9,8 @@ $lang['porg_contact_project_btn1'] = 'Envoyer un message';
 $lang['porg_contact_project_btn2'] = 'Réserver un rendez-vous';
 
 $lang['porg_contact_pink_title'] = 'Support payant';
-$lang['porg_contact_pink_desc'] = '<span class="pink-text strong-text">Vous êtes déjà client avec une offre payante ?</span><br><br>Contactez notre équipe support via votre canal de support habituel.';
+$lang['porg_contact_pink_desc'] = 'Vous êtes déjà client avec une offre payante ?';
+$lang['porg_contact_pink_btn'] = 'Contactez notre équipe support';
 $lang['porg_contact_orange_title'] = 'Documentation';
 $lang['porg_contact_orange_desc'] = 'Guides d\'installation, aide à la configuration, plugins et tutoriels.';
 $lang['porg_contact_orange_btn'] = 'Lire la documentation';
