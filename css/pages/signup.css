@@ -3,6 +3,10 @@ body {
   justify-content: center;
 }
 
+.site-footer {
+  display: none !important;
+}
+
 .signup-header {
   position: relative;
   overflow: hidden;
@@ -142,6 +146,7 @@ body {
   font-family: "Red Hat Display" !important;
   background: transparent !important;
   border-radius: 0 4px 4px 0 !important;
+  font-weight: 550 !important;
 }
 
 .form-check-input:hover {
@@ -287,10 +292,7 @@ body {
 .text-end .btn-menu.menu-btn-green {
   width: 256px !important;
 }
-/* 
-input {
-  padding: 0px !important;
-} */
+
 .signup-form-split-copy h1 {
   margin-bottom: 10px;
 }
@@ -298,7 +300,6 @@ input {
 .check-help-container {
   display: flex;
   flex-direction: column;
-  transform: translateY(10px);
 }
 
 .check-help-container.is-checked {
@@ -418,6 +419,7 @@ input {
   }
   .form-side {
     width: unset;
+    padding: 0 20px;
   }
 
   .spinner-loader {
@@ -431,7 +433,7 @@ input {
 @media (max-width: 996px) {
 
   .error-mail-placeholder {
-    top: 80px;
+    top: 86px;
     left: 27px;
   }
 

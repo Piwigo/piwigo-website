@@ -832,8 +832,10 @@ textarea:focus,
   .mail-placeholder,
   .piwigo-url-placeholder,
   .your-message-placeholder,
-  .topic-placeholder {
+  .topic-placeholder,
+  .password-placeholder {
     font-size: 13px;
+    top: 19px;
   }
 }
 
@@ -976,6 +978,16 @@ input.is-invalid {
   line-height: 1;
   margin: 0;
   font-weight: 400;
+  font-size: 16px;
+  font-family: "Red Hat Display";
+}
+
+.form-help-label {
+  line-height: 1;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "Red Hat Display";
 }
 
 /* Disabled button state */

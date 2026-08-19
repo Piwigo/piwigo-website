@@ -7,7 +7,7 @@ $(document).ready(function () {
   const signupForm = $("#signupForm");
   const submitBtn = $("#form-submit");
 
-  $(".form-check-help").removeClass("pink-text").addClass("clear-text");
+  $(".form-check-help").removeClass("pink-text").addClass("d-none");
 
   function isValidEmail(email) {
     const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -33,7 +33,6 @@ $(document).ready(function () {
     const val = $(this).val().trim();
     $(".email-error").css("visibility", "hidden");
     $(".form-group").css("margin-top", "0.25rem");
-    
 
     if (val.length > 0) {
       if (isValidEmail(val)) {
@@ -59,16 +58,46 @@ $(document).ready(function () {
     $(".username-error").css("visibility", "hidden");
     $(".form-group").css("margin-top", "0.25rem");
 
-    if (username.length > 0 && username.length < 4) {
+    if (username.length === 0) {
+      userHelp.hide();
+      userError.hide();
+      $(".form-group-user").addClass("mb-3");
+      userInput.removeClass("is-invalid");
+    } else if (username.length < 4) {
       userHelp.show();
       userError.hide();
       $(".form-group-user").removeClass("mb-3");
-    } else {
+      userInput.removeClass("is-invalid");
+    } else if (username.length == 4) {
       userHelp.hide();
       $(".form-group-user").addClass("mb-3");
-    }
+      userInput.removeClass("is-invalid");
 
-    if (username.length >= 4) {
+      $.ajax({
+        url: "ws.php?format=json&method=pcom.username.check",
+        type: "POST",
+        data: { username: username },
+        success: function (response) {
+          const data = typeof response === "string" ? JSON.parse(response) : response;
+
+          if (data.result && data.result.error) {
+            userError.show();
+            $(".form-group-user").removeClass("mb-3");
+            userInput.addClass("is-invalid");
+            $(".username-error")
+              .html(data.result.error)
+              .css("visibility", "visible");
+          } else {
+            userError.hide();
+          }
+        },
+        error: function () {
+          userError.hide();
+        },
+      });
+    } else {
+      userHelp.hide();
+
       $.ajax({
         url: "ws.php?format=json&method=pcom.username.check",
         type: "POST",
@@ -79,26 +108,24 @@ $(document).ready(function () {
 
           if (data.result && data.result.error) {
             userError.show();
+            $(".form-group-user").removeClass("mb-3");
             userInput.addClass("is-invalid");
             $(".username-error")
               .html(data.result.error)
               .css("visibility", "visible");
           } else {
             userError.hide();
+            $(".form-group-user").addClass("mb-3");
             userInput.removeClass("is-invalid");
           }
         },
         error: function () {
           userError.hide();
+          $(".form-group-user").addClass("mb-3");
+          userInput.removeClass("is-invalid");
         },
       });
-    } else {
-      userError.hide();
-      // $(".form-group-user").addClass("mb-3");
-      // $(".form-group-user").css("margin-bottom", "1rem");
-      userInput.removeClass("is-invalid");
     }
-    
   });
 
   passwordInput.on("input keyup", function () {
@@ -115,7 +142,7 @@ $(document).ready(function () {
           .addClass("main-green-text");
         $("#passHelp")
           .removeClass("icon-warning")
-          .addClass("icon-check-1 main-green-text")
+          .addClass("icon-check-1 main-green-text");
         $("#passWarningIcon").hide();
         $("#passCheckIcon").show();
       } else {
@@ -124,7 +151,7 @@ $(document).ready(function () {
           .removeClass("main-green-text");
         $("#passHelp")
           .addClass("icon-warning")
-          .removeClass("icon-check-1 main-green-text")
+          .removeClass("icon-check-1 main-green-text");
         $("#passCheckIcon").hide();
         $("#passWarningIcon").show();
       }
@@ -134,18 +161,16 @@ $(document).ready(function () {
         passWarning.show();
       }
     } else {
-      $(
-        "#passHelpLength, #passHelp, #passWarningIcon, #passCheckIcon",
-      ).hide();
+      $("#passHelpLength, #passHelp, #passWarningIcon, #passCheckIcon").hide();
     }
   });
 
   signupForm.on("submit", function (e) {
     e.preventDefault();
-    $(".form-check-help").removeClass("clear-text").addClass("pink-text");
+    $(".form-check-help").removeClass("d-none").addClass("pink-text");
     const isTermsChecked = $("#form-terms").is(":checked");
     if (!isTermsChecked) {
-      $(".form-check-help").removeClass("clear-text").addClass("pink-text");
+      $(".form-check-help").removeClass("d-none").addClass("pink-text");
       return false;
     }
 
@@ -169,7 +194,7 @@ $(document).ready(function () {
       email: $("#form-email").val(),
       username: $("#form-user").val(),
       password: $("#form-password").val(),
-    }
+    };
     console.log("dataToSend", dataToSend);
 
     $.ajax({
@@ -261,9 +286,9 @@ $(document).ready(function () {
   $("#form-terms").on("change", function () {
     const isChecked = $(this).is(":checked");
     if (isChecked) {
-      $(".form-check-help").removeClass("pink-text").addClass("clear-text");
+      $(".form-check-help").removeClass("pink-text").addClass("d-none");
     } else {
-      $(".form-check-help").addClass("pink-text").removeClass("clear-text");
+      $(".form-check-help").addClass("pink-text").removeClass("d-none");
     }
   });
 });

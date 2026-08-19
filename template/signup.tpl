@@ -15,7 +15,7 @@
   }
 </style>
 
-<section class="signup-header align-items-center" id="signup-page" style="min-height: 100vh;">
+<section class="signup-header align-items-center justify-content-center d-flex" id="signup-page" style="min-height: 100vh;">
   <div class="container">
     <div class="row align-items-center form-side-container">
 
@@ -29,7 +29,7 @@
       <div class="col-12 col-md-5 form-side" {if !$registration_enabled} style="display:none"{/if}>
         <div class="signup-text-header text-center mb-4">
           <h1 class="fw-bold text-center">{'signup_header_title'|translate}</h1>
-          <p class="text-muted small text-center">{'signup_header_desc'|translate}</p>
+          <p class="text-center">{'signup_header_desc'|translate}</p>
         </div>
 
         <div class="signup-form-container card p-4 shadow-sm">
@@ -47,7 +47,7 @@
               <i id="emailWarningIcon" class="icon-rounded-warning" aria-hidden="true"></i>
               <i id="emailCheckIcon" class="icon-rounded-check" aria-hidden="true"></i>
             </div>
-            <span id="emailHelp" class="error-mail-placeholder pink-text" style="display: none;">{'porg_contact_error_message_7'|translate}</span>
+            <span id="emailHelp" class="error-mail-placeholder form-help-label pink-text" style="display: none;">{'porg_contact_error_message_7'|translate}</span>
 
             <div class="form-group position-relative form-group-user mb-3">
               <div class="input-group piwigo-input-group">
@@ -58,7 +58,7 @@
                 <span class="input-group-text bg-white border-start-0">{'signup_piwigo'|translate}</span>
               </div>
             </div>
-            <span id="userError" class="error-username-placeholder pink-text" style="display:none;">{'signup_form_username_error'|translate}</span><span id="userHelp" class="help-username-placeholder pink-text" style="display:none;">{'signup_form_username_help'|translate}</span>
+            <span id="userError" class="error-username-placeholder form-help-label pink-text" style="display:none;">{'signup_form_username_error'|translate}</span><span id="userHelp" class="help-username-placeholder form-help-label pink-text" style="display:none;">{'signup_form_username_help'|translate}</span>
 
             <div class="form-group position-relative mb-3">
               <input type="password" class="form-control" id="form-password" name="{$PASSWORD_FIELD_NAME}" placeholder=" " required autoComplete="new-password">
@@ -76,18 +76,13 @@
               </div>
             </div>
 
-            {* <div class="form-check mb-2">
-							<input class="form-check-input" type="checkbox" id="form-copy" name="send_copy">
-							<label class="form-check-label small" for="form-copy">{'signup_check_mail'|translate}</label>
-						</div> *}
-
             <div class="form-check mb-4">
               <input class="form-check-input" type="checkbox" id="form-terms" required>
               <div class="check-help-container">
-                <label class="form-check-label small" for="form-terms">
+                <label class="p form-check-label" for="form-terms">
                   {$SIGNUP_CHECK_LABEL}
                 </label>
-                <span class="form-check-help pink-text small" id="check-help">{'signup_check_help'|translate}</span>
+                <span class="p form-check-help form-check-label pink-text mt-1" id="check-help">{'signup_check_help'|translate}</span>
               </div>
 
             </div>
