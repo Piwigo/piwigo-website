@@ -272,3 +272,33 @@ $lang['porg_cases5_title'] = 'Cotentin Tourism Office: A collaborative et secure
 $lang['porg_cases5_description'] = 'Piwigo allows us to save our photos in a secure and shared space: it is a collaborative tool that makes it much easier to share files.';
 $lang['porg_cases_start_title'] = 'Ready to start managing your photos with Piwigo?';
 $lang['porg_cases_start_description'] = 'Try Piwigo Cloud free for 30 days. Create your account, upload your files and start working right away.';
+
+// in both product_updates and release-*
+$lang['Read more'] = 'Read more';
+$lang['See all the details'] = 'See details';
+$lang['Default theme Modus'] = 'Default theme Modus';
+$lang['Admin redesign'] = 'Admin redesign';
+$lang['Dark mode'] = 'Dark mode';
+$lang['Activities'] = 'Activities';
+$lang['User manager'] = 'User manager';
+$lang['Plugin manager'] = 'Plugin manager';
+
+// Piwigo 13
+$lang['Album manager'] = 'Album manager';
+$lang['Visit log'] = 'Visit log';
+$lang['Multiple-format'] = 'Multiple-format';
+
+// Piwigo 14
+$lang['Search engine'] = 'Search engine';
+$lang['Album editor'] = 'Album editor';
+$lang['New file formats'] = 'New file formats';
+
+// Piwigo 15
+$lang['Enhanced user management'] = 'Enhanced user management';
+$lang['System activities'] = 'System activities';
+$lang['Batch manager redesign'] = 'Batch manager redesign';
+
+// Piwigo 16
+$lang['Standard pages'] = 'Standard pages';
+$lang['API keys'] = 'API keys';
+$lang['Docker image'] = 'Docker image';

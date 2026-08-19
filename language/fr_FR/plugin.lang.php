@@ -238,7 +238,7 @@ $lang['Send us a testimonial'] = 'Envoyez-nous un témoignage';
 $lang['Choose your setup'] = 'Choisissez votre configuration';
 $lang['Show more'] = 'Afficher plus';
 
-$lang['pcom_pricing_page_switch_cloud2'] = 'Piwigo en saas, Hébergement et support';
+$lang['pcom_pricing_page_switch_cloud2'] = 'Piwigo en SaaS, hébergement et support';
 $lang['pcom_pricing_page_switch_self_hosted'] = 'Piwigo sur votre propre serveur';
 
 $lang['Start your free trial'] = 'Commencez votre essai gratuit';
@@ -267,3 +267,35 @@ $lang['porg_cases5_title'] = 'Office de Tourisme du Cotentin : une photothèque 
 $lang['porg_cases5_description'] = 'Piwigo nous permet de sauvegarder nos photos dans un espace sécurisé et partagé : c\'est un outil collaboratif qui facilite grandement le partage de fichiers.';
 $lang['porg_cases_start_title'] = 'Prêt à commencer à gérer vos photos avec Piwigo ?';
 $lang['porg_cases_start_description'] = 'Essayez Piwigo Cloud gratuitement pendant 30 jours. Créez votre compte, chargez vos fichiers et commencez à travailler immédiatement.';
+
+//
+// in both product_updates and release-*
+//
+$lang['Read more'] = 'plus d’infos';
+$lang['See all the details'] = 'Voir en détails';
+$lang['Default theme Modus'] = 'Modus thème par défaut';
+$lang['Admin redesign'] = 'Admin redessinée';
+$lang['Dark mode'] = 'Mode sombre';
+$lang['Activities'] = 'Activités';
+$lang['User manager'] = 'Gestionnaire d\'utilisateurs';
+$lang['Plugin manager'] = 'Gestionnaire de plugins';
+
+// Piwigo 13
+$lang['Album manager'] = 'Gestionnaire d\'albums';
+$lang['Visit log'] = 'Historique des visites';
+$lang['Multiple-format'] = 'Formats multiples';
+
+// Piwigo 14
+$lang['Search engine'] = 'Moteur de recherche';
+$lang['Album editor'] = 'Éditeur d\'album';
+$lang['New file formats'] = 'Nouveaux types de fichier';
+
+// Piwigo 15
+$lang['Enhanced user management'] = 'Gestion des utilisateurs améliorée';
+$lang['System activities'] = 'Activités système';
+$lang['Batch manager redesign'] = 'Refonte de la gestion par lot';
+
+// Piwigo 16
+$lang['Standard pages'] = 'Pages standard';
+$lang['API keys'] = 'clefs d\'API';
+$lang['Docker image'] = 'Image Docker';
