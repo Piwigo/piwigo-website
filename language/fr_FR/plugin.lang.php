@@ -224,6 +224,7 @@ $lang['Week'] = 'Semaine';
 $lang['to'] = 'à';
 $lang['From'] = 'De';
 $lang['Your way.'] = 'À votre manière.';
+$lang['Week %s'] = 'Semaine %s';
 $lang['Import & Centralize'] = 'Importer & centraliser';
 $lang['Explore solution  <i class="icon-forward-arrow" style="font-size: 10px; position: relative; top: -1px;"></i>'] = 'Explorer la solution  <i class="icon-forward-arrow" style="font-size: 10px; position: relative; top: -1px;"></i>';
 $lang['Explore solution %s'] = 'Explorer la solution %s';

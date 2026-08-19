@@ -67,7 +67,7 @@
 {/if}
   {if isset($LANGUAGE_INFO)}
     <div class="container-fluid language-available">
-      <a href="{$LANGUAGE_INFO.url}"><i class="icon-langage"></i> {$LANGUAGE_INFO.label}</a>
+      <a href="{$LANGUAGE_INFO.url}" class="non-decorated-text"><i class="icon-langage"></i> {$LANGUAGE_INFO.label}</a>
     </div>
   {/if}
 

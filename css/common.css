@@ -612,6 +612,10 @@ Text Color
   text-decoration: none !important;
 }
 
+.underlined-text {
+  text-decoration: underline !important;
+}
+
 .strong-text {
   font-weight: 645 !important;
 }

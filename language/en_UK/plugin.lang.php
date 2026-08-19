@@ -241,6 +241,7 @@ $lang['Get Involved'] = 'Get Involved';
 $lang['Send us a testimonial'] = 'Send us a testimonial';
 $lang['Choose your setup'] = 'Choose your setup';
 $lang['Show more'] = 'Show more';
+$lang['Learn more'] = 'Learn more';
 
 $lang['pcom_pricing_page_switch_cloud2'] = 'Piwigo SaaS, hosting & support';
 $lang['pcom_pricing_page_switch_self_hosted'] = 'Piwigo on your own server';

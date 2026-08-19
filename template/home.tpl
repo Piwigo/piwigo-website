@@ -55,7 +55,7 @@
             <h2 class="h2-top-page text-center mb-2">{'porg_home_ways_to_use_title'|translate}</h2>
             <p class="sub-h2-top-page text-center dark-text">{'porg_home_ways_to_use_desc'|translate}</p>
           </div>
-          <div class="col-md-6 text-center mb-4 d-flex ways-to-use-card-col-l">
+          <div class="col-lg-6 text-center mb-4 d-flex ways-to-use-card-col-l">
             <div class="way-to-use-card w-100 d-flex flex-column">
               <div class="icon-wrapper pink-bg mx-auto">
                 <i class="pink-text icon-cloud-oneplace"></i>
@@ -69,11 +69,13 @@
                 <li>{'porg_home_ways_to_use_cloud_li_4'|translate}</li>
                 <li>{'porg_home_ways_to_use_cloud_li_5'|translate}</li>
               </ul>
-              {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'porg_home_btn1'|translate} href="{$PORG_ROOT}{$URL.signup}" class='mt-auto'}
-              {include file='template/include/buttons/button.tpl' variant='menu_btn_green' label={'Contact us'|translate} href="{$PORG_ROOT}{$URL.get_piwigo}#cloud"}
+              <div class="mt-auto d-flex flex-column flex-sm-row justify-content-center align-items-center" style="gap: 10px;">
+                {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'porg_home_btn1'|translate} href="{$PORG_ROOT}{$URL.signup}"}
+                {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'Learn more'|translate} href="{$PORG_ROOT}{$URL.get_piwigo}#cloud" class="learn-more-btn"}
+              </div>
             </div>
           </div>
-          <div class="col-md-6 text-center mb-4 d-flex ways-to-use-card-col-r">
+          <div class="col-lg-6 text-center mb-4 d-flex ways-to-use-card-col-r">
             <div class="way-to-use-card w-100 d-flex flex-column">
               <div class="icon-wrapper orange-bg mx-auto">
                 <i class="orange-text icon-self-host"></i>
@@ -87,8 +89,10 @@
                 <li>{'porg_home_ways_to_use_self_hosted_li_4'|translate}</li>
                 <li>{'porg_home_ways_to_use_self_hosted_li_5'|translate}</li>
               </ul>
-              {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label="{'Download'|translate} Piwigo" href="https://piwigo.org/download/dlcounter.php?code=latest" class='mt-auto'}
-              {include file='template/include/buttons/button.tpl' variant='menu_btn_green' label={'Contact us'|translate} href="{$PORG_ROOT}{$URL.get_piwigo}self-hosted"}
+              <div class="mt-auto d-flex flex-column flex-sm-row justify-content-center align-items-center" style="gap: 10px;">
+                {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label="{'Download'|translate} Piwigo" href="https://piwigo.org/download/dlcounter.php?code=latest"}
+                {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'Learn more'|translate} href="{$PORG_ROOT}{$URL.get_piwigo}self-hosted" class="learn-more-btn"}
+              </div>
             </div>
           </div>
           <div class="col-12 text-center d-flex">
@@ -136,7 +140,7 @@
                 </div>
               </div>
             </div>
-            <p class="text-center pink-text">{'porg_home_road_end'|translate}</p>
+            <p class="text-center pink-text strong-text">{'porg_home_road_end'|translate}</p>
           </div>
           <div class="col-md-6 responsive-image d-flex flex-column justify-content-center ways-to-use-card-col-r">
             <img class="img-fluid" src="{$PORG_ROOT_URL}images/home/road.webp" alt="Piwigo screenshot">
@@ -537,7 +541,7 @@
                 </div>
               </div>
             </div>
-            <p class="text-center pink-text">{'porg_home_who_end'|translate}</p>
+            <p class="text-center pink-text strong-text">{'porg_home_who_end'|translate}</p>
           </div>
           <div class="col-md-6 responsive-image d-flex flex-column justify-content-center ways-to-use-card-col-r">
             <img class="img-fluid d-none d-md-block" src="{$PORG_ROOT_URL}images/home/who.webp" alt="Piwigo screenshot">

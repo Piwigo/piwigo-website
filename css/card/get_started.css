@@ -26,6 +26,8 @@ CTA
 .get-started-subtitle {
   max-width: 560px;
   line-height: 1.35;
+  z-index: 3;
+  position: relative;
 }
 
 .highlight-wrap {
@@ -43,13 +45,13 @@ CTA
   transform: translate(-50%, -52%);
   width: 100%;
   pointer-events: none;
-  z-index: 0;
+  z-index: 1;
 }
 
 .get-started-subtitle .highlight {
   position: relative;
   display: inline-block;
-  z-index: 1;
+  z-index: 2;
   font-weight: 550;
 }
 

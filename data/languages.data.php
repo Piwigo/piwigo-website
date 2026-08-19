@@ -15,16 +15,16 @@ $porg_subdomains = array(
 );
 
 $porg_languages_switch = array(
-  'en' => 'Piwigo.org is also available in English',
-  'de' => 'Piwigo.org ist auch auf Deutsch verfügbar',
-  'fr' => 'Piwigo.org est aussi disponible en Français',
-  'br' => 'Piwigo.org também está disponível em Português Brasil',
-  'ru' => 'Piwigo.org также доступен на русском языке',
-  'da' => 'Piwigo.org er også tilgængelig på dansk',
-  'nl' => 'Piwigo.org is beschikbaar in het Nederlands',
-  'es' => 'Piwigo.org está disponible en español',
-  'it' => 'Piwigo.org è disponibile anche in italiano',
-  'pl' => 'Piwigo.org jest również dostępny w języku polskim',
+  'en' => 'Piwigo.org is also available in <span class="underlined-text">English</span>',
+  'de' => 'Piwigo.org ist auch auf <span class="underlined-text">Deutsch</span> verfügbar',
+  'fr' => 'Piwigo.org est aussi disponible en <span class="underlined-text">Français</span>',
+  'br' => 'Piwigo.org também está disponível em <span class="underlined-text">Português Brasil</span>',
+  'ru' => 'Piwigo.org также доступен на <span class="underlined-text">русском</span> языке',
+  'da' => 'Piwigo.org er også tilgængelig på <span class="underlined-text">dansk</span>',
+  'nl' => 'Piwigo.org is beschikbaar in het <span class="underlined-text">Nederlands</span>',
+  'es' => 'Piwigo.org está disponible en <span class="underlined-text">español</span>',
+  'it' => 'Piwigo.org è disponibile anche in <span class="underlined-text">italiano</span>',
+  'pl' => 'Piwigo.org jest również dostępny w języku <span class="underlined-text">polskim</span>',
 );
 
 $porg_languages = array(

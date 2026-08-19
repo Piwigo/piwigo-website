@@ -5,7 +5,7 @@
         <div class="get-started-copy">
           <h1 class="mb-2">{'Get started'|translate}</h1>
           <p class="get-started-subtitle mb-4 mb-md-5">
-            {'Get started CTA subtitle part 1'|translate}
+            <span style="z-index: 3; position: relative;">{'Get started CTA subtitle part 1'|translate}</span>
             <span class="highlight-wrap">
               <img class="highlight-circle" src="{$PORG_ROOT_URL}images/get_started/circle.svg" alt="">
               <span class="highlight">{'Get started CTA subtitle part 2'|translate}</span>
