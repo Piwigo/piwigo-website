@@ -237,6 +237,7 @@ $lang['Get Involved'] = 'Participer';
 $lang['Send us a testimonial'] = 'Envoyez-nous un témoignage';
 $lang['Choose your setup'] = 'Choisissez votre configuration';
 $lang['Show more'] = 'Afficher plus';
+$lang['Learn more'] = 'En savoir plus';
 
 $lang['pcom_pricing_page_switch_cloud2'] = 'Piwigo en SaaS, hébergement et support';
 $lang['pcom_pricing_page_switch_self_hosted'] = 'Piwigo sur votre propre serveur';
