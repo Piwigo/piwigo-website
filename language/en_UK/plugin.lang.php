@@ -282,6 +282,7 @@ $lang['Dark mode'] = 'Dark mode';
 $lang['Activities'] = 'Activities';
 $lang['User manager'] = 'User manager';
 $lang['Plugin manager'] = 'Plugin manager';
+$lang['updated'] = 'updated';
 
 // Piwigo 13
 $lang['Album manager'] = 'Album manager';

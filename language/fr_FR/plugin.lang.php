@@ -281,6 +281,7 @@ $lang['Dark mode'] = 'Mode sombre';
 $lang['Activities'] = 'Activités';
 $lang['User manager'] = 'Gestionnaire d\'utilisateurs';
 $lang['Plugin manager'] = 'Gestionnaire de plugins';
+$lang['updated'] = 'mis à jour';
 
 // Piwigo 13
 $lang['Album manager'] = 'Gestionnaire d\'albums';
