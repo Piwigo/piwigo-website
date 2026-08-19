@@ -253,6 +253,8 @@ $lang['The choice of Piwigo'] = 'Le choix de Piwigo';
 $lang['Benefits'] = 'Avantages';
 
 $lang['Older versions'] = 'Anciennes versions';
+$lang['Download details and older versions'] = 'Détails de téléchargement et anciennes versions';
+$lang['See the full page of Release note %s'] = 'Voir la page complète des notes de version %s';
 
 /* Pages des études de cas */
 $lang['porg_cases1_title'] = 'Wessex Water a choisi Piwigo pour la gestion de ses actifs numériques';

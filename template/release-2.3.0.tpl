@@ -295,7 +295,7 @@
             {foreach $download_versions as $download_version}
               <tr>
                 <td class="text-version">{$download_version.version} {if $download_version@first}<span
-                    class="btn-menu badge-latest">Latest</span>{/if}</td>
+                    class="btn-menu badge-latest">{'Latest'|translate}</span>{/if}</td>
                 <td class="text-checksum">{$download_version.md5sum}</td>
                 <td class="release-date">{$download_version.released_on}</td>
                 <td class="text-end">

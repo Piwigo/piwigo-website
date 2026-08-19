@@ -366,12 +366,17 @@
             {foreach $download_versions as $download_version}
               <tr>
                 <td class="text-version">{$download_version.version} {if $download_version@first}<span
-                    class="btn-menu badge-latest">Latest</span>{/if}</td>
+                    class="btn-menu badge-latest">{'Latest'|translate}</span>{/if}</td>
                 <td class="text-checksum">{$download_version.md5sum}</td>
                 <td class="release-date">{$download_version.released_on}</td>
                 <td class="text-end">
                   <a href="{$download_version.download_url}" class="orange-text release-date">
                     <i class="icon-download pe-1"></i>{'Download'|translate}
+                  </a>
+                </td>
+                <td class="text-end">
+                  <a href="{$releases_url}-{$download_version.version}" class="orange-text release-date">
+                    <i class="icon-info-circled-1 pe-1"></i><span class="d-none d-md-inline">{'Details'|translate}</span>
                   </a>
                 </td>
               </tr>
@@ -383,6 +388,11 @@
               <td class="text-end">
                 <a href="//piwigo.org/download/dlcounter.php?code={$version}" class="orange-text release-date">
                   <i class="icon-download pe-1"></i>{'Download'|translate}
+                </a>
+              </td>
+              <td class="text-end">
+                <a href="{$releases_url}-{$version}" class="orange-text release-date">
+                  <i class="icon-info-circled-1 pe-1"></i><span class="d-none d-md-inline">{'Details'|translate}</span>
                 </a>
               </td>
             </tr>

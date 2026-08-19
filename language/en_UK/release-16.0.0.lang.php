@@ -20,7 +20,6 @@ $lang['pwg_org_release16_menu_activity_log_filter'] = 'Activity logs filtering';
 $lang['pwg_org_release16_menu_update_img_batches'] = 'Update image in batches';
 $lang['pwg_org_release16_menu_expert_mode'] = 'Expert mode';
 $lang['pwg_org_release16_menu_technical_features'] = 'Technical features';
-$lang['pwg_org_release16_menu_download_details'] = 'Download and details';
 
 // Content
 $lang['pwg_org_release16_menu_title_std_pages'] = 'Standard pages';

@@ -20,4 +20,6 @@ $lang['If you\'re running <b>Piwigo %s</b> you can also download the <b>%s_to_%s
 $lang['Once you have extracted the files, transfer them onto your web server with a FTP client over your Piwigo %s installation.'] = 'Once you have extracted the files, transfer them onto your web server with a FTP client over your Piwigo %s installation.';
 $lang['No database upgrade is required.'] = 'No database upgrade is required.';
 $lang['If you are running a version older than %s and do not want to use the automatic upgrade, then follow the <b>manual upgrade</b>.'] = 'If you are running a version older than %s and do not want to use the automatic upgrade, then follow the <b>manual upgrade</b>.';
+$lang['pwg_org_release16_menu_download_details'] = 'Download and details';
+$lang['Latest'] = 'Latest';
 ?>
