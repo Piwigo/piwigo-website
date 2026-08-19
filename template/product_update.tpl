@@ -59,7 +59,7 @@
           <div class="timeline-week">
             <div class="medium-gray-text timeline-week-header">
               <span class="dot"></span>
-              <h3 class="h3-mobile mb-0">{'Week %s'|translate:$week.weeknumber}  • <span class="p-testimonial">{$week.start_date} {'to'|translate} {$week.end_date}</span></h3>
+              <h3 class="h3-mobile mb-0">{'Week %s'|translate:$week.weeknumber}  • <span class="p-testimonial">{'%s to %s'|translate:$week.start_date:$week.end_date}</span></h3>
             </div>
 
             {foreach from=$commit_type_labels key=commit_type item=commit_label}
@@ -78,7 +78,7 @@
                 {if $first_commit_date == $last_commit_date}
                   {include file='template/include/card/commit_card.tpl' type='commits' meta=$commit_label date=$first_commit_date commits=$type_commits}
                 {else}
-                  {include file='template/include/card/commit_card.tpl' type='commits' meta=$commit_label date="{'From'|translate} {$last_commit_date} {'to'|translate} {$first_commit_date}" commits=$type_commits}
+                  {include file='template/include/card/commit_card.tpl' type='commits' meta=$commit_label date="{'From %s to %s'|translate:$last_commit_date:$first_commit_date}" commits=$type_commits}
                 {/if}
               {/if}
             {/foreach}
