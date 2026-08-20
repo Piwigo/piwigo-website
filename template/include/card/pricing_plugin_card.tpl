@@ -8,8 +8,8 @@
 			{include
 				file="template/include/buttons/button.tpl"
 				variant="menu_btn_white"
-				href="https://rightful-baritone-cfe.notion.site/List-of-plugins-and-features-by-plan-2024-cb81ecd2a398442d9e5056cd2a380588"
-				label={'pricing tooltip_list_vip'|translate} target="_blank" rel="noopener" 
+				href="{$PORG_ROOT}{$URL.plugins_by_plan}{$URL_PARAM_SEPARATOR}plan=selfhosted&display=self-hosted"
+				label={'pricing tooltip_list_vip'|translate}
 			}
 		</div>
 	</div>

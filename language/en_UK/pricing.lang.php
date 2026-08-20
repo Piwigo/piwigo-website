@@ -35,9 +35,7 @@ $lang['pricing excl_month'] = '/ month';
 $lang['1 administrator'] = '1 administrator';
 $lang['pro storage'] = '10GB storage';
 $lang['format only'] = 'Image, video & audio files only';
-$lang['plugins to customize2'] = 'Over 95 plugins to customize your Piwigo';
-$lang['plugins to customize3'] = 'Over 108 plugins to customize your Piwigo';
-$lang['plugins to customize4'] = 'Over 111 plugins to customize your Piwigo';
+$lang['plugins to customize'] = 'Over %s plugins to customize your Piwigo';
 $lang['Host'] = 'Host your gallery on a secure cloud';
 
 $lang['3 administrators'] = '3 administrators';
@@ -46,7 +44,7 @@ $lang['team storage'] = '100GB storage';
 $lang['5 administrators'] = '5 administrators';
 $lang['entreprise storage'] = '250GB storage';
 $lang['vip storage'] = '1000GB storage';
-$lang['Access_doc'] = 'Access to the documentation and the community forum';
+$lang['Access_doc'] = 'Access to the <a href="https://doc.piwigo.org" class="text-decoration-underline text-inherit" target="_blank" rel="noopener">documentation</a> and the <a href="https://piwigo.org/forum/" class="text-decoration-underline text-inherit" target="_blank" rel="noopener">community forum</a>';
 $lang['Response_48'] = 'Response time: 48 business hours';
 
 $lang['Response_24'] = 'Response time: 24 business hours';

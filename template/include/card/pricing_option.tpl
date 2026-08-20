@@ -48,11 +48,7 @@
 									class="text-decoration-underline text-inherit">{$feature.text|translate}</a>
 								<i class="icon-rounded-warning text-info-light"></i>
 
-							{elseif $feature.text|lower|strpos:"documentation" !== false}
-								{assign var="translated_text" value=$feature.text|translate}
-								{$translated_text|replace:'documentation':"<a href='$DOC_LINK' class='text-decoration-underline text-inherit' target='_blank' rel='noopener'>documentation</a>"|replace:'community forum':"<a href='$FORUM_LINK' class='text-decoration-underline text-inherit' target='_blank' rel='noopener'>community forum</a>"}
-
-							{elseif $feature.text|lower|strpos:"support included" !== false}
+							{elseif isset($feature.subject) && $feature.subject == 'selfhosted_plugins'}
 								<span class="custom-link-container js-plugin-tooltip-trigger d-flex align-items-top"
 									style="cursor: pointer;">
 									<span class="link-text">{$feature.text|translate}</span>
@@ -62,8 +58,8 @@
 									</div>
 								</span>
 
-							{elseif $smarty.foreach.features_loop.last || $feature.text|lower|strpos:"plugins" !== false}
-								<a href="{$PORG_ROOT}{$URL.plugins}{$URL_PARAM_SEPARATOR}plan={if isset($plan_id) && $plan_id != 'free'}selfhosted&display=self-hosted{elseif isset($plan.id) && $plan.id != 'free'}selfhosted{else}cloud{/if}"
+							{elseif isset($feature.subject) && $feature.subject == 'plugins'}
+								<a href="{$PORG_ROOT}{$URL.plugins_by_plan}{$URL_PARAM_SEPARATOR}plan={if isset($plan_id) && $plan_id != 'free'}selfhosted&display=self-hosted{elseif isset($plan.id) && $plan.id != 'free'}selfhosted{else}cloud{/if}"
 									class="text-decoration-underline text-inherit">
 									{$feature.text|translate}
 								</a>
@@ -75,7 +71,7 @@
 						{if isset($feature.info) && $feature.info}
 							<div class="info-icon-container ms-auto">
 								<i class="icon-rounded-warning text-info-light flex-shrink-0"></i>
-								{if $smarty.foreach.features_loop.iteration == 4}
+								{if isset($feature.subject) && $feature.subject == 'storage'}
 									<div class="storage-hover-popover shadow-lg">
 										{include file="template/include/card/storage_card_display.tpl"}
 									</div>
@@ -93,7 +89,7 @@
 		<div class="features-list text-start bottom-features-list">
 			<p class="fw-bold small mb-3 text-dark">{'pcom_pricing_page_features_services'|translate}</p>
 			<ul class="list-unstyled mb-0">
-				{foreach from=$services item=service}
+				{foreach from=$services item=service name=services_loop}
 					<li class="d-flex align-items-start mb-3">
 						<i class="icon-check-1 me-2 mt-1"></i>
 
@@ -104,7 +100,7 @@
 									<i class="icon-rounded-warning text-info-light flex-shrink-0"></i>
 								</a>
 
-							{elseif $service.text|lower|strpos:"custom graphic personalisation" !== false}
+							{elseif isset($service.subject) && $service.subject == 'personalisation'}
 								<span class="custom-link-container js-custom-tooltip-trigger d-flex align-items-center"
 									style="cursor: pointer;">
 									<span class="link-text">{$service.text|translate}</span>

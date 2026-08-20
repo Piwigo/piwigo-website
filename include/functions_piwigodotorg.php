@@ -28,7 +28,7 @@ function porg_get_pages()
     'mobile-applications' => 'Mobile applications',
     'product_update' => 'Product Updates',
     'signin' => 'Signin',
-    'plugins' => 'Plugins',
+    'plugins-by-plan' => 'Plugins by plan',
     'cases' => 'Cases studies',
     'case-study-cotentin' => 'Case Study: Cotentin',
     'case-study-ect' => 'Case Study: ECT',

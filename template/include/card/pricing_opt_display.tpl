@@ -4,7 +4,7 @@
 
 	<div id="pricing-cloud-content" class="pricing-content-wrapper">
 		<div class="pricing-main-grid">
-			{foreach from=$PLANS item=plan}
+			{foreach from=$PLANS item=plan name=plans_loop}
 				<div class="pricing-grid-item">
 					{include
 						file="template/include/card/pricing_option.tpl"
@@ -18,7 +18,8 @@
 						link_try="#"
 						link_trial="#"
 						btn_link_try="{$PORG_ROOT}{$URL.signup}"
-            btn_link_trial="{$PORG_ROOT}{$URL.signup}"
+						btn_link_trial="{$PORG_ROOT}{$URL.signup}"
+						card_id=$smarty.foreach.plans_loop.iteration
 					}
 				</div>
 			{/foreach}
@@ -27,7 +28,7 @@
 
 	<div id="pricing-selfhosted-content" class="pricing-content-wrapper" style="display: none;">
 		<div class="pricing-main-grid">
-			{foreach from=$SUPPORT_PLANS key=plan_id item=plan}
+			{foreach from=$SUPPORT_PLANS key=plan_id item=plan name=support_plans_loop}
 				<div class="pricing-grid-item">
 					{if $plan_id == 'free'}
 						{include
@@ -39,7 +40,8 @@
 							features=$plan.features
 							services=[]
 							link_try=$DOC_LINK
-							label_try={'View Documentation'|translate} link_trial=$FORUM_LINK label_trial={'Visit Community Forum'|translate} btn_try={'pcom_pricing_download_piwigo'|translate} btn_trial={'pcom_pricing_download_piwigo'|translate} btn_link_try=$DOWNLOAD_LINK btn_link_trial=$DOWNLOAD_LINK target="_blank" 
+							label_try={'View Documentation'|translate} link_trial=$FORUM_LINK label_trial={'Visit Community Forum'|translate} btn_try={'pcom_pricing_download_piwigo'|translate} btn_trial={'pcom_pricing_download_piwigo'|translate} btn_link_try=$DOWNLOAD_LINK btn_link_trial=$DOWNLOAD_LINK target="_blank"
+						card_id=5
 						}
 					{else}
 						{include
@@ -52,6 +54,7 @@
 							services=[]
 							link_try=$CONTACT_URL
 							label_try={'pcom_pricing_page_contact_us'|translate} link_trial=$CONTACT_URL label_trial={'pcom_pricing_page_contact_us'|translate} btn_try={'pcom_pricing_page_contact_us'|translate} btn_trial={'pcom_pricing_page_contact_us'|translate} btn_link_try=$CONTACT_URL btn_link_trial=$CONTACT_URL target="_blank" 
+							card_id=$smarty.foreach.support_plans_loop.iteration+4
 						}
 					{/if}
 				</div>

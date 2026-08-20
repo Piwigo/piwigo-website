@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/pages/plugins.css">
+<link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/pages/plugins_by_plan.css">
 <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL}css/buttons/pricing_switch.css">
 
 <section class="plugins-title mb-0">
