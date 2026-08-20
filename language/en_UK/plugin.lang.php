@@ -178,13 +178,9 @@ $lang['language_zh_TW'] = 'Traditional Chinese';
 /* FOOTER */
 $lang['Footer Piwigo description'] = 'Piwigo is open source photo management software. Organize, manage and share your photos securely online. Built for organizations, teams and individuals.';
 $lang['Footer Button 1 Plan a demo'] = 'Plan a demo';
-$lang['Footer Button 3 Meet our users'] = 'Meet our users';
 $lang['Footer Button 4 Subscribe to newsletter'] = 'Subscribe to newsletter';
 $lang['Footer legal 1 Privacy Policy'] = 'Privacy Policy';
-$lang['Footer legal 2 Cookie Policy'] = 'Cookie Policy';
-$lang['Footer legal 3 Legal Notice'] = 'Legal Notice';
 $lang['Footer legal 4 Terms of Use'] = 'Terms of Use';
-$lang['Footer legal 5 GDPR'] = 'GDPR';
 $lang['Footer legal 6 DPA'] = 'DPA';
 
 /* form */
