@@ -27,7 +27,7 @@ $lang['Get started btn2'] = 'Démandez une démo !';
 
 /* product sub menu */
 $lang['Features'] = 'Fonctionnalités';
-$lang['Import & Centralize'] = 'Importer & centralisez';
+$lang['Import & Centralize'] = 'Importez & centralisez';
 $lang['Import & Centralize desc'] = 'Rassemblez tous vos médias';
 $lang['Organize your media'] = 'Organisez vos médias';
 $lang['Organize your media desc'] = 'Structurez votre photothèque';
@@ -37,7 +37,7 @@ $lang['Share & Collaborate'] = 'Partagez & collaborez';
 $lang['Share & Collaborate desc'] = 'Gérez les droits et les accès';
 $lang['Customize & Extend'] = 'Personnaliser & étendre';
 $lang['Customize & Extend desc'] = 'Faites correspondre à votre besoin';
-$lang['Measure & Monitor'] = 'Mesurer & suivre';
+$lang['Measure & Monitor'] = 'Mesurez & suivez';
 $lang['Measure & Monitor desc'] = 'Suivez l\'activité et l\'utilisation';
 $lang['Security & Privacy'] = 'Sécurité & vie privée';
 $lang['Security & Privacy desc'] = 'Gardez le contrôle';
@@ -222,7 +222,6 @@ $lang['%s to %s'] = 'Du %s au %s';
 $lang['From %s to %s'] = 'Du %s au %s';
 $lang['Your way.'] = 'À votre manière.';
 $lang['Week %s'] = 'Semaine %s';
-$lang['Import & Centralize'] = 'Importer & centraliser';
 $lang['Explore solution  <i class="icon-forward-arrow" style="font-size: 10px; position: relative; top: -1px;"></i>'] = 'Explorer la solution  <i class="icon-forward-arrow" style="font-size: 10px; position: relative; top: -1px;"></i>';
 $lang['Explore solution %s'] = 'Explorer la solution %s';
 $lang['Start your 30-day free trial'] = 'Essayez gratuitement pendant 30 jours';
