@@ -36,7 +36,7 @@
       {include file='template/include/sub_menu/horizontal_menu_button.tpl' is_selected=false label={'Organize your media'|translate} feature_key='organize'}
       {include file='template/include/sub_menu/horizontal_menu_button.tpl' is_selected=false label={'Search & Find'|translate} feature_key='search'}
       {include file='template/include/sub_menu/horizontal_menu_button.tpl' is_selected=false label={'Share & Collaborate'|translate} feature_key='share'}
-      {include file='template/include/sub_menu/horizontal_menu_button.tpl' is_selected=false label={'Customize your gallery'|translate} feature_key='customize'}
+      {include file='template/include/sub_menu/horizontal_menu_button.tpl' is_selected=false label={'Customize & Extend'|translate} feature_key='customize'}
       {include file='template/include/sub_menu/horizontal_menu_button.tpl' is_selected=false label={'Measure & Monitor'|translate} feature_key='measure'}
       {include file='template/include/sub_menu/horizontal_menu_button.tpl' is_selected=false label={'Security & Privacy'|translate} feature_key='security'}
     </div>
