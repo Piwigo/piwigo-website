@@ -3,7 +3,7 @@ $lang['page_meta_title'] = 'Image library software for travel and tourism indust
 $lang['page_meta_description'] = 'Image library and digital asset management software for travel and tourism industry: tourist information centers, hotels, museums, ski resorts, etc.';
 
 $lang['use cases tourism header title'] = 'Photo management software for <span class="orange-text">tourism organizations</span>';
-$lang['use cases tourism header description'] = 'Manage, organize and share your destination’s photos, videos and marketing assets from one central library.<br><br>Used by tourism boards, museums, resorts, hotels and visitor attractions worldwide.';
+$lang['use cases tourism header description'] = 'Manage, organize and share your destination\'s photos, videos and marketing assets from one central library.<br><br>Used by tourism boards, museums, resorts, hotels and visitor attractions worldwide.';
 
 $lang['use cases tourism thumbs title'] = 'Who uses Piwigo?';
 $lang['use cases tourism thumbs description'] = 'Whether you manage a destination, a tourism business or a cultural venue, Piwigo helps you centralize and share your visual assets.';
@@ -51,7 +51,7 @@ $lang['use cases tourism stacks card4 description'] = 'Unlike many proprietary p
 $lang['use cases tourism stacks card5 description'] = 'Piwigo has been continuously developed for more than 20 years and is trusted by organizations worldwide.';
 
 $lang['use cases tourism host title'] = 'Host it your way';
-$lang['use cases tourism host description'] = 'Choose the deployment model that fits your organization’s requirements.<br>Whether you prefer a fully managed cloud service or complete control over your infrastructure, Piwigo gives you the flexibility to choose.';
+$lang['use cases tourism host description'] = 'Choose the deployment model that fits your organization\'s requirements.<br>Whether you prefer a fully managed cloud service or complete control over your infrastructure, Piwigo gives you the flexibility to choose.';
 $lang['use cases tourism host cloud'] = 'Fully managed by the Piwigo team.';
 $lang['use cases tourism host self'] = 'Deploy Piwigo on your own infrastructure.';
 

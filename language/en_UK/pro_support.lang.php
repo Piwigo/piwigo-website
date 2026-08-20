@@ -3,7 +3,7 @@ $lang['page_meta_title'] = 'Professional support, from the people behind Piwigo'
 $lang['page_meta_description'] = 'Our support team helps organizations deploy, configure and make the most of Piwigo.';
 
 $lang['porg_pro_support_header_title'] = '<span class="orange-text">Professional support</span> from the people behind Piwigo';
-$lang['porg_pro_support_header_description'] = 'Whether you’re using Piwigo Cloud or hosting Piwigo on your own infrastructure, our professional support helps organizations deploy, configure and make the most of Piwigo.<br><br><span class="strong-text">Real people. Real product expertise. Direct access to the team behind Piwigo.</span>';
+$lang['porg_pro_support_header_description'] = 'Whether you\'re using Piwigo Cloud or hosting Piwigo on your own infrastructure, our professional support helps organizations deploy, configure and make the most of Piwigo.<br><br><span class="strong-text">Real people. Real product expertise. Direct access to the team behind Piwigo.</span>';
 $lang['porg_pro_support_header_btn'] = 'Compare Cloud and Self-hosted offers';
 
 $lang['porg_pro_support_how_title'] = 'How to get help with Piwigo';
@@ -42,9 +42,9 @@ $lang['porg_support_deploy_self_hosted_btn'] = 'View support plans on self-hoste
 $lang['porg_support_intro_title_left'] = 'Support from the people who build Piwigo';
 $lang['porg_support_intro_title_right_1'] = 'Real people.';
 $lang['porg_support_intro_title_right_2'] = 'Real product expertise.';
-$lang['porg_support_intro_p1'] = 'When you contact Piwigo, you won’t be passed from one support tier to another or left talking to a generic help desk: you’ll talk directly to the people who know Piwigo best.';
+$lang['porg_support_intro_p1'] = 'When you contact Piwigo, you won\'t be passed from one support tier to another or left talking to a generic help desk: you\'ll talk directly to the people who know Piwigo best.';
 $lang['porg_support_intro_p2'] = 'The same team that designs, develops and maintains the product also helps customers solve problems, answer questions and make the most of their deployment.';
-$lang['porg_support_intro_p3'] = 'That means quicker answers, fewer handovers and advice grounded in real product expertise. That’s what makes Piwigo support different.';
+$lang['porg_support_intro_p3'] = 'That means quicker answers, fewer handovers and advice grounded in real product expertise. That\'s what makes Piwigo support different.';
 $lang['porg_support_intro_feat1'] = 'Product experts, not outsourced agents';
 $lang['porg_support_intro_feat2'] = 'Direct access to the people who build Piwigo';
 $lang['porg_support_intro_feat3'] = 'Advice tailored to your organization';
@@ -57,7 +57,7 @@ $lang['porg_support_comment_title'] = 'What our customers say';
 
 $lang['porg_support_help_title'] = 'What our team can help you with';
 $lang['porg_support_help_card1_title'] = 'Getting started';
-$lang['porg_support_help_card1_desc'] = 'You’re deploying Piwigo for the first time or onboarding a new team.';
+$lang['porg_support_help_card1_desc'] = 'You\'re deploying Piwigo for the first time or onboarding a new team.';
 $lang['porg_support_help_card1_li1'] = 'Structuring your albums';
 $lang['porg_support_help_card1_li2'] = 'Setting up properties and tags';
 $lang['porg_support_help_card1_li3'] = 'Managing users and permissions';

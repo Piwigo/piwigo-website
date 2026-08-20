@@ -4,7 +4,7 @@ $lang['page_meta_description'] = 'Help shape the future of Piwigo with code cont
 
 $lang['porg_get_involved_title'] = 'Help <span class="orange-text">shape the future</span> of Piwigo';
 $lang['porg_get_involved_desc1'] = 'Piwigo has been built with its community since 2002.<br>Whether you write code, translate the interface, report bugs or help other users, every contribution helps make Piwigo better.';
-$lang['porg_get_involved_desc2'] = 'You don’t have to be a developer to make a difference.';
+$lang['porg_get_involved_desc2'] = 'You don\'t have to be a developer to make a difference.';
 
 $lang['porg_get_involved_help_title'] = 'Help improve Piwigo';
 $lang['porg_get_involved_help_desc'] = 'Help us make every release more reliable and easier to use.<br>Whether you test upcoming versions, report bugs or suggest new ideas, your feedback helps improve Piwigo for everyone.';
@@ -21,7 +21,7 @@ $lang['porg_get_involved_trans_li2'] = 'Review and improve existing translations
 $lang['porg_get_involved_trans_btn'] = 'Help translate Piwigo';
 
 $lang['porg_get_involved_dev_title'] = 'Develop plugins and themes';
-$lang['porg_get_involved_dev_desc'] = '<span class="orange-text strong-text">Piwigo’s ecosystem is one of its greatest strengths.</span><br><br>Create new plugins, maintain existing ones or build themes that benefit the whole community.';
+$lang['porg_get_involved_dev_desc'] = '<span class="orange-text strong-text">Piwigo\'s ecosystem is one of its greatest strengths.</span><br><br>Create new plugins, maintain existing ones or build themes that benefit the whole community.';
 $lang['porg_get_involved_dev_li1'] = 'Create new plugins and themes';
 $lang['porg_get_involved_dev_li2'] = 'Update existing plugins and themes';
 $lang['porg_get_involved_dev_li3'] = 'Improve compatibility';
@@ -29,7 +29,7 @@ $lang['porg_get_involved_dev_li4'] = 'Publish your work';
 $lang['porg_get_involved_dev_btn'] = 'Developer documentation';
 
 $lang['porg_get_involved_users_title'] = 'Help other users';
-$lang['porg_get_involved_users_desc'] = 'Thousands of users rely on the community forum every day.<br><br>If you know the answer to someone’s question, your experience can help others get started faster.';
+$lang['porg_get_involved_users_desc'] = 'Thousands of users rely on the community forum every day.<br><br>If you know the answer to someone\'s question, your experience can help others get started faster.';
 $lang['porg_get_involved_users_li1'] = 'Answer questions';
 $lang['porg_get_involved_users_li2'] = 'Share best practices';
 $lang['porg_get_involved_users_li3'] = 'Help troubleshoot problems';
@@ -37,7 +37,7 @@ $lang['porg_get_involved_users_li4'] = 'Welcome new members';
 $lang['porg_get_involved_users_btn'] = 'Visit the forum';
 
 $lang['porg_get_involved_finance_title'] = 'Support Piwigo financially';
-$lang['porg_get_involved_finance_desc'] = 'Piwigo is developed by a small team and funded primarily through Piwigo Cloud subscriptions and professional services.<br><br>By becoming a customer, you directly support the continued development of the open source project while benefiting from additional services and support.<br><br>If you use the self-hosted edition and want to support the project, you can also make a donation.<br><br>Whether you’re an individual or an organization, every contribution helps us maintain, improve and evolve Piwigo for everyone.';
+$lang['porg_get_involved_finance_desc'] = 'Piwigo is developed by a small team and funded primarily through Piwigo Cloud subscriptions and professional services.<br><br>By becoming a customer, you directly support the continued development of the open source project while benefiting from additional services and support.<br><br>If you use the self-hosted edition and want to support the project, you can also make a donation.<br><br>Whether you\'re an individual or an organization, every contribution helps us maintain, improve and evolve Piwigo for everyone.';
 $lang['porg_get_involved_finance_btn1'] = 'Make a donation';
 $lang['porg_get_involved_finance_btn2'] = 'View our pricing';
 

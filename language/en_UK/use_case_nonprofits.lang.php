@@ -38,15 +38,15 @@ $lang['use cases association how card2 description'] = 'Quickly find the right p
 $lang['use cases association how card3 title'] = 'Share media with members and partners';
 $lang['use cases association how card3 description'] = 'Provide dedicated access to volunteers, sponsors, partner organizations, journalists or local chapters.<br><br>Control exactly who can view, upload, download or manage your visual assets.';
 $lang['use cases association how card4 title'] = 'Publish galleries that tell your story';
-$lang['use cases association how card4 description'] = 'Publish public galleries highlighting your projects, events, competitions, exhibitions or community initiatives.<br><br>Help members, donors and supporters discover and share your organization’s work.';
+$lang['use cases association how card4 description'] = 'Publish public galleries highlighting your projects, events, competitions, exhibitions or community initiatives.<br><br>Help members, donors and supporters discover and share your organization\'s work.';
 $lang['use cases association how card5 title'] = 'Cover events and community life';
 $lang['use cases association how card5 description'] = 'Collect, organize and share photos from competitions, performances, conferences, fundraising events, volunteer activities and community initiatives.<br><br>Provide members, participants, sponsors and partners with easy access to event galleries after every event.';
-$lang['use cases association how card6 title'] = 'Preserve your organization’s history';
+$lang['use cases association how card6 title'] = 'Preserve your organization\'s history';
 $lang['use cases association how card6 description'] = 'Keep years of projects, campaigns and events safely organized in a searchable archive.<br><br>Preserve your visual heritage while making it easy for future teams to find and reuse past content.';
 
 $lang['use cases association stacks title'] = 'Why non-profit organizations choose Piwigo';
 $lang['use cases association stacks card1 description'] = 'Staff, volunteers and contributors can organize, find and share photos without technical expertise.';
-$lang['use cases association stacks card2 description'] = 'Whether you’re managing photos from local events, international projects or decades of archives, Piwigo scales with your organization’s needs.';
+$lang['use cases association stacks card2 description'] = 'Whether you\'re managing photos from local events, international projects or decades of archives, Piwigo scales with your organization\'s needs.';
 $lang['use cases association stacks card3 description'] = 'Staff, volunteers, photographers and partner organizations can all contribute to the same library while permissions keep everything under control.';
 $lang['use cases association stacks card4 description'] = 'Unlike many proprietary platforms, Piwigo does not lock you in. Export your content for free whenever you want.';
 $lang['use cases association stacks card5 description'] = 'Trusted by thousands of organizations worldwide, Piwigo has been continuously developed for more than 20 years by an independent open source project.';
@@ -55,5 +55,5 @@ $lang['use cases association host description'] = 'Whether you prefer a fully ma
 
 $lang['use cases association comments title'] = 'What non-profit organizations say about Piwigo';
 
-$lang['use cases association start title'] = 'Ready to organize your organization’s visual assets?';
+$lang['use cases association start title'] = 'Ready to organize your organization\'s visual assets?';
 $lang['use cases association start description'] = 'Join hundreds of non-profit organizations already using Piwigo to organize, manage and share their photos and videos.';

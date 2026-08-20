@@ -41,17 +41,17 @@ $lang['use cases education how card4 title'] = 'Support teaching and training';
 $lang['use cases education how card4 description'] = 'Organize image collections used for courses, training programmes and educational resources.<br><br>Give teachers, trainers and learners easy access to the right visual content whenever they need it.';
 $lang['use cases education how card5 title'] = 'Cover conferences and events';
 $lang['use cases education how card5 description'] = 'Collect, organize and share photos from conferences, seminars, open days, graduation ceremonies and scientific events.<br><br>Provide participants, speakers and partners with direct access to event galleries after each occasion.';
-$lang['use cases education how card6 title'] = 'Preserve your institution’s visual history';
-$lang['use cases education how card6 description'] = 'Keep years of photos and videos organized, searchable and accessible.<br><br>Build a long-term visual archive that documents your institution’s activities, achievements and evolution over time.';
+$lang['use cases education how card6 title'] = 'Preserve your institution\'s visual history';
+$lang['use cases education how card6 description'] = 'Keep years of photos and videos organized, searchable and accessible.<br><br>Build a long-term visual archive that documents your institution\'s activities, achievements and evolution over time.';
 
 $lang['use cases education stacks title'] = 'Why education and research organizations choose Piwigo';
 $lang['use cases education stacks card1 description'] = 'Communication teams, teachers, researchers, staff and students can organize, find and share photos without extensive training.';
-$lang['use cases education stacks card2 description'] = 'Whether you’re managing photos from school life, institutional events or research projects, Piwigo grows with your collection without becoming harder to manage.';
+$lang['use cases education stacks card2 description'] = 'Whether you\'re managing photos from school life, institutional events or research projects, Piwigo grows with your collection without becoming harder to manage.';
 $lang['use cases education stacks card3 description'] = 'Enable teachers, researchers, communication teams and external contributors to work from the same media library while maintaining full control over permissions and access rights.';
 $lang['use cases education stacks card4 description'] = 'Unlike many proprietary platforms, Piwigo does not lock you in. Export your content for free whenever you want.';
 $lang['use cases education stacks card5 description'] = 'Piwigo has been continuously developed for more than 20 years and is trusted by schools, educational institutions and research organizations worldwide.';
 
-$lang['use cases education host description'] = 'Choose the deployment model that matches your organization’s security, IT and compliance requirements. Whether you prefer a fully managed cloud service or hosting on your own infrastructure, Piwigo gives you complete flexibility.';
+$lang['use cases education host description'] = 'Choose the deployment model that matches your organization\'s security, IT and compliance requirements. Whether you prefer a fully managed cloud service or hosting on your own infrastructure, Piwigo gives you complete flexibility.';
 
 $lang['use cases education use title'] = 'See how education organizations use Piwigo';
 $lang['use cases education use description1'] = 'ICAM :<br> A shared photo library for 11 campuses';

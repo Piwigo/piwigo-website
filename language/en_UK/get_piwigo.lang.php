@@ -37,7 +37,7 @@ $lang['cloud_infrastructure_badge2'] = 'Infrastructure managed by Piwigo';
 $lang['cloud_infrastructure_badge3'] = 'Daily backups included';
 $lang['cloud_infrastructure_badge4'] = 'Redundant servers';
 $lang['cloud_infrastructure_badge5'] = 'GDPR-friendly approach';
-$lang['cloud_infrastructure_desc'] = 'Piwigo Cloud is hosted in France on dedicated servers operated directly by the Piwigo team.<br><br>We rely on OVHcloud, one of Europe’s leading infrastructure providers, while keeping full control over the platform operations, maintenance and data management.<br><br>This approach allows us to provide a simple managed service without relying on hyperscale cloud platforms.';
+$lang['cloud_infrastructure_desc'] = 'Piwigo Cloud is hosted in France on dedicated servers operated directly by the Piwigo team.<br><br>We rely on OVHcloud, one of Europe\'s leading infrastructure providers, while keeping full control over the platform operations, maintenance and data management.<br><br>This approach allows us to provide a simple managed service without relying on hyperscale cloud platforms.';
 
 $lang['cloud_trusted_title'] = 'Trusted by thousands of organizations';
 $lang['cloud_trusted_badge1'] = '+5800 customers';

@@ -11,12 +11,12 @@ $lang['porg_plugins_s1_title'] = 'Premium features';
 $lang['porg_plugins_s1_desc'] = 'Some Piwigo features are not available to all customers. <br>Here is the list of features that are "restricted" on certain offers.';
 $lang['porg_plugins_s1_f0_title'] = 'Special file import';
 $lang['porg_plugins_s1_f0_desc'] = '.ai, .psd, .tif, .tiff, .pdf, .svg, .eps';
-$lang['porg_plugins_s1_f1_title'] = 'Administrators’ activity history (additions, deletions, etc.)';
+$lang['porg_plugins_s1_f1_title'] = 'Administrators\' activity history (additions, deletions, etc.)';
 $lang['porg_plugins_s1_f1_desc'] = 'Administration : Users > Manage > Activity';
 
 
 $lang['porg_plugins_s2_title'] = 'Premium plugins';
-$lang['porg_plugins_s2_desc'] = 'Piwigo’s basic features are enhanced with extensions called plugins. Some plugins are available to all customers, others are only available for certain offers.<br>Here is a summary of the plugins available in each plan.';
+$lang['porg_plugins_s2_desc'] = 'Piwigo\'s basic features are enhanced with extensions called plugins. Some plugins are available to all customers, others are only available for certain offers.<br>Here is a summary of the plugins available in each plan.';
 $lang['porg_plugins_s2_desc2'] = 'If you are looking for a particular plugin, do a Ctrl+F (Cmd+F on Mac) on this page and search for the name of the plugin in question.';
 $lang['premium_plugins_Add<head>element_desc'] = 'Add code in the <head> section of your pages (add custom javascript)';
 $lang['premium_plugins_AdditionalPages_desc'] = 'Add additional pages to your gallery';

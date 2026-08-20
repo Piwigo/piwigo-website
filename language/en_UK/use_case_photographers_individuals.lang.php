@@ -3,7 +3,7 @@ $lang['page_meta_title'] = 'Photo gallery for photographers and individuals - Pi
 $lang['page_meta_description'] = 'Piwigo is a simple, secure way for professional and amateur photographers to host and share their photo galleries on the web.';
 
 $lang['use cases perso header title'] = 'Photo gallery software for <span class="orange-text">photographers and individuals</span>';
-$lang['use cases perso header description'] = 'Organize, manage and share your photos in a gallery that you fully control, whether you’re preserving memories, showcasing your work or documenting a lifelong passion.';
+$lang['use cases perso header description'] = 'Organize, manage and share your photos in a gallery that you fully control, whether you\'re preserving memories, showcasing your work or documenting a lifelong passion.';
 
 $lang['use cases perso thumbs title'] = 'Popular ways people use Piwigo';
 $lang['use cases perso thumbs description'] = 'From family albums to fan communities, Piwigo supports a wide variety of personal and professional photo projects.';
@@ -28,7 +28,7 @@ $lang['use cases perso how card2 description'] = 'Keep your photo library access
 $lang['use cases perso how card3 title'] = 'Control who can access your galleries';
 $lang['use cases perso how card3 description'] = 'Create public or private galleries and decide exactly who can view, download or contribute photos.<br><br>Share selected albums with clients, family, friends or your community while keeping the rest of your library private.';
 $lang['use cases perso how card4 title'] = 'Showcase your best work';
-$lang['use cases perso how card4 description'] = 'Create beautiful online galleries that reflect your own style and make your photos easy to browse.<br><br>Whether you’re building a portfolio, a community gallery or a personal website, your gallery reflects your own style.';
+$lang['use cases perso how card4 description'] = 'Create beautiful online galleries that reflect your own style and make your photos easy to browse.<br><br>Whether you\'re building a portfolio, a community gallery or a personal website, your gallery reflects your own style.';
 $lang['use cases perso how card5 title'] = 'Describe every image';
 $lang['use cases perso how card5 description'] = 'Store EXIF and IPTC metadata, keywords, locations, ratings and custom properties alongside your photos.<br><br>Perfect for documenting collections, nature observations or any archive that needs detailed information.';
 $lang['use cases perso how card6 title'] = 'Search and find anything instantly';

@@ -3,7 +3,7 @@ $lang['page_meta_title'] = 'Digital Asset Management for companies - Piwigo';
 $lang['page_meta_description'] = 'Piwigo is professional image library software that meets the needs of every type of company, from small businesses to large corporations.';
 
 $lang['use cases company header title'] = 'Digital asset management made simple for <span class="orange-text">companies</span>';
-$lang['use cases company header description'] = 'Centralize your company’s photos, videos and brand assets in one secure place. Give every team easy access to the right content, from marketing and communication to sales and product teams.';
+$lang['use cases company header description'] = 'Centralize your company\'s photos, videos and brand assets in one secure place. Give every team easy access to the right content, from marketing and communication to sales and product teams.';
 
 $lang['use cases company thumbs title'] = 'Used by companies across many industries';
 $lang['use cases company thumbs description'] = 'Whether you manufacture products, build infrastructure, sell online or manage a global brand, Piwigo helps every team organize, manage and share visual assets more efficiently.';
@@ -40,7 +40,7 @@ $lang['use cases company how card4 title'] = 'Support your websites, catalogs an
 $lang['use cases company how card4 description'] = 'Provide up-to-date visuals for your website, e-commerce platform, brochures, social media, presentations and advertising campaigns.<br><br>Reduce duplicated files and time spent searching for the right assets.';
 $lang['use cases company how card5 title'] = 'Document projects and field operations';
 $lang['use cases company how card5 description'] = 'Organize photos of construction sites, installations, inspections, production facilities or completed projects in one structured library.<br><br>Make them easily accessible to technical teams, sales representatives and project managers.';
-$lang['use cases company how card6 title'] = 'Preserve your company’s visual heritage';
+$lang['use cases company how card6 title'] = 'Preserve your company\'s visual heritage';
 $lang['use cases company how card6 description'] = 'Keep years of product launches, corporate events, historical photos and communication materials organized and accessible.<br><br>Build a long-term visual archive that remains valuable as your company grows.';
 
 $lang['use cases company stacks title'] = 'Why companies choose Piwigo';
@@ -50,7 +50,7 @@ $lang['use cases company stacks card3 description'] = 'Share the right assets wi
 $lang['use cases company stacks card4 description'] = 'Unlike many proprietary platforms, Piwigo does not lock you in. Export your photos, videos and metadata for free whenever you want.';
 $lang['use cases company stacks card5 description'] = 'Piwigo has been continuously developed for more than 20 years and is trusted by organizations worldwide.';
 
-$lang['use cases company host description'] = 'Choose the deployment model that fits your organization’s requirements.<br><br>Whether you prefer a fully managed cloud service or complete control over your infrastructure, Piwigo gives you the flexibility to choose.';
+$lang['use cases company host description'] = 'Choose the deployment model that fits your organization\'s requirements.<br><br>Whether you prefer a fully managed cloud service or complete control over your infrastructure, Piwigo gives you the flexibility to choose.';
 
 $lang['use cases company use title'] = 'See how companies use Piwigo';
 $lang['use cases company use description1'] = 'Wessex Water:<br> A centralized digital asset management platform for 3,500 employees';
