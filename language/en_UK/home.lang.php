@@ -1,6 +1,6 @@
 <?php
-$lang['page_meta_title'] = 'Piwigo | Image library software and DAM for organizations';
-$lang['page_meta_description'] = 'Manage and share your media with image library software for organizations. A flexible DAM solution, developed and hosted in Europe.';
+$lang['page_meta_title'] = 'Piwigo | Open Source Photo Library and DAM Software';
+$lang['page_meta_description'] = 'Organize and share your media with Piwigo, an open source photo library and DAM software. Available as a hosted service in France or self-hosted.';
 
 $lang['Piwigo - Manage your photo collection'] = 'Piwigo - Open source photo management software';
 $lang['porg_home_title'] = 'Manage, share and organize your photos and videos.';
