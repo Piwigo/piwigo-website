@@ -1,5 +1,5 @@
 <?php
-$lang['page_meta_title'] = 'Cas client Piwigo - Office de Tourisme du Cotentin';
+$lang['page_meta_title'] = 'Étude de cas Piwigo : une photothèque pour un office de tourisme français';
 $lang['page_meta_description'] = 'Office de Tourisme du Cotentin : une photothèque collaborative pour la communication touristique de 130 communes';
 
 $lang['porg_cases_cotentin_title'] = 'L\'Office de Tourisme du Cotentin simplifie le partage et la diffusion de ses médias numériques';
