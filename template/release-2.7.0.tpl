@@ -268,7 +268,7 @@ During upload, a warning will be fired if you try to leave the page. You can can
                   </a>
                 </td>
                 <td class="text-end">
-                  <a href="{$releases_url}-{$download_version.version}" class="orange-text release-date">
+                  <a href="{$releases_url}-{$download_version.version}" class="dark-text release-date">
                     <i class="icon-info-circled-1 pe-1"></i><span class="d-none d-md-inline">{'Details'|translate}</span>
                   </a>
                 </td>
@@ -284,7 +284,7 @@ During upload, a warning will be fired if you try to leave the page. You can can
                 </a>
               </td>
               <td class="text-end">
-                <a href="{$releases_url}-{$version}" class="orange-text release-date">
+                <a href="{$releases_url}-{$version}" class="dark-text release-date">
                   <i class="icon-info-circled-1 pe-1"></i><span class="d-none d-md-inline">{'Details'|translate}</span>
                 </a>
               </td>

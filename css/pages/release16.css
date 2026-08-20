@@ -442,6 +442,7 @@
   border-bottom: none;
   padding: 8px 12px;
   white-space: nowrap;
+  color: var(--dark);
 }
 
 .download-versions-table th {

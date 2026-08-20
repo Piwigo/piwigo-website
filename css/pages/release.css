@@ -163,7 +163,6 @@ a.btn-back-to-menu i {
   line-height: 100%;
   letter-spacing: 0%;
   color: var(--dark_text);
-  text-decoration: none;
 }
 
 .release-date i {
@@ -979,8 +978,21 @@ code {
   margin-left: 8px;
 }
 
-@media (max-width: 768px) {
+.text-checksum {
+  font-family: "Chivo Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+}
 
+.text-version {
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
   .dowload-other-versions {
     padding: 30px;
   }
