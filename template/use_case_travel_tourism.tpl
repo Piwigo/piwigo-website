@@ -101,12 +101,12 @@
   ],
   [
   'icon' => "icon-flash-1",
-  'title' => {'scales with your library'|translate},
+  'title' => {'use cases tourism how card5 title'|translate},
   'description' => {'use cases tourism how card5 description'|translate}
   ],
   [
   'icon' => "icon-shield",
-  'title' => {'built for collaboration'|translate},
+  'title' => {'use cases tourism how card6 title'|translate},
   'description' => {'use cases tourism how card6 description'|translate}
   ]
   ]}
