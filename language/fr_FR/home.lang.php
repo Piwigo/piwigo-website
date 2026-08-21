@@ -4,8 +4,8 @@ $lang['page_meta_description'] = 'Organisez et partagez vos médias avec Piwigo,
 
 $lang['Piwigo - Manage your photo collection'] = 'Piwigo - Logiciel open source de gestion de photos';
 $lang['porg_home_title'] = 'Gérez, partagez et organisez vos photos et vidéos.';
-$lang['porg_home_desc1'] = 'Piwigo est un logiciel open source de gestion de photothèque et de DAM (Digital Asset Management), développé et hébergé en Europe.';
-$lang['porg_home_desc2'] = 'Utilisez Piwigo en SaaS, ou hébergez-le sur votre propre infrastructure pour une maîtrise totale sans aucune limitation fonctionnelle.';
+$lang['porg_home_desc1'] = 'Piwigo est un logiciel open source de gestion de photothèque et Digital Asset Management, développé et hébergé en France.';
+$lang['porg_home_desc2'] = 'Optez pour Piwigo Cloud, hébergé et géré pour vous, ou installez Piwigo sur votre propre infrastructure.';
 
 $lang['porg_home_btn1'] = 'Démarrer mon essai gratuit';
 $lang['porg_home_btn2'] = 'Choisir ma configuration';
@@ -26,14 +26,14 @@ $lang['porg_home_ways_to_use_self_hosted_li_4'] = 'Documentation et forum commun
 $lang['porg_home_ways_to_use_self_hosted_li_5'] = 'Support et prestations professionnelles disponibles en option';
 $lang['porg_home_ways_to_use_end_box'] = 'Les deux versions reposent sur le même cœur open source et donnent accès à l\'API Piwigo pour répondre aux besoins avancés.';
 
-$lang['porg_home_road_title'] = 'Aucune dépendance. Conçu pour durer.';
+$lang['porg_home_road_title'] = 'Gardez votre liberté, en toute indépendance.';
 $lang['porg_home_road_desc'] = 'Avec Piwigo, vous restez libre de choisir votre mode d\'hébergement.';
 $lang['porg_home_road_li_1'] = '<span class="p-strong">Vous pouvez exporter</span> vos photos, vos vidéos et vos métadonnées <span class="p-strong">à tout moment, gratuitement</span>';
 $lang['porg_home_road_li_2'] = 'Vous pouvez toujours <span class="p-strong">passer de Piwigo Cloud à une installation auto-hébergée</span>, et inversement';
 $lang['porg_home_road_li_3'] = '<span class="p-strong">Aucune dépendance</span> technique ou contractuelle envers un fournisseur';
 $lang['porg_home_road_end'] = 'Piwigo est conçu pour évoluer durablement avec vos besoins, tout en préservant votre liberté de choix.';
 
-$lang['porg_home_sovereignty_title'] = 'Un logiciel souverain, <br> dans son ADN';
+$lang['porg_home_sovereignty_title'] = 'Un logiciel souverain <br> dans son ADN';
 $lang['porg_home_sovereignty_desc'] = 'Piwigo Cloud est hébergé en France, sur notre propre infrastructure, <br>dans le respect de la réglementation européenne.';
 $lang['porg_home_sovereignty_li_1'] = 'Aucune donnée client n\'est transférée aux États-Unis';
 $lang['porg_home_sovereignty_li_2'] = 'Les données sont hébergées et exploitées par notre équipe';
