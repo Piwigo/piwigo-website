@@ -78,7 +78,7 @@
   {include file='template/use_cases/parts/how.tpl' title={'use cases perso how title'|translate} list_items=$how_cards}
 
   {include file='template/use_cases/parts/discover.tpl' title={'use cases discover title'|translate}
-  description={'use cases discover description'|translate} btn_text={'use cases discover btn text'|translate}}
+  description={'use cases perso discover description'|translate} btn_text={'use cases discover btn text'|translate}}
 
   {assign var="stacks_cards" value=[
   [

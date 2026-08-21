@@ -43,6 +43,8 @@ $lang['use cases company how card5 description'] = 'Organisez les photos de chan
 $lang['use cases company how card6 title'] = 'Préserver le patrimoine visuel de votre entreprise';
 $lang['use cases company how card6 description'] = 'Conservez des années de lancements produits, d\'évènements d\'entreprise, de photos historiques et de supports de communication, organisés et accessibles.<br><br>Constituez une archive visuelle de long terme qui garde toute sa valeur à mesure que votre entreprise grandit.';
 
+$lang['use cases company discover description'] = 'Discover how Piwigo helps companies organize visual assets, collaborate securely and manage large photo and video libraries with powerful yet easy-to-use features.';
+
 $lang['use cases company stacks title'] = 'Pourquoi les entreprises choisissent Piwigo';
 $lang['use cases company stacks card1 description'] = 'Les équipes marketing, les commerciaux, les chefs de produit et les partenaires externes trouvent et partagent rapidement les bons contenus, sans formation poussée.';
 $lang['use cases company stacks card2 description'] = 'Que vous gériez quelques milliers d\'images ou des centaines de milliers de photos et de vidéos, Piwigo grandit avec votre activité.';

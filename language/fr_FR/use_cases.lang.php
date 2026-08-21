@@ -21,7 +21,6 @@ $lang['use cases public use btn text'] = 'Lire le témoignage client';
 
 $lang['use cases public comments btn'] = 'Découvrir d\'autres témoignages clients';
 $lang['use cases discover title'] = 'Découvrez les fonctionnalités qui se cachent derrière ces usages';
-$lang['use cases discover description'] = 'De la recherche avancée aux permissions d\'accès, en passant par la gestion des métadonnées et les galeries publiques, Piwigo fournit tous les outils dont les organisations ont besoin pour organiser, gérer et partager efficacement leurs contenus visuels.';
 $lang['use cases discover btn text'] = 'Découvrir les fonctionnalités de Piwigo';
 
 $lang['use cases public host title'] = 'Hébergez Piwigo comme vous le souhaitez';

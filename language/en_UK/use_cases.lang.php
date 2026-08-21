@@ -21,7 +21,6 @@ $lang['use cases public use btn text'] = 'Read the customer story';
 
 $lang['use cases public comments btn'] = 'Explore more customer stories';
 $lang['use cases discover title'] = 'Explore the features behind these use cases';
-$lang['use cases discover description'] = 'From advanced search and access permissions to metadata management and public galleries, Piwigo provides all the tools tourism organizations need to organize, manage and share their visual assets efficiently.';
 $lang['use cases discover btn text'] = 'Discover Piwigo features';
 
 $lang['use cases public host title'] = 'Host it your way';

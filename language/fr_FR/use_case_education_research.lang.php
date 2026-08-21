@@ -44,6 +44,8 @@ $lang['use cases education how card5 description'] = 'Collectez, organisez et pa
 $lang['use cases education how card6 title'] = 'Préserver l\'histoire visuelle de votre établissement';
 $lang['use cases education how card6 description'] = 'Gardez des années de photos et de vidéos organisées, faciles à explorer et accessibles.<br><br>Constituez une archive visuelle de long terme qui documente les activités, les réussites et l\'évolution de votre établissement.';
 
+$lang['use cases education discover description'] = 'Discover how Piwigo helps education and research organizations organize, preserve and securely share large photo libraries.';
+
 $lang['use cases education stacks title'] = 'Pourquoi les organisations de l\'enseignement et de la recherche choisissent Piwigo';
 $lang['use cases education stacks card1 description'] = 'Les équipes communication, les enseignants, les chercheurs, le personnel et les étudiants organisent, retrouvent et partagent des photos sans formation poussée.';
 $lang['use cases education stacks card2 description'] = 'Que vous gériez les photos de la vie de l\'établissement, d\'évènements institutionnels ou de projets de recherche, Piwigo grandit avec votre collection sans devenir plus difficile à gérer.';

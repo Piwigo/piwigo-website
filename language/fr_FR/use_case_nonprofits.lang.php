@@ -44,6 +44,8 @@ $lang['use cases association how card5 description'] = 'Collectez, organisez et 
 $lang['use cases association how card6 title'] = 'Préserver l\'histoire de votre organisation';
 $lang['use cases association how card6 description'] = 'Conservez des années de projets, de campagnes et d\'évènements bien organisés dans une archive facile à explorer.<br><br>Préservez votre patrimoine visuel tout en permettant aux futures équipes de retrouver et de réutiliser facilement les contenus passés.';
 
+$lang['use cases association discover description'] = 'Discover how Piwigo helps non-profit organizations organize, manage and securely share their visual assets.';
+
 $lang['use cases association stacks title'] = 'Pourquoi les associations choisissent Piwigo';
 $lang['use cases association stacks card1 description'] = 'Salariés, bénévoles et contributeurs organisent, retrouvent et partagent des photos sans compétences techniques.';
 $lang['use cases association stacks card2 description'] = 'Que vous gériez les photos d\'évènements locaux, de projets internationaux ou des décennies d\'archives, Piwigo s\'adapte aux besoins de votre organisation.';

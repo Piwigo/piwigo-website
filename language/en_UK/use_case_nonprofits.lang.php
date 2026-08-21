@@ -44,6 +44,8 @@ $lang['use cases association how card5 description'] = 'Collect, organize and sh
 $lang['use cases association how card6 title'] = 'Preserve your organization\'s history';
 $lang['use cases association how card6 description'] = 'Keep years of projects, campaigns and events safely organized in a searchable archive.<br><br>Preserve your visual heritage while making it easy for future teams to find and reuse past content.';
 
+$lang['use cases association discover description'] = 'Discover how Piwigo helps non-profit organizations organize, manage and securely share their visual assets.';
+
 $lang['use cases association stacks title'] = 'Why non-profit organizations choose Piwigo';
 $lang['use cases association stacks card1 description'] = 'Staff, volunteers and contributors can organize, find and share photos without technical expertise.';
 $lang['use cases association stacks card2 description'] = 'Whether you\'re managing photos from local events, international projects or decades of archives, Piwigo scales with your organization\'s needs.';

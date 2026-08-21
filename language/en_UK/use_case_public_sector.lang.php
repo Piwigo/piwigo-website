@@ -44,6 +44,8 @@ $lang['use cases public how card5 description'] = 'Preserve years of institution
 $lang['use cases public how card6 title'] = 'Publish and distribute visual assets';
 $lang['use cases public how card6 description'] = 'Share selected albums with the public, journalists, partners or other departments through secure galleries and download links.<br><br>Make approved content easy to access while keeping the rest of your library protected.';
 
+$lang['use cases public discover description'] = 'Discover how Piwigo helps public organizations organize, preserve and securely share large photo libraries.';
+
 $lang['use cases public stacks title'] = 'Why public organizations choose Piwigo';
 $lang['use cases public stacks card1 description'] = 'Communication teams, technical departments and administrative staff can quickly find and share photos without extensive training.';
 $lang['use cases public stacks card2 description'] = 'Organize and preserve visual assets for years while keeping them searchable and accessible.';

@@ -34,6 +34,8 @@ $lang['use cases perso how card5 description'] = 'Store EXIF and IPTC metadata, 
 $lang['use cases perso how card6 title'] = 'Search and find anything instantly';
 $lang['use cases perso how card6 description'] = 'Quickly find photos using albums, tags, metadata, dates, locations or any custom criteria.<br><br>Spend less time browsing folders and more time enjoying your collection.';
 
+$lang['use cases perso discover description'] = 'Discover how albums, tags, metadata, properties, privacy settings and search help you organize and share your photos.';
+
 $lang['use cases perso stacks title'] = 'Why photographers love Piwigo';
 $lang['use cases perso stacks card1 description'] = 'Whether you manage a few hundred photos or several hundred thousand, Piwigo keeps your library organized, searchable and easy to browse.';
 $lang['use cases perso stacks card2 description'] = 'Get advanced features like albums, tags, metadata and permissions without unnecessary complexity. Piwigo is easy to learn and comfortable to use every day.';
