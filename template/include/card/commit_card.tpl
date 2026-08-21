@@ -55,7 +55,7 @@
           <span class="card-icon">
             <i class="{$icon} mx-0"></i>
           </span>
-          {$meta}
+          {$meta|translate}
           <span class="commit-date">• {$date}</span>
         </p>
         <p class="commit-number mb-0 p-boxed">{$commits_count} commits</p>

@@ -8,5 +8,17 @@ $lang['porg_product_update_header_description'] = 'Consultez toutes les versions
 $lang['porg_product_update_updates_title'] = 'Mises à jour et versions des quatre dernières semaines';
 
 
+$lang['Translation'] = 'Traduction';
+$lang['Core'] = 'Cœur';
+$lang['Version release'] = 'Sortie de version';
+$lang['Plugin'] = 'Plugin';
+$lang['Plugin release'] = 'Sortie de plugin';
+$lang['Android app'] = 'Application Android';
+$lang['Ios app'] = 'Application iOS';
+$lang['Theme'] = 'Thème';
+$lang['Theme release'] = 'Sortie de thème';
+$lang['Tools'] = 'Outils';
+$lang['Tool release'] = 'Sortie d\'outil';
+$lang['Website'] = 'Site web';
 
 ?>

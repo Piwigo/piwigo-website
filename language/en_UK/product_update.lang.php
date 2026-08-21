@@ -8,5 +8,17 @@ $lang['porg_product_update_header_description'] = 'See all stable Piwigo release
 $lang['porg_product_update_updates_title'] = 'Updates and releases over the last four weeks';
 
 
+$lang['Translation'] = 'Translation';
+$lang['Core'] = 'Core';
+$lang['Version release'] = 'Version release';
+$lang['Plugin'] = 'Plugin';
+$lang['Plugin release'] = 'Plugin release';
+$lang['Android app'] = 'Android app';
+$lang['Ios app'] = 'Ios app';
+$lang['Theme'] = 'Theme';
+$lang['Theme release'] = 'Theme release';
+$lang['Tools'] = 'Tools';
+$lang['Tool release'] = 'Tool release';
+$lang['Website'] = 'Website';
 
 ?>
