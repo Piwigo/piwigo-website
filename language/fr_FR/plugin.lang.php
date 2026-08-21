@@ -202,7 +202,7 @@ $lang['On this page'] = 'Sur cette page';
 $lang['See details'] = 'Voir les détails';
 $lang['%s to %s'] = 'Du %s au %s';
 $lang['From %s to %s'] = 'Du %s au %s';
-$lang['Your way.'] = 'À votre manière.';
+$lang['Your way.'] = 'Librement.';
 $lang['Week %s'] = 'Semaine %s';
 $lang['Explore solution  <i class="icon-forward-arrow" style="font-size: 10px; position: relative; top: -1px;"></i>'] = 'Explorer la solution  <i class="icon-forward-arrow" style="font-size: 10px; position: relative; top: -1px;"></i>';
 $lang['Explore solution %s'] = 'Explorer la solution %s';
