@@ -28,7 +28,7 @@ $lang['porg_urls']['pro-support'] = 'support-professionnel';
 $lang['porg_urls']['pricing'] = 'tarifs';
 $lang['porg_urls']['signup'] = 'inscription';
 $lang['porg_urls']['signin'] = 'connexion';
-$lang['porg_urls']['plugins'] = 'plugins';
+$lang['porg_urls']['plugins-by-plan'] = 'plugins-par-plan';
 $lang['porg_urls']['book-a-meeting'] = 'prendre-rendez-vous';
 
 // legacy pages DO NOT REMOVE : used for redirections
