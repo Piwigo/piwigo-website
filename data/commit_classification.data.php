@@ -63,4 +63,11 @@ $commit_classification = array(
     'piwigo-sylvia',
     'luciano',
   ),
+
+  'website_repos' => array(
+    'Piwigo Website',
+    'piwigodotorg',
+    'Piwigo Docs EN',
+    'Piwigo Docs FR',
+  ),
 );

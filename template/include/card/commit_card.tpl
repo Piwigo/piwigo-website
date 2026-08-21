@@ -12,6 +12,8 @@
   {assign var=icon value='icon-paint'}
 {elseif $meta|lower == 'tools' || $meta|lower == 'tool release'}
   {assign var=icon value='icon-support'}
+{elseif $meta|lower == 'website'}
+  {assign var=icon value='icon-website'}
 {/if}
 
 {if $type == 'release'}

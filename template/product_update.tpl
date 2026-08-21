@@ -52,6 +52,7 @@
           'plugin' => 'Plugin',
           'android' => 'Android App',
           'ios' => 'iOS App',
+          'website' => 'Website',
           'tool' => 'Tools'
         )}
 

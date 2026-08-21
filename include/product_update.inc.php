@@ -113,6 +113,11 @@ if (is_array($coding_activity_commits)) {
       }
     }
 
+    // Website detection
+    if ('plugin' == $commit_type and in_array($commit['name'], $commit_classification['website_repos'])) {
+      $commit_type = 'website';
+    }
+
     // Core detection
     if (isset($commit['name']) && $commit['name'] === 'Piwigo') {
       $commit_type = 'core';
