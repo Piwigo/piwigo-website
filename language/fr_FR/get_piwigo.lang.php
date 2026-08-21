@@ -1,26 +1,26 @@
 <?php
-$lang['page_meta_title'] = 'Cloud ou auto-hébergement de votre photothèque - Piwigo';
-$lang['page_meta_description'] = 'Utilisez Piwigo en service cloud hébergé en Europe ou hébergez Piwigo vous-même sur votre propre infrastructure';
+$lang['page_meta_title'] = 'Piwigo Cloud ou auto-hébergé | Choisissez votre solution';
+$lang['page_meta_description'] = 'Utilisez Piwigo en mode SaaS hébergé en France ou déployez-le sur votre propre infrastructure.';
 $lang['pricing toggle title cloud'] = 'Cloud';
 $lang['pricing toggle title selfhosted'] = 'Self-hosted';
 $lang['pricing toggle piwigo'] = 'Piwigo';
 
-$lang['product-header-cloud-title'] = 'Utilisez Piwigo <span class="orange-text">sans gérer</span> d\'infrastructure';
+$lang['product-header-cloud-title'] = 'Optez pour Piwigo Cloud <span class="orange-text">hébergé et géré pour vous</span>';
 $lang['product-header-cloud-desc'] = 'Créez votre compte en quelques minutes et commencez immédiatement à organiser votre médiathèque. L\'hébergement en France, les mises à jour, les sauvegardes et la sécurité sont entièrement pris en charge par l\'équipe Piwigo.';
 
 $lang['product-header-cloud-btn1'] = 'Démarrer mon essai gratuit de 30 jours';
 $lang['product-header-cloud-btn2'] = 'Voir les tarifs';
 
 $lang['product-header-self-hosted-title'] = 'Hébergez Piwigo sur <span class="orange-text"> votre propre infrastructure</span>';
-$lang['product-header-self-hosted-desc'] = 'Téléchargez la version open source de Piwigo et faites-la tourner sur l\'infrastructure de votre choix, avec la maîtrise complète de votre environnement et de vos données.';
+$lang['product-header-self-hosted-desc'] = 'Téléchargez la version open source de Piwigo et déployez-la sur l\'infrastructure de votre choix, avec la maîtrise complète de votre environnement et de vos données.';
 
 $lang['product-header-self-hosted-btn1'] = 'Télécharger Piwigo';
 $lang['product-header-self-hosted-btn2'] = 'Guides d\'installation';
 
 
 // CLOUD
-$lang['cloud_f1_title'] = 'Hébergé en Europe';
-$lang['cloud_f1_desc'] = 'Vos données sont hébergées en Europe, sur une infrastructure exploitée directement par l\'équipe Piwigo.';
+$lang['cloud_f1_title'] = 'Hébergé en France';
+$lang['cloud_f1_desc'] = 'Vos données sont hébergées en France, sur une infrastructure exploitée directement par l\'équipe Piwigo.';
 $lang['cloud_f2_title'] = 'Rien à maintenir';
 $lang['cloud_f2_desc'] = 'Aucune installation, aucune gestion de serveur ni mise à jour à assurer vous-même.';
 $lang['cloud_f3_title'] = 'Support professionnel';
@@ -28,7 +28,7 @@ $lang['cloud_f3_desc'] = 'Faites-vous aider par l\'équipe Piwigo, sur les quest
 $lang['cloud_f4_title'] = 'Tarifs transparents';
 $lang['cloud_f4_desc'] = 'Une tarification simple, adaptée à la taille de chaque équipe, sans coût caché.';
 $lang['cloud_f5_title'] = 'Vos données restent les vôtres';
-$lang['cloud_f5_desc'] = 'Exportez vos fichiers et vos données à tout moment. Aucun verrouillage propriétaire.';
+$lang['cloud_f5_desc'] = 'Exportez vos fichiers et vos données à tout moment. Vous gardez votre liberté.';
 
 $lang['cloud_infrastructure_title'] = 'Une infrastructure de confiance';
 $lang['cloud_infrastructure_badge1'] = 'Hébergement en France';
@@ -38,22 +38,22 @@ $lang['cloud_infrastructure_badge4'] = 'Serveurs redondants';
 $lang['cloud_infrastructure_badge5'] = 'Démarche respectueuse du RGPD';
 $lang['cloud_infrastructure_desc'] = 'Piwigo Cloud est hébergé en France sur des serveurs dédiés exploités directement par l\'équipe Piwigo.<br><br>Nous nous appuyons sur OVHcloud, l\'un des principaux fournisseurs d\'infrastructure européens, tout en gardant la maîtrise complète de l\'exploitation de la plateforme, de sa maintenance et de la gestion des données.<br><br>Cette approche nous permet de proposer un service géré simple, sans dépendre des hyperscalers cloud américains (Google, Amazon, Microsoft).';
 
-$lang['cloud_trusted_title'] = 'La confiance de milliers d\'organisations';
+$lang['cloud_trusted_title'] = 'Des milliers d\'organisations nous font confiance';
 $lang['cloud_trusted_badge1'] = '+5800 clients';
 $lang['cloud_trusted_badge2'] = '+65 pays';
 $lang['cloud_trusted_btn'] = 'Découvrir nos clients';
 
 $lang['cloud_transparent_title'] = 'Des tarifs transparents, sans surprise';
-$lang['cloud_transparent_desc'] = 'Piwigo Cloud propose une solution DAM complète avec des tarifs publics et prévisibles, conçus pour rester simples à mesure que votre organisation grandit.';
+$lang['cloud_transparent_desc'] = 'Piwigo Cloud propose une solution DAM complète avec des tarifs publics et prévisibles, qui restent simples à mesure que votre organisation grandit.';
 $lang['cloud_transparent_li1'] = 'Les mêmes tarifs pour tous les clients';
-$lang['cloud_transparent_li2'] = 'Un tarif bloqué dans le temps une fois l\'abonnement souscrit';
+$lang['cloud_transparent_li2'] = 'Un tarif garanti dans le temps après souscription';
 $lang['cloud_transparent_li3'] = 'Aucun frais de mise en service ni coût caché';
 $lang['cloud_transparent_li4'] = 'Hébergement, maintenance et support inclus';
 $lang['cloud_transparent_li5'] = 'Export gratuit de vos données à tout moment';
 $lang['cloud_transparent_btn'] = 'Comparer les offres';
 
-$lang['cloud_nolock_title'] = 'Aucun verrouillage.';
-$lang['cloud_nolock_desc'] = 'Contrairement à beaucoup de plateformes SaaS, Piwigo ne retient pas vos fichiers dans un écosystème fermé.<br><br>Vous pouvez exporter gratuitement vos photos, vos vidéos et vos métadonnées à tout moment, que vous souhaitiez passer à une installation Piwigo self-hosted ou migrer vers une autre solution.<br><br><span class="pink-text strong-text">Parce que Piwigo est open source, vous gardez la maîtrise complète de vos données et de votre choix d\'hébergeur.</span>';
+$lang['cloud_nolock_title'] = 'Vous n\'êtes pas prisonnier.';
+$lang['cloud_nolock_desc'] = 'Contrairement à beaucoup de plateformes SaaS, Piwigo ne retient pas vos fichiers dans un écosystème fermé.<br><br>Vous pouvez exporter gratuitement vos photos, vos vidéos et vos métadonnées à tout moment, que vous souhaitiez passer à une installation Piwigo sur votre infrastructure ou migrer vers une autre solution.<br><br><span class="pink-text strong-text">Parce que Piwigo est open source, vous gardez la maîtrise complète de vos données et restez libre de choisir votre hébergeur.</span>';
 
 $lang['cloud_start_title'] = 'Démarrez votre essai gratuit';
 $lang['cloud_start_desc'] = 'Essayez Piwigo Cloud gratuitement pendant 30 jours. Sans carte bancaire.';
@@ -78,18 +78,18 @@ $lang['selfhosted-short-cta-docker'] = 'Docker';
 $lang['selfhosted-short-cta-updt'] = 'Mises à jour & changelog';
 
 $lang['selfhosted-professional-title'] = 'Prestations professionnelles pour les projets on-premise';
-$lang['selfhosted-professional-desc1'] = 'Héberger Piwigo sur son infra ne veut pas dire être livré à soi-même.';
+$lang['selfhosted-professional-desc1'] = 'Héberger Piwigo sur son infrastructure ne veut pas dire être livré à soi-même.';
 $lang['selfhosted-professional-desc2'] = 'Que vous ayez besoin d\'un support expert, d\'une assistance technique ou de développements sur mesure, l\'équipe Piwigo peut vous aider à exploiter et à faire évoluer votre plateforme.';
 
 $lang['selfhosted-professional-serv-title1'] = 'Support professionnel';
 $lang['selfhosted-professional-serv-title2'] = 'Prestations professionnelles';
-$lang['selfhosted-professional-serv-title3'] = 'Support technique & infogérance';
+$lang['selfhosted-professional-serv-title3'] = 'Assistance technique & infogérance';
 
-$lang['selfhosted-professional-serv-subtitle1'] = 'Besoin d\'une aide experte pour votre Piwigo self-hosted ?';
+$lang['selfhosted-professional-serv-subtitle1'] = 'Besoin de conseils d\'experts pour utiliser Piwigo ?';
 $lang['selfhosted-professional-serv-subtitle2'] = 'Besoin d\'une configuration plus adaptée ou d\'une personnalisation avancée ?';
-$lang['selfhosted-professional-serv-subtitle3'] = 'Besoin d\'aide pour exploiter votre Piwigo on-premise ?';
+$lang['selfhosted-professional-serv-subtitle3'] = 'Besoin d\'assistance technique pour gérer votre infrastructure ?';
 
-$lang['selfhosted-professional-serv-text1'] = 'Bénéficiez du support professionnel de l\'équipe Piwigo pour vos questions fonctionnelles et techniques liées à votre plateforme.';
+$lang['selfhosted-professional-serv-text1'] = 'Bénéficiez du support professionnel de l\'équipe Piwigo pour les questions fonctionnelles et techniques liées à votre plateforme.';
 $lang['selfhosted-professional-serv-text2'] = 'Notre équipe peut vous aider à adapter Piwigo à vos besoins spécifiques.';
 $lang['selfhosted-professional-serv-text3'] = 'Nous proposons une assistance technique et des services infogérés pour les organisations qui souhaitent alléger leur charge d\'exploitation.';
 
