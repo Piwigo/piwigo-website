@@ -43,7 +43,7 @@ $lang['use cases tourism how card5 description'] = 'Trouvez rapidement les visue
 $lang['use cases tourism how card6 title'] = 'Préserver votre patrimoine visuel';
 $lang['use cases tourism how card6 description'] = 'Gardez des années de photos et de vidéos classées, faciles à explorer et accessibles.<br><br>Constituez une archive visuelle de long terme qui garde toute sa valeur, même lorsque les équipes changent.';
 
-$lang['use cases tourism discover description'] = 'From advanced search and access permissions to metadata management and public galleries, Piwigo provides all the tools tourism organizations need to organize, manage and share their visual assets efficiently.';
+$lang['use cases tourism discover description'] = 'De la recherche avancée à la gestion des droits d\'accès, en passant par les métadonnées et les galeries publiques, Piwigo fournit aux organismes touristiques tous les outils nécessaires pour organiser, gérer et partager efficacement leurs ressources visuelles.';
 
 $lang['use cases tourism stacks title'] = 'Pourquoi les acteurs du tourisme choisissent Piwigo';
 $lang['use cases tourism stacks card1 description'] = 'Les équipes communication, les partenaires et les contributeurs externes se lancent rapidement, sans formation poussée.';
