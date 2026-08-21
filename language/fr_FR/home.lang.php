@@ -55,7 +55,7 @@ $lang['porg_home_features_measure_desc'] = 'Suivez les usages, l\'activité et l
 $lang['porg_home_features_security_subtitle'] = 'Contrôlez les accès et protégez vos médias';
 $lang['porg_home_features_security_desc'] = 'Gérez les rôles, les groupes et les permissions pour sécuriser vos contenus à tous les niveaux. La confidentialité et le contrôle des accès sont au cœur de Piwigo, pour les médiathèques internes comme pour les galeries publiques.';
 
-$lang['porg_home_who_title'] = 'Qui utilise Piwigo ?';
+$lang['porg_home_who_title'] = 'Qui utilise Piwigo&nbsp;?';
 $lang['porg_home_who_desc'] = 'Piwigo est utilisé dans le monde entier par :';
 $lang['porg_home_who_li_1'] = 'Des organisations du secteur public';
 $lang['porg_home_who_li_2'] = 'Des entreprises et des équipes communication';
