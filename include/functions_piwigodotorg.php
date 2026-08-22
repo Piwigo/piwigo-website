@@ -22,7 +22,7 @@ function porg_get_pages()
     'use-case-travel-tourism' => 'Use cases - Travel & Tourism',
     'use-case-public-sector' => 'Use cases - Public Sector',
     'use-case-companies' => 'Use cases - Companies',
-    'use-case-education_research' => 'Use cases - Education & Research',
+    'use-case-education-research' => 'Use cases - Education & Research',
     'use-case-nonprofits' => 'Use cases - Nonprofits',
     'use-case-photographers-individuals' => 'Use cases - Photographers & Individuals',
     'mobile-applications' => 'Mobile applications',
