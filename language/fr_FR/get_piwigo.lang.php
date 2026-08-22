@@ -112,9 +112,8 @@ $lang['selfhosted-ecosystem-desc'] = 'Piwigo est un projet open source activemen
 $lang['selfhosted-ecosystem-btn1'] = 'Découvrir le projet';
 $lang['selfhosted-ecosystem-btn2'] = 'Contribuer';
 $lang['selfhosted-ecosystem-community-title'] = 'Communauté & ressources';
-$lang['selfhosted-ecosystem-community-badge1'] = 'Forum de la communauté';
+$lang['selfhosted-ecosystem-community-badge1'] = 'Forum communautaire';
 $lang['selfhosted-ecosystem-community-badge2'] = 'Dépôts GitHub';
-$lang['selfhosted-ecosystem-community-badge3'] = 'Extensions de la communauté';
 $lang['selfhosted-ecosystem-community-badge4'] = 'Thèmes & plugins';
 $lang['selfhosted-ecosystem-community-badge5'] = 'Ressources pour développeurs';
 

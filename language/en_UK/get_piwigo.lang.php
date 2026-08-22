@@ -115,7 +115,6 @@ $lang['selfhosted-ecosystem-btn2'] = 'Contribute';
 $lang['selfhosted-ecosystem-community-title'] = 'Community & resources';
 $lang['selfhosted-ecosystem-community-badge1'] = 'Community forum';
 $lang['selfhosted-ecosystem-community-badge2'] = 'GitHub repository';
-$lang['selfhosted-ecosystem-community-badge3'] = 'Community extensions';
 $lang['selfhosted-ecosystem-community-badge4'] = 'Themes & plugins';
 $lang['selfhosted-ecosystem-community-badge5'] = 'Developer resources';
 
