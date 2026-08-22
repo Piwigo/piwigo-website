@@ -1,6 +1,6 @@
 <?php
 $lang['page_meta_title'] = 'Tarifs - Piwigo';
-$lang['page_meta_description'] = 'Piwigo s\'adapte à tous les budgets et à toutes les tailles d\'organisations. Offres hébergées dans le cloud ou auto-hébergées.';
+$lang['page_meta_description'] = 'Piwigo s\'adapte à tous les budgets et à toutes les tailles d\'organisations. Offres hébergées dans le cloud ou self-hosted.';
 
 $lang['pricing main title part 1'] = 'Choisissez <span class="main-orange-text">l\'offre qui vous</span><br><span class="main-orange-text">convient</span>';
 $lang['pricing main title part 2'] = 'le mieux';
