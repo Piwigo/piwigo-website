@@ -149,12 +149,6 @@ function porg_add_methods($arr)
     'Update (or register if it is the first time) an installation of Piwigo, anonymously, with general statistics'
   );
 
-  $service->addMethod(
-    'porg.footer.getTemplate',
-    'ws_porg_get_footer_template',
-    array(),
-    'get template for footer'
-  );
 }
 
 /* Load Piwigo.org header */
