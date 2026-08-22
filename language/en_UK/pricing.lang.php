@@ -5,10 +5,6 @@ $lang['page_meta_description'] = 'Piwigo fits all budgets and all sizes of organ
 $lang['pricing main title part 1'] = 'Choose <span class="main-orange-text">the plan that</span><br><span class="main-orange-text">suits you</span>';
 $lang['pricing main title part 2'] = 'most';
 
-$lang['pricing toggle title cloud'] = 'Cloud';
-$lang['pricing toggle title selfhosted'] = 'Self-hosted';
-$lang['pricing toggle piwigo'] = 'Piwigo';
-
 $lang['best_deal'] = 'Best deal';
 $lang['pricing selfhosted description card'] = '<span class="main-orange-text">Piwigo is free and open-source software</span>. Install Piwigo on your infrastructure if you have the skills to configure and administer it.
 And if you need help installing, configuring, or using Piwigo, we offer dedicated services for organizations hosting Piwigo on their own server.';

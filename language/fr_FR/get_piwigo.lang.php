@@ -1,9 +1,6 @@
 <?php
-$lang['page_meta_title'] = 'Piwigo Cloud ou auto-hébergé | Choisissez votre solution';
+$lang['page_meta_title'] = 'Piwigo Cloud ou self-hosted | Choisissez votre solution';
 $lang['page_meta_description'] = 'Utilisez Piwigo en mode SaaS hébergé en France ou déployez-le sur votre propre infrastructure.';
-$lang['pricing toggle title cloud'] = 'Cloud';
-$lang['pricing toggle title selfhosted'] = 'Self-hosted';
-$lang['pricing toggle piwigo'] = 'Piwigo';
 
 $lang['product-header-cloud-title'] = 'Optez pour Piwigo Cloud <span class="orange-text">hébergé et géré pour vous</span>';
 $lang['product-header-cloud-desc'] = 'Créez votre compte en quelques minutes et commencez immédiatement à organiser votre médiathèque. L\'hébergement en France, les mises à jour, les sauvegardes et la sécurité sont entièrement pris en charge par l\'équipe Piwigo.';

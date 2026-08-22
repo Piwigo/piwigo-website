@@ -167,6 +167,11 @@ $lang['Footer Button 4 Subscribe to newsletter'] = 'S\'abonner à la newsletter'
 $lang['Footer legal 1 Privacy Policy'] = 'Politique de confidentialité';
 $lang['Footer legal 4 Terms of Use'] = 'Conditions d\'utilisation';
 $lang['Footer legal 6 DPA'] = 'DPA';
+
+/* common sub-templates */
+$lang['pricing toggle title cloud'] = 'Cloud';
+$lang['pricing toggle title selfhosted'] = 'Self-hosted';
+
 /* Formulaire */
 $lang['Your email address 1'] = 'Votre adresse e-mail';
 $lang['Your Piwigo url 1'] = 'Votre URL Piwigo (si vous êtes déjà utilisateur)';

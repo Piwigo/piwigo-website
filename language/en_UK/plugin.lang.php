@@ -183,6 +183,10 @@ $lang['Footer legal 1 Privacy Policy'] = 'Privacy Policy';
 $lang['Footer legal 4 Terms of Use'] = 'Terms of Use';
 $lang['Footer legal 6 DPA'] = 'DPA';
 
+/* common sub-templates */
+$lang['pricing toggle title cloud'] = 'Cloud';
+$lang['pricing toggle title selfhosted'] = 'Self-hosted';
+
 /* form */
 
 $lang['Your email address 1'] = 'Your email address';

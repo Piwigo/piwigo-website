@@ -3,10 +3,6 @@
 $lang['porg_plugins_title'] = 'List of <br><span class="orange-text">plugins</span> & <span class="orange-text">features</span>';
 $lang['porg_plugins_desc'] = 'Upcoming events, new releases, beta versions and more...';
 
-$lang['pricing toggle title cloud'] = 'Cloud';
-$lang['pricing toggle title selfhosted'] = 'Self-hosted';
-$lang['pricing toggle piwigo'] = 'Piwigo';
-
 $lang['porg_plugins_s1_title'] = 'Premium features';
 $lang['porg_plugins_s1_desc'] = 'Some Piwigo features are not available to all customers. <br>Here is the list of features that are "restricted" on certain offers.';
 $lang['porg_plugins_s1_f0_title'] = 'Special file import';
