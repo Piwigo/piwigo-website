@@ -34,7 +34,7 @@ $lang['use cases perso how card5 description'] = 'Conservez les métadonnées EX
 $lang['use cases perso how card6 title'] = 'Chercher et trouver instantanément';
 $lang['use cases perso how card6 description'] = 'Retrouvez rapidement vos photos par album, tag, métadonnée, date, lieu ou tout autre critère personnalisé.<br><br>Passez moins de temps à fouiller dans des dossiers et plus de temps à profiter de votre collection.';
 
-$lang['use cases perso discover description'] = 'Discover how albums, tags, metadata, properties, privacy settings and search help you organize and share your photos.';
+$lang['use cases perso discover description'] = 'Découvrez comment les albums, les tags, les métadonnées, les propriétés, les paramètres de confidentialité et la fonction de recherche vous aident à organiser et à partager vos photos.';
 
 $lang['use cases perso stacks title'] = 'Pourquoi les photographes aiment Piwigo';
 $lang['use cases perso stacks card1 description'] = 'Que vous gériez quelques centaines de photos ou plusieurs centaines de milliers, Piwigo garde votre photothèque organisée, facile à explorer et agréable à parcourir.';
