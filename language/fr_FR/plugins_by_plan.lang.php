@@ -1,10 +1,9 @@
 <?php
 
 $lang['porg_plugins_title'] = 'Liste des <br><span class="orange-text">plugins</span> & <span class="orange-text">fonctionnalités</span>';
-$lang['porg_plugins_desc'] = 'Événements à venir, nouvelles versions, versions bêta et plus encore...';
+$lang['porg_plugins_desc'] = '... disponibles selon votre offre.';
 
-
-$lang['porg_plugins_s1_title'] = 'Fonctionnalités Premium';
+$lang['porg_plugins_s1_title'] = 'Fonctionnalités';
 $lang['porg_plugins_s1_desc'] = 'Quelques fonctionnalités de Piwigo ne sont pas accessibles à tous les clients. <br>Voici la liste des fonctionnalités qui font l’objet d’un “bridage” sur certaines offres.';
 $lang['porg_plugins_s1_f0_title'] = 'Import de fichiers spéciaux';
 $lang['porg_plugins_s1_f0_desc'] = '.ai, .psd, .tif, .tiff, .pdf, .svg, .eps';
@@ -12,7 +11,7 @@ $lang['porg_plugins_s1_f1_title'] = 'Historique de l’activité des administrat
 $lang['porg_plugins_s1_f1_desc'] = 'Administration : Utilisateurs > Gérer > Activité';
 
 
-$lang['porg_plugins_s2_title'] = 'Plugins Premium';
+$lang['porg_plugins_s2_title'] = 'Plugins';
 $lang['porg_plugins_s2_desc'] = 'Les fonctionnalités de base de Piwigo sont enrichies grâce à des extensions appelées plugins. Certains plugins sont accessibles à tous les abonnés, d’autres sont réservés à certaines offres.<br>Voici un récapitulatif des plugins disponibles dans chaque offre.';
 $lang['porg_plugins_s2_desc2'] = 'Si vous cherchez un plugin en particulier, effectuez un Ctrl+F (Cmd+F sur Mac) sur cette page et cherchez le nom du plugin en question.';
 $lang['premium_plugins_Add<head>element_desc'] = 'Ajouter du code dans la balise <head> de vos pages (ajout de javascript personnalisé)';
@@ -129,3 +128,6 @@ $lang['premium_plugins_LDAPlogin_desc'] = 'Permet à Piwigo de se connecter à u
 $lang['premium_plugins_Microsoft365connect_desc'] = 'Permet à Piwigo de se connecter à un Azure Active Directory';
 $lang['premium_plugins_PasswordPolicy_desc'] = 'Déterminer des règles de sécurité sur les mots de passe utilisateurs : score de complexité, politique de renouvellement, gestion des tentatives de connexion échouées...';
 $lang['premium_plugins_Two-factorauthentication(2FA)_desc'] = 'Améliore la sécurité, vérification par email ou  applications TOTP';
+
+$lang['porg_plugins_no_results'] = 'Oups, aucun plugin ne correspond !';
+$lang['Lookup for a plugin'] = 'Chercher un plugin';
