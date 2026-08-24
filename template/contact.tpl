@@ -58,7 +58,7 @@
         </span>
         <h2 class="h2-top-page text-center mb-0">{'porg_contact_green_title'|translate}</h2>
         <p class="text-center mb-0">{'porg_contact_green_desc'|translate}</p>
-        {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'porg_contact_green_btn'|translate} href="https://piwigo.org/forum"}
+        {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'porg_contact_green_btn'|translate} href="{$EXT_URL.forum}"}
       </div>
     </div>
   </div>

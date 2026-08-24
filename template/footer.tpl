@@ -121,7 +121,7 @@
             <div id="footerMobileSupport" class="collapse footer-mobile-collapse" data-bs-parent=".footer-mobile-nav-accordion">
               <ul>
                 <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.pro_support}">{'Professional support'|translate}</a></li>
-                <li><a class="footer-feature-link footer-menu-item" href="http://{$PORG_DOMAIN_PREFIX}piwigo.org/forum/" target="_blank" rel="noopener noreferrer">{'Community forum'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="{$EXT_URL.forum}" target="_blank" rel="noopener noreferrer">{'Community forum'|translate}</a></li>
                 <li><a class="footer-feature-link footer-menu-item" href="{$EXT_URL.documentation}" target="_blank" rel="noopener noreferrer">{'Documentation'|translate}</a></li>
                 <li><a class="footer-feature-link footer-menu-item" href="{$EXT_URL.installation_guide}" target="_blank" rel="noopener noreferrer">{'Installation guides'|translate}</a></li>
                 <li><a class="footer-feature-link footer-menu-item" href="https://github.com/Piwigo/Piwigo/wiki" target="_blank" rel="noopener noreferrer">{'Developer resources'|translate}</a></li>
@@ -205,7 +205,7 @@
         <h6 class="footer-title mt-4">{'Support'|translate}</h6>
         <ul>
           <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.pro_support}">{'Professional support'|translate}</a></li>
-          <li><a class="footer-feature-link footer-menu-item" href="http://{$PORG_DOMAIN_PREFIX}piwigo.org/forum/" target="_blank" rel="noopener noreferrer">{'Community Forum'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="{$EXT_URL.forum}" target="_blank" rel="noopener noreferrer">{'Community Forum'|translate}</a></li>
           <li><a class="footer-feature-link footer-menu-item" href="{$EXT_URL.documentation}" target="_blank" rel="noopener noreferrer">{'Documentation'|translate}</a></li>
           <li><a class="footer-feature-link footer-menu-item" href="{$EXT_URL.installation_guide}" target="_blank" rel="noopener noreferrer">{'Installation guides'|translate}</a></li>
           <li><a class="footer-feature-link footer-menu-item" href="https://github.com/Piwigo/Piwigo/wiki" target="_blank" rel="noopener noreferrer">{'Developer resources'|translate}</a></li>

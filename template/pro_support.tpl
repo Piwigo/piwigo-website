@@ -698,7 +698,7 @@
             </div>
             <h4 class="text-center mb-5">{'porg_support_before_card3_title'|translate}</h4>
             {include file='template/include/buttons/button.tpl' variant='cta_primary' label={'porg_support_before_card3_btn'|translate}
-            href="http://{$PORG_DOMAIN_PREFIX}piwigo.org/forum/" class='mt-auto' target="_blank"}
+            href="{$EXT_URL.forum}" class='mt-auto' target="_blank"}
           </div>
         </div>
       </div>

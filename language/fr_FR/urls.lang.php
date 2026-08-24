@@ -47,6 +47,7 @@ $lang['porg_urls']['automatic_update'] = 'guides/mise-a-jour/automatique';
 $lang['porg_urls']['manual_update'] = 'guides/mise-a-jour/manuelle';
 $lang['porg_urls']['docker_update'] = 'guides/mise-a-jour/docker';
 
+$lang['porg_ext_urls']['forum'] = 'https://fr.piwigo.org/forum';
 $lang['porg_ext_urls']['installation_guide'] = 'https://doc-fr.piwigo.org/hebergez-votre-piwigo/';
 $lang['porg_ext_urls']['automatic_update'] = 'https://doc-fr.piwigo.org/hebergez-votre-piwigo/guides-de-mise-a-jour/mise-a-jour-automatique/';
 $lang['porg_ext_urls']['manual_update'] = 'https://doc-fr.piwigo.org/hebergez-votre-piwigo/guides-de-mise-a-jour/mise-a-jour-manuelle/';

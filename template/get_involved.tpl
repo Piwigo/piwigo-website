@@ -41,7 +41,7 @@
             </div>
           </div>
           {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label="{'porg_get_involved_help_btn'|translate}"
-          href="//{$PORG_DOMAIN_PREFIX}piwigo.org/forum/" target="_blank"}
+          href="{$EXT_URL.forum}" target="_blank"}
         </div>
       </div>
     </div>
@@ -168,7 +168,7 @@
 
               <div class="d-flex justify-content-start mt-4">
                 {include file='template/include/buttons/button.tpl' variant='menu_btn_orange' label="{'porg_get_involved_users_btn'|translate}"
-                href="http://{$PORG_DOMAIN_PREFIX}piwigo.org/forum/" class="text-start px-4" target="_blank"}
+                href="{$EXT_URL.forum}" class="text-start px-4" target="_blank"}
               </div>
             </div>
           </div>

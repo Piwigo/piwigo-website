@@ -46,7 +46,8 @@ $lang['porg_urls']['docker_installation'] = 'guides/install/docker';
 $lang['porg_urls']['automatic_update'] = 'guides/update/automatic';
 $lang['porg_urls']['manual_update'] = 'guides/update/manual';
 $lang['porg_urls']['docker_update'] = 'guides/update/docker';
-    
+
+$lang['porg_ext_urls']['forum'] = 'https://piwigo.org/forum';
 $lang['porg_ext_urls']['installation_guide'] = 'https://doc.piwigo.org/self-hosting-piwigo';
 $lang['porg_ext_urls']['automatic_update'] = 'https://doc.piwigo.org/self-hosting-piwigo/update-guides/automatic-update/';
 $lang['porg_ext_urls']['manual_update'] = 'https://doc.piwigo.org/self-hosting-piwigo/update-guides/manual-update/';
