@@ -128,3 +128,4 @@ $lang['premium_plugins_UserMassRegister_desc'] = 'Inscrire plusieurs utilisateur
 $lang['premium_plugins_LDAPlogin_desc'] = 'Permet à Piwigo de se connecter à un Active Directory (annuaire LDAP)';
 $lang['premium_plugins_Microsoft365connect_desc'] = 'Permet à Piwigo de se connecter à un Azure Active Directory';
 $lang['premium_plugins_PasswordPolicy_desc'] = 'Déterminer des règles de sécurité sur les mots de passe utilisateurs : score de complexité, politique de renouvellement, gestion des tentatives de connexion échouées...';
+$lang['premium_plugins_Two-factorauthentication(2FA)_desc'] = 'Améliore la sécurité, vérification par email ou  applications TOTP';

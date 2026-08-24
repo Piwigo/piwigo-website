@@ -86,6 +86,7 @@ $plugin_names = array(
   'Title',
   'URL Uploader',
   'VideoJS',
+  'Two-factor authentication (2FA)',
   // Team plugins start below
   'Add tags mass',
   'Add User Notes',
@@ -131,7 +132,7 @@ $feature_table = array(
 
 $plugin_table = array();
 
-for ($i = 0; $i < 82; $i++)
+for ($i = 0; $i < 83; $i++)
 {
   $plugin_table[] = array(true, true, true, true);
 }
