@@ -412,17 +412,28 @@ function porg_load_content()
   $nav_selected = array(
     'get_started' => in_array($current_page, array(
       'pricing',
-      'product'
+      'get-piwigo'
     ), true),
     'product' => in_array($current_page, array(
       'features',
-      'use_cases',
+      'use-cases',
       'mobile-applications',
-      'demo'
+      'demo',
+      'use-case-travel-tourism',
+      'use-case-public-sector',
+      'use-case-companies',
+      'use-case-education-research',
+      'use-case-nonprofits',
+      'use-case-photographers-individuals'
     ), true),
     'users' => in_array($current_page, array(
       'users',
-      'cases'
+      'cases',
+      'case-study-cotentin',
+      'case-study-ect',
+      'case-study-icam',
+      'case-study-indre',
+      'case-study-wessex',
     ), true),
     'support' => in_array($current_page, array(
       'pro-support'
@@ -434,7 +445,8 @@ function porg_load_content()
     'news' => in_array($current_page, array(
       'product_update',
       'newsletters',
-      'news'
+      'news',
+      'release'
     ), true),
   );
 
