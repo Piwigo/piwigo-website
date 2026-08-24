@@ -8,7 +8,7 @@
 			{include
 				file="template/include/buttons/button.tpl"
 				variant="menu_btn_white"
-				href="{$PORG_ROOT}{$URL.plugins_by_plan}{$URL_PARAM_SEPARATOR}plan=selfhosted&display=self-hosted"
+				href="{$PORG_ROOT}{$URL.plugins_by_plan}{$URL_PARAM_SEPARATOR}plan=selfhosted"
 				label={'pricing tooltip_list_vip'|translate}
 			}
 		</div>

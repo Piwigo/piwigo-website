@@ -17,7 +17,7 @@
   {include file="template/include/buttons/pricing_switch.tpl"}
 </div>
 
-{assign var=display_mode value=$smarty.get.display|default:'cloud'}
+{assign var=display_mode value=$smarty.get.plan|default:'cloud'}
 
 {assign var=self_hosted_names value=['team'=>'Light', 'enterprise'=>'Standard', 'vip'=>'Premium']}
 

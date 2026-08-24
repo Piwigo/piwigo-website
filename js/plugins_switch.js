@@ -2,10 +2,10 @@ jQuery(document).ready(function () {
   const cloudBtn = jQuery(".btn-pricing.cloud");
   const selfHostedBtn = jQuery(".btn-pricing.self-hosted");
   const url = new URL(window.location);
-  const currentDisplay = url.searchParams.get("display");
+  const currentDisplay = url.searchParams.get("plan");
 
   if (cloudBtn.length && selfHostedBtn.length) { // Ensure elements are found before manipulating
-    if (currentDisplay === "self-hosted") {
+    if (currentDisplay === "selfhosted") {
       selfHostedBtn.addClass("active").removeClass("inactive");
       cloudBtn.removeClass("active").addClass("inactive");
     } else {
@@ -14,12 +14,12 @@ jQuery(document).ready(function () {
     }
 
     selfHostedBtn.on("click", function () {
-      url.searchParams.set("display", "self-hosted");
+      url.searchParams.set("plan", "selfhosted");
       window.location.href = url.toString();
     });
 
     cloudBtn.on("click", function () {
-      url.searchParams.delete("display");
+      url.searchParams.set("plan", "cloud");
       window.location.href = url.toString();
     });
   } else {
