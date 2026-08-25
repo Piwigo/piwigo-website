@@ -134,7 +134,8 @@
 			file="template/include/buttons/button.tpl"
 			variant="menu_btn_white"
 			href={(isset($btn_link_try)) ? $btn_link_try : "#"}
-		label={(isset($btn_trial)) ? ($btn_trial|translate) : ('pcom_pricing_page_start_30_day_free_trial'|translate)}
+			label={(isset($btn_trial)) ? ($btn_trial|translate) : ('pcom_pricing_page_start_30_day_free_trial'|translate)}
+			target="_self"
 		}
 	</div>
 	<h2 class="h2-mobile-top-page text-center">{$title|translate}</h2>

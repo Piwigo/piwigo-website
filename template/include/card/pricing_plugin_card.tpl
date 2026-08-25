@@ -10,6 +10,7 @@
 				variant="menu_btn_white"
 				href="{$PORG_ROOT}{$URL.plugins_by_plan}{$URL_PARAM_SEPARATOR}plan=selfhosted"
 				label={'pricing tooltip_list_vip'|translate}
+				target="_self"
 			}
 		</div>
 	</div>
