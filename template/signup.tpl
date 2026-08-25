@@ -15,7 +15,7 @@
   }
 </style>
 
-<section class="signup-header align-items-center justify-content-center d-flex" id="signup-page" style="min-height: 100vh;">
+<section class="signup-header align-items-center justify-content-center" id="signup-page" style="min-height: 100vh;">
   <div class="container">
     <div class="row align-items-center form-side-container">
 
