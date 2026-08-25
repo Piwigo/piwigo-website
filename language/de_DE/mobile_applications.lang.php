@@ -1,0 +1,47 @@
+<?php
+$lang['page_meta_title'] = 'Mobile App für iOS und Android - Piwigo';
+$lang['page_meta_description'] = 'Nutzen Sie die kostenlose Piwigo App, um Ihre Mediathek unterwegs zu verwalten.';
+
+$lang['mobile_applications_title_pt1'] = 'Piwigo <span class="orange-text">App</span> für ' ;
+$lang['mobile_applications_title_pt2'] = 'iOS' ;
+$lang['mobile_applications_title_pt3'] = ' und' ;
+$lang['mobile_applications_title_pt4'] = ' Android' ;
+$lang['mobile_applications_introduction_pt1'] = 'Piwigo gibt es auch für Ihr Smartphone.' ;
+$lang['mobile_applications_introduction_pt2'] = 'Nutzen Sie die kostenlose App, um Ihre Mediathek zu verwalten und viele Funktionen auch unterwegs zu haben.' ;
+$lang['mobile_applications_import_title'] = 'Fotos und Videos importieren' ;
+$lang['mobile_applications_import_text'] = 'Mit der Piwigo App fügen Sie Ihrer Mediathek jederzeit vom Mobilgerät aus Fotos hinzu. Legen Sie neue Alben an oder ergänzen Sie bestehende. Auch Videos lassen sich importieren, sofern Ihre Galerie diese Möglichkeit bietet (kompatibel mit dem Plugin VideoJS).' ;
+$lang['mobile_applications_follows_you_title'] = 'Ihre Mediathek begleitet Sie überallhin' ;
+$lang['mobile_applications_follows_you_text'] = 'Greifen Sie jederzeit über die Piwigo App auf Ihre Mediathek zu. Sie müssen nicht alle Dateien auf dem Telefon behalten. Durchstöbern Sie Ihre Alben, Fotos und Videos direkt in der App.' ;
+$lang['mobile_applications_albums_title'] = 'Halten Sie Ihre Alben in Ordnung' ;
+$lang['mobile_applications_albums_text'] = 'Die Piwigo App gibt Ihnen die volle Kontrolle über Ihre Alben. Sie können sie anlegen, bearbeiten und nach Bedarf umbenennen. Auch die Einstellungen jedes Albums lassen sich festlegen: Name, Beschreibung, Vorschaubild und mehr.' ;
+$lang['mobile_applications_sort_photos_title'] = 'Verwalten Sie Ihre Fotos im Detail' ;
+$lang['mobile_applications_sort_photos_text'] = 'Sehen und bearbeiten Sie alle Angaben zu Ihren Fotos direkt in der Piwigo App: Titel, Beschreibung, Tags, Urheber… Sie können Ihre Fotos außerdem ordnen, auf das Mobilgerät herunterladen oder löschen.';
+$lang['mobile_applications_import_options_title'] = 'Import-Optionen für Ihre Fotos' ;
+$lang['mobile_applications_size_quality_title'] = 'Größe und Qualität';
+$lang['mobile_applications_size_quality_text'] = 'Passen Sie Größe und Qualität der hochgeladenen Fotos an, bevor sie auf dem Server gespeichert werden.';
+$lang['mobile_applications_metadata_title'] = 'Eigenschaften';
+$lang['mobile_applications_metadata_text'] = 'Greifen Sie auf alle Eigenschaften Ihrer Dateien zu und bearbeiten Sie sie bei Bedarf: Titel, Urheber, Datum, Vertraulichkeitsstufe, Tags, Beschreibung…';
+$lang['mobile_applications_geolocalisation_title'] = 'Fotos geografisch verorten';
+$lang['mobile_applications_geolocalisation_text'] = 'Übernehmen Sie automatisch die GPS-Koordinaten Ihrer Fotos und zeigen Sie sie auf einer Karte in Ihrer Galerie an.';
+$lang['mobile_applications_invite_title'] = 'Familie, Freunde und Kollegen einladen';
+$lang['mobile_applications_invite_text'] = 'Die Piwigo App ist mit dem Plugin Community kompatibel, sodass auch Nutzer ohne Administrationsrechte Fotos in Ihre Mediathek hochladen können.';
+$lang['mobile_applications_copy_move_title'] = 'Fotos und Videos kopieren und verschieben';
+$lang['mobile_applications_copy_move_text'] = 'Mit der Piwigo App ordnen Sie Ihre Medien mühelos: Verschieben Sie Fotos und Videos zwischen Alben oder kopieren Sie sie von einem Album in ein anderes (nur iOS).';
+$lang['mobile_applications_share_title'] = 'Fotos und Videos teilen';
+$lang['mobile_applications_share_text'] = 'Teilen Sie Fotos und Videos direkt aus der Piwigo App über die integrierten Teilen-Funktionen Ihres Geräts.';
+$lang['mobile_applications_security_title'] = 'Sicherheit und Datenschutz';
+$lang['mobile_applications_user_rights_title'] = 'Benutzerberechtigungen';
+$lang['mobile_applications_user_rights_text'] = 'Die in Piwigo eingerichteten Berechtigungen gelten auch in der App. Nutzer sehen nur die Alben, für die sie berechtigt sind.';
+$lang['mobile_applications_confidentiality_title'] = 'Datenschutz';
+$lang['mobile_applications_confidentiality_text'] = 'Wie immer bei Piwigo gehören Ihre Daten Ihnen. Kein Tracking, keine Weitergabe Ihrer persönlichen Daten, keine Algorithmen, die Ihre Dateien auswerten.';
+$lang['mobile_applications_control_title'] = 'Kontrolle über Ihre Daten';
+$lang['mobile_applications_control_text'] = 'Entscheiden Sie, ob die Metadaten der Fotos mitgegeben werden, wenn Sie Dateien aus der App teilen.';
+$lang['mobile_applications_download_pt1'] = 'Laden Sie die ';
+$lang['mobile_applications_download_pt2'] = 'Piwigo App herunter';
+$lang['mobile_applications_download_app_store1'] = 'Für Android herunterladen';
+$lang['mobile_applications_download_play_store1'] = 'Für iOS herunterladen';
+$lang['mobile_applications_download_app_store2'] = 'oder laden Sie die App über den Play Store';
+$lang['mobile_applications_download_play_store2'] = 'oder laden Sie die App über den App Store';
+$lang['mobile_applications_scan_qr'] = 'Scannen Sie diesen QR-Code mit Ihrem Telefon!';
+
+$lang['ios_only'] = 'nur iOS';
