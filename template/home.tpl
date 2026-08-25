@@ -284,7 +284,7 @@
                   <p class="sub-h3 pink-text mb-0">{'porg_home_features_security_subtitle'|translate}</p>
                   <img src="{$PORG_ROOT_URL}images/home/security.webp" alt="Feature 7" class="img-fluid mt-3 d-md-none">
                   <p class="p-boxed feature-card-desc">{'porg_home_features_security_desc'|translate}</p>
-                  {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'Explore solution <i class="icon-forward-arrow" style="font-size: 10px; position: relative; top: -1px;"></i>'|translate} href="{$PORG_ROOT}{$URL.features}#security"}
+                  {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label={'Explore solution %s'|translate:'<i class="icon-forward-arrow" style="font-size: 10px; position: relative; top: -1px;"></i>'} href="{$PORG_ROOT}{$URL.features}#security"}
                 </div>
                 <div class="col-md-6 justify-content-center d-flex flex-column">
                   <img src="{$PORG_ROOT_URL}images/home/security.webp" alt="Feature 7" class="img-fluid d-none d-md-block" style="margin-right: 25px;">
