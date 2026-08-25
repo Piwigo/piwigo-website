@@ -48,18 +48,8 @@
 									class="text-decoration-underline text-inherit">{$feature.text|translate}</a>
 								<i class="icon-rounded-warning text-info-light"></i>
 
-							{elseif isset($feature.subject) && $feature.subject == 'selfhosted_plugins'}
-								<span class="custom-link-container js-plugin-tooltip-trigger d-flex align-items-top"
-									style="cursor: pointer;">
-									<span class="link-text">{$feature.text|translate}</span>
-									<i class="icon-rounded-warning text-info-light ms-1 flex-shrink-0"></i>
-									<div class="pricing-plugin-popover">
-										{include file="template/include/card/pricing_plugin_card.tpl"}
-									</div>
-								</span>
-
 							{elseif isset($feature.subject) && $feature.subject == 'plugins'}
-								<a href="{$PORG_ROOT}{$URL.plugins_by_plan}{$URL_PARAM_SEPARATOR}plan={if isset($plan_id) && $plan_id != 'free'}selfhosted{elseif isset($plan.id) && $plan.id != 'free'}selfhosted{else}cloud{/if}"
+								<a href="{$PORG_ROOT}{$URL.plugins_by_plan}{$URL_PARAM_SEPARATOR}plan={if isset($card_id) && $card_id <= 4}cloud{else}self_hosted{/if}"
 									class="text-decoration-underline text-inherit">
 									{$feature.text|translate}
 								</a>

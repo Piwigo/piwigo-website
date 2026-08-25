@@ -104,15 +104,6 @@ $lang['pcom_pricing_page_personal_pro_details_2'] = 'Plus de 80 plugins pour per
 $lang['pcom_pricing_page_personal_pro_details_3'] = 'Import des métadonnées de vos fichiers';
 $lang['pcom_pricing_page_personal_pro_details_4'] = 'Contenus privés ou publics';
 $lang['pcom_pricing_page_personal_pro_details_5'] = 'Gestion des utilisateurs';
-$lang['pcom_pricing_page_personal_pro_details_6'] = 'Pied de page personnalisé';
-$lang['pcom_pricing_page_personal_pro_details_7'] = 'Partagez un album ou un fichier par lien sécurisé';
-$lang['pcom_pricing_page_personal_pro_details_8'] = 'Téléchargement d\'un album en un clic';
-$lang['pcom_pricing_page_personal_pro_details_9'] = 'Choix de la taille du fichier au téléchargement';
-$lang['pcom_pricing_page_personal_pro_details_10'] = 'Pages de contenu (à propos...)';
-$lang['pcom_pricing_page_personal_pro_details_11'] = 'Formulaires de contact';
-$lang['pcom_pricing_page_personal_pro_details_13'] = 'Personnalisation du menu';
-$lang['pcom_pricing_page_personal_pro_details_14'] = 'Ajout d\'une bannière';
-$lang['pcom_pricing_page_personal_pro_details_15'] = 'Ajout de scripts externes';
 $lang['pcom_pricing_page_personal_pro_details_16'] = 'Hébergement de votre galerie sur un cloud sécurisé';
 $lang['pcom_pricing_page_personal_pro_details_18'] = 'nom de domaine de type magalerie.piwigo.com ou nom de domaine personnalisé';
 

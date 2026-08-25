@@ -104,15 +104,6 @@ $lang['pcom_pricing_page_personal_pro_details_2'] = 'Over 80 plugins to customiz
 $lang['pcom_pricing_page_personal_pro_details_3'] = 'Import of your files\' metadata';
 $lang['pcom_pricing_page_personal_pro_details_4'] = 'Private or public content';
 $lang['pcom_pricing_page_personal_pro_details_5'] = 'User rights management';
-$lang['pcom_pricing_page_personal_pro_details_6'] = 'Custom footer';
-$lang['pcom_pricing_page_personal_pro_details_7'] = 'Share an album or file via secure link';
-$lang['pcom_pricing_page_personal_pro_details_8'] = 'One-click album download';
-$lang['pcom_pricing_page_personal_pro_details_9'] = 'Choose file size for download';
-$lang['pcom_pricing_page_personal_pro_details_10'] = 'Content pages (about...)';
-$lang['pcom_pricing_page_personal_pro_details_11'] = 'Contact forms';
-$lang['pcom_pricing_page_personal_pro_details_13'] = 'Menu customization';
-$lang['pcom_pricing_page_personal_pro_details_14'] = 'Add a banner';
-$lang['pcom_pricing_page_personal_pro_details_15'] = 'Add external scripts';
 $lang['pcom_pricing_page_personal_pro_details_16'] = 'Host your gallery on a secure cloud';
 $lang['pcom_pricing_page_personal_pro_details_18'] = 'domain name like mylibrary.piwigo.com or personalized domain name';
 

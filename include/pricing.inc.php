@@ -89,15 +89,6 @@ $plans = array(
 			array('text' => l10n('pcom_pricing_page_email_support')),
 			array(
 				'text' => l10n('pcom_pricing_page_personal_pro_details_2'),
-				'info' => true,
-				'tooltip' => array(
-					l10n('pcom_pricing_page_personal_pro_details_7'),
-					l10n('pcom_pricing_page_personal_pro_details_8'),
-					l10n('pcom_pricing_page_personal_pro_details_9'),
-					l10n('pcom_pricing_page_personal_pro_details_10'),
-					l10n('pcom_pricing_page_personal_pro_details_11'),
-					l10n('pcom_pricing_page_etc')
-				),
 				'subject' => 'plugins'
 			),
 		),
@@ -155,15 +146,6 @@ $plans = array(
 			array('text' => l10n('pcom_pricing_page_priority_email_support')),
 			array(
 				'text' => l10n('plugins to customize', 95),
-				'info' => true,
-				'tooltip' => array(
-					l10n('pcom_pricing_page_personal_pro_details_7'),
-					l10n('pcom_pricing_page_personal_pro_details_8'),
-					l10n('pcom_pricing_page_personal_pro_details_9'),
-					l10n('pcom_pricing_page_personal_pro_details_10'),
-					l10n('pcom_pricing_page_personal_pro_details_11'),
-					l10n('pcom_pricing_page_etc')
-				),
 				'subject' => 'plugins'
 			),
 		),
@@ -205,15 +187,6 @@ $plans = array(
 			array('text' => l10n('pcom_pricing_page_priority_email_support')),
 			array(
 				'text' => l10n('plugins to customize',108),
-				'info' => true,
-				'tooltip' => array(
-					l10n('pcom_pricing_page_personal_pro_details_7'),
-					l10n('pcom_pricing_page_personal_pro_details_8'),
-					l10n('pcom_pricing_page_personal_pro_details_9'),
-					l10n('pcom_pricing_page_personal_pro_details_10'),
-					l10n('pcom_pricing_page_personal_pro_details_11'),
-					l10n('pcom_pricing_page_etc')
-				),
 				'subject' => 'plugins'
 			),
 		),
@@ -277,15 +250,6 @@ $plans = array(
 			array('text' => l10n('pcom_pricing_page_priority_email_phone_support')),
 			array(
 				'text' => l10n('plugins to customize', 111),
-				'info' => true,
-				'tooltip' => array(
-					l10n('pcom_pricing_page_personal_pro_details_7'),
-					l10n('pcom_pricing_page_personal_pro_details_8'),
-					l10n('pcom_pricing_page_personal_pro_details_9'),
-					l10n('pcom_pricing_page_personal_pro_details_10'),
-					l10n('pcom_pricing_page_personal_pro_details_11'),
-					l10n('pcom_pricing_page_etc')
-				),
 				'subject' => 'plugins'
 			),
 		),
@@ -334,7 +298,7 @@ $support_plans = array(
 			array('text' => l10n('3 administrators')),
 			array(
 				'text' => l10n('pcom_pricing_page_support_light_plugins'),
-				'subject' => 'selfhosted_plugins'
+				'subject' => 'plugins'
 			),
 		)
 	),
@@ -350,7 +314,7 @@ $support_plans = array(
 			array('text' => l10n('5 administrators')),
 			array(
 				'text' => l10n('pcom_pricing_page_support_standard_plugins'),
-				'subject' => 'selfhosted_plugins'
+				'subject' => 'plugins'
 			),
 		)
 	),
@@ -366,7 +330,7 @@ $support_plans = array(
 			array('text' => l10n('pcom_pricing_page_unlimited_admins')),
 			array(
 				'text' => l10n('pcom_pricing_page_support_premium_plugins'),
-				'subject' => 'selfhosted_plugins'
+				'subject' => 'plugins'
 			),
 			array(
 				'text' => l10n('pcom_pricing_page_support_premium_audit'),

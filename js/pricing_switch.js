@@ -90,7 +90,7 @@ $(document).ready(function () {
     var choice = $clickedBtn.hasClass("cloud") ? "cloud" : "self-hosted";
     updatePricingCards(choice);
 
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 400, behavior: 'smooth' });
   });
 
   // Initialization

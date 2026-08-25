@@ -5,7 +5,7 @@ jQuery(document).ready(function () {
   const currentDisplay = url.searchParams.get("plan");
 
   if (cloudBtn.length && selfHostedBtn.length) { // Ensure elements are found before manipulating
-    if (currentDisplay === "selfhosted") {
+    if (currentDisplay === "self_hosted") {
       selfHostedBtn.addClass("active").removeClass("inactive");
       cloudBtn.removeClass("active").addClass("inactive");
     } else {
@@ -14,7 +14,7 @@ jQuery(document).ready(function () {
     }
 
     selfHostedBtn.on("click", function () {
-      url.searchParams.set("plan", "selfhosted");
+      url.searchParams.set("plan", "self_hosted");
       window.location.href = url.toString();
     });
 
