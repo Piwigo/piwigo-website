@@ -628,12 +628,14 @@
   border-color: var(--main_flash_green);
 }
 
-@media (max-width: 768px) {
-  .grey-box {
+@media (max-width: 1200px) {
+  .container-team .feature-benefits-strip {
     padding: 30px;
   }
+}
 
-  .container-team .feature-benefits-strip {
+@media (max-width: 768px) {
+  .grey-box {
     padding: 30px;
   }
 

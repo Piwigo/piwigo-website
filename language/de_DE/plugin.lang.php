@@ -252,7 +252,7 @@ $lang['Developer resources desc'] = '';
 $lang['support btn'] = 'Brauchen Sie fachkundige Hilfe?';
 
 $lang['About Piwigo'] = 'Über Piwigo';
-$lang['About Piwigo desc'] = 'Unser Team, unser Auftrag, unsere Geschichte';
+$lang['About Piwigo desc'] = 'Team, Mission und Geschichte';
 $lang['Contribute'] = 'Mitmachen';
 $lang['Contribute desc'] = 'Machen Sie auf Ihre Weise mit';
 
@@ -337,7 +337,7 @@ $lang['Search'] = 'Suche';
 $lang['years'] = 'Jahre';
 $lang['M (the one for millions)'] = ' Mio.';
 $lang['Today'] = 'Heute';
-$lang['Send us a testimonial'] = 'Senden Sie uns einen Erfahrungsbericht';
+$lang['Send us a testimonial'] = 'Erfahrungsbericht senden';
 $lang['Show more'] = 'Mehr anzeigen';
 $lang['Learn more'] = 'Mehr erfahren';
 $lang['Read more'] = 'Weiterlesen';

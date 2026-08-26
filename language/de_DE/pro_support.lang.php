@@ -103,7 +103,7 @@ $lang['porg_support_before_subtitle'] = 'Sie kommen lieber selbst weiter? Die me
 $lang['porg_support_before_card1_title'] = 'Sie suchen Dokumentation?';
 $lang['porg_support_before_card1_btn'] = 'Dokumentation lesen';
 $lang['porg_support_before_card2_title'] = 'Sie installieren Piwigo?';
-$lang['porg_support_before_card2_btn'] = 'Unseren Installationsanleitungen folgen';
+$lang['porg_support_before_card2_btn'] = 'Installationsanleitungen ansehen';
 $lang['porg_support_before_card3_title'] = 'Sie brauchen Hilfe von anderen Nutzern?';
 $lang['porg_support_before_card3_btn'] = 'Die Community fragen';
 
