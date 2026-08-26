@@ -59,3 +59,4 @@ $lang['porg_ext_urls']['docker'] = 'https://doc-fr.piwigo.org/hebergez-votre-piw
 $lang['porg_ext_urls']['privacy'] = 'https://doc-fr.piwigo.org/mentions-legales/confidentialite/';
 $lang['porg_ext_urls']['terms_of_service'] = 'https://doc-fr.piwigo.org/mentions-legales/conditions-utilisation/';
 $lang['porg_ext_urls']['dpa'] = 'https://doc-fr.piwigo.org/mentions-legales/dpa/';
+$lang['porg_ext_urls']['extensions'] = 'https://fr.piwigo.org/ext/';
