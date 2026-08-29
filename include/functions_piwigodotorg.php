@@ -4,6 +4,8 @@
  */
 function porg_get_pages()
 {
+  global $lang;
+
   return array(
     'home' => 'Piwigo - Manage your photo collection',
     'features' => 'Features',
@@ -44,12 +46,12 @@ function porg_get_pages()
     'basics/' => 'porg_redirect_to:home',
     'basics/features' => 'porg_redirect_to:features',
     'basics/requirements' => 'porg_redirect_to:get-piwigo',
-    'basics/installation' => 'gporg_redirect_to:https://doc.piwigo.org/self-hosting-piwigo/install-guides/manual-install/',
-    'basics/installation_netinstall' => 'porg_redirect_to:https://doc.piwigo.org/self-hosting-piwigo/install-guides/manual-install/',
-    'basics/installation_manual' => 'porg_redirect_to:https://doc.piwigo.org/self-hosting-piwigo/install-guides/manual-install/',
-    'basics/upgrade' => 'porg_redirect_to:https://doc.piwigo.org/self-hosting-piwigo/update-guides/automatic-update/',
-    'basics/upgrade_automatic' => 'porg_redirect_to:https://doc.piwigo.org/self-hosting-piwigo/update-guides/automatic-update/',
-    'basics/upgrade_manual' => 'porg_redirect_to:https://doc.piwigo.org/self-hosting-piwigo/update-guides/manual-update/',
+    'basics/installation' => 'porg_redirect_to:'.$lang['porg_ext_urls']['installation_guide'],
+    'basics/installation_netinstall' => 'porg_redirect_to:'.$lang['porg_ext_urls']['manual_installation'],
+    'basics/installation_manual' => 'porg_redirect_to:'.$lang['porg_ext_urls']['manual_installation'],
+    'basics/upgrade' => 'porg_redirect_to:'.$lang['porg_ext_urls']['automatic_update'],
+    'basics/upgrade_automatic' => 'porg_redirect_to:'.$lang['porg_ext_urls']['automatic_update'],
+    'basics/upgrade_manual' => 'porg_redirect_to:'.$lang['porg_ext_urls']['manual_update'],
     'basics/downloads' => 'porg_redirect_to:get-piwigo',
     'basics/archive' => 'porg_redirect_to:product_update',
     'basics/newsletter' => 'porg_redirect_to:newsletters',
@@ -65,15 +67,18 @@ function porg_get_pages()
     'get-help' => 'porg_redirect_to:contact',
     'coding-activity' => 'porg_redirect_to:product_update',
     'testimonials' => 'porg_redirect_to:users',
-    'guides' => 'porg_redirect_to:https://doc.piwigo.org/self-hosting-piwigo/',
-    'requirements' => 'porg_redirect_to:https://doc.piwigo.org/self-hosting-piwigo/install-guides/requirements/',
-    'netinstall' => 'porg_redirect_to:https://doc.piwigo.org/self-hosting-piwigo/install-guides/manual-install/',
-    'manual_installation' => 'porg_redirect_to:https://doc.piwigo.org/self-hosting-piwigo/install-guides/manual-install/',
-    'docker_installation' => 'porg_redirect_to:https://doc.piwigo.org/self-hosting-piwigo/install-guides/docker-install/',
-    'automatic_update' => 'porg_redirect_to:https://doc.piwigo.org/self-hosting-piwigo/update-guides/automatic-update/',
-    'manual_update' => 'porg_redirect_to:https://doc.piwigo.org/self-hosting-piwigo/update-guides/manual-update/',
-    'docker_update' => 'porg_redirect_to:https://doc.piwigo.org/self-hosting-piwigo/update-guides/docker-update/',
-    'guide-update-docker' => 'porg_redirect_to:https://doc.piwigo.org/self-hosting-piwigo/update-guides/docker-update/',
+    'guides' => 'porg_redirect_to:'.$lang['porg_ext_urls']['installation_guide'],
+    'requirements' => 'porg_redirect_to:'.$lang['porg_ext_urls']['prerequisites'],
+    'netinstall' => 'porg_redirect_to:'.$lang['porg_ext_urls']['manual_installation'],
+    'manual_installation' => 'porg_redirect_to:'.$lang['porg_ext_urls']['manual_installation'],
+    'docker_installation' => 'porg_redirect_to:'.$lang['porg_ext_urls']['docker'],
+    'automatic_update' => 'porg_redirect_to:'.$lang['porg_ext_urls']['automatic_update'],
+    'manual_update' => 'porg_redirect_to:'.$lang['porg_ext_urls']['manual_update'],
+    'docker_update' => 'porg_redirect_to:'.$lang['porg_ext_urls']['docker_update'],
+    'guide-update-docker' => 'porg_redirect_to:'.$lang['porg_ext_urls']['docker_update'],
+    'terms-of-service' => 'porg_redirect_to:'.$lang['porg_ext_urls']['terms_of_service'],
+    'privacy' => 'porg_redirect_to:'.$lang['porg_ext_urls']['privacy'],
+    'dpa' => 'porg_redirect_to:'.$lang['porg_ext_urls']['dpa'],
   );
 }
 
