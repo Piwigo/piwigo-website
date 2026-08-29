@@ -5,8 +5,7 @@
   {* Required meta tags *}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  {if !$PORG_IS_PRODUCTION}
-    {* Robots *}
+  {if !$AUTHORIZE_ROBOTS}
     <meta name="robots" content="noindex, nofollow">
   {/if}
 
@@ -50,7 +49,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="{$PORG_ROOT_URL_PLUGINS}images/favicon.ico">
   <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL_PLUGINS}vendor/flag-icons-master/css/flag-icon.css">
 
-  {if $PORG_IS_PRODUCTION}
+  {if $TRACK_ANALYTICS}
   <script defer data-domain="piwigo.org" src="https://plausible.piwigo.org/js/script.js"></script>
   {/if}
 </head>
