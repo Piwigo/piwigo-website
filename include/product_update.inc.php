@@ -123,7 +123,7 @@ if (is_array($coding_activity_commits)) {
       $commit_type = 'core';
     }
 
-    if (isset($commit['author']) && $commit['author'] === 'Piwigo-TranslationTeam') {
+    if (isset($commit['author']) && in_array($commit['author'], array('Piwigo-TranslationTeam', 'TranslationTeam'))) {
       $commit_type = 'translation';
     }
 
