@@ -1,9 +1,9 @@
 <?php
 $lang['faq question 1'] = 'Is there a free version of Piwigo ?';
-$lang['faq answer 1'] = 'After the trial period, all piwigo.com plans are subject to a fee. However, you can download Piwigo for free from piwigo.org and install it on the server of your choice. To do this, you need to have an existing infrastructure, and the skills to manage Piwigo\'s installation, updates and backups, as well as its setup and customization.';
+$lang['faq answer 1'] = 'After the trial period, all Piwigo Cloud plans are subject to a fee. However, you can download Piwigo for free and install it on the server of your choice. To do this, you need to have an existing infrastructure, and the skills to manage Piwigo\'s installation, updates and backups, as well as its setup and customization.';
 
 $lang['faq question 2'] = 'Are there any setup fees for Piwigo?';
-$lang['faq answer 2'] = 'At Piwigo, we charge <span class="strong-text">no</span> setup fees for the implementation of your Piwigo hosting.<br><br>This allows us to offer transparent and affordable pricing - unlike some digital asset management or photo library software that charge both a software subscription and numerous custom setup or consulting services.<br><br>This is a deliberate choice: our job is to provide great software, not to sell consulting hours. We do not offer project management or consulting services. If you need help getting started with Piwigo, you can simply contact our support team.<br><br>However, we do work with partner photo librarians and iconographers who can assist you if you\'re looking for guidance and hands-on support to structure and configure your Piwigo. <a href="contact">Contact us</a> if this service interests you.';
+$lang['faq answer 2'] = 'At Piwigo, we charge <span class="strong-text">no setup fees</span> for the implementation of your Piwigo hosting.<br><br>This allows us to offer transparent and affordable pricing - unlike some digital asset management or photo library software that charge both a software subscription and numerous custom setup or consulting services.<br><br>This is a deliberate choice: our job is to provide great software, not to sell consulting hours. We do not offer project management or consulting services. If you need help getting started with Piwigo, you can simply contact our support team.<br><br>However, we do work with partner photo librarians and iconographers who can assist you if you\'re looking for guidance and hands-on support to structure and configure your Piwigo. <a href="contact">Contact us</a> if this service interests you.';
 
 $lang['faq question 3'] = 'What happens if I run out of storage space?';
 $lang['faq answer 3'] = 'Your account is not automatically blocked. We\'ll contact you to suggest switching to a higher plan or purchasing additional storage.<br><br>The price will be added to your annual subscription. Rates are as follows (billed annually):<br><br></p>
@@ -31,13 +31,13 @@ $lang['faq answer 4'] = 'No, you are limited to one Piwigo per subscription.';
 $lang['faq question 5'] = 'What is the web address of my Piwigo?';
 $lang['faq answer 5'] = 'By default, when you create your account, the URL of your Piwigo is [yourusername].piwigo.com. We also can associate Piwigo with your own domain name (for example, media.myteam.com). To do this, just contact support.';
 
-$lang['faq question 6'] = 'I already have a Piwigo on my server, can I transfer it to Piwigo.com?';
+$lang['faq question 6'] = 'I already have a Piwigo on my server, can I transfer it to Piwigo Cloud?';
 $lang['faq answer 6'] = 'If you already host a Piwigo on your own infrastructure and you want to subscribe to a hosting offer, it is possible! We will transfer your data for free.';
 
 
 
 $lang['faq question 7'] = 'What level of service is included in the subscriptions?';
-$lang['faq answer 7'] = 'All Piwigo users have access to our customer support by email.<br><br>From the Team plan: customers benefit from priority access to support.<br><br>From the Enterprise plan: custom branding of the Piwigo interface is included (<a href="https://customizations.piwigo.com/" target="blank">see examples</a>).<br><br>From the VIP plan: importing existing data from another software or storage space is included  (<a href="https://piwigo.com/blog/2025/07/01/importing-an-existing-photo-library-into-piwigo/ " target="blank">learn more</a>); customers also have access to phone support in addition to email support, and benefit from enhanced onboarding (one meeting per month during the first 6 months to help you make the most of Piwigo).';
+$lang['faq answer 7'] = 'All Piwigo Cloud users have access to our customer support by email.<br><br>From the Team plan: customers benefit from priority access to support.<br><br>From the Enterprise plan: custom branding of the Piwigo interface is included (<a href="https://customizations.piwigo.com/" target="blank">see examples</a>).<br><br>From the VIP plan: importing existing data from another software or storage space is included  (<a href="https://piwigo.com/blog/2025/07/01/importing-an-existing-photo-library-into-piwigo/ " target="blank">learn more</a>); customers also have access to phone support in addition to email support, and benefit from enhanced onboarding (one meeting per month during the first 6 months to help you make the most of Piwigo).';
 
 $lang['faq question 8'] = 'Which payment methods do you accept?';
 $lang['faq answer 8'] = 'You can pay by PayPal, by credit card via Stripe, or bank transfer within the European Union.';
