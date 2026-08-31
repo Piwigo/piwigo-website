@@ -36,7 +36,7 @@ if (is_array($users_examples)) {
     $filtered_data = array(
       "id" => $example['id'],
       "name" => $example['name'],
-      "comment" => $example['comment'],
+      "comment" => trigger_change('render_category_name', $example['comment'] ?? ''),
       "page_url" => $example['page_url'],
       "element_url" => $example['element_url'],
       "derivatives" => $example['derivatives'],
