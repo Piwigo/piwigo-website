@@ -1,6 +1,6 @@
 <?php
 
-$lang['Get started CTA subtitle part 1'] = 'Choisissez le setup';
+$lang['Get started CTA subtitle part 1'] = 'Choisissez le mode d\'hébergement';
 $lang['Get started CTA subtitle part 2'] = 'qui correspond à vos besoins :';
 $lang['Get started CTA cloud'] = 'Démarrez votre <span class="green-text">essai gratuit de 30 jours</span>';
 $lang['Get started CTA selfhost'] = 'Installez Piwigo sur <span class="green-text">votre propre serveur</span>';
