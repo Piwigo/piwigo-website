@@ -1,10 +1,12 @@
 <?php
+/*
 $template->assign(
 	'ANNOUNCEMENT_INFO',
 	array(
 		'label' => l10n('As of September 1st 2026, a 10% price increase is planned for all our subscribers, both existing and new.'),
 	)
 );
+*/
 
 $faqs = array();
 $faq_number = 12;
@@ -67,7 +69,7 @@ $plans = array(
 		'is_best_deal' => false,
 		'admins_count' => '1',
 		'storage_size' => '10GB',
-		'price' => l10n('€%d', 29),
+		'price' => l10n('€%d', 32),
 		'subtitle' => l10n('pcom_pricing_page_pro_explanation'),
 		'features' => array(
 			array('text' => l10n('1 administrator')),
@@ -125,7 +127,7 @@ $plans = array(
 		'is_best_deal' => false,
 		'admins_count' => '3',
 		'storage_size' => '100GB',
-		'price' => l10n('€%d', 99),
+		'price' => l10n('€%d', 109),
 		'subtitle' => l10n('pcom_pricing_page_team_explanation'),
 		'features' => array(
 			array('text' => l10n('3 administrators')),
@@ -170,7 +172,7 @@ $plans = array(
 		'is_best_deal' => true,
 		'admins_count' => '5',
 		'storage_size' => '250GB',
-		'price' => l10n('€%d', 199),
+		'price' => l10n('€%d', 219),
 		'subtitle' => l10n('pcom_pricing_page_enterprise_explanation'),
 		'features' => array(
 			array('text' => l10n('5 administrators')),
@@ -233,7 +235,7 @@ $plans = array(
 		'is_best_deal' => false,
 		'admins_count' => l10n('pcom_pricing_page_unlimited'),
 		'storage_size' => '1000GB',
-		'price' => l10n('€%d', 399),
+		'price' => l10n('€%d', 439),
 		'subtitle' => l10n('pcom_pricing_page_vip_explanation'),
 		'features' => array(
 			array('text' => l10n('pcom_pricing_page_unlimited_admins')),
@@ -288,7 +290,7 @@ $support_plans = array(
 	),
 	'light' => array(
 		'title' => l10n('pcom_pricing_page_support_light'),
-		'price' => l10n('€%d', 39),
+		'price' => l10n('€%d', 43),
 		'subtitle' => l10n('pcom_pricing_page_support_light_explanation'),
 		'features' => array(
 			array('text' => l10n('pcom_pricing_page_support_functionalities')),
@@ -304,7 +306,7 @@ $support_plans = array(
 	),
 	'standard' => array(
 		'title' => l10n('pcom_pricing_page_support_standard'),
-		'price' => l10n('€%d', 79),
+		'price' => l10n('€%d', 87),
 		'subtitle' => l10n('pcom_pricing_page_support_standard_explanation'),
 		'features' => array(
 			array('text' => l10n('pcom_pricing_page_support_functionalities')),
@@ -320,7 +322,7 @@ $support_plans = array(
 	),
 	'premium' => array(
 		'title' => l10n('pcom_pricing_page_support_premium'),
-		'price' => l10n('€%d', 150),
+		'price' => l10n('€%d', 165),
 		'subtitle' => l10n('pcom_pricing_page_support_premium_explanation'),
 		'features' => array(
 			array('text' => l10n('pcom_pricing_page_support_functionalities')),
@@ -345,28 +347,28 @@ $support_plans = array(
 
 
 $maintenance_plan = array(
-	'custom_graphic_personalization' => l10n('%d €', 490),
-	'custom_data_import' => l10n('%d €', 150),
-	'installation_and_configuration' => l10n('%d €', 250),
-	'update_support_with_support_plan' => l10n('%d €', 500),
-	'update_support_without_support_plan' => l10n('%d €', 600),
-	'server_manag_with_support_plan' => l10n('%d €', 1500),
-	'custom_feature_dev' => l10n('%d €', 150),
+	'custom_graphic_personalization' => l10n('%d €', 540),
+	'custom_data_import' => l10n('%d €', 165),
+	'installation_and_configuration' => l10n('%d €', 275),
+	'update_support_with_support_plan' => l10n('%d €', 550),
+	'update_support_without_support_plan' => l10n('%d €', 660),
+	'server_manag_with_support_plan' => l10n('%d €', 1650),
+	'custom_feature_dev' => l10n('%d €', 165),
 );
 
 $extra_storage = array(
-	'50' => array('size' => '50', 'price' => l10n(5)),
-	'100' => array('size' => '100', 'price' => l10n(10)),
-	'250' => array('size' => '250', 'price' => l10n(25)),
-	'500' => array('size' => '500', 'price' => l10n(50)),
-	'1000' => array('size' => '1000', 'price' => l10n(100)),
+	'50' => array('size' => '50', 'price' => l10n(5.5)),
+	'100' => array('size' => '100', 'price' => l10n(11)),
+	'250' => array('size' => '250', 'price' => l10n(27.50)),
+	'500' => array('size' => '500', 'price' => l10n(55)),
+	'1000' => array('size' => '1000', 'price' => l10n(110)),
 );
 
 $specific_cases = array(
 	array(
 		'icon' => 'icon-dev',
 		'title' => l10n('pcom_pricing_page_code_plugins_title'),
-		'text' => l10n('pcom_pricing_page_code_plugins_paragraph'),
+		'text' => l10n('pcom_pricing_page_code_plugins_paragraph', $maintenance_plan['custom_feature_dev']),
 	),
 	array(
 		'icon' => 'icon-key',
@@ -381,7 +383,7 @@ $prof_services = array(
 		'title' => l10n('pcom_pricing_page_on_premise_11'),
 		'text' => l10n('pcom_pricing_page_on_premise_12'),
 		'btn' => l10n('pcom_pricing_page_see_examples'),
-		'price' => l10n('€%d', 490),
+		'price' => l10n('€%d', 540),
 		'suffix' => l10n('pcom_pricing_page_ht'),
 	),
 	array(
@@ -390,7 +392,7 @@ $prof_services = array(
 		'text' => l10n('pcom_pricing_page_on_premise_13'),
 		'btn' => l10n('pcom_pricing_page_learn_more'),
 		'label' => l10n('on_quotation'),
-		'price' => l10n('€%d', 150),
+		'price' => l10n('€%d', 165),
 		'suffix' => l10n('pcom_pricing_page_ht_hour'),
 	),
 	array(
@@ -399,17 +401,17 @@ $prof_services = array(
 		'text' => l10n('pcom_pricing_page_on_premise_19'),
 		'btn' => l10n('pcom_pricing_page_see_prerequistes'),
 		'label' => l10n('on_quotation'),
-		'price' => l10n('€%d', 150),
+		'price' => l10n('€%d', 165),
 		'suffix' => l10n('pcom_pricing_page_ht_hour'),
 	),
 );
 
 $tech_table_prices = array(
-	'install_customer' => l10n('from €%d', 200),
-	'install_external' => l10n('from €%d', 250),
-	'update_customer' => l10n('€%d', 500, 'pcom_pricing_page_ht_year'),
-	'update_external' => l10n('€%d', 600, 'pcom_pricing_page_ht_year'),
-	'managed_customer' => l10n('€%d', 1500, 'pcom_pricing_page_ht_year'),
+	'install_customer' => l10n('from €%d', 220),
+	'install_external' => l10n('from €%d', 275),
+	'update_customer' => l10n('€%d', 550, 'pcom_pricing_page_ht_year'),
+	'update_external' => l10n('€%d', 660, 'pcom_pricing_page_ht_year'),
+	'managed_customer' => l10n('€%d', 1650, 'pcom_pricing_page_ht_year'),
 	'na' => l10n('pcom_pricing_page_non_applicable'),
 );
 
