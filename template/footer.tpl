@@ -22,7 +22,7 @@
           <div class="footer-get-started-content">
             <ul class="footer-get-started-links">
               <li><a class="footer-feature-link" href="{$PORG_ROOT}{$URL.get_piwigo}#cloud">{'Cloud'|translate}</a></li>
-              <li><a class="footer-feature-link" href="{$PORG_ROOT}{$URL.get_piwigo}#self-hosted">{'Self hosting'|translate}</a></li>
+              <li><a class="footer-feature-link" href="{$PORG_ROOT}{$URL.get_piwigo}#self-hosted">{'Self-hosted'|translate}</a></li>
               <li><a class="footer-feature-link" href="{$PORG_ROOT}{$URL.pricing}">{'Pricing'|translate}</a></li>
             </ul>
             <div class="footer-get-started-actions">
@@ -42,11 +42,11 @@
         <div class="footer-mobile-nav-accordion">
           <div class="footer-mobile-section">
             <button class="footer-mobile-toggle footer-title collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#footerMobileDiscover" aria-expanded="false" aria-controls="footerMobileDiscover">
-              <span>{'Discover Piwigo'|translate}</span>
+              data-bs-target="#footerMobileFeatures" aria-expanded="false" aria-controls="footerMobileFeatures">
+              <span>{'Features'|translate}</span>
               <i class="icon-down-open" aria-hidden="true"></i>
             </button>
-            <div id="footerMobileDiscover" class="collapse footer-mobile-collapse" data-bs-parent=".footer-mobile-nav-accordion">
+            <div id="footerMobileFeatures" class="collapse footer-mobile-collapse" data-bs-parent=".footer-mobile-nav-accordion">
               <ul>
                 <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#upload">{'Import & Centralize'|translate}</a></li>
                 <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#organize">{'Organize your media'|translate}</a></li>
@@ -54,9 +54,19 @@
                 <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#share">{'Share & Collaborate'|translate}</a></li>
                 <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#customize">{'Customize & Extend'|translate}</a></li>
                 <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#measure">{'Measure & Monitor'|translate}</a></li>
-                <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#security">{'Security & privacy'|translate}</a></li>
+                <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#security">{'Security & Privacy'|translate}</a></li>
               </ul>
-              <ul class="mt-3">
+            </div>
+          </div>
+
+          <div class="footer-mobile-section">
+            <button class="footer-mobile-toggle footer-title collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#footerMobileExplore" aria-expanded="false" aria-controls="footerMobileExplore">
+              <span>{'Explore'|translate}</span>
+              <i class="icon-down-open" aria-hidden="true"></i>
+            </button>
+            <div id="footerMobileExplore" class="collapse footer-mobile-collapse" data-bs-parent=".footer-mobile-nav-accordion">
+              <ul>
                 {* <li><a class="footer-feature-link footer-menu-item" href="#">{'Piwigo AI'|translate|cat: ' ✨'}</a></li> *}
                 <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.mobile_applications}">{'Mobile apps'|translate}</a></li>
                 <li><a class="footer-feature-link footer-menu-item" href="{$EXT_URL.extensions}" target="_blank" rel="noopener noreferrer">{'Extensions'|translate}</a></li>
@@ -154,7 +164,7 @@
 
       <!-- ── Col 3 : Discover Piwigo ── -->
       <div class="col-6 col-md-4 col-lg-2 footer-nav-col d-none d-lg-block">
-        <h6 class="footer-title">{'Discover Piwigo'|translate}</h6>
+        <h6 class="footer-title">{'Features'|translate}</h6>
         <ul>
           <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#upload">{'Import & Centralize'|translate}</a></li>
           <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#organize">{'Organize your media'|translate}</a></li>
@@ -162,8 +172,10 @@
           <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#share">{'Share & Collaborate'|translate}</a></li>
           <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#customize">{'Customize & Extend'|translate}</a></li>
           <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#measure">{'Measure & Monitor'|translate}</a></li>
-          <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#security">{'Security & privacy'|translate}</a></li>
+          <li><a class="footer-feature-link footer-menu-item" href="{$PORG_ROOT}{$URL.features}#security">{'Security & Privacy'|translate}</a></li>
         </ul>
+
+        <h6 class="footer-title mt-4">{'Explore'|translate}</h6>
         <ul class="mt-4">
           {* <li>
             <a class="footer-feature-link footer-menu-item" href="#">{'Piwigo AI'|translate|cat: ' ✨'}</a>
