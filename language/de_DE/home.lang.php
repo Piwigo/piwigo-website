@@ -26,7 +26,7 @@ $lang['porg_home_ways_to_use_self_hosted_li_4'] = 'Dokumentation und Community-F
 $lang['porg_home_ways_to_use_self_hosted_li_5'] = 'Professioneller Support und Leistungen optional buchbar';
 $lang['porg_home_ways_to_use_end_box'] = 'Beide Varianten basieren auf demselben Open-Source-Kern und bieten Zugriff auf die Piwigo API für anspruchsvolle Anwendungsfälle.';
 
-$lang['porg_home_road_title'] = 'Keine Bindung. Auf Dauer angelegt.';
+$lang['porg_home_road_title'] = 'Frei bleiben. Unabhängig bleiben.';
 $lang['porg_home_road_desc'] = 'Mit Piwigo sind Sie nie an ein einziges Betriebsmodell gebunden';
 $lang['porg_home_road_li_1'] = '<span class="p-strong">Sie können</span> Ihre Fotos, Videos und Metadaten <span class="p-strong">jederzeit kostenlos exportieren</span>';
 $lang['porg_home_road_li_2'] = '<span class="p-strong">Der Wechsel</span> zwischen Piwigo Cloud und eigenem Betrieb <span class="p-strong">ist jederzeit möglich</span>';
@@ -44,7 +44,7 @@ $lang['porg_home_features_upload_subtitle'] = 'Bringen Sie Ihre Medien aus allen
 $lang['porg_home_features_upload_desc'] = 'Laden Sie Dateien von Ihrem Rechner, aus den mobilen Apps oder aus synchronisierten Ordnern hoch und importieren Sie im Stapel, wenn es schnell gehen muss.<br>Piwigo unterstützt Fotos, Videos und viele Dokumentformate, damit Ihre Mediathek an einem Ort bleibt.';
 $lang['porg_home_features_organize_subtitle'] = 'Strukturieren Sie Ihre Mediathek so, wie es für Sie Sinn ergibt';
 $lang['porg_home_features_organize_desc'] = 'Ordnen Sie Inhalte mit Alben, Unteralben, Tags und Metadaten — schlicht oder differenziert, ganz nach Bedarf.<br><br>Ihre Struktur kann sich mit der Zeit weiterentwickeln, ohne dass ein starres Modell vorgegeben wird.';
-$lang['porg_home_features_search_subtitle'] = 'Finden und entdecken Sie die richtige Datei in Sekunden';
+$lang['porg_home_features_search_subtitle'] = 'Finden Sie die richtige Datei in Sekunden';
 $lang['porg_home_features_search_desc'] = 'Durchsuchen Sie Tags, Metadaten und Dateieigenschaften und navigieren Sie mit Filtern schnell durch große Bestände.<br><br>Von der klassischen Suche bis zum Blättern nach Datum oder Ort: Piwigo bringt Sie schnell zum richtigen Inhalt.';
 $lang['porg_home_features_share_subtitle'] = 'Teilen Sie Medien und arbeiten Sie sicher zusammen';
 $lang['porg_home_features_share_desc'] = 'Veröffentlichen Sie Galerien im Web oder betreiben Sie eine vollständig private Mediathek — Sie entscheiden, was sichtbar ist und für wen.<br><br>Laden Sie Nutzer und Mitwirkende ein, steuern Sie Berechtigungen und lassen Sie andere beitragen, ohne die Kontrolle abzugeben.';
@@ -55,7 +55,7 @@ $lang['porg_home_features_measure_desc'] = 'Beobachten Sie Nutzung, Aktivität u
 $lang['porg_home_features_security_subtitle'] = 'Steuern Sie den Zugriff und schützen Sie Ihre Medien';
 $lang['porg_home_features_security_desc'] = 'Verwalten Sie Rollen, Gruppen und Berechtigungen, um Ihre Inhalte auf jeder Ebene abzusichern. Datenschutz und Zugriffskontrolle sind fest im Kern von Piwigo verankert, für interne Mediatheken ebenso wie für öffentliche Galerien.';
 
-$lang['porg_home_who_title'] = 'Wer Piwigo nutzt';
+$lang['porg_home_who_title'] = 'Wer Piwigo nutzt?';
 $lang['porg_home_who_desc'] = 'Piwigo wird weltweit eingesetzt von:';
 $lang['porg_home_who_li_1'] = 'Einrichtungen des öffentlichen Sektors';
 $lang['porg_home_who_li_2'] = 'Unternehmen und Kommunikationsteams';
@@ -65,15 +65,15 @@ $lang['porg_home_who_li_5'] = 'Vereinen und gemeinnützigen Organisationen';
 $lang['porg_home_who_li_6'] = 'Berufs- und Hobbyfotografen';
 $lang['porg_home_who_end'] = 'Von kleinen Teams bis zu großen Organisationen, in der Cloud oder auf eigener Infrastruktur.';
 
-$lang['porg_home_why_title'] = 'Warum Piwigo';
+$lang['porg_home_why_title'] = 'Warum Piwigo?';
 $lang['porg_home_why_desc'] = 'Piwigo verbindet die Flexibilität von Open Source mit dem praktischen Komfort eines betreuten Dienstes und lässt Ihnen dabei die Kontrolle über Ihre Medien, Ihre Daten und Ihre künftigen Arbeitsabläufe.';
 $lang['porg_home_why_li_1_title'] = 'Einfach zu bedienen, ohne Kompromisse';
 $lang['porg_home_why_li_1_desc'] = 'Trotz seines Funktionsumfangs bleibt Piwigo für alle Nutzer intuitiv und leicht zu erlernen.';
-$lang['porg_home_why_li_1_end'] = 'Ob erfahrene Bildredaktion oder Neuling: Sie können schnell und eigenständig beginnen, Ihre Medien zu ordnen und zu teilen.';
+$lang['porg_home_why_li_1_end'] = 'Ob erfahren in der Bildverwaltung oder Neuling: Sie können schnell und eigenständig beginnen, Ihre Medien zu ordnen und zu teilen.';
 $lang['porg_home_why_li_1_testimonial'] = 'Piwigo ist ein vollständiges, ergonomisches und intuitives Werkzeug, betreut von einem aufmerksamen und reaktionsschnellen Team. Die zu 100 % anpassbare Oberfläche hat uns überzeugt. Piwigo ist ein gutes Werkzeug für die interne Kommunikation: Wir können das Leben unserer Projekte in Bildern teilen, und die Zusammenarbeit mit unseren Dienstleistern, Kommunikationsagentur und Fotograf, wird deutlich einfacher.';
 $lang['porg_home_why_li_2_title'] = 'Transparent, fair und planbar';
 $lang['porg_home_why_li_2_desc'] = 'Die Tarife von Piwigo sind klar ausgewiesen, ohne versteckte Kosten und ohne Überraschungen.';
-$lang['porg_home_why_li_2_end'] = 'Wenn sich Ihre Anforderungen ändern, können Sie jederzeit von Piwigo Cloud zu einer eigenen Installation wechseln. Ihre Fotos, Videos und Metadaten bleiben vollständig zugänglich und lassen sich jederzeit kostenlos exportieren. Wir begleiten Sie auch während des Übergangs, damit der Wechsel so reibungslos wie möglich verläuft.';
+$lang['porg_home_why_li_2_end'] = 'Wenn sich Ihre Anforderungen ändern, können Sie jederzeit von Piwigo Cloud zu einer eigenen Installation wechseln und umgekehrt. Ihre Fotos, Videos und Metadaten bleiben vollständig zugänglich und lassen sich jederzeit kostenlos exportieren. Wir begleiten Sie auch während des Übergangs, damit der Wechsel so reibungslos wie möglich verläuft.';
 $lang['porg_home_why_li_2_testimonial'] = 'Ich habe Piwigo für unsere Mediathek gewählt und bin rundum zufrieden. Piwigo ist günstiger, einfacher und leistungsfähiger als unsere alte Software. Eine Bibliothek an Plugins erlaubt eine echte Anpassung der Lösung. Besonders die Ergonomie gefällt mir, und ich empfehle Piwigo ohne Zögern weiter!';
 $lang['porg_home_why_li_3_title'] = 'Open Source im Kern';
 $lang['porg_home_why_li_3_desc'] = 'Piwigo ist ein Open-Source-Projekt, das transparent und nachhaltig entwickelt wird.';
