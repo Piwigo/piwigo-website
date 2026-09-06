@@ -91,7 +91,7 @@
               </ul>
               <div class="mt-auto d-flex flex-column flex-sm-row justify-content-center align-items-center" style="gap: 10px;">
                 {include file='template/include/buttons/button.tpl' variant='cta_primary_green' label="{'Download'|translate} Piwigo" href="https://piwigo.org/download/dlcounter.php?code=latest"}
-                {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'Learn more'|translate} href="{$PORG_ROOT}{$URL.get_piwigo}self-hosted" class="learn-more-btn"}
+                {include file='template/include/buttons/button.tpl' variant='menu_btn_blue' label={'Learn more'|translate} href="{$PORG_ROOT}{$URL.get_piwigo}#self-hosted" class="learn-more-btn"}
               </div>
             </div>
           </div>
