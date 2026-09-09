@@ -279,7 +279,7 @@
             ),
             '2012-06-08' => array (
                 'title' => 'Conference Piwigo 2.4, Paris, lundi 11 juin 2012',
-                'image' => 'http://fr.piwigo.com/blog/wp-content/uploads/2012/06/piwigo-2.4-filigrane.png',
+                'image' => 'http://fr.piwigo.org/blog/wp-content/uploads/2012/06/piwigo-2.4-filigrane.png',
                 'summary' => 'Cette présentation est organisée par l\'association Parinux, dans le cadre de la promotion des logiciels libres en région parisienne. Cette découverte de Piwigo s\'adresse à ceux qui ne connaissent pas encore Piwigo ou seulement les anciennes versions. Pierrick profitera de l\'occasion pour présenter les nouveautés de Piwigo 2.4',
             ),
             '2012-04-11' => array (

@@ -80,7 +80,7 @@
     </div>
     <div class="col-sm-12 col-md-8  right-image-screenshot">
       <img class="img-fluid corner3" src="{$PORG_ROOT_URL}/images/changelogs/corner-image1.svg">
-      <img src="https://piwigo.com/blog/wp-content/uploads/2021/07/usre-edit.gif" class="screenshot">
+      <img src="https://piwigo.org/blog/wp-content/uploads/2021/07/usre-edit.gif" class="screenshot">
       <img class="img-fluid corner4" src="{$PORG_ROOT_URL}/images/changelogs/corner-image2.svg">
     </div>
   </div>
@@ -88,7 +88,7 @@
   <div class="row first-image-and-caption">
     <div class="col-sm-12 col-md-8 ">
       <img class="img-fluid corner1" src="{$PORG_ROOT_URL}/images/changelogs/corner-image1.svg">
-      <img src="https://piwigo.com/blog/wp-content/uploads/2021/07/user-edit.png" class="screenshot">
+      <img src="https://piwigo.org/blog/wp-content/uploads/2021/07/user-edit.png" class="screenshot">
       <img class="img-fluid corner2" src="{$PORG_ROOT_URL}/images/changelogs/corner-image2.svg">
     </div>
     <div class="col-sm-12 col-md-4">

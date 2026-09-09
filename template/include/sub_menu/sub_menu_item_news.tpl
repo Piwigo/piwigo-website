@@ -19,7 +19,7 @@
 				file='template/include/sub_menu_items/sub_menu_itemc.tpl'
 				category_type='feature-submenu'
 				is_ext=true
-				title={'Blog'|translate} description={'Blog desc'|translate} icon_class='icon-doc' href="https://piwigo.com/blog/"
+				title={'Blog'|translate} description={'Blog desc'|translate} icon_class='icon-doc' href="https://piwigo.org/blog/"
 			}
 		</div>
 

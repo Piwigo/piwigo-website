@@ -31,8 +31,8 @@ global $user, $template;
 $blog_personnalisation_url = 'https://customizations.piwigo.com/';
 
 $blog_custom_data_import_urls = array(
-	'en_UK' => 'https://piwigo.com/blog/2025/07/01/importing-an-existing-photo-library-into-piwigo/',
-	'fr_FR' => 'https://fr.piwigo.com/blog/2025/07/01/importer-une-phototheque-existante-dans-piwigo/',
+	'en_UK' => 'https://piwigo.org/blog/2025/07/01/importing-an-existing-photo-library-into-piwigo/',
+	'fr_FR' => 'https://fr.piwigo.org/blog/2025/07/01/importer-une-phototheque-existante-dans-piwigo/',
 );
 
 $blog_custom_data_import_url = isset($blog_custom_data_import_urls[$user['language']])
