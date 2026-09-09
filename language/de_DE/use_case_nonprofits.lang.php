@@ -1,6 +1,6 @@
 <?php
-$lang['page_meta_title'] = 'Bilddatenbank-Software und DAM für gemeinnützige Organisationen - Piwigo';
-$lang['page_meta_description'] = 'Mit der Mediathek-Software Piwigo verwalten gemeinnützige Organisationen ihre digitalen Medien effizient und kostengünstig.';
+$lang['page_meta_title'] = 'Bilddatenbank-Software und DAM für Vereine - Piwigo';
+$lang['page_meta_description'] = 'Mit der Mediathek-Software Piwigo verwalten Vereine ihre digitalen Medien effizient und kostengünstig.';
 
 $lang['use cases association header title'] = 'Software zur Fotoverwaltung für <span class="orange-text">gemeinnützige Organisationen</span>';
 $lang['use cases association header description'] = 'Bündeln Sie Fotos, Videos und visuelle Inhalte in einer sicheren Mediathek. Organisieren, verwalten und teilen Sie Medien in Ihrer gesamten Organisation, ob Sie Menschen unterstützen, Natur schützen, Kultur fördern, einen Sportverein führen oder sich für eine Sache einsetzen.';
@@ -9,7 +9,7 @@ $lang['use cases association thumbs title'] = 'Im Einsatz bei Vereinen, Stiftung
 $lang['use cases association thumbs description'] = 'Von lokalen Vereinen über internationale NGOs bis hin zu Sportvereinen, Stiftungen und Kultureinrichtungen: Piwigo hilft Teams und Ehrenamtlichen, die visuellen Inhalte jedes Projekts, jeder Veranstaltung und jeder Kampagne zu ordnen, zu bewahren und zu teilen.';
 $lang['use cases association thumb1 title'] = 'NGOs & humanitäre Organisationen';
 $lang['use cases association thumb1 description'] = 'Verwalten Sie Fotos und Videos, die Einsätze, Spendenkampagnen, Projekte vor Ort und Advocacy-Arbeit dokumentieren.';
-$lang['use cases association thumb2 title'] = 'Stiftungen & Wohltätigkeitsorganisationen';
+$lang['use cases association thumb2 title'] = 'Stiftungen & Hilfsorganisationen';
 $lang['use cases association thumb2 description'] = 'Ordnen Sie Kommunikationsmaterial, Unterlagen zur Mittelbeschaffung, Veranstaltungen und Wirkungsgeschichten in einer sicheren Mediathek.';
 $lang['use cases association thumb3 title'] = 'Sportvereine & Verbände';
 $lang['use cases association thumb3 description'] = 'Speichern und teilen Sie Fotos von Wettkämpfen, Trainings, Veranstaltungen und aus dem Vereinsleben.';
@@ -46,7 +46,7 @@ $lang['use cases association how card6 description'] = 'Halten Sie Jahre an Proj
 
 $lang['use cases association discover description'] = 'Erfahren Sie, wie Piwigo gemeinnützigen Organisationen hilft, ihre visuellen Inhalte zu ordnen, zu verwalten und sicher zu teilen.';
 
-$lang['use cases association stacks title'] = 'Warum gemeinnützige Organisationen sich für Piwigo entscheiden';
+$lang['use cases association stacks title'] = 'Warum Vereine sich für Piwigo entscheiden';
 $lang['use cases association stacks card1 description'] = 'Mitarbeitende, Ehrenamtliche und Beitragende können Fotos ohne technische Vorkenntnisse ordnen, finden und teilen.';
 $lang['use cases association stacks card2 description'] = 'Ob Fotos von lokalen Veranstaltungen, internationalen Projekten oder Jahrzehnten an Archivmaterial: Piwigo passt sich dem Bedarf Ihrer Organisation an.';
 $lang['use cases association stacks card3 description'] = 'Mitarbeitende, Ehrenamtliche, Fotografen und Partnerorganisationen tragen zur selben Mediathek bei, während Berechtigungen alles unter Kontrolle halten.';
