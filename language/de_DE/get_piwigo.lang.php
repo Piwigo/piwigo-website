@@ -2,7 +2,7 @@
 $lang['page_meta_title'] = 'Cloud oder eigener Server für Ihre Mediathek - Piwigo';
 $lang['page_meta_description'] = 'Nutzen Sie Piwigo als Cloud-Dienst mit Hosting in Europa oder betreiben Sie Piwigo auf Ihrer eigenen Infrastruktur';
 
-$lang['product-header-cloud-title'] = 'Piwigo nutzen, <span class="orange-text">ohne Infrastruktur</span> zu betreuen';
+$lang['product-header-cloud-title'] = 'Piwigo Cloud nutzen, <span class="orange-text">ohne Infrastruktur</span> zu betreuen';
 $lang['product-header-cloud-desc'] = 'Legen Sie Ihr Konto in wenigen Minuten an und beginnen Sie sofort, Ihre Mediathek zu ordnen. Hosting in Europa, Updates, Backups und Sicherheit übernimmt vollständig das Piwigo Team.';
 
 $lang['product-header-cloud-btn1'] = '30 Tage kostenlos testen';
@@ -25,7 +25,7 @@ $lang['cloud_f3_desc'] = 'Lassen Sie sich vom Team hinter Piwigo helfen, bei fac
 $lang['cloud_f4_title'] = 'Transparente Preise';
 $lang['cloud_f4_desc'] = 'Klare Tarife, passend zu unterschiedlichen Teamgrößen, ohne versteckte Kosten.';
 $lang['cloud_f5_title'] = 'Ihre Daten bleiben Ihre Daten';
-$lang['cloud_f5_desc'] = 'Exportieren Sie Ihre Dateien und Daten jederzeit. Keine Abhängigkeit vom Anbieter.';
+$lang['cloud_f5_desc'] = 'Exportieren Sie Ihre Dateien und Daten jederzeit. Sie bleiben frei.';
 
 $lang['cloud_infrastructure_title'] = 'Eine Infrastruktur, der Sie vertrauen können';
 $lang['cloud_infrastructure_badge1'] = 'Hosting in Europa';
@@ -33,7 +33,7 @@ $lang['cloud_infrastructure_badge2'] = 'Infrastruktur von Piwigo betreut';
 $lang['cloud_infrastructure_badge3'] = 'Tägliche Backups inklusive';
 $lang['cloud_infrastructure_badge4'] = 'Redundante Server';
 $lang['cloud_infrastructure_badge5'] = 'DSGVO-konformes Vorgehen';
-$lang['cloud_infrastructure_desc'] = 'Piwigo Cloud wird in Frankreich auf dedizierten Servern betrieben, die das Piwigo Team direkt verwaltet.<br><br>Wir setzen auf OVHcloud, einen der führenden europäischen Infrastrukturanbieter, behalten aber die volle Kontrolle über Betrieb, Wartung und Datenverwaltung der Plattform.<br><br>So können wir einen unkomplizierten betreuten Dienst anbieten, ohne auf Hyperscale-Cloud-Plattformen angewiesen zu sein.';
+$lang['cloud_infrastructure_desc'] = 'Piwigo Cloud wird in Frankreich auf dedizierten Servern betrieben, die das Piwigo Team direkt verwaltet.<br><br>Wir setzen auf OVHcloud, einen der führenden europäischen Infrastrukturanbieter, behalten aber die volle Kontrolle über Betrieb, Wartung und Datenverwaltung der Plattform.<br><br>So können wir einen unkomplizierten betreuten Dienst anbieten, ohne auf US-amerikanische Hyperscale-Cloud-Plattformen wie Google, Amazon oder Microsoft angewiesen zu sein.';
 
 $lang['cloud_trusted_title'] = 'Das Vertrauen Tausender Organisationen';
 $lang['cloud_trusted_badge1'] = '+5800 Kunden';
@@ -49,7 +49,7 @@ $lang['cloud_transparent_li4'] = 'Hosting, Wartung und Support inklusive';
 $lang['cloud_transparent_li5'] = 'Kostenloser Datenexport, jederzeit';
 $lang['cloud_transparent_btn'] = 'Tarife vergleichen';
 
-$lang['cloud_nolock_title'] = 'Keine Bindung.';
+$lang['cloud_nolock_title'] = 'Sie bleiben frei.';
 $lang['cloud_nolock_desc'] = 'Anders als viele SaaS-Plattformen sperrt Piwigo Ihre Medien nicht in ein geschlossenes Ökosystem.<br><br>Sie können Ihre Fotos, Videos und Metadaten jederzeit kostenlos exportieren, ob Sie zu einer selbst betriebenen Piwigo Installation wechseln oder zu einer anderen Lösung migrieren möchten.<br><br><span class="pink-text strong-text">Weil Piwigo Open Source ist, behalten Sie die volle Kontrolle über Ihre Daten und Ihre Hosting-Entscheidungen.</span>';
 
 $lang['cloud_start_title'] = 'Starten Sie Ihre kostenlose Testphase';
@@ -110,7 +110,7 @@ $lang['selfhosted-ecosystem-btn1'] = 'Das Projekt kennenlernen';
 $lang['selfhosted-ecosystem-btn2'] = 'Mitmachen';
 $lang['selfhosted-ecosystem-community-title'] = 'Community & Ressourcen';
 $lang['selfhosted-ecosystem-community-badge1'] = 'Community-Forum';
-$lang['selfhosted-ecosystem-community-badge2'] = 'GitHub-Repository';
+$lang['selfhosted-ecosystem-community-badge2'] = 'GitHub-Repositories';
 $lang['selfhosted-ecosystem-community-badge4'] = 'Themes & Plugins';
 $lang['selfhosted-ecosystem-community-badge5'] = 'Ressourcen für Entwickler';
 
