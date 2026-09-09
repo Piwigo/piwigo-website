@@ -1,8 +1,8 @@
 <?php
-$lang['page_meta_title'] = 'Digital Asset Management für Unternehmen - Piwigo';
+$lang['page_meta_title'] = 'Fotoverwaltung und DAM für Unternehmen - Piwigo';
 $lang['page_meta_description'] = 'Piwigo ist eine professionelle Bilddatenbank-Software, die den Anforderungen jedes Unternehmens gerecht wird, vom Kleinbetrieb bis zum Konzern.';
 
-$lang['use cases company header title'] = 'Digital Asset Management, einfach gemacht für <span class="orange-text">Unternehmen</span>';
+$lang['use cases company header title'] = 'Fotoverwaltung und DAM, einfach gemacht für <span class="orange-text">Unternehmen</span>';
 $lang['use cases company header description'] = 'Bündeln Sie die Fotos, Videos und Markenmaterialien Ihres Unternehmens an einem sicheren Ort. Geben Sie jedem Team einfachen Zugriff auf die richtigen Inhalte, von Marketing und Kommunikation bis zu Vertrieb und Produktmanagement.';
 
 $lang['use cases company thumbs title'] = 'Im Einsatz bei Unternehmen vieler Branchen';
@@ -11,7 +11,7 @@ $lang['use cases company thumb1 title'] = 'Fertigung & Industrie';
 $lang['use cases company thumb1 description'] = 'Organisieren Sie Produktkataloge, technische Dokumentation, Werks- und Produktionsfotos, Projektbilder und Materialien der Unternehmenskommunikation in einer sicheren Mediathek.';
 $lang['use cases company thumb2 title'] = 'Architektur, Bau & Baustoffe';
 $lang['use cases company thumb2 description'] = 'Bündeln Sie Produktkataloge, abgeschlossene Projekte, Baustellenfotos und technische Dokumentation und machen Sie sie für Ihre Teams und Partner leicht zugänglich.';
-$lang['use cases company thumb3 title'] = 'Großhandel & E-Commerce';
+$lang['use cases company thumb3 title'] = 'Vertrieb & E-Commerce';
 $lang['use cases company thumb3 description'] = 'Verwalten Sie Produktfotos und -videos für Ihre Website, Ihre Kataloge und Ihre Händler aus einer zentralen Mediathek und stellen Sie sicher, dass alle stets Zugriff auf die aktuellen freigegebenen Motive haben.';
 $lang['use cases company thumb4 title'] = 'Lebensmittel & Getränke';
 $lang['use cases company thumb4 description'] = 'Organisieren Sie Produktfotos, Verpackungen, Rezepte, Marketingmaterialien und Kommunikationsmittel für Vertrieb, Händler und Kommunikationsteams.';
