@@ -17,7 +17,7 @@ $lang['use cases tourism thumb4 title'] = 'Freizeitparks & Ausflugsziele';
 $lang['use cases tourism thumb4 description'] = 'Halten Sie Ihre Marketingmaterialien aktuell und leicht zugänglich.';
 $lang['use cases tourism thumb5 title'] = 'Naturparks & Schutzgebiete';
 $lang['use cases tourism thumb5 description'] = 'Verwalten Sie große Bildbestände und steuern Sie zugleich, wie Inhalte nach außen geteilt werden.';
-$lang['use cases tourism thumb6 title'] = 'Museen & Kulturdenkmäler';
+$lang['use cases tourism thumb6 title'] = 'Museen & Kulturstätten';
 $lang['use cases tourism thumb6 description'] = 'Bewahren, ordnen und präsentieren Sie Ihre visuellen Sammlungen.';
 
 $lang['use cases tourism challenge title'] = 'Typische Herausforderungen für Tourismusorganisationen';
@@ -47,7 +47,7 @@ $lang['use cases tourism discover description'] = 'Von erweiterter Suche und Zug
 
 $lang['use cases tourism stacks title'] = 'Warum Tourismusorganisationen sich für Piwigo entscheiden';
 $lang['use cases tourism stacks card1 description'] = 'Kommunikationsteams, Partner und externe Beteiligte kommen ohne aufwendige Schulung schnell zurecht.';
-$lang['use cases tourism stacks card2 description'] = 'Verwalten Sie Tausende oder sogar Hunderttausende Inhalte, ohne den Überblick zu verlieren.';
+$lang['use cases tourism stacks card2 description'] = 'Verwalten Sie Tausende oder sogar Hunderttausende Inhalte, ohne die Kontrolle darüber zu verlieren.';
 $lang['use cases tourism stacks card3 description'] = 'Teilen Sie die richtigen Inhalte mit den richtigen Personen und behalten Sie zugleich die volle Kontrolle über Berechtigungen und Zugriffsrechte.';
 $lang['use cases tourism stacks card4 description'] = 'Anders als viele proprietäre Plattformen bindet Piwigo Sie nicht. Exportieren Sie Ihre Inhalte jederzeit kostenlos.';
 $lang['use cases tourism stacks card5 description'] = 'Piwigo wird seit über 20 Jahren ununterbrochen weiterentwickelt und genießt weltweit das Vertrauen zahlreicher Organisationen.';
@@ -59,7 +59,7 @@ $lang['use cases tourism host self'] = 'Betreiben Sie Piwigo auf Ihrer eigenen I
 
 $lang['use cases tourism use title'] = 'So setzen Tourismusorganisationen Piwigo ein';
 $lang['use cases tourism use description1'] = 'Tourismusbüro Cotentin: <br>eine kollaborative und sichere Mediathek für die touristische Kommunikation von 130 Gemeinden';
-$lang['use cases tourism use description2'] = 'Das Tourismusbüro Cotentin brauchte einen sicheren und kollaborativen Weg, um seine stetig wachsende Fotosammlung zu ordnen und zu verbreiten.<br><br>Da Beitragende, Kommunikationsteams und externe Partner alle Zugriff auf die visuellen Inhalte benötigten, wurde die Dateiverwaltung über geteilte Laufwerke zunehmend mühsam.<br><br>Mit Piwigo konnte die Organisation eine zentrale Mediathek mit gesteuerten Zugriffsrechten aufbauen, was das Teilen, Finden und Verwalten der Inhalte in der gesamten Destination deutlich vereinfacht hat.';
+$lang['use cases tourism use description2'] = 'Das Tourismusbüro Cotentin brauchte einen sicheren und kollaborativen Weg, um seine stetig wachsende Fotosammlung zu ordnen und zu verbreiten.<br><br>Da Beitragende, Kommunikationsteams und externe Partner alle Zugriff auf die visuellen Inhalte benötigten, wurde die Dateiverwaltung über geteilte Laufwerke zunehmend mühsam.<br><br>Mit Piwigo konnte die Organisation eine zentrale Mediathek mit gesteuerten Zugriffsrechten aufbauen, was das Teilen, Finden und Verwalten der Inhalte für alle Mitwirkende deutlich vereinfacht hat.';
 $lang['use cases tourism use btn text'] = 'Kundengeschichte lesen';
 
 $lang['use cases tourism comments title'] = 'Was Tourismusfachleute über Piwigo sagen';
