@@ -6,24 +6,7 @@ $lang['faq question 2'] = 'Y a-t-il des frais de mise en service chez Piwigo ?';
 $lang['faq answer 2'] = 'Chez Piwigo, nous ne facturons <span class="strong-text">aucun</span> frais de setup pour la mise en place de votre hébergement Piwigo.<br><br>Cela nous permet de proposer des tarifs transparents et abordables, contrairement à certains logiciels de DAM ou de photothèque qui facturent à la fois un abonnement logiciel et de nombreuses prestations de paramétrage ou de conseil.<br><br>C\'est un choix assumé : notre métier est de fournir un excellent logiciel, pas de vendre des "jours-hommes". Nous ne proposons ni gestion de projet ni prestations de conseil. Si vous avez besoin d\'aide pour utiliser et mettre en place Piwigo, il vous suffit de contacter notre équipe support.<br><br>Nous travaillons toutefois avec des documentalistes et des iconographes partenaires qui peuvent vous aider si vous souhaitez un accompagnement pour structurer et configurer votre Piwigo. <a href="contact">Contactez-nous</a> si ce service vous intéresse.';
 
 $lang['faq question 3'] = 'Que se passe-t-il si je n\'ai plus d\'espace de stockage ?';
-$lang['faq answer 3'] = 'Votre compte n\'est pas bloqué automatiquement. Nous vous contactons pour vous proposer de passer à une offre supérieure ou d\'acheter du stockage supplémentaire.<br><br>Le montant est ajouté à votre abonnement annuel. Les tarifs sont les suivants (facturés annuellement) :<br><br></p>
-                    <ul class="ml-3">
-                      <li>
-                          <p class="size">50 Go : 5 € HT / mois</p>
-                      </li>
-                      <li>
-                          <p class="size">100 Go : 10 € HT / mois</p>
-                      </li>
-                      <li>
-                          <p class="size">250 Go : 25 € HT / mois</p>
-                      </li>
-                      <li>
-                          <p class="size">500 Go : 50 € HT / mois</p>
-                      </li>
-                      <li>
-                          <p class="size">1000 Go : 100 € HT / mois</p>
-                      </li>
-                    </ul><p>';
+$lang['faq answer 3'] = 'Votre compte n\'est pas bloqué automatiquement. Nous vous contactons pour vous proposer de passer à une offre supérieure ou d\'acheter du stockage supplémentaire.<br><br>Le montant est ajouté à votre abonnement annuel.';
 
 $lang['faq question 4'] = 'Peut-on avoir plusieurs Piwigo dans le même abonnement ?';
 $lang['faq answer 4'] = 'Non, vous êtes limité à un Piwigo par abonnement.';
