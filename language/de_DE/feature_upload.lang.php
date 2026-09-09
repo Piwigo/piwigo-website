@@ -2,7 +2,7 @@
 // upload
 
 $lang['upload title'] = 'Führen Sie alle Ihre Medien in einer zentralen Mediathek zusammen';
-$lang['upload description'] = 'Importieren Sie Medien aus verschiedenen Quellen, nutzen Sie die Unterstützung aller Dateiformate und lassen Sie Ihr Team zu einer gut organisierten Mediathek beitragen.';
+$lang['upload description'] = 'Importieren Sie Ihre Dateien aus verschiedenen Quellen, unabhängig vom Format, und lassen Sie Ihr gesamtes Team dazu beitragen.';
 $lang['upload text 1'] = 'Schluss mit dem Hin und Her zwischen Festplatten und verstreuten Ordnern';
 $lang['upload text 2'] = 'Alle Medien in einer zentralen Mediathek';
 $lang['upload text 3'] = 'Keine Dubletten und keine verlorenen Dateien mehr';
