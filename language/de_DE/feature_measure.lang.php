@@ -1,7 +1,7 @@
 <?php
 // measure
 
-$lang['measure title'] = 'Verstehen Sie, wie Ihre Mediathek genutzt wird';
+$lang['measure title'] = 'Messen und steuern Sie die Nutzung Ihrer Mediathek';
 $lang['measure description'] = 'Behalten Sie im Blick, wie auf Ihre Medien zugegriffen wird und wie sie genutzt werden, um bessere Entscheidungen zu treffen und die Kontrolle über Ihre Mediathek zu behalten.';
 $lang['measure text 1'] = 'Verfolgen Sie Nutzung und Aktivität in Ihrer Mediathek';
 $lang['measure text 2'] = 'Verstehen Sie, wie Ihre Nutzer mit Alben, Tags und Medien umgehen';
