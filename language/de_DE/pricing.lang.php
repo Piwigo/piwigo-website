@@ -2,8 +2,8 @@
 $lang['page_meta_title'] = 'Preise - Piwigo';
 $lang['page_meta_description'] = 'Piwigo passt zu jedem Budget und zu Organisationen jeder Größe. Tarife für die Cloud oder den Eigenbetrieb.';
 
-$lang['pricing main title part 1'] = 'Wählen Sie <span class="main-orange-text">den Tarif, der</span><br><span class="main-orange-text">zu Ihnen passt</span>';
-$lang['pricing main title part 2'] = 'am besten';
+$lang['pricing main title part 1'] = 'Wählen Sie <span class="main-orange-text">den Tarif, der</span><br><span class="main-orange-text">am besten zu Ihnen</span>';
+$lang['pricing main title part 2'] = 'passt';
 
 $lang['best_deal'] = 'Bestes Angebot';
 $lang['pricing selfhosted description card'] = '<span class="main-orange-text">Piwigo ist freie und quelloffene Software</span>. Installieren Sie Piwigo auf Ihrer Infrastruktur, wenn Sie über die Kenntnisse zur Einrichtung und Administration verfügen.
@@ -65,7 +65,7 @@ $lang['pcom_pricing_page_compare_plans'] = 'Vergleichen Sie unsere Pläne';
 $lang['pcom_pricing_page_contact_us'] = 'Kontakt aufnehmen';
 $lang['pcom_pricing_page_see_examples'] = 'Siehe Beispiele';
 $lang['pcom_pricing_page_etc'] = 'etc.';
-$lang['on_quotation'] = 'zum Kurs';
+$lang['on_quotation'] = 'Preis auf Anfrage';
 
 $lang['pcom_pricing_page_pro'] = 'Pro';
 $lang['pcom_pricing_page_pro_explanation'] = 'Sie sind freiberuflicher Fotograf oder Designer und nutzen Piwigo, um Ihre Arbeit online und mit Ihren Kunden zu teilen';
@@ -128,13 +128,13 @@ $lang['pcom_pricing_page_enterprise_details_10'] = 'Validierung der Download-Anf
 $lang['pcom_pricing_page_enterprise_details_11'] = 'Massenerstellung von Benutzern';
 $lang['pcom_pricing_page_enterprise_details_12'] = 'Massenaktualisierung von Eigenschaften';
 $lang['pcom_pricing_page_enterprise_details_13'] = 'Personalisierung von Grafiken';
-$lang['pcom_pricing_page_enterprise_details_14'] = 'Import benutzerdefinierter Daten (auf Anfrage)';
+$lang['pcom_pricing_page_enterprise_details_14'] = 'Import benutzerdefinierter Daten (Preis auf Anfrage)';
 
 $lang['pcom_pricing_page_vip_details_1'] = 'Alle Funktionen des Enterprise-Tarifs, aber auch...';
 $lang['pcom_pricing_page_vip_details_2'] = 'Erweiterte Authentifizierungsfunktionen (Single Sign On, Passwortregeln...)';
 $lang['pcom_pricing_page_vip_details_3'] = 'Verbessertes Coaching für die Implementierung von Piwigo';
-$lang['pcom_pricing_page_vip_details_4'] = 'Kundenspezifische Entwicklung (auf Anfrage)';
-$lang['pcom_pricing_page_vip_details_5'] = 'Telefonische Unterstützung';
+$lang['pcom_pricing_page_vip_details_4'] = 'Kundenspezifische Entwicklung (Preis auf Anfrage)';
+$lang['pcom_pricing_page_vip_details_5'] = 'Dedizierter Server (Preis auf Anfrage)';
 $lang['pcom_pricing_page_vip_details_6'] = '1 Termin pro Monat in den ersten 6 Monaten, um Ihnen zu helfen, das Beste aus Piwigo herauszuholen';
 $lang['pcom_pricing_page_vip_details_7'] = 'Benutzerdefinierter Datenimport inklusive';
 $lang['pcom_pricing_page_vip_details_8'] = 'Geschätzte Dauer: 1 Arbeitstag. Wir können eine zusätzliche Gebühr erheben, wenn die Komplexität Ihrer Daten dies erfordert.';
@@ -169,14 +169,14 @@ $lang['pcom_pricing_page_seo'] = 'SEO-Einstellungen';
 $lang['pcom_pricing_page_custom_javascript'] = 'Benutzerdefiniertes Javascript hinzufügen';
 $lang['pcom_pricing_page_content_translation'] = 'Inhaltliche Übersetzung';
 $lang['pcom_pricing_page_statistics'] = 'Statistik';
-$lang['pcom_pricing_page_statistics_built_in'] = 'Piwigo\'s eingebaute Statistiken';
+$lang['pcom_pricing_page_statistics_built_in'] = 'Piwigos eingebaute Statistiken';
 $lang['pcom_pricing_page_advanced_search'] = 'Erweiterte Suche in der Historie';
-$lang['pcom_pricing_page_external_analytics'] = 'Fügen Sie ein externes Analysetool hinzu (Google Analytics, Matomo...)';
+$lang['pcom_pricing_page_external_analytics'] = 'Anbindung eines externen Analyse-Tools (Google Analytics, Matomo...)';
 $lang['pcom_pricing_page_collaboration_sharing'] = 'Kollaboration und gemeinsame Nutzung';
 $lang['pcom_pricing_page_private_public_albums'] = 'Private und öffentliche Alben';
 $lang['pcom_pricing_page_user_permissions'] = 'Benutzerberechtigungen pro Album';
 $lang['pcom_pricing_page_link_sharing'] = 'Link-Sharing';
-$lang['pcom_pricing_page_link_sharing_details'] = 'Teilen Sie eine Datei oder ein ganzes Album über einen sicheren Link';
+$lang['pcom_pricing_page_link_sharing_details'] = 'Massenerstellung von Tag';
 $lang['pcom_pricing_page_batch_downloader'] = 'Batch-Downloader';
 $lang['pcom_pricing_page_multi_size_download'] = 'Download in mehreren Größen';
 $lang['pcom_pricing_page_contributor_management'] = 'Verwaltung von Beiträgen';
@@ -198,7 +198,7 @@ $lang['pcom_pricing_page_smart_albums'] = 'Intelligente Alben';
 $lang['pcom_pricing_page_service_support'] = 'Service und Unterstützung';
 $lang['pcom_pricing_page_priority_support'] = 'Vorrangige Unterstützung';
 $lang['pcom_pricing_page_phone_support'] = 'Telefonische Unterstützung';
-$lang['pcom_pricing_page_dedicated_hosting'] = 'Dediziertes Server-Hosting (auf Anfrage)';
+$lang['pcom_pricing_page_dedicated_hosting'] = 'Dediziertes Server-Hosting (Preis auf Anfrage)';
 $lang['pcom_pricing_page_user_collection_details'] = 'Erlaubt dem Benutzer, mehrere gemeinsam nutzbare Auswahlen von Dateien zu erstellen';
 $lang['pcom_pricing_page_user_custom_search_filters'] = 'Benutzerdefinierte Suchfilter';
 $lang['pcom_pricing_page_free_graphic_personalization'] = 'Kostenlose Personalisierung von Grafiken (von unserem Team erstellt)';
