@@ -176,8 +176,8 @@ $plans = array(
 		'subtitle' => l10n('pcom_pricing_page_enterprise_explanation'),
 		'features' => array(
 			array('text' => l10n('5 administrators')),
-			array('text' => l10n('unlimited users')),
-			array('text' => l10n('unlimited contributors')),
+			array('text' => l10n('pcom_pricing_page_unlimited_users')),
+			array('text' => l10n('pcom_pricing_page_unlimited_contributors')),
 			array('text' => l10n('entreprise storage'), 'info' => true, 'subject' => 'storage'),
 			array(
 				'text' => l10n('pcom_pricing_page_all_formats'),
