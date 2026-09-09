@@ -15,7 +15,7 @@ $lang['upload sub2 description'] = 'Laden Sie die Piwigo App für Android oder i
 $lang['upload sub2 btn'] = 'Mehr über die mobilen Apps erfahren';
 
 $lang['upload sub3 title'] = 'Kollegen und Partner Dateien hochladen lassen';
-$lang['upload sub3 description'] = 'Mit Piwigo können Sie Dritten erlauben, Dateien in Ihre Mediathek hochzuladen, ohne ihnen Administrationsrechte zu geben. Das spart Ihren Teams und externen Beteiligten Zeit (Schluss mit E-Mails und großen Dateiübertragungen!)';
+$lang['upload sub3 description'] = 'Mit Piwigo können Sie Kollegen und Partnern erlauben, Dateien in Ihre Mediathek hochzuladen, ohne ihnen Administrationsrechte zu geben. Das spart Ihren Teams und externen Mitwirkende Zeit (Schluss mit E-Mails und großen Dateiübertragungen!)';
 
 $lang['upload sub4 title'] = 'Viele unterstützte Dateiformate';
 $lang['upload sub4 description'] = 'Piwigo unterstützt zahlreiche Bild- (JPG, PNG, TIFF, RAW usw.) und Videoformate (MP4, MOV, OGG). Sie können außerdem PDF-Dokumente (Broschüren, Präsentationen, Grafikentwürfe...) sowie Quelldateien (PSD, AI usw.) und jede andere Art von Datei importieren.';
