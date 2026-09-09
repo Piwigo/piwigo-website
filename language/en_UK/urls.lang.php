@@ -62,4 +62,5 @@ $lang['porg_ext_urls']['privacy'] = 'https://doc.piwigo.org/legal/privacy/';
 $lang['porg_ext_urls']['terms_of_service'] = 'https://doc.piwigo.org/legal/terms-of-service/';
 $lang['porg_ext_urls']['dpa'] = 'https://doc.piwigo.org/legal/dpa/';
 $lang['porg_ext_urls']['extensions'] = 'https://piwigo.org/ext/';
+$lang['porg_ext_urls']['blog'] = 'https://piwigo.org/blog';
 ?>

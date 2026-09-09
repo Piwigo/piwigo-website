@@ -77,7 +77,7 @@
         {include
             file='template/include/buttons/button.tpl'
             variant='menu_btn_green'
-            href="https://piwigo.org/blog/"
+            href={$EXT_URL.blog}
             label={'porg_news_foot_btn'|translate}
         class="px-5"
         }
