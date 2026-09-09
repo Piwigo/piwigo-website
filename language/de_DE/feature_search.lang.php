@@ -17,7 +17,7 @@ $lang['search sub3 title'] = 'Suche innerhalb einer Auswahl';
 $lang['search sub3 description'] = 'Führen Sie eine Suche innerhalb eines bestimmten Albums oder Tags durch, um sich auf einen Teil Ihrer Mediathek zu konzentrieren.<br>Eine einfache Art, große Sammlungen effizienter zu erschließen.';
 
 $lang['search sub4 title'] = 'Navigation über Tags';
-$lang['search sub4 description'] = 'Durchstöbern Sie Ihre Medien über Tags und verwandte Tags.<br>Eine gut strukturierte Verschlagwortung macht das Entdecken und Wiederfinden von Dateien deutlich einfacher.';
+$lang['search sub4 description'] = 'Durchstöbern Sie Ihre Medien über Tags und verwandte Tags.<br>Eine gut strukturierte Verschlagwortung macht das Wiederfinden von Dateien deutlich einfacher.';
 
 $lang['search sub5 title'] = 'Eigene Suchfilter';
 $lang['search sub5 description'] = 'Erstellen Sie auf Basis Ihrer Tags eigene Filter für ein maßgeschneidertes Sucherlebnis.<br>So lassen sich große Mediatheken über eine geführte Filterung erschließen, angepasst an Ihre eigene Systematik.';
