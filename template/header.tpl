@@ -50,7 +50,9 @@
   <link rel="stylesheet" type="text/css" href="{$PORG_ROOT_URL_PLUGINS}vendor/flag-icons-master/css/flag-icon.css">
 
   {if $TRACK_ANALYTICS}
+{*
   <script defer data-domain="piwigo.org" src="https://plausible.piwigo.org/js/script.js"></script>
+*}
   {/if}
 </head>
 
