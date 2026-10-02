@@ -1,6 +1,6 @@
 <section class="container-fluid release11-header">
   <div class="row text-center">
-    <img class="piwigo12-img px-0" src="{$PORG_ROOT_URL}/images/changelogs/12/piwigo12-features-matrix.jpg">
+    <img class="piwigo12-img px-0" src="{$PORG_ROOT_URL}/images/changelogs/12/piwigo12-features-matrix.webp">
   </div>
 </section>
 
@@ -121,7 +121,7 @@
 <div id="interview_enora" class="interview-container">
   <div class="interview interview1">
     <img src="{$PORG_ROOT_URL}images/changelogs/quotes.svg" class="quotes">
-    <img class="photo" src="{$PORG_ROOT_URL}/images/changelogs/12/enora.jpg">
+    <img class="photo" src="{$PORG_ROOT_URL}/images/changelogs/12/enora.webp">
     <p class="first">{'porg_v12_enora_text1'|translate}</p>
     <p>{'porg_v12_enora_text2'|translate}
     <div class="interview-signature"><a href="https://www.linkedin.com/in/enora-delavigne-891275195/">Enora</a></div>
@@ -193,7 +193,7 @@
 <div id="interview_louis" class="interview-container">
   <div class="interview interview1">
     <img src="{$PORG_ROOT_URL}images/changelogs/quotes.svg" class="quotes">
-    <img class="photo" src="{$PORG_ROOT_URL}/images/changelogs/12/louis.jpg">
+    <img class="photo" src="{$PORG_ROOT_URL}/images/changelogs/12/louis.webp">
     <p class="first">{'porg_v12_louis_text1'|translate}</p>
     <p>{'porg_v12_louis_text2'|translate}
     <div class="interview-signature"><a href="https://www.linkedin.com/in/louis-auzuret/">Louis</a></div>
@@ -294,7 +294,7 @@
               </tr>
             {/foreach}
             <tr>
-              <td class="text-version">15.0.0</td>
+              <td class="text-version">12.0.0</td>
               <td class="text-checksum">{$md5sum}</td>
               <td class="release-date">{$released_on}</td>
               <td class="text-end">

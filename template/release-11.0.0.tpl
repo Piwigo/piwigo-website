@@ -69,7 +69,7 @@
   <div class="row first-image-and-caption">
     <div class="col-sm-12 col-md-8 ">
       <img class="img-fluid corner1" src="{$PORG_ROOT_URL}/images/changelogs/corner-image1.svg">
-      <img src="{$PORG_ROOT_URL}/images/changelogs/11/plugin-manager.png" class="screenshot">
+      <img src="{$PORG_ROOT_URL}/images/changelogs/11/plugin-manager.webp" class="screenshot">
       <img class="img-fluid corner2" src="{$PORG_ROOT_URL}/images/changelogs/corner-image2.svg">
     </div>
     <div class="col-sm-12 col-md-4">
@@ -122,7 +122,7 @@
 <div class="interview-container">
   <div class="interview interview1">
     <img src="{$PORG_ROOT_URL}images/changelogs/quotes.svg" class="quotes">
-    <img class="photo" src="{$PORG_ROOT_URL}/images/changelogs/11/zacharie.jpg">
+    <img class="photo" src="{$PORG_ROOT_URL}/images/changelogs/11/zacharie.webp">
     <p class="first">{'porg_v11_zacharie_text1'|translate}</p>
     <p>{'porg_v11_zacharie_text2'|translate}
   </div>
@@ -166,7 +166,7 @@
   <div class="row first-image-and-caption">
     <div class="col-sm-12 col-md-8 ">
       <img class="img-fluid corner1" src="{$PORG_ROOT_URL}/images/changelogs/corner-image1.svg">
-      <img src="{$PORG_ROOT_URL}/images/changelogs/11/batch-manager.png" class="screenshot">
+      <img src="{$PORG_ROOT_URL}/images/changelogs/11/batch-manager.webp" class="screenshot">
       <img class="img-fluid corner2" src="{$PORG_ROOT_URL}/images/changelogs/corner-image2.svg">
     </div>
     <div class="col-sm-12 col-md-4">
@@ -502,7 +502,7 @@
               </tr>
             {/foreach}
             <tr>
-              <td class="text-version">15.0.0</td>
+              <td class="text-version">11.0.0</td>
               <td class="text-checksum">{$md5sum}</td>
               <td class="release-date">{$released_on}</td>
               <td class="text-end">
