@@ -67,6 +67,7 @@ $lang['premium_plugins_OpenStreetMap_desc'] = 'Display photos on an OpenStreetMa
 $lang['premium_plugins_Panoramas_desc'] = 'Allows you to navigate in a panoramic image';
 $lang['premium_plugins_PaypalShoppingCart_desc'] = 'Sell photos with Paypal';
 $lang['premium_plugins_PermalinkGenerator_desc'] = 'Generate a permalink per album automatically : allows to decorrelate the name of an album and its url';
+$lang['premium_plugins_PersoAbout_desc'] = 'Customize the About page';
 $lang['premium_plugins_PersoFooter_desc'] = 'Customize the information displayed in the gallery footer';
 $lang['premium_plugins_PersonalFavicon_desc'] = 'Add a custom favicon to your gallery';
 $lang['premium_plugins_PhotoUpdate_desc'] = 'Be able to update the photo file from the administration without changing the properties';

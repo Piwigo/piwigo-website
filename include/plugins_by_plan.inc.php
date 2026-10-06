@@ -57,6 +57,7 @@ $plugin_names = array(
   'Panoramas',
   'Paypal Shopping Cart',
   'Permalink Generator',
+  'Perso About',
   'Perso Footer',
   'Personal Favicon',
   'Photo Update',
@@ -132,7 +133,7 @@ $feature_table = array(
 
 $plugin_table = array();
 
-for ($i = 0; $i < 83; $i++)
+for ($i = 0; $i < 84; $i++)
 {
   $plugin_table[] = array(true, true, true, true);
 }
