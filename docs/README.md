@@ -8,7 +8,7 @@ Edit `function porg_get_pages()` in `include/functions_piwigodotorg.php` and add
 
 ## Testing other languages
 
-Changing language using the footer is url based, to test another locale change `$user['language']` in `main.inc.php`
+Changing language using the footer is url based, to test another locale change `$user['language']` in `main.inc.php`. But please, do not commit that change!
 
 ```diff
 // adapt language depending on url
