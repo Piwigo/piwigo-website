@@ -330,8 +330,18 @@ function porg_get_latest_version_nocache()
 
 function porg_get_news($start, $count)
 {
-  global $lang_info, $conf, $page;
+  global $lang_info, $conf, $page, $user;
 
+  if ('fr_FR' == $user['language'])
+  {
+    $flarum_news = porg_get_flarum_news($start, $count);
+    if (null !== $flarum_news)
+    {
+    return $flarum_news;
+    }
+  }
+
+  // legacy news
   $topics = null;
 
   if (!in_array($page['porg_domain_prefix'], array('', 'de.', 'fr.'))) {
@@ -438,8 +448,18 @@ function porg_get_news($start, $count)
 
 function porg_get_latest_news()
 {
-  global $page, $lang_info;
+  global $page, $lang_info, $user;
 
+  if ('fr_FR' == $user['language'])
+  {
+    $latest_article = porg_get_latest_flarum_news();
+    if (null !== $latest_article)
+    {
+      return $latest_article;
+    }
+  }
+
+  // legacy lastest news
   $latest_articles = porg_get_news(0, 1);
 
   if ($latest_articles['total_count'] > 0 and $latest_articles['topics'][0]['posted_on'] > time() - conf_get_param('porg_news_maximum_freshness', 180) * 24 * 60 * 60) {
@@ -460,6 +480,230 @@ function porg_get_latest_news()
   }
 
   return $latest_article;
+}
+
+function porg_get_flarum_news($start, $count)
+{
+  global $lang_info, $conf, $page;
+
+  if (!conf_get_param('porg_flarum_news', false))
+  {
+    return null;
+  }
+
+  // only en, fr and de have a forum: the other languages read the English news
+  $forum_langs = array('en', 'fr', 'de');
+  $lang = in_array($lang_info['code'], $forum_langs) ? $lang_info['code'] : 'en';
+
+  $cache_path = PHPWG_ROOT_PATH . $conf['data_location'] . '/' . PORG_ID . '/porg_flarum_news-' . $lang . '.cache.php';
+
+  if ('refresh_ressources_cache' == script_basename())
+  {
+    if (!in_array($page['porg_domain_prefix'], array('', 'de.', 'fr.')))
+    {
+      return array('total_count' => 0, 'topics' => array());
+    }
+
+    $function_start_time = get_moment();
+
+    $topics = porg_fetch_flarum_news('https://' . $page['porg_domain_prefix'] . 'piwigo.org/forum');
+
+    global $logger;
+
+    if (null === $topics)
+    {
+      $logger->warn(__FUNCTION__ . ' (lang=' . $lang . ') Flarum API call failed, previous cache kept');
+    }
+    elseif (mkgetdir(dirname($cache_path)))
+    {
+      file_put_contents($cache_path, serialize($topics));
+    }
+
+    $logger->info(__FUNCTION__ . ' executed in ' . get_elapsed_time($function_start_time, get_moment()));
+
+    return array('total_count' => 0, 'topics' => array());
+  }
+
+  if (!file_exists($cache_path))
+  {
+    return null;
+  }
+
+  $topics = unserialize(file_get_contents($cache_path));
+
+  $topics_slice = array_slice($topics, $start, $count);
+
+  if (count($topics_slice) > 0)
+  {
+    end($topics_slice);
+    $topics_slice[key($topics_slice)]['last'] = true;
+  }
+
+  return array(
+    'total_count' => count($topics),
+    'topics' => $topics_slice,
+  );
+}
+
+function porg_get_latest_flarum_news()
+{
+  global $page, $lang_info;
+
+  if (!conf_get_param('porg_flarum_news', false))
+  {
+    return null;
+  }
+
+  $freshness_limit = time() - conf_get_param('porg_news_maximum_freshness', 180) * 24 * 60 * 60;
+
+  $news = porg_get_flarum_news(0, 1);
+  if (null !== $news and $news['total_count'] > 0 and $news['topics'][0]['posted_on'] > $freshness_limit)
+  {
+    return $news['topics'][0];
+  }
+
+  if ('' == $page['porg_domain_prefix'])
+  {
+    // nothing fresher to fall back on: the legacy code returned the stale
+    // English article flagged as English, the home page expects an article
+    if (null === $news or 0 == $news['total_count'])
+    {
+      return null;
+    }
+
+    $latest_article = $news['topics'][0];
+    $latest_article['lang'] = 'en';
+
+    return $latest_article;
+  }
+
+  $current_lang = $lang_info['code'];
+  $current_domain_prefix = $page['porg_domain_prefix'];
+
+  $lang_info['code'] = 'en';
+  $page['porg_domain_prefix'] = '';
+
+  $news = porg_get_flarum_news(0, 1);
+
+  $lang_info['code'] = $current_lang;
+  $page['porg_domain_prefix'] = $current_domain_prefix;
+
+  if (null === $news or 0 == $news['total_count'])
+  {
+    return null;
+  }
+
+  $latest_article = $news['topics'][0];
+  $latest_article['lang'] = 'en';
+
+  return $latest_article;
+}
+
+function porg_fetch_flarum_news($forum_url)
+{
+  global $lang_info;
+
+  $tags = array('en' => 'announcements', 'fr' => 'annonces', 'de' => 'ankundigung');
+  $tag = isset($tags[$lang_info['code']]) ? $tags[$lang_info['code']] : 'announcements';
+
+  $url = $forum_url . '/api/discussions?' . http_build_query(array(
+    'filter' => array('tag' => $tag),
+    'include' => 'firstPost,user',
+    'sort' => '-createdAt',
+    'page' => array('limit' => conf_get_param('porg_flarum_news_limit', 50)),
+  ));
+
+  if (conf_get_param('porg_fetch_news_check_ssl', true))
+  {
+    $content = file_get_contents($url);
+  }
+  else
+  {
+    $content = file_get_contents($url, false, stream_context_create(array(
+      'ssl' => array(
+        'verify_peer' => false,
+        'verify_peer_name' => false,
+      ),
+    )));
+  }
+
+  if (false === $content)
+  {
+    return null;
+  }
+
+  $api = json_decode($content, true);
+  if (!is_array($api) or !isset($api['data']))
+  {
+    return null;
+  }
+
+  $included = array();
+  foreach ($api['included'] ?? array() as $item)
+  {
+    $included[$item['type']][$item['id']] = $item['attributes'];
+  }
+
+  $doc = new DOMDocument();
+  $topics = array();
+  $i = 0;
+
+  foreach ($api['data'] as $discussion)
+  {
+    $attributes = $discussion['attributes'];
+    $first_post_id = $discussion['relationships']['firstPost']['data']['id'] ?? null;
+    $user_id = $discussion['relationships']['user']['data']['id'] ?? null;
+    $first_post = $included['posts'][$first_post_id] ?? array();
+    $user = $included['users'][$user_id] ?? array();
+
+    $html = $first_post['contentHtml'] ?? '';
+    $replies = max(0, ($attributes['commentCount'] ?? 1) - 1);
+
+    $topic = array(
+      'topic_id' => (int) $discussion['id'],
+      'id' => (int) $discussion['id'],
+      'topic_url' => $forum_url . '/d/' . $discussion['id'],
+      'url' => $forum_url . '/d/' . $discussion['id'],
+      'subject' => $attributes['title'],
+      'posted_on' => strtotime($attributes['createdAt']),
+      'poster' => $user['displayName'] ?? '',
+      'comments_string' => $replies . ' comments',
+      'posted_string' => '',
+      'is_cut' => false,
+    );
+
+    // first image of the message becomes the card illustration
+    if ('' != $html)
+    {
+      @$doc->loadHTML($html);
+      foreach ($doc->getElementsByTagName('img') as $img)
+      {
+        $topic['img_src'] = str_replace('http://', 'https://', $img->getAttribute('src'));
+        break;
+      }
+    }
+
+    // Flarum renders paragraphs and <br>, not <br />: keep a space between
+    // blocks or the excerpt glues the last word of a line to the next one
+    $message = strip_tags(preg_replace('#<br ?/?>|</p>|</li>|</h[1-6]>#i', ' ', $html));
+    $message = trim(preg_replace('/\s+/', ' ', $message));
+    $max_length = 200;
+    if (strlen($message) > $max_length)
+    {
+      $delimiter = '~#~';
+      $lines = explode($delimiter, wordwrap(trim($message), $max_length, $delimiter));
+      $message = array_shift($lines);
+      $topic['is_cut'] = true;
+    }
+    $topic['message'] = $message;
+
+    $topic['posted'] = format_date($topic['posted_on'], ['day', 'month', 'year']);
+    $topic['state'] = ($i++ % 2 == 0) ? 'left' : 'right';
+
+    $topics[] = $topic;
+  }
+
+  return $topics;
 }
 
 function porg_get_newsletters($lang_code)
