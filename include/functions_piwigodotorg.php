@@ -332,13 +332,10 @@ function porg_get_news($start, $count)
 {
   global $lang_info, $conf, $page, $user;
 
-  if (in_array($user['language'], array('fr_FR', 'de_DE')))
+  $flarum_news = porg_get_flarum_news($start, $count);
+  if (null !== $flarum_news)
   {
-    $flarum_news = porg_get_flarum_news($start, $count);
-    if (null !== $flarum_news)
-    {
-    return $flarum_news;
-    }
+  return $flarum_news;
   }
 
   // legacy news
@@ -450,13 +447,10 @@ function porg_get_latest_news()
 {
   global $page, $lang_info, $user;
 
-  if (in_array($user['language'], array('fr_FR', 'de_DE')))
+  $latest_article = porg_get_latest_flarum_news();
+  if (null !== $latest_article)
   {
-    $latest_article = porg_get_latest_flarum_news();
-    if (null !== $latest_article)
-    {
-      return $latest_article;
-    }
+    return $latest_article;
   }
 
   // legacy lastest news
