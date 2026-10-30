@@ -5,7 +5,7 @@
   <div class="row align-items-center">
     <div class="col-12 col-md-6 release-top-left">
       <h1 class="orange-text mb-3">Piwigo 16</h1>
-      <h2 class="release-title mb-4">{'pwg_org_release16_title'|translate}</h2>
+      <p class="h1-subtitle release-title mb-4">{'pwg_org_release16_title'|translate}</p>
 
       <div class="mb-2">
         {include file='template/include/buttons/button.tpl' variant='menu_btn_green' label={'Download Piwigo %s'|translate:$download_versions[0].version}
@@ -41,7 +41,7 @@
     <div class="col-md-4 pe-md-5">
       <div class="version-16-nav-card" id="release_menu">
 
-        <h3 class="country-testimonial nav-card-title h2">{'On this page'|translate}</h3>
+        <p class="country-testimonial nav-card-title h2">{'On this page'|translate}</p>
 
         <nav class="nav flex-column mt-3 version-16-nav-list v16" aria-label="On this page">
           <a class="nav-link minimenus-item icon-star-1"
@@ -85,9 +85,9 @@
             <button class="accordion-button collapsed release-version-button" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapse-{$download_version.version|replace:'.':'-'}" aria-expanded="false"
               aria-controls="collapse-{$download_version.version|replace:'.':'-'}" id="button-{$download_version.version|replace:'.':'-'}">
-              <h3 class="release-version-title mb-0 h4">Piwigo {$download_version.version}:
+              <h2 class="release-version-title mb-0 h4">Piwigo {$download_version.version}:
                 {$download_version.features|join:', '} • <span
-                  class="release-version-date">{$download_version.released_on}</span></h3>
+                  class="release-version-date">{$download_version.released_on}</span></h2>
               <i class="icon-down-open release-version-toggle-icon" aria-hidden="true"></i>
             </button>
             <div id="collapse-{$download_version.version|replace:'.':'-'}" class="accordion-collapse collapse"
@@ -124,8 +124,8 @@
       </div>
 
       <div class="section-part justify-content-center text-center">
-        <h3 id="standard_pages">{'pwg_org_release16_menu_title_std_pages'|translate}<span
-            class="badge badge-new icon-star-1">{'pwg_org_release16_new_badge'|translate}</span></h3>
+        <h2 class="h3" id="standard_pages">{'pwg_org_release16_menu_title_std_pages'|translate}<span
+            class="badge badge-new icon-star-1">{'pwg_org_release16_new_badge'|translate}</span></h2>
 
         <p class="col-sm-10 col-md-8 descriptive-text">{'pwg_org_release16_menu_std_pages_desc'|translate}</p>
 
@@ -154,7 +154,7 @@
       <div class="section-framed-container" id="2fa">
         <div class="section-part section-framed extension position-relative">
           <i class="icon-puzzle"></i>
-          <h3 id="anonymous_stats" class="text-end">{'pwg_org_release16_menu_2FA_title'|translate}</h3>
+          <h2 class="h3" id="anonymous_stats" class="text-end">{'pwg_org_release16_menu_2FA_title'|translate}</h2>
           <p>{'pwg_org_release16_2FA_desc'|translate}<br>
             <br>
             {'pwg_org_release16_2FA_desc2'|translate}
@@ -163,8 +163,8 @@
       </div>
 
       <div class="section-part">
-        <h3 id="related_tags">{'pwg_org_release16_title_related_tags'|translate}<span
-            class="badge badge-refresh icon-paint">{'pwg_org_release16_badge_refresh'|translate}</span></h3>
+        <h2 class="h3" id="related_tags">{'pwg_org_release16_title_related_tags'|translate}<span
+            class="badge badge-refresh icon-paint">{'pwg_org_release16_badge_refresh'|translate}</span></h2>
         <p class="col-sm-10 col-md-8 descriptive-text">{'pwg_org_release16_related_tags_desc'|translate}</p>
 
         <img src="https://ressources.piwigo.com/uploads/c/v/7/cv7jpz6hf8//2025/10/27/20251027162930-54d9a828.png"
@@ -177,8 +177,8 @@
       </div>
 
       <div class="section-part">
-        <h3 id="save_buttons">{'pwg_org_release16_title_mv_save_btn'|translate}<span
-            class="badge badge-refresh icon-paint">{'pwg_org_release16_badge_refresh'|translate}</span></h3>
+        <h2 class="h3" id="save_buttons">{'pwg_org_release16_title_mv_save_btn'|translate}<span
+            class="badge badge-refresh icon-paint">{'pwg_org_release16_badge_refresh'|translate}</span></h2>
 
         <img src="https://ressources.piwigo.com/i?/uploads/c/v/7/cv7jpz6hf8//2025/10/23/20251023093729-b385447d-la.jpg"
           class="screenshot">
@@ -198,8 +198,8 @@
       </div>
 
       <div class="section-part">
-        <h3 id="widget_management">{'pwg_org_release16_title_gallery_search'|translate}<span
-            class="badge badge-new icon-star-1">{'pwg_org_release16_new_badge'|translate}</span></h3>
+        <h2 class="h3" id="widget_management">{'pwg_org_release16_title_gallery_search'|translate}<span
+            class="badge badge-new icon-star-1">{'pwg_org_release16_new_badge'|translate}</span></h2>
 
         <p class="col-sm-10 col-md-8 descriptive-text">{'pwg_org_release16_gallery_search_desc'|translate}</p>
 
@@ -215,7 +215,7 @@
       </div>
 
       <div class="section-part">
-        <h3 id="comments_manager">{'pwg_org_release16_title_comment_manager'|translate}
+        <h2 class="h3" id="comments_manager">{'pwg_org_release16_title_comment_manager'|translate}
           <span class="badge badge-refresh icon-paint">{'pwg_org_release16_badge_refresh'|translate}</span>
 
           <p class="col-sm-10 col-md-8 descriptive-text">{'pwg_org_release16_comment_manager_desc'|translate}</p>
@@ -231,7 +231,7 @@
       <div class="section-framed-container" id="i18n_date">
         <div class="section-part section-framed  extension position-relative">
           <i class="icon-puzzle"></i>
-          <h3 id="anonymous_stats">{'pwg_org_release16_title_date_format'|translate}</h3>
+          <h2 class="h3" id="anonymous_stats">{'pwg_org_release16_title_date_format'|translate}</h2>
           <p>{'pwg_org_release16_date_format_desc'|translate}</p>
           <ul>
             <li>"Tuesday, October 7, 2025" {'pwg_org_release16_in_american_english'|translate}</li>
@@ -244,8 +244,8 @@
       </div>
 
       <div class="section-part">
-        <h3 id="activity_log_filter">{'pwg_org_release16_title_activity_filter'|translate} <span
-            class="badge badge-redesign icon-arrows-cw">{'pwg_org_release16_badge_redesign'|translate}</span></h3>
+        <h2 class="h3" id="activity_log_filter">{'pwg_org_release16_title_activity_filter'|translate} <span
+            class="badge badge-redesign icon-arrows-cw">{'pwg_org_release16_badge_redesign'|translate}</span></h2>
 
         <p class="col-sm-10 col-md-8 descriptive-text">{'pwg_org_release16_activity_filter_desc'|translate}</p>
 
@@ -257,8 +257,8 @@
       </div>
 
       <div class="section-part">
-        <h3 id="image_update">{'pwg_org_release16_title_update_img_batches'|translate}<span
-            class="badge badge-redesign icon-arrows-cw">{'pwg_org_release16_badge_redesign'|translate}</span></h3>
+        <h2 class="h3" id="image_update">{'pwg_org_release16_title_update_img_batches'|translate}<span
+            class="badge badge-redesign icon-arrows-cw">{'pwg_org_release16_badge_redesign'|translate}</span></h2>
 
         <p class="col-sm-10 col-md-8 descriptive-text">{'pwg_org_release16_update_img_batches_desc'|translate}</p>
 
@@ -271,14 +271,14 @@
       <div class="section-framed-container" id="3xl_4xl">
         <div class="section-part section-framed  extension position-relative">
           <i class="icon-puzzle"></i>
-          <h3 id="anonymous_stats">{'pwg_org_release16_title_img_format'|translate}</h3>
+          <h2 class="h3" id="anonymous_stats">{'pwg_org_release16_title_img_format'|translate}</h2>
           <p>{'pwg_org_release16_img_format_desc'|translate}</p>
         </div>
       </div>
 
       <div class="section-part">
-        <h3 id="expert_mode">{'pwg_org_release16_title_expert_mode'|translate}<span
-            class="badge badge-new icon-star-1">{'pwg_org_release16_new_badge'|translate}</span></h3>
+        <h2 class="h3" id="expert_mode">{'pwg_org_release16_title_expert_mode'|translate}<span
+            class="badge badge-new icon-star-1">{'pwg_org_release16_new_badge'|translate}</span></h2>
 
         <p class="col-sm-10 col-md-8 descriptive-text">{'pwg_org_release16_expert_mode_desc'|translate}</p>
 
@@ -306,7 +306,7 @@
 
       <div id="technical_features" class="section-part technical-features">
         <div class="row justify-content-center">
-          <h3>{'Technical features'|translate}</h3>
+          <h2 class="h3">{'Technical features'|translate}</h2>
 
           <div class="col-md-8">
             <p class="text-center" id="technical-first-paragraph">
@@ -316,22 +316,22 @@
               {'pwg_org_release16_end_notes3'|translate}</p>
           </div>
 
-          <h4 class="text-center">{'pwg_org_release16_compatibility'|translate}</h4>
+          <h3 class="h4">{'pwg_org_release16_compatibility'|translate}</h3>
           <p class="descriptive-text">{'pwg_org_release16_tech_features_php_min_version'|translate}</p>
 
 
-          <h4 class="text-center">{'pwg_org_release16_tech_features_change_img_priority'|translate}</h4>
+          <h3 class="h4">{'pwg_org_release16_tech_features_change_img_priority'|translate}</h3>
           <p class=" descriptive-text">
             {'pwg_org_release16_tech_features_change_img_priority_desc'|translate}</p>
 
-          <h4 class="text-center">{'pwg_org_release16_tech_features_api_keys'|translate}</h4>
+          <h3 class="h4">{'pwg_org_release16_tech_features_api_keys'|translate}</h3>
           <p class="descriptive-text">{'pwg_org_release16_api_key_desc'|translate}
             <br><br>
             {'pwg_org_release16_api_key_desc2'|translate}
           </p>
 
 
-          <h4 class="text-center">{'pwg_org_release16_tech_features_docker_image'|translate}</h4>
+          <h3 class="h4">{'pwg_org_release16_tech_features_docker_image'|translate}</h3>
           <p class=" descriptive-text mb-3">{'pwg_org_release16_tech_features_docker_image_desc'|translate}
             <span class="docker-inline">{include file='template/include/buttons/button.tpl' variant='menu_btn_blue' class='docker-cta' label={'pwg_org_release16_tech_features_docker_image_get'|translate}
               href="https://hub.docker.com/r/piwigo/piwigo"}</span>
