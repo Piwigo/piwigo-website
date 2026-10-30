@@ -128,13 +128,13 @@ if (is_array($coding_activity_commits)) {
     }
 
     $coding_activity_weeks[$week_index]['commits'][$commit_type][] = array(
-      'message' => $commit['message'] ?? '',
+      'message' => htmlentities($commit['message'] ?? ''),
       'date' => format_date($commit['occured_on'], ['day', 'month', 'year']),
       'occured_on' => $commit['occured_on'],
-      'repo' => $commit['name'] ?? '',
+      'repo' => htmlentities($commit['name'] ?? ''),
       'url' => $commit_url,
-      'hash' => $commit_id,
-      'author' => $commit['author'] ?? '',
+      'hash' => htmlentities($commit_id),
+      'author' => htmlentities($commit['author'] ?? ''),
     );
   }
 }
