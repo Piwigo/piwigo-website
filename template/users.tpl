@@ -5,7 +5,7 @@
     <div class="col-md-10 text-center justify-content-center">
       <div class="row justify-content-center align-items-stretch">
         <div class="col-md-6 d-flex flex-column justify-content-center users-header-text">
-          <h2 class="mb-4">{'porg_users_title'|translate}</h2>
+          <h1 class="mb-4">{'porg_users_title'|translate}</h1>
           <img src="{$PORG_ROOT_URL}images/users/topimg.webp" alt="Piwigo screenshot" class="img-fluid d-md-none">
           <p class="mb-4">{'porg_users_intro'|translate}</p>
           {include file='template/include/buttons/button.tpl' variant='menu_btn_green' label={'Start your 30-day free trial'|translate} href="{$PORG_ROOT}{$URL.signup}" class="px-4 align-self-start"}

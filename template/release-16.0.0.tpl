@@ -5,7 +5,7 @@
   <div class="row align-items-center">
     <div class="col-12 col-md-6 release-top-left">
       <h1 class="orange-text mb-3">Piwigo 16</h1>
-      <h1 class="release-title mb-4">{'pwg_org_release16_title'|translate}</h1>
+      <h2 class="release-title mb-4">{'pwg_org_release16_title'|translate}</h2>
 
       <div class="mb-2">
         {include file='template/include/buttons/button.tpl' variant='menu_btn_green' label={'Download Piwigo %s'|translate:$download_versions[0].version}
@@ -41,7 +41,7 @@
     <div class="col-md-4 pe-md-5">
       <div class="version-16-nav-card" id="release_menu">
 
-        <h2 class="country-testimonial nav-card-title">{'On this page'|translate}</h2>
+        <h3 class="country-testimonial nav-card-title h2">{'On this page'|translate}</h3>
 
         <nav class="nav flex-column mt-3 version-16-nav-list v16" aria-label="On this page">
           <a class="nav-link minimenus-item icon-star-1"

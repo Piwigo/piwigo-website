@@ -4,7 +4,7 @@
     <div class="row justify-content-center">
       <div class="col-12 col-md-8">
         <h1 class="orange-text mb-2">Piwigo {$version}</h1>
-        <h1 class="release-title mb-4">{'Release note'|translate}</h1>
+        <h2 class="release-title mb-4 text-center">{'Release note'|translate}</h2>
 
         <div class="mb-1">
           {include file='template/include/buttons/button.tpl' variant='menu_btn_green' label={'Download Piwigo %s'|translate:$version} href="//piwigo.org/download/dlcounter.php?code={$version}"}

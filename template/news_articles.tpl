@@ -5,7 +5,7 @@
         <img src="{$topic.img_src}" class="" alt="">
       {/if}
       <div class="news-card-body">
-        <h1 class="small-text green-text mb-0">{$topic.posted}</h1>
+        <h3 class="small-text green-text mb-0">{$topic.posted}</h3>
         <h2 class="h2-mobile-top-page mb-0">{$topic.subject}</h2>
         <p class="mb-0 pricing-list news-card-description">{$topic.message}{if $topic.is_cut}...{/if}</p>
         <div class="mt-auto">

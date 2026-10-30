@@ -118,14 +118,14 @@
 
 <section class="mobile-app-footer container-fluid d-flex flex-column align-items-center">
   <div class="mobile-app-title-footer-container align-items-center">
-    <h1 class="mobile-app-title-footer text-center d-flex flex-column align-items-center">
+    <h2 class="mobile-app-title-footer text-center d-flex flex-column align-items-center">
       <span class="line-wrap-nope">
         {'mobile_applications_download_pt1'|translate}
       </span>
       <span class="line-wrap">
         {'mobile_applications_download_pt2'|translate}
       </span>
-    </h1>
+    </h2>
   </div>
   <div class="mobile-app-store-buttons buttons-footer-download d-flex flew-row justify-content-center">
     <a href="https://apps.apple.com/fr/app/piwigo/id472225196" target="blank">

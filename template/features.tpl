@@ -12,8 +12,8 @@
     <div class="col-md-6 features-header-text">
       <h1 class="d-none d-md-block features-title"><span class="features-title-main">{'main title'|translate}</span>
       </h1>
-      <h1 class="h1-mobile d-block d-md-none features-title"><span
-          class="features-title-main">{'main title'|translate}</span></h1>
+      <h2 class="h1-mobile d-block d-md-none features-title"><span
+          class="features-title-main">{'main title'|translate}</span></h2>
       <p>
         {'main description'|translate}
       </p>
