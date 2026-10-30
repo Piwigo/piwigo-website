@@ -85,12 +85,11 @@
             <button class="accordion-button collapsed release-version-button" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapse-{$download_version.version|replace:'.':'-'}" aria-expanded="false"
               aria-controls="collapse-{$download_version.version|replace:'.':'-'}" id="button-{$download_version.version|replace:'.':'-'}">
-              <h4 class="release-version-title mb-0">Piwigo {$download_version.version}:
+              <h3 class="release-version-title mb-0 h4">Piwigo {$download_version.version}:
                 {$download_version.features|join:', '} • <span
-                  class="release-version-date">{$download_version.released_on}</span></h4>
+                  class="release-version-date">{$download_version.released_on}</span></h3>
               <i class="icon-down-open release-version-toggle-icon" aria-hidden="true"></i>
             </button>
-            </h2>
             <div id="collapse-{$download_version.version|replace:'.':'-'}" class="accordion-collapse collapse"
               aria-labelledby="heading-{$download_version.version|replace:'.':'-'}"
               data-bs-parent="#releaseVersionAccordion">

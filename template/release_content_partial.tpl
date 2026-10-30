@@ -2,7 +2,7 @@
   {if $bugs != null}
     <div class="row release-sub-section">
       <div class="col-md-12">
-        <h2 class="releases-menu-item-small mb-4"><i class="icon-wrench"></i>{'Bugs fixed'|translate}</h2>
+        <h4 class="h2 releases-menu-item-small mb-4"><i class="icon-wrench"></i>{'Bugs fixed'|translate}</h4>
       </div> 
       {foreach from=$bugs key=key item=bug}
         <div class="col-md-4"> 
@@ -19,7 +19,7 @@
   {if $news_languages != null || $updated_languages != null}
     <div class="row mt-md-5 mt-4">
       <div class="col-md-12">
-        <h2 class="releases-menu-item-small mb-4"><i class="icon-langage"></i>{'Languages'|translate}</h2>
+        <h4 class="h2 releases-menu-item-small mb-4"><i class="icon-langage"></i>{'Languages'|translate}</h4>
       </div>
       {if $news_languages != null}
         <div class="col-md-12 d-flex flex-wrap align-items-start mb-3">
@@ -43,7 +43,7 @@
   {if $known_issues != null}
     <div class="row release-sub-section release-sub-section-issue mt-md-5 mt-4">
       <div class="col-md-12">
-        <h2 class="releases-menu-item-small mb-4"><i class="icon-attention"></i>{'Known issues'|translate}</h2>
+        <h4 class="h2 releases-menu-item-small mb-4"><i class="icon-attention"></i>{'Known issues'|translate}</h4>
       </div>
       {foreach from=$known_issues key=key item=known_issue}
         <div class="col-md-3">
@@ -57,7 +57,7 @@
   {if $features != null}
     <div class="row release-sub-section mt-md-5 mt-4">
       <div class="col-md-12">
-        <h2 class="releases-menu-item-small mb-4"><i class="icon-plus-circled"></i>{'Features added'|translate}</h2>
+        <h4 class="h2 releases-menu-item-small mb-4"><i class="icon-plus-circled"></i>{'Features added'|translate}</h4>
       </div>
       {foreach from=$features key=key item=feature}
         <div class="col-md-3">
