@@ -73,7 +73,3 @@
   {if empty($HIDE_NAVBAR)}
     {include file='template/navbar.tpl'}
   {/if}
-
-  </body>
-
-</html>

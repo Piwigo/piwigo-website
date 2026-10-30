@@ -196,3 +196,7 @@
     validateForm();
   });
 </script>
+
+</body>
+
+</html>
