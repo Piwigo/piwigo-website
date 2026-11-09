@@ -1,6 +1,41 @@
 <?php
 $porg_releases = array(
 
+  '16.5.0' => array(
+    'released_on' => '2026-11-09 16:27:00',
+    'md5sum' => '0fd6443ce454b36e1c95696dc0f7bdb6',
+    'summary' => array('bug fixes (including security)'),
+    'features' => array(),
+    'bugs' => array(
+      array('id' => 2600, 'section' => 'Photos'),
+      array('id' => 2587, 'section' => 'Users & Groups'),
+      array('id' => 2573, 'section' => 'web API'),
+      array('id' => 2571, 'section' => 'Photos'),
+      array('id' => 2536, 'section' => 'Photos'),
+      array('id' => 'GHSA-r87j-qfq4-r6qq', 'section' => 'Security'),
+      array('id' => 'GHSA-66w8-xvvr-rp5x', 'section' => 'Security'),
+      array('id' => 'GHSA-pm6r-7f83-29wq', 'section' => 'Security'),
+      array('id' => 'GHSA-jx3p-88mg-57gg', 'section' => 'Security'),
+      array('id' => 'GHSA-r8qq-xjcv-2xvc', 'section' => 'Security'),
+      array('id' => 'GHSA-8mgx-p7m3-7j5g', 'section' => 'Security'),
+      array('id' => 'GHSA-m243-275g-jcr4', 'section' => 'Security'),
+      array('id' => 'GHSA-rv39-2j2c-rvc6', 'section' => 'Security'),
+      array('id' => 'GHSA-pcf4-gj83-6775', 'section' => 'Security'),
+      array('id' => 'GHSA-c2gx-f66f-99gh', 'section' => 'Security'),
+      array('id' => 'GHSA-prxr-gc4p-mhf3', 'section' => 'Security'),
+      array('id' => 'GHSA-4v5h-4rpm-6hvg', 'section' => 'Security'),
+      array('id' => 'GHSA-3524-8x2q-ccv6', 'section' => 'Security'),
+      array('id' => 'GHSA-86gq-mhmc-mjxc', 'section' => 'Security'),
+      array('id' => 'GHSA-hxf4-pc6v-4gg2', 'section' => 'Security'),
+      array('id' => 'GHSA-hq29-8hhx-5jwc', 'section' => 'Security'),
+    ),
+    'known_issues' => array(),
+    'languages' => array(
+      'new' => array(),
+      'updated' => array('et_EE','fa_IR','fi_FI','it_IT','ja_JP','ko_KR','nl_NL','pl_PL','pt_PT','ru_RU'),
+    ),
+  ),
+
   '16.4.0' => array(
     'released_on' => '2026-05-03 16:27:00',
     'md5sum' => 'fe0c67aeb6addd1d076900b676aa65c9',
