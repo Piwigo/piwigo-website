@@ -180,3 +180,210 @@ $lang['language_te_IN'] = 'Indiase taal (Telugu)';
 $lang['Contact us'] = 'Neem contact op';
 $lang['Get Help'] = 'Zoek hulp';
 $lang['porg_guides_img_docker'] = 'Docker Image';
+
+/* HEADER */
+$lang['Get started'] = 'Aan de slag';
+$lang['Product'] = 'Product';
+$lang['Our users'] = 'Onze gebruikers';
+$lang['Behind the code'] = 'Achter de code';
+$lang['Free trial'] = 'Gratis proberen';
+$lang['English (UK)'] = 'Engels (VK)';
+
+/* get started sub menu*/
+$lang['Cloud'] = 'Cloud';
+$lang['Cloud desc'] = 'Gehost en beheerd door Piwigo';
+$lang['Self-hosted'] = 'Zelf gehost';
+$lang['Self-hosted desc'] = 'Gehost op je eigen server';
+$lang['Pricing'] = 'Prijzen';
+$lang['Pricing desc'] = '';
+$lang['Get started btn1'] = 'Gratis proberen';
+$lang['Get started btn2'] = 'Vraag een demo aan!';
+
+/* product sub menu */
+$lang['Import & Centralize'] = 'Importeren en centraliseren';
+$lang['Import & Centralize desc'] = 'Breng al je media samen';
+$lang['Organize your media'] = 'Je media organiseren';
+$lang['Organize your media desc'] = 'Structureer je bibliotheek';
+$lang['Search & Find'] = 'Zoeken en vinden';
+$lang['Search & Find desc'] = 'Vind elk bestand meteen';
+$lang['Share & Collaborate'] = 'Delen en samenwerken';
+$lang['Share & Collaborate desc'] = 'Beheer rechten en toegang';
+$lang['Customize & Extend'] = 'Aanpassen en uitbreiden';
+$lang['Customize & Extend desc'] = 'Maak Piwigo echt van jou';
+$lang['Measure & Monitor'] = 'Meten en volgen';
+$lang['Measure & Monitor desc'] = 'Volg activiteit en gebruik';
+$lang['Security & Privacy'] = 'Beveiliging en privacy';
+$lang['Security & Privacy desc'] = 'Houd de controle';
+$lang['Use cases'] = 'Toepassingen';
+$lang['Travel & Tourism'] = 'Reizen en toerisme';
+$lang['Public Sector'] = 'Publieke sector';
+$lang['Companies'] = 'Bedrijven';
+$lang['Education & Research'] = 'Onderwijs en onderzoek';
+$lang['Nonprofits'] = 'Non-profitorganisaties';
+$lang['Photographers & individuals'] = 'Fotografen en particulieren';
+$lang['Explore'] = 'Ontdekken';
+$lang['Piwigo AI'] = 'Piwigo AI';
+$lang['Piwigo AI desc'] = 'AI die je gegevens respecteert';
+$lang['Live demos'] = 'Live demo\'s';
+$lang['Live demos desc'] = 'Zie Piwigo in actie';
+$lang['Mobile apps'] = 'Mobiele apps';
+$lang['Mobile apps desc'] = 'Voor iOS en Android';
+$lang['API & integrations'] = 'API en integraties';
+$lang['API & integrations desc'] = 'Koppel Piwigo aan je tools';
+$lang['Extensions desc'] = 'Plugins, thema\'s en meer';
+$lang['product btn'] = 'Neem contact op voor een demo!';
+
+/* Our users sub menu */
+$lang['Who uses Piwigo'] = 'Wie gebruikt Piwigo';
+$lang['Who uses Piwigo desc'] = 'Talloze manieren om Piwigo te gebruiken';
+$lang['Case studies'] = 'Klantverhalen';
+$lang['Case studies desc'] = 'Van uitdaging tot oplossing';
+
+/* support sub menu */
+$lang['Professional support'] = 'Professionele ondersteuning';
+$lang['Professional support desc'] = '';
+$lang['Community Forum'] = 'Communityforum';
+$lang['Community Forum desc'] = '';
+$lang['Documentation desc'] = '';
+$lang['Installation guides'] = 'Installatiegidsen';
+$lang['Installation guides desc'] = '';
+$lang['Developer resources'] = 'Bronnen voor ontwikkelaars';
+$lang['Developer resources desc'] = '';
+$lang['support btn'] = 'Hulp van een expert nodig?';
+
+/* behind the code sub menu */
+$lang['About Piwigo'] = 'Over Piwigo';
+$lang['About Piwigo desc'] = 'Ons team, onze missie en geschiedenis';
+$lang['Contribute'] = 'Bijdragen';
+$lang['Contribute desc'] = 'Doe mee op jouw manier';
+
+/* news sub menu */
+$lang['Latest news desc'] = '';
+$lang['Newsletter'] = 'Nieuwsbrief';
+$lang['Newsletter desc'] = '';
+$lang['Blog'] = 'Blog';
+$lang['Blog desc'] = '';
+$lang['Product Updates'] = 'Productupdates';
+$lang['Product Updates desc'] = '';
+$lang['news btn'] = 'Abonneren op de nieuwsbrief';
+
+/* error */
+$lang['porg_contact_error_message_7'] = 'Dit moet een geldig e-mailadres zijn';
+$lang['porg_contact_error_message_1'] = 'Oeps! Er is iets misgegaan.';
+$lang['porg_news_error_rgpd'] = 'Je moet akkoord gaan om je aan te melden voor de nieuwsbrief';
+
+/* success */
+$lang['porg_contact_success_message'] = 'Bedankt voor je bericht!<br>We nemen snel contact met je op.';
+$lang['porg_contact_success_follow'] = 'En als je het Piwigo-avontuur wilt volgen';
+$lang['Discover our blog'] = 'Ontdek onze blog';
+$lang['Follow us on LinkedIn'] = 'Volg ons op LinkedIn!';
+
+/* FOOTER */
+$lang['Footer Piwigo description'] = 'Piwigo is opensourcesoftware voor fotobeheer. Organiseer, beheer en deel je foto\'s veilig online. Gemaakt voor organisaties, teams en particulieren.';
+$lang['Footer Button 1 Plan a demo'] = 'Plan een demo';
+$lang['Footer Button 4 Subscribe to newsletter'] = 'Abonneren op de nieuwsbrief';
+$lang['Footer legal 1 Privacy Policy'] = 'Privacybeleid';
+$lang['Footer legal 4 Terms of Use'] = 'Gebruiksvoorwaarden';
+$lang['Footer legal 6 DPA'] = 'Verwerkersovereenkomst';
+
+/* common sub-templates */
+$lang['pricing toggle title cloud'] = 'Cloud';
+$lang['pricing toggle title selfhosted'] = 'Zelf gehost';
+
+/* form */
+$lang['Your email address 1'] = 'Je e-mailadres';
+$lang['Your Piwigo url 1'] = 'De URL van je Piwigo (als je Piwigo al gebruikt)';
+$lang['Your message 1'] = 'Je bericht';
+$lang['Send message'] = 'Bericht versturen';
+$lang['porg_contact_error_email'] = 'Oeps, dit e-mailadres is ongeldig';
+$lang['porg_contact_error_message'] = 'Oeps, je bericht lijkt niet te kloppen';
+$lang['email example'] = 'charly@piwigo.net';
+$lang['Piwigo url example'] = 'https://jouw-piwigo-site.com';
+$lang['Piwigo password example'] = 'PassWord!15';
+$lang['Piwigo name example'] = 'bedrijfsnaam';
+
+/* Common words */
+$lang['Login'] = 'Inloggen';
+$lang['$'] = '€';
+$lang['GB'] = 'GB';
+$lang['Pro'] = 'Pro';
+$lang['Team'] = 'Team';
+$lang['Enterprise'] = 'Enterprise';
+$lang['VIP'] = 'VIP';
+$lang['Best deal'] = 'Beste deal';
+$lang['Free'] = 'Gratis';
+$lang['Light'] = 'Light';
+$lang['Standard'] = 'Standard';
+$lang['Premium'] = 'Premium';
+$lang['Filters'] = 'Filters';
+$lang['Clear all'] = 'Alles wissen';
+$lang['Version'] = 'Versie';
+$lang['Checksum'] = 'Checksum';
+$lang['Release date'] = 'Releasedatum';
+$lang['Download'] = 'Downloaden';
+$lang['On this page'] = 'Op deze pagina';
+$lang['See details'] = 'Details bekijken';
+$lang['Week %s'] = 'Week %s';
+$lang['%s to %s'] = '%s tot %s';
+$lang['From %s to %s'] = 'Van %s tot %s';
+$lang['Your way.'] = 'Op jouw manier.';
+$lang['Explore solution %s'] = 'Ontdek oplossing %s';
+$lang['Start your 30-day free trial'] = 'Start je gratis proefperiode van 30 dagen';
+$lang['Feature'] = 'Functie';
+$lang['Description'] = 'Beschrijving';
+$lang['Plugin'] = 'Plugin';
+$lang['Search'] = 'Zoeken';
+$lang['years'] = 'jaar';
+$lang['M (the one for millions)'] = 'M';
+$lang['Today'] = 'Vandaag';
+$lang['Send us a testimonial'] = 'Stuur ons een getuigenis';
+$lang['Choose your setup'] = 'Kies je opzet';
+$lang['Show more'] = 'Meer tonen';
+$lang['Learn more'] = 'Meer informatie';
+$lang['pcom_pricing_page_switch_cloud2'] = 'Piwigo SaaS, hosting en ondersteuning';
+$lang['pcom_pricing_page_switch_self_hosted'] = 'Piwigo op je eigen server';
+$lang['Start your free trial'] = 'Start je gratis proefperiode';
+$lang['Try Piwigo Cloud free for 30 days. No credit card required.'] = 'Probeer Piwigo Cloud 30 dagen gratis. Geen creditcard nodig.';
+$lang['Create my account'] = 'Mijn account aanmaken';
+$lang['Read customer story'] = 'Lees het klantverhaal';
+$lang['Trusted by organizations worldwide'] = 'Vertrouwd door organisaties wereldwijd';
+$lang['Explore our users'] = 'Ontdek onze gebruikers';
+$lang['The challenge'] = 'De uitdaging';
+$lang['The choice of Piwigo'] = 'De keuze voor Piwigo';
+$lang['Benefits'] = 'Voordelen';
+$lang['Older versions'] = 'Oudere versies';
+$lang['Download details and older versions'] = 'Downloaddetails en oudere versies';
+$lang['See the full page of Release note %s'] = 'Bekijk de volledige pagina van de releasenotes %s';
+$lang['porg_cases1_title'] = 'Wessex Water koos Piwigo voor het beheer van zijn digitale assets';
+$lang['porg_cases1_description'] = 'Met Piwigo krijgen we echt waar voor ons geld. De ondersteuning is heel behulpzaam en het product is gebruiksvriendelijk.';
+$lang['porg_cases2_title'] = 'Een goedkopere en gebruiksvriendelijkere fotobibliotheek voor de departementsraad van Indre';
+$lang['porg_cases2_description'] = 'Ik heb voor Piwigo gekozen om onze fotobibliotheek te beheren en ben er heel tevreden over. Piwigo is goedkoper, eenvoudiger en krachtiger dan onze oude software.';
+$lang['porg_cases3_title'] = 'Een gedeelde fotobibliotheek voor de 11 campussen van Icam (Institut Catholique d\'Arts et Métiers)';
+$lang['porg_cases3_description'] = 'Om de complete functies, de snelle ondersteuning en de zeer scherpe prijs: ik raad Piwigo van harte aan!';
+$lang['porg_cases4_title'] = 'ECT beheert zijn zakelijke beeldbank met Piwigo, voor meer productiviteit en samenwerking.';
+$lang['porg_cases4_description'] = 'Sinds we Piwigo gebruiken, verliezen we veel minder tijd met zoeken naar de foto\'s die we nodig hebben: het gaat direct en we zijn altijd up-to-date.';
+$lang['porg_cases5_title'] = 'Toeristenbureau van de Cotentin: een gezamenlijke en veilige fotobibliotheek voor de toeristische communicatie van 130 gemeenten.';
+$lang['porg_cases5_description'] = 'Met Piwigo kunnen we onze foto\'s bewaren in een veilige, gedeelde ruimte: het is een samenwerkingstool die het delen van bestanden veel eenvoudiger maakt.';
+$lang['porg_cases_start_title'] = 'Klaar om je foto\'s met Piwigo te beheren?';
+$lang['porg_cases_start_description'] = 'Probeer Piwigo Cloud 30 dagen gratis. Maak je account aan, upload je bestanden en ga meteen aan de slag.';
+$lang['Read more'] = 'Lees meer';
+$lang['See all the details'] = 'Details bekijken';
+$lang['Default theme Modus'] = 'Standaardthema Modus';
+$lang['Admin redesign'] = 'Nieuw ontwerp van de beheeromgeving';
+$lang['Dark mode'] = 'Donkere modus';
+$lang['Activities'] = 'Activiteiten';
+$lang['User manager'] = 'Gebruikersbeheer';
+$lang['Plugin manager'] = 'Pluginbeheer';
+$lang['updated'] = 'bijgewerkt';
+$lang['Album manager'] = 'Albumbeheer';
+$lang['Visit log'] = 'Bezoekerslogboek';
+$lang['Multiple-format'] = 'Meerdere formaten';
+$lang['Search engine'] = 'Zoekmachine';
+$lang['Album editor'] = 'Albumeditor';
+$lang['New file formats'] = 'Nieuwe bestandsformaten';
+$lang['Enhanced user management'] = 'Verbeterd gebruikersbeheer';
+$lang['System activities'] = 'Systeemactiviteiten';
+$lang['Batch manager redesign'] = 'Nieuw ontwerp van het batchbeheer';
+$lang['Standard pages'] = 'Standaardpagina\'s';
+$lang['API keys'] = 'API-sleutels';
+$lang['Docker image'] = 'Docker-image';
