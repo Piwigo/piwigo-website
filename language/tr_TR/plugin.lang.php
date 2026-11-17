@@ -178,3 +178,210 @@ $lang['language_te_IN'] = 'Telugu';
 $lang['Contact us'] = 'Bize Ulaşın';
 $lang['Get Help'] = 'Yardım Alın';
 $lang['porg_guides_img_docker'] = 'Docker Görüntüsü';
+
+/* HEADER */
+$lang['Get started'] = 'Başlayın';
+$lang['Product'] = 'Ürün';
+$lang['Our users'] = 'Kullanıcılarımız';
+$lang['Behind the code'] = 'Kodun arkasında';
+$lang['Free trial'] = 'Ücretsiz deneme';
+$lang['English (UK)'] = 'İngilizce (UK)';
+
+/* get started sub menu*/
+$lang['Cloud'] = 'Cloud';
+$lang['Cloud desc'] = 'Piwigo tarafından barındırılır ve yönetilir';
+$lang['Self-hosted'] = 'Kendi sunucunuzda';
+$lang['Self-hosted desc'] = 'Kendi sunucunuzda barındırılır';
+$lang['Pricing'] = 'Fiyatlandırma';
+$lang['Pricing desc'] = '';
+$lang['Get started btn1'] = 'Ücretsiz deneme';
+$lang['Get started btn2'] = 'Demo isteyin!';
+
+/* product sub menu */
+$lang['Import & Centralize'] = 'İçe aktarın ve merkezileştirin';
+$lang['Import & Centralize desc'] = 'Tüm medyanızı bir araya getirin';
+$lang['Organize your media'] = 'Medyanızı düzenleyin';
+$lang['Organize your media desc'] = 'Kütüphanenizi yapılandırın';
+$lang['Search & Find'] = 'Arayın ve bulun';
+$lang['Search & Find desc'] = 'Her dosyayı anında bulun';
+$lang['Share & Collaborate'] = 'Paylaşın ve iş birliği yapın';
+$lang['Share & Collaborate desc'] = 'Hakları ve erişimi yönetin';
+$lang['Customize & Extend'] = 'Özelleştirin ve genişletin';
+$lang['Customize & Extend desc'] = 'Piwigo\'yu gerçekten size ait kılın';
+$lang['Measure & Monitor'] = 'Ölçün ve izleyin';
+$lang['Measure & Monitor desc'] = 'Etkinliği ve kullanımı takip edin';
+$lang['Security & Privacy'] = 'Güvenlik ve gizlilik';
+$lang['Security & Privacy desc'] = 'Kontrolü elinizde tutun';
+$lang['Use cases'] = 'Kullanım alanları';
+$lang['Travel & Tourism'] = 'Seyahat ve turizm';
+$lang['Public Sector'] = 'Kamu sektörü';
+$lang['Companies'] = 'Şirketler';
+$lang['Education & Research'] = 'Eğitim ve araştırma';
+$lang['Nonprofits'] = 'Kâr amacı gütmeyen kuruluşlar';
+$lang['Photographers & individuals'] = 'Fotoğrafçılar ve bireyler';
+$lang['Explore'] = 'Keşfedin';
+$lang['Piwigo AI'] = 'Piwigo AI';
+$lang['Piwigo AI desc'] = 'Verilerinize saygı duyan yapay zekâ';
+$lang['Live demos'] = 'Canlı demolar';
+$lang['Live demos desc'] = 'Piwigo\'yu iş başında görün';
+$lang['Mobile apps'] = 'Mobil uygulamalar';
+$lang['Mobile apps desc'] = 'iOS ve Android için';
+$lang['API & integrations'] = 'API ve entegrasyonlar';
+$lang['API & integrations desc'] = 'Piwigo\'yu araçlarınıza bağlayın';
+$lang['Extensions desc'] = 'Eklentiler, temalar ve daha fazlası';
+$lang['product btn'] = 'Demo için bize ulaşın!';
+
+/* Our users sub menu */
+$lang['Who uses Piwigo'] = 'Piwigo\'yu kimler kullanıyor';
+$lang['Who uses Piwigo desc'] = 'Piwigo\'yu kullanmanın sayısız yolu';
+$lang['Case studies'] = 'Müşteri hikâyeleri';
+$lang['Case studies desc'] = 'Sorundan çözüme';
+
+/* support sub menu */
+$lang['Professional support'] = 'Profesyonel destek';
+$lang['Professional support desc'] = '';
+$lang['Community Forum'] = 'Topluluk forumu';
+$lang['Community Forum desc'] = '';
+$lang['Documentation desc'] = '';
+$lang['Installation guides'] = 'Kurulum kılavuzları';
+$lang['Installation guides desc'] = '';
+$lang['Developer resources'] = 'Geliştirici kaynakları';
+$lang['Developer resources desc'] = '';
+$lang['support btn'] = 'Uzman yardımına mı ihtiyacınız var?';
+
+/* behind the code sub menu */
+$lang['About Piwigo'] = 'Piwigo hakkında';
+$lang['About Piwigo desc'] = 'Ekibimiz, misyonumuz ve tarihimiz';
+$lang['Contribute'] = 'Katkıda bulunun';
+$lang['Contribute desc'] = 'Kendi yolunuzla katılın';
+
+/* news sub menu */
+$lang['Latest news desc'] = '';
+$lang['Newsletter'] = 'Bülten';
+$lang['Newsletter desc'] = '';
+$lang['Blog'] = 'Blog';
+$lang['Blog desc'] = '';
+$lang['Product Updates'] = 'Ürün güncellemeleri';
+$lang['Product Updates desc'] = '';
+$lang['news btn'] = 'Bültene abone olun';
+
+/* error */
+$lang['porg_contact_error_message_7'] = 'Geçerli bir e-posta adresi olmalıdır';
+$lang['porg_contact_error_message_1'] = 'Hay aksi! Bir şeyler ters gitti.';
+$lang['porg_news_error_rgpd'] = 'Bültene katılmak için onay vermelisiniz';
+
+/* success */
+$lang['porg_contact_success_message'] = 'Bize ulaştığınız için teşekkürler!<br>En kısa sürede sizinle iletişime geçeceğiz.';
+$lang['porg_contact_success_follow'] = 'Piwigo macerasını takip etmek isterseniz';
+$lang['Discover our blog'] = 'Blogumuzu keşfedin';
+$lang['Follow us on LinkedIn'] = 'Bizi LinkedIn\'de takip edin!';
+
+/* FOOTER */
+$lang['Footer Piwigo description'] = 'Piwigo, açık kaynaklı bir fotoğraf yönetim yazılımıdır. Fotoğraflarınızı çevrim içi olarak güvenle düzenleyin, yönetin ve paylaşın. Kuruluşlar, ekipler ve bireyler için tasarlandı.';
+$lang['Footer Button 1 Plan a demo'] = 'Demo planlayın';
+$lang['Footer Button 4 Subscribe to newsletter'] = 'Bültene abone olun';
+$lang['Footer legal 1 Privacy Policy'] = 'Gizlilik politikası';
+$lang['Footer legal 4 Terms of Use'] = 'Kullanım koşulları';
+$lang['Footer legal 6 DPA'] = 'DPA';
+
+/* common sub-templates */
+$lang['pricing toggle title cloud'] = 'Cloud';
+$lang['pricing toggle title selfhosted'] = 'Kendi sunucunuzda';
+
+/* form */
+$lang['Your email address 1'] = 'E-posta adresiniz';
+$lang['Your Piwigo url 1'] = 'Piwigo URL\'niz (zaten Piwigo kullanıyorsanız)';
+$lang['Your message 1'] = 'Mesajınız';
+$lang['Send message'] = 'Mesajı gönder';
+$lang['porg_contact_error_email'] = 'Hay aksi, bu e-posta adresi geçersiz';
+$lang['porg_contact_error_message'] = 'Hay aksi, mesajınızda bir sorun var gibi görünüyor';
+$lang['email example'] = 'charly@piwigo.net';
+$lang['Piwigo url example'] = 'https://piwigo-siteniz.com';
+$lang['Piwigo password example'] = 'PassWord!15';
+$lang['Piwigo name example'] = 'sirketadi';
+
+/* Common words */
+$lang['Login'] = 'Giriş yap';
+$lang['$'] = '€';
+$lang['GB'] = 'GB';
+$lang['Pro'] = 'Pro';
+$lang['Team'] = 'Team';
+$lang['Enterprise'] = 'Enterprise';
+$lang['VIP'] = 'VIP';
+$lang['Best deal'] = 'En iyi teklif';
+$lang['Free'] = 'Ücretsiz';
+$lang['Light'] = 'Light';
+$lang['Standard'] = 'Standard';
+$lang['Premium'] = 'Premium';
+$lang['Filters'] = 'Filtreler';
+$lang['Clear all'] = 'Tümünü temizle';
+$lang['Version'] = 'Sürüm';
+$lang['Checksum'] = 'Sağlama toplamı';
+$lang['Release date'] = 'Yayın tarihi';
+$lang['Download'] = 'İndir';
+$lang['On this page'] = 'Bu sayfada';
+$lang['See details'] = 'Ayrıntıları gör';
+$lang['Week %s'] = '%s. hafta';
+$lang['%s to %s'] = '%s - %s';
+$lang['From %s to %s'] = '%s ile %s arası';
+$lang['Your way.'] = 'Sizin tarzınızda.';
+$lang['Explore solution %s'] = '%s çözümünü keşfedin';
+$lang['Start your 30-day free trial'] = '30 günlük ücretsiz denemenizi başlatın';
+$lang['Feature'] = 'Özellik';
+$lang['Description'] = 'Açıklama';
+$lang['Plugin'] = 'Eklenti';
+$lang['Search'] = 'Ara';
+$lang['years'] = 'yıl';
+$lang['M (the one for millions)'] = 'M';
+$lang['Today'] = 'Bugün';
+$lang['Send us a testimonial'] = 'Bize görüşünüzü gönderin';
+$lang['Choose your setup'] = 'Kurulumunuzu seçin';
+$lang['Show more'] = 'Daha fazla göster';
+$lang['Learn more'] = 'Daha fazla bilgi';
+$lang['pcom_pricing_page_switch_cloud2'] = 'Piwigo SaaS, barındırma ve destek';
+$lang['pcom_pricing_page_switch_self_hosted'] = 'Kendi sunucunuzda Piwigo';
+$lang['Start your free trial'] = 'Ücretsiz denemenizi başlatın';
+$lang['Try Piwigo Cloud free for 30 days. No credit card required.'] = 'Piwigo Cloud\'u 30 gün boyunca ücretsiz deneyin. Kredi kartı gerekmez.';
+$lang['Create my account'] = 'Hesabımı oluştur';
+$lang['Read customer story'] = 'Müşteri hikâyesini okuyun';
+$lang['Trusted by organizations worldwide'] = 'Dünya çapında kuruluşların güvendiği çözüm';
+$lang['Explore our users'] = 'Kullanıcılarımızı keşfedin';
+$lang['The challenge'] = 'Zorluk';
+$lang['The choice of Piwigo'] = 'Piwigo tercihi';
+$lang['Benefits'] = 'Faydalar';
+$lang['Older versions'] = 'Eski sürümler';
+$lang['Download details and older versions'] = 'İndirme ayrıntıları ve eski sürümler';
+$lang['See the full page of Release note %s'] = '%s sürüm notunun tam sayfasını görün';
+$lang['porg_cases1_title'] = 'Wessex Water, dijital varlık yönetimi için Piwigo\'yu seçti';
+$lang['porg_cases1_description'] = 'Piwigo ile paramızın karşılığını alıyoruz. Destek gerçekten çok yardımcı ve ürünün kullanımı kolay.';
+$lang['porg_cases2_title'] = 'Indre İl Meclisi için daha ucuz ve kullanımı daha kolay bir fotoğraf arşivi';
+$lang['porg_cases2_description'] = 'Fotoğraf arşivimizi yönetmek için Piwigo\'yu seçtim ve tamamen memnunum. Piwigo eski yazılımımızdan daha ucuz, daha basit ve daha güçlü.';
+$lang['porg_cases3_title'] = 'Icam\'ın (Institut Catholique d\'Arts et Métiers) 11 kampüsü için ortak bir fotoğraf arşivi';
+$lang['porg_cases3_description'] = 'Eksiksiz özellikleri, hızlı desteği ve çok rekabetçi fiyatı için: Piwigo\'yu memnuniyetle tavsiye ederim!';
+$lang['porg_cases4_title'] = 'ECT, daha fazla verimlilik ve iş birliği için kurumsal görsel bankasını Piwigo ile yönetiyor.';
+$lang['porg_cases4_description'] = 'Piwigo\'yu kullanmaya başladığımızdan beri ihtiyaç duyduğumuz fotoğrafları aramak için çok daha az zaman kaybediyoruz; her şey anında, her zaman güncel.';
+$lang['porg_cases5_title'] = 'Cotentin Turizm Ofisi: 130 belediyenin turizm iletişimi için ortak ve güvenli bir fotoğraf arşivi.';
+$lang['porg_cases5_description'] = 'Piwigo, fotoğraflarımızı güvenli ve paylaşılan bir alanda saklamamızı sağlıyor: dosya paylaşımını çok kolaylaştıran bir iş birliği aracı.';
+$lang['porg_cases_start_title'] = 'Fotoğraflarınızı Piwigo ile yönetmeye başlamaya hazır mısınız?';
+$lang['porg_cases_start_description'] = 'Piwigo Cloud\'u 30 gün boyunca ücretsiz deneyin. Hesabınızı oluşturun, dosyalarınızı yükleyin ve hemen çalışmaya başlayın.';
+$lang['Read more'] = 'Devamını oku';
+$lang['See all the details'] = 'Ayrıntıları gör';
+$lang['Default theme Modus'] = 'Varsayılan tema Modus';
+$lang['Admin redesign'] = 'Yönetim panelinin yeni tasarımı';
+$lang['Dark mode'] = 'Karanlık mod';
+$lang['Activities'] = 'Etkinlikler';
+$lang['User manager'] = 'Kullanıcı yöneticisi';
+$lang['Plugin manager'] = 'Eklenti yöneticisi';
+$lang['updated'] = 'güncellendi';
+$lang['Album manager'] = 'Albüm yöneticisi';
+$lang['Visit log'] = 'Ziyaret günlüğü';
+$lang['Multiple-format'] = 'Çoklu format';
+$lang['Search engine'] = 'Arama motoru';
+$lang['Album editor'] = 'Albüm düzenleyici';
+$lang['New file formats'] = 'Yeni dosya formatları';
+$lang['Enhanced user management'] = 'Gelişmiş kullanıcı yönetimi';
+$lang['System activities'] = 'Sistem etkinlikleri';
+$lang['Batch manager redesign'] = 'Toplu yöneticinin yeni tasarımı';
+$lang['Standard pages'] = 'Standart sayfalar';
+$lang['API keys'] = 'API anahtarları';
+$lang['Docker image'] = 'Docker imajı';
