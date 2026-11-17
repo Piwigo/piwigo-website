@@ -179,3 +179,210 @@ $lang['porg_guides_img_docker'] = 'Docker-image';
 $lang['Contact us'] = 'Kontakt os';
 $lang['Get Help'] = 'Få hjælp';
 $lang['porg_guides_docker_update'] = 'Docker image-opdatering';
+
+/* HEADER */
+$lang['Get started'] = 'Kom i gang';
+$lang['Product'] = 'Produkt';
+$lang['Our users'] = 'Vores brugere';
+$lang['Behind the code'] = 'Bag koden';
+$lang['Free trial'] = 'Gratis prøveperiode';
+$lang['English (UK)'] = 'Engelsk (UK)';
+
+/* get started sub menu*/
+$lang['Cloud'] = 'Cloud';
+$lang['Cloud desc'] = 'Hostet og administreret af Piwigo';
+$lang['Self-hosted'] = 'Selvhostet';
+$lang['Self-hosted desc'] = 'Hostet på din egen server';
+$lang['Pricing'] = 'Priser';
+$lang['Pricing desc'] = '';
+$lang['Get started btn1'] = 'Gratis prøveperiode';
+$lang['Get started btn2'] = 'Bestil en demo!';
+
+/* product sub menu */
+$lang['Import & Centralize'] = 'Importér og centralisér';
+$lang['Import & Centralize desc'] = 'Saml alle dine medier';
+$lang['Organize your media'] = 'Organisér dine medier';
+$lang['Organize your media desc'] = 'Strukturér dit bibliotek';
+$lang['Search & Find'] = 'Søg og find';
+$lang['Search & Find desc'] = 'Find enhver fil med det samme';
+$lang['Share & Collaborate'] = 'Del og samarbejd';
+$lang['Share & Collaborate desc'] = 'Styr rettigheder og adgang';
+$lang['Customize & Extend'] = 'Tilpas og udvid';
+$lang['Customize & Extend desc'] = 'Gør Piwigo helt til dit eget';
+$lang['Measure & Monitor'] = 'Mål og overvåg';
+$lang['Measure & Monitor desc'] = 'Følg aktivitet og brug';
+$lang['Security & Privacy'] = 'Sikkerhed og privatliv';
+$lang['Security & Privacy desc'] = 'Behold kontrollen';
+$lang['Use cases'] = 'Anvendelser';
+$lang['Travel & Tourism'] = 'Rejser og turisme';
+$lang['Public Sector'] = 'Offentlig sektor';
+$lang['Companies'] = 'Virksomheder';
+$lang['Education & Research'] = 'Uddannelse og forskning';
+$lang['Nonprofits'] = 'Foreninger og NGO\'er';
+$lang['Photographers & individuals'] = 'Fotografer og privatpersoner';
+$lang['Explore'] = 'Udforsk';
+$lang['Piwigo AI'] = 'Piwigo AI';
+$lang['Piwigo AI desc'] = 'AI der respekterer dine data';
+$lang['Live demos'] = 'Livedemoer';
+$lang['Live demos desc'] = 'Se Piwigo i aktion';
+$lang['Mobile apps'] = 'Mobilapps';
+$lang['Mobile apps desc'] = 'Til iOS og Android';
+$lang['API & integrations'] = 'API og integrationer';
+$lang['API & integrations desc'] = 'Forbind Piwigo med dine værktøjer';
+$lang['Extensions desc'] = 'Plugins, temaer og meget mere';
+$lang['product btn'] = 'Kontakt os for en demo!';
+
+/* Our users sub menu */
+$lang['Who uses Piwigo'] = 'Hvem bruger Piwigo';
+$lang['Who uses Piwigo desc'] = 'Utallige måder at bruge Piwigo på';
+$lang['Case studies'] = 'Kundehistorier';
+$lang['Case studies desc'] = 'Fra udfordring til løsning';
+
+/* support sub menu */
+$lang['Professional support'] = 'Professionel support';
+$lang['Professional support desc'] = '';
+$lang['Community Forum'] = 'Fællesskabsforum';
+$lang['Community Forum desc'] = '';
+$lang['Documentation desc'] = '';
+$lang['Installation guides'] = 'Installationsvejledninger';
+$lang['Installation guides desc'] = '';
+$lang['Developer resources'] = 'Ressourcer til udviklere';
+$lang['Developer resources desc'] = '';
+$lang['support btn'] = 'Brug for hjælp fra en ekspert?';
+
+/* behind the code sub menu */
+$lang['About Piwigo'] = 'Om Piwigo';
+$lang['About Piwigo desc'] = 'Vores team, mission og historie';
+$lang['Contribute'] = 'Bidrag';
+$lang['Contribute desc'] = 'Deltag på din egen måde';
+
+/* news sub menu */
+$lang['Latest news desc'] = '';
+$lang['Newsletter'] = 'Nyhedsbrev';
+$lang['Newsletter desc'] = '';
+$lang['Blog'] = 'Blog';
+$lang['Blog desc'] = '';
+$lang['Product Updates'] = 'Produktopdateringer';
+$lang['Product Updates desc'] = '';
+$lang['news btn'] = 'Tilmeld dig nyhedsbrevet';
+
+/* error */
+$lang['porg_contact_error_message_7'] = 'Det skal være en gyldig e-mailadresse';
+$lang['porg_contact_error_message_1'] = 'Ups! Noget gik galt.';
+$lang['porg_news_error_rgpd'] = 'Du skal give dit samtykke for at tilmelde dig nyhedsbrevet';
+
+/* success */
+$lang['porg_contact_success_message'] = 'Tak for din henvendelse!<br>Vi vender tilbage til dig snarest.';
+$lang['porg_contact_success_follow'] = 'Og hvis du vil følge med i Piwigo-eventyret';
+$lang['Discover our blog'] = 'Se vores blog';
+$lang['Follow us on LinkedIn'] = 'Følg os på LinkedIn!';
+
+/* FOOTER */
+$lang['Footer Piwigo description'] = 'Piwigo er open source-software til fotohåndtering. Organisér, administrér og del dine fotos sikkert online. Udviklet til organisationer, teams og privatpersoner.';
+$lang['Footer Button 1 Plan a demo'] = 'Planlæg en demo';
+$lang['Footer Button 4 Subscribe to newsletter'] = 'Tilmeld dig nyhedsbrevet';
+$lang['Footer legal 1 Privacy Policy'] = 'Privatlivspolitik';
+$lang['Footer legal 4 Terms of Use'] = 'Brugsvilkår';
+$lang['Footer legal 6 DPA'] = 'Databehandleraftale';
+
+/* common sub-templates */
+$lang['pricing toggle title cloud'] = 'Cloud';
+$lang['pricing toggle title selfhosted'] = 'Selvhostet';
+
+/* form */
+$lang['Your email address 1'] = 'Din e-mailadresse';
+$lang['Your Piwigo url 1'] = 'URL\'en til din Piwigo (hvis du allerede bruger Piwigo)';
+$lang['Your message 1'] = 'Din besked';
+$lang['Send message'] = 'Send besked';
+$lang['porg_contact_error_email'] = 'Ups, den e-mailadresse er ugyldig';
+$lang['porg_contact_error_message'] = 'Ups, din besked ser ud til at være forkert';
+$lang['email example'] = 'charly@piwigo.net';
+$lang['Piwigo url example'] = 'https://dit-piwigo-site.com';
+$lang['Piwigo password example'] = 'PassWord!15';
+$lang['Piwigo name example'] = 'firmanavn';
+
+/* Common words */
+$lang['Login'] = 'Log ind';
+$lang['$'] = '€';
+$lang['GB'] = 'GB';
+$lang['Pro'] = 'Pro';
+$lang['Team'] = 'Team';
+$lang['Enterprise'] = 'Enterprise';
+$lang['VIP'] = 'VIP';
+$lang['Best deal'] = 'Bedste tilbud';
+$lang['Free'] = 'Gratis';
+$lang['Light'] = 'Light';
+$lang['Standard'] = 'Standard';
+$lang['Premium'] = 'Premium';
+$lang['Filters'] = 'Filtre';
+$lang['Clear all'] = 'Ryd alle';
+$lang['Version'] = 'Version';
+$lang['Checksum'] = 'Kontrolsum';
+$lang['Release date'] = 'Udgivelsesdato';
+$lang['Download'] = 'Download';
+$lang['On this page'] = 'På denne side';
+$lang['See details'] = 'Se detaljer';
+$lang['Week %s'] = 'Uge %s';
+$lang['%s to %s'] = '%s til %s';
+$lang['From %s to %s'] = 'Fra %s til %s';
+$lang['Your way.'] = 'På din måde.';
+$lang['Explore solution %s'] = 'Udforsk løsningen %s';
+$lang['Start your 30-day free trial'] = 'Start din gratis prøveperiode på 30 dage';
+$lang['Feature'] = 'Funktion';
+$lang['Description'] = 'Beskrivelse';
+$lang['Plugin'] = 'Plugin';
+$lang['Search'] = 'Søg';
+$lang['years'] = 'år';
+$lang['M (the one for millions)'] = 'M';
+$lang['Today'] = 'I dag';
+$lang['Send us a testimonial'] = 'Send os en anbefaling';
+$lang['Choose your setup'] = 'Vælg din løsning';
+$lang['Show more'] = 'Vis mere';
+$lang['Learn more'] = 'Læs mere';
+$lang['pcom_pricing_page_switch_cloud2'] = 'Piwigo SaaS, hosting og support';
+$lang['pcom_pricing_page_switch_self_hosted'] = 'Piwigo på din egen server';
+$lang['Start your free trial'] = 'Start din gratis prøveperiode';
+$lang['Try Piwigo Cloud free for 30 days. No credit card required.'] = 'Prøv Piwigo Cloud gratis i 30 dage. Intet betalingskort påkrævet.';
+$lang['Create my account'] = 'Opret min konto';
+$lang['Read customer story'] = 'Læs kundehistorien';
+$lang['Trusted by organizations worldwide'] = 'Organisationer over hele verden stoler på os';
+$lang['Explore our users'] = 'Se vores brugere';
+$lang['The challenge'] = 'Udfordringen';
+$lang['The choice of Piwigo'] = 'Valget af Piwigo';
+$lang['Benefits'] = 'Fordele';
+$lang['Older versions'] = 'Ældre versioner';
+$lang['Download details and older versions'] = 'Downloaddetaljer og ældre versioner';
+$lang['See the full page of Release note %s'] = 'Se hele siden med udgivelsesnoterne %s';
+$lang['porg_cases1_title'] = 'Wessex Water valgte Piwigo til at håndtere sine digitale aktiver';
+$lang['porg_cases1_description'] = 'Med Piwigo får vi virkelig noget for pengene. Supporten er meget hjælpsom, og produktet er nemt at bruge.';
+$lang['porg_cases2_title'] = 'Et billigere og nemmere fotobibliotek til departementsrådet i Indre';
+$lang['porg_cases2_description'] = 'Jeg valgte Piwigo til at håndtere vores fotobibliotek, og jeg er meget tilfreds. Piwigo er billigere, enklere og mere kraftfuldt end vores gamle software.';
+$lang['porg_cases3_title'] = 'Et fælles fotobibliotek for de 11 campusser på Icam (Institut Catholique d\'Arts et Métiers)';
+$lang['porg_cases3_description'] = 'For de komplette funktioner, den hurtige support og den meget konkurrencedygtige pris: jeg anbefaler Piwigo med glæde!';
+$lang['porg_cases4_title'] = 'ECT håndterer sin billedbank med Piwigo for mere produktivitet og samarbejde.';
+$lang['porg_cases4_description'] = 'Siden vi tog Piwigo i brug, bruger vi meget mindre tid på at lede efter de fotos, vi har brug for: det går med det samme, og vi er altid opdaterede.';
+$lang['porg_cases5_title'] = 'Turistkontoret i Cotentin: et fælles og sikkert fotobibliotek til turistkommunikationen for 130 kommuner.';
+$lang['porg_cases5_description'] = 'Piwigo gør det muligt at gemme vores fotos et sikkert og fælles sted: det er et samarbejdsværktøj, der gør det meget nemmere at dele filer.';
+$lang['porg_cases_start_title'] = 'Klar til at håndtere dine fotos med Piwigo?';
+$lang['porg_cases_start_description'] = 'Prøv Piwigo Cloud gratis i 30 dage. Opret din konto, upload dine filer, og kom i gang med det samme.';
+$lang['Read more'] = 'Læs mere';
+$lang['See all the details'] = 'Se detaljer';
+$lang['Default theme Modus'] = 'Standardtema Modus';
+$lang['Admin redesign'] = 'Nyt design af administrationen';
+$lang['Dark mode'] = 'Mørk tilstand';
+$lang['Activities'] = 'Aktiviteter';
+$lang['User manager'] = 'Brugerstyring';
+$lang['Plugin manager'] = 'Pluginstyring';
+$lang['updated'] = 'opdateret';
+$lang['Album manager'] = 'Albumstyring';
+$lang['Visit log'] = 'Besøgslog';
+$lang['Multiple-format'] = 'Flere formater';
+$lang['Search engine'] = 'Søgemaskine';
+$lang['Album editor'] = 'Albumredigering';
+$lang['New file formats'] = 'Nye filformater';
+$lang['Enhanced user management'] = 'Forbedret brugerstyring';
+$lang['System activities'] = 'Systemaktiviteter';
+$lang['Batch manager redesign'] = 'Nyt design af batchhåndteringen';
+$lang['Standard pages'] = 'Standardsider';
+$lang['API keys'] = 'API-nøgler';
+$lang['Docker image'] = 'Docker-image';
