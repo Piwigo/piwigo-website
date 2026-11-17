@@ -1,55 +1,66 @@
 <?php
-// +-----------------------------------------------------------------------+
-// | Piwigo - a PHP based photo gallery                                    |
-// +-----------------------------------------------------------------------+
-// | Copyright(C) 2008-2017 Piwigo Team                  http://piwigo.org |
-// | Copyright(C) 2003-2008 PhpWebGallery Team    http://phpwebgallery.net |
-// | Copyright(C) 2002-2003 Pierrick LE GALL   http://le-gall.net/pierrick |
-// +-----------------------------------------------------------------------+
-// | This program is free software; you can redistribute it and/or modify  |
-// | it under the terms of the GNU General Public License as published by  |
-// | the Free Software Foundation                                          |
-// |                                                                       |
-// | This program is distributed in the hope that it will be useful, but   |
-// | WITHOUT ANY WARRANTY; without even the implied warranty of            |
-// | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU      |
-// | General Public License for more details.                              |
-// |                                                                       |
-// | You should have received a copy of the GNU General Public License     |
-// | along with this program; if not, write to the Free Software           |
-// | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
-// | USA.                                                                  |
-// +-----------------------------------------------------------------------+
-$lang['porg_urls']['changelogs'] = 'dziennik-zmian';
-$lang['porg_urls']['get-involved'] = 'zaangazuj-sie';
-$lang['porg_urls']['get-piwigo'] = 'pobierz-piwigo';
-$lang['porg_urls']['testimonials'] = 'referencje';
+$lang['porg_urls']['features'] = 'właściwości';
 $lang['porg_urls']['about-us'] = 'o-nas';
 $lang['porg_urls']['contact'] = 'kontakt';
-$lang['porg_urls']['features'] = 'właściwości';
-$lang['porg_urls']['get-started'] = 'rozpocznij';
+$lang['porg_urls']['get-involved'] = 'zaangazuj-sie';
+$lang['porg_urls']['get-piwigo'] = 'pobierz-piwigo';
+$lang['porg_urls']['mobile-applications'] = 'aplikacje-mobilne';
 $lang['porg_urls']['news'] = 'nowosci';
 $lang['porg_urls']['newsletters'] = 'newsletter';
 $lang['porg_urls']['press'] = 'prasa';
 $lang['porg_urls']['release'] = 'wydania';
-$lang['porg_urls']['what-is-piwigo'] = 'czym-jest-piwigo';
+$lang['porg_urls']['users'] = 'kto-używa-piwigo';
+$lang['porg_urls']['use_cases'] = 'zastosowania';
+$lang['porg_urls']['use-case-travel-tourism'] = 'zastosowanie/fototeka-dla-turystyki';
+$lang['porg_urls']['use-case-public-sector'] = 'zastosowanie/bank-zdjec-dla-sektora-publicznego';
+$lang['porg_urls']['use-case-companies'] = 'zastosowanie/zarzadzanie-zasobami-cyfrowymi-dla-firm';
+$lang['porg_urls']['use-case-photographers-individuals'] = 'zastosowanie/galeria-zdjec-dla-osob-prywatnych';
+$lang['porg_urls']['use-case-education-research'] = 'zastosowanie/fototeka-dla-edukacji-i-nauki';
+$lang['porg_urls']['use-case-nonprofits'] = 'zastosowanie/zarzadzanie-zasobami-cyfrowymi-dla-stowarzyszen';
+$lang['porg_urls']['product_update'] = 'aktualizacje-produktu';
+$lang['porg_urls']['cases'] = 'historie-klientow';
+$lang['porg_urls']['case-study-wessex'] = 'historia-klienta/zarzadzanie-zasobami-cyfrowymi-wessex';
+$lang['porg_urls']['case-study-indre'] = 'historia-klienta/fototeka-rada-departamentu-indre';
+$lang['porg_urls']['case-study-icam'] = 'historia-klienta/fototeka-uczelnia-icam';
+$lang['porg_urls']['case-study-ect'] = 'historia-klienta/fototeka-firmowa-ect';
+$lang['porg_urls']['case-study-cotentin'] = 'historia-klienta/fototeka-biuro-turystyczne-cotentin';
+$lang['porg_urls']['pro-support'] = 'wsparcie-profesjonalne';
+$lang['porg_urls']['pricing'] = 'cennik';
+$lang['porg_urls']['signup'] = 'rejestracja';
+$lang['porg_urls']['signin'] = 'logowanie';
+$lang['porg_urls']['plugins-by-plan'] = 'wtyczki-wedlug-planu';
+$lang['porg_urls']['book-a-meeting'] = 'umow-spotkanie';
 
-$lang['porg_doc_urls']['requirements'] = 'https://pl.piwigo.org/doc/doku.php?id=instalacji:wymagania';
-$lang['porg_doc_urls']['install'] = 'https://pl.piwigo.org/doc/doku.php?id=instalacji';
-$lang['porg_doc_urls']['upgrade'] = 'https://pl.piwigo.org/doc/doku.php?id=aktualizacja';
-$lang['porg_doc_urls']['upgrade_auto'] = 'https://pl.piwigo.org/doc/doku.php?id=aktualizacja:automatyczna';
-$lang['porg_doc_urls']['upgrade_manual'] = 'https://pl.piwigo.org/doc/doku.php?id=aktualizacja:reczna';
-$lang['porg_urls']['showcases'] = 'przykłady';
+// legacy pages DO NOT REMOVE : used for redirections
+$lang['porg_urls']['what-is-piwigo'] = 'czym-jest-piwigo';
+$lang['porg_urls']['changelogs'] = 'dziennik-zmian';
+$lang['porg_urls']['get-started'] = 'rozpocznij';
+$lang['porg_urls']['get-help'] = 'uzyskaj-pomoc';
+$lang['porg_urls']['coding-activity'] = 'programowanie';
+$lang['porg_urls']['testimonials'] = 'referencje';
+$lang['porg_urls']['guides'] = 'przewodniki';
 $lang['porg_urls']['requirements'] = 'przewodniki/instalacja/wymagania';
 $lang['porg_urls']['netinstall'] = 'przewodniki/instalacja/sieciowa';
+$lang['porg_urls']['manual_installation'] = 'przewodniki/instalacja/ręczna';
+$lang['porg_urls']['docker_installation'] = 'przewodniki/instalacja/docker';
+$lang['porg_urls']['automatic_update'] = 'przewodniki/uaktualnienie/automatyczne';
 $lang['porg_urls']['manual_update'] = 'przewodniki/uaktualnienie/ręczne';
 $lang['porg_urls']['docker_update'] = 'przewodniki/uaktualnienie/docker';
-$lang['porg_urls']['manual_installation'] = 'przewodniki/instalacja/ręczna';
-$lang['porg_urls']['automatic_update'] = 'przewodniki/uaktualnienie/automatyczne';
-$lang['porg_urls']['guides'] = 'przewodniki';
-$lang['porg_urls']['coding-activity'] = 'programowanie';
-$lang['porg_urls']['mobile-applications'] = 'aplikacje mobilne';
-$lang['porg_urls']['users'] = 'kto-używa-piwigo';
-$lang['porg_urls']['documentation'] = 'https://doc.piwigo.org/';
-$lang['porg_urls']['docker_installation'] = 'przewodniki/instalacja/docker';
-$lang['porg_urls']['get-help'] = 'uzyskaj-pomoc';
+
+$lang['porg_ext_urls']['forum'] = 'https://piwigo.org/forum';
+$lang['porg_ext_urls']['installation_guide'] = 'https://doc.piwigo.org/self-hosting-piwigo';
+$lang['porg_ext_urls']['automatic_update'] = 'https://doc.piwigo.org/self-hosting-piwigo/update-guides/automatic-update/';
+$lang['porg_ext_urls']['manual_update'] = 'https://doc.piwigo.org/self-hosting-piwigo/update-guides/manual-update/';
+$lang['porg_ext_urls']['documentation'] = 'https://doc.piwigo.org/';
+$lang['porg_ext_urls']['customizations'] = 'https://customizations.piwigo.com';
+$lang['porg_ext_urls']['data_import'] = 'https://piwigo.org/blog/2025/07/01/importing-an-existing-photo-library-into-piwigo/';
+$lang['porg_ext_urls']['prerequisites'] = 'https://doc.piwigo.org/self-hosting-piwigo/install-guides/requirements/';
+$lang['porg_ext_urls']['docker'] = 'https://doc.piwigo.org/self-hosting-piwigo/install-guides/docker-install/';
+$lang['porg_ext_urls']['manual_installation'] = 'https://doc.piwigo.org/self-hosting-piwigo/install-guides/manual-install/';
+$lang['porg_ext_urls']['docker_update'] = 'https://doc.piwigo.org/self-hosting-piwigo/update-guides/docker-update/';
+$lang['porg_ext_urls']['privacy'] = 'https://doc.piwigo.org/legal/privacy/';
+$lang['porg_ext_urls']['terms_of_service'] = 'https://doc.piwigo.org/legal/terms-of-service/';
+$lang['porg_ext_urls']['dpa'] = 'https://doc.piwigo.org/legal/dpa/';
+$lang['porg_ext_urls']['extensions'] = 'https://pl.piwigo.org/ext/';
+$lang['porg_ext_urls']['blog'] = 'https://piwigo.org/blog';
+?>
