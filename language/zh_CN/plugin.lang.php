@@ -179,3 +179,210 @@ $lang['porg_guides_img_docker'] = 'Docker镜像';
 $lang['Contact us'] = '联系我们';
 $lang['Get Help'] = '获取帮助';
 $lang['porg_guides_docker_update'] = 'Docker 镜像更新';
+
+/* HEADER */
+$lang['Get started'] = '开始使用';
+$lang['Product'] = '产品';
+$lang['Our users'] = '我们的用户';
+$lang['Behind the code'] = '代码背后';
+$lang['Free trial'] = '免费试用';
+$lang['English (UK)'] = '英语（英国）';
+
+/* get started sub menu*/
+$lang['Cloud'] = 'Cloud';
+$lang['Cloud desc'] = '由 Piwigo 托管和管理';
+$lang['Self-hosted'] = '自托管';
+$lang['Self-hosted desc'] = '托管在您自己的服务器上';
+$lang['Pricing'] = '价格';
+$lang['Pricing desc'] = '';
+$lang['Get started btn1'] = '免费试用';
+$lang['Get started btn2'] = '申请演示！';
+
+/* product sub menu */
+$lang['Import & Centralize'] = '导入与集中';
+$lang['Import & Centralize desc'] = '汇集您的所有媒体';
+$lang['Organize your media'] = '整理您的媒体';
+$lang['Organize your media desc'] = '构建您的媒体库';
+$lang['Search & Find'] = '搜索与查找';
+$lang['Search & Find desc'] = '即刻找到任何文件';
+$lang['Share & Collaborate'] = '分享与协作';
+$lang['Share & Collaborate desc'] = '管理权限与访问';
+$lang['Customize & Extend'] = '定制与扩展';
+$lang['Customize & Extend desc'] = '让 Piwigo 真正属于您';
+$lang['Measure & Monitor'] = '统计与监控';
+$lang['Measure & Monitor desc'] = '跟踪活动与使用情况';
+$lang['Security & Privacy'] = '安全与隐私';
+$lang['Security & Privacy desc'] = '掌控一切';
+$lang['Use cases'] = '应用场景';
+$lang['Travel & Tourism'] = '旅游业';
+$lang['Public Sector'] = '公共部门';
+$lang['Companies'] = '企业';
+$lang['Education & Research'] = '教育与科研';
+$lang['Nonprofits'] = '非营利组织';
+$lang['Photographers & individuals'] = '摄影师与个人';
+$lang['Explore'] = '探索';
+$lang['Piwigo AI'] = 'Piwigo AI';
+$lang['Piwigo AI desc'] = '尊重您数据的 AI';
+$lang['Live demos'] = '在线演示';
+$lang['Live demos desc'] = '亲眼看看 Piwigo 如何运作';
+$lang['Mobile apps'] = '移动应用';
+$lang['Mobile apps desc'] = '适用于 iOS 和 Android';
+$lang['API & integrations'] = 'API 与集成';
+$lang['API & integrations desc'] = '将 Piwigo 连接到您的工具';
+$lang['Extensions desc'] = '插件、主题及更多';
+$lang['product btn'] = '联系我们获取演示！';
+
+/* Our users sub menu */
+$lang['Who uses Piwigo'] = '谁在使用 Piwigo';
+$lang['Who uses Piwigo desc'] = '使用 Piwigo 的无数种方式';
+$lang['Case studies'] = '客户案例';
+$lang['Case studies desc'] = '从挑战到解决方案';
+
+/* support sub menu */
+$lang['Professional support'] = '专业支持';
+$lang['Professional support desc'] = '';
+$lang['Community Forum'] = '社区论坛';
+$lang['Community Forum desc'] = '';
+$lang['Documentation desc'] = '';
+$lang['Installation guides'] = '安装指南';
+$lang['Installation guides desc'] = '';
+$lang['Developer resources'] = '开发者资源';
+$lang['Developer resources desc'] = '';
+$lang['support btn'] = '需要专家帮助？';
+
+/* behind the code sub menu */
+$lang['About Piwigo'] = '关于 Piwigo';
+$lang['About Piwigo desc'] = '我们的团队、使命与历史';
+$lang['Contribute'] = '参与贡献';
+$lang['Contribute desc'] = '以您的方式参与';
+
+/* news sub menu */
+$lang['Latest news desc'] = '';
+$lang['Newsletter'] = '新闻通讯';
+$lang['Newsletter desc'] = '';
+$lang['Blog'] = '博客';
+$lang['Blog desc'] = '';
+$lang['Product Updates'] = '产品更新';
+$lang['Product Updates desc'] = '';
+$lang['news btn'] = '订阅新闻通讯';
+
+/* error */
+$lang['porg_contact_error_message_7'] = '必须是有效的电子邮件地址';
+$lang['porg_contact_error_message_1'] = '哎呀！出了点问题。';
+$lang['porg_news_error_rgpd'] = '您必须同意才能订阅新闻通讯';
+
+/* success */
+$lang['porg_contact_success_message'] = '感谢您联系我们！<br>我们会尽快与您联系。';
+$lang['porg_contact_success_follow'] = '如果您想关注 Piwigo 的发展';
+$lang['Discover our blog'] = '阅读我们的博客';
+$lang['Follow us on LinkedIn'] = '在 LinkedIn 上关注我们！';
+
+/* FOOTER */
+$lang['Footer Piwigo description'] = 'Piwigo 是开源照片管理软件。在线安全地整理、管理和分享您的照片。专为组织、团队和个人打造。';
+$lang['Footer Button 1 Plan a demo'] = '预约演示';
+$lang['Footer Button 4 Subscribe to newsletter'] = '订阅新闻通讯';
+$lang['Footer legal 1 Privacy Policy'] = '隐私政策';
+$lang['Footer legal 4 Terms of Use'] = '使用条款';
+$lang['Footer legal 6 DPA'] = 'DPA';
+
+/* common sub-templates */
+$lang['pricing toggle title cloud'] = 'Cloud';
+$lang['pricing toggle title selfhosted'] = '自托管';
+
+/* form */
+$lang['Your email address 1'] = '您的电子邮件地址';
+$lang['Your Piwigo url 1'] = '您的 Piwigo 网址（如果您已是 Piwigo 用户）';
+$lang['Your message 1'] = '您的留言';
+$lang['Send message'] = '发送留言';
+$lang['porg_contact_error_email'] = '哎呀，该电子邮件地址无效';
+$lang['porg_contact_error_message'] = '哎呀，您的留言似乎有误';
+$lang['email example'] = 'charly@piwigo.net';
+$lang['Piwigo url example'] = 'https://your-piwigo-site.com';
+$lang['Piwigo password example'] = 'PassWord!15';
+$lang['Piwigo name example'] = 'companyname';
+
+/* Common words */
+$lang['Login'] = '登录';
+$lang['$'] = '€';
+$lang['GB'] = 'GB';
+$lang['Pro'] = 'Pro';
+$lang['Team'] = 'Team';
+$lang['Enterprise'] = 'Enterprise';
+$lang['VIP'] = 'VIP';
+$lang['Best deal'] = '最超值';
+$lang['Free'] = '免费';
+$lang['Light'] = 'Light';
+$lang['Standard'] = 'Standard';
+$lang['Premium'] = 'Premium';
+$lang['Filters'] = '筛选';
+$lang['Clear all'] = '全部清除';
+$lang['Version'] = '版本';
+$lang['Checksum'] = '校验和';
+$lang['Release date'] = '发布日期';
+$lang['Download'] = '下载';
+$lang['On this page'] = '本页内容';
+$lang['See details'] = '查看详情';
+$lang['Week %s'] = '第 %s 周';
+$lang['%s to %s'] = '%s 至 %s';
+$lang['From %s to %s'] = '从 %s 到 %s';
+$lang['Your way.'] = '随心而用。';
+$lang['Explore solution %s'] = '了解 %s 解决方案';
+$lang['Start your 30-day free trial'] = '开始 30 天免费试用';
+$lang['Feature'] = '功能';
+$lang['Description'] = '描述';
+$lang['Plugin'] = '插件';
+$lang['Search'] = '搜索';
+$lang['years'] = '年';
+$lang['M (the one for millions)'] = 'M';
+$lang['Today'] = '今天';
+$lang['Send us a testimonial'] = '向我们分享您的评价';
+$lang['Choose your setup'] = '选择您的部署方式';
+$lang['Show more'] = '显示更多';
+$lang['Learn more'] = '了解更多';
+$lang['pcom_pricing_page_switch_cloud2'] = 'Piwigo SaaS：托管与支持';
+$lang['pcom_pricing_page_switch_self_hosted'] = '在您自己的服务器上运行 Piwigo';
+$lang['Start your free trial'] = '开始免费试用';
+$lang['Try Piwigo Cloud free for 30 days. No credit card required.'] = '免费试用 Piwigo Cloud 30 天，无需信用卡。';
+$lang['Create my account'] = '创建我的账户';
+$lang['Read customer story'] = '阅读客户案例';
+$lang['Trusted by organizations worldwide'] = '深受全球组织信赖';
+$lang['Explore our users'] = '了解我们的用户';
+$lang['The challenge'] = '挑战';
+$lang['The choice of Piwigo'] = '选择 Piwigo';
+$lang['Benefits'] = '收益';
+$lang['Older versions'] = '旧版本';
+$lang['Download details and older versions'] = '下载详情与旧版本';
+$lang['See the full page of Release note %s'] = '查看 %s 版本说明的完整页面';
+$lang['porg_cases1_title'] = 'Wessex Water 选择 Piwigo 进行数字资产管理';
+$lang['porg_cases1_description'] = '使用 Piwigo，我们物有所值。支持团队非常给力，产品也很容易使用。';
+$lang['porg_cases2_title'] = '为安德尔省议会打造更便宜、更易用的图片库';
+$lang['porg_cases2_description'] = '我选择 Piwigo 来管理我们的图片库，非常满意。Piwigo 比我们原来的软件更便宜、更简单、功能更强大。';
+$lang['porg_cases3_title'] = 'Icam（Institut Catholique d\'Arts et Métiers）11 个校区共享的图片库';
+$lang['porg_cases3_description'] = '功能完整、支持及时、价格极具竞争力：我很乐意推荐 Piwigo！';
+$lang['porg_cases4_title'] = 'ECT 使用 Piwigo 管理企业图片库，提升效率与协作。';
+$lang['porg_cases4_description'] = '自从使用 Piwigo 以来，我们找所需照片的时间大大减少，即时可得，资料始终是最新的。';
+$lang['porg_cases5_title'] = '科唐坦旅游局：为 130 个市镇的旅游宣传打造协作、安全的图片库。';
+$lang['porg_cases5_description'] = 'Piwigo 让我们可以把照片保存在安全的共享空间中：这是一款协作工具，让文件分享变得容易得多。';
+$lang['porg_cases_start_title'] = '准备好使用 Piwigo 管理您的照片了吗？';
+$lang['porg_cases_start_description'] = '免费试用 Piwigo Cloud 30 天。创建账户、上传文件，立即开始工作。';
+$lang['Read more'] = '阅读更多';
+$lang['See all the details'] = '查看详情';
+$lang['Default theme Modus'] = '默认主题 Modus';
+$lang['Admin redesign'] = '管理后台重新设计';
+$lang['Dark mode'] = '深色模式';
+$lang['Activities'] = '活动';
+$lang['User manager'] = '用户管理器';
+$lang['Plugin manager'] = '插件管理器';
+$lang['updated'] = '已更新';
+$lang['Album manager'] = '相册管理器';
+$lang['Visit log'] = '访问日志';
+$lang['Multiple-format'] = '多格式';
+$lang['Search engine'] = '搜索引擎';
+$lang['Album editor'] = '相册编辑器';
+$lang['New file formats'] = '新文件格式';
+$lang['Enhanced user management'] = '增强的用户管理';
+$lang['System activities'] = '系统活动';
+$lang['Batch manager redesign'] = '批量管理器重新设计';
+$lang['Standard pages'] = '标准页面';
+$lang['API keys'] = 'API 密钥';
+$lang['Docker image'] = 'Docker 镜像';
