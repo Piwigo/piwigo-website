@@ -1,51 +1,66 @@
 <?php
-// +-----------------------------------------------------------------------+
-// | Piwigo - a PHP based photo gallery                                    |
-// +-----------------------------------------------------------------------+
-// | Copyright(C) 2008-2017 Piwigo Team                  http://piwigo.org |
-// | Copyright(C) 2003-2008 PhpWebGallery Team    http://phpwebgallery.net |
-// | Copyright(C) 2002-2003 Pierrick LE GALL   http://le-gall.net/pierrick |
-// +-----------------------------------------------------------------------+
-// | This program is free software; you can redistribute it and/or modify  |
-// | it under the terms of the GNU General Public License as published by  |
-// | the Free Software Foundation                                          |
-// |                                                                       |
-// | This program is distributed in the hope that it will be useful, but   |
-// | WITHOUT ANY WARRANTY; without even the implied warranty of            |
-// | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU      |
-// | General Public License for more details.                              |
-// |                                                                       |
-// | You should have received a copy of the GNU General Public License     |
-// | along with this program; if not, write to the Free Software           |
-// | Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, |
-// | USA.                                                                  |
-// +-----------------------------------------------------------------------+
-$lang['porg_doc_urls']['install'] = 'https://ru.piwigo.org/doc/doku.php?id=установка';
-$lang['porg_doc_urls']['requirements'] = 'https://ru.piwigo.org/doc/doku.php?id=установка:требования';
-$lang['porg_doc_urls']['upgrade'] = 'https://ru.piwigo.org/doc/doku.php?id=руководство_по_обновлению';
-$lang['porg_doc_urls']['upgrade_auto'] = 'https://ru.piwigo.org/doc/doku.php?id=руководство_по_обновлению:автоматическое_обновление';
-$lang['porg_doc_urls']['upgrade_manual'] = 'https://ru.piwigo.org/doc/doku.php?id=руководство_по_обновлению:обновление_в_ручном_режиме';
-$lang['porg_urls']['coding-activity'] = 'coding-activity';
-$lang['porg_urls']['about-us'] = 'about-us';
-$lang['porg_urls']['changelogs'] = 'changelogs';
-$lang['porg_urls']['contact'] = 'contact';
 $lang['porg_urls']['features'] = 'features';
+$lang['porg_urls']['about-us'] = 'about-us';
+$lang['porg_urls']['contact'] = 'contact';
 $lang['porg_urls']['get-involved'] = 'get-involved';
 $lang['porg_urls']['get-piwigo'] = 'get-piwigo';
-$lang['porg_urls']['get-started'] = 'get-started';
+$lang['porg_urls']['mobile-applications'] = 'mobile-applications';
 $lang['porg_urls']['news'] = 'news';
 $lang['porg_urls']['newsletters'] = 'newsletter';
 $lang['porg_urls']['press'] = 'press';
 $lang['porg_urls']['release'] = 'release';
-$lang['porg_urls']['testimonials'] = 'testimonials';
-$lang['porg_urls']['what-is-piwigo'] = 'what-is-piwigo';
-$lang['porg_urls']['showcases'] = 'examples';
-$lang['porg_urls']['automatic_update'] = 'guides/update/automatic';
-$lang['porg_urls']['guides'] = 'guides';
-$lang['porg_urls']['manual_installation'] = 'guides/install/manual';
-$lang['porg_urls']['manual_update'] = 'guides/update/manual';
-$lang['porg_urls']['netinstall'] = 'guides/install/netinstall';
-$lang['porg_urls']['requirements'] = 'guides/install/requirements';
-$lang['porg_urls']['mobile-applications'] = 'mobile-applications';
 $lang['porg_urls']['users'] = 'who-uses-piwigo';
-$lang['porg_urls']['documentation'] = 'https://doc.piwigo.org/';
+$lang['porg_urls']['use_cases'] = 'use-cases';
+$lang['porg_urls']['use-case-travel-tourism'] = 'use-case/photo-library-for-tourism';
+$lang['porg_urls']['use-case-public-sector'] = 'use-case/image-library-for-public-sector';
+$lang['porg_urls']['use-case-companies'] = 'use-case/digital-asset-manager-for-companies';
+$lang['porg_urls']['use-case-photographers-individuals'] = 'use-case/photo-gallery-for-individuals';
+$lang['porg_urls']['use-case-education-research'] = 'use-case/photo-library-for-education-and-research';
+$lang['porg_urls']['use-case-nonprofits'] = 'use-case/digital-asset-manager-for-nonprofits';
+$lang['porg_urls']['product_update'] = 'product-updates';
+$lang['porg_urls']['cases'] = 'case-studies';
+$lang['porg_urls']['case-study-wessex'] = 'case-study/digital-asset-manager-wessex';
+$lang['porg_urls']['case-study-indre'] = 'case-study/photo-library-indre-county-council';
+$lang['porg_urls']['case-study-icam'] = 'case-study/photo-library-icam-university';
+$lang['porg_urls']['case-study-ect'] = 'case-study/ect-corporate-photo-library';
+$lang['porg_urls']['case-study-cotentin'] = 'case-study/photo-library-cotentin-tourism-office';
+$lang['porg_urls']['pro-support'] = 'professional-support';
+$lang['porg_urls']['pricing'] = 'pricing';
+$lang['porg_urls']['signup'] = 'signup';
+$lang['porg_urls']['signin'] = 'signin';
+$lang['porg_urls']['plugins-by-plan'] = 'plugins-by-plan';
+$lang['porg_urls']['book-a-meeting'] = 'book-a-meeting';
+
+// legacy pages DO NOT REMOVE : used for redirections
+$lang['porg_urls']['what-is-piwigo'] = 'what-is-piwigo';
+$lang['porg_urls']['changelogs'] = 'changelogs';
+$lang['porg_urls']['get-started'] = 'get-started';
+$lang['porg_urls']['get-help'] = 'get-help';
+$lang['porg_urls']['coding-activity'] = 'coding-activity';
+$lang['porg_urls']['testimonials'] = 'testimonials';
+$lang['porg_urls']['guides'] = 'guides';
+$lang['porg_urls']['requirements'] = 'guides/install/requirements';
+$lang['porg_urls']['netinstall'] = 'guides/install/netinstall';
+$lang['porg_urls']['manual_installation'] = 'guides/install/manual';
+$lang['porg_urls']['docker_installation'] = 'guides/install/docker';
+$lang['porg_urls']['automatic_update'] = 'guides/update/automatic';
+$lang['porg_urls']['manual_update'] = 'guides/update/manual';
+$lang['porg_urls']['docker_update'] = 'guides/update/docker';
+
+$lang['porg_ext_urls']['forum'] = 'https://piwigo.org/forum';
+$lang['porg_ext_urls']['installation_guide'] = 'https://doc.piwigo.org/self-hosting-piwigo';
+$lang['porg_ext_urls']['automatic_update'] = 'https://doc.piwigo.org/self-hosting-piwigo/update-guides/automatic-update/';
+$lang['porg_ext_urls']['manual_update'] = 'https://doc.piwigo.org/self-hosting-piwigo/update-guides/manual-update/';
+$lang['porg_ext_urls']['documentation'] = 'https://doc.piwigo.org/';
+$lang['porg_ext_urls']['customizations'] = 'https://customizations.piwigo.com';
+$lang['porg_ext_urls']['data_import'] = 'https://piwigo.org/blog/2025/07/01/importing-an-existing-photo-library-into-piwigo/';
+$lang['porg_ext_urls']['prerequisites'] = 'https://doc.piwigo.org/self-hosting-piwigo/install-guides/requirements/';
+$lang['porg_ext_urls']['docker'] = 'https://doc.piwigo.org/self-hosting-piwigo/install-guides/docker-install/';
+$lang['porg_ext_urls']['manual_installation'] = 'https://doc.piwigo.org/self-hosting-piwigo/install-guides/manual-install/';
+$lang['porg_ext_urls']['docker_update'] = 'https://doc.piwigo.org/self-hosting-piwigo/update-guides/docker-update/';
+$lang['porg_ext_urls']['privacy'] = 'https://doc.piwigo.org/legal/privacy/';
+$lang['porg_ext_urls']['terms_of_service'] = 'https://doc.piwigo.org/legal/terms-of-service/';
+$lang['porg_ext_urls']['dpa'] = 'https://doc.piwigo.org/legal/dpa/';
+$lang['porg_ext_urls']['extensions'] = 'https://ru.piwigo.org/ext/';
+$lang['porg_ext_urls']['blog'] = 'https://piwigo.org/blog';
+?>
