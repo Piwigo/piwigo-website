@@ -341,13 +341,16 @@ function porg_get_news($start, $count)
   // legacy news
   $topics = null;
 
-  if (!in_array($page['porg_domain_prefix'], array('', 'de.', 'fr.'))) {
-    return $topics;
-  }
+  // only en, fr and de have dedicated news: the other languages read the English news
+  $news_lang = in_array($lang_info['code'], array('en', 'fr', 'de')) ? $lang_info['code'] : 'en';
 
-  $cache_path = PHPWG_ROOT_PATH . $conf['data_location'] . '/' . PORG_ID . '/porg_news-' . $lang_info['code'] . '.cache.php';
+  $cache_path = PHPWG_ROOT_PATH . $conf['data_location'] . '/' . PORG_ID . '/porg_news-' . $news_lang . '.cache.php';
 
   if ('refresh_ressources_cache' == script_basename()) {
+    if (!in_array($page['porg_domain_prefix'], array('', 'de.', 'fr.'))) {
+      return $topics;
+    }
+
     $function_start_time = get_moment();
 
     $forum_url = 'https://' . $page['porg_domain_prefix'] . 'piwigo.org/forum';
