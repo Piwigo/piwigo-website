@@ -127,7 +127,7 @@
 				file='template/include/sub_menu_items/sub_menu_itemc.tpl'
 				category_type='explore-submenu'
 				title={'Extensions'|translate} description={'Extensions desc'|translate} is_ext=true icon_class='icon-extension'
-        href="https://piwigo.org/ext/"
+        href="{$EXT_URL.extensions}"
       }
     </div>
   </div>
