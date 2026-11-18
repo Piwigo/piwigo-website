@@ -1,6 +1,6 @@
 <?php
 $lang['page_meta_title'] = 'Caso de éxito de Piwigo: un gestor de activos digitales para Wessex Water';
-$lang['page_meta_description'] = 'Wessex Water buscaba un software de gestión de activos digitales sencillo y asequible: descubra por qué el equipo eligió Piwigo.';
+$lang['page_meta_description'] = 'Wessex Water buscaba un software de gestión de activos digitales sencillo y asequible: descubre por qué el equipo eligió Piwigo.';
 
 $lang['porg_cases_wessex_title'] = 'Wessex Water eligió Piwigo para la gestión de sus activos digitales';
 $lang['porg_cases_wessex_description'] = '<a class="orange-text" href="https://www.wessexwater.co.uk" target="_blank">Wessex Water</a> es una empresa de abastecimiento de agua y saneamiento que da servicio a 2,8 millones de clientes en el suroeste de Inglaterra y cuenta con unos 3500 empleados.';

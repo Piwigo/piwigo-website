@@ -1,7 +1,7 @@
 <?php
 
 $lang['porg_plugins_title'] = 'Lista de <br><span class="orange-text">plugins</span> y <span class="orange-text">funciones</span>';
-$lang['porg_plugins_desc'] = '.. disponibles según su plan.';
+$lang['porg_plugins_desc'] = '.. disponibles según tu plan.';
 
 $lang['porg_plugins_s1_title'] = 'Funciones';
 $lang['porg_plugins_s1_desc'] = 'Algunas funciones de Piwigo no están disponibles para todos los clientes. <br>Esta es la lista de funciones "restringidas" en determinadas ofertas.';
@@ -14,13 +14,13 @@ $lang['porg_plugins_s1_f1_desc'] = 'Administración: Usuarios > Gestionar > Acti
 $lang['porg_plugins_s2_title'] = 'Plugins';
 $lang['porg_plugins_s2_desc'] = 'Las funciones básicas de Piwigo se enriquecen con extensiones llamadas plugins. Algunos plugins están disponibles para todos los clientes, otros solo para determinadas ofertas.<br>Este es un resumen de los plugins disponibles en cada plan.';
 $lang['porg_plugins_s2_desc2'] = 'Si busca un plugin concreto, pulse Ctrl+F (Cmd+F en Mac) en esta página y busque el nombre del plugin en cuestión.';
-$lang['premium_plugins_Add<head>element_desc'] = 'Añadir código en la sección <head> de sus páginas (añadir javascript personalizado)';
-$lang['premium_plugins_AdditionalPages_desc'] = 'Añada páginas adicionales a su galería';
+$lang['premium_plugins_Add<head>element_desc'] = 'Añadir código en la sección <head> de tus páginas (añadir javascript personalizado)';
+$lang['premium_plugins_AdditionalPages_desc'] = 'Añade páginas adicionales a tu galería';
 $lang['premium_plugins_AdminTools_desc'] = 'Permite que los administradores realicen algunas tareas de administración directamente desde la galería (edición de fotos, edición de álbumes...)';
-$lang['premium_plugins_AdvancedMenuManager_desc'] = 'Personalice el menú de galerías de forma más avanzada';
+$lang['premium_plugins_AdvancedMenuManager_desc'] = 'Personaliza el menú de galerías de forma más avanzada';
 $lang['premium_plugins_AlwaysShowMetadata_desc'] = 'Mostrar siempre los metadatos de las fotos en la galería.';
 $lang['premium_plugins_Antiaspi_desc'] = 'Impedir que los piratas aspiren el contenido de Piwigo. Permite bloquear direcciones IP si se detecta un acceso abusivo.';
-$lang['premium_plugins_AStat.2_desc'] = 'Acceda a estadísticas avanzadas sobre el uso de su galería';
+$lang['premium_plugins_AStat.2_desc'] = 'Accede a estadísticas avanzadas sobre el uso de tu galería';
 $lang['premium_plugins_AutomaticSize_desc'] = 'Cambiar el tamaño de archivo mostrado por defecto según el tamaño de la pantalla. No compatible con los temas Modus ni Bootstrap Darkroom';
 $lang['premium_plugins_Back2Front_desc'] = 'Visualiza una versión alternativa de una foto: como el dorso de una carta, antes y después...';
 $lang['premium_plugins_BatchDownloader_desc'] = 'Permite que los usuarios puedan descargar una selección de fotos de un lote como un archivo Zip';
@@ -45,7 +45,7 @@ $lang['premium_plugins_EditFilename_desc'] = 'Cambiar el nombre del archivo';
 $lang['premium_plugins_EmbeddedVideos_desc'] = 'Insertar vídeos desde Youtube, Dailymotion, Vimeo, Wat, Wideo...';
 $lang['premium_plugins_ExifView_desc'] = 'Traducir los valores EXIF al idioma de la galería';
 $lang['premium_plugins_ExiftoolsGPS_desc'] = 'Encontrar las coordenadas GPS de un archivo cuando Piwigo no las ha encontrado.';
-$lang['premium_plugins_ExtendedDescription_desc'] = 'Enriquece la gestión de las descripciones: descripción corta / larga en los álbumes, descripciones multilingües... Añade también otras opciones de personalización a su galería: ocultar una foto / un álbum, insertar en cualquier página un enlace de inicio de sesión, un pase de diapositivas, una foto, un álbum...';
+$lang['premium_plugins_ExtendedDescription_desc'] = 'Enriquece la gestión de las descripciones: descripción corta / larga en los álbumes, descripciones multilingües... Añade también otras opciones de personalización a tu galería: ocultar una foto / un álbum, insertar en cualquier página un enlace de inicio de sesión, un pase de diapositivas, una foto, un álbum...';
 $lang['premium_plugins_FCKEditor_desc'] = 'Añadir un editor Wysiwyg para personalizar los textos escritos (negritas, cursiva, estilos...)';
 $lang['premium_plugins_Fotorama_desc'] = 'Mostrar un pase de diapositivas distinto del predeterminado';
 $lang['premium_plugins_HeaderManager_desc'] = 'Acceder a las opciones avanzadas para configurar una pancarta (banner) en la galería.';
@@ -97,8 +97,8 @@ $lang['premium_plugins_ThumbnailTooltip_desc'] = 'Personalizar el contenido del 
 $lang['premium_plugins_Title_desc'] = 'Personalizar la meta-etiqueta Title de las páginas para motores de búsqueda';
 $lang['premium_plugins_URLUploader_desc'] = 'Importar una foto desde una URL externa';
 $lang['premium_plugins_VideoJS_desc'] = 'Gestionar archivos de vídeo';
-$lang['premium_plugins_Addtagsmass_desc'] = 'Añada una lista de etiquetas en lugar de añadirlas de una en una';
-$lang['premium_plugins_AddUserNotes_desc'] = 'Permita que los administradores añadan comentarios sobre los usuarios';
+$lang['premium_plugins_Addtagsmass_desc'] = 'Añade una lista de etiquetas en lugar de añadirlas de una en una';
+$lang['premium_plugins_AddUserNotes_desc'] = 'Permite que los administradores añadan comentarios sobre los usuarios';
 $lang['premium_plugins_Adminmessages_desc'] = 'Permite que los administradores añadan mensajes en la página inicial de administración de Piwigo (para comunicarse con otros administradores)';
 $lang['premium_plugins_BatchManager,AddedBy_desc'] = 'Añadir un nuevo filtro "Añadida por" a la gestión de lotes';
 $lang['premium_plugins_Community_desc'] = 'Permitir que usuarios no administradores añadan fotos a Piwigo desde la galería';
@@ -118,7 +118,7 @@ $lang['premium_plugins_DownloadLimits_desc'] = 'Limitar el número de descargas 
 $lang['premium_plugins_ExpiryDate_desc'] = 'Gestionar fechas de caducidad automática para los archivos';
 $lang['premium_plugins_Externalreference_desc'] = 'Añadir una referencia externa a un álbum. Solo se puede gestionar a través de la API.';
 $lang['premium_plugins_ManagePropertiesPhotos_desc'] = 'Añadir campos personalizados a las fotos';
-$lang['premium_plugins_PhotoSphere_desc'] = 'Mostrar fotos panorámicas de 360 grados en su galería (visita virtual...)';
+$lang['premium_plugins_PhotoSphere_desc'] = 'Mostrar fotos panorámicas de 360 grados en tu galería (visita virtual...)';
 $lang['premium_plugins_PropertiesMassUpdate_desc'] = 'Actualizar las propiedades de una selección de archivos por lotes desde una importación de archivo CSV';
 $lang['premium_plugins_Smartalbums_desc'] = 'Crear álbumes inteligentes, rellenados automáticamente según determinados criterios.';
 $lang['premium_plugins_TagGroups_desc'] = 'Crear grupos de etiquetas. Permite configurar filtros personalizados en la galería.';
@@ -131,5 +131,5 @@ $lang['premium_plugins_PasswordPolicy_desc'] = 'Determinar las reglas de segurid
 $lang['premium_plugins_Two-factorauthentication(2FA)_desc'] = 'Refuerza la seguridad, compatible con las aplicaciones TOTP y la verificación por correo electrónico';
 
 
-$lang['porg_plugins_no_results'] = 'Vaya, no se ha encontrado ningún plugin para su búsqueda.';
+$lang['porg_plugins_no_results'] = 'Vaya, no se ha encontrado ningún plugin para tu búsqueda.';
 $lang['Lookup for a plugin'] = 'Buscar un plugin';

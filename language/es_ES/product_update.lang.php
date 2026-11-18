@@ -2,8 +2,8 @@
 $lang['page_meta_title'] = 'Novedades del producto: historial de versiones y actividad de desarrollo - Piwigo';
 $lang['page_meta_description'] = 'Conozca el historial de versiones de Piwigo y su actividad de desarrollo reciente.';
 
-$lang['porg_product_update_header_title'] = 'Siga las <span class="orange-text">novedades de Piwigo</span>';
-$lang['porg_product_update_header_description'] = 'Consulte todas las versiones estables de Piwigo y los últimos commits en el núcleo de Piwigo, los plugins, los temas y otras herramientas.';
+$lang['porg_product_update_header_title'] = 'Sigue las <span class="orange-text">novedades de Piwigo</span>';
+$lang['porg_product_update_header_description'] = 'Consulta todas las versiones estables de Piwigo y los últimos commits en el núcleo de Piwigo, los plugins, los temas y otras herramientas.';
 
 $lang['porg_product_update_updates_title'] = 'Novedades y versiones de las últimas cuatro semanas';
 

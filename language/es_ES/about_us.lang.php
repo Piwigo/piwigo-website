@@ -33,7 +33,7 @@ $lang['porg_about_us_team_subtitle'] = 'Piwigo es mantenido por un equipo dedica
 $lang['porg_about_us_team_text1'] = 'Junto al equipo principal, colaboradores de todo el mundo ayudan a mejorar Piwigo con correcciones de errores, plugins, traducciones, pruebas, documentación y soporte a la comunidad.';
 $lang['porg_about_us_team_text2'] = 'La comunidad siempre ha sido una parte esencial del proyecto. Desde el principio, se han intercambiado más de 282 000 mensajes en el foro, ayudando a los usuarios a resolver problemas, compartir ideas y dar forma al futuro de Piwigo.';
 $lang['porg_about_us_team_text3'] = 'Juntos, el equipo y la comunidad garantizan que Piwigo siga activo, fiable y en constante evolución.';
-$lang['Meet our staff'] = 'Conozca a nuestro equipo';
+$lang['Meet our staff'] = 'Conoce a nuestro equipo';
 $lang['Founder & Lead Developer'] = 'Fundador y desarrollador principal';
 $lang['Support & Translation coordinator'] = 'Soporte y coordinación de traducciones';
 $lang['Developer'] = 'Desarrollo';
@@ -66,8 +66,8 @@ $lang['porg_about_us_milestone_2020'] = 'La generalización del teletrabajo pone
 $lang['porg_about_us_milestone_2025'] = 'Piwigo lanza sus primeras iniciativas de IA, abriendo el camino a nuevas funciones centradas en la gestión de fotos y la productividad de los usuarios.';
 $lang['porg_about_us_milestone_today'] = 'Piwigo es utilizado por particulares y organizaciones de todo el mundo para gestionar, compartir y conservar sus colecciones de fotos y vídeos.';
 
-$lang['porg_about_us_join_title'] = 'Únase a la aventura';
-$lang['porg_about_us_join_desc'] = '<span class="orange-text strong-text">Piwigo existe gracias a sus usuarios, colaboradores, clientes y socios.</span><br><br>Tanto si desea contribuir con código, mejorar las traducciones, informar de errores, hacer una donación o elegir Piwigo Cloud para su organización, hay muchas maneras de participar.';
+$lang['porg_about_us_join_title'] = 'Únete a la aventura';
+$lang['porg_about_us_join_desc'] = '<span class="orange-text strong-text">Piwigo existe gracias a sus usuarios, colaboradores, clientes y socios.</span><br><br>Tanto si quieres contribuir con código, mejorar las traducciones, informar de errores, hacer una donación o elegir Piwigo Cloud para tu organización, hay muchas maneras de participar.';
 $lang['porg_about_us_join_title'] = 'Únase a la aventura';
 
 ?>

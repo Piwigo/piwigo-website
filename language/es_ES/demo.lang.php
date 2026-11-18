@@ -1,11 +1,11 @@
 <?php
 $lang['page_meta_title'] = 'Galerías de demostración en vivo - Piwigo';
-$lang['page_meta_description'] = 'Explore nuestras galerías de demostración y descubra todo lo que es posible con Piwigo.';
+$lang['page_meta_description'] = 'Explora nuestras galerías de demostración y descubre todo lo que es posible con Piwigo.';
 
 $lang['Visit gallery'] = 'Visitar la galería';
 
 $lang['porg_demo_page_title'] = '<span class="orange-text">Galerías de demostración</span> de Piwigo';
-$lang['porg_demo_into_text'] = 'Explore nuestras galerías de demostración y descubra todo lo que es posible con Piwigo. Cada demo muestra una combinación diferente de temas, plugins y personalizaciones, desde la interfaz predeterminada hasta diseños más avanzados.';
+$lang['porg_demo_into_text'] = 'Explora nuestras galerías de demostración y descubre todo lo que es posible con Piwigo. Cada demo muestra una combinación diferente de temas, plugins y personalizaciones, desde la interfaz predeterminada hasta diseños más avanzados.';
 
 $lang['porg_demo_1_title'] = 'Demo n.º 1';
 $lang['porg_demo_1_btn'] = 'Explorar la demo n.º 1';
@@ -20,7 +20,7 @@ $lang['porg_demo_4_title'] = 'Demo n.º 4';
 $lang['porg_demo_4_btn'] = 'Explorar la demo n.º 4';
 $lang['porg_demo_4_text'] = 'Nuestra cuarta galería de demostración de Piwigo utiliza el tema <span class="strong-text">Bootstrap Darkroom</span> con una imagen de cabecera. Hemos personalizado la apariencia <span class="strong-text">Cyborg</span> para que combine con la imagen elegida, cambiado la fuente del título de la galería, añadido el logotipo de Piwigo en la esquina superior izquierda y personalizado el banner para incluir un formulario de inicio de sesión.';
 
-$lang['porg_demo_video_title'] = 'Vea la interfaz de administración en acción';
+$lang['porg_demo_video_title'] = 'Mira la interfaz de administración en acción';
 $lang['porg_demo_video_description'] = 'Este breve vídeo muestra cómo se suben las fotos a través de la interfaz de administración de Piwigo.';
-$lang['porg_demo_video_support'] = 'Su navegador no admite la etiqueta de vídeo.';
+$lang['porg_demo_video_support'] = 'Tu navegador no admite la etiqueta de vídeo.';
 ?>
