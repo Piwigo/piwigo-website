@@ -132,8 +132,8 @@
                         class="flag-icon flag-icon-{$user.country|lower} me-2"></span>{"country_{$user.country}"|translate}
                   </p>{/if}
                 </div>
-                {if isset($user.page_url)}
-                  <a href="{$user.page_url}" target='blank' class="non-decorated-text">
+                {if isset($user.url)}
+                  <a href="{$user.url}" target='blank' class="non-decorated-text">
                     <p class="author name-testimonial">{$user.name}<i class="icon-ext1"></i></p>
                   </a>
                 {else}

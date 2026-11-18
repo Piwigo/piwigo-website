@@ -37,8 +37,6 @@ if (is_array($users_examples)) {
       "id" => $example['id'],
       "name" => $example['name'],
       "comment" => trigger_change('render_category_name', $example['comment'] ?? ''),
-      "page_url" => $example['page_url'],
-      "element_url" => $example['element_url'],
       "derivatives" => $example['derivatives'],
     );
   
