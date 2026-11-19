@@ -41,6 +41,21 @@
   z-index: 2;
 }
 
+.highlight-pending .highlight-circle {
+  visibility: hidden;
+}
+
+.highlight-long .highlight-circle {
+  display: none;
+}
+
+.highlight-long .highlight {
+  text-decoration: underline;
+  text-decoration-color: var(--main_flash_green);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 7px;
+}
+
 .pricing-subtitle {
   font-size: 18px;
   color: var(--dark);

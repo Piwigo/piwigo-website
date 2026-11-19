@@ -10,11 +10,22 @@
 		<div class="col-12 pricing-header-text">
 			<h1 class="pricing-title">
 				{'pricing main title part 1'|translate}
-				<span class="highlight-wrap">
+				<span class="highlight-wrap highlight-pending">
 					<img class="highlight-circle" src="{$PORG_ROOT_URL}images/pricing/greencircle.svg" alt="">
 					<span class="highlight">{'pricing main title part 2'|translate}</span>
 				</span>
 			</h1>
+			<script>
+				(function () {
+					const highlightWrap = document.querySelector(".highlight-pending");
+					const highlight = highlightWrap.querySelector(".highlight");
+
+					highlightWrap.classList.remove("highlight-pending");
+					if (highlight.textContent.trim().length >= 10) {
+						highlightWrap.classList.add("highlight-long");
+					}
+				})();
+			</script>
 			<p class="pricing-subtitle">
 				{'pcom_pricing_page_subtitle'|translate}
 			</p>
