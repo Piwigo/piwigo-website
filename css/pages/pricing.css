@@ -50,10 +50,9 @@
 }
 
 .highlight-long .highlight {
-  text-decoration: underline;
-  text-decoration-color: var(--main_flash_green);
-  text-decoration-thickness: 3px;
-  text-underline-offset: 7px;
+  background-image: url("../../images/use-case/underliner.svg");
+  background-repeat: no-repeat;
+  background-position: left bottom;
 }
 
 .pricing-subtitle {
