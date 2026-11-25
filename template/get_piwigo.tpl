@@ -34,7 +34,7 @@
   <div class="js-content-self-hosted product-content product-self-hosted-header d-flex flex-column flex-lg-row align-items-center justify-content-between" style="display: none !important;">
     <div class="product-header-self-hosted-content-left col-12 col-lg-5 px-3 px-lg-5 mb-5 mb-lg-0 text-center text-lg-start order-2 order-lg-1">
       <div class="product-header-self-hosted-text d-flex flex-column gap-3 pb-4">
-        <h1 class="product-header-self-hosted-title pb-2">{'product-header-self-hosted-title'|translate}</h1>
+        <h2 class="product-header-self-hosted-title pb-2">{'product-header-self-hosted-title'|translate}</h2>
         <p class="product-header-self-hosted-description">{'product-header-self-hosted-desc'|translate}</p>
       </div>
       <div class="product-header-self-hosted-btn d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start gap-3">
